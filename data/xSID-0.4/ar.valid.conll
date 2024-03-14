@@ -1,0 +1,3604 @@
+# id: 1
+# text: هل ستمطر اليوم ؟
+# text-en: Is it going to rain today?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستمطر	weather/find	B-weather/attribute
+3	اليوم	weather/find	B-datetime
+4	؟	weather/find	O
+
+# id: 2
+# text: كم سيكون الطقس ساخناً اليوم
+# text-en: how hot is it going to be today
+# intent: weather/find
+1	كم	weather/find	O
+2	سيكون	weather/find	O
+3	الطقس	weather/find	O
+4	ساخناً	weather/find	B-weather/attribute
+5	اليوم	weather/find	B-datetime
+
+# id: 3
+# text: كم حرارة الجو ؟
+# text-en: How hot is it?
+# intent: weather/find
+1	كم	weather/find	O
+2	حرارة	weather/find	B-weather/attribute
+3	الجو	weather/find	I-weather/attribute
+4	؟	weather/find	O
+
+# id: 4
+# text: هل سيكون الجو مشمس اليوم ؟
+# text-en: Will it be sunny today?
+# intent: weather/find
+1	هل	weather/find	O
+2	سيكون	weather/find	O
+3	الجو	weather/find	O
+4	مشمس	weather/find	B-weather/attribute
+5	اليوم	weather/find	B-datetime
+6	؟	weather/find	O
+
+# id: 5
+# text: هل الجو غائم اليوم ؟
+# text-en: Is it cloudy today?
+# intent: weather/find
+1	هل	weather/find	O
+2	الجو	weather/find	O
+3	غائم	weather/find	B-weather/attribute
+4	اليوم	weather/find	B-datetime
+5	؟	weather/find	O
+
+# id: 6
+# text: إلغاء جميع التذكيرات الخاصة بي .
+# text-en: Cancel all my reminders.
+# intent: reminder/cancel_reminder
+1	إلغاء	reminder/cancel_reminder	O
+2	جميع	reminder/cancel_reminder	B-reference
+3	التذكيرات	reminder/cancel_reminder	O
+4	الخاصة	reminder/cancel_reminder	B-reference
+5	بي	reminder/cancel_reminder	I-reference
+6	.	reminder/cancel_reminder	O
+
+# id: 7
+# text: ما المنبهات التي قمت بضبطها ؟
+# text-en: what alarms do I have set?
+# intent: alarm/show_alarms
+1	ما	alarm/show_alarms	O
+2	المنبهات	alarm/show_alarms	O
+3	التي	alarm/show_alarms	O
+4	قمت	alarm/show_alarms	O
+5	بضبطها	alarm/show_alarms	O
+6	؟	alarm/show_alarms	O
+
+# id: 8
+# text: احتاج إلى منبه الساعة 5 مساءً لتذكيري بتناول دوائي
+# text-en: I need an alarm for 5pm to remind me to take my medicine
+# intent: alarm/set_alarm
+1	احتاج	alarm/set_alarm	O
+2	إلى	alarm/set_alarm	O
+3	منبه	alarm/set_alarm	O
+4	الساعة	alarm/set_alarm	O
+5	5	alarm/set_alarm	B-datetime
+6	مساءً	alarm/set_alarm	I-datetime
+7	لتذكيري	alarm/set_alarm	O
+8	بتناول	alarm/set_alarm	B-reminder/todo
+9	دوائي	alarm/set_alarm	I-reminder/todo
+
+# id: 9
+# text: اضبط منبه لكل 3 دقائق
+# text-en: set alarm for every 3 minutes
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	منبه	alarm/set_alarm	O
+3	لكل	alarm/set_alarm	B-recurring_datetime
+4	3	alarm/set_alarm	I-recurring_datetime
+5	دقائق	alarm/set_alarm	I-recurring_datetime
+
+# id: 10
+# text: هل ستعصف اليوم ؟
+# text-en: Is it going to storm today?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستعصف	weather/find	B-weather/attribute
+3	اليوم	weather/find	B-datetime
+4	؟	weather/find	O
+
+# id: 11
+# text: إلغي منبه عصر اليوم .
+# text-en: Cancel this afternoon's alarm.
+# intent: alarm/cancel_alarm
+1	إلغي	alarm/cancel_alarm	O
+2	منبه	alarm/cancel_alarm	O
+3	عصر	alarm/cancel_alarm	B-datetime
+4	اليوم	alarm/cancel_alarm	I-datetime
+5	.	alarm/cancel_alarm	O
+
+# id: 12
+# text: هل ستمطر الأسبوع القادم
+# text-en: Is it going to rain next week
+# intent: weather/find
+1	هل	weather/find	O
+2	ستمطر	weather/find	B-weather/attribute
+3	الأسبوع	weather/find	B-datetime
+4	القادم	weather/find	I-datetime
+
+# id: 13
+# text: ما هي التوقعات الجوية للأسبوع المقبل ؟
+# text-en: What's next week's forecast?
+# intent: weather/find
+1	ما	weather/find	O
+2	هي	weather/find	O
+3	التوقعات	weather/find	O
+4	الجوية	weather/find	O
+5	للأسبوع	weather/find	B-datetime
+6	المقبل	weather/find	I-datetime
+7	؟	weather/find	O
+
+# id: 14
+# text: اقرأ لي تذكيراتي .
+# text-en: Read me my reminders.
+# intent: reminder/show_reminders
+1	اقرأ	reminder/show_reminders	O
+2	لي	reminder/show_reminders	O
+3	تذكيراتي	reminder/show_reminders	B-reference-part
+4	.	reminder/show_reminders	O
+
+# id: 15
+# text: إظهار كل المنبهات
+# text-en: Show all alarms
+# intent: alarm/show_alarms
+1	إظهار	alarm/show_alarms	O
+2	كل	alarm/show_alarms	B-reference
+3	المنبهات	alarm/show_alarms	O
+
+# id: 16
+# text: قم بالتنبيه كل خمس دقائق لمدة 20 دقيقة من فضلك
+# text-en: Alarm every five minutes for 20 minutes please
+# intent: alarm/set_alarm
+1	قم	alarm/set_alarm	O
+2	بالتنبيه	alarm/set_alarm	O
+3	كل	alarm/set_alarm	B-recurring_datetime
+4	خمس	alarm/set_alarm	I-recurring_datetime
+5	دقائق	alarm/set_alarm	I-recurring_datetime
+6	لمدة	alarm/set_alarm	I-recurring_datetime
+7	20	alarm/set_alarm	I-recurring_datetime
+8	دقيقة	alarm/set_alarm	I-recurring_datetime
+9	من	alarm/set_alarm	O
+10	فضلك	alarm/set_alarm	O
+
+# id: 17
+# text: قم بتغيير منبه صباح الغد إلى 6 صباحًا .
+# text-en: Change tomorrow mornings alarm to 6 am.
+# intent: alarm/modify_alarm
+1	قم	alarm/modify_alarm	O
+2	بتغيير	alarm/modify_alarm	O
+3	منبه	alarm/modify_alarm	O
+4	صباح	alarm/modify_alarm	B-datetime
+5	الغد	alarm/modify_alarm	I-datetime
+6	إلى	alarm/modify_alarm	O
+7	6	alarm/modify_alarm	B-datetime
+8	صباحًا	alarm/modify_alarm	I-datetime
+9	.	alarm/modify_alarm	O
+
+# id: 18
+# text: إلغاء جميع التذكيرات
+# text-en: cancel all reminders
+# intent: reminder/cancel_reminder
+1	إلغاء	reminder/cancel_reminder	O
+2	جميع	reminder/cancel_reminder	B-reference
+3	التذكيرات	reminder/cancel_reminder	O
+
+# id: 19
+# text: أرني منبهاتي
+# text-en: Show me my alarms
+# intent: alarm/show_alarms
+1	أرني	alarm/show_alarms	O
+2	منبهاتي	alarm/show_alarms	B-reference-part
+
+# id: 20
+# text: إلغي المنبهات
+# text-en: Cancel alarms
+# intent: alarm/cancel_alarm
+1	إلغي	alarm/cancel_alarm	O
+2	المنبهات	alarm/cancel_alarm	O
+
+# id: 21
+# text: اضبط منبه للساعة 6 صباحًا غدًا
+# text-en: Set alarm for 6 am tomorrow
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	منبه	alarm/set_alarm	O
+3	للساعة	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	صباحًا	alarm/set_alarm	I-datetime
+6	غدًا	alarm/set_alarm	I-datetime
+
+# id: 22
+# text: اضبط منبه على الساعة 7 صباحًا غدًا
+# text-en: Set alarm for 7 am tomorrow
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	منبه	alarm/set_alarm	O
+3	على	alarm/set_alarm	O
+4	الساعة	alarm/set_alarm	B-datetime
+5	7	alarm/set_alarm	I-datetime
+6	صباحًا	alarm/set_alarm	I-datetime
+7	غدًا	alarm/set_alarm	I-datetime
+
+# id: 23
+# text: اضبط منبه الساعة 6 صباحًا
+# text-en: set alarm for 6 am
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	منبه	alarm/set_alarm	O
+3	الساعة	alarm/set_alarm	B-datetime
+4	6	alarm/set_alarm	I-datetime
+5	صباحًا	alarm/set_alarm	I-datetime
+
+# id: 24
+# text: أحتاج إلى تذكير لالتقاط ليزا
+# text-en: i need a reminder to pick Lisa up
+# intent: reminder/set_reminder
+1	أحتاج	reminder/set_reminder	O
+2	إلى	reminder/set_reminder	O
+3	تذكير	reminder/set_reminder	O
+4	لالتقاط	reminder/set_reminder	B-reminder/todo
+5	ليزا	reminder/set_reminder	I-reminder/todo
+
+# id: 25
+# text: إعرض كل المنبهات
+# text-en: show all alarms
+# intent: alarm/show_alarms
+1	إعرض	alarm/show_alarms	O
+2	كل	alarm/show_alarms	B-reference
+3	المنبهات	alarm/show_alarms	O
+
+# id: 26
+# text: أطفئ كل المنبهات
+# text-en: Turn off all alarms
+# intent: alarm/cancel_alarm
+1	أطفئ	alarm/cancel_alarm	O
+2	كل	alarm/cancel_alarm	B-reference
+3	المنبهات	alarm/cancel_alarm	O
+
+# id: 27
+# text: ما هي تذكيراتي ؟
+# text-en: What are my reminders?
+# intent: reminder/show_reminders
+1	ما	reminder/show_reminders	O
+2	هي	reminder/show_reminders	O
+3	تذكيراتي	reminder/show_reminders	B-reference-part
+4	؟	reminder/show_reminders	O
+
+# id: 28
+# text: هل الجو حار في الخارج ؟
+# text-en: is it hot outside
+# intent: weather/find
+1	هل	weather/find	O
+2	الجو	weather/find	O
+3	حار	weather/find	B-weather/attribute
+4	في	weather/find	O
+5	الخارج	weather/find	B-location
+6	؟	weather/find	O
+
+# id: 29
+# text: قم بتأجيل التنبيه
+# text-en: Snooze alarm
+# intent: alarm/snooze_alarm
+1	قم	alarm/snooze_alarm	O
+2	بتأجيل	alarm/snooze_alarm	O
+3	التنبيه	alarm/snooze_alarm	O
+
+# id: 30
+# text: قم بتفعيل المنبه
+# text-en: alarm on
+# intent: alarm/set_alarm
+1	قم	alarm/set_alarm	O
+2	بتفعيل	alarm/set_alarm	O
+3	المنبه	alarm/set_alarm	O
+
+# id: 31
+# text: اضبط المنبه على الساعة 6 صباحًا يوم الأربعاء
+# text-en: Set an alarm for 6 am on Wed
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	المنبه	alarm/set_alarm	O
+3	على	alarm/set_alarm	O
+4	الساعة	alarm/set_alarm	O
+5	6	alarm/set_alarm	B-datetime
+6	صباحًا	alarm/set_alarm	I-datetime
+7	يوم	alarm/set_alarm	I-datetime
+8	الأربعاء	alarm/set_alarm	I-datetime
+
+# id: 32
+# text: ذكرني بإرسال خطط الدروس الخاصة بي كل يوم اثنين بحلول نهاية اليوم
+# text-en: remind me to submit my lesson plans every monday by the end of the day
+# intent: reminder/set_reminder
+1	ذكرني	reminder/set_reminder	O
+2	بإرسال	reminder/set_reminder	B-reminder/todo
+3	خطط	reminder/set_reminder	I-reminder/todo
+4	الدروس	reminder/set_reminder	I-reminder/todo
+5	الخاصة	reminder/set_reminder	I-reminder/todo
+6	بي	reminder/set_reminder	I-reminder/todo
+7	كل	reminder/set_reminder	B-recurring_datetime
+8	يوم	reminder/set_reminder	I-recurring_datetime
+9	اثنين	reminder/set_reminder	I-recurring_datetime
+10	بحلول	reminder/set_reminder	I-recurring_datetime
+11	نهاية	reminder/set_reminder	I-recurring_datetime
+12	اليوم	reminder/set_reminder	I-recurring_datetime
+
+# id: 33
+# text: كم سيكون الطقس ساخناً اليوم
+# text-en: how hot is it going to be today
+# intent: weather/find
+1	كم	weather/find	O
+2	سيكون	weather/find	O
+3	الطقس	weather/find	O
+4	ساخناً	weather/find	B-weather/attribute
+5	اليوم	weather/find	B-datetime
+
+# id: 34
+# text: ألغي كل المنبهات المضبوطة
+# text-en: Clear all set alarms.
+# intent: alarm/cancel_alarm
+1	ألغي	alarm/cancel_alarm	O
+2	كل	alarm/cancel_alarm	B-reference
+3	المنبهات	alarm/cancel_alarm	O
+4	المضبوطة	alarm/cancel_alarm	O
+
+# id: 35
+# text: إظهار كل المنبهات
+# text-en: Show all alarms
+# intent: alarm/show_alarms
+1	إظهار	alarm/show_alarms	O
+2	كل	alarm/show_alarms	B-reference
+3	المنبهات	alarm/show_alarms	O
+
+# id: 36
+# text: هل سيكون الجو مشمس اليوم ؟
+# text-en: Will it be sunny today?
+# intent: weather/find
+1	هل	weather/find	O
+2	سيكون	weather/find	O
+3	الجو	weather/find	O
+4	مشمس	weather/find	B-weather/attribute
+5	اليوم	weather/find	B-datetime
+6	؟	weather/find	O
+
+# id: 37
+# text: ما هو مستوى الرطوبة اليوم
+# text-en: What is the humidity level today
+# intent: weather/find
+1	ما	weather/find	O
+2	هو	weather/find	O
+3	مستوى	weather/find	B-weather/attribute
+4	الرطوبة	weather/find	I-weather/attribute
+5	اليوم	weather/find	B-datetime
+
+# id: 38
+# text: إلغي جميع التذكيرات
+# text-en: Cancel all reminders
+# intent: reminder/cancel_reminder
+1	إلغي	reminder/cancel_reminder	O
+2	جميع	reminder/cancel_reminder	B-reference
+3	التذكيرات	reminder/cancel_reminder	O
+
+# id: 39
+# text: اضبط المنبه لمدة خمسة عشر دقيقة
+# text-en: set an alarm for fifteen minutes
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	المنبه	alarm/set_alarm	O
+3	لمدة	alarm/set_alarm	O
+4	خمسة	alarm/set_alarm	B-datetime
+5	عشر	alarm/set_alarm	I-datetime
+6	دقيقة	alarm/set_alarm	I-datetime
+
+# id: 40
+# text: يرجى ضبط المنبه على الساعة 4 صباحًا هذا السبت .
+# text-en: Please set my alarm for 4am this Saturday.
+# intent: alarm/set_alarm
+1	يرجى	alarm/set_alarm	O
+2	ضبط	alarm/set_alarm	O
+3	المنبه	alarm/set_alarm	O
+4	على	alarm/set_alarm	O
+5	الساعة	alarm/set_alarm	O
+6	4	alarm/set_alarm	B-datetime
+7	صباحًا	alarm/set_alarm	I-datetime
+8	هذا	alarm/set_alarm	I-datetime
+9	السبت	alarm/set_alarm	I-datetime
+10	.	alarm/set_alarm	O
+
+# id: 41
+# text: ذكرني بإغلاق المنزل الساعة 10 صباحًا غدًا .
+# text-en: Give me a reminder for house closing at 10am tomorrow.
+# intent: reminder/set_reminder
+1	ذكرني	reminder/set_reminder	O
+2	بإغلاق	reminder/set_reminder	B-reminder/todo
+3	المنزل	reminder/set_reminder	I-reminder/todo
+4	الساعة	reminder/set_reminder	B-datetime
+5	10	reminder/set_reminder	I-datetime
+6	صباحًا	reminder/set_reminder	I-datetime
+7	غدًا	reminder/set_reminder	I-datetime
+8	.	reminder/set_reminder	O
+
+# id: 42
+# text: احذف كل منبهاتي
+# text-en: delete all alarms
+# intent: alarm/cancel_alarm
+1	احذف	alarm/cancel_alarm	O
+2	كل	alarm/cancel_alarm	B-reference
+3	منبهاتي	alarm/cancel_alarm	O
+
+# id: 43
+# text: كم عدد المنبهات التي قمت بضبطها ليوم الأحد؟
+# text-en: How many alarms do I have set for Sunday?
+# intent: alarm/show_alarms
+1	كم	alarm/show_alarms	O
+2	عدد	alarm/show_alarms	O
+3	المنبهات	alarm/show_alarms	O
+4	التي	alarm/show_alarms	O
+5	قمت	alarm/show_alarms	O
+6	بضبطها	alarm/show_alarms	O
+7	ليوم	alarm/show_alarms	B-datetime
+8	الأحد	alarm/show_alarms	I-datetime
+9	؟	alarm/show_alarms	O
+
+# id: 44
+# text: إعرض كل المنبهات
+# text-en: show all alarms
+# intent: alarm/show_alarms
+1	إعرض	alarm/show_alarms	O
+2	كل	alarm/show_alarms	B-reference
+3	المنبهات	alarm/show_alarms	O
+
+# id: 45
+# text: هل سيكون الجو مشمس اليوم ؟
+# text-en: Is it going to be sunny today?
+# intent: weather/find
+1	هل	weather/find	O
+2	سيكون	weather/find	O
+3	الجو	weather/find	O
+4	مشمس	weather/find	B-weather/attribute
+5	اليوم	weather/find	B-datetime
+6	؟	weather/find	O
+
+# id: 46
+# text: اضبط المنبه على الساعة 6 : 15 صباحًا
+# text-en: set alarm for 615am
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	المنبه	alarm/set_alarm	O
+3	على	alarm/set_alarm	O
+4	الساعة	alarm/set_alarm	O
+5	6	alarm/set_alarm	B-datetime
+6	:	alarm/set_alarm	I-datetime
+7	15	alarm/set_alarm	I-datetime
+8	صباحًا	alarm/set_alarm	I-datetime
+
+# id: 47
+# text: اضبط منبهين لصباح الغد
+# text-en: Set two alarms for tomorrow morning
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	منبهين	alarm/set_alarm	O
+3	لصباح	alarm/set_alarm	B-datetime
+4	الغد	alarm/set_alarm	I-datetime
+
+# id: 48
+# text: أطفئ كل المنبهات
+# text-en: Turn off all alarms
+# intent: alarm/cancel_alarm
+1	أطفئ	alarm/cancel_alarm	O
+2	كل	alarm/cancel_alarm	B-reference
+3	المنبهات	alarm/cancel_alarm	O
+
+# id: 49
+# text: ما هي درجة الحرارة في لندن الآن ؟
+# text-en: What is the temperature like in London right now?
+# intent: weather/find
+1	ما	weather/find	O
+2	هي	weather/find	O
+3	درجة	weather/find	B-weather/attribute
+4	الحرارة	weather/find	I-weather/attribute
+5	في	weather/find	O
+6	لندن	weather/find	B-location
+7	الآن	weather/find	B-datetime
+8	؟	weather/find	O
+
+# id: 50
+# text: إلغاء تذكيري الأخير
+# text-en: Cancel my last reminder
+# intent: reminder/cancel_reminder
+1	إلغاء	reminder/cancel_reminder	O
+2	تذكيري	reminder/cancel_reminder	B-reference-part
+3	الأخير	reminder/cancel_reminder	B-reference
+
+# id: 51
+# text: تعيين تذكير للذهاب إلى محل البقالة في وقت لاحق
+# text-en: Set a reminder to go to the grocery store later
+# intent: reminder/set_reminder
+1	تعيين	reminder/set_reminder	O
+2	تذكير	reminder/set_reminder	O
+3	للذهاب	reminder/set_reminder	B-reminder/todo
+4	إلى	reminder/set_reminder	I-reminder/todo
+5	محل	reminder/set_reminder	I-reminder/todo
+6	البقالة	reminder/set_reminder	I-reminder/todo
+7	في	reminder/set_reminder	O
+8	وقت	reminder/set_reminder	B-datetime
+9	لاحق	reminder/set_reminder	I-datetime
+
+# id: 52
+# text: ماذا سيكون مؤشر الحرارة اليوم ؟
+# text-en: What will be the heat index today?
+# intent: weather/find
+1	ماذا	weather/find	O
+2	سيكون	weather/find	O
+3	مؤشر	weather/find	B-weather/attribute
+4	الحرارة	weather/find	I-weather/attribute
+5	اليوم	weather/find	B-datetime
+6	؟	weather/find	O
+
+# id: 53
+# text: كم سيكون الطقس باردا اليوم
+# text-en: How cold will it be today?
+# intent: weather/find
+1	كم	weather/find	O
+2	سيكون	weather/find	O
+3	الطقس	weather/find	O
+4	باردا	weather/find	B-weather/attribute
+5	اليوم	weather/find	B-datetime
+
+# id: 54
+# text: هل ستثلج اليوم
+# text-en: will it snow today
+# intent: weather/find
+1	هل	weather/find	O
+2	ستثلج	weather/find	B-weather/attribute
+3	اليوم	weather/find	B-datetime
+
+# id: 55
+# text: اضبط المنبه الساعة 5 صباحًا
+# text-en: Set alarm for 5am
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	المنبه	alarm/set_alarm	O
+3	الساعة	alarm/set_alarm	O
+4	5	alarm/set_alarm	B-datetime
+5	صباحًا	alarm/set_alarm	I-datetime
+
+# id: 56
+# text: أطفئ المنبه
+# text-en: turn off alarm
+# intent: alarm/cancel_alarm
+1	أطفئ	alarm/cancel_alarm	O
+2	المنبه	alarm/cancel_alarm	O
+
+# id: 57
+# text: إلغي كل المنبهات
+# text-en: cancel all alarms
+# intent: alarm/cancel_alarm
+1	إلغي	alarm/cancel_alarm	O
+2	كل	alarm/cancel_alarm	B-reference
+3	المنبهات	alarm/cancel_alarm	O
+
+# id: 58
+# text: إضف تذكير للسباحة الساعة 11 صباحًا غدًا
+# text-en: Add reminder to swim at 11am tomorrow
+# intent: reminder/set_reminder
+1	إضف	reminder/set_reminder	O
+2	تذكير	reminder/set_reminder	O
+3	للسباحة	reminder/set_reminder	B-reminder/todo
+4	الساعة	reminder/set_reminder	O
+5	11	reminder/set_reminder	B-datetime
+6	صباحًا	reminder/set_reminder	I-datetime
+7	غدًا	reminder/set_reminder	I-datetime
+
+# id: 59
+# text: إعرض تذكيري
+# text-en: Show my reminder
+# intent: reminder/show_reminders
+1	إعرض	reminder/show_reminders	O
+2	تذكيري	reminder/show_reminders	B-reference-part
+
+# id: 60
+# text: إلغاء المنبه يوم السبت
+# text-en: Cancel my alarm on Saturday
+# intent: alarm/cancel_alarm
+1	إلغاء	alarm/cancel_alarm	O
+2	المنبه	alarm/cancel_alarm	O
+3	يوم	alarm/cancel_alarm	B-datetime
+4	السبت	alarm/cancel_alarm	I-datetime
+
+# id: 61
+# text: هل الجو بارد في الخارج ؟
+# text-en: Is it cold out?
+# intent: weather/find
+1	هل	weather/find	O
+2	الجو	weather/find	O
+3	بارد	weather/find	B-weather/attribute
+4	في	weather/find	O
+5	الخارج	weather/find	B-location
+6	؟	weather/find	O
+
+# id: 62
+# text: هل الطقس رطب اليوم ؟
+# text-en: Is it humid today?
+# intent: weather/find
+1	هل	weather/find	O
+2	الطقس	weather/find	O
+3	رطب	weather/find	B-weather/attribute
+4	اليوم	weather/find	B-datetime
+5	؟	weather/find	O
+
+# id: 63
+# text: اضبط المنبه لكل دقيقة لمدة 11 دقيقة
+# text-en: Set alarm every minute for 11 minutes
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	المنبه	alarm/set_alarm	O
+3	لكل	alarm/set_alarm	B-recurring_datetime
+4	دقيقة	alarm/set_alarm	I-recurring_datetime
+5	لمدة	alarm/set_alarm	I-recurring_datetime
+6	11	alarm/set_alarm	I-recurring_datetime
+7	دقيقة	alarm/set_alarm	I-recurring_datetime
+
+# id: 64
+# text: إعرض تذكيري
+# text-en: Show my reminder
+# intent: reminder/show_reminders
+1	إعرض	reminder/show_reminders	O
+2	تذكيري	reminder/show_reminders	B-reference-part
+
+# id: 65
+# text: هل ستكون الرياح عاصفة اليوم ؟
+# text-en: Is it going to be windy today?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستكون	weather/find	O
+3	الرياح	weather/find	B-weather/attribute
+4	عاصفة	weather/find	I-weather/attribute
+5	اليوم	weather/find	B-datetime
+6	؟	weather/find	O
+
+# id: 66
+# text: إلغاء تذكيرات الغد
+# text-en: Cancel tomorrow's reminders
+# intent: reminder/cancel_reminder
+1	إلغاء	reminder/cancel_reminder	O
+2	تذكيرات	reminder/cancel_reminder	O
+3	الغد	reminder/cancel_reminder	B-datetime
+
+# id: 67
+# text: قل لي التوقعات الجوية ل 3 أيام
+# text-en: tell me the 3 day forecast
+# intent: weather/find
+1	قل	weather/find	O
+2	لي	weather/find	O
+3	التوقعات	weather/find	O
+4	الجوية	weather/find	O
+5	ل	weather/find	O
+6	3	weather/find	B-datetime
+7	أيام	weather/find	I-datetime
+
+# id: 68
+# text: كم بوصة من الأمطار من المفترض أن نحصل عليها غدًا ؟
+# text-en: how many inches of rain are we suppose to get tomorrow?
+# intent: weather/find
+1	كم	weather/find	O
+2	بوصة	weather/find	B-weather/attribute
+3	من	weather/find	I-weather/attribute
+4	الأمطار	weather/find	I-weather/attribute
+5	من	weather/find	O
+6	المفترض	weather/find	O
+7	أن	weather/find	O
+8	نحصل	weather/find	O
+9	عليها	weather/find	O
+10	غدًا	weather/find	B-datetime
+11	؟	weather/find	O
+
+# id: 69
+# text: ذكرني بالزفاف
+# text-en: remind me about the wedding
+# intent: reminder/set_reminder
+1	ذكرني	reminder/set_reminder	O
+2	بالزفاف	reminder/set_reminder	B-reminder/todo
+
+# id: 70
+# text: أجل كل المنبهات
+# text-en: Snooze all alarms
+# intent: alarm/snooze_alarm
+1	أجل	alarm/snooze_alarm	O
+2	كل	alarm/snooze_alarm	B-reference
+3	المنبهات	alarm/snooze_alarm	O
+
+# id: 71
+# text: متى ستمطر اليوم ؟
+# text-en: When will it rain today?
+# intent: weather/find
+1	متى	weather/find	O
+2	ستمطر	weather/find	B-weather/attribute
+3	اليوم	weather/find	B-datetime
+4	؟	weather/find	O
+
+# id: 72
+# text: إعرض كل المنبهات
+# text-en: show all alarms
+# intent: alarm/show_alarms
+1	إعرض	alarm/show_alarms	O
+2	كل	alarm/show_alarms	B-reference
+3	المنبهات	alarm/show_alarms	O
+
+# id: 73
+# text: أطفئ كل المنبهات
+# text-en: Turn off all alarms
+# intent: alarm/cancel_alarm
+1	أطفئ	alarm/cancel_alarm	O
+2	كل	alarm/cancel_alarm	B-reference
+3	المنبهات	alarm/cancel_alarm	O
+
+# id: 74
+# text: هل ستمطر اليوم ؟
+# text-en: Is it going to rain today?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستمطر	weather/find	B-weather/attribute
+3	اليوم	weather/find	B-datetime
+4	؟	weather/find	O
+
+# id: 75
+# text: عرض جميع تذكيرات الغد
+# text-en: Show all reminders for tomorrow
+# intent: reminder/show_reminders
+1	عرض	reminder/show_reminders	O
+2	جميع	reminder/show_reminders	B-reference
+3	تذكيرات	reminder/show_reminders	O
+4	الغد	reminder/show_reminders	B-datetime
+
+# id: 76
+# text: ألغي منبهي لصباح الغد
+# text-en: cancel my alarm for tomorrow morning
+# intent: alarm/cancel_alarm
+1	ألغي	alarm/cancel_alarm	O
+2	منبهي	alarm/cancel_alarm	B-reference-part
+3	لصباح	alarm/cancel_alarm	B-datetime
+4	الغد	alarm/cancel_alarm	I-datetime
+
+# id: 77
+# text: كم حرارة الجو ؟
+# text-en: How hot is it?
+# intent: weather/find
+1	كم	weather/find	O
+2	حرارة	weather/find	B-weather/attribute
+3	الجو	weather/find	I-weather/attribute
+4	؟	weather/find	O
+
+# id: 78
+# text: ذكرني بشراء الحليب الليلة
+# text-en: remind me to buy milk tonight
+# intent: reminder/set_reminder
+1	ذكرني	reminder/set_reminder	O
+2	بشراء	reminder/set_reminder	B-reminder/todo
+3	الحليب	reminder/set_reminder	I-reminder/todo
+4	الليلة	reminder/set_reminder	B-datetime
+
+# id: 79
+# text: إلغي جميع التذكيرات
+# text-en: Cancel all reminders
+# intent: reminder/cancel_reminder
+1	إلغي	reminder/cancel_reminder	O
+2	جميع	reminder/cancel_reminder	B-reference
+3	التذكيرات	reminder/cancel_reminder	O
+
+# id: 80
+# text: إظهار كل المنبهات
+# text-en: Show all alarms
+# intent: alarm/show_alarms
+1	إظهار	alarm/show_alarms	O
+2	كل	alarm/show_alarms	B-reference
+3	المنبهات	alarm/show_alarms	O
+
+# id: 81
+# text: ألغي منبهي لصباح الغد
+# text-en: cancel my alarm for tomorrow morning
+# intent: alarm/cancel_alarm
+1	ألغي	alarm/cancel_alarm	O
+2	منبهي	alarm/cancel_alarm	B-reference-part
+3	لصباح	alarm/cancel_alarm	B-datetime
+4	الغد	alarm/cancel_alarm	I-datetime
+
+# id: 82
+# text: هل سيكون الجو مشمسا غدا ؟
+# text-en: Will it be sunny tomorrow?
+# intent: weather/find
+1	هل	weather/find	O
+2	سيكون	weather/find	O
+3	الجو	weather/find	O
+4	مشمسا	weather/find	B-weather/attribute
+5	غدا	weather/find	B-datetime
+6	؟	weather/find	O
+
+# id: 83
+# text: ألغي منبه صباح الغد
+# text-en: Cancel alarm for tomorrow morning
+# intent: alarm/cancel_alarm
+1	ألغي	alarm/cancel_alarm	O
+2	منبه	alarm/cancel_alarm	O
+3	صباح	alarm/cancel_alarm	B-datetime
+4	الغد	alarm/cancel_alarm	I-datetime
+
+# id: 84
+# text: عرض جميع التذكيرات لصباح الغد
+# text-en: show all reminders for tomorrow morning
+# intent: reminder/show_reminders
+1	عرض	reminder/show_reminders	O
+2	جميع	reminder/show_reminders	O
+3	التذكيرات	reminder/show_reminders	O
+4	لصباح	reminder/show_reminders	B-datetime
+5	الغد	reminder/show_reminders	I-datetime
+
+# id: 85
+# text: ما هي الرطوبة اليوم ؟
+# text-en: What is the humidity today?
+# intent: weather/find
+1	ما	weather/find	O
+2	هي	weather/find	O
+3	الرطوبة	weather/find	B-weather/attribute
+4	اليوم	weather/find	B-datetime
+5	؟	weather/find	O
+
+# id: 86
+# text: متى ستمطر ؟
+# text-en: When is it going to rain?
+# intent: weather/find
+1	متى	weather/find	O
+2	ستمطر	weather/find	B-weather/attribute
+3	؟	weather/find	O
+
+# id: 87
+# text: كم الحرارة
+# text-en: How hot is it
+# intent: weather/find
+1	كم	weather/find	O
+2	الحرارة	weather/find	B-weather/attribute
+
+# id: 88
+# text: أرني كل التذكيرات الخاصة بي
+# text-en: show me my reminders
+# intent: reminder/show_reminders
+1	أرني	reminder/show_reminders	O
+2	كل	reminder/show_reminders	O
+3	التذكيرات	reminder/show_reminders	O
+4	الخاصة	reminder/show_reminders	B-reference
+5	بي	reminder/show_reminders	I-reference
+
+# id: 89
+# text: ما هي التوقعات الجوية ل 5 أيام ؟
+# text-en: What is the 5 day forecast?
+# intent: weather/find
+1	ما	weather/find	O
+2	هي	weather/find	O
+3	التوقعات	weather/find	O
+4	الجوية	weather/find	O
+5	ل	weather/find	O
+6	5	weather/find	B-datetime
+7	أيام	weather/find	I-datetime
+8	؟	weather/find	O
+
+# id: 90
+# text: اضبط منبه الساعة 6 صباحًا
+# text-en: set alarm for 6 am
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	منبه	alarm/set_alarm	O
+3	الساعة	alarm/set_alarm	B-datetime
+4	6	alarm/set_alarm	I-datetime
+5	صباحًا	alarm/set_alarm	I-datetime
+
+# id: 91
+# text: هل الجو بارد اليوم ؟
+# text-en: Is it cold today?
+# intent: weather/find
+1	هل	weather/find	O
+2	الجو	weather/find	O
+3	بارد	weather/find	B-weather/attribute
+4	اليوم	weather/find	B-datetime
+5	؟	weather/find	O
+
+# id: 92
+# text: أضف تذكير للاتصال بمدرستي يوم الاثنين الساعة 4 مساءً
+# text-en: Set a reminder to call my school on Monday at 4 PM
+# intent: reminder/set_reminder
+1	أضف	reminder/set_reminder	O
+2	تذكير	reminder/set_reminder	O
+3	للاتصال	reminder/set_reminder	B-reminder/todo
+4	بمدرستي	reminder/set_reminder	I-reminder/todo
+5	يوم	reminder/set_reminder	B-datetime
+6	الاثنين	reminder/set_reminder	I-datetime
+7	الساعة	reminder/set_reminder	I-datetime
+8	4	reminder/set_reminder	I-datetime
+9	مساءً	reminder/set_reminder	I-datetime
+
+# id: 93
+# text: احذف تذكيرى لالتقاط باتريك من المدرسة غدا .
+# text-en: Delete my reminder for picking up Patrick from school tomorrow.
+# intent: reminder/cancel_reminder
+1	احذف	reminder/cancel_reminder	O
+2	تذكيرى	reminder/cancel_reminder	B-reference-part
+3	لالتقاط	reminder/cancel_reminder	B-reminder/todo
+4	باتريك	reminder/cancel_reminder	I-reminder/todo
+5	من	reminder/cancel_reminder	I-reminder/todo
+6	المدرسة	reminder/cancel_reminder	I-reminder/todo
+7	غدا	reminder/cancel_reminder	B-datetime
+8	.	reminder/cancel_reminder	O
+
+# id: 94
+# text: كم سيكون الطقس بارد في الصباح ؟
+# text-en: How cold will it be in the morning?
+# intent: weather/find
+1	كم	weather/find	O
+2	سيكون	weather/find	O
+3	الطقس	weather/find	O
+4	بارد	weather/find	B-weather/attribute
+5	في	weather/find	O
+6	الصباح	weather/find	B-datetime
+7	؟	weather/find	O
+
+# id: 95
+# text: هل أحتاج لمظلة غدا
+# text-en: do i need an umbrella tomorrow
+# intent: weather/find
+1	هل	weather/find	O
+2	أحتاج	weather/find	O
+3	لمظلة	weather/find	B-weather/attribute
+4	غدا	weather/find	B-datetime
+
+# id: 96
+# text: إعرض تذكيري
+# text-en: Show my reminder
+# intent: reminder/show_reminders
+1	إعرض	reminder/show_reminders	O
+2	تذكيري	reminder/show_reminders	B-reference-part
+
+# id: 97
+# text: أطفئ منبه الساعة 6 : 00 صباحًا
+# text-en: Stop alarm for 6:00 am
+# intent: alarm/cancel_alarm
+1	أطفئ	alarm/cancel_alarm	O
+2	منبه	alarm/cancel_alarm	O
+3	الساعة	alarm/cancel_alarm	O
+4	6	alarm/cancel_alarm	B-datetime
+5	:	alarm/cancel_alarm	I-datetime
+6	00	alarm/cancel_alarm	I-datetime
+7	صباحًا	alarm/cancel_alarm	I-datetime
+
+# id: 98
+# text: إلغي كل المنبهات
+# text-en: Cancel all alarms
+# intent: alarm/cancel_alarm
+1	إلغي	alarm/cancel_alarm	O
+2	كل	alarm/cancel_alarm	B-reference
+3	المنبهات	alarm/cancel_alarm	O
+
+# id: 99
+# text: هل سيكون الجو مشمس اليوم ؟
+# text-en: Will it be sunny today?
+# intent: weather/find
+1	هل	weather/find	O
+2	سيكون	weather/find	O
+3	الجو	weather/find	O
+4	مشمس	weather/find	B-weather/attribute
+5	اليوم	weather/find	B-datetime
+6	؟	weather/find	O
+
+# id: 100
+# text: ما هو الطقس في لندن ؟
+# text-en: what is the weather in london?
+# intent: weather/find
+1	ما	weather/find	O
+2	هو	weather/find	O
+3	الطقس	weather/find	O
+4	في	weather/find	O
+5	لندن	weather/find	B-location
+6	؟	weather/find	O
+
+# id: 101
+# text: ما هي تذكيراتي ؟
+# text-en: What are my reminders?
+# intent: reminder/show_reminders
+1	ما	reminder/show_reminders	O
+2	هي	reminder/show_reminders	O
+3	تذكيراتي	reminder/show_reminders	B-reference-part
+4	؟	reminder/show_reminders	O
+
+# id: 102
+# text: إلغاء تذكيري بمراسلة أبي
+# text-en: Cancel my reminder to text Dad
+# intent: reminder/cancel_reminder
+1	إلغاء	reminder/cancel_reminder	O
+2	تذكيري	reminder/cancel_reminder	B-reference-part
+3	بمراسلة	reminder/cancel_reminder	B-reminder/todo
+4	أبي	reminder/cancel_reminder	I-reminder/todo
+
+# id: 103
+# text: اضبط منبه الساعة 6 صباحًا
+# text-en: set alarm for 6 am
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	منبه	alarm/set_alarm	O
+3	الساعة	alarm/set_alarm	B-datetime
+4	6	alarm/set_alarm	I-datetime
+5	صباحًا	alarm/set_alarm	I-datetime
+
+# id: 104
+# text: أطفئ المنبه
+# text-en: turn off the alarm
+# intent: alarm/cancel_alarm
+1	أطفئ	alarm/cancel_alarm	O
+2	المنبه	alarm/cancel_alarm	O
+
+# id: 105
+# text: إلغي المنبه
+# text-en: cancel the alarm
+# intent: alarm/cancel_alarm
+1	إلغي	alarm/cancel_alarm	O
+2	المنبه	alarm/cancel_alarm	O
+
+# id: 106
+# text: أطفئ المنبه
+# text-en: turn off alarm
+# intent: alarm/cancel_alarm
+1	أطفئ	alarm/cancel_alarm	O
+2	المنبه	alarm/cancel_alarm	O
+
+# id: 107
+# text: ذكرني بالاتصال بأمي اليوم الساعة 2 مساءً .
+# text-en: remind me to call mom today at 2 p.m.
+# intent: reminder/set_reminder
+1	ذكرني	reminder/set_reminder	O
+2	بالاتصال	reminder/set_reminder	B-reminder/todo
+3	بأمي	reminder/set_reminder	I-reminder/todo
+4	اليوم	reminder/set_reminder	B-datetime
+5	الساعة	reminder/set_reminder	I-datetime
+6	2	reminder/set_reminder	I-datetime
+7	مساءً	reminder/set_reminder	I-datetime
+8	.	reminder/set_reminder	O
+
+# id: 108
+# text: إلغي كل المنبهات
+# text-en: cancel all alarms
+# intent: alarm/cancel_alarm
+1	إلغي	alarm/cancel_alarm	O
+2	كل	alarm/cancel_alarm	B-reference
+3	المنبهات	alarm/cancel_alarm	O
+
+# id: 109
+# text: هل سيكون الطقس حار غدا
+# text-en: is it going to be hot tomorrow
+# intent: weather/find
+1	هل	weather/find	O
+2	سيكون	weather/find	O
+3	الطقس	weather/find	O
+4	حار	weather/find	B-weather/attribute
+5	غدا	weather/find	B-datetime
+
+# id: 110
+# text: هل الجو بارد اليوم ؟
+# text-en: is it cold out today?
+# intent: weather/find
+1	هل	weather/find	O
+2	الجو	weather/find	O
+3	بارد	weather/find	B-weather/attribute
+4	اليوم	weather/find	B-datetime
+5	؟	weather/find	O
+
+# id: 111
+# text: اضبط المنبه على الساعة 5 مساء اليوم
+# text-en: Set alarm for 5 pm tonight
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	المنبه	alarm/set_alarm	O
+3	على	alarm/set_alarm	O
+4	الساعة	alarm/set_alarm	O
+5	5	alarm/set_alarm	B-datetime
+6	مساء	alarm/set_alarm	I-datetime
+7	اليوم	alarm/set_alarm	I-datetime
+
+# id: 112
+# text: هل ستمطر في نهاية هذا الأسبوع ؟
+# text-en: Will it rain this weekend?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستمطر	weather/find	B-weather/attribute
+3	في	weather/find	O
+4	نهاية	weather/find	B-datetime
+5	هذا	weather/find	I-datetime
+6	الأسبوع	weather/find	I-datetime
+7	؟	weather/find	O
+
+# id: 113
+# text: هل ستمطر اليوم
+# text-en: is it going to rain today
+# intent: weather/find
+1	هل	weather/find	O
+2	ستمطر	weather/find	B-weather/attribute
+3	اليوم	weather/find	B-datetime
+
+# id: 114
+# text: اضبط منبه يوم الاثنين الساعة 3 صباحًا
+# text-en: set an alarm for monday at 3 am
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	منبه	alarm/set_alarm	O
+3	يوم	alarm/set_alarm	B-datetime
+4	الاثنين	alarm/set_alarm	I-datetime
+5	الساعة	alarm/set_alarm	I-datetime
+6	3	alarm/set_alarm	I-datetime
+7	صباحًا	alarm/set_alarm	I-datetime
+
+# id: 115
+# text: قم بتفعيل المنبه
+# text-en: alarm on
+# intent: alarm/set_alarm
+1	قم	alarm/set_alarm	O
+2	بتفعيل	alarm/set_alarm	O
+3	المنبه	alarm/set_alarm	O
+
+# id: 116
+# text: هل ستمطر يوم السبت ؟
+# text-en: Is it going to rain on Saturday?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستمطر	weather/find	B-weather/attribute
+3	يوم	weather/find	B-datetime
+4	السبت	weather/find	I-datetime
+5	؟	weather/find	O
+
+# id: 117
+# text: اضبط المنبه على الساعة 5 صباحًا
+# text-en: Set alarm for 5 am
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	المنبه	alarm/set_alarm	O
+3	على	alarm/set_alarm	O
+4	الساعة	alarm/set_alarm	O
+5	5	alarm/set_alarm	B-datetime
+6	صباحًا	alarm/set_alarm	I-datetime
+
+# id: 118
+# text: هل سأحتاج إلى معطف اليوم ؟
+# text-en: Will I need a coat today?
+# intent: weather/find
+1	هل	weather/find	O
+2	سأحتاج	weather/find	O
+3	إلى	weather/find	O
+4	معطف	weather/find	B-weather/attribute
+5	اليوم	weather/find	B-datetime
+6	؟	weather/find	O
+
+# id: 119
+# text: أطفئ المنبه
+# text-en: turn off alarm
+# intent: alarm/cancel_alarm
+1	أطفئ	alarm/cancel_alarm	O
+2	المنبه	alarm/cancel_alarm	O
+
+# id: 120
+# text: ما هي تحذيرات الطقس لدي ؟
+# text-en: What weather warnings do I have?
+# intent: weather/find
+1	ما	weather/find	O
+2	هي	weather/find	O
+3	تحذيرات	weather/find	O
+4	الطقس	weather/find	O
+5	لدي	weather/find	O
+6	؟	weather/find	O
+
+# id: 121
+# text: إلغاء التذكير عن الاجتماع في النزل
+# text-en: Cancel the reminder for the meeting at the lodge
+# intent: reminder/cancel_reminder
+1	إلغاء	reminder/cancel_reminder	O
+2	التذكير	reminder/cancel_reminder	O
+3	عن	reminder/cancel_reminder	O
+4	الاجتماع	reminder/cancel_reminder	B-reminder/todo
+5	في	reminder/cancel_reminder	I-reminder/todo
+6	النزل	reminder/cancel_reminder	I-reminder/todo
+
+# id: 122
+# text: هل يجب علي ارتداء معطف اليوم
+# text-en: Should I wear a coat today
+# intent: weather/find
+1	هل	weather/find	O
+2	يجب	weather/find	O
+3	علي	weather/find	O
+4	ارتداء	weather/find	O
+5	معطف	weather/find	B-weather/attribute
+6	اليوم	weather/find	B-datetime
+
+# id: 123
+# text: قم بإيقاف جميع المنبهات .
+# text-en: Turn off all alarms.
+# intent: alarm/cancel_alarm
+1	قم	alarm/cancel_alarm	O
+2	بإيقاف	alarm/cancel_alarm	O
+3	جميع	alarm/cancel_alarm	B-reference
+4	المنبهات	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# id: 124
+# text: إعرض كل المنبهات
+# text-en: show all alarms
+# intent: alarm/show_alarms
+1	إعرض	alarm/show_alarms	O
+2	كل	alarm/show_alarms	B-reference
+3	المنبهات	alarm/show_alarms	O
+
+# id: 125
+# text: اضبط منبه ليوم الخميس الساعة 1 مساءً
+# text-en: Make a new alarm for Thursday at 1pm.
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	منبه	alarm/set_alarm	O
+3	ليوم	alarm/set_alarm	B-datetime
+4	الخميس	alarm/set_alarm	I-datetime
+5	الساعة	alarm/set_alarm	I-datetime
+6	1	alarm/set_alarm	I-datetime
+7	مساءً	alarm/set_alarm	I-datetime
+
+# id: 126
+# text: ذكرني أن أذهب إلى طبيب الأسنان الاثنين المقبل .
+# text-en: Remind me to go to the dentist next Monday.
+# intent: reminder/set_reminder
+1	ذكرني	reminder/set_reminder	O
+2	أن	reminder/set_reminder	O
+3	أذهب	reminder/set_reminder	B-reminder/todo
+4	إلى	reminder/set_reminder	I-reminder/todo
+5	طبيب	reminder/set_reminder	I-reminder/todo
+6	الأسنان	reminder/set_reminder	I-reminder/todo
+7	الاثنين	reminder/set_reminder	B-datetime
+8	المقبل	reminder/set_reminder	I-datetime
+9	.	reminder/set_reminder	O
+
+# id: 127
+# text: هل أحضر مظلة اليوم
+# text-en: should I bring an umbrella today
+# intent: weather/find
+1	هل	weather/find	O
+2	أحضر	weather/find	O
+3	مظلة	weather/find	B-weather/attribute
+4	اليوم	weather/find	B-datetime
+
+# id: 128
+# text: كيف حال الطقس هذا الاسبوع
+# text-en: how is the weather this week?
+# intent: weather/find
+1	كيف	weather/find	O
+2	حال	weather/find	O
+3	الطقس	weather/find	O
+4	هذا	weather/find	B-datetime
+5	الاسبوع	weather/find	I-datetime
+
+# id: 129
+# text: هل الطقس أقل من درجة التجمد اليوم ؟
+# text-en: is it below freezing today?
+# intent: weather/find
+1	هل	weather/find	O
+2	الطقس	weather/find	O
+3	أقل	weather/find	B-weather/attribute
+4	من	weather/find	I-weather/attribute
+5	درجة	weather/find	I-weather/attribute
+6	التجمد	weather/find	I-weather/attribute
+7	اليوم	weather/find	B-datetime
+8	؟	weather/find	O
+
+# id: 130
+# text: حذف جميع التذكيرات
+# text-en: Delete all reminders
+# intent: reminder/cancel_reminder
+1	حذف	reminder/cancel_reminder	O
+2	جميع	reminder/cancel_reminder	B-reference
+3	التذكيرات	reminder/cancel_reminder	O
+
+# id: 131
+# text: هل ستمطر اليوم ؟
+# text-en: Is it going to rain today?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستمطر	weather/find	B-weather/attribute
+3	اليوم	weather/find	B-datetime
+4	؟	weather/find	O
+
+# id: 132
+# text: هل ستمطر في نهاية هذا الأسبوع ؟
+# text-en: Will it rain this weekend?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستمطر	weather/find	B-weather/attribute
+3	في	weather/find	O
+4	نهاية	weather/find	B-datetime
+5	هذا	weather/find	I-datetime
+6	الأسبوع	weather/find	I-datetime
+7	؟	weather/find	O
+
+# id: 133
+# text: أضف تذكير لزيارة أمي الأسبوع المقبل
+# text-en: Set reminder for mom's visit next week
+# intent: reminder/set_reminder
+1	أضف	reminder/set_reminder	O
+2	تذكير	reminder/set_reminder	O
+3	لزيارة	reminder/set_reminder	B-reminder/todo
+4	أمي	reminder/set_reminder	I-reminder/todo
+5	الأسبوع	reminder/set_reminder	B-datetime
+6	المقبل	reminder/set_reminder	I-datetime
+
+# id: 134
+# text: هل ستثلج غدًا ؟
+# text-en: Will it snow tomorrow?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستثلج	weather/find	B-weather/attribute
+3	غدًا	weather/find	B-datetime
+4	؟	weather/find	O
+
+# id: 135
+# text: إعرض كل التذكيرات
+# text-en: show all reminders
+# intent: reminder/show_reminders
+1	إعرض	reminder/show_reminders	O
+2	كل	reminder/show_reminders	B-reference
+3	التذكيرات	reminder/show_reminders	O
+
+# id: 136
+# text: هل أحتاج معطف اليوم ؟
+# text-en: Do I need a coat today?
+# intent: weather/find
+1	هل	weather/find	O
+2	أحتاج	weather/find	O
+3	معطف	weather/find	B-weather/attribute
+4	اليوم	weather/find	B-datetime
+5	؟	weather/find	O
+
+# id: 137
+# text: هل ستتساقط الثلوج يوم الخميس
+# text-en: is it going to snow thursday
+# intent: weather/find
+1	هل	weather/find	O
+2	ستتساقط	weather/find	O
+3	الثلوج	weather/find	B-weather/attribute
+4	يوم	weather/find	O
+5	الخميس	weather/find	B-datetime
+
+# id: 138
+# text: ذكرني بشراء قهوة من ستاربكس بعد ظهر اليوم
+# text-en: Remind me to buy coffee at Starbucks this afternoon
+# intent: reminder/set_reminder
+1	ذكرني	reminder/set_reminder	O
+2	بشراء	reminder/set_reminder	B-reminder/todo
+3	قهوة	reminder/set_reminder	I-reminder/todo
+4	من	reminder/set_reminder	I-reminder/todo
+5	ستاربكس	reminder/set_reminder	I-reminder/todo
+6	بعد	reminder/set_reminder	O
+7	ظهر	reminder/set_reminder	B-datetime
+8	اليوم	reminder/set_reminder	I-datetime
+
+# id: 139
+# text: اضبط منبه لكل عشر دقائق , بدءاً من الساعة 5 : 30 حتى الساعة 6 صباحًا .
+# text-en: Set an alarm for every ten minutes, starting at 5:30 and ending at 6 am.
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	منبه	alarm/set_alarm	O
+3	لكل	alarm/set_alarm	B-recurring_datetime
+4	عشر	alarm/set_alarm	I-recurring_datetime
+5	دقائق	alarm/set_alarm	I-recurring_datetime
+6	,	alarm/set_alarm	I-recurring_datetime
+7	بدءاً	alarm/set_alarm	I-recurring_datetime
+8	من	alarm/set_alarm	I-recurring_datetime
+9	الساعة	alarm/set_alarm	I-recurring_datetime
+10	5	alarm/set_alarm	I-recurring_datetime
+11	:	alarm/set_alarm	I-recurring_datetime
+12	30	alarm/set_alarm	I-recurring_datetime
+13	حتى	alarm/set_alarm	I-recurring_datetime
+14	الساعة	alarm/set_alarm	I-recurring_datetime
+15	6	alarm/set_alarm	I-recurring_datetime
+16	صباحًا	alarm/set_alarm	I-recurring_datetime
+17	.	alarm/set_alarm	O
+
+# id: 140
+# text: هل ستمطر يوم السبت ؟
+# text-en: Is it going to rain on Saturday?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستمطر	weather/find	B-weather/attribute
+3	يوم	weather/find	B-datetime
+4	السبت	weather/find	I-datetime
+5	؟	weather/find	O
+
+# id: 141
+# text: اضبط المنبه على 7 : 20 صباحًا لإطلاق الحذاء .
+# text-en: Set eh alarm to 7:20am for the shoe release.
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	المنبه	alarm/set_alarm	O
+3	على	alarm/set_alarm	O
+4	7	alarm/set_alarm	B-datetime
+5	:	alarm/set_alarm	I-datetime
+6	20	alarm/set_alarm	I-datetime
+7	صباحًا	alarm/set_alarm	I-datetime
+8	لإطلاق	alarm/set_alarm	B-reminder/todo
+9	الحذاء	alarm/set_alarm	I-reminder/todo
+10	.	alarm/set_alarm	O
+
+# id: 142
+# text: هل ستكون هناك عواصف في برودنتاون اليوم
+# text-en: Will there be storms in Bordentown today
+# intent: weather/find
+1	هل	weather/find	O
+2	ستكون	weather/find	O
+3	هناك	weather/find	O
+4	عواصف	weather/find	B-weather/attribute
+5	في	weather/find	O
+6	برودنتاون	weather/find	B-location
+7	اليوم	weather/find	B-datetime
+
+# id: 143
+# text: ما هي درجة الحرارة الحالية
+# text-en: what is the current temperature
+# intent: weather/find
+1	ما	weather/find	O
+2	هي	weather/find	O
+3	درجة	weather/find	B-weather/attribute
+4	الحرارة	weather/find	I-weather/attribute
+5	الحالية	weather/find	B-datetime
+
+# id: 144
+# text: ذكرني بإعداد غداء دان الساعة 7:30 صباحًا غدًا .
+# text-en: remind me to make Dan's lunch at 7:30am tomorrow.
+# intent: reminder/set_reminder
+1	ذكرني	reminder/set_reminder	O
+2	بإعداد	reminder/set_reminder	B-reminder/todo
+3	غداء	reminder/set_reminder	I-reminder/todo
+4	دان	reminder/set_reminder	I-reminder/todo
+5	الساعة	reminder/set_reminder	O
+6	7	reminder/set_reminder	B-datetime
+7	:	reminder/set_reminder	I-datetime
+8	30	reminder/set_reminder	I-datetime
+9	صباحًا	reminder/set_reminder	I-datetime
+10	غدًا	reminder/set_reminder	I-datetime
+11	.	reminder/set_reminder	O
+
+# id: 145
+# text: اضبط المنبه على الساعة 6:30 صباحًا غدًا .
+# text-en: Set alarm for 6:30am tomorrow.
+# intent: alarm/set_alarm
+1	اضبط	alarm/set_alarm	O
+2	المنبه	alarm/set_alarm	O
+3	على	alarm/set_alarm	O
+4	الساعة	alarm/set_alarm	O
+5	6	alarm/set_alarm	B-datetime
+6	:	alarm/set_alarm	I-datetime
+7	30	alarm/set_alarm	I-datetime
+8	صباحًا	alarm/set_alarm	I-datetime
+9	غدًا	alarm/set_alarm	I-datetime
+10	.	alarm/set_alarm	O
+
+# id: 146
+# text: هل لدي أي تذكير معين ؟
+# text-en: Do I have any reminders set?
+# intent: reminder/show_reminders
+1	هل	reminder/show_reminders	O
+2	لدي	reminder/show_reminders	O
+3	أي	reminder/show_reminders	O
+4	تذكير	reminder/show_reminders	O
+5	معين	reminder/show_reminders	O
+6	؟	reminder/show_reminders	O
+
+# id: 147
+# text: هل موعدي لطبيب الأسنان في تذكيراتي ؟
+# text-en: Is my dentist appointment in my reminder ?
+# intent: reminder/show_reminders
+1	هل	reminder/show_reminders	O
+2	موعدي	reminder/show_reminders	B-reminder/todo
+3	لطبيب	reminder/show_reminders	I-reminder/todo
+4	الأسنان	reminder/show_reminders	I-reminder/todo
+5	في	reminder/show_reminders	O
+6	تذكيراتي	reminder/show_reminders	B-reference-part
+7	؟	reminder/show_reminders	O
+
+# id: 148
+# text: متى تتوقف الأمطار ؟
+# text-en: when will it stop raining?
+# intent: weather/find
+1	متى	weather/find	O
+2	تتوقف	weather/find	O
+3	الأمطار	weather/find	B-weather/attribute
+4	؟	weather/find	O
+
+# id: 149
+# text: هل ستثلج هذا الأسبوع ؟
+# text-en: Is it going to snow this week?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستثلج	weather/find	B-weather/attribute
+3	هذا	weather/find	B-datetime
+4	الأسبوع	weather/find	I-datetime
+5	؟	weather/find	O
+
+# id: 150
+# text: أطفئ المنبه
+# text-en: turn off alarm
+# intent: alarm/cancel_alarm
+1	أطفئ	alarm/cancel_alarm	O
+2	المنبه	alarm/cancel_alarm	O
+
+# id: 151
+# text: سأعطي Half a life 3 من 6
+# text-en: I would give Half a Life 3 out of 6
+# intent: RateBook
+1	سأعطي	RateBook	O
+2	Half	RateBook	B-object_name
+3	a	RateBook	I-object_name
+4	life	RateBook	I-object_name
+5	3	RateBook	B-rating_value
+6	من	RateBook	O
+7	6	RateBook	B-best_rating
+
+# id: 152
+# text: شغِّل Mf Doom من الستينات على Pandora .
+# text-en: Play some Mf Doom from the sixties on pandora .
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	Mf	PlayMusic	B-artist
+3	Doom	PlayMusic	I-artist
+4	من	PlayMusic	O
+5	الستينات	PlayMusic	B-datetime
+6	على	PlayMusic	O
+7	Pandora	PlayMusic	B-service
+8	.	PlayMusic	O
+
+# id: 153
+# text: ابحث عن مسلسل Chasing Fortune .
+# text-en: Search for Chasing Fortune a TV series .
+# intent: SearchCreativeWork
+1	ابحث	SearchCreativeWork	O
+2	عن	SearchCreativeWork	O
+3	مسلسل	SearchCreativeWork	B-object_type
+4	Chasing	SearchCreativeWork	B-object_name
+5	Fortune	SearchCreativeWork	I-object_name
+6	.	SearchCreativeWork	O
+
+# id: 154
+# text: شغِّل Shadowplay من Dana على Deezer .
+# text-en: Play shadowplay by Dana on Deezer .
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	Shadowplay	PlayMusic	B-track
+3	من	PlayMusic	O
+4	Dana	PlayMusic	B-artist
+5	على	PlayMusic	O
+6	Deezer	PlayMusic	B-service
+7	.	PlayMusic	O
+
+# id: 155
+# text: أنا وإيميلدا نريد حجزًا في ميسوري الساعة السابعة صباحًا
+# text-en: me and imelda want a reservation in Missouri at seven am
+# intent: BookRestaurant
+1	أنا	BookRestaurant	B-party_size_description
+2	وإيميلدا	BookRestaurant	I-party_size_description
+3	نريد	BookRestaurant	O
+4	حجزًا	BookRestaurant	O
+5	في	BookRestaurant	O
+6	ميسوري	BookRestaurant	B-location
+7	الساعة	BookRestaurant	O
+8	السابعة	BookRestaurant	B-datetime
+9	صباحًا	BookRestaurant	I-datetime
+
+# id: 156
+# text: أضف Bob Klose إلى la mejor música para tus fiestas
+# text-en: add bob klose to la mejor música para tus fiestas
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	Bob	AddToPlaylist	B-artist
+3	Klose	AddToPlaylist	I-artist
+4	إلى	AddToPlaylist	O
+5	la	AddToPlaylist	B-playlist
+6	mejor	AddToPlaylist	I-playlist
+7	música	AddToPlaylist	I-playlist
+8	para	AddToPlaylist	I-playlist
+9	tus	AddToPlaylist	I-playlist
+10	fiestas	AddToPlaylist	I-playlist
+
+# id: 157
+# text: شغِّل Luis Alfonzo Larrain من 1995
+# text-en: play Luis Alfonzo Larrain from 1995
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	Luis	PlayMusic	B-artist
+3	Alfonzo	PlayMusic	I-artist
+4	Larrain	PlayMusic	I-artist
+5	من	PlayMusic	O
+6	1995	PlayMusic	B-datetime
+
+# id: 158
+# text: كيف سيكون الطقس في جزر البهاما إحدى عشرة سنة ونصف من الآن
+# text-en: What will the weather be like in the Bahamas eleven years and a half from now
+# intent: weather/find
+1	كيف	weather/find	O
+2	سيكون	weather/find	O
+3	الطقس	weather/find	O
+4	في	weather/find	O
+5	جزر	weather/find	B-location
+6	البهاما	weather/find	I-location
+7	إحدى	weather/find	B-datetime
+8	عشرة	weather/find	I-datetime
+9	سنة	weather/find	I-datetime
+10	ونصف	weather/find	I-datetime
+11	من	weather/find	I-datetime
+12	الآن	weather/find	I-datetime
+
+# id: 159
+# text: كيف سيكون الطقس في اريزونا في الثالث من أكتوبر
+# text-en: What will the weather be like in Arizona on october the 3rd
+# intent: weather/find
+1	كيف	weather/find	O
+2	سيكون	weather/find	O
+3	الطقس	weather/find	O
+4	في	weather/find	O
+5	اريزونا	weather/find	B-location
+6	في	weather/find	O
+7	الثالث	weather/find	B-datetime
+8	من	weather/find	I-datetime
+9	أكتوبر	weather/find	I-datetime
+
+# id: 160
+# text: شغِّل موسيقى الاوبرا على Google Music
+# text-en: Play opera music on google music
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	موسيقى	PlayMusic	B-genre
+3	الاوبرا	PlayMusic	I-genre
+4	على	PlayMusic	O
+5	Google	PlayMusic	B-service
+6	Music	PlayMusic	I-service
+
+# id: 161
+# text: ابحث عن Vegucated ابتداء من الساعة 0 مساء
+# text-en: find Vegucated starting at zero pm
+# intent: SearchScreeningEvent
+1	ابحث	SearchScreeningEvent	O
+2	عن	SearchScreeningEvent	O
+3	Vegucated	SearchScreeningEvent	B-movie_name
+4	ابتداء	SearchScreeningEvent	O
+5	من	SearchScreeningEvent	O
+6	الساعة	SearchScreeningEvent	O
+7	0	SearchScreeningEvent	B-datetime
+8	مساء	SearchScreeningEvent	I-datetime
+
+# id: 162
+# text: أعطي الرواية الحالية تقييم 3 من 6
+# text-en: Give the current novel a 3 out of 6 rating
+# intent: RateBook
+1	أعطي	RateBook	O
+2	الرواية	RateBook	B-object_type
+3	الحالية	RateBook	B-object_select
+4	تقييم	RateBook	O
+5	3	RateBook	B-rating_value
+6	من	RateBook	O
+7	6	RateBook	B-best_rating
+
+# id: 163
+# text: أود إضافة هذا الألبوم إلى funtime .
+# text-en: I'd like to add this album to funtime .
+# intent: AddToPlaylist
+1	أود	AddToPlaylist	O
+2	إضافة	AddToPlaylist	O
+3	هذا	AddToPlaylist	O
+4	الألبوم	AddToPlaylist	B-music_item
+5	إلى	AddToPlaylist	O
+6	funtime	AddToPlaylist	B-playlist
+7	.	AddToPlaylist	O
+
+# id: 164
+# text: أحتاج إلى طاولة لـ 4 في مطعم حوالي الساعة 0 صباحًا .
+# text-en: I need a table for 4 at a restaurant around 0 AM .
+# intent: BookRestaurant
+1	أحتاج	BookRestaurant	O
+2	إلى	BookRestaurant	O
+3	طاولة	BookRestaurant	O
+4	لـ	BookRestaurant	O
+5	4	BookRestaurant	B-party_size_number
+6	في	BookRestaurant	O
+7	مطعم	BookRestaurant	B-restaurant_type
+8	حوالي	BookRestaurant	O
+9	الساعة	BookRestaurant	O
+10	0	BookRestaurant	B-datetime
+11	صباحًا	BookRestaurant	I-datetime
+12	.	BookRestaurant	O
+
+# id: 165
+# text: ابحث عن فيلم Louder than Bombs
+# text-en: find the picture Louder Than Bombs
+# intent: SearchCreativeWork
+1	ابحث	SearchCreativeWork	O
+2	عن	SearchCreativeWork	O
+3	فيلم	SearchCreativeWork	B-object_type
+4	Louder	SearchCreativeWork	B-object_name
+5	than	SearchCreativeWork	I-object_name
+6	Bombs	SearchCreativeWork	I-object_name
+
+# id: 166
+# text: أعطي 2 من 6 نقاط لـ A Tale of Time City
+# text-en: Give 2 out of 6 points to A Tale of Time City
+# intent: RateBook
+1	أعطي	RateBook	O
+2	2	RateBook	B-rating_value
+3	من	RateBook	O
+4	6	RateBook	B-best_rating
+5	نقاط	RateBook	B-rating_unit
+6	لـ	RateBook	O
+7	A	RateBook	B-object_name
+8	Tale	RateBook	I-object_name
+9	of	RateBook	I-object_name
+10	Time	RateBook	I-object_name
+11	City	RateBook	I-object_name
+
+# id: 167
+# text: أعطي الكتاب الحالي خمس نجوم
+# text-en: add this current book five stars
+# intent: RateBook
+1	أعطي	RateBook	O
+2	الكتاب	RateBook	B-object_type
+3	الحالي	RateBook	B-object_select
+4	خمس	RateBook	B-rating_value
+5	نجوم	RateBook	B-rating_unit
+
+# id: 168
+# text: أضف أغنية السبعينات الى Smash Hits
+# text-en: add track 70s smash hits to my
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	أغنية	AddToPlaylist	B-music_item
+3	السبعينات	AddToPlaylist	B-playlist
+4	الى	AddToPlaylist	O
+5	Smash	AddToPlaylist	B-playlist
+6	Hits	AddToPlaylist	I-playlist
+
+# id: 169
+# text: احجز بالقرب من مونتانا مطعم ذو تقييم عال يقدم المأكولات السريلانكية لـ 6 أفراد يوم الثلاثاء.
+# text-en: book near Montana restaurant serving sri lankan food for 6 that is highly rated on tues.
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	بالقرب	BookRestaurant	B-location
+3	من	BookRestaurant	O
+4	مونتانا	BookRestaurant	B-location
+5	مطعم	BookRestaurant	B-restaurant_type
+6	ذو	BookRestaurant	B-sort
+7	تقييم	BookRestaurant	I-sort
+8	عال	BookRestaurant	I-sort
+9	يقدم	BookRestaurant	O
+10	المأكولات	BookRestaurant	O
+11	السريلانكية	BookRestaurant	B-cuisine
+12	لـ	BookRestaurant	O
+13	6	BookRestaurant	B-party_size_number
+14	أفراد	BookRestaurant	O
+15	يوم	BookRestaurant	B-datetime
+16	الثلاثاء	BookRestaurant	I-datetime
+17	.	BookRestaurant	O
+
+# id: 170
+# text: احجز لي مأدبة غداء في Boreas لحفلة مكونة من 8 أفراد
+# text-en: Book me a lunch at Boreas for a party of 8
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	لي	BookRestaurant	O
+3	مأدبة	BookRestaurant	O
+4	غداء	BookRestaurant	B-datetime
+5	في	BookRestaurant	O
+6	Boreas	BookRestaurant	B-restaurant_name
+7	لحفلة	BookRestaurant	O
+8	مكونة	BookRestaurant	O
+9	من	BookRestaurant	O
+10	8	BookRestaurant	B-party_size_number
+11	أفراد	BookRestaurant	O
+
+# id: 171
+# text: أضف لحن آخر الى قائمة غسيل الملابس من فضلك.
+# text-en: Please put another tune into the laundry playlist.
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	لحن	AddToPlaylist	B-music_item
+3	آخر	AddToPlaylist	O
+4	الى	AddToPlaylist	O
+5	قائمة	AddToPlaylist	O
+6	غسيل	AddToPlaylist	B-playlist
+7	الملابس	AddToPlaylist	I-playlist
+8	من	AddToPlaylist	O
+9	فضلك	AddToPlaylist	O
+10	.	AddToPlaylist	O
+
+# id: 172
+# text: ما هي توقعات PW للطقس العاصف
+# text-en: what is the PW forecast for stormy weather
+# intent: weather/find
+1	ما	weather/find	O
+2	هي	weather/find	O
+3	توقعات	weather/find	O
+4	PW	weather/find	B-location
+5	للطقس	weather/find	O
+6	العاصف	weather/find	B-condition_description
+
+# id: 173
+# text: ما هو الطقس المتوقع لموقعي الحالي الشهر المقبل ؟
+# text-en: What is the predicted weather for my current spot next month ?
+# intent: weather/find
+1	ما	weather/find	O
+2	هو	weather/find	O
+3	الطقس	weather/find	O
+4	المتوقع	weather/find	O
+5	لموقعي	weather/find	B-location
+6	الحالي	weather/find	I-location
+7	الشهر	weather/find	B-datetime
+8	المقبل	weather/find	I-datetime
+9	؟	weather/find	O
+
+# id: 174
+# text: احجز حجزًا لشخص واحد في 17 مارس
+# text-en: Book a reservation for 1 on march 17
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	حجزًا	BookRestaurant	O
+3	لشخص	BookRestaurant	O
+4	واحد	BookRestaurant	B-party_size_number
+5	في	BookRestaurant	O
+6	17	BookRestaurant	B-datetime
+7	مارس	BookRestaurant	I-datetime
+
+# id: 175
+# text: الألبوم الحالي يحصل على ثلاث من 6 نقاط
+# text-en: The current album gets three out of 6 points
+# intent: RateBook
+1	الألبوم	RateBook	B-object_type
+2	الحالي	RateBook	B-object_select
+3	يحصل	RateBook	O
+4	على	RateBook	O
+5	ثلاث	RateBook	B-rating_value
+6	من	RateBook	O
+7	6	RateBook	B-best_rating
+8	نقاط	RateBook	B-rating_unit
+
+# id: 176
+# text: أضف أغنية Nastya Kamenskih إلى قائمة The Martin Garrix Show.
+# text-en: Add the Nastya Kamenskih song to my The Martin Garrix Show playlist.
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	أغنية	AddToPlaylist	B-music_item
+3	Nastya	AddToPlaylist	B-artist
+4	Kamenskih	AddToPlaylist	I-artist
+5	إلى	AddToPlaylist	O
+6	قائمة	AddToPlaylist	O
+7	The	AddToPlaylist	B-playlist
+8	Martin	AddToPlaylist	I-playlist
+9	Garrix	AddToPlaylist	I-playlist
+10	Show	AddToPlaylist	I-playlist
+11	.	AddToPlaylist	O
+
+# id: 177
+# text: أتمنى أن أسمع ألبوم Since I Saw You Last
+# text-en: Wish to hear the album Since I Saw You Last
+# intent: SearchCreativeWork
+1	أتمنى	SearchCreativeWork	O
+2	أن	SearchCreativeWork	O
+3	أسمع	SearchCreativeWork	O
+4	ألبوم	SearchCreativeWork	B-object_type
+5	Since	SearchCreativeWork	B-object_name
+6	I	SearchCreativeWork	I-object_name
+7	Saw	SearchCreativeWork	I-object_name
+8	You	SearchCreativeWork	I-object_name
+9	Last	SearchCreativeWork	I-object_name
+
+# id: 178
+# text: شغِّل أفضل أغاني Joseph Utsler
+# text-en: play top tunes by Joseph Utsler
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	أفضل	PlayMusic	B-sort
+3	أغاني	PlayMusic	O
+4	Joseph	PlayMusic	B-artist
+5	Utsler	PlayMusic	I-artist
+
+# id: 179
+# text: ابحث عن الجدول الزمني لـ Ghost World .
+# text-en: Find the schedule for Ghost World .
+# intent: SearchScreeningEvent
+1	ابحث	SearchScreeningEvent	O
+2	عن	SearchScreeningEvent	O
+3	الجدول	SearchScreeningEvent	B-object_type
+4	الزمني	SearchScreeningEvent	I-object_type
+5	لـ	SearchScreeningEvent	O
+6	Ghost	SearchScreeningEvent	B-movie_name
+7	World	SearchScreeningEvent	I-movie_name
+8	.	SearchScreeningEvent	O
+
+# id: 180
+# text: أريد الاستماع إلى حفل موسيقي لـ Timour Moutsouraev .
+# text-en: I want to listen to a concerto from Timour Moutsouraev .
+# intent: PlayMusic
+1	أريد	PlayMusic	O
+2	الاستماع	PlayMusic	O
+3	إلى	PlayMusic	O
+4	حفل	PlayMusic	O
+5	موسيقي	PlayMusic	B-music_item
+6	لـ	PlayMusic	O
+7	Timour	PlayMusic	B-artist
+8	Moutsouraev	PlayMusic	I-artist
+9	.	PlayMusic	O
+
+# id: 181
+# text: شغِّل ألبوم Everybody Happy لـ Lee Aaron
+# text-en: play the album Everybody Happy by Lee Aaron
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	ألبوم	PlayMusic	B-music_item
+3	Everybody	PlayMusic	B-album
+4	Happy	PlayMusic	I-album
+5	لـ	PlayMusic	O
+6	Lee	PlayMusic	B-artist
+7	Aaron	PlayMusic	I-artist
+
+# id: 182
+# text: شغِّل أفضل تسجيل لـ Fereydoun Farrokhzad
+# text-en: play Fereydoun Farrokhzad best track
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	أفضل	PlayMusic	B-sort
+3	تسجيل	PlayMusic	B-music_item
+4	لـ	PlayMusic	O
+5	Fereydoun	PlayMusic	B-artist
+6	Farrokhzad	PlayMusic	I-artist
+
+# id: 183
+# text: قيم الكتاب الحالي بثلاث نجوم
+# text-en: rate the current book three stars
+# intent: RateBook
+1	قيم	RateBook	O
+2	الكتاب	RateBook	B-object_type
+3	الحالي	RateBook	B-object_select
+4	بثلاث	RateBook	B-rating_value
+5	نجوم	RateBook	B-rating_unit
+
+# id: 184
+# text: ماذا سيكون الطقس في متنزه إيسلا باستيمينتوس الوطني البحري في الساعة الثانية عشرة مساءً ؟
+# text-en: What will the weather be in Meeres-Nationalpark Insel Bastimentos at twelve PM ?
+# intent: weather/find
+1	ماذا	weather/find	O
+2	سيكون	weather/find	O
+3	الطقس	weather/find	O
+4	في	weather/find	O
+5	متنزه	weather/find	B-location
+6	إيسلا	weather/find	I-location
+7	باستيمينتوس	weather/find	I-location
+8	الوطني	weather/find	I-location
+9	البحري	weather/find	I-location
+10	في	weather/find	O
+11	الساعة	weather/find	B-datetime
+12	الثانية	weather/find	I-datetime
+13	عشرة	weather/find	I-datetime
+14	مساءً	weather/find	I-datetime
+15	؟	weather/find	O
+
+# id: 185
+# text: احجز طاولة لعشرة أشخاص في مطعم يقدم الإنترنت .
+# text-en: Book a table for 10 people at a restaurant which offers internet .
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	طاولة	BookRestaurant	O
+3	لعشرة	BookRestaurant	B-party_size_number
+4	أشخاص	BookRestaurant	O
+5	في	BookRestaurant	O
+6	مطعم	BookRestaurant	B-restaurant_type
+7	يقدم	BookRestaurant	O
+8	الإنترنت	BookRestaurant	B-facility
+9	.	BookRestaurant	O
+
+# id: 186
+# text: إعطي خمس نقاط لـ The Tenor Wore Tapshoes
+# text-en: give five points to The Tenor Wore Tapshoes
+# intent: RateBook
+1	إعطي	RateBook	O
+2	خمس	RateBook	B-rating_value
+3	نقاط	RateBook	B-rating_unit
+4	لـ	RateBook	O
+5	The	RateBook	B-object_name
+6	Tenor	RateBook	I-object_name
+7	Wore	RateBook	I-object_name
+8	Tapshoes	RateBook	I-object_name
+
+# id: 187
+# text: قم بتشغيل لحن من Houston على Spotify
+# text-en: Play a tune by Houston on Spotify
+# intent: PlayMusic
+1	قم	PlayMusic	O
+2	بتشغيل	PlayMusic	O
+3	لحن	PlayMusic	B-music_item
+4	من	PlayMusic	O
+5	Houston	PlayMusic	B-artist
+6	على	PlayMusic	O
+7	Spotify	PlayMusic	B-service
+
+# id: 188
+# text: ابحث عن سينما تعرض Life and Death
+# text-en: find a movie theatre with Life and Death
+# intent: SearchScreeningEvent
+1	ابحث	SearchScreeningEvent	O
+2	عن	SearchScreeningEvent	O
+3	سينما	SearchScreeningEvent	B-object_location_type
+4	تعرض	SearchScreeningEvent	O
+5	Life	SearchScreeningEvent	B-movie_name
+6	and	SearchScreeningEvent	I-movie_name
+7	Death	SearchScreeningEvent	I-movie_name
+
+# id: 189
+# text: شغِّل الموسيقى من قائمة Get Your Mind Right
+# text-en: Play music from the playlist Get Your Mind Right
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	الموسيقى	PlayMusic	O
+3	من	PlayMusic	O
+4	قائمة	PlayMusic	O
+5	Get	PlayMusic	B-playlist
+6	Your	PlayMusic	I-playlist
+7	Mind	PlayMusic	I-playlist
+8	Right	PlayMusic	I-playlist
+
+# id: 190
+# text: احجز طاولة اليوم في مطعم لحوم يقدم الساشيمي لثمان أفراد
+# text-en: book a table today at a steakhouse for eight that serves sashimi
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	طاولة	BookRestaurant	O
+3	اليوم	BookRestaurant	B-datetime
+4	في	BookRestaurant	O
+5	مطعم	BookRestaurant	B-restaurant_type
+6	لحوم	BookRestaurant	I-restaurant_type
+7	يقدم	BookRestaurant	O
+8	الساشيمي	BookRestaurant	B-served_dish
+9	لثمان	BookRestaurant	B-party_size_number
+10	أفراد	BookRestaurant	O
+
+# id: 191
+# text: أبحث عن أفلام الرسوم المتحركة في سينمات الكاريبي
+# text-en: find animated movies at Caribbean Cinemas
+# intent: SearchScreeningEvent
+1	أبحث	SearchScreeningEvent	O
+2	عن	SearchScreeningEvent	O
+3	أفلام	SearchScreeningEvent	B-movie_type
+4	الرسوم	SearchScreeningEvent	I-movie_type
+5	المتحركة	SearchScreeningEvent	I-movie_type
+6	في	SearchScreeningEvent	O
+7	سينمات	SearchScreeningEvent	B-location
+8	الكاريبي	SearchScreeningEvent	I-location
+
+# id: 192
+# text: هل ستكون هناك عاصفة في مكان قريب
+# text-en: Will there be a storm nearby
+# intent: weather/find
+1	هل	weather/find	O
+2	ستكون	weather/find	O
+3	هناك	weather/find	O
+4	عاصفة	weather/find	B-condition_description
+5	في	weather/find	O
+6	مكان	weather/find	B-location
+7	قريب	weather/find	I-location
+
+# id: 193
+# text: شغل بعض الأغاني من الثمانينات على Spotify
+# text-en: Play some melody from the eighties on Spotify
+# intent: PlayMusic
+1	شغل	PlayMusic	O
+2	بعض	PlayMusic	O
+3	الأغاني	PlayMusic	B-music_item
+4	من	PlayMusic	O
+5	الثمانينات	PlayMusic	B-datetime
+6	على	PlayMusic	O
+7	Spotify	PlayMusic	B-service
+
+# id: 194
+# text: أين يمكنني أن أجد The World According to Paris ؟
+# text-en: Where can I find The World According to Paris ?
+# intent: SearchCreativeWork
+1	أين	SearchCreativeWork	O
+2	يمكنني	SearchCreativeWork	O
+3	أن	SearchCreativeWork	O
+4	أجد	SearchCreativeWork	O
+5	The	SearchCreativeWork	B-object_name
+6	World	SearchCreativeWork	I-object_name
+7	According	SearchCreativeWork	I-object_name
+8	to	SearchCreativeWork	I-object_name
+9	Paris	SearchCreativeWork	I-object_name
+10	؟	SearchCreativeWork	O
+
+# id: 195
+# text: أخبرني متى سيكون الطقس أكثر حرارة في الصين
+# text-en: Tell me when it will be hotter in China
+# intent: weather/find
+1	أخبرني	weather/find	O
+2	متى	weather/find	O
+3	سيكون	weather/find	O
+4	الطقس	weather/find	O
+5	أكثر	weather/find	B-condition_temperature
+6	حرارة	weather/find	I-condition_temperature
+7	في	weather/find	O
+8	الصين	weather/find	B-location
+
+# id: 196
+# text: ما هي أوقات عرض الأفلام لسينما الكاريبي؟
+# text-en: What are the movie times for the Caribbean Cinemas ?
+# intent: SearchScreeningEvent
+1	ما	SearchScreeningEvent	O
+2	هي	SearchScreeningEvent	O
+3	أوقات	SearchScreeningEvent	B-object_type
+4	عرض	SearchScreeningEvent	I-object_type
+5	الأفلام	SearchScreeningEvent	I-object_type
+6	لسينما	SearchScreeningEvent	B-location
+7	الكاريبي	SearchScreeningEvent	I-location
+8	؟	SearchScreeningEvent	O
+
+# id: 197
+# text: هل ستهدأ الرياح في موقعي الحالي بحلول وقت العشاء؟
+# text-en: Will the wind die down at my current location by supper time?
+# intent: weather/find
+1	هل	weather/find	O
+2	ستهدأ	weather/find	O
+3	الرياح	weather/find	B-condition_description
+4	في	weather/find	O
+5	موقعي	weather/find	B-location
+6	الحالي	weather/find	I-location
+7	بحلول	weather/find	O
+8	وقت	weather/find	B-datetime
+9	العشاء	weather/find	I-datetime
+10	؟	weather/find	O
+
+# id: 198
+# text: ابحث لي عن The Twinkler على National Amusements في خلال دقيقتين
+# text-en: Find me The Twinkler playing at National Amusements in 2 minutes
+# intent: SearchScreeningEvent
+1	ابحث	SearchScreeningEvent	O
+2	لي	SearchScreeningEvent	O
+3	عن	SearchScreeningEvent	O
+4	The	SearchScreeningEvent	B-movie_name
+5	Twinkler	SearchScreeningEvent	I-movie_name
+6	على	SearchScreeningEvent	O
+7	National	SearchScreeningEvent	B-location
+8	Amusements	SearchScreeningEvent	I-location
+9	في	SearchScreeningEvent	O
+10	خلال	SearchScreeningEvent	B-datetime
+11	دقيقتين	SearchScreeningEvent	I-datetime
+
+# id: 199
+# text: اعطي Hadon of Ancient Opar اثنين من اصل 6 نقاط
+# text-en: I give Hadon of Ancient Opar two out of 6 points
+# intent: RateBook
+1	اعطي	RateBook	O
+2	Hadon	RateBook	B-object_name
+3	of	RateBook	I-object_name
+4	Ancient	RateBook	I-object_name
+5	Opar	RateBook	I-object_name
+6	اثنين	RateBook	B-rating_value
+7	من	RateBook	O
+8	اصل	RateBook	O
+9	6	RateBook	B-best_rating
+10	نقاط	RateBook	B-rating_unit
+
+# id: 200
+# text: أتطلع إلى جلب شون و مارجريت و ديلا إلى مكان لتناول الطعام بالقرب من رواندا .
+# text-en: I'm looking to bring shawn, marguerite and della to a place to eat at near Rwanda .
+# intent: BookRestaurant
+1	أتطلع	BookRestaurant	O
+2	إلى	BookRestaurant	O
+3	جلب	BookRestaurant	O
+4	شون	BookRestaurant	B-party_size_description
+5	و	BookRestaurant	I-party_size_description
+6	مارجريت	BookRestaurant	I-party_size_description
+7	و	BookRestaurant	I-party_size_description
+8	ديلا	BookRestaurant	I-party_size_description
+9	إلى	BookRestaurant	O
+10	مكان	BookRestaurant	O
+11	لتناول	BookRestaurant	O
+12	الطعام	BookRestaurant	O
+13	بالقرب	BookRestaurant	B-location
+14	من	BookRestaurant	O
+15	رواندا	BookRestaurant	B-location
+16	.	BookRestaurant	O
+
+# id: 201
+# text: شغل الموسيقى على lastfm
+# text-en: Play music on Lastfm
+# intent: PlayMusic
+1	شغل	PlayMusic	O
+2	الموسيقى	PlayMusic	O
+3	على	PlayMusic	O
+4	lastfm	PlayMusic	B-service
+
+# id: 202
+# text: هل سيكون الجو مثلج في المكان الحالي بحلول 3 مارس ؟
+# text-en: Will it be snowy at the current position by March 3 ?
+# intent: weather/find
+1	هل	weather/find	O
+2	سيكون	weather/find	O
+3	الجو	weather/find	O
+4	مثلج	weather/find	B-condition_description
+5	في	weather/find	O
+6	المكان	weather/find	B-location
+7	الحالي	weather/find	I-location
+8	بحلول	weather/find	O
+9	3	weather/find	B-datetime
+10	مارس	weather/find	I-datetime
+11	؟	weather/find	O
+
+# id: 203
+# text: جد لي طاولة لثمانية أشخاص في مكان ما في هولينبرغ في خلال تسعة أسابيع .
+# text-en: Find me a table for 8 somewhee in Hollenberg in nine weeks
+# intent: BookRestaurant
+1	جد	BookRestaurant	O
+2	لي	BookRestaurant	O
+3	طاولة	BookRestaurant	O
+4	لثمانية	BookRestaurant	B-party_size_number
+5	أشخاص	BookRestaurant	O
+6	في	BookRestaurant	O
+7	مكان	BookRestaurant	O
+8	ما	BookRestaurant	B-party_size_number
+9	في	BookRestaurant	O
+10	هولينبرغ	BookRestaurant	B-location
+11	في	BookRestaurant	O
+12	خلال	BookRestaurant	B-datetime
+13	تسعة	BookRestaurant	I-datetime
+14	أسابيع	BookRestaurant	I-datetime
+15	.	BookRestaurant	O
+
+# id: 204
+# text: شغِّل تسجيل من 2004
+# text-en: play a track from 2004
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	تسجيل	PlayMusic	B-music_item
+3	من	PlayMusic	O
+4	2004	PlayMusic	B-datetime
+
+# id: 205
+# text: أخبرني عن الأفلام التي يتم عرضها حاليًا في مسارح AMC
+# text-en: Tell me what films are currently playing at AMC Theaters
+# intent: SearchScreeningEvent
+1	أخبرني	SearchScreeningEvent	O
+2	عن	SearchScreeningEvent	O
+3	الأفلام	SearchScreeningEvent	B-movie_type
+4	التي	SearchScreeningEvent	O
+5	يتم	SearchScreeningEvent	O
+6	عرضها	SearchScreeningEvent	O
+7	حاليًا	SearchScreeningEvent	O
+8	في	SearchScreeningEvent	O
+9	مسارح	SearchScreeningEvent	B-location
+10	AMC	SearchScreeningEvent	B-location
+
+# id: 206
+# text: أرني البرنامج التلفزيوني Limit of Love: Umizaru
+# text-en: Show me the TV show Limit of Love: Umizaru
+# intent: SearchCreativeWork
+1	أرني	SearchCreativeWork	O
+2	البرنامج	SearchCreativeWork	B-object_type
+3	التلفزيوني	SearchCreativeWork	I-object_type
+4	Limit	SearchCreativeWork	B-object_name
+5	of	SearchCreativeWork	I-object_name
+6	Love:	SearchCreativeWork	I-object_name
+7	Umizaru	SearchCreativeWork	I-object_name
+
+# id: 207
+# text: أرني صورة Rock You Baby
+# text-en: Show me the photograph Rock You Baby
+# intent: SearchCreativeWork
+1	أرني	SearchCreativeWork	O
+2	صورة	SearchCreativeWork	B-object_type
+3	Rock	SearchCreativeWork	B-object_name
+4	You	SearchCreativeWork	I-object_name
+5	Baby	SearchCreativeWork	I-object_name
+
+# id: 208
+# text: هل يتم عرض Tarzan of the Apes في Cobb Theatres
+# text-en: is Tarzan of the Apes playing at Cobb Theatres
+# intent: SearchScreeningEvent
+1	هل	SearchScreeningEvent	O
+2	يتم	SearchScreeningEvent	O
+3	عرض	SearchScreeningEvent	O
+4	Tarzan	SearchScreeningEvent	B-movie_name
+5	of	SearchScreeningEvent	I-movie_name
+6	the	SearchScreeningEvent	I-movie_name
+7	Apes	SearchScreeningEvent	I-movie_name
+8	في	SearchScreeningEvent	O
+9	Cobb	SearchScreeningEvent	B-location
+10	Theatres	SearchScreeningEvent	I-location
+
+# id: 209
+# text: أضف Kan Mikami في Pre-Party R&B Jams
+# text-en: put Kan Mikami on Pre-Party R&B Jams
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	Kan	AddToPlaylist	B-artist
+3	Mikami	AddToPlaylist	I-artist
+4	في	AddToPlaylist	O
+5	Pre-Party	AddToPlaylist	B-playlist
+6	R	AddToPlaylist	I-playlist
+7	&	AddToPlaylist	I-playlist
+8	B	AddToPlaylist	I-playlist
+9	Jams	AddToPlaylist	I-playlist
+
+# id: 210
+# text: هل ستهبط عاصفة ثلجية في موقعي الحالي
+# text-en: is it going to blizzard at my current position
+# intent: weather/find
+1	هل	weather/find	O
+2	ستهبط	weather/find	O
+3	عاصفة	weather/find	B-condition_description
+4	ثلجية	weather/find	I-condition_description
+5	في	weather/find	O
+6	موقعي	weather/find	B-location
+7	الحالي	weather/find	I-location
+
+# id: 211
+# text: احجز طاولة لي و لعمي في مالطا في كافتيريا
+# text-en: book a table for me and my step uncle in Malta at a cafeteria
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	طاولة	BookRestaurant	O
+3	لي	BookRestaurant	B-party_size_description
+4	و	BookRestaurant	I-party_size_description
+5	لعمي	BookRestaurant	I-party_size_description
+6	في	BookRestaurant	O
+7	مالطا	BookRestaurant	B-location
+8	في	BookRestaurant	O
+9	كافتيريا	BookRestaurant	B-restaurant_type
+
+# id: 212
+# text: إلعب تسجيل العشرينات الأكثر شعبية من Leland Sklar
+# text-en: Play the most popular twenties record from Leland Sklar
+# intent: PlayMusic
+1	إلعب	PlayMusic	O
+2	تسجيل	PlayMusic	B-music_item
+3	العشرينات	PlayMusic	B-datetime
+4	الأكثر	PlayMusic	B-sort
+5	شعبية	PlayMusic	I-sort
+6	من	PlayMusic	O
+7	Leland	PlayMusic	B-artist
+8	Sklar	PlayMusic	I-artist
+
+# id: 213
+# text: أرني التوقعات الجوية لويسكونسن
+# text-en: Show me the forecast for Wisconsin
+# intent: weather/find
+1	أرني	weather/find	O
+2	التوقعات	weather/find	O
+3	الجوية	weather/find	O
+4	لويسكونسن	weather/find	B-location
+
+# id: 214
+# text: ابحث عن صورة تسمى بين الأيام
+# text-en: find a photograph called Between the Days
+# intent: SearchCreativeWork
+1	ابحث	SearchCreativeWork	O
+2	عن	SearchCreativeWork	O
+3	صورة	SearchCreativeWork	B-object_type
+4	تسمى	SearchCreativeWork	O
+5	بين	SearchCreativeWork	B-object_name
+6	الأيام	SearchCreativeWork	I-object_name
+
+# id: 215
+# text: احجز في The Halal Guys يوم 17 أكتوبر
+# text-en: book at The Halal Guys on Oct. 17
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	في	BookRestaurant	O
+3	The	BookRestaurant	B-restaurant_name
+4	Halal	BookRestaurant	I-restaurant_name
+5	Guys	BookRestaurant	I-restaurant_name
+6	يوم	BookRestaurant	O
+7	17	BookRestaurant	B-datetime
+8	أكتوبر	BookRestaurant	I-datetime
+
+# id: 216
+# text: من فضلك قل لي التوقعات الجوية لغينيا بيساو
+# text-en: Please tell me the forecast for Guinea-Bissau
+# intent: weather/find
+1	من	weather/find	O
+2	فضلك	weather/find	O
+3	قل	weather/find	O
+4	لي	weather/find	O
+5	التوقعات	weather/find	O
+6	الجوية	weather/find	O
+7	لغينيا	weather/find	B-location
+8	بيساو	weather/find	I-location
+
+# id: 217
+# text: أضف هذه الأغنية إلى قائمة تشغيل العشاء الإيطالي المثالي
+# text-en: Add this song to my the perfect italian dinner playlist
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	هذه	AddToPlaylist	O
+3	الأغنية	AddToPlaylist	B-music_item
+4	إلى	AddToPlaylist	O
+5	قائمة	AddToPlaylist	O
+6	تشغيل	AddToPlaylist	O
+7	العشاء	AddToPlaylist	B-playlist
+8	الإيطالي	AddToPlaylist	I-playlist
+9	المثالي	AddToPlaylist	I-playlist
+
+# id: 218
+# text: الطقس في تيوجا كولورادو
+# text-en: weather in Tioga Colorado
+# intent: weather/find
+1	الطقس	weather/find	O
+2	في	weather/find	O
+3	تيوجا	weather/find	B-location
+4	كولورادو	weather/find	B-location
+
+# id: 219
+# text: أريد الاستماع إلى Music of Ghost in the Shell: Stand Alone Complex
+# text-en: I want to listen to the Music of Ghost in the Shell: Stand Alone Complex
+# intent: SearchCreativeWork
+1	أريد	SearchCreativeWork	O
+2	الاستماع	SearchCreativeWork	O
+3	إلى	SearchCreativeWork	O
+4	Music	SearchCreativeWork	B-object_name
+5	of	SearchCreativeWork	I-object_name
+6	Ghost	SearchCreativeWork	I-object_name
+7	in	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Shell:	SearchCreativeWork	I-object_name
+10	Stand	SearchCreativeWork	I-object_name
+11	Alone	SearchCreativeWork	I-object_name
+12	Complex	SearchCreativeWork	I-object_name
+
+# id: 220
+# text: أرني Happiness Was Free .
+# text-en: Show me Happiness Was Free .
+# intent: SearchCreativeWork
+1	أرني	SearchCreativeWork	O
+2	Happiness	SearchCreativeWork	B-object_name
+3	Was	SearchCreativeWork	I-object_name
+4	Free	SearchCreativeWork	I-object_name
+5	.	SearchCreativeWork	O
+
+# id: 221
+# text: هل من المفترض أن تمطر بالقرب من موقعي الحالي عند الساعة 0 ؟
+# text-en: Is it supposed to rain nearby my current location at 0 o'clock ?
+# intent: weather/find
+1	هل	weather/find	O
+2	من	weather/find	O
+3	المفترض	weather/find	O
+4	أن	weather/find	O
+5	تمطر	weather/find	B-condition_description
+6	بالقرب	weather/find	B-location
+7	من	weather/find	O
+8	موقعي	weather/find	B-location
+9	الحالي	weather/find	I-location
+10	عند	weather/find	O
+11	الساعة	weather/find	B-datetime
+12	0	weather/find	I-datetime
+13	؟	weather/find	O
+
+# id: 222
+# text: احجز طاولة في Fairview المجاور للمنطقة
+# text-en: book a table in Fairview neighboring the area
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	طاولة	BookRestaurant	O
+3	في	BookRestaurant	O
+4	Fairview	BookRestaurant	B-location
+5	المجاور	BookRestaurant	B-location
+6	للمنطقة	BookRestaurant	I-location
+
+# id: 223
+# text: ما هي توقعات 15:04 في جورجيا لظروف الغيوم في Valley View
+# text-en: what is the forecast for 15:04 in Georgia for overcast conditions in Valley View
+# intent: weather/find
+1	ما	weather/find	O
+2	هي	weather/find	O
+3	توقعات	weather/find	O
+4	15:04	weather/find	B-datetime
+5	في	weather/find	O
+6	جورجيا	weather/find	B-location
+7	لظروف	weather/find	O
+8	الغيوم	weather/find	B-condition_description
+9	في	weather/find	O
+10	Valley	weather/find	B-location
+11	View	weather/find	I-location
+
+# id: 224
+# text: هل يمكنني مشاهدة مواعيد عرض الافلام ؟
+# text-en: Can I see the movie schedules ?
+# intent: SearchScreeningEvent
+1	هل	SearchScreeningEvent	O
+2	يمكنني	SearchScreeningEvent	O
+3	مشاهدة	SearchScreeningEvent	O
+4	مواعيد	SearchScreeningEvent	B-object_type
+5	عرض	SearchScreeningEvent	I-object_type
+6	الافلام	SearchScreeningEvent	I-object_type
+7	؟	SearchScreeningEvent	O
+
+# id: 225
+# text: ابحث عن أقرب سينما تقوم بعرض Operation: Kingdom
+# text-en: find a movie house closest showing Operation: Kingdom
+# intent: SearchScreeningEvent
+1	ابحث	SearchScreeningEvent	O
+2	عن	SearchScreeningEvent	O
+3	أقرب	SearchScreeningEvent	B-location
+4	سينما	SearchScreeningEvent	B-object_location_type
+5	تقوم	SearchScreeningEvent	O
+6	بعرض	SearchScreeningEvent	O
+7	Operation:	SearchScreeningEvent	B-movie_name
+8	Kingdom	SearchScreeningEvent	I-movie_name
+
+# id: 226
+# text: ابحث عن إعلان لفيلم بإسم Storm Center .
+# text-en: Find a trailer called Storm Center .
+# intent: SearchCreativeWork
+1	ابحث	SearchCreativeWork	O
+2	عن	SearchCreativeWork	O
+3	إعلان	SearchCreativeWork	B-object_type
+4	لفيلم	SearchCreativeWork	O
+5	بإسم	SearchCreativeWork	O
+6	Storm	SearchCreativeWork	B-object_name
+7	Center	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: 227
+# text: ضع هذا الألبوم على قائمة التشغيل dubstep dangles dirty
+# text-en: put this album on my dubstep dangles dirty playlist
+# intent: AddToPlaylist
+1	ضع	AddToPlaylist	O
+2	هذا	AddToPlaylist	O
+3	الألبوم	AddToPlaylist	B-music_item
+4	على	AddToPlaylist	O
+5	قائمة	AddToPlaylist	O
+6	التشغيل	AddToPlaylist	O
+7	dubstep	AddToPlaylist	B-playlist
+8	dangles	AddToPlaylist	I-playlist
+9	dirty	AddToPlaylist	I-playlist
+
+# id: 228
+# text: ما هي مواعيد عرض الافلام
+# text-en: What are the movie schedules
+# intent: SearchScreeningEvent
+1	ما	SearchScreeningEvent	O
+2	هي	SearchScreeningEvent	O
+3	مواعيد	SearchScreeningEvent	B-object_type
+4	عرض	SearchScreeningEvent	I-object_type
+5	الافلام	SearchScreeningEvent	I-object_type
+
+# id: 229
+# text: إلعب أغنية من Juanes على Last Fm
+# text-en: Play a song by Juanes on Last Fm
+# intent: PlayMusic
+1	إلعب	PlayMusic	O
+2	أغنية	PlayMusic	B-music_item
+3	من	PlayMusic	O
+4	Juanes	PlayMusic	B-artist
+5	على	PlayMusic	O
+6	Last	PlayMusic	B-service
+7	Fm	PlayMusic	I-service
+
+# id: 230
+# text: عين 0 نقطة من أصل 6 إلى The Gate of Worlds
+# text-en: Assign 0 points out of 6 to The Gate of Worlds
+# intent: RateBook
+1	عين	RateBook	O
+2	0	RateBook	B-rating_value
+3	نقطة	RateBook	B-rating_unit
+4	من	RateBook	O
+5	أصل	RateBook	O
+6	6	RateBook	B-best_rating
+7	إلى	RateBook	O
+8	The	RateBook	B-object_name
+9	Gate	RateBook	I-object_name
+10	of	RateBook	I-object_name
+11	Worlds	RateBook	I-object_name
+
+# id: 231
+# text: إلعب David Mallett على last fm
+# text-en: Play some David Mallett on last fm
+# intent: PlayMusic
+1	إلعب	PlayMusic	O
+2	David	PlayMusic	B-artist
+3	Mallett	PlayMusic	I-artist
+4	على	PlayMusic	O
+5	last	PlayMusic	B-service
+6	fm	PlayMusic	I-service
+
+# id: 232
+# text: جد لي أوقات الفيلم
+# text-en: Find me the movie times
+# intent: SearchScreeningEvent
+1	جد	SearchScreeningEvent	O
+2	لي	SearchScreeningEvent	O
+3	أوقات	SearchScreeningEvent	B-object_type
+4	الفيلم	SearchScreeningEvent	I-object_type
+
+# id: 233
+# text: هل سيكون الطقس عاصفًا في الساعة 4 مساءً في نيويورك ؟
+# text-en: Will it be windy at 4 PM in NY ?
+# intent: weather/find
+1	هل	weather/find	O
+2	سيكون	weather/find	O
+3	الطقس	weather/find	O
+4	عاصفًا	weather/find	B-condition_description
+5	في	weather/find	O
+6	الساعة	weather/find	O
+7	4	weather/find	B-datetime
+8	مساءً	weather/find	I-datetime
+9	في	weather/find	O
+10	نيويورك	weather/find	B-location
+11	؟	weather/find	O
+
+# id: 234
+# text: احجز لي مطعمًا لتسعة أشخاص في ستاثام
+# text-en: Book me a restaurant for nine in Statham
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	لي	BookRestaurant	O
+3	مطعمًا	BookRestaurant	B-restaurant_type
+4	لتسعة	BookRestaurant	B-party_size_number
+5	أشخاص	BookRestaurant	O
+6	في	BookRestaurant	O
+7	ستاثام	BookRestaurant	B-location
+
+# id: 235
+# text: ابحث على لعبة فيديو تسمى IBM Program temporary fix
+# text-en: find a video game called IBM Program temporary fix
+# intent: SearchCreativeWork
+1	ابحث	SearchCreativeWork	O
+2	على	SearchCreativeWork	O
+3	لعبة	SearchCreativeWork	B-object_type
+4	فيديو	SearchCreativeWork	I-object_type
+5	تسمى	SearchCreativeWork	O
+6	IBM	SearchCreativeWork	B-object_name
+7	Program	SearchCreativeWork	I-object_name
+8	temporary	SearchCreativeWork	I-object_name
+9	fix	SearchCreativeWork	I-object_name
+
+# id: 236
+# text: اعثر على طاولة لشخص في مطعم شواء شهير في خلال ثلاثة أسابيع من الآن
+# text-en: Find a table for one at a popular churrascaria for three weeks from now
+# intent: BookRestaurant
+1	اعثر	BookRestaurant	O
+2	على	BookRestaurant	O
+3	طاولة	BookRestaurant	O
+4	لشخص	BookRestaurant	B-party_size_number
+5	في	BookRestaurant	O
+6	مطعم	BookRestaurant	B-restaurant_type
+7	شواء	BookRestaurant	I-restaurant_type
+8	شهير	BookRestaurant	B-sort
+9	في	BookRestaurant	O
+10	خلال	BookRestaurant	O
+11	ثلاثة	BookRestaurant	B-datetime
+12	أسابيع	BookRestaurant	I-datetime
+13	من	BookRestaurant	I-datetime
+14	الآن	BookRestaurant	I-datetime
+
+# id: 237
+# text: بالنسبة إلى Mirrorshades ، أقيمها بثلاث نجوم
+# text-en: For Mirrorshades I rate it three stars
+# intent: RateBook
+1	بالنسبة	RateBook	O
+2	إلى	RateBook	O
+3	Mirrorshades	RateBook	B-object_name
+4	،	RateBook	O
+5	أقيمها	RateBook	O
+6	بثلاث	RateBook	B-rating_value
+7	نجوم	RateBook	B-rating_unit
+
+# id: 238
+# text: احجز مطعمًا يقدم agnolotti في كولورادو سيتي ايداهو .
+# text-en: Book a restaurant that serves agnolotti in Colorado City Idaho .
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	مطعمًا	BookRestaurant	B-restaurant_type
+3	يقدم	BookRestaurant	O
+4	agnolotti	BookRestaurant	B-served_dish
+5	في	BookRestaurant	O
+6	كولورادو	BookRestaurant	B-location
+7	سيتي	BookRestaurant	I-location
+8	ايداهو	BookRestaurant	B-location
+9	.	BookRestaurant	O
+
+# id: 239
+# text: أضف bright and breezy إلى قائمة تشغيل This Is Gucci Mane الخاصة بي
+# text-en: Add bright and breezy to my This Is Gucci Mane playlist
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	bright	AddToPlaylist	B-entity_name
+3	and	AddToPlaylist	I-entity_name
+4	breezy	AddToPlaylist	I-entity_name
+5	إلى	AddToPlaylist	O
+6	قائمة	AddToPlaylist	O
+7	تشغيل	AddToPlaylist	O
+8	This	AddToPlaylist	B-playlist
+9	Is	AddToPlaylist	I-playlist
+10	Gucci	AddToPlaylist	I-playlist
+11	Mane	AddToPlaylist	I-playlist
+12	الخاصة	AddToPlaylist	O
+13	بي	AddToPlaylist	B-reference
+
+# id: 240
+# text: هل يمكن أن تخبرني بحالة الطقس هنا
+# text-en: Can you give me the weather for here
+# intent: weather/find
+1	هل	weather/find	O
+2	يمكن	weather/find	O
+3	أن	weather/find	O
+4	تخبرني	weather/find	O
+5	بحالة	weather/find	O
+6	الطقس	weather/find	O
+7	هنا	weather/find	B-location
+
+# id: 241
+# text: أضف Ashley McIsaac إلى قائمة تشغيل r&b party classics الخاصة بي
+# text-en: Add Ashley McIsaac to my r&b party classics playlist
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	Ashley	AddToPlaylist	B-artist
+3	McIsaac	AddToPlaylist	I-artist
+4	إلى	AddToPlaylist	O
+5	قائمة	AddToPlaylist	O
+6	تشغيل	AddToPlaylist	O
+7	r	AddToPlaylist	B-playlist
+8	&	AddToPlaylist	I-playlist
+9	b	AddToPlaylist	I-playlist
+10	party	AddToPlaylist	I-playlist
+11	classics	AddToPlaylist	I-playlist
+12	الخاصة	AddToPlaylist	O
+13	بي	AddToPlaylist	B-reference
+
+# id: 242
+# text: أود أن أشاهد the saga 12 Soulful Nights of Christmas
+# text-en: I'd like to see the saga 12 Soulful Nights of Christmas
+# intent: SearchCreativeWork
+1	أود	SearchCreativeWork	O
+2	أن	SearchCreativeWork	O
+3	أشاهد	SearchCreativeWork	O
+4	the	SearchCreativeWork	O
+5	saga	SearchCreativeWork	B-object_type
+6	12	SearchCreativeWork	B-object_name
+7	Soulful	SearchCreativeWork	I-object_name
+8	Nights	SearchCreativeWork	I-object_name
+9	of	SearchCreativeWork	I-object_name
+10	Christmas	SearchCreativeWork	I-object_name
+
+# id: 243
+# text: أحتاج إلى حجز الساعة 6 مساءً. مع حفلة مكونة من 10 أفراد في Sand Lake
+# text-en: I need a reservation for 6 PM. with a party of 10 at Sand Lake
+# intent: BookRestaurant
+1	أحتاج	BookRestaurant	O
+2	إلى	BookRestaurant	O
+3	حجز	BookRestaurant	O
+4	الساعة	BookRestaurant	O
+5	6	BookRestaurant	B-datetime
+6	مساءً	BookRestaurant	I-datetime
+7	.	BookRestaurant	O
+8	مع	BookRestaurant	O
+9	حفلة	BookRestaurant	O
+10	مكونة	BookRestaurant	O
+11	من	BookRestaurant	O
+12	10	BookRestaurant	B-party_size_number
+13	أفراد	BookRestaurant	O
+14	في	BookRestaurant	O
+15	Sand	BookRestaurant	B-location
+16	Lake	BookRestaurant	I-location
+
+# id: 244
+# text: استخدم Groove Shark لتشغيل موسيقى من الثمانينيات
+# text-en: Use Groove Shark to play music from the eighties
+# intent: PlayMusic
+1	استخدم	PlayMusic	O
+2	Groove	PlayMusic	B-service
+3	Shark	PlayMusic	I-service
+4	لتشغيل	PlayMusic	O
+5	موسيقى	PlayMusic	B-datetime
+6	من	PlayMusic	O
+7	الثمانينيات	PlayMusic	O
+
+# id: 245
+# text: ابحث عن موسيقى تصويرية بعنوان The House of the Yellow Carpet
+# text-en: find soundtrack titled The House of the Yellow Carpet
+# intent: SearchCreativeWork
+1	ابحث	SearchCreativeWork	O
+2	عن	SearchCreativeWork	O
+3	موسيقى	SearchCreativeWork	B-object_type
+4	تصويرية	SearchCreativeWork	I-object_type
+5	بعنوان	SearchCreativeWork	O
+6	The	SearchCreativeWork	B-object_name
+7	House	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	Yellow	SearchCreativeWork	I-object_name
+11	Carpet	SearchCreativeWork	I-object_name
+
+# id: 246
+# text: ما هي أقرب سينما تعرض أفلام تبدأ في تسعة عشر ثانية ؟
+# text-en: Which is the nearest cinema showing movies that start in nineteen seconds ?
+# intent: SearchScreeningEvent
+1	ما	SearchScreeningEvent	O
+2	هي	SearchScreeningEvent	O
+3	أقرب	SearchScreeningEvent	B-location
+4	سينما	SearchScreeningEvent	B-object_location_type
+5	تعرض	SearchScreeningEvent	O
+6	أفلام	SearchScreeningEvent	B-movie_type
+7	تبدأ	SearchScreeningEvent	O
+8	في	SearchScreeningEvent	B-datetime
+9	تسعة	SearchScreeningEvent	I-datetime
+10	عشر	SearchScreeningEvent	I-datetime
+11	ثانية	SearchScreeningEvent	I-datetime
+12	؟	SearchScreeningEvent	O
+
+# id: 247
+# text: أضف morten harket إلى this is puccini
+# text-en: Add morten harket to this is puccini
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	morten	AddToPlaylist	B-artist
+3	harket	AddToPlaylist	I-artist
+4	إلى	AddToPlaylist	O
+5	this	AddToPlaylist	B-playlist
+6	is	AddToPlaylist	I-playlist
+7	puccini	AddToPlaylist	I-playlist
+
+# id: 248
+# text: افتح Spotify وقم بتشغيل أغنية من العشرينات لريتشارد هارفي
+# text-en: Open Spotify and play a song from the twenties by Richard Harvey
+# intent: PlayMusic
+1	افتح	PlayMusic	O
+2	Spotify	PlayMusic	B-service
+3	وقم	PlayMusic	O
+4	بتشغيل	PlayMusic	O
+5	أغنية	PlayMusic	B-music_item
+6	من	PlayMusic	O
+7	العشرينات	PlayMusic	B-datetime
+8	لريتشارد	PlayMusic	B-artist
+9	هارفي	PlayMusic	I-artist
+
+# id: 249
+# text: أريد حجز مطعم
+# text-en: I want to book a restaurant
+# intent: BookRestaurant
+1	أريد	BookRestaurant	O
+2	حجز	BookRestaurant	O
+3	مطعم	BookRestaurant	B-restaurant_type
+
+# id: 250
+# text: شغِّل الألبوم Vibrations لـ Marion Elise Raven
+# text-en: Play the album Vibrations by Marion Elise Raven
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	الألبوم	PlayMusic	B-music_item
+3	Vibrations	PlayMusic	B-album
+4	لـ	PlayMusic	O
+5	Marion	PlayMusic	B-artist
+6	Elise	PlayMusic	I-artist
+7	Raven	PlayMusic	I-artist
+
+# id: 251
+# text: أضف هذا الفنان إلى قائمة تشغيل موسيقى الجاز الخاصة بي
+# text-en: add this artist to my Jazz playlist
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	هذا	AddToPlaylist	O
+3	الفنان	AddToPlaylist	B-music_item
+4	إلى	AddToPlaylist	O
+5	قائمة	AddToPlaylist	O
+6	تشغيل	AddToPlaylist	O
+7	موسيقى	AddToPlaylist	B-playlist
+8	الجاز	AddToPlaylist	I-playlist
+9	الخاصة	AddToPlaylist	O
+10	بي	AddToPlaylist	B-reference
+
+# id: 252
+# text: أريد أن أجد البرنامج التلفزيوني From Where to Eternity .
+# text-en: I want to find the show From Where to Eternity .
+# intent: SearchCreativeWork
+1	أريد	SearchCreativeWork	O
+2	أن	SearchCreativeWork	O
+3	أجد	SearchCreativeWork	O
+4	البرنامج	SearchCreativeWork	B-object_type
+5	التلفزيوني	SearchCreativeWork	I-object_type
+6	From	SearchCreativeWork	B-object_name
+7	Where	SearchCreativeWork	I-object_name
+8	to	SearchCreativeWork	I-object_name
+9	Eternity	SearchCreativeWork	I-object_name
+10	.	SearchCreativeWork	O
+
+# id: 253
+# text: شغِّل أفضل 20 أغنية لـ The Kleptones على Spotify
+# text-en: play the top-twenty songs by The Kleptones on Spotify
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	أفضل	PlayMusic	B-sort
+3	20	PlayMusic	I-sort
+4	أغنية	PlayMusic	O
+5	لـ	PlayMusic	O
+6	The	PlayMusic	B-artist
+7	Kleptones	PlayMusic	I-artist
+8	على	PlayMusic	O
+9	Spotify	PlayMusic	B-service
+
+# id: 254
+# text: كيف سيكون الطقس في ست دقائق بالقرب من Moosic
+# text-en: How will the weather be in six minutes close to Moosic
+# intent: weather/find
+1	كيف	weather/find	O
+2	سيكون	weather/find	O
+3	الطقس	weather/find	O
+4	في	weather/find	B-datetime
+5	ست	weather/find	I-datetime
+6	دقائق	weather/find	I-datetime
+7	بالقرب	weather/find	B-location
+8	من	weather/find	O
+9	Moosic	weather/find	B-location
+
+# id: 255
+# text: أود الاستماع إلى بعض موسيقى الخمسينات.
+# text-en: I wish to listen to some fifties music.
+# intent: PlayMusic
+1	أود	PlayMusic	O
+2	الاستماع	PlayMusic	O
+3	إلى	PlayMusic	O
+4	بعض	PlayMusic	O
+5	موسيقى	PlayMusic	O
+6	الخمسينات	PlayMusic	B-datetime
+7	.	PlayMusic	O
+
+# id: 256
+# text: ما هو موعد عرض Utamaro and His Five Women في سينما Alamo Drafthouse
+# text-en: what time is Utamaro and His Five Women showing at Alamo Drafthouse Cinema
+# intent: SearchScreeningEvent
+1	ما	SearchScreeningEvent	O
+2	هو	SearchScreeningEvent	O
+3	موعد	SearchScreeningEvent	O
+4	عرض	SearchScreeningEvent	O
+5	Utamaro	SearchScreeningEvent	B-movie_name
+6	and	SearchScreeningEvent	I-movie_name
+7	His	SearchScreeningEvent	I-movie_name
+8	Five	SearchScreeningEvent	I-movie_name
+9	Women	SearchScreeningEvent	I-movie_name
+10	في	SearchScreeningEvent	O
+11	سينما	SearchScreeningEvent	B-location
+12	Alamo	SearchScreeningEvent	B-location
+13	Drafthouse	SearchScreeningEvent	I-location
+
+# id: 257
+# text: ابحث عن صورة لـ Adventure Time: The Secret of the Nameless Kingdom
+# text-en: Find a photograph of Adventure Time: The Secret of the Nameless Kingdom
+# intent: SearchCreativeWork
+1	ابحث	SearchCreativeWork	O
+2	عن	SearchCreativeWork	O
+3	صورة	SearchCreativeWork	B-object_type
+4	لـ	SearchCreativeWork	O
+5	Adventure	SearchCreativeWork	B-object_name
+6	Time:	SearchCreativeWork	I-object_name
+7	The	SearchCreativeWork	I-object_name
+8	Secret	SearchCreativeWork	I-object_name
+9	of	SearchCreativeWork	I-object_name
+10	the	SearchCreativeWork	I-object_name
+11	Nameless	SearchCreativeWork	I-object_name
+12	Kingdom	SearchCreativeWork	I-object_name
+
+# id: 258
+# text: ضع Do You Love Me في قائمة تشغيل acoustic soul الخاصة بي
+# text-en: put Do You Love Me on my acoustic soul playlist
+# intent: AddToPlaylist
+1	ضع	AddToPlaylist	O
+2	Do	AddToPlaylist	B-entity_name
+3	You	AddToPlaylist	I-entity_name
+4	Love	AddToPlaylist	I-entity_name
+5	Me	AddToPlaylist	I-entity_name
+6	في	AddToPlaylist	O
+7	قائمة	AddToPlaylist	O
+8	تشغيل	AddToPlaylist	O
+9	acoustic	AddToPlaylist	B-playlist
+10	soul	AddToPlaylist	I-playlist
+11	الخاصة	AddToPlaylist	O
+12	بي	AddToPlaylist	B-reference
+
+# id: 259
+# text: إلعب لي أفضل أغنية لـ Charles Neidich
+# text-en: Play me the best Charles Neidich song
+# intent: PlayMusic
+1	إلعب	PlayMusic	O
+2	لي	PlayMusic	O
+3	أفضل	PlayMusic	B-sort
+4	أغنية	PlayMusic	B-music_item
+5	لـ	PlayMusic	O
+6	Charles	PlayMusic	B-artist
+7	Neidich	PlayMusic	I-artist
+
+# id: 260
+# text: في الثالث عشر من مايو عام 2037 ، كيف سيكون الوضع في Wilderville ، الجبل الأسود
+# text-en: On may the thirteenth, 2037 what will it be like in Wilderville , Montenegro
+# intent: weather/find
+1	في	weather/find	O
+2	الثالث	weather/find	B-datetime
+3	عشر	weather/find	I-datetime
+4	من	weather/find	I-datetime
+5	مايو	weather/find	I-datetime
+6	عام	weather/find	I-datetime
+7	2037	weather/find	I-datetime
+8	،	weather/find	O
+9	كيف	weather/find	O
+10	سيكون	weather/find	O
+11	الوضع	weather/find	O
+12	في	weather/find	O
+13	Wilderville	weather/find	B-location
+14	،	weather/find	O
+15	الجبل	weather/find	B-location
+16	الأسود	weather/find	I-location
+
+# id: 261
+# text: اعثر على جداول عرض أفلام ArcLight Hollywood .
+# text-en: Find movie schedules for ArcLight Hollywood .
+# intent: SearchScreeningEvent
+1	اعثر	SearchScreeningEvent	O
+2	على	SearchScreeningEvent	O
+3	جداول	SearchScreeningEvent	B-object_type
+4	عرض	SearchScreeningEvent	I-object_type
+5	أفلام	SearchScreeningEvent	I-object_type
+6	ArcLight	SearchScreeningEvent	B-location
+7	Hollywood	SearchScreeningEvent	I-location
+8	.	SearchScreeningEvent	O
+
+# id: 262
+# text: ابحث عن برنامج تلفزيوني يسمى Church of the Truly Warped .
+# text-en: Find a TV series called Church of the Truly Warped .
+# intent: SearchCreativeWork
+1	ابحث	SearchCreativeWork	O
+2	عن	SearchCreativeWork	O
+3	برنامج	SearchCreativeWork	B-object_type
+4	تلفزيوني	SearchCreativeWork	I-object_type
+5	يسمى	SearchCreativeWork	O
+6	Church	SearchCreativeWork	B-object_name
+7	of	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Truly	SearchCreativeWork	I-object_name
+10	Warped	SearchCreativeWork	I-object_name
+11	.	SearchCreativeWork	O
+
+# id: 263
+# text: ما هي التوقعات الجوية في ثماني عشرة دقيقة هنا لدرجات الحرارة الباردة ؟
+# text-en: what is the forecast for in eighteen minutes here for colder temps
+# intent: weather/find
+1	ما	weather/find	O
+2	هي	weather/find	O
+3	التوقعات	weather/find	O
+4	الجوية	weather/find	O
+5	في	weather/find	B-datetime
+6	ثماني	weather/find	I-datetime
+7	عشرة	weather/find	I-datetime
+8	دقيقة	weather/find	I-datetime
+9	هنا	weather/find	B-location
+10	لدرجات	weather/find	O
+11	الحرارة	weather/find	O
+12	الباردة	weather/find	B-condition_temperature
+13	؟	weather/find	O
+
+# id: 264
+# text: احجز مطعمًا في الساعة السادسة عشرة في SC
+# text-en: Book a restaurant at sixteen o'clock in SC
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	مطعمًا	BookRestaurant	B-restaurant_type
+3	في	BookRestaurant	O
+4	الساعة	BookRestaurant	B-datetime
+5	السادسة	BookRestaurant	I-datetime
+6	عشرة	BookRestaurant	I-datetime
+7	في	BookRestaurant	O
+8	SC	BookRestaurant	B-location
+
+# id: 265
+# text: ستايسي واتسون وأدريانا يريدان الذهاب إلى أفضل مطعم في هالويل مينيسوتا عصر اليوم
+# text-en: stacy watson and adriana want to go to the best osteria in Hallowell Minnesota this afternoon
+# intent: BookRestaurant
+1	ستايسي	BookRestaurant	B-party_size_description
+2	واتسون	BookRestaurant	I-party_size_description
+3	وأدريانا	BookRestaurant	I-party_size_description
+4	يريدان	BookRestaurant	O
+5	الذهاب	BookRestaurant	O
+6	إلى	BookRestaurant	O
+7	أفضل	BookRestaurant	B-sort
+8	مطعم	BookRestaurant	B-restaurant_type
+9	في	BookRestaurant	O
+10	هالويل	BookRestaurant	B-location
+11	مينيسوتا	BookRestaurant	B-location
+12	عصر	BookRestaurant	B-datetime
+13	اليوم	BookRestaurant	I-datetime
+
+# id: 266
+# text: هل سيكون الجو باردًا في الصحراء الغربية بعد 13 ساعة
+# text-en: is it going to be chilly in Western Sahara in 13 hours
+# intent: weather/find
+1	هل	weather/find	O
+2	سيكون	weather/find	O
+3	الجو	weather/find	O
+4	باردًا	weather/find	B-condition_temperature
+5	في	weather/find	O
+6	الصحراء	weather/find	B-location
+7	الغربية	weather/find	I-location
+8	بعد	weather/find	O
+9	13	weather/find	B-datetime
+10	ساعة	weather/find	I-datetime
+
+# id: 267
+# text: أضف Armen Movsessian لقائمة تشغيل this is skepta
+# text-en: add Armen Movsessian to this is skepta playlist
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	Armen	AddToPlaylist	B-artist
+3	Movsessian	AddToPlaylist	I-artist
+4	لقائمة	AddToPlaylist	O
+5	تشغيل	AddToPlaylist	O
+6	this	AddToPlaylist	B-playlist
+7	is	AddToPlaylist	I-playlist
+8	skepta	AddToPlaylist	I-playlist
+
+# id: 268
+# text: قيم المقال الحالي بثلاثة من أصل 6 نجوم
+# text-en: Rate this current essay three out of 6 stars
+# intent: RateBook
+1	قيم	RateBook	O
+2	المقال	RateBook	B-object_type
+3	الحالي	RateBook	B-object_select
+4	بثلاثة	RateBook	B-rating_value
+5	من	RateBook	O
+6	أصل	RateBook	O
+7	6	RateBook	B-best_rating
+8	نجوم	RateBook	B-rating_unit
+
+# id: 269
+# text: ابحث عن حجز لثلاثة أشخاص في مطعم حائز على أعلى تصنيف
+# text-en: Find a reservation for three at a top-rated restaurant
+# intent: BookRestaurant
+1	ابحث	BookRestaurant	O
+2	عن	BookRestaurant	O
+3	حجز	BookRestaurant	O
+4	لثلاثة	BookRestaurant	B-party_size_number
+5	أشخاص	BookRestaurant	O
+6	في	BookRestaurant	O
+7	مطعم	BookRestaurant	B-restaurant_type
+8	حائز	BookRestaurant	O
+9	على	BookRestaurant	O
+10	أعلى	BookRestaurant	B-sort
+11	تصنيف	BookRestaurant	I-sort
+
+# id: 270
+# text: قيم الرواية الحالية 0 من 6
+# text-en: rate the current novel 0 of 6
+# intent: RateBook
+1	قيم	RateBook	O
+2	الرواية	RateBook	B-object_type
+3	الحالية	RateBook	B-object_select
+4	0	RateBook	B-rating_value
+5	من	RateBook	O
+6	6	RateBook	B-best_rating
+
+# id: 271
+# text: أود أن أرى مواعيد عرض فيلم Silly Movie 2.0 في دار السينما
+# text-en: I'd like to see the showtimes for Silly Movie 2.0 at the movie house
+# intent: SearchScreeningEvent
+1	أود	SearchScreeningEvent	O
+2	أن	SearchScreeningEvent	O
+3	أرى	SearchScreeningEvent	O
+4	مواعيد	SearchScreeningEvent	O
+5	عرض	SearchScreeningEvent	O
+6	فيلم	SearchScreeningEvent	O
+7	Silly	SearchScreeningEvent	B-movie_name
+8	Movie	SearchScreeningEvent	I-movie_name
+9	2	SearchScreeningEvent	I-movie_name
+10	.	SearchScreeningEvent	I-movie_name
+11	0	SearchScreeningEvent	I-movie_name
+12	في	SearchScreeningEvent	O
+13	دار	SearchScreeningEvent	B-object_location_type
+14	السينما	SearchScreeningEvent	I-object_location_type
+
+# id: 272
+# text: هل ستصبح أكثر برودة في سنكلير في 8 ساعات
+# text-en: Will it get chillier in Sinclair in 8 hours
+# intent: weather/find
+1	هل	weather/find	O
+2	ستصبح	weather/find	O
+3	أكثر	weather/find	O
+4	برودة	weather/find	B-condition_temperature
+5	في	weather/find	O
+6	سنكلير	weather/find	B-location
+7	في	weather/find	B-datetime
+8	8	weather/find	I-datetime
+9	ساعات	weather/find	I-datetime
+
+# id: 273
+# text: أضف هذه الأغنية الى in the arms of a woman الخاصة بي
+# text-en: add this tune to my in the arms of a woman
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	هذه	AddToPlaylist	O
+3	الأغنية	AddToPlaylist	B-music_item
+4	الى	AddToPlaylist	O
+5	in	AddToPlaylist	B-playlist
+6	the	AddToPlaylist	I-playlist
+7	arms	AddToPlaylist	I-playlist
+8	of	AddToPlaylist	I-playlist
+9	a	AddToPlaylist	I-playlist
+10	woman	AddToPlaylist	I-playlist
+11	الخاصة	AddToPlaylist	O
+12	بي	AddToPlaylist	B-reference
+
+# id: 274
+# text: احجز لـ 3 أشخاص في جزر فيرجن الأمريكية
+# text-en: book for 3 in U.S. Virgin Islands
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	لـ	BookRestaurant	O
+3	3	BookRestaurant	B-party_size_number
+4	أشخاص	BookRestaurant	O
+5	في	BookRestaurant	O
+6	جزر	BookRestaurant	B-location
+7	فيرجن	BookRestaurant	I-location
+8	الأمريكية	BookRestaurant	I-location
+
+# id: 275
+# text: هل سيكون الطقس أكثر برودة في La Mesa ؟
+# text-en: Will it be chillier in La Mesa ?
+# intent: weather/find
+1	هل	weather/find	O
+2	سيكون	weather/find	O
+3	الطقس	weather/find	O
+4	أكثر	weather/find	O
+5	برودة	weather/find	B-condition_temperature
+6	في	weather/find	O
+7	La	weather/find	B-location
+8	Mesa	weather/find	I-location
+9	؟	weather/find	O
+
+# id: 276
+# text: قيم هذا المقال 2 من أصل 6 نجوم
+# text-en: Rate this essay 2 out of 6 stars
+# intent: RateBook
+1	قيم	RateBook	O
+2	هذا	RateBook	B-object_select
+3	المقال	RateBook	B-object_type
+4	2	RateBook	B-rating_value
+5	من	RateBook	O
+6	أصل	RateBook	O
+7	6	RateBook	B-best_rating
+8	نجوم	RateBook	B-rating_unit
+
+# id: 277
+# text: امنح ثلاث نجوم / 6 إلى My Sister, My Love
+# text-en: Give three stars / 6 to My Sister, My Love
+# intent: RateBook
+1	امنح	RateBook	O
+2	ثلاث	RateBook	B-rating_value
+3	نجوم	RateBook	B-rating_unit
+4	/	RateBook	O
+5	6	RateBook	B-best_rating
+6	إلى	RateBook	O
+7	My	RateBook	B-object_name
+8	Sister	RateBook	I-object_name
+9	,	RateBook	I-object_name
+10	My	RateBook	I-object_name
+11	Love	RateBook	I-object_name
+
+# id: 278
+# text: اعثر على جدول عرض فيلم Marcus Corporation
+# text-en: Find the movie schedule for Marcus Corporation .
+# intent: SearchScreeningEvent
+1	اعثر	SearchScreeningEvent	O
+2	على	SearchScreeningEvent	O
+3	جدول	SearchScreeningEvent	B-object_type
+4	عرض	SearchScreeningEvent	I-object_type
+5	فيلم	SearchScreeningEvent	I-object_type
+6	Marcus	SearchScreeningEvent	B-location
+7	Corporation	SearchScreeningEvent	I-location
+
+# id: 279
+# text: ما هي الأفلام المجدولة في الحي ؟
+# text-en: What movies are scheduled in the neighbourhood ?
+# intent: SearchScreeningEvent
+1	ما	SearchScreeningEvent	O
+2	هي	SearchScreeningEvent	O
+3	الأفلام	SearchScreeningEvent	B-movie_type
+4	المجدولة	SearchScreeningEvent	O
+5	في	SearchScreeningEvent	B-location
+6	الحي	SearchScreeningEvent	I-location
+7	؟	SearchScreeningEvent	O
+
+# id: 280
+# text: أضف cross bones style إلى Guest List TaKe
+# text-en: add cross bones style to Guest List TaKe
+# intent: AddToPlaylist
+1	أضف	AddToPlaylist	O
+2	cross	AddToPlaylist	B-entity_name
+3	bones	AddToPlaylist	I-entity_name
+4	style	AddToPlaylist	I-entity_name
+5	إلى	AddToPlaylist	O
+6	Guest	AddToPlaylist	B-playlist
+7	List	AddToPlaylist	I-playlist
+8	TaKe	AddToPlaylist	I-playlist
+
+# id: 281
+# text: ابحث عن حجز لحانة تقدم البيتزا لحفلة من 6 أشخاص
+# text-en: Find a reservation for a tavern that serves pizzas for a party of 6
+# intent: BookRestaurant
+1	ابحث	BookRestaurant	O
+2	عن	BookRestaurant	O
+3	حجز	BookRestaurant	O
+4	لحانة	BookRestaurant	B-restaurant_type
+5	تقدم	BookRestaurant	O
+6	البيتزا	BookRestaurant	B-served_dish
+7	لحفلة	BookRestaurant	O
+8	من	BookRestaurant	O
+9	6	BookRestaurant	B-party_size_number
+10	أشخاص	BookRestaurant	I-party_size_number
+
+# id: 282
+# text: قيم The Art of Nijinsky 5 نقاط
+# text-en: Rate The Art of Nijinsky 5 points
+# intent: RateBook
+1	قيم	RateBook	O
+2	The	RateBook	B-object_name
+3	Art	RateBook	I-object_name
+4	of	RateBook	I-object_name
+5	Nijinsky	RateBook	I-object_name
+6	5	RateBook	B-rating_value
+7	نقاط	RateBook	B-rating_unit
+
+# id: 283
+# text: ضع Jacob Hoggard في قائمة تشغيل get going الخاصة بي
+# text-en: add Jacob Hoggard to my get going playlist
+# intent: AddToPlaylist
+1	ضع	AddToPlaylist	O
+2	Jacob	AddToPlaylist	B-artist
+3	Hoggard	AddToPlaylist	I-artist
+4	في	AddToPlaylist	O
+5	قائمة	AddToPlaylist	O
+6	تشغيل	AddToPlaylist	O
+7	get	AddToPlaylist	B-playlist
+8	going	AddToPlaylist	I-playlist
+9	الخاصة	AddToPlaylist	O
+10	بي	AddToPlaylist	B-reference
+
+# id: 284
+# text: أعطني قائمة بأوقات عرض الأفلام في المنطقة .
+# text-en: Give me a list of movie times for films in the area .
+# intent: SearchScreeningEvent
+1	أعطني	SearchScreeningEvent	O
+2	قائمة	SearchScreeningEvent	O
+3	بأوقات	SearchScreeningEvent	B-object_type
+4	عرض	SearchScreeningEvent	I-object_type
+5	الأفلام	SearchScreeningEvent	B-movie_type
+6	في	SearchScreeningEvent	B-location
+7	المنطقة	SearchScreeningEvent	I-location
+8	.	SearchScreeningEvent	O
+
+# id: 285
+# text: ابحث عن The Ultimate Gift , برنامج تلفزيوني
+# text-en: find The Ultimate Gift , a television show
+# intent: SearchCreativeWork
+1	ابحث	SearchCreativeWork	O
+2	عن	SearchCreativeWork	O
+3	The	SearchCreativeWork	B-object_name
+4	Ultimate	SearchCreativeWork	I-object_name
+5	Gift	SearchCreativeWork	I-object_name
+6	,	SearchCreativeWork	O
+7	برنامج	SearchCreativeWork	B-object_type
+8	تلفزيوني	SearchCreativeWork	I-object_type
+
+# id: 286
+# text: ما هو الطقس بالقرب من Triumph
+# text-en: What's the weather close-by Triumph
+# intent: weather/find
+1	ما	weather/find	O
+2	هو	weather/find	O
+3	الطقس	weather/find	O
+4	بالقرب	weather/find	B-location
+5	من	weather/find	O
+6	Triumph	weather/find	B-location
+
+# id: 287
+# text: متى يمكنني مشاهدة A Handful of Dust في السينما
+# text-en: when can i see A Handful of Dust in a movie theatre
+# intent: SearchScreeningEvent
+1	متى	SearchScreeningEvent	O
+2	يمكنني	SearchScreeningEvent	O
+3	مشاهدة	SearchScreeningEvent	O
+4	A	SearchScreeningEvent	B-movie_name
+5	Handful	SearchScreeningEvent	I-movie_name
+6	of	SearchScreeningEvent	I-movie_name
+7	Dust	SearchScreeningEvent	I-movie_name
+8	في	SearchScreeningEvent	O
+9	السينما	SearchScreeningEvent	B-object_location_type
+
+# id: 288
+# text: من فضلك أضف ألبوم لـ Joseph Meyer إلى قائمة تشغيل POP GOES THE 80s الخاصة بي
+# text-en: Please put an album by Joseph Meyer on my POP GOES THE 80s playlist
+# intent: AddToPlaylist
+1	من	AddToPlaylist	O
+2	فضلك	AddToPlaylist	O
+3	أضف	AddToPlaylist	O
+4	ألبوم	AddToPlaylist	B-music_item
+5	لـ	AddToPlaylist	O
+6	Joseph	AddToPlaylist	B-artist
+7	Meyer	AddToPlaylist	I-artist
+8	إلى	AddToPlaylist	O
+9	قائمة	AddToPlaylist	O
+10	تشغيل	AddToPlaylist	O
+11	POP	AddToPlaylist	B-playlist
+12	GOES	AddToPlaylist	I-playlist
+13	THE	AddToPlaylist	I-playlist
+14	80s	AddToPlaylist	I-playlist
+15	الخاصة	AddToPlaylist	O
+16	بي	AddToPlaylist	B-reference
+
+# id: 289
+# text: البرنامج التلفزيوني From South Africa to South Carolina
+# text-en: show of From South Africa to South Carolina
+# intent: SearchCreativeWork
+1	البرنامج	SearchCreativeWork	B-object_type
+2	التلفزيوني	SearchCreativeWork	I-object_type
+3	From	SearchCreativeWork	B-object_name
+4	South	SearchCreativeWork	I-object_name
+5	Africa	SearchCreativeWork	I-object_name
+6	to	SearchCreativeWork	I-object_name
+7	South	SearchCreativeWork	I-object_name
+8	Carolina	SearchCreativeWork	I-object_name
+
+# id: 290
+# text: احجز مطعم ذو تقييم عال بعد سبعة أسابيع من الآن
+# text-en: book a top-rated osteria seven weeks from now
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	مطعم	BookRestaurant	B-restaurant_type
+3	ذو	BookRestaurant	O
+4	تقييم	BookRestaurant	B-sort
+5	عال	BookRestaurant	I-sort
+6	بعد	BookRestaurant	B-datetime
+7	سبعة	BookRestaurant	I-datetime
+8	أسابيع	BookRestaurant	I-datetime
+9	من	BookRestaurant	I-datetime
+10	الآن	BookRestaurant	I-datetime
+
+# id: 291
+# text: ما هي السينما التي تعرض Flower and Snake في 08:56:29 ؟
+# text-en: What movie house is showing Flower and Snake at 08:56:29 ?
+# intent: SearchScreeningEvent
+1	ما	SearchScreeningEvent	O
+2	هي	SearchScreeningEvent	O
+3	السينما	SearchScreeningEvent	B-object_location_type
+4	التي	SearchScreeningEvent	O
+5	تعرض	SearchScreeningEvent	O
+6	Flower	SearchScreeningEvent	B-movie_name
+7	and	SearchScreeningEvent	I-movie_name
+8	Snake	SearchScreeningEvent	I-movie_name
+9	في	SearchScreeningEvent	O
+10	08:56:29	SearchScreeningEvent	B-datetime
+11	؟	SearchScreeningEvent	O
+
+# id: 292
+# text: اعثر على مطعم في ولاية فلوريدا يقدم كيشي
+# text-en: Find a restaurant in FM that servec quiche
+# intent: BookRestaurant
+1	اعثر	BookRestaurant	O
+2	على	BookRestaurant	O
+3	مطعم	BookRestaurant	B-restaurant_type
+4	في	BookRestaurant	O
+5	ولاية	BookRestaurant	B-location
+6	فلوريدا	BookRestaurant	I-location
+7	يقدم	BookRestaurant	O
+8	كيشي	BookRestaurant	B-served_dish
+
+# id: 293
+# text: احجز حجزًا لـ 7 أشخاص في The French Laundry في 8 يونيو 2029
+# text-en: Book a reservation for 7 people at The French Laundry on june the 8th, 2029
+# intent: BookRestaurant
+1	احجز	BookRestaurant	O
+2	حجزًا	BookRestaurant	O
+3	لـ	BookRestaurant	O
+4	7	BookRestaurant	B-party_size_number
+5	أشخاص	BookRestaurant	O
+6	في	BookRestaurant	O
+7	The	BookRestaurant	B-restaurant_name
+8	French	BookRestaurant	I-restaurant_name
+9	Laundry	BookRestaurant	I-restaurant_name
+10	في	BookRestaurant	O
+11	8	BookRestaurant	B-datetime
+12	يونيو	BookRestaurant	I-datetime
+13	2029	BookRestaurant	I-datetime
+
+# id: 294
+# text: ألعب ألحان الأربعينات
+# text-en: play fourties tunes
+# intent: PlayMusic
+1	ألعب	PlayMusic	O
+2	ألحان	PlayMusic	O
+3	الأربعينات	PlayMusic	B-datetime
+
+# id: 295
+# text: متى ستقوم مسارح Santikos بعرض أفلام الرسوم المتحركة
+# text-en: When will the Santikos Theatres be showing animated movies
+# intent: SearchScreeningEvent
+1	متى	SearchScreeningEvent	O
+2	ستقوم	SearchScreeningEvent	O
+3	مسارح	SearchScreeningEvent	B-location
+4	Santikos	SearchScreeningEvent	B-location
+5	بعرض	SearchScreeningEvent	O
+6	أفلام	SearchScreeningEvent	B-movie_type
+7	الرسوم	SearchScreeningEvent	I-movie_type
+8	المتحركة	SearchScreeningEvent	I-movie_type
+
+# id: 296
+# text: شغِّل الموسيقى على Itunes
+# text-en: Play music on Itunes
+# intent: PlayMusic
+1	شغِّل	PlayMusic	O
+2	الموسيقى	PlayMusic	O
+3	على	PlayMusic	O
+4	Itunes	PlayMusic	B-service
+
+# id: 297
+# text: عرض كتاب اسمه Straight No Chaser
+# text-en: show book name Straight No Chase
+# intent: SearchCreativeWork
+1	عرض	SearchCreativeWork	O
+2	كتاب	SearchCreativeWork	B-object_type
+3	اسمه	SearchCreativeWork	O
+4	Straight	SearchCreativeWork	B-object_name
+5	No	SearchCreativeWork	I-object_name
+6	Chaser	SearchCreativeWork	I-object_name
+
+# id: 298
+# text: ابحث عن جداول عرض الأفلام القريبة
+# text-en: Find the movie schedules for movies close by
+# intent: SearchScreeningEvent
+1	ابحث	SearchScreeningEvent	O
+2	عن	SearchScreeningEvent	O
+3	جداول	SearchScreeningEvent	B-object_type
+4	عرض	SearchScreeningEvent	I-object_type
+5	الأفلام	SearchScreeningEvent	B-movie_type
+6	القريبة	SearchScreeningEvent	B-location
+
+# id: 299
+# text: هذا الشتاء ، تريد ميريديث وبيتي وإريكا تناول الطعام في حانة تقع في نفس المنطقة مثل موقع فران .
+# text-en: this winter , meredith, betty and erika want to food at a gastropub that is in the same area as fran's location .
+# intent: BookRestaurant
+1	هذا	BookRestaurant	B-datetime
+2	الشتاء	BookRestaurant	I-datetime
+3	،	BookRestaurant	O
+4	تريد	BookRestaurant	O
+5	ميريديث	BookRestaurant	B-party_size_description
+6	وبيتي	BookRestaurant	I-party_size_description
+7	وإريكا	BookRestaurant	I-party_size_description
+8	تناول	BookRestaurant	O
+9	الطعام	BookRestaurant	O
+10	في	BookRestaurant	O
+11	حانة	BookRestaurant	B-restaurant_type
+12	تقع	BookRestaurant	O
+13	في	BookRestaurant	O
+14	نفس	BookRestaurant	B-location
+15	المنطقة	BookRestaurant	I-location
+16	مثل	BookRestaurant	O
+17	موقع	BookRestaurant	O
+18	فران	BookRestaurant	B-location
+19	.	BookRestaurant	O
+
+# id: 300
+# text: إضف لحن إلى Para comer الخاصة بي
+# text-en: Add tune to my Para comer
+# intent: AddToPlaylist
+1	إضف	AddToPlaylist	O
+2	لحن	AddToPlaylist	B-music_item
+3	إلى	AddToPlaylist	O
+4	Para	AddToPlaylist	B-playlist
+5	comer	AddToPlaylist	I-playlist
+6	الخاصة	AddToPlaylist	O
+7	بي	AddToPlaylist	B-reference
+

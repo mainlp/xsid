@@ -1,0 +1,3435 @@
+# id: 1
+# text-en: Is it going to rain today?
+# text: Бүгін жаңбыр жауады ма?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	жаңбыр	weather/find	B-weather/attribute
+3	жауады	weather/find	O
+4	ма	weather/find	O
+5	?	weather/find	O
+
+# id: 2
+# text-en: how hot is it going to be today
+# text: бүгін қаншалықты ыстық болайын деп жатыр
+# intent: weather/find
+1	бүгін	weather/find	B-datetime
+2	қаншалықты	weather/find	O
+3	ыстық	weather/find	B-weather/attribute
+4	болайын	weather/find	O
+5	деп	weather/find	O
+6	жатыр	weather/find	O
+
+# id: 3
+# text-en: How hot is it?
+# text: Қаншалықты ыстық?
+# intent: weather/find
+1	Қаншалықты	weather/find	O
+2	ыстық	weather/find	B-weather/attribute
+3	?	weather/find	O
+
+# id: 4
+# text-en: Will it be sunny today?
+# text: Бүгін күн ашық болады ма?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	күн	weather/find	B-weather/attribute
+3	ашық	weather/find	I-weather/attribute
+4	болады	weather/find	O
+5	ма	weather/find	O
+6	?	weather/find	O
+
+# id: 5
+# text-en: Is it cloudy today?
+# text: Бүгін бұлтты ма?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	бұлтты	weather/find	B-weather/attribute
+3	ма	weather/find	O
+4	?	weather/find	O
+
+# id: 6
+# text-en: Cancel all my reminders.
+# text: Менің барлық еске салғыштарымды алып таста.
+# intent: reminder/cancel_reminder
+1	Менің	reminder/cancel_reminder	B-reference
+2	барлық	reminder/cancel_reminder	I-reference
+3	еске	reminder/cancel_reminder	O
+4	салғыштарымды	reminder/cancel_reminder	O
+5	алып	reminder/cancel_reminder	O
+6	таста	reminder/cancel_reminder	O
+7	.	reminder/cancel_reminder	O
+
+# id: 7
+# text-en: what alarms do I have set?
+# text: мен қандай оятқыштарды орнаттым?
+# intent: alarm/show_alarms
+1	мен	alarm/show_alarms	O
+2	қандай	alarm/show_alarms	O
+3	оятқыштарды	alarm/show_alarms	O
+4	орнаттым	alarm/show_alarms	O
+5	?	alarm/show_alarms	O
+
+# id: 8
+# text-en: I need an alarm for 5pm to remind me to take my medicine
+# text: Маған кешкі сағат 5-те менің дәрілерімді қабылдауды менің есіме салатын оятқыш қажет
+# intent: alarm/set_alarm
+1	Маған	alarm/set_alarm	O
+2	кешкі	alarm/set_alarm	B-datetime
+3	сағат	alarm/set_alarm	I-datetime
+4	5-те	alarm/set_alarm	I-datetime
+5	менің	alarm/set_alarm	B-reminder/todo
+6	дәрілерімді	alarm/set_alarm	I-reminder/todo
+7	қабылдауды	alarm/set_alarm	I-reminder/todo
+8	менің	alarm/set_alarm	O
+9	есіме	alarm/set_alarm	O
+10	салатын	alarm/set_alarm	O
+11	оятқыш	alarm/set_alarm	O
+12	қажет	alarm/set_alarm	O
+
+# id: 9
+# text-en: set alarm for every 3 minutes
+# text: оятқышты 3 минут сайын қос
+# intent: alarm/set_alarm
+1	оятқышты	alarm/set_alarm	O
+2	3	alarm/set_alarm	B-recurring_datetime
+3	минут	alarm/set_alarm	I-recurring_datetime
+4	сайын	alarm/set_alarm	I-recurring_datetime
+5	қос	alarm/set_alarm	O
+
+# id: 10
+# text-en: Is it going to storm today?
+# text: Бүгін дауыл бола ма?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	дауыл	weather/find	B-weather/attribute
+3	бола	weather/find	O
+4	ма	weather/find	O
+5	?	weather/find	O
+
+# id: 11
+# text-en: Cancel this afternoon's alarm.
+# text: Күндізгі оятқышты алып таста.
+# intent: alarm/cancel_alarm
+1	Күндізгі	alarm/cancel_alarm	B-datetime
+2	оятқышты	alarm/cancel_alarm	O
+3	алып	alarm/cancel_alarm	O
+4	таста	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# id: 12
+# text-en: Is it going to rain next week
+# text: Келесі аптада жаңбыр жауады ма
+# intent: weather/find
+1	Келесі	weather/find	B-datetime
+2	аптада	weather/find	I-datetime
+3	жаңбыр	weather/find	B-weather/attribute
+4	жауады	weather/find	O
+5	ма	weather/find	O
+
+# id: 13
+# text-en: What's next week's forecast?
+# text: Келесі аптаға болжам қандай?
+# intent: weather/find
+1	Келесі	weather/find	B-datetime
+2	аптаға	weather/find	I-datetime
+3	болжам	weather/find	O
+4	қандай	weather/find	O
+5	?	weather/find	O
+
+# id: 14
+# text-en: Read me my reminders.
+# text: Маған менің еске салғыштарымды оқып берші.
+# intent: reminder/show_reminders
+1	Маған	reminder/show_reminders	O
+2	менің	reminder/show_reminders	B-reference
+3	еске	reminder/show_reminders	O
+4	салғыштарымды	reminder/show_reminders	O
+5	оқып	reminder/show_reminders	O
+6	берші	reminder/show_reminders	O
+7	.	reminder/show_reminders	O
+
+# id: 15
+# text-en: Show all alarms
+# text: Барлық оятқыштарды көрсет
+# intent: alarm/show_alarms
+1	Барлық	alarm/show_alarms	B-reference
+2	оятқыштарды	alarm/show_alarms	O
+3	көрсет	alarm/show_alarms	O
+
+# id: 16
+# text-en: Alarm every five minutes for 20 minutes please
+# text: Оятқышты 20 минут бойы бес минут сайын қосшы
+# intent: alarm/set_alarm
+1	Оятқышты	alarm/set_alarm	O
+2	20	alarm/set_alarm	B-recurring_datetime
+3	минут	alarm/set_alarm	I-recurring_datetime
+4	бойы	alarm/set_alarm	I-recurring_datetime
+5	бес	alarm/set_alarm	I-recurring_datetime
+6	минут	alarm/set_alarm	I-recurring_datetime
+7	сайын	alarm/set_alarm	I-recurring_datetime
+8	қосшы	alarm/set_alarm	O
+
+# id: 17
+# text-en: Change tomorrow mornings alarm to 6 am.
+# text: Ертеңгі таңертеңгі оятқышты таңғы 6-ға өзгерт.
+# intent: alarm/modify_alarm
+1	Ертеңгі	alarm/modify_alarm	B-datetime
+2	таңертеңгі	alarm/modify_alarm	I-datetime
+3	оятқышты	alarm/modify_alarm	O
+4	таңғы	alarm/modify_alarm	O
+5	6-ға	alarm/modify_alarm	B-datetime
+6	өзгерт	alarm/modify_alarm	O
+7	.	alarm/modify_alarm	O
+
+# id: 18
+# text-en: cancel all reminders
+# text: барлық еске салғыштарды алып таста
+# intent: reminder/cancel_reminder
+1	барлық	reminder/cancel_reminder	B-reference
+2	еске	reminder/cancel_reminder	O
+3	салғыштарды	reminder/cancel_reminder	O
+4	алып	reminder/cancel_reminder	O
+5	таста	reminder/cancel_reminder	O
+
+# id: 19
+# text-en: Show me my alarms
+# text: Маған менің оятқыштарымды көрсет
+# intent: alarm/show_alarms
+1	Маған	alarm/show_alarms	O
+2	менің	alarm/show_alarms	B-reference
+3	оятқыштарымды	alarm/show_alarms	O
+4	көрсет	alarm/show_alarms	O
+
+# id: 20
+# text-en: Cancel alarms
+# text: Оятқыштарды алып таста
+# intent: alarm/cancel_alarm
+1	Оятқыштарды	alarm/cancel_alarm	O
+2	алып	alarm/cancel_alarm	O
+3	таста	alarm/cancel_alarm	O
+
+# id: 21
+# text-en: Set alarm for 6 am tomorrow
+# text: Оятқышты ертең таңғы 6-ға орнат
+# intent: alarm/set_alarm
+1	Оятқышты	alarm/set_alarm	O
+2	ертең	alarm/set_alarm	B-datetime
+3	таңғы	alarm/set_alarm	I-datetime
+4	6-ға	alarm/set_alarm	I-datetime
+5	орнат	alarm/set_alarm	O
+
+# id: 22
+# text-en: Set alarm for 7 am tomorrow
+# text: Оятқышты ертеңгі сағат 7-ге орнат
+# intent: alarm/set_alarm
+1	Оятқышты	alarm/set_alarm	O
+2	ертеңгі	alarm/set_alarm	B-datetime
+3	сағат	alarm/set_alarm	I-datetime
+4	7-ге	alarm/set_alarm	I-datetime
+5	орнат	alarm/set_alarm	O
+
+# id: 23
+# text-en: set alarm for 6 am
+# text: оятқышты таңғы сағат 6-ға орнат
+# intent: alarm/set_alarm
+1	оятқышты	alarm/set_alarm	O
+2	таңғы	alarm/set_alarm	B-datetime
+3	сағат	alarm/set_alarm	I-datetime
+4	6-ға	alarm/set_alarm	I-datetime
+5	орнат	alarm/set_alarm	O
+
+# id: 24
+# text-en: i need a reminder to pick Lisa up
+# text: Лизаны қарсы алу үшін маған еске салғыш керек
+# intent: reminder/set_reminder
+1	Лизаны	reminder/set_reminder	B-reminder/todo
+2	қарсы	reminder/set_reminder	I-reminder/todo
+3	алу	reminder/set_reminder	I-reminder/todo
+4	үшін	reminder/set_reminder	O
+5	маған	reminder/set_reminder	O
+6	еске	reminder/set_reminder	O
+7	салғыш	reminder/set_reminder	O
+8	керек	reminder/set_reminder	O
+
+# id: 25
+# text-en: show all alarms
+# text: барлық оятқыштарды көрсет
+# intent: alarm/show_alarms
+1	барлық	alarm/show_alarms	B-reference
+2	оятқыштарды	alarm/show_alarms	O
+3	көрсет	alarm/show_alarms	O
+
+# id: 26
+# text-en: Turn off all alarms
+# text: Барлық оятқыштарды өшір
+# intent: alarm/cancel_alarm
+1	Барлық	alarm/cancel_alarm	B-reference
+2	оятқыштарды	alarm/cancel_alarm	O
+3	өшір	alarm/cancel_alarm	O
+
+# id: 27
+# text-en: What are my reminders?
+# text: Менің еске салғыштарым қандай?
+# intent: reminder/show_reminders
+1	Менің	reminder/show_reminders	B-reference
+2	еске	reminder/show_reminders	O
+3	салғыштарым	reminder/show_reminders	O
+4	қандай	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# id: 28
+# text-en: is it hot outside
+# text: сыртта ыстық па
+# intent: weather/find
+1	сыртта	weather/find	B-location
+2	ыстық	weather/find	B-weather/attribute
+3	па	weather/find	O
+
+# id: 29
+# text-en: Snooze alarm
+# text: Оятқышты кейінге қалдыр
+# intent: alarm/snooze_alarm
+1	Оятқышты	alarm/snooze_alarm	O
+2	кейінге	alarm/snooze_alarm	O
+3	қалдыр	alarm/snooze_alarm	O
+
+# id: 30
+# text-en: alarm on
+# text: Оятқышты қосулы
+# intent: alarm/set_alarm
+1	Оятқышты	alarm/set_alarm	O
+2	қосулы	alarm/set_alarm	O
+
+# id: 31
+# text-en: Set an alarm for 6 am on Wed
+# text: Сәрсенбіде таңғы сағат 6-ға оятқышты орнат
+# intent: alarm/set_alarm
+1	Сәрсенбіде	alarm/set_alarm	B-datetime
+2	таңғы	alarm/set_alarm	I-datetime
+3	сағат	alarm/set_alarm	I-datetime
+4	6-ға	alarm/set_alarm	I-datetime
+5	оятқышты	alarm/set_alarm	O
+6	орнат	alarm/set_alarm	O
+
+# id: 32
+# text-en: remind me to submit my lesson plans every monday by the end of the day
+# text: сабақ жоспарларын әр дүйсенбі сайын күннің аяғына дейін тапсыруды есіме сал
+# intent: reminder/set_reminder
+1	сабақ	reminder/set_reminder	B-reminder/todo
+2	жоспарларын	reminder/set_reminder	I-reminder/todo
+3	әр	reminder/set_reminder	B-recurring_datetime
+4	дүйсенбі	reminder/set_reminder	I-recurring_datetime
+5	сайын	reminder/set_reminder	I-recurring_datetime
+6	күннің	reminder/set_reminder	I-recurring_datetime
+7	аяғына	reminder/set_reminder	I-recurring_datetime
+8	дейін	reminder/set_reminder	I-recurring_datetime
+9	тапсыруды	reminder/set_reminder	B-reminder/todo
+10	есіме	reminder/set_reminder	O
+11	сал	reminder/set_reminder	O
+
+# id: 33
+# text-en: how hot is it going to be today
+# text: бүгін қаншалықты ыстық болайын деп жатыр
+# intent: weather/find
+1	бүгін	weather/find	B-datetime
+2	қаншалықты	weather/find	O
+3	ыстық	weather/find	B-weather/attribute
+4	болайын	weather/find	O
+5	деп	weather/find	O
+6	жатыр	weather/find	O
+
+# id: 34
+# text-en: Clear all set alarms.
+# text: Барлық орнатылған оятқыштарды өшір.
+# intent: alarm/cancel_alarm
+1	Барлық	alarm/cancel_alarm	B-reference
+2	орнатылған	alarm/cancel_alarm	O
+3	оятқыштарды	alarm/cancel_alarm	O
+4	өшір	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# id: 35
+# text-en: Show all alarms
+# text: Барлық оятқыштарды көрсет
+# intent: alarm/show_alarms
+1	Барлық	alarm/show_alarms	B-reference
+2	оятқыштарды	alarm/show_alarms	O
+3	көрсет	alarm/show_alarms	O
+
+# id: 36
+# text-en: Will it be sunny today?
+# text: Бүгін күн ашық болады ма?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	күн	weather/find	B-weather/attribute
+3	ашық	weather/find	I-weather/attribute
+4	болады	weather/find	O
+5	ма	weather/find	O
+6	?	weather/find	O
+
+# id: 37
+# text-en: What is the humidity level today
+# text: Бүгін ылғалдылық деңгейі қандай
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	ылғалдылық	weather/find	B-weather/attribute
+3	деңгейі	weather/find	I-weather/attribute
+4	қандай	weather/find	O
+
+# id: 38
+# text-en: Cancel all reminders
+# text: Барлық еске салғыштарды балып таста
+# intent: reminder/cancel_reminder
+1	Барлық	reminder/cancel_reminder	B-reference
+2	еске	reminder/cancel_reminder	O
+3	салғыштарды	reminder/cancel_reminder	O
+4	балып	reminder/cancel_reminder	O
+5	таста	reminder/cancel_reminder	O
+
+# id: 39
+# text-en: set an alarm for fifteen minutes
+# text: он бес минутқа оятқышты орнат
+# intent: alarm/set_alarm
+1	он	alarm/set_alarm	B-datetime
+2	бес	alarm/set_alarm	I-datetime
+3	минутқа	alarm/set_alarm	I-datetime
+4	оятқышты	alarm/set_alarm	O
+5	орнат	alarm/set_alarm	O
+
+# id: 40
+# text-en: Please set my alarm for 4am this Saturday.
+# text: Осы сенбіде кундізгі сағат 4-ке менің оятқышымды қойшы.
+# intent: alarm/set_alarm
+1	Осы	alarm/set_alarm	B-datetime
+2	сенбіде	alarm/set_alarm	I-datetime
+3	кундізгі	alarm/set_alarm	I-datetime
+4	сағат	alarm/set_alarm	I-datetime
+5	4-ке	alarm/set_alarm	I-datetime
+6	менің	alarm/set_alarm	B-reference
+7	оятқышымды	alarm/set_alarm	O
+8	қойшы	alarm/set_alarm	O
+9	.	alarm/set_alarm	O
+
+# id: 41
+# text-en: Give me a reminder for house closing at 10am tomorrow.
+# text: Маған үйді жабу туралы ертеңгі сағат 10-да есіме сал.
+# intent: reminder/set_reminder
+1	Маған	reminder/set_reminder	O
+2	үйді	reminder/set_reminder	B-reminder/todo
+3	жабу	reminder/set_reminder	I-reminder/todo
+4	туралы	reminder/set_reminder	O
+5	ертеңгі	reminder/set_reminder	B-datetime
+6	сағат	reminder/set_reminder	I-datetime
+7	10-да	reminder/set_reminder	I-datetime
+8	есіме	reminder/set_reminder	O
+9	сал	reminder/set_reminder	O
+10	.	reminder/set_reminder	O
+
+# id: 42
+# text-en: delete all alarms
+# text: барлық оятқыштарды жой
+# intent: alarm/cancel_alarm
+1	барлық	alarm/cancel_alarm	B-reference
+2	оятқыштарды	alarm/cancel_alarm	O
+3	жой	alarm/cancel_alarm	O
+
+# id: 43
+# text-en: How many alarms do I have set for Sunday?
+# text: Мен жексенбіге қанша оятқыштарды орнаттым?
+# intent: alarm/show_alarms
+1	Мен	alarm/show_alarms	O
+2	жексенбіге	alarm/show_alarms	B-datetime
+3	қанша	alarm/show_alarms	O
+4	оятқыштарды	alarm/show_alarms	O
+5	орнаттым	alarm/show_alarms	O
+6	?	alarm/show_alarms	O
+
+# id: 44
+# text-en: show all alarms
+# text: барлық оятқыштарды көрсет
+# intent: alarm/show_alarms
+1	барлық	alarm/show_alarms	B-reference
+2	оятқыштарды	alarm/show_alarms	O
+3	көрсет	alarm/show_alarms	O
+
+# id: 45
+# text-en: Is it going to be sunny today?
+# text: Бүгін күн ашық болады ма?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	күн	weather/find	B-weather/attribute
+3	ашық	weather/find	I-weather/attribute
+4	болады	weather/find	O
+5	ма	weather/find	O
+6	?	weather/find	O
+
+# id: 46
+# text-en: set alarm for 615am
+# text: таңғы сағат 615-ке оятқышты орнат
+# intent: alarm/set_alarm
+1	таңғы	alarm/set_alarm	B-datetime
+2	сағат	alarm/set_alarm	I-datetime
+3	615-ке	alarm/set_alarm	I-datetime
+4	оятқышты	alarm/set_alarm	O
+5	орнат	alarm/set_alarm	O
+
+# id: 47
+# text-en: Set two alarms for tomorrow morning
+# text: Ертең таңертеңге екі оятқышты орнат
+# intent: alarm/set_alarm
+1	Ертең	alarm/set_alarm	B-datetime
+2	таңертеңге	alarm/set_alarm	I-datetime
+3	екі	alarm/set_alarm	O
+4	оятқышты	alarm/set_alarm	O
+5	орнат	alarm/set_alarm	O
+
+# id: 48
+# text-en: Turn off all alarms
+# text: Барлық оятқыштарды өшір
+# intent: alarm/cancel_alarm
+1	Барлық	alarm/cancel_alarm	B-reference
+2	оятқыштарды	alarm/cancel_alarm	O
+3	өшір	alarm/cancel_alarm	O
+
+# id: 49
+# text-en: What is the temperature like in London right now?
+# text: Дәл қазір Лондондағы температура қандай?
+# intent: weather/find
+1	Дәл	weather/find	O
+2	қазір	weather/find	B-datetime
+3	Лондондағы	weather/find	B-location
+4	температура	weather/find	B-weather/attribute
+5	қандай	weather/find	O
+6	?	weather/find	O
+
+# id: 50
+# text-en: Cancel my last reminder
+# text: Менің соңғы еске салғышымды алып таста
+# intent: reminder/cancel_reminder
+1	Менің	reminder/cancel_reminder	B-reference
+2	соңғы	reminder/cancel_reminder	I-reference
+3	еске	reminder/cancel_reminder	O
+4	салғышымды	reminder/cancel_reminder	O
+5	алып	reminder/cancel_reminder	O
+6	таста	reminder/cancel_reminder	O
+
+# id: 51
+# text-en: Set a reminder to go to the grocery store later
+# text: Азық-түлік дүкеніне кейінірек бару үшін еске салғышты орнат
+# intent: reminder/set_reminder
+1	Азық-түлік	reminder/set_reminder	B-reminder/todo
+2	дүкеніне	reminder/set_reminder	I-reminder/todo
+3	кейінірек	reminder/set_reminder	B-datetime
+4	бару	reminder/set_reminder	B-reminder/todo
+5	үшін	reminder/set_reminder	O
+6	еске	reminder/set_reminder	O
+7	салғышты	reminder/set_reminder	O
+8	орнат	reminder/set_reminder	O
+
+# id: 52
+# text-en: What will be the heat index today?
+# text: Бүгін жылу индексі қандай болады?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	жылу	weather/find	B-weather/attribute
+3	индексі	weather/find	I-weather/attribute
+4	қандай	weather/find	O
+5	болады	weather/find	O
+6	?	weather/find	O
+
+# id: 53
+# text-en: How cold will it be today?
+# text: Бүгін қаншалықты салқын болады?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	қаншалықты	weather/find	O
+3	салқын	weather/find	B-weather/attribute
+4	болады	weather/find	O
+5	?	weather/find	O
+
+# id: 54
+# text-en: will it snow today
+# text: бүгін қар жауады ма
+# intent: weather/find
+1	бүгін	weather/find	B-datetime
+2	қар	weather/find	B-weather/attribute
+3	жауады	weather/find	O
+4	ма	weather/find	O
+
+# id: 55
+# text-en: Set alarm for 5am
+# text: Оятқышты сағат таңғы 5-ке орнат
+# intent: alarm/set_alarm
+1	Оятқышты	alarm/set_alarm	O
+2	сағат	alarm/set_alarm	O
+3	таңғы	alarm/set_alarm	O
+4	5-ке	alarm/set_alarm	B-datetime
+5	орнат	alarm/set_alarm	O
+
+# id: 56
+# text-en: turn off alarm
+# text: оятқышты өшір
+# intent: alarm/cancel_alarm
+1	оятқышты	alarm/cancel_alarm	O
+2	өшір	alarm/cancel_alarm	O
+
+# id: 57
+# text-en: cancel all alarms
+# text: барлық оятқыштарды алып таста
+# intent: alarm/cancel_alarm
+1	барлық	alarm/cancel_alarm	B-reference
+2	оятқыштарды	alarm/cancel_alarm	O
+3	алып	alarm/cancel_alarm	O
+4	таста	alarm/cancel_alarm	O
+
+# id: 58
+# text-en: Add reminder to swim at 11am tomorrow
+# text: Ертең сағат кундізгі 11-де жүзуді еске салғышты қос
+# intent: reminder/set_reminder
+1	Ертең	reminder/set_reminder	B-datetime
+2	сағат	reminder/set_reminder	I-datetime
+3	кундізгі	reminder/set_reminder	I-datetime
+4	11-де	reminder/set_reminder	I-datetime
+5	жүзуді	reminder/set_reminder	B-reminder/todo
+6	еске	reminder/set_reminder	O
+7	салғышты	reminder/set_reminder	O
+8	қос	reminder/set_reminder	O
+
+# id: 59
+# text-en: Show my reminder
+# text: Менің еске салғышымды көрсет
+# intent: reminder/show_reminders
+1	Менің	reminder/show_reminders	B-reference
+2	еске	reminder/show_reminders	O
+3	салғышымды	reminder/show_reminders	O
+4	көрсет	reminder/show_reminders	O
+
+# id: 60
+# text-en: Cancel my alarm on Saturday
+# text: Сенбідегі менің оятқышымды алып таста
+# intent: alarm/cancel_alarm
+1	Сенбідегі	alarm/cancel_alarm	B-datetime
+2	менің	alarm/cancel_alarm	B-reference
+3	оятқышымды	alarm/cancel_alarm	O
+4	алып	alarm/cancel_alarm	O
+5	таста	alarm/cancel_alarm	O
+
+# id: 61
+# text-en: Is it cold out?
+# text: Сыртта суық па?
+# intent: weather/find
+1	Сыртта	weather/find	B-location
+2	суық	weather/find	B-weather/attribute
+3	па	weather/find	O
+4	?	weather/find	O
+
+# id: 62
+# text-en: Is it humid today?
+# text: Бүгін ылғалды ма?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	ылғалды	weather/find	B-weather/attribute
+3	ма	weather/find	O
+4	?	weather/find	O
+
+# id: 63
+# text-en: Set alarm every minute for 11 minutes
+# text: 11 минутқа әр минут сайын оятқышты қос
+# intent: alarm/set_alarm
+1	11	alarm/set_alarm	B-recurring_datetime
+2	минутқа	alarm/set_alarm	I-recurring_datetime
+3	әр	alarm/set_alarm	I-recurring_datetime
+4	минут	alarm/set_alarm	I-recurring_datetime
+5	сайын	alarm/set_alarm	I-recurring_datetime
+6	оятқышты	alarm/set_alarm	O
+7	қос	alarm/set_alarm	O
+
+# id: 64
+# text-en: Show my reminder
+# text: Менің еске салғышымды көрсет
+# intent: reminder/show_reminders
+1	Менің	reminder/show_reminders	B-reference
+2	еске	reminder/show_reminders	O
+3	салғышымды	reminder/show_reminders	O
+4	көрсет	reminder/show_reminders	O
+
+# id: 65
+# text-en: Is it going to be windy today?
+# text: Бүгін жел болады ма?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	жел	weather/find	B-weather/attribute
+3	болады	weather/find	O
+4	ма	weather/find	O
+5	?	weather/find	O
+
+# id: 66
+# text-en: Cancel tomorrow's reminders
+# text: Ертеңгі еске салғыштарды алып таста
+# intent: reminder/cancel_reminder
+1	Ертеңгі	reminder/cancel_reminder	B-datetime
+2	еске	reminder/cancel_reminder	O
+3	салғыштарды	reminder/cancel_reminder	O
+4	алып	reminder/cancel_reminder	O
+5	таста	reminder/cancel_reminder	O
+
+# id: 67
+# text-en: tell me the 3 day forecast
+# text: маған 3 күндік болжамды айтшы
+# intent: weather/find
+1	маған	weather/find	O
+2	3	weather/find	B-datetime
+3	күндік	weather/find	I-datetime
+4	болжамды	weather/find	O
+5	айтшы	weather/find	O
+
+# id: 68
+# text-en: how many inches of rain are we suppose to get tomorrow?
+# text: ертең неше дюйм жаңбыр жауады екен?
+# intent: weather/find
+1	ертең	weather/find	B-datetime
+2	неше	weather/find	O
+3	дюйм	weather/find	B-weather/attribute
+4	жаңбыр	weather/find	I-weather/attribute
+5	жауады	weather/find	O
+6	екен	weather/find	O
+7	?	weather/find	O
+
+# id: 69
+# text-en: remind me about the wedding
+# text: үйлену той туралы менің есіме түсір
+# intent: reminder/set_reminder
+1	үйлену	reminder/set_reminder	B-reminder/todo
+2	той	reminder/set_reminder	I-reminder/todo
+3	туралы	reminder/set_reminder	O
+4	менің	reminder/set_reminder	O
+5	есіме	reminder/set_reminder	O
+6	түсір	reminder/set_reminder	O
+
+# id: 70
+# text-en: Snooze all alarms
+# text: Барлық оятқыштарды кейінге қалдыр
+# intent: alarm/snooze_alarm
+1	Барлық	alarm/snooze_alarm	B-reference
+2	оятқыштарды	alarm/snooze_alarm	O
+3	кейінге	alarm/snooze_alarm	O
+4	қалдыр	alarm/snooze_alarm	O
+
+# id: 71
+# text-en: When will it rain today?
+# text: Бүгін жаңбыр қашан жауады?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	жаңбыр	weather/find	B-weather/attribute
+3	қашан	weather/find	O
+4	жауады	weather/find	O
+5	?	weather/find	O
+
+# id: 72
+# text-en: show all alarms
+# text: барлық оятқыштарды көрсет
+# intent: alarm/show_alarms
+1	барлық	alarm/show_alarms	B-reference
+2	оятқыштарды	alarm/show_alarms	O
+3	көрсет	alarm/show_alarms	O
+
+# id: 73
+# text-en: Turn off all alarms
+# text: Барлық оятқыштарды өшір
+# intent: alarm/cancel_alarm
+1	Барлық	alarm/cancel_alarm	B-reference
+2	оятқыштарды	alarm/cancel_alarm	O
+3	өшір	alarm/cancel_alarm	O
+
+# id: 74
+# text-en: Is it going to rain today?
+# text: Бүгін жаңбыр жауады ма?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	жаңбыр	weather/find	B-weather/attribute
+3	жауады	weather/find	O
+4	ма	weather/find	O
+5	?	weather/find	O
+
+# id: 75
+# text-en: Show all reminders for tomorrow
+# text: Ертеңгі күннің барлық еске салғыштарын көрсет
+# intent: reminder/show_reminders
+1	Ертеңгі	reminder/show_reminders	B-datetime
+2	күннің	reminder/show_reminders	I-datetime
+3	барлық	reminder/show_reminders	B-reference
+4	еске	reminder/show_reminders	O
+5	салғыштарын	reminder/show_reminders	O
+6	көрсет	reminder/show_reminders	O
+
+# id: 76
+# text-en: cancel my alarm for tomorrow morning
+# text: Ертең таңертеңгі менің оятқышымды алып таста
+# intent: alarm/cancel_alarm
+1	Ертең	alarm/cancel_alarm	B-datetime
+2	таңертеңгі	alarm/cancel_alarm	I-datetime
+3	менің	alarm/cancel_alarm	B-reference
+4	оятқышымды	alarm/cancel_alarm	O
+5	алып	alarm/cancel_alarm	O
+6	таста	alarm/cancel_alarm	O
+
+# id: 77
+# text-en: How hot is it?
+# text: Қаншалықты ыстық?
+# intent: weather/find
+1	Қаншалықты	weather/find	O
+2	ыстық	weather/find	B-weather/attribute
+3	?	weather/find	O
+
+# id: 78
+# text-en: remind me to buy milk tonight
+# text: кешке сүт сатып алуды еске түсір
+# intent: reminder/set_reminder
+1	кешке	reminder/set_reminder	B-datetime
+2	сүт	reminder/set_reminder	B-reminder/todo
+3	сатып	reminder/set_reminder	I-reminder/todo
+4	алуды	reminder/set_reminder	I-reminder/todo
+5	еске	reminder/set_reminder	O
+6	түсір	reminder/set_reminder	O
+
+# id: 79
+# text-en: Cancel all reminders
+# text: Барлық еске салғыштарды балып таста
+# intent: reminder/cancel_reminder
+1	Барлық	reminder/cancel_reminder	B-reference
+2	еске	reminder/cancel_reminder	O
+3	салғыштарды	reminder/cancel_reminder	O
+4	балып	reminder/cancel_reminder	O
+5	таста	reminder/cancel_reminder	O
+
+# id: 80
+# text-en: Show all alarms
+# text: Барлық оятқыштарды көрсет
+# intent: alarm/show_alarms
+1	Барлық	alarm/show_alarms	B-reference
+2	оятқыштарды	alarm/show_alarms	O
+3	көрсет	alarm/show_alarms	O
+
+# id: 81
+# text-en: cancel my alarm for tomorrow morning
+# text: Ертең таңертеңгі менің оятқышымды алып таста
+# intent: alarm/cancel_alarm
+1	Ертең	alarm/cancel_alarm	B-datetime
+2	таңертеңгі	alarm/cancel_alarm	I-datetime
+3	менің	alarm/cancel_alarm	B-reference
+4	оятқышымды	alarm/cancel_alarm	O
+5	алып	alarm/cancel_alarm	O
+6	таста	alarm/cancel_alarm	O
+
+# id: 82
+# text-en: Will it be sunny tomorrow?
+# text: Ертең күн ашық болады ма?
+# intent: weather/find
+1	Ертең	weather/find	B-datetime
+2	күн	weather/find	B-weather/attribute
+3	ашық	weather/find	I-weather/attribute
+4	болады	weather/find	O
+5	ма	weather/find	O
+6	?	weather/find	O
+
+# id: 83
+# text-en: Cancel alarm for tomorrow morning
+# text: Ертең таңертеңгі оятқышты алып таста
+# intent: alarm/cancel_alarm
+1	Ертең	alarm/cancel_alarm	B-datetime
+2	таңертеңгі	alarm/cancel_alarm	I-datetime
+3	оятқышты	alarm/cancel_alarm	O
+4	алып	alarm/cancel_alarm	O
+5	таста	alarm/cancel_alarm	O
+
+# id: 84
+# text-en: show all reminders for tomorrow morning
+# text: ертең таңертеңгі барлық еске салғыштарды көрсет
+# intent: reminder/show_reminders
+1	ертең	reminder/show_reminders	B-datetime
+2	таңертеңгі	reminder/show_reminders	I-datetime
+3	барлық	reminder/show_reminders	O
+4	еске	reminder/show_reminders	O
+5	салғыштарды	reminder/show_reminders	O
+6	көрсет	reminder/show_reminders	O
+
+# id: 85
+# text-en: What is the humidity today?
+# text: Бүгін ылғалдылық қандай?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	ылғалдылық	weather/find	B-weather/attribute
+3	қандай	weather/find	O
+4	?	weather/find	O
+
+# id: 86
+# text-en: When is it going to rain?
+# text: Жаңбыр қашан жауады?
+# intent: weather/find
+1	Жаңбыр	weather/find	B-weather/attribute
+2	қашан	weather/find	O
+3	жауады	weather/find	O
+4	?	weather/find	O
+
+# id: 87
+# text-en: How hot is it
+# text: Қаншалықты ыстық
+# intent: weather/find
+1	Қаншалықты	weather/find	O
+2	ыстық	weather/find	B-weather/attribute
+
+# id: 88
+# text-en: show me my reminders
+# text: маған менің еске салғыштарымды көрсет
+# intent: reminder/show_reminders
+1	маған	reminder/show_reminders	O
+2	менің	reminder/show_reminders	B-reference
+3	еске	reminder/show_reminders	O
+4	салғыштарымды	reminder/show_reminders	O
+5	көрсет	reminder/show_reminders	O
+
+# id: 89
+# text-en: What is the 5 day forecast?
+# text: 5 күндік болжам қандай?
+# intent: weather/find
+1	5	weather/find	B-datetime
+2	күндік	weather/find	I-datetime
+3	болжам	weather/find	O
+4	қандай	weather/find	O
+5	?	weather/find	O
+
+# id: 90
+# text-en: set alarm for 6 am
+# text: оятқышты таңғы сағат 6-ға орнат
+# intent: alarm/set_alarm
+1	оятқышты	alarm/set_alarm	O
+2	таңғы	alarm/set_alarm	B-datetime
+3	сағат	alarm/set_alarm	I-datetime
+4	6-ға	alarm/set_alarm	I-datetime
+5	орнат	alarm/set_alarm	O
+
+# id: 91
+# text-en: Is it cold today?
+# text: Бүгін суық па?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	суық	weather/find	B-weather/attribute
+3	па	weather/find	O
+4	?	weather/find	O
+
+# id: 92
+# text-en: Set a reminder to call my school on Monday at 4 PM
+# text: Дүйсенбіде күндізгі сағат 4-те менің мектебіме қоңырау шалу туралы еске салғышты орнат
+# intent: reminder/set_reminder
+1	Дүйсенбіде	reminder/set_reminder	B-datetime
+2	күндізгі	reminder/set_reminder	I-datetime
+3	сағат	reminder/set_reminder	I-datetime
+4	4-те	reminder/set_reminder	I-datetime
+5	менің	reminder/set_reminder	B-reminder/todo
+6	мектебіме	reminder/set_reminder	I-reminder/todo
+7	қоңырау	reminder/set_reminder	I-reminder/todo
+8	шалу	reminder/set_reminder	I-reminder/todo
+9	туралы	reminder/set_reminder	O
+10	еске	reminder/set_reminder	O
+11	салғышты	reminder/set_reminder	O
+12	орнат	reminder/set_reminder	O
+
+# id: 93
+# text-en: Delete my reminder for picking up Patrick from school tomorrow.
+# text: Ертең Патрикті мектептен алып кету туралы менің еске салғышымды жой.
+# intent: reminder/cancel_reminder
+1	Ертең	reminder/cancel_reminder	B-datetime
+2	Патрикті	reminder/cancel_reminder	B-reminder/todo
+3	мектептен	reminder/cancel_reminder	I-reminder/todo
+4	алып	reminder/cancel_reminder	I-reminder/todo
+5	кету	reminder/cancel_reminder	I-reminder/todo
+6	туралы	reminder/cancel_reminder	O
+7	менің	reminder/cancel_reminder	B-reference
+8	еске	reminder/cancel_reminder	O
+9	салғышымды	reminder/cancel_reminder	O
+10	жой	reminder/cancel_reminder	O
+11	.	reminder/cancel_reminder	O
+
+# id: 94
+# text-en: How cold will it be in the morning?
+# text: Таңертең қаншалықты салқын болады?
+# intent: weather/find
+1	Таңертең	weather/find	B-datetime
+2	қаншалықты	weather/find	O
+3	салқын	weather/find	B-weather/attribute
+4	болады	weather/find	O
+5	?	weather/find	O
+
+# id: 95
+# text-en: do i need an umbrella tomorrow
+# text: маған ертең қолшатыр керек пе
+# intent: weather/find
+1	маған	weather/find	O
+2	ертең	weather/find	B-datetime
+3	қолшатыр	weather/find	B-weather/attribute
+4	керек	weather/find	O
+5	пе	weather/find	O
+
+# id: 96
+# text-en: Show my reminder
+# text: Менің еске салғышымды көрсет
+# intent: reminder/show_reminders
+1	Менің	reminder/show_reminders	B-reference
+2	еске	reminder/show_reminders	O
+3	салғышымды	reminder/show_reminders	O
+4	көрсет	reminder/show_reminders	O
+
+# id: 97
+# text-en: Stop alarm for 6:00 am
+# text: Таңертеңгі сағат 6-дағы оятқышты тоқтат
+# intent: alarm/cancel_alarm
+1	Таңертеңгі	alarm/cancel_alarm	B-datetime
+2	сағат	alarm/cancel_alarm	I-datetime
+3	6-дағы	alarm/cancel_alarm	I-datetime
+4	оятқышты	alarm/cancel_alarm	O
+5	тоқтат	alarm/cancel_alarm	O
+
+# id: 98
+# text-en: Cancel all alarms
+# text: Барлық оятқыштарды алып таста
+# intent: alarm/cancel_alarm
+1	Барлық	alarm/cancel_alarm	B-reference
+2	оятқыштарды	alarm/cancel_alarm	O
+3	алып	alarm/cancel_alarm	O
+4	таста	alarm/cancel_alarm	O
+
+# id: 99
+# text-en: Will it be sunny today?
+# text: Бүгін күн ашық болады ма?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	күн	weather/find	B-weather/attribute
+3	ашық	weather/find	I-weather/attribute
+4	болады	weather/find	O
+5	ма	weather/find	O
+6	?	weather/find	O
+
+# id: 100
+# text-en: what is the weather in london?
+# text: лондондағы ауа-райы қандай?
+# intent: weather/find
+1	лондондағы	weather/find	B-location
+2	ауа-райы	weather/find	O
+3	қандай	weather/find	O
+4	?	weather/find	O
+
+# id: 101
+# text-en: What are my reminders?
+# text: Менің еске салғыштарым қандай?
+# intent: reminder/show_reminders
+1	Менің	reminder/show_reminders	B-reference
+2	еске	reminder/show_reminders	O
+3	салғыштарым	reminder/show_reminders	O
+4	қандай	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# id: 102
+# text-en: Cancel my reminder to text Dad
+# text: Әкеме мәтіндік хабарлама жіберу туралы менің еске салғышымды алып таста
+# intent: reminder/cancel_reminder
+1	Әкеме	reminder/cancel_reminder	B-reminder/todo
+2	мәтіндік	reminder/cancel_reminder	I-reminder/todo
+3	хабарлама	reminder/cancel_reminder	I-reminder/todo
+4	жіберу	reminder/cancel_reminder	I-reminder/todo
+5	туралы	reminder/cancel_reminder	O
+6	менің	reminder/cancel_reminder	B-reference
+7	еске	reminder/cancel_reminder	O
+8	салғышымды	reminder/cancel_reminder	O
+9	алып	reminder/cancel_reminder	O
+10	таста	reminder/cancel_reminder	O
+
+# id: 103
+# text-en: set alarm for 6 am
+# text: оятқышты таңғы сағат 6-ға орнат
+# intent: alarm/set_alarm
+1	оятқышты	alarm/set_alarm	O
+2	таңғы	alarm/set_alarm	B-datetime
+3	сағат	alarm/set_alarm	I-datetime
+4	6-ға	alarm/set_alarm	I-datetime
+5	орнат	alarm/set_alarm	O
+
+# id: 104
+# text-en: turn off the alarm
+# text: оятқышты өшір
+# intent: alarm/cancel_alarm
+1	оятқышты	alarm/cancel_alarm	O
+2	өшір	alarm/cancel_alarm	O
+
+# id: 105
+# text-en: cancel the alarm
+# text: оятқышты алып таста
+# intent: alarm/cancel_alarm
+1	оятқышты	alarm/cancel_alarm	O
+2	алып	alarm/cancel_alarm	O
+3	таста	alarm/cancel_alarm	O
+
+# id: 106
+# text-en: turn off alarm
+# text: оятқышты өшір
+# intent: alarm/cancel_alarm
+1	оятқышты	alarm/cancel_alarm	O
+2	өшір	alarm/cancel_alarm	O
+
+# id: 107
+# text-en: remind me to call mom today at 2 p.m.
+# text: бүгін күндізгі сағат 2-де анама қоңырау шалуымды есіме сал.
+# intent: reminder/set_reminder
+1	бүгін	reminder/set_reminder	B-datetime
+2	күндізгі	reminder/set_reminder	I-datetime
+3	сағат	reminder/set_reminder	I-datetime
+4	2-де	reminder/set_reminder	I-datetime
+5	анама	reminder/set_reminder	B-reminder/todo
+6	қоңырау	reminder/set_reminder	I-reminder/todo
+7	шалуымды	reminder/set_reminder	I-reminder/todo
+8	есіме	reminder/set_reminder	O
+9	сал	reminder/set_reminder	O
+10	.	reminder/set_reminder	O
+
+# id: 108
+# text-en: cancel all alarms
+# text: барлық оятқыштарды алып таста
+# intent: alarm/cancel_alarm
+1	барлық	alarm/cancel_alarm	B-reference
+2	оятқыштарды	alarm/cancel_alarm	O
+3	алып	alarm/cancel_alarm	O
+4	таста	alarm/cancel_alarm	O
+
+# id: 109
+# text-en: is it going to be hot tomorrow
+# text: ертең ыстық болады ма
+# intent: weather/find
+1	ертең	weather/find	B-datetime
+2	ыстық	weather/find	B-weather/attribute
+3	болады	weather/find	O
+4	ма	weather/find	O
+
+# id: 110
+# text-en: is it cold out today?
+# text: бүгін дала суық па?
+# intent: weather/find
+1	бүгін	weather/find	B-datetime
+2	дала	weather/find	B-location
+3	суық	weather/find	B-weather/attribute
+4	па	weather/find	O
+5	?	weather/find	O
+
+# id: 111
+# text-en: Set alarm for 5 pm tonight
+# text: Бүгін кешкі 5-ке оятқышты орнат
+# intent: alarm/set_alarm
+1	Бүгін	alarm/set_alarm	B-datetime
+2	кешкі	alarm/set_alarm	I-datetime
+3	5-ке	alarm/set_alarm	I-datetime
+4	оятқышты	alarm/set_alarm	O
+5	орнат	alarm/set_alarm	O
+
+# id: 112
+# text-en: Will it rain this weekend?
+# text: Осы демалыс күндері жаңбыр жауады ма?
+# intent: weather/find
+1	Осы	weather/find	B-datetime
+2	демалыс	weather/find	I-datetime
+3	күндері	weather/find	I-datetime
+4	жаңбыр	weather/find	B-weather/attribute
+5	жауады	weather/find	O
+6	ма	weather/find	O
+7	?	weather/find	O
+
+# id: 113
+# text-en: is it going to rain today
+# text: бүгін жаңбыр жауады ма
+# intent: weather/find
+1	бүгін	weather/find	B-datetime
+2	жаңбыр	weather/find	B-weather/attribute
+3	жауады	weather/find	O
+4	ма	weather/find	O
+
+# id: 114
+# text-en: set an alarm for monday at 3 am
+# text: оятқышты дүйсенбіге таңғы сағат 3-ке орнат
+# intent: alarm/set_alarm
+1	оятқышты	alarm/set_alarm	O
+2	дүйсенбіге	alarm/set_alarm	B-datetime
+3	таңғы	alarm/set_alarm	I-datetime
+4	сағат	alarm/set_alarm	I-datetime
+5	3-ке	alarm/set_alarm	I-datetime
+6	орнат	alarm/set_alarm	O
+
+# id: 115
+# text-en: alarm on
+# text: Оятқышты қосулы
+# intent: alarm/set_alarm
+1	Оятқышты	alarm/set_alarm	O
+2	қосулы	alarm/set_alarm	O
+
+# id: 116
+# text-en: Is it going to rain on Saturday?
+# text: Сенбіде жаңбыр жауады ма?
+# intent: weather/find
+1	Сенбіде	weather/find	B-datetime
+2	жаңбыр	weather/find	B-weather/attribute
+3	жауады	weather/find	O
+4	ма	weather/find	O
+5	?	weather/find	O
+
+# id: 117
+# text-en: Set alarm for 5 am
+# text: Таңертеңгі сағат 5-ке оятқышты орнат
+# intent: alarm/set_alarm
+1	Таңертеңгі	alarm/set_alarm	B-datetime
+2	сағат	alarm/set_alarm	I-datetime
+3	5-ке	alarm/set_alarm	I-datetime
+4	оятқышты	alarm/set_alarm	O
+5	орнат	alarm/set_alarm	O
+
+# id: 118
+# text-en: Will I need a coat today?
+# text: Маған бүгін пальто керек пе?
+# intent: weather/find
+1	Маған	weather/find	O
+2	бүгін	weather/find	B-datetime
+3	пальто	weather/find	B-weather/attribute
+4	керек	weather/find	O
+5	пе	weather/find	O
+6	?	weather/find	O
+
+# id: 119
+# text-en: turn off alarm
+# text: оятқышты өшір
+# intent: alarm/cancel_alarm
+1	оятқышты	alarm/cancel_alarm	O
+2	өшір	alarm/cancel_alarm	O
+
+# id: 120
+# text-en: What weather warnings do I have?
+# text: Менде қандай ауа райы туралы ескертулер бар?
+# intent: weather/find
+1	Менде	weather/find	O
+2	қандай	weather/find	O
+3	ауа	weather/find	O
+4	райы	weather/find	O
+5	туралы	weather/find	O
+6	ескертулер	weather/find	B-weather/attribute
+7	бар	weather/find	O
+8	?	weather/find	O
+
+# id: 121
+# text-en: Cancel the reminder for the meeting at the lodge
+# text: Тұрғын үйдегі кездесу туралы еске салғышты алып таста
+# intent: reminder/cancel_reminder
+1	Тұрғын	reminder/cancel_reminder	B-reminder/todo
+2	үйдегі	reminder/cancel_reminder	I-reminder/todo
+3	кездесу	reminder/cancel_reminder	I-reminder/todo
+4	туралы	reminder/cancel_reminder	O
+5	еске	reminder/cancel_reminder	O
+6	салғышты	reminder/cancel_reminder	O
+7	алып	reminder/cancel_reminder	O
+8	таста	reminder/cancel_reminder	O
+
+# id: 122
+# text-en: Should I wear a coat today
+# text: Мен бүгін пальто киюім керек пе
+# intent: weather/find
+1	Мен	weather/find	O
+2	бүгін	weather/find	B-datetime
+3	пальто	weather/find	B-weather/attribute
+4	киюім	weather/find	O
+5	керек	weather/find	O
+6	пе	weather/find	O
+
+# id: 123
+# text-en: Turn off all alarms.
+# text: Барлық оятқыштарды өшір.
+# intent: alarm/cancel_alarm
+1	Барлық	alarm/cancel_alarm	B-reference
+2	оятқыштарды	alarm/cancel_alarm	O
+3	өшір	alarm/cancel_alarm	O
+4	.	alarm/cancel_alarm	O
+
+# id: 124
+# text-en: show all alarms
+# text: барлық оятқыштарды көрсет
+# intent: alarm/show_alarms
+1	барлық	alarm/show_alarms	B-reference
+2	оятқыштарды	alarm/show_alarms	O
+3	көрсет	alarm/show_alarms	O
+
+# id: 125
+# text-en: Make a new alarm for Thursday at 1pm.
+# text: Бейсенбіге кундізгі сағат 1-ге жаңа оятқышты орнат.
+# intent: alarm/set_alarm
+1	Бейсенбіге	alarm/set_alarm	B-datetime
+2	кундізгі	alarm/set_alarm	I-datetime
+3	сағат	alarm/set_alarm	I-datetime
+4	1-ге	alarm/set_alarm	I-datetime
+5	жаңа	alarm/set_alarm	O
+6	оятқышты	alarm/set_alarm	O
+7	орнат	alarm/set_alarm	O
+8	.	alarm/set_alarm	O
+
+# id: 126
+# text-en: Remind me to go to the dentist next Monday.
+# text: Келесі дүйсенбіде тіс дәрігеріне баруымды менің есіме сал.
+# intent: reminder/set_reminder
+1	Келесі	reminder/set_reminder	B-datetime
+2	дүйсенбіде	reminder/set_reminder	I-datetime
+3	тіс	reminder/set_reminder	B-reminder/todo
+4	дәрігеріне	reminder/set_reminder	I-reminder/todo
+5	баруымды	reminder/set_reminder	I-reminder/todo
+6	менің	reminder/set_reminder	O
+7	есіме	reminder/set_reminder	O
+8	сал	reminder/set_reminder	O
+9	.	reminder/set_reminder	O
+
+# id: 127
+# text-en: should I bring an umbrella today
+# text: мен бүгін қолшатыр алып келгенім жөн ба
+# intent: weather/find
+1	мен	weather/find	O
+2	бүгін	weather/find	B-datetime
+3	қолшатыр	weather/find	B-weather/attribute
+4	алып	weather/find	O
+5	келгенім	weather/find	O
+6	жөн	weather/find	O
+7	ба	weather/find	O
+
+# id: 128
+# text-en: how is the weather this week?
+# text: осы аптадағы ауа-райы қалай?
+# intent: weather/find
+1	осы	weather/find	B-datetime
+2	аптадағы	weather/find	I-datetime
+3	ауа-райы	weather/find	O
+4	қалай	weather/find	O
+5	?	weather/find	O
+
+# id: 129
+# text-en: is it below freezing today?
+# text: бүгін температура нөлден төмен ме?
+# intent: weather/find
+1	бүгін	weather/find	B-datetime
+2	температура	weather/find	B-weather/attribute
+3	нөлден	weather/find	I-weather/attribute
+4	төмен	weather/find	I-weather/attribute
+5	ме	weather/find	O
+6	?	weather/find	O
+
+# id: 130
+# text-en: Delete all reminders
+# text: Барлық еске салғыштарды жой
+# intent: reminder/cancel_reminder
+1	Барлық	reminder/cancel_reminder	B-reference
+2	еске	reminder/cancel_reminder	O
+3	салғыштарды	reminder/cancel_reminder	O
+4	жой	reminder/cancel_reminder	O
+
+# id: 131
+# text-en: Is it going to rain today?
+# text: Бүгін жаңбыр жауады ма?
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	жаңбыр	weather/find	B-weather/attribute
+3	жауады	weather/find	O
+4	ма	weather/find	O
+5	?	weather/find	O
+
+# id: 132
+# text-en: Will it rain this weekend?
+# text: Осы демалыс күндері жаңбыр жауады ма?
+# intent: weather/find
+1	Осы	weather/find	B-datetime
+2	демалыс	weather/find	I-datetime
+3	күндері	weather/find	I-datetime
+4	жаңбыр	weather/find	B-weather/attribute
+5	жауады	weather/find	O
+6	ма	weather/find	O
+7	?	weather/find	O
+
+# id: 133
+# text-en: Set reminder for mom's visit next week
+# text: Келесі аптада анамның келуін еске салғышты орнат
+# intent: reminder/set_reminder
+1	Келесі	reminder/set_reminder	B-datetime
+2	аптада	reminder/set_reminder	I-datetime
+3	анамның	reminder/set_reminder	B-reminder/todo
+4	келуін	reminder/set_reminder	I-reminder/todo
+5	еске	reminder/set_reminder	O
+6	салғышты	reminder/set_reminder	O
+7	орнат	reminder/set_reminder	O
+
+# id: 134
+# text-en: Will it snow tomorrow?
+# text: Ертең қар жауады ма?
+# intent: weather/find
+1	Ертең	weather/find	B-datetime
+2	қар	weather/find	B-weather/attribute
+3	жауады	weather/find	O
+4	ма	weather/find	O
+5	?	weather/find	O
+
+# id: 135
+# text-en: show all reminders
+# text: барлық еске салғыштарды көрсет
+# intent: reminder/show_reminders
+1	барлық	reminder/show_reminders	B-reference
+2	еске	reminder/show_reminders	O
+3	салғыштарды	reminder/show_reminders	O
+4	көрсет	reminder/show_reminders	O
+
+# id: 136
+# text-en: Do I need a coat today?
+# text: Маған бүгін пальто керек пе?
+# intent: weather/find
+1	Маған	weather/find	O
+2	бүгін	weather/find	B-datetime
+3	пальто	weather/find	B-weather/attribute
+4	керек	weather/find	O
+5	пе	weather/find	O
+6	?	weather/find	O
+
+# id: 137
+# text-en: is it going to snow thursday
+# text: сейсенбіде қар жауады ма?
+# intent: weather/find
+1	сейсенбіде	weather/find	B-datetime
+2	қар	weather/find	B-weather/attribute
+3	жауады	weather/find	O
+4	ма	weather/find	O
+5	?	weather/find	O
+
+# id: 138
+# text-en: Remind me to buy coffee at Starbucks this afternoon
+# text: Бүгін түстен кейін Starbucks-та кофе сатып алуды менің есіме түсір
+# intent: reminder/set_reminder
+1	Бүгін	reminder/set_reminder	B-datetime
+2	түстен	reminder/set_reminder	I-datetime
+3	кейін	reminder/set_reminder	I-datetime
+4	Starbucks-та	reminder/set_reminder	B-reminder/todo
+5	кофе	reminder/set_reminder	I-reminder/todo
+6	сатып	reminder/set_reminder	I-reminder/todo
+7	алуды	reminder/set_reminder	I-reminder/todo
+8	менің	reminder/set_reminder	O
+9	есіме	reminder/set_reminder	O
+10	түсір	reminder/set_reminder	O
+
+# id: 139
+# text-en: Set an alarm for every ten minutes, starting at 5:30 and ending at 6 am.
+# text: Таңғы 5:30-дан бастап 6-да аяқталатын оятқышты он минут сайын қос.
+# intent: alarm/set_alarm
+1	Таңғы	alarm/set_alarm	B-recurring_datetime
+2	5:30-дан	alarm/set_alarm	I-recurring_datetime
+3	бастап	alarm/set_alarm	I-recurring_datetime
+4	6-да	alarm/set_alarm	I-recurring_datetime
+5	аяқталатын	alarm/set_alarm	I-recurring_datetime
+6	оятқышты	alarm/set_alarm	O
+7	он	alarm/set_alarm	B-recurring_datetime
+8	минут	alarm/set_alarm	I-recurring_datetime
+9	сайын	alarm/set_alarm	I-recurring_datetime
+10	қос	alarm/set_alarm	O
+11	.	alarm/set_alarm	O
+
+# id: 140
+# text-en: Is it going to rain on Saturday?
+# text: Сенбіде жаңбыр жауады ма?
+# intent: weather/find
+1	Сенбіде	weather/find	B-datetime
+2	жаңбыр	weather/find	B-weather/attribute
+3	жауады	weather/find	O
+4	ма	weather/find	O
+5	?	weather/find	O
+
+# id: 141
+# text-en: Set eh alarm to 7:20am for the shoe release.
+# text: Аяқ киімді шығару үшін оятқышты таңғы 7:20-ға қой.
+# intent: alarm/set_alarm
+1	Аяқ	alarm/set_alarm	B-reminder/todo
+2	киімді	alarm/set_alarm	I-reminder/todo
+3	шығару	alarm/set_alarm	I-reminder/todo
+4	үшін	alarm/set_alarm	O
+5	оятқышты	alarm/set_alarm	O
+6	таңғы	alarm/set_alarm	B-datetime
+7	7:20-ға	alarm/set_alarm	I-datetime
+8	қой	alarm/set_alarm	O
+9	.	alarm/set_alarm	O
+
+# id: 142
+# text-en: Will there be storms in Bordentown today
+# text: Бүгін Бордентаунда дауыл болады ма
+# intent: weather/find
+1	Бүгін	weather/find	B-datetime
+2	Бордентаунда	weather/find	B-location
+3	дауыл	weather/find	B-weather/attribute
+4	болады	weather/find	O
+5	ма	weather/find	O
+
+# id: 143
+# text-en: what is the current temperature
+# text: қазіргі температура қандай
+# intent: weather/find
+1	қазіргі	weather/find	B-datetime
+2	температура	weather/find	B-weather/attribute
+3	қандай	weather/find	O
+
+# id: 144
+# text-en: remind me to make Dan's lunch at 7:30am tomorrow.
+# text: маған Данның түскі асын ертең таңғы 7:30-да жасауды еске сал.
+# intent: reminder/set_reminder
+1	маған	reminder/set_reminder	O
+2	Данның	reminder/set_reminder	B-reminder/todo
+3	түскі	reminder/set_reminder	I-reminder/todo
+4	асын	reminder/set_reminder	I-reminder/todo
+5	ертең	reminder/set_reminder	B-datetime
+6	таңғы	reminder/set_reminder	I-datetime
+7	7:30-да	reminder/set_reminder	I-datetime
+8	жасауды	reminder/set_reminder	B-reminder/todo
+9	еске	reminder/set_reminder	O
+10	сал	reminder/set_reminder	O
+11	.	reminder/set_reminder	O
+
+# id: 145
+# text-en: Set alarm for 6:30am tomorrow.
+# text: Ертең таңғы 6: 30-ға оятқышты қой.
+# intent: alarm/set_alarm
+1	Ертең	alarm/set_alarm	B-datetime
+2	таңғы	alarm/set_alarm	I-datetime
+3	6:	alarm/set_alarm	I-datetime
+4	30-ға	alarm/set_alarm	I-datetime
+5	оятқышты	alarm/set_alarm	O
+6	қой	alarm/set_alarm	O
+7	.	alarm/set_alarm	O
+
+# id: 146
+# text-en: Do I have any reminders set?
+# text: Менде қандай еске салғыштар қосылған?
+# intent: reminder/show_reminders
+1	Менде	reminder/show_reminders	O
+2	қандай	reminder/show_reminders	O
+3	еске	reminder/show_reminders	O
+4	салғыштар	reminder/show_reminders	O
+5	қосылған	reminder/show_reminders	O
+6	?	reminder/show_reminders	O
+
+# id: 147
+# text-en: Is my dentist appointment in my reminder ?
+# text: Менің тіс дәрігер қабылдауы менің еске салғышымда ма?
+# intent: reminder/show_reminders
+1	Менің	reminder/show_reminders	B-reminder/todo
+2	тіс	reminder/show_reminders	I-reminder/todo
+3	дәрігер	reminder/show_reminders	I-reminder/todo
+4	қабылдауы	reminder/show_reminders	I-reminder/todo
+5	менің	reminder/show_reminders	B-reference
+6	еске	reminder/show_reminders	O
+7	салғышымда	reminder/show_reminders	O
+8	ма	reminder/show_reminders	O
+9	?	reminder/show_reminders	O
+
+# id: 148
+# text-en: when will it stop raining?
+# text: жаңбыр қашан тоқтайды?
+# intent: weather/find
+1	жаңбыр	weather/find	B-weather/attribute
+2	қашан	weather/find	O
+3	тоқтайды	weather/find	O
+4	?	weather/find	O
+
+# id: 149
+# text-en: Is it going to snow this week?
+# text: Осы аптада қар жауады ма?
+# intent: weather/find
+1	Осы	weather/find	B-datetime
+2	аптада	weather/find	I-datetime
+3	қар	weather/find	B-weather/attribute
+4	жауады	weather/find	O
+5	ма	weather/find	O
+6	?	weather/find	O
+
+# id: 150
+# text-en: turn off alarm
+# text: оятқышты өшір
+# intent: alarm/cancel_alarm
+1	оятқышты	alarm/cancel_alarm	O
+2	өшір	alarm/cancel_alarm	O
+
+# id: 151
+# text-en: I would give Half a Life 3 out of 6
+# text: Мен Half a Life-қа 6-дан 3 берер едім
+# intent: RateBook
+1	Мен	RateBook	O
+2	Half	RateBook	B-object_name
+3	a	RateBook	I-object_name
+4	Life-қа	RateBook	I-object_name
+5	6-дан	RateBook	B-best_rating
+6	3	RateBook	B-rating_value
+7	берер	RateBook	O
+8	едім	RateBook	O
+
+# id: 152
+# text-en: Play some Mf Doom from the sixties on pandora .
+# text: Pandora-да алпысыншы жылдардың Mf Doom ойнат .
+# intent: PlayMusic
+1	Pandora-да	PlayMusic	B-service
+2	алпысыншы	PlayMusic	B-datetime
+3	жылдардың	PlayMusic	I-datetime
+4	Mf	PlayMusic	B-artist
+5	Doom	PlayMusic	I-artist
+6	ойнат	PlayMusic	O
+7	.	PlayMusic	O
+
+# id: 153
+# text-en: Search for Chasing Fortune a TV series .
+# text: Chasing Fortune телехикаясын ізде .
+# intent: SearchCreativeWork
+1	Chasing	SearchCreativeWork	B-object_name
+2	Fortune	SearchCreativeWork	I-object_name
+3	телехикаясын	SearchCreativeWork	B-object_type
+4	ізде	SearchCreativeWork	O
+5	.	SearchCreativeWork	O
+
+# id: 154
+# text-en: Play shadowplay by Dana on Deezer .
+# text: Deezer-де Dana-ның shadowplay-ын ойнат .
+# intent: PlayMusic
+1	Deezer-де	PlayMusic	B-service
+2	Dana-ның	PlayMusic	B-artist
+3	shadowplay-ын	PlayMusic	B-track
+4	ойнат	PlayMusic	O
+5	.	PlayMusic	O
+
+# id: 155
+# text-en: me and imelda want a reservation in Missouri at seven am
+# text: Мен және имелда Миссуриде таңғы жетіде бронь жасағымыз келеді
+# intent: BookRestaurant
+1	Мен	BookRestaurant	O
+2	және	BookRestaurant	B-party_size_description
+3	имелда	BookRestaurant	I-party_size_description
+4	Миссуриде	BookRestaurant	B-location
+5	таңғы	BookRestaurant	B-datetime
+6	жетіде	BookRestaurant	I-datetime
+7	бронь	BookRestaurant	B-served_dish
+8	жасағымыз	BookRestaurant	I-served_dish
+9	келеді	BookRestaurant	O
+
+# id: 156
+# text-en: add bob klose to la mejor música para tus fiestas
+# text: bob klose-ты la mejor música para tus fiestas-ға қос
+# intent: AddToPlaylist
+1	bob	AddToPlaylist	B-artist
+2	klose-ты	AddToPlaylist	I-artist
+3	la	AddToPlaylist	B-playlist
+4	mejor	AddToPlaylist	I-playlist
+5	música	AddToPlaylist	I-playlist
+6	para	AddToPlaylist	I-playlist
+7	tus	AddToPlaylist	I-playlist
+8	fiestas-ға	AddToPlaylist	I-playlist
+9	қос	AddToPlaylist	O
+
+# id: 157
+# text-en: play Luis Alfonzo Larrain from 1995
+# text: 1995-ші жылдың Luis Alfonzo Larrain-ны ойнат .
+# intent: PlayMusic
+1	1995-ші	PlayMusic	B-datetime
+2	жылдың	PlayMusic	I-datetime
+3	Luis	PlayMusic	B-artist
+4	Alfonzo	PlayMusic	I-artist
+5	Larrain-ны	PlayMusic	I-artist
+6	ойнат	PlayMusic	O
+7	.	PlayMusic	O
+
+# id: 158
+# text-en: What will the weather be like in the Bahamas eleven years and a half from now
+# text: Осыдан он бір жарым жылдан кейін Багамада ауа райы қандай болады
+# intent: weather/find
+1	Осыдан	weather/find	B-datetime
+2	он	weather/find	I-datetime
+3	бір	weather/find	I-datetime
+4	жарым	weather/find	I-datetime
+5	жылдан	weather/find	I-datetime
+6	кейін	weather/find	I-datetime
+7	Багамада	weather/find	B-location
+8	ауа	weather/find	B-datetime
+9	райы	weather/find	O
+10	қандай	weather/find	O
+11	болады	weather/find	O
+
+# id: 159
+# text-en: What will the weather be like in Arizona on october the 3rd
+# text: 3-ші қазанда Аризонада ауа райы қандай болады
+# intent: weather/find
+1	3-ші	weather/find	B-datetime
+2	қазанда	weather/find	I-datetime
+3	Аризонада	weather/find	B-location
+4	ауа	weather/find	B-datetime
+5	райы	weather/find	O
+6	қандай	weather/find	O
+7	болады	weather/find	O
+
+# id: 160
+# text-en: Play opera music on google music
+# text: Google музыкасында опера музыкасын ойнат
+# intent: PlayMusic
+1	Google	PlayMusic	B-service
+2	музыкасында	PlayMusic	O
+3	опера	PlayMusic	B-genre
+4	музыкасын	PlayMusic	O
+5	ойнат	PlayMusic	O
+
+# id: 161
+# text-en: find Vegucated starting at zero pm
+# text: кешкі сағат нөлден бастап Vegucated-ті тап
+# intent: SearchScreeningEvent
+1	кешкі	SearchScreeningEvent	B-datetime
+2	сағат	SearchScreeningEvent	I-datetime
+3	нөлден	SearchScreeningEvent	I-datetime
+4	бастап	SearchScreeningEvent	O
+5	Vegucated-ті	SearchScreeningEvent	B-movie_name
+6	тап	SearchScreeningEvent	O
+
+# id: 162
+# text-en: Give the current novel a 3 out of 6 rating
+# text: Қазіргі романға 6 рейтингіден 3-еуін бер
+# intent: RateBook
+1	Қазіргі	RateBook	B-object_select
+2	романға	RateBook	B-object_type
+3	6	RateBook	B-best_rating
+4	рейтингіден	RateBook	O
+5	3-еуін	RateBook	B-rating_value
+6	бер	RateBook	O
+
+# id: 163
+# text-en: I'd like to add this album to funtime .
+# text: Мен бұл альбомды көңілді уақытқа қосқым келеді.
+# intent: AddToPlaylist
+1	Мен	AddToPlaylist	O
+2	бұл	AddToPlaylist	B-object_select
+3	альбомды	AddToPlaylist	B-object_type
+4	көңілді	AddToPlaylist	O
+5	уақытқа	AddToPlaylist	B-playlist
+6	қосқым	AddToPlaylist	O
+7	келеді	AddToPlaylist	O
+8	.	AddToPlaylist	O
+
+# id: 164
+# text-en: I need a table for 4 at a restaurant around 0 AM .
+# text: Маған мейрамханада түнгі 0-ге жуық 4-еуге үстел керек .
+# intent: BookRestaurant
+1	Маған	BookRestaurant	O
+2	мейрамханада	BookRestaurant	B-restaurant_type
+3	түнгі	BookRestaurant	B-datetime
+4	0-ге	BookRestaurant	I-datetime
+5	жуық	BookRestaurant	I-datetime
+6	4-еуге	BookRestaurant	B-party_size_number
+7	үстел	BookRestaurant	O
+8	керек	BookRestaurant	O
+9	.	BookRestaurant	O
+
+# id: 165
+# text-en: find the picture Louder Than Bombs
+# text: Loomer Than Bombs суретін тап
+# intent: SearchCreativeWork
+1	Loomer	SearchCreativeWork	B-object_name
+2	Than	SearchCreativeWork	I-object_name
+3	Bombs	SearchCreativeWork	I-object_name
+4	суретін	SearchCreativeWork	B-object_type
+5	тап	SearchCreativeWork	O
+
+# id: 166
+# text-en: Give 2 out of 6 points to A Tale of Time City
+# text: A Tale of Time City-ге 6 ұпайдың 2-ін бер
+# intent: RateBook
+1	A	RateBook	B-object_name
+2	Tale	RateBook	I-object_name
+3	of	RateBook	I-object_name
+4	Time	RateBook	I-object_name
+5	City-ге	RateBook	I-object_name
+6	6	RateBook	B-best_rating
+7	ұпайдың	RateBook	O
+8	2-ін	RateBook	B-rating_value
+9	бер	RateBook	O
+
+# id: 167
+# text-en: add this current book five stars
+# text: осы кітапты бес жұлдыз қос
+# intent: RateBook
+1	осы	RateBook	B-object_select
+2	кітапты	RateBook	B-object_type
+3	бес	RateBook	B-rating_value
+4	жұлдыз	RateBook	O
+5	қос	RateBook	O
+
+# id: 168
+# text-en: add track 70s smash hits to my
+# text: менің 70-ші соққылар хит қос
+# intent: AddToPlaylist
+1	менің	AddToPlaylist	O
+2	70-ші	AddToPlaylist	B-playlist
+3	соққылар	AddToPlaylist	I-playlist
+4	хит	AddToPlaylist	O
+5	қос	AddToPlaylist	O
+
+# id: 169
+# text-en: book near Montana restaurant serving sri lankan food for 6 that is highly rated on tues.
+# text: сейсенбіде 6-уға Монтананың жанындағы жоғары бағаланған шри-ланкандық тағам ұсынатын мейрамхананы жалда.
+# intent: BookRestaurant
+1	сейсенбіде	BookRestaurant	B-datetime
+2	6-уға	BookRestaurant	I-datetime
+3	Монтананың	BookRestaurant	B-location
+4	жанындағы	BookRestaurant	B-location
+5	жоғары	BookRestaurant	B-sort
+6	бағаланған	BookRestaurant	I-sort
+7	шри-ланкандық	BookRestaurant	B-served_dish
+8	тағам	BookRestaurant	I-served_dish
+9	ұсынатын	BookRestaurant	O
+10	мейрамхананы	BookRestaurant	B-restaurant_type
+11	жалда	BookRestaurant	O
+12	.	BookRestaurant	O
+
+# id: 170
+# text-en: Book me a lunch at Boreas for a party of 8
+# text: Маған 8-ге Boreas-дан түскі асқа тапсырыс бер
+# intent: BookRestaurant
+1	Маған	BookRestaurant	O
+2	8-ге	BookRestaurant	B-party_size_number
+3	Boreas-дан	BookRestaurant	B-object_name
+4	түскі	BookRestaurant	O
+5	асқа	BookRestaurant	B-object_type
+6	тапсырыс	BookRestaurant	O
+7	бер	BookRestaurant	O
+
+# id: 171
+# text-en: Please put another tune into the laundry playlist.
+# text: Кір жуу тізіміне тағы бір әуенді салшы.
+# intent: AddToPlaylist
+1	Кір	AddToPlaylist	B-playlist
+2	жуу	AddToPlaylist	I-playlist
+3	тізіміне	AddToPlaylist	O
+4	тағы	AddToPlaylist	O
+5	бір	AddToPlaylist	B-rating_value
+6	әуенді	AddToPlaylist	B-artist
+7	салшы	AddToPlaylist	O
+8	.	AddToPlaylist	O
+
+# id: 172
+# text-en: what is the PW forecast for stormy weather
+# text: дауылды ауа-райына арналған PW болжамдары қандай
+# intent: weather/find
+1	дауылды	weather/find	B-playlist
+2	ауа-райына	weather/find	I-playlist
+3	арналған	weather/find	O
+4	PW	weather/find	B-object_name
+5	болжамдары	weather/find	B-object_type
+6	қандай	weather/find	O
+
+# id: 173
+# text-en: What is the predicted weather for my current spot next month ?
+# text: Менің қазіргі жерім үшін келесі айдағы ауа райы болжамы қандай ?
+# intent: weather/find
+1	Менің	weather/find	O
+2	қазіргі	weather/find	B-location
+3	жерім	weather/find	I-location
+4	үшін	weather/find	O
+5	келесі	weather/find	B-datetime
+6	айдағы	weather/find	I-datetime
+7	ауа	weather/find	B-datetime
+8	райы	weather/find	O
+9	болжамы	weather/find	O
+10	қандай	weather/find	O
+11	?	weather/find	O
+
+# id: 174
+# text-en: Book a reservation for 1 on march 17
+# text: 17 наурызға 1-ге брондау жаса
+# intent: BookRestaurant
+1	17	BookRestaurant	B-datetime
+2	наурызға	BookRestaurant	I-datetime
+3	1-ге	BookRestaurant	B-party_size_number
+4	брондау	BookRestaurant	O
+5	жаса	BookRestaurant	O
+
+# id: 175
+# text-en: The current album gets three out of 6 points
+# text: Қазіргі альбом 6 ұпайдың үшеуін алады
+# intent: RateBook
+1	Қазіргі	RateBook	O
+2	альбом	RateBook	B-object_type
+3	6	RateBook	B-rating_value
+4	ұпайдың	RateBook	O
+5	үшеуін	RateBook	B-rating_value
+6	алады	RateBook	O
+
+# id: 176
+# text-en: Add the Nastya Kamenskih song to my The Martin Garrix Show playlist.
+# text: Настя Каменских әнін менің Martin Garrix Show ойнату тізіміне қос.
+# intent: AddToPlaylist
+1	Настя	AddToPlaylist	B-artist
+2	Каменских	AddToPlaylist	I-artist
+3	әнін	AddToPlaylist	B-music_item
+4	менің	AddToPlaylist	O
+5	Martin	AddToPlaylist	B-playlist
+6	Garrix	AddToPlaylist	I-playlist
+7	Show	AddToPlaylist	I-playlist
+8	ойнату	AddToPlaylist	O
+9	тізіміне	AddToPlaylist	O
+10	қос	AddToPlaylist	O
+11	.	AddToPlaylist	O
+
+# id: 177
+# text-en: Wish to hear the album Since I Saw You Last
+# text: Since I Saw You Last альбомын тыңдағым келеді
+# intent: SearchCreativeWork
+1	Since	SearchCreativeWork	B-object_name
+2	I	SearchCreativeWork	I-object_name
+3	Saw	SearchCreativeWork	I-object_name
+4	You	SearchCreativeWork	I-object_name
+5	Last	SearchCreativeWork	I-object_name
+6	альбомын	SearchCreativeWork	B-object_type
+7	тыңдағым	SearchCreativeWork	O
+8	келеді	SearchCreativeWork	O
+
+# id: 178
+# text-en: play top tunes by Joseph Utsler
+# text: Джозеф Ютслердің ең жақсы әуендерін ойнат
+# intent: PlayMusic
+1	Джозеф	PlayMusic	B-artist
+2	Ютслердің	PlayMusic	I-artist
+3	ең	PlayMusic	B-sort
+4	жақсы	PlayMusic	I-sort
+5	әуендерін	PlayMusic	O
+6	ойнат	PlayMusic	O
+
+# id: 179
+# text-en: Find the schedule for Ghost World .
+# text: Ghost World-тың кестесін тап .
+# intent: SearchScreeningEvent
+1	Ghost	SearchScreeningEvent	B-object_name
+2	World-тың	SearchScreeningEvent	I-object_name
+3	кестесін	SearchScreeningEvent	O
+4	тап	SearchScreeningEvent	O
+5	.	SearchScreeningEvent	O
+
+# id: 180
+# text-en: I want to listen to a concerto from Timour Moutsouraev .
+# text: Мен Тимур Муцураев концертін тыңдағым келеді .
+# intent: PlayMusic
+1	Мен	PlayMusic	O
+2	Тимур	PlayMusic	B-artist
+3	Муцураев	PlayMusic	I-artist
+4	концертін	PlayMusic	B-music_item
+5	тыңдағым	PlayMusic	O
+6	келеді	PlayMusic	O
+7	.	PlayMusic	O
+
+# id: 181
+# text-en: play the album Everybody Happy by Lee Aaron
+# text: Ли Ааронның Everybody Happy альбомын ойнат
+# intent: PlayMusic
+1	Ли	PlayMusic	B-artist
+2	Ааронның	PlayMusic	I-artist
+3	Everybody	PlayMusic	B-object_name
+4	Happy	PlayMusic	I-object_name
+5	альбомын	PlayMusic	B-object_type
+6	ойнат	PlayMusic	O
+
+# id: 182
+# text-en: play Fereydoun Farrokhzad best track
+# text: Fereydoun Farrokhzad ең жақсы трегін ойнат
+# intent: PlayMusic
+1	Fereydoun	PlayMusic	B-artist
+2	Farrokhzad	PlayMusic	I-artist
+3	ең	PlayMusic	B-sort
+4	жақсы	PlayMusic	I-sort
+5	трегін	PlayMusic	O
+6	ойнат	PlayMusic	O
+
+# id: 183
+# text-en: rate the current book three stars
+# text: қазіргі кітапты үш жұлдызға бағала
+# intent: RateBook
+1	қазіргі	RateBook	B-object_select
+2	кітапты	RateBook	B-object_type
+3	үш	RateBook	B-rating_value
+4	жұлдызға	RateBook	O
+5	бағала	RateBook	O
+
+# id: 184
+# text-en: What will the weather be in Meeres-Nationalpark Insel Bastimentos at twelve PM ?
+# text: Meeres-Nationalpark Insel Bastimentos-та сағат күндізгі 12-де ауа райы қандай болады ?
+# intent: weather/find
+1	Meeres-Nationalpark	weather/find	B-location
+2	Insel	weather/find	I-location
+3	Bastimentos-та	weather/find	I-location
+4	сағат	weather/find	B-datetime
+5	күндізгі	weather/find	I-datetime
+6	12-де	weather/find	I-datetime
+7	ауа	weather/find	B-datetime
+8	райы	weather/find	O
+9	қандай	weather/find	O
+10	болады	weather/find	O
+11	?	weather/find	O
+
+# id: 185
+# text-en: Book a table for 10 people at a restaurant which offers internet .
+# text: Интернет ұсынатын мейрамханада 10 адамға үстел бронда .
+# intent: BookRestaurant
+1	Интернет	BookRestaurant	B-facility
+2	ұсынатын	BookRestaurant	O
+3	мейрамханада	BookRestaurant	B-restaurant_type
+4	10	BookRestaurant	B-party_size_number
+5	адамға	BookRestaurant	O
+6	үстел	BookRestaurant	O
+7	бронда	BookRestaurant	O
+8	.	BookRestaurant	O
+
+# id: 186
+# text-en: give five points to The Tenor Wore Tapshoes
+# text: The Tenor Wore Tapshoes-қа бес ұпай бер
+# intent: RateBook
+1	The	RateBook	B-object_name
+2	Tenor	RateBook	I-object_name
+3	Wore	RateBook	I-object_name
+4	Tapshoes-қа	RateBook	I-object_name
+5	бес	RateBook	O
+6	ұпай	RateBook	O
+7	бер	RateBook	O
+
+# id: 187
+# text-en: Play a tune by Houston on Spotify
+# text: Spotify сайтында Хьюстонның әуенін ойнат
+# intent: PlayMusic
+1	Spotify	PlayMusic	B-service
+2	сайтында	PlayMusic	O
+3	Хьюстонның	PlayMusic	B-artist
+4	әуенін	PlayMusic	B-music_item
+5	ойнат	PlayMusic	O
+
+# id: 188
+# text-en: find a movie theatre with Life and Death
+# text: Life and Death бар кинотеатрды тап
+# intent: SearchScreeningEvent
+1	Life	SearchScreeningEvent	B-movie_name
+2	and	SearchScreeningEvent	I-movie_name
+3	Death	SearchScreeningEvent	I-movie_name
+4	бар	SearchScreeningEvent	O
+5	кинотеатрды	SearchScreeningEvent	B-object_location_type
+6	тап	SearchScreeningEvent	O
+
+# id: 189
+# text-en: Play music from the playlist Get Your Mind Right
+# text: Get Your Mind Right ойнату тізімінен музыка ойнат
+# intent: PlayMusic
+1	Get	PlayMusic	B-playlist
+2	Your	PlayMusic	I-playlist
+3	Mind	PlayMusic	I-playlist
+4	Right	PlayMusic	I-playlist
+5	ойнату	PlayMusic	O
+6	тізімінен	PlayMusic	O
+7	музыка	PlayMusic	B-playlist
+8	ойнат	PlayMusic	O
+
+# id: 190
+# text-en: book a table today at a steakhouse for eight that serves sashimi
+# text: сашими қызмет ететін стейкаханада бүгінге сегіз адамға үстел бронда
+# intent: BookRestaurant
+1	сашими	BookRestaurant	B-cuisine
+2	қызмет	BookRestaurant	O
+3	ететін	BookRestaurant	O
+4	стейкаханада	BookRestaurant	B-restaurant_type
+5	бүгінге	BookRestaurant	B-datetime
+6	сегіз	BookRestaurant	I-datetime
+7	адамға	BookRestaurant	I-datetime
+8	үстел	BookRestaurant	I-datetime
+9	бронда	BookRestaurant	I-datetime
+
+# id: 191
+# text-en: find animated movies at Caribbean Cinemas
+# text: Caribbean Cinemas-ында анимациялық фильмдерді тап
+# intent: SearchScreeningEvent
+1	Caribbean	SearchScreeningEvent	B-location
+2	Cinemas-ында	SearchScreeningEvent	I-location
+3	анимациялық	SearchScreeningEvent	B-movie_type
+4	фильмдерді	SearchScreeningEvent	I-movie_type
+5	тап	SearchScreeningEvent	O
+
+# id: 192
+# text-en: Will there be a storm nearby
+# text: Жақын жерде дауыл болады ма
+# intent: weather/find
+1	Жақын	weather/find	O
+2	жерде	weather/find	O
+3	дауыл	weather/find	B-condition_description
+4	болады	weather/find	O
+5	ма	weather/find	O
+
+# id: 193
+# text-en: Play some melody from the eighties on Spotify
+# text: Spotify-де сексенінші жылдардың біраз әуенін ойнат
+# intent: PlayMusic
+1	Spotify-де	PlayMusic	B-service
+2	сексенінші	PlayMusic	B-album
+3	жылдардың	PlayMusic	I-album
+4	біраз	PlayMusic	I-album
+5	әуенін	PlayMusic	I-album
+6	ойнат	PlayMusic	O
+
+# id: 194
+# text-en: Where can I find The World According to Paris ?
+# text: Мен The World According to Paris-ті қайдан таба аламын ?
+# intent: SearchCreativeWork
+1	Мен	SearchCreativeWork	O
+2	The	SearchCreativeWork	B-object_name
+3	World	SearchCreativeWork	I-object_name
+4	According	SearchCreativeWork	I-object_name
+5	to	SearchCreativeWork	I-object_name
+6	Paris-ті	SearchCreativeWork	I-object_name
+7	қайдан	SearchCreativeWork	O
+8	таба	SearchCreativeWork	O
+9	аламын	SearchCreativeWork	O
+10	?	SearchCreativeWork	O
+
+# id: 195
+# text-en: Tell me when it will be hotter in China
+# text: Қытайда қашан ыстықрақ болатынын айтшы
+# intent: weather/find
+1	Қытайда	weather/find	B-location
+2	қашан	weather/find	B-condition_description
+3	ыстықрақ	weather/find	B-condition_description
+4	болатынын	weather/find	O
+5	айтшы	weather/find	O
+
+# id: 196
+# text-en: What are the movie times for the Caribbean Cinemas ?
+# text: Caribbean Cinemas-та фильм уақыттары қандай ?
+# intent: SearchScreeningEvent
+1	Caribbean	SearchScreeningEvent	B-location
+2	Cinemas-та	SearchScreeningEvent	I-location
+3	фильм	SearchScreeningEvent	B-object_type
+4	уақыттары	SearchScreeningEvent	O
+5	қандай	SearchScreeningEvent	O
+6	?	SearchScreeningEvent	O
+
+# id: 197
+# text-en: Will the wind die down at my current location by supper time?
+# text: Кешкі уақытқа дейін жел тұрған жерімде жойылып кете ме?
+# intent: weather/find
+1	Кешкі	weather/find	O
+2	уақытқа	weather/find	B-datetime
+3	дейін	weather/find	I-datetime
+4	жел	weather/find	B-entity_name
+5	тұрған	weather/find	O
+6	жерімде	weather/find	O
+7	жойылып	weather/find	O
+8	кете	weather/find	O
+9	ме	weather/find	O
+10	?	weather/find	O
+
+# id: 198
+# text-en: Find me The Twinkler playing at National Amusements in 2 minutes
+# text: Маған екі минут ішінде National Amusements-те The Twinkler-ді тап
+# intent: SearchScreeningEvent
+1	Маған	SearchScreeningEvent	O
+2	екі	SearchScreeningEvent	B-datetime
+3	минут	SearchScreeningEvent	I-datetime
+4	ішінде	SearchScreeningEvent	I-datetime
+5	National	SearchScreeningEvent	B-location
+6	Amusements-те	SearchScreeningEvent	I-location
+7	The	SearchScreeningEvent	B-movie_name
+8	Twinkler-ді	SearchScreeningEvent	I-movie_name
+9	тап	SearchScreeningEvent	O
+
+# id: 199
+# text-en: I give Hadon of Ancient Opar two out of 6 points
+# text: Мен Hadon of Ancient Opar-ға 6 ұпайдың екеуін беремін
+# intent: RateBook
+1	Мен	RateBook	O
+2	Hadon	RateBook	B-object_name
+3	of	RateBook	I-object_name
+4	Ancient	RateBook	I-object_name
+5	Opar-ға	RateBook	I-object_name
+6	6	RateBook	B-best_rating
+7	ұпайдың	RateBook	I-best_rating
+8	екеуін	RateBook	O
+9	беремін	RateBook	O
+
+# id: 200
+# text-en: I'm looking to bring shawn, marguerite and della to a place to eat at near Rwanda .
+# text: Мен Руандаға жақын жерде тамақтанатын жерге шоу, маргарит және делланы әкелгім келеді .
+# intent: BookRestaurant
+1	Мен	BookRestaurant	O
+2	Руандаға	BookRestaurant	B-location
+3	жақын	BookRestaurant	B-location
+4	жерде	BookRestaurant	O
+5	тамақтанатын	BookRestaurant	B-served_dish
+6	жерге	BookRestaurant	O
+7	шоу	BookRestaurant	B-party_size_description
+8	,	BookRestaurant	O
+9	маргарит	BookRestaurant	B-party_size_description
+10	және	BookRestaurant	I-party_size_description
+11	делланы	BookRestaurant	I-party_size_description
+12	әкелгім	BookRestaurant	I-party_size_description
+13	келеді	BookRestaurant	O
+14	.	BookRestaurant	O
+
+# id: 201
+# text-en: Play music on Lastfm
+# text: Lastfm-де музыка ойнат
+# intent: PlayMusic
+1	Lastfm-де	PlayMusic	B-service
+2	музыка	PlayMusic	O
+3	ойнат	PlayMusic	O
+
+# id: 202
+# text-en: Will it be snowy at the current position by March 3 ?
+# text: 3 наурызға дейін қазіргі жерде қар жауады ма ?
+# intent: weather/find
+1	3	weather/find	B-datetime
+2	наурызға	weather/find	I-datetime
+3	дейін	weather/find	I-datetime
+4	қазіргі	weather/find	B-location
+5	жерде	weather/find	O
+6	қар	weather/find	B-condition_description
+7	жауады	weather/find	O
+8	ма	weather/find	O
+9	?	weather/find	O
+
+# id: 203
+# text-en: Find me a table for 8 somewhee in Hollenberg in nine weeks
+# text: Маған тоғыз аптаның ішінде Холленбергте бір жерде 8-ге үстел тап
+# intent: BookRestaurant
+1	Маған	BookRestaurant	O
+2	тоғыз	BookRestaurant	B-datetime
+3	аптаның	BookRestaurant	I-datetime
+4	ішінде	BookRestaurant	I-datetime
+5	Холленбергте	BookRestaurant	B-location
+6	бір	BookRestaurant	I-location
+7	жерде	BookRestaurant	O
+8	8-ге	BookRestaurant	B-party_size_number
+9	үстел	BookRestaurant	O
+10	тап	BookRestaurant	O
+
+# id: 204
+# text-en: play a track from 2004
+# text: 2004 жылдың трегін ойнат
+# intent: PlayMusic
+1	2004	PlayMusic	B-datetime
+2	жылдың	PlayMusic	I-datetime
+3	трегін	PlayMusic	B-datetime
+4	ойнат	PlayMusic	O
+
+# id: 205
+# text-en: Tell me what films are currently playing at AMC Theaters
+# text: AMC Theaters-да қазір қандай фильмдер ойнап жатыр айтшы?
+# intent: SearchScreeningEvent
+1	AMC	SearchScreeningEvent	B-location
+2	Theaters-да	SearchScreeningEvent	I-location
+3	қазір	SearchScreeningEvent	O
+4	қандай	SearchScreeningEvent	O
+5	фильмдер	SearchScreeningEvent	B-movie_type
+6	ойнап	SearchScreeningEvent	O
+7	жатыр	SearchScreeningEvent	O
+8	айтшы	SearchScreeningEvent	O
+9	?	SearchScreeningEvent	O
+
+# id: 206
+# text-en: Show me the TV show Limit of Love: Umizaru
+# text: Маған Limit of Love: Umizaru телешоуды көрсет
+# intent: SearchCreativeWork
+1	Маған	SearchCreativeWork	O
+2	Limit	SearchCreativeWork	B-object_name
+3	of	SearchCreativeWork	I-object_name
+4	Love:	SearchCreativeWork	I-object_name
+5	Umizaru	SearchCreativeWork	I-object_name
+6	телешоуды	SearchCreativeWork	B-object_type
+7	көрсет	SearchCreativeWork	O
+
+# id: 207
+# text-en: Show me the photograph Rock You Baby
+# text: Маған Rock You Baby фотосын көрсет
+# intent: SearchCreativeWork
+1	Маған	SearchCreativeWork	O
+2	Rock	SearchCreativeWork	B-object_name
+3	You	SearchCreativeWork	I-object_name
+4	Baby	SearchCreativeWork	I-object_name
+5	фотосын	SearchCreativeWork	B-object_type
+6	көрсет	SearchCreativeWork	O
+
+# id: 208
+# text-en: is Tarzan of the Apes playing at Cobb Theatres
+# text: Tarzan of the Apes Cobb Theatres да ойнатылып жатыр ма
+# intent: SearchScreeningEvent
+1	Tarzan	SearchScreeningEvent	B-movie_name
+2	of	SearchScreeningEvent	I-movie_name
+3	the	SearchScreeningEvent	I-movie_name
+4	Apes	SearchScreeningEvent	I-movie_name
+5	Cobb	SearchScreeningEvent	B-location
+6	Theatres	SearchScreeningEvent	I-location
+7	да	SearchScreeningEvent	O
+8	ойнатылып	SearchScreeningEvent	O
+9	жатыр	SearchScreeningEvent	O
+10	ма	SearchScreeningEvent	O
+
+# id: 209
+# text-en: put Kan Mikami on Pre-Party R&B Jams
+# text: Pre-Party R&B Jams-да Kan Mikami-ді ойнат
+# intent: AddToPlaylist
+1	Pre-Party	AddToPlaylist	B-playlist
+2	R	AddToPlaylist	I-playlist
+3	&	AddToPlaylist	I-playlist
+4	B	AddToPlaylist	I-playlist
+5	Jams-да	AddToPlaylist	I-playlist
+6	Kan	AddToPlaylist	B-artist
+7	Mikami-ді	AddToPlaylist	I-artist
+8	ойнат	AddToPlaylist	O
+
+# id: 210
+# text-en: is it going to blizzard at my current position
+# text: менің қазіргі жерімде боран болады ма
+# intent: weather/find
+1	менің	weather/find	O
+2	қазіргі	weather/find	B-location
+3	жерімде	weather/find	I-location
+4	боран	weather/find	B-condition_description
+5	болады	weather/find	O
+6	ма	weather/find	O
+
+# id: 211
+# text-en: book a table for me and my step uncle in Malta at a cafeteria
+# text: Мальтадағы кафеде маған және өгей ағам үшін үстелге тапсырыс бер
+# intent: BookRestaurant
+1	Мальтадағы	BookRestaurant	B-location
+2	кафеде	BookRestaurant	B-restaurant_type
+3	маған	BookRestaurant	B-party_size_description
+4	және	BookRestaurant	I-party_size_description
+5	өгей	BookRestaurant	I-party_size_description
+6	ағам	BookRestaurant	I-party_size_description
+7	үшін	BookRestaurant	O
+8	үстелге	BookRestaurant	B-cuisine
+9	тапсырыс	BookRestaurant	O
+10	бер	BookRestaurant	O
+
+# id: 212
+# text-en: Play the most popular twenties record from Leland Sklar
+# text: Leland Sklar-дың ең танымал жиырмасыншы жазбасын ойнат
+# intent: PlayMusic
+1	Leland	PlayMusic	B-artist
+2	Sklar-дың	PlayMusic	I-artist
+3	ең	PlayMusic	B-sort
+4	танымал	PlayMusic	I-sort
+5	жиырмасыншы	PlayMusic	O
+6	жазбасын	PlayMusic	B-music_item
+7	ойнат	PlayMusic	O
+
+# id: 213
+# text-en: Show me the forecast for Wisconsin
+# text: Маған Висконсинге арналған болжамды көрсет
+# intent: weather/find
+1	Маған	weather/find	O
+2	Висконсинге	weather/find	B-object_name
+3	арналған	weather/find	I-object_name
+4	болжамды	weather/find	B-object_type
+5	көрсет	weather/find	O
+
+# id: 214
+# text-en: find a photograph called Between the Days
+# text: Between the Days деп аталатын фотосуретті тап
+# intent: SearchCreativeWork
+1	Between	SearchCreativeWork	B-object_name
+2	the	SearchCreativeWork	I-object_name
+3	Days	SearchCreativeWork	I-object_name
+4	деп	SearchCreativeWork	O
+5	аталатын	SearchCreativeWork	O
+6	фотосуретті	SearchCreativeWork	B-object_type
+7	тап	SearchCreativeWork	O
+
+# id: 215
+# text-en: book at The Halal Guys on Oct. 17
+# text: The Halal Guys-та 17 қазанға бронь жаса
+# intent: BookRestaurant
+1	The	BookRestaurant	B-object_name
+2	Halal	BookRestaurant	I-object_name
+3	Guys-та	BookRestaurant	I-object_name
+4	17	BookRestaurant	B-datetime
+5	қазанға	BookRestaurant	I-datetime
+6	бронь	BookRestaurant	B-served_dish
+7	жаса	BookRestaurant	O
+
+# id: 216
+# text-en: Please tell me the forecast for Guinea-Bissau
+# text: Маған Гвинея-Бисаудың болжамын айтыңызшы
+# intent: weather/find
+1	Маған	weather/find	O
+2	Гвинея-Бисаудың	weather/find	B-location
+3	болжамын	weather/find	I-location
+4	айтыңызшы	weather/find	O
+
+# id: 217
+# text-en: Add this song to my the perfect italian dinner playlist
+# text: Бұл әнді менің керемет итальяндық кеш ойнату тізіміме қос
+# intent: AddToPlaylist
+1	Бұл	AddToPlaylist	O
+2	әнді	AddToPlaylist	B-music_item
+3	менің	AddToPlaylist	O
+4	керемет	AddToPlaylist	O
+5	итальяндық	AddToPlaylist	B-cuisine
+6	кеш	AddToPlaylist	I-cuisine
+7	ойнату	AddToPlaylist	I-cuisine
+8	тізіміме	AddToPlaylist	O
+9	қос	AddToPlaylist	O
+
+# id: 218
+# text-en: weather in Tioga Colorado
+# text: Tioga Colorado-дағы ауа райы
+# intent: weather/find
+1	Tioga	weather/find	B-location
+2	Colorado-дағы	weather/find	B-location
+3	ауа	weather/find	B-datetime
+4	райы	weather/find	O
+
+# id: 219
+# text-en: I want to listen to the Music of Ghost in the Shell: Stand Alone Complex
+# text: Мен Ghost in the Shell: Stand Alone Complex Музыкасын тыңдағым келеді
+# intent: SearchCreativeWork
+1	Мен	SearchCreativeWork	O
+2	Ghost	SearchCreativeWork	B-object_name
+3	in	SearchCreativeWork	I-object_name
+4	the	SearchCreativeWork	I-object_name
+5	Shell:	SearchCreativeWork	I-object_name
+6	Stand	SearchCreativeWork	I-object_name
+7	Alone	SearchCreativeWork	I-object_name
+8	Complex	SearchCreativeWork	I-object_name
+9	Музыкасын	SearchCreativeWork	O
+10	тыңдағым	SearchCreativeWork	O
+11	келеді	SearchCreativeWork	O
+
+# id: 220
+# text-en: Show me Happiness Was Free .
+# text: Маған Happiness Was Free-ді көрсет .
+# intent: SearchCreativeWork
+1	Маған	SearchCreativeWork	O
+2	Happiness	SearchCreativeWork	B-object_name
+3	Was	SearchCreativeWork	I-object_name
+4	Free-ді	SearchCreativeWork	I-object_name
+5	көрсет	SearchCreativeWork	O
+6	.	SearchCreativeWork	O
+
+# id: 221
+# text-en: Is it supposed to rain nearby my current location at 0 o'clock ?
+# text: Сағат 0-де жақын орналасқан жерде жаңбыр жауып тұруы керек пе ?
+# intent: weather/find
+1	Сағат	weather/find	B-datetime
+2	0-де	weather/find	I-datetime
+3	жақын	weather/find	B-location
+4	орналасқан	weather/find	O
+5	жерде	weather/find	O
+6	жаңбыр	weather/find	B-condition_description
+7	жауып	weather/find	B-condition_description
+8	тұруы	weather/find	O
+9	керек	weather/find	O
+10	пе	weather/find	O
+11	?	weather/find	O
+
+# id: 222
+# text-en: book a table in Fairview neighboring the area
+# text: Fairview көрші ауданында үстел бронда
+# intent: BookRestaurant
+1	Fairview	BookRestaurant	B-location
+2	көрші	BookRestaurant	I-location
+3	ауданында	BookRestaurant	I-location
+4	үстел	BookRestaurant	B-cuisine
+5	бронда	BookRestaurant	I-cuisine
+
+# id: 223
+# text-en: what is the forecast for 15:04 in Georgia for overcast conditions in Valley View
+# text: Valley View-де бұлтты ауа райы үшін Грузиядағы 15:04-ке болжам қандай?
+# intent: weather/find
+1	Valley	weather/find	B-object_name
+2	View-де	weather/find	I-object_name
+3	бұлтты	weather/find	B-condition_description
+4	ауа	weather/find	B-condition_description
+5	райы	weather/find	O
+6	үшін	weather/find	O
+7	Грузиядағы	weather/find	B-location
+8	15:04-ке	weather/find	B-datetime
+9	болжам	weather/find	O
+10	қандай	weather/find	O
+11	?	weather/find	O
+
+# id: 224
+# text-en: Can I see the movie schedules ?
+# text: Мен фильмдер кестесін көре аламын ба ?
+# intent: SearchScreeningEvent
+1	Мен	SearchScreeningEvent	O
+2	фильмдер	SearchScreeningEvent	B-object_type
+3	кестесін	SearchScreeningEvent	O
+4	көре	SearchScreeningEvent	O
+5	аламын	SearchScreeningEvent	O
+6	ба	SearchScreeningEvent	O
+7	?	SearchScreeningEvent	O
+
+# id: 225
+# text-en: find a movie house closest showing Operation: Kingdom
+# text: Operation: Kingdom көрсететін ең жақын фильмдер үйін тап
+# intent: SearchScreeningEvent
+1	Operation:	SearchScreeningEvent	B-object_name
+2	Kingdom	SearchScreeningEvent	I-object_name
+3	көрсететін	SearchScreeningEvent	O
+4	ең	SearchScreeningEvent	B-sort
+5	жақын	SearchScreeningEvent	I-sort
+6	фильмдер	SearchScreeningEvent	B-movie_type
+7	үйін	SearchScreeningEvent	O
+8	тап	SearchScreeningEvent	O
+
+# id: 226
+# text-en: Find a trailer called Storm Center .
+# text: Storm Center деп аталатын трейлерді тап .
+# intent: SearchCreativeWork
+1	Storm	SearchCreativeWork	B-object_name
+2	Center	SearchCreativeWork	I-object_name
+3	деп	SearchCreativeWork	O
+4	аталатын	SearchCreativeWork	O
+5	трейлерді	SearchCreativeWork	B-object_type
+6	тап	SearchCreativeWork	O
+7	.	SearchCreativeWork	O
+
+# id: 227
+# text-en: put this album on my dubstep dangles dirty playlist
+# text: осы альбомды менің dubstep dangles dirty ойнату тізбегіне сал
+# intent: AddToPlaylist
+1	осы	AddToPlaylist	B-reference
+2	альбомды	AddToPlaylist	B-music_item
+3	менің	AddToPlaylist	O
+4	dubstep	AddToPlaylist	B-playlist
+5	dangles	AddToPlaylist	I-playlist
+6	dirty	AddToPlaylist	I-playlist
+7	ойнату	AddToPlaylist	O
+8	тізбегіне	AddToPlaylist	O
+9	сал	AddToPlaylist	O
+
+# id: 228
+# text-en: What are the movie schedules
+# text: Фильмдер кестелері қандай
+# intent: SearchScreeningEvent
+1	Фильмдер	SearchScreeningEvent	B-object_type
+2	кестелері	SearchScreeningEvent	O
+3	қандай	SearchScreeningEvent	O
+
+# id: 229
+# text-en: Play a song by Juanes on Last Fm
+# text: Last Fm-де Хуанестің әнін ойнат
+# intent: PlayMusic
+1	Last	PlayMusic	B-service
+2	Fm-де	PlayMusic	I-service
+3	Хуанестің	PlayMusic	B-artist
+4	әнін	PlayMusic	B-music_item
+5	ойнат	PlayMusic	O
+
+# id: 230
+# text-en: Assign 0 points out of 6 to The Gate of Worlds
+# text: The Gate of Worlds-қа 6-дан 0 балл қой
+# intent: RateBook
+1	The	RateBook	B-object_name
+2	Gate	RateBook	I-object_name
+3	of	RateBook	I-object_name
+4	Worlds-қа	RateBook	I-object_name
+5	6-дан	RateBook	B-best_rating
+6	0	RateBook	B-rating_value
+7	балл	RateBook	O
+8	қой	RateBook	O
+
+# id: 231
+# text-en: Play some David Mallett on last fm
+# text: last fm-де Дэвид Мэллетті ойнат
+# intent: PlayMusic
+1	last	PlayMusic	B-service
+2	fm-де	PlayMusic	I-service
+3	Дэвид	PlayMusic	B-artist
+4	Мэллетті	PlayMusic	I-artist
+5	ойнат	PlayMusic	O
+
+# id: 232
+# text-en: Find me the movie times
+# text: Маған фильмнің уақыттарын тап
+# intent: SearchScreeningEvent
+1	Маған	SearchScreeningEvent	O
+2	фильмнің	SearchScreeningEvent	B-object_type
+3	уақыттарын	SearchScreeningEvent	O
+4	тап	SearchScreeningEvent	O
+
+# id: 233
+# text-en: Will it be windy at 4 PM in NY ?
+# text: Нью-Йорктегі сағат күндізгі 4-те жел болады ма ?
+# intent: weather/find
+1	Нью-Йорктегі	weather/find	B-location
+2	сағат	weather/find	B-datetime
+3	күндізгі	weather/find	B-datetime
+4	4-те	weather/find	I-datetime
+5	жел	weather/find	B-condition_description
+6	болады	weather/find	O
+7	ма	weather/find	O
+8	?	weather/find	O
+
+# id: 234
+# text-en: Book me a restaurant for nine in Statham
+# text: Стэтхэмде тоғызға мейрамханаға тапсырыс бер
+# intent: BookRestaurant
+1	Стэтхэмде	BookRestaurant	B-location
+2	тоғызға	BookRestaurant	B-party_size_number
+3	мейрамханаға	BookRestaurant	B-restaurant_type
+4	тапсырыс	BookRestaurant	O
+5	бер	BookRestaurant	O
+
+# id: 235
+# text-en: find a video game called IBM Program temporary fix
+# text: IBM Program temporary fix деп аталатын видео ойынды тап
+# intent: SearchCreativeWork
+1	IBM	SearchCreativeWork	B-object_name
+2	Program	SearchCreativeWork	I-object_name
+3	temporary	SearchCreativeWork	I-object_name
+4	fix	SearchCreativeWork	I-object_name
+5	деп	SearchCreativeWork	O
+6	аталатын	SearchCreativeWork	O
+7	видео	SearchCreativeWork	B-object_type
+8	ойынды	SearchCreativeWork	O
+9	тап	SearchCreativeWork	O
+
+# id: 236
+# text-en: Find a table for one at a popular churrascaria for three weeks from now
+# text: Үш аптадан кейін танымал churrascaria-да біреуге үстел тап
+# intent: BookRestaurant
+1	Үш	BookRestaurant	B-datetime
+2	аптадан	BookRestaurant	I-datetime
+3	кейін	BookRestaurant	I-datetime
+4	танымал	BookRestaurant	O
+5	churrascaria-да	BookRestaurant	B-restaurant_type
+6	біреуге	BookRestaurant	B-rating_value
+7	үстел	BookRestaurant	O
+8	тап	BookRestaurant	O
+
+# id: 237
+# text-en: For Mirrorshades I rate it three stars
+# text: Mirrorshades үшін мен оны үш жұлдыз деп бағалаймын
+# intent: RateBook
+1	Mirrorshades	RateBook	B-object_name
+2	үшін	RateBook	I-object_name
+3	мен	RateBook	O
+4	оны	RateBook	O
+5	үш	RateBook	B-rating_value
+6	жұлдыз	RateBook	I-rating_value
+7	деп	RateBook	O
+8	бағалаймын	RateBook	O
+
+# id: 238
+# text-en: Book a restaurant that serves agnolotti in Colorado City Idaho .
+# text: Айдаходағы Колорадо-Ситиде agnolotti дайындайтын мейрамханаға тапсырыс бер .
+# intent: BookRestaurant
+1	Айдаходағы	BookRestaurant	B-location
+2	Колорадо-Ситиде	BookRestaurant	B-location
+3	agnolotti	BookRestaurant	B-cuisine
+4	дайындайтын	BookRestaurant	O
+5	мейрамханаға	BookRestaurant	B-restaurant_type
+6	тапсырыс	BookRestaurant	O
+7	бер	BookRestaurant	O
+8	.	BookRestaurant	O
+
+# id: 239
+# text-en: Add bright and breezy to my This Is Gucci Mane playlist
+# text: Менің This Is Gucci Mane ойнату тізіміне bright and breezy-ді қос
+# intent: AddToPlaylist
+1	Менің	AddToPlaylist	O
+2	This	AddToPlaylist	B-playlist
+3	Is	AddToPlaylist	I-playlist
+4	Gucci	AddToPlaylist	I-playlist
+5	Mane	AddToPlaylist	I-playlist
+6	ойнату	AddToPlaylist	O
+7	тізіміне	AddToPlaylist	O
+8	bright	AddToPlaylist	B-entity_name
+9	and	AddToPlaylist	I-entity_name
+10	breezy-ді	AddToPlaylist	I-entity_name
+11	қос	AddToPlaylist	O
+
+# id: 240
+# text-en: Can you give me the weather for here
+# text: Маған осы жерге ауа райын бере аласың ба
+# intent: weather/find
+1	Маған	weather/find	O
+2	осы	weather/find	B-location
+3	жерге	weather/find	I-location
+4	ауа	weather/find	O
+5	райын	weather/find	O
+6	бере	weather/find	O
+7	аласың	weather/find	O
+8	ба	weather/find	O
+
+# id: 241
+# text-en: Add Ashley McIsaac to my r&b party classics playlist
+# text: Менің r&b party classics ойнату тізіміне Ashley McIsaac-ті қос
+# intent: AddToPlaylist
+1	Менің	AddToPlaylist	O
+2	r	AddToPlaylist	B-playlist
+3	&	AddToPlaylist	I-playlist
+4	b	AddToPlaylist	I-playlist
+5	party	AddToPlaylist	I-playlist
+6	classics	AddToPlaylist	I-playlist
+7	ойнату	AddToPlaylist	O
+8	тізіміне	AddToPlaylist	O
+9	Ashley	AddToPlaylist	B-artist
+10	McIsaac-ті	AddToPlaylist	I-artist
+11	қос	AddToPlaylist	O
+
+# id: 242
+# text-en: I'd like to see the saga 12 Soulful Nights of Christmas
+# text: Мен 12 Soulful Nights of Christmas сагасын көргім келеді
+# intent: SearchCreativeWork
+1	Мен	SearchCreativeWork	O
+2	12	SearchCreativeWork	B-object_name
+3	Soulful	SearchCreativeWork	B-object_name
+4	Nights	SearchCreativeWork	I-object_name
+5	of	SearchCreativeWork	I-object_name
+6	Christmas	SearchCreativeWork	I-object_name
+7	сагасын	SearchCreativeWork	B-object_type
+8	көргім	SearchCreativeWork	O
+9	келеді	SearchCreativeWork	O
+
+# id: 243
+# text-en: I need a reservation for 6 PM. with a party of 10 at Sand Lake
+# text: Маған Sand Lake-те кешкі сағат 6-ға 10 адамға брондау қажет
+# intent: BookRestaurant
+1	Маған	BookRestaurant	O
+2	Sand	BookRestaurant	B-location
+3	Lake-те	BookRestaurant	I-location
+4	кешкі	BookRestaurant	B-datetime
+5	сағат	BookRestaurant	I-datetime
+6	6-ға	BookRestaurant	I-datetime
+7	10	BookRestaurant	B-party_size_number
+8	адамға	BookRestaurant	O
+9	брондау	BookRestaurant	B-restaurant_type
+10	қажет	BookRestaurant	O
+
+# id: 244
+# text-en: Use Groove Shark to play music from the eighties
+# text: Сексенінші жылдардағы музыка ойнау үшін Groove Shark пайдалан
+# intent: PlayMusic
+1	Сексенінші	PlayMusic	O
+2	жылдардағы	PlayMusic	B-datetime
+3	музыка	PlayMusic	O
+4	ойнау	PlayMusic	O
+5	үшін	PlayMusic	O
+6	Groove	PlayMusic	B-service
+7	Shark	PlayMusic	I-service
+8	пайдалан	PlayMusic	O
+
+# id: 245
+# text-en: find soundtrack titled The House of the Yellow Carpet
+# text: The House of the Yellow Carpet деп аталатын саундтректі тап
+# intent: SearchCreativeWork
+1	The	SearchCreativeWork	B-object_name
+2	House	SearchCreativeWork	I-object_name
+3	of	SearchCreativeWork	I-object_name
+4	the	SearchCreativeWork	I-object_name
+5	Yellow	SearchCreativeWork	I-object_name
+6	Carpet	SearchCreativeWork	I-object_name
+7	деп	SearchCreativeWork	O
+8	аталатын	SearchCreativeWork	O
+9	саундтректі	SearchCreativeWork	B-object_type
+10	тап	SearchCreativeWork	O
+
+# id: 246
+# text-en: Which is the nearest cinema showing movies that start in nineteen seconds ?
+# text: Он тоғыз секундта басталатын фильмдерді көрсететін ең жақын кинотеатр қайсы ?
+# intent: SearchScreeningEvent
+1	Он	SearchScreeningEvent	O
+2	тоғыз	SearchScreeningEvent	B-datetime
+3	секундта	SearchScreeningEvent	I-datetime
+4	басталатын	SearchScreeningEvent	O
+5	фильмдерді	SearchScreeningEvent	B-movie_type
+6	көрсететін	SearchScreeningEvent	O
+7	ең	SearchScreeningEvent	B-location
+8	жақын	SearchScreeningEvent	I-location
+9	кинотеатр	SearchScreeningEvent	B-object_location_type
+10	қайсы	SearchScreeningEvent	O
+11	?	SearchScreeningEvent	O
+
+# id: 247
+# text-en: Add morten harket to this is puccini
+# text: мортен харкетті осы puccini-ға қос
+# intent: AddToPlaylist
+1	мортен	AddToPlaylist	B-artist
+2	харкетті	AddToPlaylist	I-artist
+3	осы	AddToPlaylist	O
+4	puccini-ға	AddToPlaylist	B-playlist
+5	қос	AddToPlaylist	O
+
+# id: 248
+# text-en: Open Spotify and play a song from the twenties by Richard Harvey
+# text: Spotify-ды ашып, Ричард Харвидің жиырмасыншы жылдардағы әнін ойнат
+# intent: PlayMusic
+1	Spotify-ды	PlayMusic	B-service
+2	ашып	PlayMusic	O
+3	,	PlayMusic	O
+4	Ричард	PlayMusic	B-artist
+5	Харвидің	PlayMusic	I-artist
+6	жиырмасыншы	PlayMusic	O
+7	жылдардағы	PlayMusic	B-datetime
+8	әнін	PlayMusic	B-music_item
+9	ойнат	PlayMusic	O
+
+# id: 249
+# text-en: I want to book a restaurant
+# text: Мен мейрамханаға тапсырыс бергім келеді
+# intent: BookRestaurant
+1	Мен	BookRestaurant	O
+2	мейрамханаға	BookRestaurant	O
+3	тапсырыс	BookRestaurant	O
+4	бергім	BookRestaurant	O
+5	келеді	BookRestaurant	O
+
+# id: 250
+# text-en: Play the album Vibrations by Marion Elise Raven
+# text: Мэрион Элис Райвеннің Vibrations альбомын ойнат
+# intent: PlayMusic
+1	Мэрион	PlayMusic	B-artist
+2	Элис	PlayMusic	I-artist
+3	Райвеннің	PlayMusic	I-artist
+4	Vibrations	PlayMusic	B-album
+5	альбомын	PlayMusic	B-music_item
+6	ойнат	PlayMusic	O
+
+# id: 251
+# text-en: add this artist to my Jazz playlist
+# text: осы орындаушыны менің джаз ойнату тізіміме қос
+# intent: AddToPlaylist
+1	осы	AddToPlaylist	O
+2	орындаушыны	AddToPlaylist	O
+3	менің	AddToPlaylist	O
+4	джаз	AddToPlaylist	B-playlist
+5	ойнату	AddToPlaylist	O
+6	тізіміме	AddToPlaylist	O
+7	қос	AddToPlaylist	O
+
+# id: 252
+# text-en: I want to find the show From Where to Eternity .
+# text: Мен From Where to Eternity шоуын тапқым келеді .
+# intent: SearchCreativeWork
+1	Мен	SearchCreativeWork	O
+2	From	SearchCreativeWork	B-object_name
+3	Where	SearchCreativeWork	I-object_name
+4	to	SearchCreativeWork	I-object_name
+5	Eternity	SearchCreativeWork	I-object_name
+6	шоуын	SearchCreativeWork	B-object_type
+7	тапқым	SearchCreativeWork	O
+8	келеді	SearchCreativeWork	O
+9	.	SearchCreativeWork	O
+
+# id: 253
+# text-en: play the top-twenty songs by The Kleptones on Spotify
+# text: Spotify-де The Kleptones-дің ең жақсы жиырма әнін ойнат
+# intent: PlayMusic
+1	Spotify-де	PlayMusic	B-service
+2	The	PlayMusic	B-movie_name
+3	Kleptones-дің	PlayMusic	I-movie_name
+4	ең	PlayMusic	B-sort
+5	жақсы	PlayMusic	I-sort
+6	жиырма	PlayMusic	I-sort
+7	әнін	PlayMusic	B-music_item
+8	ойнат	PlayMusic	O
+
+# id: 254
+# text-en: How will the weather be in six minutes close to Moosic
+# text: Moosic жақта алты минут ішінде ауа райы қалай болады
+# intent: weather/find
+1	Moosic	weather/find	B-location
+2	жақта	weather/find	I-location
+3	алты	weather/find	B-datetime
+4	минут	weather/find	I-datetime
+5	ішінде	weather/find	I-datetime
+6	ауа	weather/find	B-location
+7	райы	weather/find	O
+8	қалай	weather/find	O
+9	болады	weather/find	O
+
+# id: 255
+# text-en: I wish to listen to some fifties music.
+# text: Мен елуінші жылдардағы музыканы тыңдағым келеді.
+# intent: PlayMusic
+1	Мен	PlayMusic	O
+2	елуінші	PlayMusic	B-datetime
+3	жылдардағы	PlayMusic	I-datetime
+4	музыканы	PlayMusic	O
+5	тыңдағым	PlayMusic	O
+6	келеді	PlayMusic	O
+7	.	PlayMusic	O
+
+# id: 256
+# text-en: what time is Utamaro and His Five Women showing at Alamo Drafthouse Cinema
+# text: Utamaro and His Five Women қай уақытта Alamo Drafthouse Cinema-сында көрсетіледі
+# intent: SearchScreeningEvent
+1	Utamaro	SearchScreeningEvent	B-movie_name
+2	and	SearchScreeningEvent	I-movie_name
+3	His	SearchScreeningEvent	I-movie_name
+4	Five	SearchScreeningEvent	I-movie_name
+5	Women	SearchScreeningEvent	I-movie_name
+6	қай	SearchScreeningEvent	O
+7	уақытта	SearchScreeningEvent	O
+8	Alamo	SearchScreeningEvent	B-location
+9	Drafthouse	SearchScreeningEvent	I-location
+10	Cinema-сында	SearchScreeningEvent	I-location
+11	көрсетіледі	SearchScreeningEvent	O
+
+# id: 257
+# text-en: Find a photograph of Adventure Time: The Secret of the Nameless Kingdom
+# text: Adventure Time: The Secret of the Nameless Kingdom суретін тап
+# intent: SearchCreativeWork
+1	Adventure	SearchCreativeWork	B-object_name
+2	Time:	SearchCreativeWork	I-object_name
+3	The	SearchCreativeWork	I-object_name
+4	Secret	SearchCreativeWork	I-object_name
+5	of	SearchCreativeWork	I-object_name
+6	the	SearchCreativeWork	I-object_name
+7	Nameless	SearchCreativeWork	I-object_name
+8	Kingdom	SearchCreativeWork	I-object_name
+9	суретін	SearchCreativeWork	B-object_type
+10	тап	SearchCreativeWork	O
+
+# id: 258
+# text-en: put Do You Love Me on my acoustic soul playlist
+# text: Менің acoustic soul ойнату тізіміне Do You Love Me сал
+# intent: AddToPlaylist
+1	Менің	AddToPlaylist	O
+2	acoustic	AddToPlaylist	B-playlist
+3	soul	AddToPlaylist	I-playlist
+4	ойнату	AddToPlaylist	O
+5	тізіміне	AddToPlaylist	O
+6	Do	AddToPlaylist	B-entity_name
+7	You	AddToPlaylist	I-entity_name
+8	Love	AddToPlaylist	I-entity_name
+9	Me	AddToPlaylist	I-entity_name
+10	сал	AddToPlaylist	O
+
+# id: 259
+# text-en: Play me the best Charles Neidich song
+# text: Маған Чарльз Найдиктің ең жақсы әнін ойнат
+# intent: PlayMusic
+1	Маған	PlayMusic	O
+2	Чарльз	PlayMusic	B-artist
+3	Найдиктің	PlayMusic	I-artist
+4	ең	PlayMusic	B-sort
+5	жақсы	PlayMusic	I-sort
+6	әнін	PlayMusic	B-music_item
+7	ойнат	PlayMusic	O
+
+# id: 260
+# text-en: On may the thirteenth, 2037 what will it be like in Wilderville , Montenegro
+# text: 2037 жылы он үшінші мамырда Черногориядағы Вайлдервиллде қандай болады
+# intent: weather/find
+1	2037	weather/find	B-datetime
+2	жылы	weather/find	O
+3	он	weather/find	B-datetime
+4	үшінші	weather/find	I-datetime
+5	мамырда	weather/find	I-datetime
+6	Черногориядағы	weather/find	B-location
+7	Вайлдервиллде	weather/find	B-location
+8	қандай	weather/find	O
+9	болады	weather/find	O
+
+# id: 261
+# text-en: Find movie schedules for ArcLight Hollywood .
+# text: ArcLight Hollywood киноларының кестесін тап .
+# intent: SearchScreeningEvent
+1	ArcLight	SearchScreeningEvent	B-object_name
+2	Hollywood	SearchScreeningEvent	I-object_name
+3	киноларының	SearchScreeningEvent	B-movie_type
+4	кестесін	SearchScreeningEvent	O
+5	тап	SearchScreeningEvent	O
+6	.	SearchScreeningEvent	O
+
+# id: 262
+# text-en: Find a TV series called Church of the Truly Warped .
+# text: Church of the Truly Warped деп аталатын телехикаяны тап .
+# intent: SearchCreativeWork
+1	Church	SearchCreativeWork	B-object_name
+2	of	SearchCreativeWork	I-object_name
+3	the	SearchCreativeWork	I-object_name
+4	Truly	SearchCreativeWork	I-object_name
+5	Warped	SearchCreativeWork	I-object_name
+6	деп	SearchCreativeWork	O
+7	аталатын	SearchCreativeWork	O
+8	телехикаяны	SearchCreativeWork	B-object_type
+9	тап	SearchCreativeWork	O
+10	.	SearchCreativeWork	O
+
+# id: 263
+# text-en: what is the forecast for in eighteen minutes here for colder temps
+# text: он сегіз минут ішінде ауа райы салқын болады деген болжам қандай
+# intent: weather/find
+1	он	weather/find	B-datetime
+2	сегіз	weather/find	I-datetime
+3	минут	weather/find	I-datetime
+4	ішінде	weather/find	I-datetime
+5	ауа	weather/find	B-datetime
+6	райы	weather/find	O
+7	салқын	weather/find	O
+8	болады	weather/find	O
+9	деген	weather/find	O
+10	болжам	weather/find	B-object_type
+11	қандай	weather/find	O
+
+# id: 264
+# text-en: Book a restaurant at sixteen o'clock in SC
+# text: Сағат он алтыда SC-тағы мейрамханаға тапсырыс бер
+# intent: BookRestaurant
+1	Сағат	BookRestaurant	B-datetime
+2	он	BookRestaurant	I-datetime
+3	алтыда	BookRestaurant	I-datetime
+4	SC-тағы	BookRestaurant	B-location
+5	мейрамханаға	BookRestaurant	B-restaurant_type
+6	тапсырыс	BookRestaurant	O
+7	бер	BookRestaurant	O
+
+# id: 265
+# text-en: stacy watson and adriana want to go to the best osteria in Hallowell Minnesota this afternoon
+# text: Стейси Уотсон мен Адриана күндіз Миннесотадағы Хэллоуэллдегі ең жақсы остерияға барғысы келеді
+# intent: BookRestaurant
+1	Стейси	BookRestaurant	B-party_size_description
+2	Уотсон	BookRestaurant	I-party_size_description
+3	мен	BookRestaurant	I-party_size_description
+4	Адриана	BookRestaurant	I-party_size_description
+5	күндіз	BookRestaurant	B-datetime
+6	Миннесотадағы	BookRestaurant	B-location
+7	Хэллоуэллдегі	BookRestaurant	B-location
+8	ең	BookRestaurant	B-sort
+9	жақсы	BookRestaurant	I-sort
+10	остерияға	BookRestaurant	B-restaurant_type
+11	барғысы	BookRestaurant	O
+12	келеді	BookRestaurant	O
+
+# id: 266
+# text-en: is it going to be chilly in Western Sahara in 13 hours
+# text: 13 сағатта Батыс Сахарада салқын болады ма
+# intent: weather/find
+1	13	weather/find	B-datetime
+2	сағатта	weather/find	I-datetime
+3	Батыс	weather/find	B-location
+4	Сахарада	weather/find	I-location
+5	салқын	weather/find	B-condition_description
+6	болады	weather/find	O
+7	ма	weather/find	O
+
+# id: 267
+# text-en: add Armen Movsessian to this is skepta playlist
+# text: Армен Мовсесянды осы скепта ойнату тізіміне қос
+# intent: AddToPlaylist
+1	Армен	AddToPlaylist	B-artist
+2	Мовсесянды	AddToPlaylist	I-artist
+3	осы	AddToPlaylist	B-object_select
+4	скепта	AddToPlaylist	B-object_location_type
+5	ойнату	AddToPlaylist	O
+6	тізіміне	AddToPlaylist	O
+7	қос	AddToPlaylist	O
+
+# id: 268
+# text-en: Rate this current essay three out of 6 stars
+# text: Осы эссені 6 жұлдыздың үшеуіне бағала
+# intent: RateBook
+1	Осы	RateBook	B-object_select
+2	эссені	RateBook	B-object_type
+3	6	RateBook	B-object_name
+4	жұлдыздың	RateBook	O
+5	үшеуіне	RateBook	B-rating_value
+6	бағала	RateBook	O
+
+# id: 269
+# text-en: Find a reservation for three at a top-rated restaurant
+# text: Ең жоғары бағаланған мейрамханадан үшеуге брондау жаса
+# intent: BookRestaurant
+1	Ең	BookRestaurant	O
+2	жоғары	BookRestaurant	B-sort
+3	бағаланған	BookRestaurant	O
+4	мейрамханадан	BookRestaurant	B-restaurant_type
+5	үшеуге	BookRestaurant	B-party_size_number
+6	брондау	BookRestaurant	O
+7	жаса	BookRestaurant	O
+
+# id: 270
+# text-en: rate the current novel 0 of 6
+# text: қазіргі романды 6-дан 0-ге бағала
+# intent: RateBook
+1	қазіргі	RateBook	B-object_select
+2	романды	RateBook	B-object_type
+3	6-дан	RateBook	B-best_rating
+4	0-ге	RateBook	B-rating_value
+5	бағала	RateBook	O
+
+# id: 271
+# text-en: I'd like to see the showtimes for Silly Movie 2.0 at the movie house
+# text: Мен Silly Movie 2.0 бағдарламасының кинотеатрда көрсетілім уақытын көргім келеді
+# intent: SearchScreeningEvent
+1	Мен	SearchScreeningEvent	O
+2	Silly	SearchScreeningEvent	B-object_name
+3	Movie	SearchScreeningEvent	I-object_name
+4	2	SearchScreeningEvent	I-object_name
+5	.	SearchScreeningEvent	I-object_name
+6	0	SearchScreeningEvent	I-object_name
+7	бағдарламасының	SearchScreeningEvent	B-object_type
+8	кинотеатрда	SearchScreeningEvent	B-object_location_type
+9	көрсетілім	SearchScreeningEvent	O
+10	уақытын	SearchScreeningEvent	O
+11	көргім	SearchScreeningEvent	O
+12	келеді	SearchScreeningEvent	O
+
+# id: 272
+# text-en: Will it get chillier in Sinclair in 8 hours
+# text: 8 сағатта Синклерде салқындау болады ма
+# intent: weather/find
+1	8	weather/find	B-datetime
+2	сағатта	weather/find	I-datetime
+3	Синклерде	weather/find	B-location
+4	салқындау	weather/find	B-condition_temperature
+5	болады	weather/find	O
+6	ма	weather/find	O
+
+# id: 273
+# text-en: add this tune to my in the arms of a woman
+# text: осы әуенді менің in the arms of a woman-ға қос
+# intent: AddToPlaylist
+1	осы	AddToPlaylist	O
+2	әуенді	AddToPlaylist	B-datetime
+3	менің	AddToPlaylist	O
+4	in	AddToPlaylist	B-album
+5	the	AddToPlaylist	I-album
+6	arms	AddToPlaylist	I-album
+7	of	AddToPlaylist	I-album
+8	a	AddToPlaylist	I-album
+9	woman-ға	AddToPlaylist	I-album
+10	қос	AddToPlaylist	O
+
+# id: 274
+# text-en: book for 3 in U.S. Virgin Islands
+# text: АҚШ-тың Виргиния аралдарында 3-еуге брондау жаса
+# intent: BookRestaurant
+1	АҚШ-тың	BookRestaurant	B-location
+2	Виргиния	BookRestaurant	O
+3	аралдарында	BookRestaurant	O
+4	3-еуге	BookRestaurant	B-party_size_number
+5	брондау	BookRestaurant	O
+6	жаса	BookRestaurant	O
+
+# id: 275
+# text-en: Will it be chillier in La Mesa ?
+# text: La Mesa-да салқындау болады ма?
+# intent: weather/find
+1	La	weather/find	B-location
+2	Mesa-да	weather/find	I-location
+3	салқындау	weather/find	O
+4	болады	weather/find	O
+5	ма	weather/find	O
+6	?	weather/find	O
+
+# id: 276
+# text-en: Rate this essay 2 out of 6 stars
+# text: Бұл эссені 6 жұлдыздың ішінен 2-іне бағала
+# intent: RateBook
+1	Бұл	RateBook	B-object_select
+2	эссені	RateBook	B-object_type
+3	6	RateBook	B-best_rating
+4	жұлдыздың	RateBook	O
+5	ішінен	RateBook	O
+6	2-іне	RateBook	B-rating_value
+7	бағала	RateBook	O
+
+# id: 277
+# text-en: Give three stars / 6 to My Sister, My Love
+# text: My Sister, My Love-қа үш жұлдыз / 6 бер
+# intent: RateBook
+1	My	RateBook	B-object_name
+2	Sister	RateBook	I-object_name
+3	,	RateBook	I-object_name
+4	My	RateBook	I-object_name
+5	Love-қа	RateBook	I-object_name
+6	үш	RateBook	B-rating_value
+7	жұлдыз	RateBook	O
+8	/	RateBook	O
+9	6	RateBook	B-best_rating
+10	бер	RateBook	O
+
+# id: 278
+# text-en: Find the movie schedule for Marcus Corporation .
+# text: Marcus Corporation-ның фильмдер кестесін тап .
+# intent: SearchScreeningEvent
+1	Marcus	SearchScreeningEvent	B-location
+2	Corporation-ның	SearchScreeningEvent	I-location
+3	фильмдер	SearchScreeningEvent	B-object_type
+4	кестесін	SearchScreeningEvent	O
+5	тап	SearchScreeningEvent	O
+6	.	SearchScreeningEvent	O
+
+# id: 279
+# text-en: What movies are scheduled in the neighbourhood ?
+# text: Маңайда қандай фильмдер жоспарланған ?
+# intent: SearchScreeningEvent
+1	Маңайда	SearchScreeningEvent	O
+2	қандай	SearchScreeningEvent	O
+3	фильмдер	SearchScreeningEvent	B-movie_type
+4	жоспарланған	SearchScreeningEvent	O
+5	?	SearchScreeningEvent	O
+
+# id: 280
+# text-en: add cross bones style to Guest List TaKe
+# text: Guest List TaKe-ға cross bones style-ды қос
+# intent: AddToPlaylist
+1	Guest	AddToPlaylist	B-playlist
+2	List	AddToPlaylist	I-playlist
+3	TaKe-ға	AddToPlaylist	B-entity_name
+4	cross	AddToPlaylist	B-playlist
+5	bones	AddToPlaylist	I-playlist
+6	style-ды	AddToPlaylist	O
+7	қос	AddToPlaylist	O
+
+# id: 281
+# text-en: Find a reservation for a tavern that serves pizzas for a party of 6
+# text: пицца дайындайтын мейрамханада 6 адам үшін брондау тап
+# intent: BookRestaurant
+1	пицца	BookRestaurant	B-served_dish
+2	дайындайтын	BookRestaurant	O
+3	мейрамханада	BookRestaurant	B-restaurant_type
+4	6	BookRestaurant	B-party_size_number
+5	адам	BookRestaurant	O
+6	үшін	BookRestaurant	O
+7	брондау	BookRestaurant	B-served_dish
+8	тап	BookRestaurant	O
+
+# id: 282
+# text-en: Rate The Art of Nijinsky 5 points
+# text: The Art of Nijinsky-ді 5 ұпайға бағала
+# intent: RateBook
+1	The	RateBook	B-object_name
+2	Art	RateBook	I-object_name
+3	of	RateBook	I-object_name
+4	Nijinsky-ді	RateBook	I-object_name
+5	5	RateBook	B-rating_value
+6	ұпайға	RateBook	O
+7	бағала	RateBook	O
+
+# id: 283
+# text-en: add Jacob Hoggard to my get going playlist
+# text: Джейкоб Хоггарды менің ойнау тізіміме қос
+# intent: AddToPlaylist
+1	Джейкоб	AddToPlaylist	B-artist
+2	Хоггарды	AddToPlaylist	I-artist
+3	менің	AddToPlaylist	O
+4	ойнау	AddToPlaylist	O
+5	тізіміме	AddToPlaylist	O
+6	қос	AddToPlaylist	O
+
+# id: 284
+# text-en: Give me a list of movie times for films in the area .
+# text: Маған осы аймақтағы фильм уақыттарының тізімін бер .
+# intent: SearchScreeningEvent
+1	Маған	SearchScreeningEvent	O
+2	осы	SearchScreeningEvent	B-location
+3	аймақтағы	SearchScreeningEvent	I-location
+4	фильм	SearchScreeningEvent	B-object_type
+5	уақыттарының	SearchScreeningEvent	O
+6	тізімін	SearchScreeningEvent	O
+7	бер	SearchScreeningEvent	O
+8	.	SearchScreeningEvent	O
+
+# id: 285
+# text-en: find The Ultimate Gift , a television show
+# text: The Ultimate Gift телешоуын тап
+# intent: SearchCreativeWork
+1	The	SearchCreativeWork	B-object_name
+2	Ultimate	SearchCreativeWork	I-object_name
+3	Gift	SearchCreativeWork	I-object_name
+4	телешоуын	SearchCreativeWork	B-object_type
+5	тап	SearchCreativeWork	O
+
+# id: 286
+# text-en: What's the weather close-by Triumph
+# text: Триумфқа жақын ауа райы қандай
+# intent: weather/find
+1	Триумфқа	weather/find	B-object_name
+2	жақын	weather/find	I-object_name
+3	ауа	weather/find	B-playlist
+4	райы	weather/find	O
+5	қандай	weather/find	O
+
+# id: 287
+# text-en: when can i see A Handful of Dust in a movie theatre
+# text: Мен кинотеатрда A Handful of Dust-ты қашан көре аламын
+# intent: SearchScreeningEvent
+1	Мен	SearchScreeningEvent	O
+2	кинотеатрда	SearchScreeningEvent	B-object_location_type
+3	A	SearchScreeningEvent	B-movie_name
+4	Handful	SearchScreeningEvent	I-movie_name
+5	of	SearchScreeningEvent	I-movie_name
+6	Dust-ты	SearchScreeningEvent	I-movie_name
+7	қашан	SearchScreeningEvent	O
+8	көре	SearchScreeningEvent	O
+9	аламын	SearchScreeningEvent	O
+
+# id: 288
+# text-en: Please put an album by Joseph Meyer on my POP GOES THE 80s playlist
+# text: Жозеф Мейердің альбомын менің POP GOES THE 80s ойнату тізіміне салшы
+# intent: AddToPlaylist
+1	Жозеф	AddToPlaylist	B-artist
+2	Мейердің	AddToPlaylist	I-artist
+3	альбомын	AddToPlaylist	B-music_item
+4	менің	AddToPlaylist	O
+5	POP	AddToPlaylist	B-playlist
+6	GOES	AddToPlaylist	I-playlist
+7	THE	AddToPlaylist	I-playlist
+8	80s	AddToPlaylist	I-playlist
+9	ойнату	AddToPlaylist	O
+10	тізіміне	AddToPlaylist	O
+11	салшы	AddToPlaylist	O
+
+# id: 289
+# text-en: show of From South Africa to South Carolina
+# text: From South Africa to South Carolina шоуы
+# intent: SearchCreativeWork
+1	From	SearchCreativeWork	O
+2	South	SearchCreativeWork	B-object_name
+3	Africa	SearchCreativeWork	I-object_name
+4	to	SearchCreativeWork	I-object_name
+5	South	SearchCreativeWork	I-object_name
+6	Carolina	SearchCreativeWork	I-object_name
+7	шоуы	SearchCreativeWork	B-object_type
+
+# id: 290
+# text-en: book a top-rated osteria seven weeks from now
+# text: жеті аптадан кейінге жоғары бағаланған остерияға тапсырыс бер
+# intent: BookRestaurant
+1	жеті	BookRestaurant	B-datetime
+2	аптадан	BookRestaurant	I-datetime
+3	кейінге	BookRestaurant	I-datetime
+4	жоғары	BookRestaurant	B-sort
+5	бағаланған	BookRestaurant	O
+6	остерияға	BookRestaurant	B-restaurant_type
+7	тапсырыс	BookRestaurant	O
+8	бер	BookRestaurant	O
+
+# id: 291
+# text-en: What movie house is showing Flower and Snake at 08:56:29 ?
+# text: 08:56:29-да қандай кинотеатр Flower and Snake-ті көрсетеді ?
+# intent: SearchScreeningEvent
+1	08:56:29-да	SearchScreeningEvent	B-datetime
+2	қандай	SearchScreeningEvent	O
+3	кинотеатр	SearchScreeningEvent	B-object_location_type
+4	Flower	SearchScreeningEvent	B-movie_name
+5	and	SearchScreeningEvent	I-movie_name
+6	Snake-ті	SearchScreeningEvent	I-movie_name
+7	көрсетеді	SearchScreeningEvent	O
+8	?	SearchScreeningEvent	O
+
+# id: 292
+# text-en: Find a restaurant in FM that servec quiche
+# text: FM ішінен quiche дайындайтын мейрамхананы тап
+# intent: BookRestaurant
+1	FM	BookRestaurant	B-location
+2	ішінен	BookRestaurant	O
+3	quiche	BookRestaurant	B-served_dish
+4	дайындайтын	BookRestaurant	O
+5	мейрамхананы	BookRestaurant	B-restaurant_type
+6	тап	BookRestaurant	O
+
+# id: 293
+# text-en: Book a reservation for 7 people at The French Laundry on june the 8th, 2029
+# text: 2029 жылғы 8 маусымға The French Laundry-де 7 адамға брондау жаса
+# intent: BookRestaurant
+1	2029	BookRestaurant	B-datetime
+2	жылғы	BookRestaurant	I-datetime
+3	8	BookRestaurant	I-datetime
+4	маусымға	BookRestaurant	I-datetime
+5	The	BookRestaurant	B-restaurant_name
+6	French	BookRestaurant	I-restaurant_name
+7	Laundry-де	BookRestaurant	I-restaurant_name
+8	7	BookRestaurant	B-party_size_number
+9	адамға	BookRestaurant	O
+10	брондау	BookRestaurant	O
+11	жаса	BookRestaurant	O
+
+# id: 294
+# text-en: play fourties tunes
+# text: қырықтағылар әуенін ойнат
+# intent: PlayMusic
+1	қырықтағылар	PlayMusic	B-datetime
+2	әуенін	PlayMusic	I-datetime
+3	ойнат	PlayMusic	O
+
+# id: 295
+# text-en: When will the Santikos Theatres be showing animated movies
+# text: Santikos Theatres анимациялық фильмдерді қашан көрсетеді
+# intent: SearchScreeningEvent
+1	Santikos	SearchScreeningEvent	B-location
+2	Theatres	SearchScreeningEvent	I-location
+3	анимациялық	SearchScreeningEvent	B-movie_type
+4	фильмдерді	SearchScreeningEvent	I-movie_type
+5	қашан	SearchScreeningEvent	O
+6	көрсетеді	SearchScreeningEvent	O
+
+# id: 296
+# text-en: Play music on Itunes
+# text: Itunes-те музыка ойнат
+# intent: PlayMusic
+1	Itunes-те	PlayMusic	B-service
+2	музыка	PlayMusic	O
+3	ойнат	PlayMusic	O
+
+# id: 297
+# text-en: show book name Straight No Chase
+# text: Straight No Chase деп аталатын кітапты көрсет
+# intent: SearchCreativeWork
+1	Straight	SearchCreativeWork	B-object_name
+2	No	SearchCreativeWork	I-object_name
+3	Chase	SearchCreativeWork	I-object_name
+4	деп	SearchCreativeWork	O
+5	аталатын	SearchCreativeWork	O
+6	кітапты	SearchCreativeWork	B-object_type
+7	көрсет	SearchCreativeWork	O
+
+# id: 298
+# text-en: Find the movie schedules for movies close by
+# text: Жақын жердегі фильмдер үшін фильмдер кестесін тап
+# intent: SearchScreeningEvent
+1	Жақын	SearchScreeningEvent	B-object_name
+2	жердегі	SearchScreeningEvent	I-object_name
+3	фильмдер	SearchScreeningEvent	B-movie_type
+4	үшін	SearchScreeningEvent	O
+5	фильмдер	SearchScreeningEvent	B-object_name
+6	кестесін	SearchScreeningEvent	I-object_name
+7	тап	SearchScreeningEvent	O
+
+# id: 299
+# text-en: this winter , meredith, betty and erika want to food at a gastropub that is in the same area as fran's location .
+# text: биылғы қыста, мередит, бэтти және эрика франның орналасқан жерінде орналасқан гастропабта тамақтанғысы келеді .
+# intent: BookRestaurant
+1	биылғы	BookRestaurant	B-datetime
+2	қыста	BookRestaurant	I-datetime
+3	,	BookRestaurant	O
+4	мередит	BookRestaurant	B-party_size_description
+5	,	BookRestaurant	I-party_size_description
+6	бэтти	BookRestaurant	I-party_size_description
+7	және	BookRestaurant	I-party_size_description
+8	эрика	BookRestaurant	I-party_size_description
+9	франның	BookRestaurant	I-party_size_description
+10	орналасқан	BookRestaurant	O
+11	жерінде	BookRestaurant	O
+12	орналасқан	BookRestaurant	O
+13	гастропабта	BookRestaurant	B-cuisine
+14	тамақтанғысы	BookRestaurant	B-object_type
+15	келеді	BookRestaurant	O
+16	.	BookRestaurant	O
+
+# id: 300
+# text-en: Add tune to my Para comer
+# text: Менің Para comer-іме әуен қос
+# intent: AddToPlaylist
+1	Менің	AddToPlaylist	O
+2	Para	AddToPlaylist	B-playlist
+3	comer-іме	AddToPlaylist	I-playlist
+4	әуен	AddToPlaylist	I-playlist
+5	қос	AddToPlaylist	O
+

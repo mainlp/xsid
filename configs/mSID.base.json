@@ -1,0 +1,7 @@
+{'NLU': {'tasks': {'intent': {'column_idx': -1, 'task_type': 'classification'},
+                   'slot': {'column_idx': 3,
+                            'metric': 'acc',
+                            'task_type': 'seq'}},
+         'train_data_path': '../data/xSID/en.train.conll',
+         'validation_data_path': '../data/xSID/en.valid.conll',
+         'word_idx': 1}}

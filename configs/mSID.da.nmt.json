@@ -1,0 +1,8 @@
+{'NMT': {'column_idx': 0,
+         'max_sents': 100000,
+         'sent_idxs': [0],
+         'tasks': {'nmt': {'column_idx': 1,
+                           'loss_weight': 0.01,
+                           'task_type': 'seq2seq'}},
+         'train_data_path': '../data/mt.tok/en-da/train.enda',
+         'validation_data_path': '../data/mt.tok/en-da/dev.enda'}}

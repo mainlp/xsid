@@ -1,0 +1,3785 @@
+# id: 1
+# text-en: Is it going to rain today?
+# text: Da li će da pada kiša danas?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	da	weather/find	O
+5	pada	weather/find	B-weather/attribute
+6	kiša	weather/find	I-weather/attribute
+7	danas	weather/find	B-datetime
+8	?	weather/find	O
+
+# id: 2
+# text-en: how hot is it going to be today
+# text: koliko će vruće biti danas
+# intent: weather/find
+1	koliko	weather/find	O
+2	će	weather/find	O
+3	vruće	weather/find	B-weather/attribute
+4	biti	weather/find	O
+5	danas	weather/find	B-datetime
+
+# id: 3
+# text-en: How hot is it?
+# text: Koliko je vruće?
+# intent: weather/find
+1	Koliko	weather/find	O
+2	je	weather/find	O
+3	vruće	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: 4
+# text-en: Will it be sunny today?
+# text: Hoće li biti sunčano danas?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	sunčano	weather/find	B-weather/attribute
+5	danas	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 5
+# text-en: Is it cloudy today?
+# text: Da li je oblačno danas?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	je	weather/find	O
+4	oblačno	weather/find	B-weather/attribute
+5	danas	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 6
+# text-en: Cancel all my reminders.
+# text: Otkaži mi sve podsetnike.
+# intent: reminder/cancel_reminder
+1	Otkaži	reminder/cancel_reminder	O
+2	mi	reminder/cancel_reminder	B-reference
+3	sve	reminder/cancel_reminder	I-reference
+4	podsetnike	reminder/cancel_reminder	O
+5	.	reminder/cancel_reminder	O
+
+# id: 7
+# text-en: what alarms do I have set?
+# text: koji sve alarmi su mi podešeni?
+# intent: alarm/show_alarms
+1	koji	alarm/show_alarms	O
+2	sve	alarm/show_alarms	O
+3	alarmi	alarm/show_alarms	O
+4	su	alarm/show_alarms	O
+5	mi	alarm/show_alarms	O
+6	podešeni	alarm/show_alarms	O
+7	?	alarm/show_alarms	O
+
+# id: 8
+# text-en: I need an alarm for 5pm to remind me to take my medicine
+# text: Treba mi alarm u 5 po podne da me podseti da popijem lek
+# intent: alarm/set_alarm
+1	Treba	alarm/set_alarm	O
+2	mi	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	u	alarm/set_alarm	O
+5	5	alarm/set_alarm	B-datetime
+6	po	alarm/set_alarm	I-datetime
+7	podne	alarm/set_alarm	I-datetime
+8	da	alarm/set_alarm	O
+9	me	alarm/set_alarm	O
+10	podseti	alarm/set_alarm	O
+11	da	alarm/set_alarm	B-reminder/todo
+12	popijem	alarm/set_alarm	I-reminder/todo
+13	lek	alarm/set_alarm	I-reminder/todo
+
+# id: 9
+# text-en: set alarm for every 3 minutes
+# text: podesi alarm na svaka 3 minuta
+# intent: alarm/set_alarm
+1	podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	na	alarm/set_alarm	O
+4	svaka	alarm/set_alarm	B-recurring_datetime
+5	3	alarm/set_alarm	I-recurring_datetime
+6	minuta	alarm/set_alarm	I-recurring_datetime
+
+# id: 10
+# text-en: Is it going to storm today?
+# text: Hoće li biti oluje danas?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	oluje	weather/find	B-weather/attribute
+5	danas	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 11
+# text-en: Cancel this afternoon's alarm.
+# text: Otkaži popodnevni alarm
+# intent: alarm/cancel_alarm
+1	Otkaži	alarm/cancel_alarm	O
+2	popodnevni	alarm/cancel_alarm	B-datetime
+3	alarm	alarm/cancel_alarm	O
+
+# id: 12
+# text-en: Is it going to rain next week
+# text: Hoće li da pada kiša sledeće nedelje
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	da	weather/find	O
+4	pada	weather/find	B-weather/attribute
+5	kiša	weather/find	I-weather/attribute
+6	sledeće	weather/find	B-datetime
+7	nedelje	weather/find	I-datetime
+
+# id: 13
+# text-en: What's next week's forecast?
+# text: Kakva je prognoza za sledeću nedelju?
+# intent: weather/find
+1	Kakva	weather/find	O
+2	je	weather/find	O
+3	prognoza	weather/find	O
+4	za	weather/find	O
+5	sledeću	weather/find	B-datetime
+6	nedelju	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 14
+# text-en: Read me my reminders.
+# text: Pročitaj mi moje podsetnike.
+# intent: reminder/show_reminders
+1	Pročitaj	reminder/show_reminders	O
+2	mi	reminder/show_reminders	O
+3	moje	reminder/show_reminders	B-reference
+4	podsetnike	reminder/show_reminders	O
+5	.	reminder/show_reminders	O
+
+# id: 15
+# text-en: Show all alarms
+# text: Prikaži sve alarme
+# intent: alarm/show_alarms
+1	Prikaži	alarm/show_alarms	O
+2	sve	alarm/show_alarms	B-reference
+3	alarme	alarm/show_alarms	O
+
+# id: 16
+# text-en: Alarm every five minutes for 20 minutes please
+# text: Alarm na svakih 5 minuta u trajanju od 20 minuta molim
+# intent: alarm/set_alarm
+1	Alarm	alarm/set_alarm	O
+2	na	alarm/set_alarm	O
+3	svakih	alarm/set_alarm	B-recurring_datetime
+4	5	alarm/set_alarm	I-recurring_datetime
+5	minuta	alarm/set_alarm	I-recurring_datetime
+6	u	alarm/set_alarm	I-recurring_datetime
+7	trajanju	alarm/set_alarm	I-recurring_datetime
+8	od	alarm/set_alarm	I-recurring_datetime
+9	20	alarm/set_alarm	I-recurring_datetime
+10	minuta	alarm/set_alarm	I-recurring_datetime
+11	molim	alarm/set_alarm	O
+
+# id: 17
+# text-en: Change tomorrow mornings alarm to 6 am.
+# text: Promeni alarm od sutra ujutru za u 6 ujutru
+# intent: alarm/modify_alarm
+1	Promeni	alarm/modify_alarm	O
+2	alarm	alarm/modify_alarm	O
+3	od	alarm/modify_alarm	O
+4	sutra	alarm/modify_alarm	B-datetime
+5	ujutru	alarm/modify_alarm	I-datetime
+6	za	alarm/modify_alarm	O
+7	u	alarm/modify_alarm	O
+8	6	alarm/modify_alarm	B-datetime
+9	ujutru	alarm/modify_alarm	I-datetime
+
+# id: 18
+# text-en: cancel all reminders
+# text: otkaži sve podsetnike
+# intent: reminder/cancel_reminder
+1	otkaži	reminder/cancel_reminder	O
+2	sve	reminder/cancel_reminder	B-reference
+3	podsetnike	reminder/cancel_reminder	O
+
+# id: 19
+# text-en: Show me my alarms
+# text: Prikaži mi moje alarme
+# intent: alarm/show_alarms
+1	Prikaži	alarm/show_alarms	O
+2	mi	alarm/show_alarms	O
+3	moje	alarm/show_alarms	B-reference
+4	alarme	alarm/show_alarms	O
+
+# id: 20
+# text-en: Cancel alarms
+# text: Otkaži alarme
+# intent: alarm/cancel_alarm
+1	Otkaži	alarm/cancel_alarm	O
+2	alarme	alarm/cancel_alarm	O
+
+# id: 21
+# text-en: Set alarm for 6 am tomorrow
+# text: Podesi alarm za sutra u 6 ujutru
+# intent: alarm/set_alarm
+1	Podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	sutra	alarm/set_alarm	B-datetime
+5	u	alarm/set_alarm	I-datetime
+6	6	alarm/set_alarm	I-datetime
+7	ujutru	alarm/set_alarm	I-datetime
+
+# id: 22
+# text-en: Set alarm for 7 am tomorrow
+# text: Podesi alarm za sutra u 7 ujutru
+# intent: alarm/set_alarm
+1	Podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	sutra	alarm/set_alarm	B-datetime
+5	u	alarm/set_alarm	I-datetime
+6	7	alarm/set_alarm	I-datetime
+7	ujutru	alarm/set_alarm	I-datetime
+
+# id: 23
+# text-en: set alarm for 6 am
+# text: podesi alarm za 6 ujutru
+# intent: alarm/set_alarm
+1	podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	ujutru	alarm/set_alarm	I-datetime
+
+# id: 24
+# text-en: i need a reminder to pick Lisa up
+# text: treba mi podsetnik da pokupim Lisu
+# intent: reminder/set_reminder
+1	treba	reminder/set_reminder	O
+2	mi	reminder/set_reminder	O
+3	podsetnik	reminder/set_reminder	O
+4	da	reminder/set_reminder	O
+5	pokupim	reminder/set_reminder	B-reminder/todo
+6	Lisu	reminder/set_reminder	I-reminder/todo
+
+# id: 25
+# text-en: show all alarms
+# text: prikaži sve alarme
+# intent: alarm/show_alarms
+1	prikaži	alarm/show_alarms	O
+2	sve	alarm/show_alarms	B-reference
+3	alarme	alarm/show_alarms	O
+
+# id: 26
+# text-en: Turn off all alarms
+# text: Isključi sve alarme
+# intent: alarm/cancel_alarm
+1	Isključi	alarm/cancel_alarm	O
+2	sve	alarm/cancel_alarm	B-reference
+3	alarme	alarm/cancel_alarm	O
+
+# id: 27
+# text-en: What are my reminders?
+# text: Koje podsetnike imam?
+# intent: reminder/show_reminders
+1	Koje	reminder/show_reminders	O
+2	podsetnike	reminder/show_reminders	O
+3	imam	reminder/show_reminders	B-reference
+4	?	reminder/show_reminders	O
+
+# id: 28
+# text-en: is it hot outside
+# text: je l' vruće vani
+# intent: weather/find
+1	je	weather/find	O
+2	l'	weather/find	O
+3	vruće	weather/find	B-weather/attribute
+4	vani	weather/find	B-location
+
+# id: 29
+# text-en: Snooze alarm
+# text: Odloži alarm
+# intent: alarm/snooze_alarm
+1	Odloži	alarm/snooze_alarm	O
+2	alarm	alarm/snooze_alarm	O
+
+# id: 30
+# text-en: alarm on
+# text: uključi alarm
+# intent: alarm/set_alarm
+1	uključi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+
+# id: 31
+# text-en: Set an alarm for 6 am on Wed
+# text: Podesi alarm za u 6 ujutru u sredu
+# intent: alarm/set_alarm
+1	Podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	u	alarm/set_alarm	O
+5	6	alarm/set_alarm	B-datetime
+6	ujutru	alarm/set_alarm	I-datetime
+7	u	alarm/set_alarm	I-datetime
+8	sredu	alarm/set_alarm	I-datetime
+
+# id: 32
+# text-en: remind me to submit my lesson plans every monday by the end of the day
+# text: podseti me da predam nastavne planove svakog ponedeljka do kraja dana
+# intent: reminder/set_reminder
+1	podseti	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	da	reminder/set_reminder	O
+4	predam	reminder/set_reminder	B-reminder/todo
+5	nastavne	reminder/set_reminder	I-reminder/todo
+6	planove	reminder/set_reminder	I-reminder/todo
+7	svakog	reminder/set_reminder	B-recurring_datetime
+8	ponedeljka	reminder/set_reminder	I-recurring_datetime
+9	do	reminder/set_reminder	I-recurring_datetime
+10	kraja	reminder/set_reminder	I-recurring_datetime
+11	dana	reminder/set_reminder	I-recurring_datetime
+
+# id: 33
+# text-en: how hot is it going to be today
+# text: koliko će vruće biti danas
+# intent: weather/find
+1	koliko	weather/find	O
+2	će	weather/find	O
+3	vruće	weather/find	B-weather/attribute
+4	biti	weather/find	O
+5	danas	weather/find	B-datetime
+
+# id: 34
+# text-en: Clear all set alarms.
+# text: Poništi sve podešene alarme
+# intent: alarm/cancel_alarm
+1	Poništi	alarm/cancel_alarm	O
+2	sve	alarm/cancel_alarm	B-reference
+3	podešene	alarm/cancel_alarm	O
+4	alarme	alarm/cancel_alarm	O
+
+# id: 35
+# text-en: Show all alarms
+# text: Prikaži sve alarme
+# intent: alarm/show_alarms
+1	Prikaži	alarm/show_alarms	O
+2	sve	alarm/show_alarms	B-reference
+3	alarme	alarm/show_alarms	O
+
+# id: 36
+# text-en: Will it be sunny today?
+# text: Hoće li biti sunčano danas?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	sunčano	weather/find	B-weather/attribute
+5	danas	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 37
+# text-en: What is the humidity level today
+# text: Koji je nivo vlage danas
+# intent: weather/find
+1	Koji	weather/find	O
+2	je	weather/find	O
+3	nivo	weather/find	B-weather/attribute
+4	vlage	weather/find	I-weather/attribute
+5	danas	weather/find	B-datetime
+
+# id: 38
+# text-en: Cancel all reminders
+# text: Otkaži sve podsetnike
+# intent: reminder/cancel_reminder
+1	Otkaži	reminder/cancel_reminder	O
+2	sve	reminder/cancel_reminder	B-reference
+3	podsetnike	reminder/cancel_reminder	O
+
+# id: 39
+# text-en: set an alarm for fifteen minutes
+# text: podesi alarm za petnaest minuta
+# intent: alarm/set_alarm
+1	podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	petnaest	alarm/set_alarm	B-datetime
+5	minuta	alarm/set_alarm	I-datetime
+
+# id: 40
+# text-en: Please set my alarm for 4am this Saturday.
+# text: Molim te podesi mi alarm za u 4 ujutru ove subote.
+# intent: alarm/set_alarm
+1	Molim	alarm/set_alarm	O
+2	te	alarm/set_alarm	O
+3	podesi	alarm/set_alarm	O
+4	mi	alarm/set_alarm	B-reference
+5	alarm	alarm/set_alarm	O
+6	za	alarm/set_alarm	O
+7	u	alarm/set_alarm	O
+8	4	alarm/set_alarm	B-datetime
+9	ujutru	alarm/set_alarm	I-datetime
+10	ove	alarm/set_alarm	I-datetime
+11	subote	alarm/set_alarm	I-datetime
+12	.	alarm/set_alarm	O
+
+# id: 41
+# text-en: Give me a reminder for house closing at 10am tomorrow.
+# text: Daj mi podsetnik za zatvaranje kuće sutra u 10 pre podne
+# intent: reminder/set_reminder
+1	Daj	reminder/set_reminder	O
+2	mi	reminder/set_reminder	O
+3	podsetnik	reminder/set_reminder	O
+4	za	reminder/set_reminder	O
+5	zatvaranje	reminder/set_reminder	B-reminder/todo
+6	kuće	reminder/set_reminder	I-reminder/todo
+7	sutra	reminder/set_reminder	B-datetime
+8	u	reminder/set_reminder	I-datetime
+9	10	reminder/set_reminder	I-datetime
+10	pre	reminder/set_reminder	I-datetime
+11	podne	reminder/set_reminder	I-datetime
+
+# id: 42
+# text-en: delete all alarms
+# text: obriši sve alarme
+# intent: alarm/cancel_alarm
+1	obriši	alarm/cancel_alarm	O
+2	sve	alarm/cancel_alarm	B-reference
+3	alarme	alarm/cancel_alarm	O
+
+# id: 43
+# text-en: How many alarms do I have set for Sunday?
+# text: Koliko alarma imam podešeno za nedelju?
+# intent: alarm/show_alarms
+1	Koliko	alarm/show_alarms	O
+2	alarma	alarm/show_alarms	O
+3	imam	alarm/show_alarms	O
+4	podešeno	alarm/show_alarms	O
+5	za	alarm/show_alarms	O
+6	nedelju	alarm/show_alarms	B-datetime
+7	?	alarm/show_alarms	O
+
+# id: 44
+# text-en: show all alarms
+# text: prikaži sve alarme
+# intent: alarm/show_alarms
+1	prikaži	alarm/show_alarms	O
+2	sve	alarm/show_alarms	B-reference
+3	alarme	alarm/show_alarms	O
+
+# id: 45
+# text-en: Is it going to be sunny today?
+# text: Da li će biti sunčano danas?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	biti	weather/find	O
+5	sunčano	weather/find	B-weather/attribute
+6	danas	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 46
+# text-en: set alarm for 615am
+# text: podesi alarm za 615 ujutru
+# intent: alarm/set_alarm
+1	podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	615	alarm/set_alarm	B-datetime
+5	ujutru	alarm/set_alarm	I-datetime
+
+# id: 47
+# text-en: Set two alarms for tomorrow morning
+# text: Podesi dva alarma za sutra ujutru
+# intent: alarm/set_alarm
+1	Podesi	alarm/set_alarm	O
+2	dva	alarm/set_alarm	O
+3	alarma	alarm/set_alarm	O
+4	za	alarm/set_alarm	O
+5	sutra	alarm/set_alarm	B-datetime
+6	ujutru	alarm/set_alarm	I-datetime
+
+# id: 48
+# text-en: Turn off all alarms
+# text: Isključi sve alarme
+# intent: alarm/cancel_alarm
+1	Isključi	alarm/cancel_alarm	O
+2	sve	alarm/cancel_alarm	B-reference
+3	alarme	alarm/cancel_alarm	O
+
+# id: 49
+# text-en: What is the temperature like in London right now?
+# text: Kakva je temperatura u Londonu sada?
+# intent: weather/find
+1	Kakva	weather/find	O
+2	je	weather/find	O
+3	temperatura	weather/find	B-weather/attribute
+4	u	weather/find	O
+5	Londonu	weather/find	B-location
+6	sada	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 50
+# text-en: Cancel my last reminder
+# text: Otkaži mi poslednji podsetnik
+# intent: reminder/cancel_reminder
+1	Otkaži	reminder/cancel_reminder	O
+2	mi	reminder/cancel_reminder	B-reference
+3	poslednji	reminder/cancel_reminder	I-reference
+4	podsetnik	reminder/cancel_reminder	O
+
+# id: 51
+# text-en: Set a reminder to go to the grocery store later
+# text: Podesi podsetnik da odem u prodavnicu kasnije
+# intent: reminder/set_reminder
+1	Podesi	reminder/set_reminder	O
+2	podsetnik	reminder/set_reminder	O
+3	da	reminder/set_reminder	O
+4	odem	reminder/set_reminder	B-reminder/todo
+5	u	reminder/set_reminder	I-reminder/todo
+6	prodavnicu	reminder/set_reminder	I-reminder/todo
+7	kasnije	reminder/set_reminder	B-datetime
+
+# id: 52
+# text-en: What will be the heat index today?
+# text: Koliki je toplotni indeks danas?
+# intent: weather/find
+1	Koliki	weather/find	O
+2	je	weather/find	O
+3	toplotni	weather/find	B-weather/attribute
+4	indeks	weather/find	I-weather/attribute
+5	danas	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 53
+# text-en: How cold will it be today?
+# text: Koliko će biti hladno danas?
+# intent: weather/find
+1	Koliko	weather/find	O
+2	će	weather/find	O
+3	biti	weather/find	O
+4	hladno	weather/find	B-weather/attribute
+5	danas	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 54
+# text-en: will it snow today
+# text: da li će biti snega danas
+# intent: weather/find
+1	da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	biti	weather/find	O
+5	snega	weather/find	B-weather/attribute
+6	danas	weather/find	B-datetime
+
+# id: 55
+# text-en: Set alarm for 5am
+# text: Podesi alarm za u 5 ujutru
+# intent: alarm/set_alarm
+1	Podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	u	alarm/set_alarm	O
+5	5	alarm/set_alarm	B-datetime
+6	ujutru	alarm/set_alarm	I-datetime
+
+# id: 56
+# text-en: turn off alarm
+# text: isključi alarm
+# intent: alarm/cancel_alarm
+1	isključi	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 57
+# text-en: cancel all alarms
+# text: otkaži sve alarme
+# intent: alarm/cancel_alarm
+1	otkaži	alarm/cancel_alarm	O
+2	sve	alarm/cancel_alarm	B-reference
+3	alarme	alarm/cancel_alarm	O
+
+# id: 58
+# text-en: Add reminder to swim at 11am tomorrow
+# text: Dodaj podsetnik da idem na plivanje sutra u 11 pre podne
+# intent: reminder/set_reminder
+1	Dodaj	reminder/set_reminder	O
+2	podsetnik	reminder/set_reminder	O
+3	da	reminder/set_reminder	O
+4	idem	reminder/set_reminder	B-reminder/todo
+5	na	reminder/set_reminder	I-reminder/todo
+6	plivanje	reminder/set_reminder	I-reminder/todo
+7	sutra	reminder/set_reminder	I-reminder/todo
+8	u	reminder/set_reminder	O
+9	11	reminder/set_reminder	B-datetime
+10	pre	reminder/set_reminder	I-datetime
+11	podne	reminder/set_reminder	I-datetime
+
+# id: 59
+# text-en: Show my reminder
+# text: Prikaži moj podsetnik
+# intent: reminder/show_reminders
+1	Prikaži	reminder/show_reminders	O
+2	moj	reminder/show_reminders	B-reference
+3	podsetnik	reminder/show_reminders	O
+
+# id: 60
+# text-en: Cancel my alarm on Saturday
+# text: Otkaži mi alarm u subotu.
+# intent: alarm/cancel_alarm
+1	Otkaži	alarm/cancel_alarm	O
+2	mi	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	u	alarm/cancel_alarm	O
+5	subotu	alarm/cancel_alarm	B-datetime
+6	.	alarm/cancel_alarm	O
+
+# id: 61
+# text-en: Is it cold out?
+# text: Je l' hladno vani?
+# intent: weather/find
+1	Je	weather/find	O
+2	l'	weather/find	O
+3	hladno	weather/find	B-weather/attribute
+4	vani	weather/find	B-location
+5	?	weather/find	O
+
+# id: 62
+# text-en: Is it humid today?
+# text: Da li je vlažno danas?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	je	weather/find	O
+4	vlažno	weather/find	B-weather/attribute
+5	danas	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 63
+# text-en: Set alarm every minute for 11 minutes
+# text: Podesi alarm na svaki minut u trajanju od 11 minuta
+# intent: alarm/set_alarm
+1	Podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	na	alarm/set_alarm	O
+4	svaki	alarm/set_alarm	B-recurring_datetime
+5	minut	alarm/set_alarm	I-recurring_datetime
+6	u	alarm/set_alarm	I-recurring_datetime
+7	trajanju	alarm/set_alarm	I-recurring_datetime
+8	od	alarm/set_alarm	I-recurring_datetime
+9	11	alarm/set_alarm	I-recurring_datetime
+10	minuta	alarm/set_alarm	I-recurring_datetime
+
+# id: 64
+# text-en: Show my reminder
+# text: Prikaži moj podsetnik
+# intent: reminder/show_reminders
+1	Prikaži	reminder/show_reminders	O
+2	moj	reminder/show_reminders	B-reference
+3	podsetnik	reminder/show_reminders	O
+
+# id: 65
+# text-en: Is it going to be windy today?
+# text: Da li će biti vetrovito danas?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	biti	weather/find	O
+5	vetrovito	weather/find	B-weather/attribute
+6	danas	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 66
+# text-en: Cancel tomorrow's reminders
+# text: Otkaži sutrašnje podsetnike
+# intent: reminder/cancel_reminder
+1	Otkaži	reminder/cancel_reminder	O
+2	sutrašnje	reminder/cancel_reminder	B-datetime
+3	podsetnike	reminder/cancel_reminder	O
+
+# id: 67
+# text-en: tell me the 3 day forecast
+# text: daj mi prognozu za tri dana
+# intent: weather/find
+1	daj	weather/find	O
+2	mi	weather/find	O
+3	prognozu	weather/find	O
+4	za	weather/find	O
+5	tri	weather/find	B-datetime
+6	dana	weather/find	I-datetime
+
+# id: 68
+# text-en: how many inches of rain are we suppose to get tomorrow?
+# text: koliko milimetara kiše treba da padne sutra?
+# intent: weather/find
+1	koliko	weather/find	O
+2	milimetara	weather/find	B-weather/attribute
+3	kiše	weather/find	I-weather/attribute
+4	treba	weather/find	O
+5	da	weather/find	O
+6	padne	weather/find	O
+7	sutra	weather/find	B-datetime
+8	?	weather/find	O
+
+# id: 69
+# text-en: remind me about the wedding
+# text: podseti me za venčanje
+# intent: reminder/set_reminder
+1	podseti	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	za	reminder/set_reminder	O
+4	venčanje	reminder/set_reminder	B-reminder/todo
+
+# id: 70
+# text-en: Snooze all alarms
+# text: Odloži sve alarme
+# intent: alarm/snooze_alarm
+1	Odloži	alarm/snooze_alarm	O
+2	sve	alarm/snooze_alarm	B-reference
+3	alarme	alarm/snooze_alarm	O
+
+# id: 71
+# text-en: When will it rain today?
+# text: Kad će da pada kiša danas?
+# intent: weather/find
+1	Kad	weather/find	O
+2	će	weather/find	O
+3	da	weather/find	O
+4	pada	weather/find	B-weather/attribute
+5	kiša	weather/find	I-weather/attribute
+6	danas	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 72
+# text-en: show all alarms
+# text: prikaži sve alarme
+# intent: alarm/show_alarms
+1	prikaži	alarm/show_alarms	O
+2	sve	alarm/show_alarms	B-reference
+3	alarme	alarm/show_alarms	O
+
+# id: 73
+# text-en: Turn off all alarms
+# text: Isključi sve alarme
+# intent: alarm/cancel_alarm
+1	Isključi	alarm/cancel_alarm	O
+2	sve	alarm/cancel_alarm	B-reference
+3	alarme	alarm/cancel_alarm	O
+
+# id: 74
+# text-en: Is it going to rain today?
+# text: Da li će da pada kiša danas?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	da	weather/find	O
+5	pada	weather/find	B-weather/attribute
+6	kiša	weather/find	I-weather/attribute
+7	danas	weather/find	B-datetime
+8	?	weather/find	O
+
+# id: 75
+# text-en: Show all reminders for tomorrow
+# text: Prikaži sve podsetnike za sutra
+# intent: reminder/show_reminders
+1	Prikaži	reminder/show_reminders	O
+2	sve	reminder/show_reminders	B-reference
+3	podsetnike	reminder/show_reminders	O
+4	za	reminder/show_reminders	O
+5	sutra	reminder/show_reminders	B-datetime
+
+# id: 76
+# text-en: cancel my alarm for tomorrow morning
+# text: otkaži mi alarm za sutra ujutru
+# intent: alarm/cancel_alarm
+1	otkaži	alarm/cancel_alarm	O
+2	mi	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	za	alarm/cancel_alarm	O
+5	sutra	alarm/cancel_alarm	B-datetime
+6	ujutru	alarm/cancel_alarm	I-datetime
+
+# id: 77
+# text-en: How hot is it?
+# text: Koliko je vruće?
+# intent: weather/find
+1	Koliko	weather/find	O
+2	je	weather/find	O
+3	vruće	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: 78
+# text-en: remind me to buy milk tonight
+# text: podseti me da kupim mleko večeras
+# intent: reminder/set_reminder
+1	podseti	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	da	reminder/set_reminder	O
+4	kupim	reminder/set_reminder	B-reminder/todo
+5	mleko	reminder/set_reminder	I-reminder/todo
+6	večeras	reminder/set_reminder	B-datetime
+
+# id: 79
+# text-en: Cancel all reminders
+# text: Otkaži sve podsetnike
+# intent: reminder/cancel_reminder
+1	Otkaži	reminder/cancel_reminder	O
+2	sve	reminder/cancel_reminder	B-reference
+3	podsetnike	reminder/cancel_reminder	O
+
+# id: 80
+# text-en: Show all alarms
+# text: Prikaži sve alarme
+# intent: alarm/show_alarms
+1	Prikaži	alarm/show_alarms	O
+2	sve	alarm/show_alarms	B-reference
+3	alarme	alarm/show_alarms	O
+
+# id: 81
+# text-en: cancel my alarm for tomorrow morning
+# text: otkaži mi alarm za sutra ujutru
+# intent: alarm/cancel_alarm
+1	otkaži	alarm/cancel_alarm	O
+2	mi	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	za	alarm/cancel_alarm	O
+5	sutra	alarm/cancel_alarm	B-datetime
+6	ujutru	alarm/cancel_alarm	I-datetime
+
+# id: 82
+# text-en: Will it be sunny tomorrow?
+# text: Hoće li biti sunčano sutra?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	sunčano	weather/find	B-weather/attribute
+5	sutra	weather/find	I-weather/attribute
+6	?	weather/find	O
+
+# id: 83
+# text-en: Cancel alarm for tomorrow morning
+# text: Otkaži alarm za sutra ujutru
+# intent: alarm/cancel_alarm
+1	Otkaži	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+3	za	alarm/cancel_alarm	O
+4	sutra	alarm/cancel_alarm	B-datetime
+5	ujutru	alarm/cancel_alarm	I-datetime
+
+# id: 84
+# text-en: show all reminders for tomorrow morning
+# text: prikaži sve podsetnike za sutra ujutru
+# intent: reminder/show_reminders
+1	prikaži	reminder/show_reminders	O
+2	sve	reminder/show_reminders	O
+3	podsetnike	reminder/show_reminders	O
+4	za	reminder/show_reminders	O
+5	sutra	reminder/show_reminders	B-reminder/todo
+6	ujutru	reminder/show_reminders	I-reminder/todo
+
+# id: 85
+# text-en: What is the humidity today?
+# text: Koja je vlažnost danas?
+# intent: weather/find
+1	Koja	weather/find	O
+2	je	weather/find	O
+3	vlažnost	weather/find	B-weather/attribute
+4	danas	weather/find	B-datetime
+5	?	weather/find	O
+
+# id: 86
+# text-en: When is it going to rain?
+# text: Kada će da pada kiša?
+# intent: weather/find
+1	Kada	weather/find	O
+2	će	weather/find	O
+3	da	weather/find	O
+4	pada	weather/find	B-weather/attribute
+5	kiša	weather/find	I-weather/attribute
+6	?	weather/find	O
+
+# id: 87
+# text-en: How hot is it
+# text: Koliko je vruće
+# intent: weather/find
+1	Koliko	weather/find	O
+2	je	weather/find	O
+3	vruće	weather/find	B-weather/attribute
+
+# id: 88
+# text-en: show me my reminders
+# text: prikaži mi podsetnike
+# intent: reminder/show_reminders
+1	prikaži	reminder/show_reminders	O
+2	mi	reminder/show_reminders	B-reference
+3	podsetnike	reminder/show_reminders	O
+
+# id: 89
+# text-en: What is the 5 day forecast?
+# text: Kakva je 5-odnevna prognoza?
+# intent: weather/find
+1	Kakva	weather/find	O
+2	je	weather/find	O
+3	5-odnevna	weather/find	B-datetime
+4	prognoza	weather/find	O
+5	?	weather/find	O
+
+# id: 90
+# text-en: set alarm for 6 am
+# text: podesi alarm za 6 ujutru
+# intent: alarm/set_alarm
+1	podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	ujutru	alarm/set_alarm	I-datetime
+
+# id: 91
+# text-en: Is it cold today?
+# text: Je l' hladno danas?
+# intent: weather/find
+1	Je	weather/find	O
+2	l'	weather/find	O
+3	hladno	weather/find	B-weather/attribute
+4	danas	weather/find	B-datetime
+5	?	weather/find	O
+
+# id: 92
+# text-en: Set a reminder to call my school on Monday at 4 PM
+# text: Podesi podsetnik da pozovem školu u ponedeljak u 4 po podne
+# intent: reminder/set_reminder
+1	Podesi	reminder/set_reminder	O
+2	podsetnik	reminder/set_reminder	O
+3	da	reminder/set_reminder	O
+4	pozovem	reminder/set_reminder	B-reminder/todo
+5	školu	reminder/set_reminder	I-reminder/todo
+6	u	reminder/set_reminder	O
+7	ponedeljak	reminder/set_reminder	B-datetime
+8	u	reminder/set_reminder	I-datetime
+9	4	reminder/set_reminder	I-datetime
+10	po	reminder/set_reminder	I-datetime
+11	podne	reminder/set_reminder	I-datetime
+
+# id: 93
+# text-en: Delete my reminder for picking up Patrick from school tomorrow.
+# text: Obriši mi podsetnik da pokupim Patrika iz škole sutra.
+# intent: reminder/cancel_reminder
+1	Obriši	reminder/cancel_reminder	O
+2	mi	reminder/cancel_reminder	B-reference
+3	podsetnik	reminder/cancel_reminder	O
+4	da	reminder/cancel_reminder	O
+5	pokupim	reminder/cancel_reminder	B-reminder/todo
+6	Patrika	reminder/cancel_reminder	I-reminder/todo
+7	iz	reminder/cancel_reminder	I-reminder/todo
+8	škole	reminder/cancel_reminder	I-reminder/todo
+9	sutra	reminder/cancel_reminder	B-datetime
+10	.	reminder/cancel_reminder	O
+
+# id: 94
+# text-en: How cold will it be in the morning?
+# text: Koliko će biti hladno ujutru?
+# intent: weather/find
+1	Koliko	weather/find	O
+2	će	weather/find	O
+3	biti	weather/find	O
+4	hladno	weather/find	B-weather/attribute
+5	ujutru	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 95
+# text-en: do i need an umbrella tomorrow
+# text: da li mi treba kišobran sutra
+# intent: weather/find
+1	da	weather/find	O
+2	li	weather/find	O
+3	mi	weather/find	O
+4	treba	weather/find	O
+5	kišobran	weather/find	B-weather/attribute
+6	sutra	weather/find	B-datetime
+
+# id: 96
+# text-en: Show my reminder
+# text: Prikaži moj podsetnik
+# intent: reminder/show_reminders
+1	Prikaži	reminder/show_reminders	O
+2	moj	reminder/show_reminders	B-reference
+3	podsetnik	reminder/show_reminders	O
+
+# id: 97
+# text-en: Stop alarm for 6:00 am
+# text: Stopiraj alarm od 6 ujutru
+# intent: alarm/cancel_alarm
+1	Stopiraj	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+3	od	alarm/cancel_alarm	O
+4	6	alarm/cancel_alarm	B-datetime
+5	ujutru	alarm/cancel_alarm	I-datetime
+
+# id: 98
+# text-en: Cancel all alarms
+# text: Otkaži sve alarme
+# intent: alarm/cancel_alarm
+1	Otkaži	alarm/cancel_alarm	O
+2	sve	alarm/cancel_alarm	B-reference
+3	alarme	alarm/cancel_alarm	O
+
+# id: 99
+# text-en: Will it be sunny today?
+# text: Hoće li biti sunčano danas?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	sunčano	weather/find	B-weather/attribute
+5	danas	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 100
+# text-en: what is the weather in london?
+# text: kakvo je vreme u londonu?
+# intent: weather/find
+1	kakvo	weather/find	O
+2	je	weather/find	O
+3	vreme	weather/find	O
+4	u	weather/find	O
+5	londonu	weather/find	B-location
+6	?	weather/find	O
+
+# id: 101
+# text-en: What are my reminders?
+# text: Koje podsetnike imam?
+# intent: reminder/show_reminders
+1	Koje	reminder/show_reminders	O
+2	podsetnike	reminder/show_reminders	O
+3	imam	reminder/show_reminders	B-reference
+4	?	reminder/show_reminders	O
+
+# id: 102
+# text-en: Cancel my reminder to text Dad
+# text: Otkaži mi podsetnik da pošaljem poruku tati
+# intent: reminder/cancel_reminder
+1	Otkaži	reminder/cancel_reminder	O
+2	mi	reminder/cancel_reminder	B-reference
+3	podsetnik	reminder/cancel_reminder	O
+4	da	reminder/cancel_reminder	O
+5	pošaljem	reminder/cancel_reminder	B-reminder/todo
+6	poruku	reminder/cancel_reminder	I-reminder/todo
+7	tati	reminder/cancel_reminder	I-reminder/todo
+
+# id: 103
+# text-en: set alarm for 6 am
+# text: podesi alarm za 6 ujutru
+# intent: alarm/set_alarm
+1	podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	ujutru	alarm/set_alarm	I-datetime
+
+# id: 104
+# text-en: turn off the alarm
+# text: isključi alarm
+# intent: alarm/cancel_alarm
+1	isključi	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 105
+# text-en: cancel the alarm
+# text: Otkaži alarm
+# intent: alarm/cancel_alarm
+1	Otkaži	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 106
+# text-en: turn off alarm
+# text: isključi alarm
+# intent: alarm/cancel_alarm
+1	isključi	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 107
+# text-en: remind me to call mom today at 2 p.m.
+# text: podseti me da pozovem mamu danas u 2 popodne
+# intent: reminder/set_reminder
+1	podseti	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	da	reminder/set_reminder	O
+4	pozovem	reminder/set_reminder	B-reminder/todo
+5	mamu	reminder/set_reminder	I-reminder/todo
+6	danas	reminder/set_reminder	B-datetime
+7	u	reminder/set_reminder	I-datetime
+8	2	reminder/set_reminder	I-datetime
+9	popodne	reminder/set_reminder	I-datetime
+
+# id: 108
+# text-en: cancel all alarms
+# text: otkaži sve alarme
+# intent: alarm/cancel_alarm
+1	otkaži	alarm/cancel_alarm	O
+2	sve	alarm/cancel_alarm	B-reference
+3	alarme	alarm/cancel_alarm	O
+
+# id: 109
+# text-en: is it going to be hot tomorrow
+# text: je l' će biti vruće sutra?
+# intent: weather/find
+1	je	weather/find	O
+2	l'	weather/find	O
+3	će	weather/find	O
+4	biti	weather/find	O
+5	vruće	weather/find	B-weather/attribute
+6	sutra	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 110
+# text-en: is it cold out today?
+# text: da li je hladno napolju danas?
+# intent: weather/find
+1	da	weather/find	O
+2	li	weather/find	O
+3	je	weather/find	O
+4	hladno	weather/find	B-weather/attribute
+5	napolju	weather/find	B-location
+6	danas	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 111
+# text-en: Set alarm for 5 pm tonight
+# text: Podesi alarm za 5 po podne večeras
+# intent: alarm/set_alarm
+1	Podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	5	alarm/set_alarm	B-datetime
+5	po	alarm/set_alarm	I-datetime
+6	podne	alarm/set_alarm	I-datetime
+7	večeras	alarm/set_alarm	I-datetime
+
+# id: 112
+# text-en: Will it rain this weekend?
+# text: Da li će da pada kiša ovog vikenda?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	da	weather/find	O
+5	pada	weather/find	B-weather/attribute
+6	kiša	weather/find	I-weather/attribute
+7	ovog	weather/find	B-datetime
+8	vikenda	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 113
+# text-en: is it going to rain today
+# text: hoće li da pada kiša danas
+# intent: weather/find
+1	hoće	weather/find	O
+2	li	weather/find	O
+3	da	weather/find	O
+4	pada	weather/find	B-weather/attribute
+5	kiša	weather/find	I-weather/attribute
+6	danas	weather/find	B-datetime
+
+# id: 114
+# text-en: set an alarm for monday at 3 am
+# text: podesi alarm za ponedeljak u 3 ujutru
+# intent: alarm/set_alarm
+1	podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	ponedeljak	alarm/set_alarm	B-datetime
+5	u	alarm/set_alarm	I-datetime
+6	3	alarm/set_alarm	I-datetime
+7	ujutru	alarm/set_alarm	I-datetime
+
+# id: 115
+# text-en: alarm on
+# text: uključi alarm
+# intent: alarm/set_alarm
+1	uključi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+
+# id: 116
+# text-en: Is it going to rain on Saturday?
+# text: Da li će da pada kiša u subotu?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	da	weather/find	O
+5	pada	weather/find	B-weather/attribute
+6	kiša	weather/find	I-weather/attribute
+7	u	weather/find	O
+8	subotu	weather/find	B-datetime
+9	?	weather/find	O
+
+# id: 117
+# text-en: Set alarm for 5 am
+# text: Podesi alarm za 5 ujutru
+# intent: alarm/set_alarm
+1	Podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	5	alarm/set_alarm	B-datetime
+5	ujutru	alarm/set_alarm	I-datetime
+
+# id: 118
+# text-en: Will I need a coat today?
+# text: Da li će mi biti potreban kaput danas?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	mi	weather/find	O
+5	biti	weather/find	O
+6	potreban	weather/find	O
+7	kaput	weather/find	B-weather/attribute
+8	danas	weather/find	B-datetime
+9	?	weather/find	O
+
+# id: 119
+# text-en: turn off alarm
+# text: isključi alarm
+# intent: alarm/cancel_alarm
+1	isključi	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 120
+# text-en: What weather warnings do I have?
+# text: Koja meteorološka upozorenja imam?
+# intent: weather/find
+1	Koja	weather/find	O
+2	meteorološka	weather/find	O
+3	upozorenja	weather/find	B-weather/attribute
+4	imam	weather/find	O
+5	?	weather/find	O
+
+# id: 121
+# text-en: Cancel the reminder for the meeting at the lodge
+# text: Otkaži podsetnik za sastanak u vikendici
+# intent: reminder/cancel_reminder
+1	Otkaži	reminder/cancel_reminder	O
+2	podsetnik	reminder/cancel_reminder	O
+3	za	reminder/cancel_reminder	O
+4	sastanak	reminder/cancel_reminder	B-reminder/todo
+5	u	reminder/cancel_reminder	I-reminder/todo
+6	vikendici	reminder/cancel_reminder	I-reminder/todo
+
+# id: 122
+# text-en: Should I wear a coat today
+# text: Da li treba da nosim kaput danas
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	treba	weather/find	O
+4	da	weather/find	O
+5	nosim	weather/find	O
+6	kaput	weather/find	B-weather/attribute
+7	danas	weather/find	B-datetime
+
+# id: 123
+# text-en: Turn off all alarms.
+# text: Isključi sve alarme.
+# intent: alarm/cancel_alarm
+1	Isključi	alarm/cancel_alarm	O
+2	sve	alarm/cancel_alarm	B-reference
+3	alarme	alarm/cancel_alarm	O
+4	.	alarm/cancel_alarm	O
+
+# id: 124
+# text-en: show all alarms
+# text: prikaži sve alarme
+# intent: alarm/show_alarms
+1	prikaži	alarm/show_alarms	O
+2	sve	alarm/show_alarms	B-reference
+3	alarme	alarm/show_alarms	O
+
+# id: 125
+# text-en: Make a new alarm for Thursday at 1pm.
+# text: Kreiraj novi alarm za četvrtak u 1 po podne
+# intent: alarm/set_alarm
+1	Kreiraj	alarm/set_alarm	O
+2	novi	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	za	alarm/set_alarm	O
+5	četvrtak	alarm/set_alarm	B-datetime
+6	u	alarm/set_alarm	I-datetime
+7	1	alarm/set_alarm	I-datetime
+8	po	alarm/set_alarm	I-datetime
+9	podne	alarm/set_alarm	I-datetime
+
+# id: 126
+# text-en: Remind me to go to the dentist next Monday.
+# text: Podseti me da odem kod zubara sledećeg ponedeljka.
+# intent: reminder/set_reminder
+1	Podseti	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	da	reminder/set_reminder	O
+4	odem	reminder/set_reminder	B-reminder/todo
+5	kod	reminder/set_reminder	I-reminder/todo
+6	zubara	reminder/set_reminder	I-reminder/todo
+7	sledećeg	reminder/set_reminder	B-datetime
+8	ponedeljka	reminder/set_reminder	I-datetime
+9	.	reminder/set_reminder	O
+
+# id: 127
+# text-en: should I bring an umbrella today
+# text: da li treba da ponesem kišobran danas
+# intent: weather/find
+1	da	weather/find	O
+2	li	weather/find	O
+3	treba	weather/find	O
+4	da	weather/find	O
+5	ponesem	weather/find	O
+6	kišobran	weather/find	B-weather/attribute
+7	danas	weather/find	B-datetime
+
+# id: 128
+# text-en: how is the weather this week?
+# text: kakvo je vreme ove nedelje?
+# intent: weather/find
+1	kakvo	weather/find	O
+2	je	weather/find	O
+3	vreme	weather/find	O
+4	ove	weather/find	B-datetime
+5	nedelje	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 129
+# text-en: is it below freezing today?
+# text: da li je ispod nule danas?
+# intent: weather/find
+1	da	weather/find	O
+2	li	weather/find	O
+3	je	weather/find	O
+4	ispod	weather/find	B-weather/attribute
+5	nule	weather/find	I-weather/attribute
+6	danas	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 130
+# text-en: Delete all reminders
+# text: Obriši sve podsetnike
+# intent: reminder/cancel_reminder
+1	Obriši	reminder/cancel_reminder	O
+2	sve	reminder/cancel_reminder	B-reference
+3	podsetnike	reminder/cancel_reminder	O
+
+# id: 131
+# text-en: Is it going to rain today?
+# text: Da li će da pada kiša danas?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	da	weather/find	O
+5	pada	weather/find	B-weather/attribute
+6	kiša	weather/find	I-weather/attribute
+7	danas	weather/find	B-datetime
+8	?	weather/find	O
+
+# id: 132
+# text-en: Will it rain this weekend?
+# text: Da li će da pada kiša ovog vikenda?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	da	weather/find	O
+5	pada	weather/find	B-weather/attribute
+6	kiša	weather/find	I-weather/attribute
+7	ovog	weather/find	B-datetime
+8	vikenda	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 133
+# text-en: Set reminder for mom's visit next week
+# text: Podesi podsetnik da mama dolazi u posetu sledeće nedelje
+# intent: reminder/set_reminder
+1	Podesi	reminder/set_reminder	O
+2	podsetnik	reminder/set_reminder	O
+3	da	reminder/set_reminder	O
+4	mama	reminder/set_reminder	B-reminder/todo
+5	dolazi	reminder/set_reminder	I-reminder/todo
+6	u	reminder/set_reminder	I-reminder/todo
+7	posetu	reminder/set_reminder	I-reminder/todo
+8	sledeće	reminder/set_reminder	B-datetime
+9	nedelje	reminder/set_reminder	I-datetime
+
+# id: 134
+# text-en: Will it snow tomorrow?
+# text: Hoće li biti snega sutra?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	snega	weather/find	B-weather/attribute
+5	sutra	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 135
+# text-en: show all reminders
+# text: prikaži sve podsetnike
+# intent: reminder/show_reminders
+1	prikaži	reminder/show_reminders	O
+2	sve	reminder/show_reminders	B-reference
+3	podsetnike	reminder/show_reminders	O
+
+# id: 136
+# text-en: Do I need a coat today?
+# text: Da li mi danas treba kaput?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	mi	weather/find	O
+4	danas	weather/find	B-datetime
+5	treba	weather/find	O
+6	kaput	weather/find	B-weather/attribute
+7	?	weather/find	O
+
+# id: 137
+# text-en: is it going to snow thursday
+# text: je l' će da pada sneg u četvrtak
+# intent: weather/find
+1	je	weather/find	O
+2	l'	weather/find	O
+3	će	weather/find	O
+4	da	weather/find	O
+5	pada	weather/find	B-weather/attribute
+6	sneg	weather/find	I-weather/attribute
+7	u	weather/find	O
+8	četvrtak	weather/find	B-datetime
+
+# id: 138
+# text-en: Remind me to buy coffee at Starbucks this afternoon
+# text: Podseti me po podne da kupim kafu u Starbaksu
+# intent: reminder/set_reminder
+1	Podseti	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	po	reminder/set_reminder	B-datetime
+4	podne	reminder/set_reminder	I-datetime
+5	da	reminder/set_reminder	O
+6	kupim	reminder/set_reminder	B-reminder/todo
+7	kafu	reminder/set_reminder	I-reminder/todo
+8	u	reminder/set_reminder	I-reminder/todo
+9	Starbaksu	reminder/set_reminder	I-reminder/todo
+
+# id: 139
+# text-en: Set an alarm for every ten minutes, starting at 5:30 and ending at 6 am.
+# text: Aktiviraj alarm na svakih deset minuta počevši od 5:30 do 6 ujutru.
+# intent: alarm/set_alarm
+1	Aktiviraj	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	na	alarm/set_alarm	O
+4	svakih	alarm/set_alarm	B-recurring_datetime
+5	deset	alarm/set_alarm	I-recurring_datetime
+6	minuta	alarm/set_alarm	I-recurring_datetime
+7	počevši	alarm/set_alarm	I-recurring_datetime
+8	od	alarm/set_alarm	I-recurring_datetime
+9	5:30	alarm/set_alarm	I-recurring_datetime
+10	do	alarm/set_alarm	I-recurring_datetime
+11	6	alarm/set_alarm	I-recurring_datetime
+12	ujutru	alarm/set_alarm	I-recurring_datetime
+13	.	alarm/set_alarm	O
+
+# id: 140
+# text-en: Is it going to rain on Saturday?
+# text: Da li će da pada kiša u subotu?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	da	weather/find	O
+5	pada	weather/find	B-weather/attribute
+6	kiša	weather/find	I-weather/attribute
+7	u	weather/find	O
+8	subotu	weather/find	B-datetime
+9	?	weather/find	O
+
+# id: 141
+# text-en: Set eh alarm to 7:20am for the shoe release.
+# text: Podesi alarm za u 7:20 ujutru za puštanje cipela u prodaju.
+# intent: alarm/set_alarm
+1	Podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	u	alarm/set_alarm	O
+5	7:20	alarm/set_alarm	B-datetime
+6	ujutru	alarm/set_alarm	I-datetime
+7	za	alarm/set_alarm	O
+8	puštanje	alarm/set_alarm	B-reminder/todo
+9	cipela	alarm/set_alarm	I-reminder/todo
+10	u	alarm/set_alarm	I-reminder/todo
+11	prodaju	alarm/set_alarm	I-reminder/todo
+12	.	alarm/set_alarm	O
+
+# id: 142
+# text-en: Will there be storms in Bordentown today
+# text: Hoće li biti oluja u Bordentaunu danas?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	oluja	weather/find	B-weather/attribute
+5	u	weather/find	O
+6	Bordentaunu	weather/find	B-location
+7	danas	weather/find	B-datetime
+8	?	weather/find	O
+
+# id: 143
+# text-en: what is the current temperature
+# text: Koja je trenutna temperatura
+# intent: weather/find
+1	Koja	weather/find	O
+2	je	weather/find	O
+3	trenutna	weather/find	B-datetime
+4	temperatura	weather/find	B-weather/attribute
+
+# id: 144
+# text-en: remind me to make Dan's lunch at 7:30am tomorrow.
+# text: podseti me da spremim Denu ručak u 7:30 sutra ujutru.
+# intent: reminder/set_reminder
+1	podseti	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	da	reminder/set_reminder	O
+4	spremim	reminder/set_reminder	B-reminder/todo
+5	Denu	reminder/set_reminder	I-reminder/todo
+6	ručak	reminder/set_reminder	I-reminder/todo
+7	u	reminder/set_reminder	O
+8	7:30	reminder/set_reminder	B-datetime
+9	sutra	reminder/set_reminder	I-datetime
+10	ujutru	reminder/set_reminder	I-datetime
+11	.	reminder/set_reminder	O
+
+# id: 145
+# text-en: Set alarm for 6:30am tomorrow.
+# text: Podesi alarm za sutra ujutru u 6:30
+# intent: alarm/set_alarm
+1	Podesi	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	za	alarm/set_alarm	O
+4	sutra	alarm/set_alarm	B-datetime
+5	ujutru	alarm/set_alarm	I-datetime
+6	u	alarm/set_alarm	I-datetime
+7	6:30	alarm/set_alarm	I-datetime
+
+# id: 146
+# text-en: Do I have any reminders set?
+# text: Da li imam podešenih podsetnika?
+# intent: reminder/show_reminders
+1	Da	reminder/show_reminders	O
+2	li	reminder/show_reminders	O
+3	imam	reminder/show_reminders	O
+4	podešenih	reminder/show_reminders	O
+5	podsetnika	reminder/show_reminders	O
+6	?	reminder/show_reminders	O
+
+# id: 147
+# text-en: Is my dentist appointment in my reminder ?
+# text: Da li mi je stomatološki pregled u podsetniku ?
+# intent: reminder/show_reminders
+1	Da	reminder/show_reminders	O
+2	li	reminder/show_reminders	O
+3	mi	reminder/show_reminders	B-reference
+4	je	reminder/show_reminders	O
+5	stomatološki	reminder/show_reminders	B-reminder/todo
+6	pregled	reminder/show_reminders	I-reminder/todo
+7	u	reminder/show_reminders	O
+8	podsetniku	reminder/show_reminders	O
+9	?	reminder/show_reminders	O
+
+# id: 148
+# text-en: when will it stop raining?
+# text: kad će stati kiša?
+# intent: weather/find
+1	kad	weather/find	O
+2	će	weather/find	O
+3	stati	weather/find	O
+4	kiša	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id: 149
+# text-en: Is it going to snow this week?
+# text: Da li će da pada sneg ove nedelje?
+# intent: weather/find
+1	Da	weather/find	O
+2	li	weather/find	O
+3	će	weather/find	O
+4	da	weather/find	O
+5	pada	weather/find	B-weather/attribute
+6	sneg	weather/find	I-weather/attribute
+7	ove	weather/find	B-datetime
+8	nedelje	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 150
+# text-en: turn off alarm
+# text: isključi alarm
+# intent: alarm/cancel_alarm
+1	isključi	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 151
+# text-en: I would give Half a Life 3 out of 6
+# text: Dala bih Half a Life 3 od 6
+# intent: RateBook
+1	Dala	RateBook	O
+2	bih	RateBook	O
+3	Half	RateBook	B-object_name
+4	a	RateBook	I-object_name
+5	Life	RateBook	I-object_name
+6	3	RateBook	B-rating_value
+7	od	RateBook	O
+8	6	RateBook	B-best_rating
+
+# id: 152
+# text-en: Play some Mf Doom from the sixties on pandora .
+# text: Pusti neki Mf Doom iz šezdesetih na pandori .
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	neki	PlayMusic	O
+3	Mf	PlayMusic	B-artist
+4	Doom	PlayMusic	I-artist
+5	iz	PlayMusic	O
+6	šezdesetih	PlayMusic	B-datetime
+7	na	PlayMusic	O
+8	pandori	PlayMusic	B-service
+9	.	PlayMusic	O
+
+# id: 153
+# text-en: Search for Chasing Fortune a TV series .
+# text: Traži TV seriju Chasing Fortune .
+# intent: SearchCreativeWork
+1	Traži	SearchCreativeWork	O
+2	TV	SearchCreativeWork	B-object_type
+3	seriju	SearchCreativeWork	I-object_type
+4	Chasing	SearchCreativeWork	B-object_name
+5	Fortune	SearchCreativeWork	I-object_name
+6	.	SearchCreativeWork	O
+
+# id: 154
+# text-en: Play shadowplay by Dana on Deezer .
+# text: Pusti shadowplay od Dejne [Dana] na Dizeru [Deezer] .
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	shadowplay	PlayMusic	B-track
+3	od	PlayMusic	O
+4	Dejne	PlayMusic	B-artist
+5	[	PlayMusic	O
+6	Dana	PlayMusic	B-artist
+7	]	PlayMusic	O
+8	na	PlayMusic	O
+9	Dizeru	PlayMusic	B-service
+10	[	PlayMusic	O
+11	Deezer	PlayMusic	B-service
+12	]	PlayMusic	O
+13	.	PlayMusic	O
+
+# id: 155
+# text-en: me and imelda want a reservation in Missouri at seven am
+# text: ja i imelda želimo rezervaciju u Mizuriju u sedam ujutru
+# intent: BookRestaurant
+1	ja	BookRestaurant	B-party_size_description
+2	i	BookRestaurant	I-party_size_description
+3	imelda	BookRestaurant	I-party_size_description
+4	želimo	BookRestaurant	O
+5	rezervaciju	BookRestaurant	O
+6	u	BookRestaurant	O
+7	Mizuriju	BookRestaurant	B-location
+8	u	BookRestaurant	O
+9	sedam	BookRestaurant	B-datetime
+10	ujutru	BookRestaurant	I-datetime
+
+# id: 156
+# text-en: add bob klose to la mejor música para tus fiestas
+# text: dodaj boba klousa [bob klose] na la mejor música para tus fiestas
+# intent: AddToPlaylist
+1	dodaj	AddToPlaylist	O
+2	boba	AddToPlaylist	B-artist
+3	klousa	AddToPlaylist	I-artist
+4	[	AddToPlaylist	O
+5	bob	AddToPlaylist	B-artist
+6	klose	AddToPlaylist	I-artist
+7	]	AddToPlaylist	O
+8	na	AddToPlaylist	O
+9	la	AddToPlaylist	B-playlist
+10	mejor	AddToPlaylist	I-playlist
+11	música	AddToPlaylist	I-playlist
+12	para	AddToPlaylist	I-playlist
+13	tus	AddToPlaylist	I-playlist
+14	fiestas	AddToPlaylist	I-playlist
+
+# id: 157
+# text-en: play Luis Alfonzo Larrain from 1995
+# text: pustu Luisa Alfonsa Lorejn [Luis Alfonzo Larrain] iz 1995
+# intent: PlayMusic
+1	pustu	PlayMusic	O
+2	Luisa	PlayMusic	B-artist
+3	Alfonsa	PlayMusic	I-artist
+4	Lorejn	PlayMusic	I-artist
+5	[	PlayMusic	O
+6	Luis	PlayMusic	B-artist
+7	Alfonzo	PlayMusic	I-artist
+8	Larrain	PlayMusic	I-artist
+9	]	PlayMusic	O
+10	iz	PlayMusic	O
+11	1995	PlayMusic	B-datetime
+
+# id: 158
+# text-en: What will the weather be like in the Bahamas eleven years and a half from now
+# text: Kakvo će vreme biti na Bahamima za jedanaest i po godina
+# intent: weather/find
+1	Kakvo	weather/find	O
+2	će	weather/find	O
+3	vreme	weather/find	O
+4	biti	weather/find	O
+5	na	weather/find	O
+6	Bahamima	weather/find	B-location
+7	za	weather/find	B-datetime
+8	jedanaest	weather/find	I-datetime
+9	i	weather/find	I-datetime
+10	po	weather/find	I-datetime
+11	godina	weather/find	I-datetime
+
+# id: 159
+# text-en: What will the weather be like in Arizona on october the 3rd
+# text: Kakvo će vreme biti u Arizoni 3. oktobra
+# intent: weather/find
+1	Kakvo	weather/find	O
+2	će	weather/find	O
+3	vreme	weather/find	O
+4	biti	weather/find	O
+5	u	weather/find	O
+6	Arizoni	weather/find	B-location
+7	3	weather/find	B-datetime
+8	.	weather/find	I-datetime
+9	oktobra	weather/find	I-datetime
+
+# id: 160
+# text-en: Play opera music on google music
+# text: Pusti opersku muziku na google music
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	opersku	PlayMusic	B-genre
+3	muziku	PlayMusic	O
+4	na	PlayMusic	O
+5	google	PlayMusic	B-service
+6	music	PlayMusic	I-service
+
+# id: 161
+# text-en: find Vegucated starting at zero pm
+# text: nađi Vegucated s početkom od nula časova
+# intent: SearchScreeningEvent
+1	nađi	SearchScreeningEvent	O
+2	Vegucated	SearchScreeningEvent	B-movie_name
+3	s	SearchScreeningEvent	O
+4	početkom	SearchScreeningEvent	O
+5	od	SearchScreeningEvent	O
+6	nula	SearchScreeningEvent	B-datetime
+7	časova	SearchScreeningEvent	I-datetime
+
+# id: 162
+# text-en: Give the current novel a 3 out of 6 rating
+# text: Daj ovom romanu ocenu 3 od 6
+# intent: RateBook
+1	Daj	RateBook	O
+2	ovom	RateBook	B-object_select
+3	romanu	RateBook	B-object_type
+4	ocenu	RateBook	O
+5	3	RateBook	B-rating_value
+6	od	RateBook	O
+7	6	RateBook	B-best_rating
+
+# id: 163
+# text-en: I'd like to add this album to funtime .
+# text: Želela bih da dodam ovaj album na funtime .
+# intent: AddToPlaylist
+1	Želela	AddToPlaylist	O
+2	bih	AddToPlaylist	O
+3	da	AddToPlaylist	O
+4	dodam	AddToPlaylist	O
+5	ovaj	AddToPlaylist	O
+6	album	AddToPlaylist	B-music_item
+7	na	AddToPlaylist	O
+8	funtime	AddToPlaylist	B-playlist
+9	.	AddToPlaylist	O
+
+# id: 164
+# text-en: I need a table for 4 at a restaurant around 0 AM .
+# text: Treba mi sto za četvoro u restoranu oko ponoći
+# intent: BookRestaurant
+1	Treba	BookRestaurant	O
+2	mi	BookRestaurant	O
+3	sto	BookRestaurant	O
+4	za	BookRestaurant	O
+5	četvoro	BookRestaurant	B-party_size_number
+6	u	BookRestaurant	O
+7	restoranu	BookRestaurant	B-restaurant_type
+8	oko	BookRestaurant	O
+9	ponoći	BookRestaurant	B-datetime
+
+# id: 165
+# text-en: find the picture Louder Than Bombs
+# text: pronađi film Louder Than Bombs
+# intent: SearchCreativeWork
+1	pronađi	SearchCreativeWork	O
+2	film	SearchCreativeWork	B-object_type
+3	Louder	SearchCreativeWork	B-object_name
+4	Than	SearchCreativeWork	I-object_name
+5	Bombs	SearchCreativeWork	I-object_name
+
+# id: 166
+# text-en: Give 2 out of 6 points to A Tale of Time City
+# text: Daj 2 poena od 6 A Tale of Time City
+# intent: RateBook
+1	Daj	RateBook	O
+2	2	RateBook	B-rating_value
+3	poena	RateBook	B-rating_unit
+4	od	RateBook	O
+5	6	RateBook	B-best_rating
+6	A	RateBook	B-object_name
+7	Tale	RateBook	I-object_name
+8	of	RateBook	I-object_name
+9	Time	RateBook	I-object_name
+10	City	RateBook	I-object_name
+
+# id: 167
+# text-en: add this current book five stars
+# text: daj ovoj knjizi pet zvezdica
+# intent: RateBook
+1	daj	RateBook	O
+2	ovoj	RateBook	B-object_select
+3	knjizi	RateBook	B-object_type
+4	pet	RateBook	B-rating_value
+5	zvezdica	RateBook	B-rating_unit
+
+# id: 168
+# text-en: add track 70s smash hits to my
+# text: dodaj numeru 70s smash hits na moju
+# intent: AddToPlaylist
+1	dodaj	AddToPlaylist	O
+2	numeru	AddToPlaylist	B-music_item
+3	70s	AddToPlaylist	B-playlist
+4	smash	AddToPlaylist	I-playlist
+5	hits	AddToPlaylist	I-playlist
+6	na	AddToPlaylist	O
+7	moju	AddToPlaylist	B-reference
+
+# id: 169
+# text-en: book near Montana restaurant serving sri lankan food for 6 that is highly rated on tues.
+# text: rezerviši obližnji montanski restoran koji služi šrilančansku hranu za 6 i koji ima dobre recenzije za utorak.
+# intent: BookRestaurant
+1	rezerviši	BookRestaurant	O
+2	obližnji	BookRestaurant	B-location
+3	montanski	BookRestaurant	B-location
+4	restoran	BookRestaurant	B-restaurant_type
+5	koji	BookRestaurant	O
+6	služi	BookRestaurant	O
+7	šrilančansku	BookRestaurant	B-cuisine
+8	hranu	BookRestaurant	O
+9	za	BookRestaurant	O
+10	6	BookRestaurant	B-party_size_number
+11	i	BookRestaurant	O
+12	koji	BookRestaurant	O
+13	ima	BookRestaurant	O
+14	dobre	BookRestaurant	B-sort
+15	recenzije	BookRestaurant	I-sort
+16	za	BookRestaurant	O
+17	utorak	BookRestaurant	B-datetime
+18	.	BookRestaurant	O
+
+# id: 170
+# text-en: Book me a lunch at Boreas for a party of 8
+# text: Rezerviši mi ručak u Boreasu za grupu od osmoro
+# intent: BookRestaurant
+1	Rezerviši	BookRestaurant	O
+2	mi	BookRestaurant	O
+3	ručak	BookRestaurant	B-datetime
+4	u	BookRestaurant	O
+5	Boreasu	BookRestaurant	B-restaurant_name
+6	za	BookRestaurant	O
+7	grupu	BookRestaurant	O
+8	od	BookRestaurant	O
+9	osmoro	BookRestaurant	B-party_size_number
+
+# id: 171
+# text-en: Please put another tune into the laundry playlist.
+# text: Molim te stavi još jednu pesmu na laundry playlist.
+# intent: AddToPlaylist
+1	Molim	AddToPlaylist	O
+2	te	AddToPlaylist	O
+3	stavi	AddToPlaylist	O
+4	još	AddToPlaylist	O
+5	jednu	AddToPlaylist	O
+6	pesmu	AddToPlaylist	B-music_item
+7	na	AddToPlaylist	O
+8	laundry	AddToPlaylist	B-playlist
+9	playlist	AddToPlaylist	O
+10	.	AddToPlaylist	O
+
+# id: 172
+# text-en: what is the PW forecast for stormy weather
+# text: koja je prognoza za olujno vreme u PW
+# intent: weather/find
+1	koja	weather/find	O
+2	je	weather/find	O
+3	prognoza	weather/find	O
+4	za	weather/find	O
+5	olujno	weather/find	B-condition_description
+6	vreme	weather/find	O
+7	u	weather/find	O
+8	PW	weather/find	B-location
+
+# id: 173
+# text-en: What is the predicted weather for my current spot next month ?
+# text: Koje vreme se predviđa za moju trenutnu lokaciju sledećeg meseca ?
+# intent: weather/find
+1	Koje	weather/find	O
+2	vreme	weather/find	O
+3	se	weather/find	O
+4	predviđa	weather/find	O
+5	za	weather/find	O
+6	moju	weather/find	O
+7	trenutnu	weather/find	B-location
+8	lokaciju	weather/find	I-location
+9	sledećeg	weather/find	B-datetime
+10	meseca	weather/find	I-datetime
+11	?	weather/find	O
+
+# id: 174
+# text-en: Book a reservation for 1 on march 17
+# text: Napravi rezervaciju za jednog za 17. mart
+# intent: BookRestaurant
+1	Napravi	BookRestaurant	O
+2	rezervaciju	BookRestaurant	O
+3	za	BookRestaurant	O
+4	jednog	BookRestaurant	B-party_size_number
+5	za	BookRestaurant	O
+6	17	BookRestaurant	B-datetime
+7	.	BookRestaurant	I-datetime
+8	mart	BookRestaurant	I-datetime
+
+# id: 175
+# text-en: The current album gets three out of 6 points
+# text: Ovaj album dobija tri od 6 poena
+# intent: RateBook
+1	Ovaj	RateBook	B-object_select
+2	album	RateBook	B-object_type
+3	dobija	RateBook	O
+4	tri	RateBook	B-rating_value
+5	od	RateBook	O
+6	6	RateBook	B-best_rating
+7	poena	RateBook	B-rating_unit
+
+# id: 176
+# text-en: Add the Nastya Kamenskih song to my The Martin Garrix Show playlist.
+# text: Dodaj pesmu Nastje Kamenski na moju plejlistu The Martin Garrix Show
+# intent: AddToPlaylist
+1	Dodaj	AddToPlaylist	O
+2	pesmu	AddToPlaylist	B-music_item
+3	Nastje	AddToPlaylist	B-artist
+4	Kamenski	AddToPlaylist	I-artist
+5	na	AddToPlaylist	O
+6	moju	AddToPlaylist	B-reference
+7	plejlistu	AddToPlaylist	O
+8	The	AddToPlaylist	B-playlist
+9	Martin	AddToPlaylist	I-playlist
+10	Garrix	AddToPlaylist	I-playlist
+11	Show	AddToPlaylist	I-playlist
+
+# id: 177
+# text-en: Wish to hear the album Since I Saw You Last
+# text: Hoću da čujem album Since I Saw You Last
+# intent: SearchCreativeWork
+1	Hoću	SearchCreativeWork	O
+2	da	SearchCreativeWork	O
+3	čujem	SearchCreativeWork	O
+4	album	SearchCreativeWork	B-object_type
+5	Since	SearchCreativeWork	B-object_name
+6	I	SearchCreativeWork	I-object_name
+7	Saw	SearchCreativeWork	I-object_name
+8	You	SearchCreativeWork	I-object_name
+9	Last	SearchCreativeWork	I-object_name
+
+# id: 178
+# text-en: play top tunes by Joseph Utsler
+# text: pusti najpopularnije pesme Džozefa Utslera [Joseph Utsler]
+# intent: PlayMusic
+1	pusti	PlayMusic	O
+2	najpopularnije	PlayMusic	B-sort
+3	pesme	PlayMusic	O
+4	Džozefa	PlayMusic	B-artist
+5	Utslera	PlayMusic	I-artist
+6	[	PlayMusic	O
+7	Joseph	PlayMusic	B-artist
+8	Utsler	PlayMusic	I-artist
+9	]	PlayMusic	O
+
+# id: 179
+# text-en: Find the schedule for Ghost World .
+# text: Nađi raspored za Svet duhova [Ghost World] .
+# intent: SearchScreeningEvent
+1	Nađi	SearchScreeningEvent	O
+2	raspored	SearchScreeningEvent	B-object_type
+3	za	SearchScreeningEvent	O
+4	Svet	SearchScreeningEvent	B-movie_name
+5	duhova	SearchScreeningEvent	I-movie_name
+6	[	SearchScreeningEvent	O
+7	Ghost	SearchScreeningEvent	B-movie_name
+8	World	SearchScreeningEvent	I-movie_name
+9	]	SearchScreeningEvent	O
+10	.	SearchScreeningEvent	O
+
+# id: 180
+# text-en: I want to listen to a concerto from Timour Moutsouraev .
+# text: Želim da slušam končerto Timura Mucuraeva [Timour Moutsouraev] .
+# intent: PlayMusic
+1	Želim	PlayMusic	O
+2	da	PlayMusic	O
+3	slušam	PlayMusic	O
+4	končerto	PlayMusic	B-music_item
+5	Timura	PlayMusic	B-artist
+6	Mucuraeva	PlayMusic	I-artist
+7	[	PlayMusic	O
+8	Timour	PlayMusic	B-artist
+9	Moutsouraev	PlayMusic	I-artist
+10	]	PlayMusic	O
+11	.	PlayMusic	O
+
+# id: 181
+# text-en: play the album Everybody Happy by Lee Aaron
+# text: pusti album Everybody Happy Lija Arona [Lee Aaron]
+# intent: PlayMusic
+1	pusti	PlayMusic	O
+2	album	PlayMusic	B-music_item
+3	Everybody	PlayMusic	B-album
+4	Happy	PlayMusic	I-album
+5	Lija	PlayMusic	B-artist
+6	Arona	PlayMusic	I-artist
+7	[	PlayMusic	O
+8	Lee	PlayMusic	B-artist
+9	Aaron	PlayMusic	I-artist
+10	]	PlayMusic	O
+
+# id: 182
+# text-en: play Fereydoun Farrokhzad best track
+# text: pusti najbolju numeru Ferejduna Farokzada [Fereydoun Farrokhzad]
+# intent: PlayMusic
+1	pusti	PlayMusic	O
+2	najbolju	PlayMusic	B-sort
+3	numeru	PlayMusic	B-music_item
+4	Ferejduna	PlayMusic	B-artist
+5	Farokzada	PlayMusic	I-artist
+6	[	PlayMusic	O
+7	Fereydoun	PlayMusic	B-artist
+8	Farrokhzad	PlayMusic	I-artist
+9	]	PlayMusic	O
+
+# id: 183
+# text-en: rate the current book three stars
+# text: oceni ovu knjigu sa tri zvezdice
+# intent: RateBook
+1	oceni	RateBook	O
+2	ovu	RateBook	B-object_select
+3	knjigu	RateBook	B-object_type
+4	sa	RateBook	O
+5	tri	RateBook	B-rating_value
+6	zvezdice	RateBook	B-rating_unit
+
+# id: 184
+# text-en: What will the weather be in Meeres-Nationalpark Insel Bastimentos at twelve PM ?
+# text: Kakvo će vreme biti u morskom nacionalnom parku Isla Bastimentos u podne ?
+# intent: weather/find
+1	Kakvo	weather/find	O
+2	će	weather/find	O
+3	vreme	weather/find	O
+4	biti	weather/find	O
+5	u	weather/find	O
+6	morskom	weather/find	B-location
+7	nacionalnom	weather/find	I-location
+8	parku	weather/find	I-location
+9	Isla	weather/find	I-location
+10	Bastimentos	weather/find	I-location
+11	u	weather/find	O
+12	podne	weather/find	B-datetime
+13	?	weather/find	O
+
+# id: 185
+# text-en: Book a table for 10 people at a restaurant which offers internet .
+# text: Rezerviši sto za 10 osoba u restoranu koji ima internet .
+# intent: BookRestaurant
+1	Rezerviši	BookRestaurant	O
+2	sto	BookRestaurant	O
+3	za	BookRestaurant	O
+4	10	BookRestaurant	B-party_size_number
+5	osoba	BookRestaurant	O
+6	u	BookRestaurant	O
+7	restoranu	BookRestaurant	B-restaurant_type
+8	koji	BookRestaurant	O
+9	ima	BookRestaurant	O
+10	internet	BookRestaurant	B-facility
+11	.	BookRestaurant	O
+
+# id: 186
+# text-en: give five points to The Tenor Wore Tapshoes
+# text: daj pet poena The Tenor Wore Tapshoes
+# intent: RateBook
+1	daj	RateBook	O
+2	pet	RateBook	B-rating_value
+3	poena	RateBook	B-rating_unit
+4	The	RateBook	B-object_name
+5	Tenor	RateBook	I-object_name
+6	Wore	RateBook	I-object_name
+7	Tapshoes	RateBook	I-object_name
+
+# id: 187
+# text-en: Play a tune by Houston on Spotify
+# text: Pusti pesmu Hjustona [Houston] na Spotifaju
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	pesmu	PlayMusic	B-music_item
+3	Hjustona	PlayMusic	B-artist
+4	[	PlayMusic	O
+5	Houston	PlayMusic	B-artist
+6	]	PlayMusic	O
+7	na	PlayMusic	O
+8	Spotifaju	PlayMusic	B-service
+
+# id: 188
+# text-en: find a movie theatre with Life and Death
+# text: nađi bioskop sa Life and Death
+# intent: SearchScreeningEvent
+1	nađi	SearchScreeningEvent	O
+2	bioskop	SearchScreeningEvent	B-object_location_type
+3	sa	SearchScreeningEvent	O
+4	Life	SearchScreeningEvent	B-movie_name
+5	and	SearchScreeningEvent	I-movie_name
+6	Death	SearchScreeningEvent	I-movie_name
+
+# id: 189
+# text-en: Play music from the playlist Get Your Mind Right
+# text: Pusti muziku sa plejliste Get Your Mind Right
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	muziku	PlayMusic	O
+3	sa	PlayMusic	O
+4	plejliste	PlayMusic	O
+5	Get	PlayMusic	B-playlist
+6	Your	PlayMusic	I-playlist
+7	Mind	PlayMusic	I-playlist
+8	Right	PlayMusic	I-playlist
+
+# id: 190
+# text-en: book a table today at a steakhouse for eight that serves sashimi
+# text: rezerviši sto za danas u goveđem restoranu za osmoro koji služi sašimi
+# intent: BookRestaurant
+1	rezerviši	BookRestaurant	O
+2	sto	BookRestaurant	O
+3	za	BookRestaurant	O
+4	danas	BookRestaurant	B-datetime
+5	u	BookRestaurant	O
+6	goveđem	BookRestaurant	B-restaurant_type
+7	restoranu	BookRestaurant	I-restaurant_type
+8	za	BookRestaurant	O
+9	osmoro	BookRestaurant	B-party_size_number
+10	koji	BookRestaurant	O
+11	služi	BookRestaurant	O
+12	sašimi	BookRestaurant	B-served_dish
+
+# id: 191
+# text-en: find animated movies at Caribbean Cinemas
+# text: nađi animirane filmove u Caribbean Cinemas
+# intent: SearchScreeningEvent
+1	nađi	SearchScreeningEvent	O
+2	animirane	SearchScreeningEvent	B-movie_type
+3	filmove	SearchScreeningEvent	I-movie_type
+4	u	SearchScreeningEvent	O
+5	Caribbean	SearchScreeningEvent	B-location
+6	Cinemas	SearchScreeningEvent	I-location
+
+# id: 192
+# text-en: Will there be a storm nearby
+# text: Hoće li biti oluje u okolini
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	oluje	weather/find	B-condition_description
+5	u	weather/find	B-location
+6	okolini	weather/find	I-location
+
+# id: 193
+# text-en: Play some melody from the eighties on Spotify
+# text: Pusti neku melodiju iz osamdesetih na Spotifaju
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	neku	PlayMusic	O
+3	melodiju	PlayMusic	B-music_item
+4	iz	PlayMusic	O
+5	osamdesetih	PlayMusic	B-datetime
+6	na	PlayMusic	O
+7	Spotifaju	PlayMusic	B-service
+
+# id: 194
+# text-en: Where can I find The World According to Paris ?
+# text: Gde mogu da nađem The World According to Paris ?
+# intent: SearchCreativeWork
+1	Gde	SearchCreativeWork	O
+2	mogu	SearchCreativeWork	O
+3	da	SearchCreativeWork	O
+4	nađem	SearchCreativeWork	O
+5	The	SearchCreativeWork	B-object_name
+6	World	SearchCreativeWork	I-object_name
+7	According	SearchCreativeWork	I-object_name
+8	to	SearchCreativeWork	I-object_name
+9	Paris	SearchCreativeWork	I-object_name
+10	?	SearchCreativeWork	O
+
+# id: 195
+# text-en: Tell me when it will be hotter in China
+# text: Kaži mi kada će biti toplije u Kini
+# intent: weather/find
+1	Kaži	weather/find	O
+2	mi	weather/find	O
+3	kada	weather/find	O
+4	će	weather/find	O
+5	biti	weather/find	O
+6	toplije	weather/find	B-condition_temperature
+7	u	weather/find	O
+8	Kini	weather/find	B-location
+
+# id: 196
+# text-en: What are the movie times for the Caribbean Cinemas ?
+# text: Koji raspored prikazivanja filmova u Caribbean Cinemas ?
+# intent: SearchScreeningEvent
+1	Koji	SearchScreeningEvent	O
+2	raspored	SearchScreeningEvent	B-object_type
+3	prikazivanja	SearchScreeningEvent	I-object_type
+4	filmova	SearchScreeningEvent	I-object_type
+5	u	SearchScreeningEvent	O
+6	Caribbean	SearchScreeningEvent	B-location
+7	Cinemas	SearchScreeningEvent	I-location
+8	?	SearchScreeningEvent	O
+
+# id: 197
+# text-en: Will the wind die down at my current location by supper time?
+# text: Hoće li se smiriti vetar na mojoj trenutnoj lokaciji do večere?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	se	weather/find	O
+4	smiriti	weather/find	O
+5	vetar	weather/find	B-condition_description
+6	na	weather/find	O
+7	mojoj	weather/find	O
+8	trenutnoj	weather/find	B-location
+9	lokaciji	weather/find	I-location
+10	do	weather/find	O
+11	večere	weather/find	B-datetime
+12	?	weather/find	O
+
+# id: 198
+# text-en: Find me The Twinkler playing at National Amusements in 2 minutes
+# text: Nađi mi The Twinkler s prikazivanjem u National Amusements za 2 minuta
+# intent: SearchScreeningEvent
+1	Nađi	SearchScreeningEvent	O
+2	mi	SearchScreeningEvent	O
+3	The	SearchScreeningEvent	B-movie_name
+4	Twinkler	SearchScreeningEvent	I-movie_name
+5	s	SearchScreeningEvent	O
+6	prikazivanjem	SearchScreeningEvent	O
+7	u	SearchScreeningEvent	O
+8	National	SearchScreeningEvent	B-location
+9	Amusements	SearchScreeningEvent	I-location
+10	za	SearchScreeningEvent	B-datetime
+11	2	SearchScreeningEvent	I-datetime
+12	minuta	SearchScreeningEvent	I-datetime
+
+# id: 199
+# text-en: I give Hadon of Ancient Opar two out of 6 points
+# text: Dajem Hadon of Ancient Opar dva od 6 poena
+# intent: RateBook
+1	Dajem	RateBook	O
+2	Hadon	RateBook	B-object_name
+3	of	RateBook	I-object_name
+4	Ancient	RateBook	I-object_name
+5	Opar	RateBook	I-object_name
+6	dva	RateBook	B-rating_value
+7	od	RateBook	O
+8	6	RateBook	B-best_rating
+9	poena	RateBook	B-rating_unit
+
+# id: 200
+# text-en: I'm looking to bring shawn, marguerite and della to a place to eat at near Rwanda .
+# text: Želim da odvedem šona, margarit i delu negde da jedu blizu Ruande .
+# intent: BookRestaurant
+1	Želim	BookRestaurant	O
+2	da	BookRestaurant	O
+3	odvedem	BookRestaurant	O
+4	šona	BookRestaurant	B-party_size_description
+5	,	BookRestaurant	I-party_size_description
+6	margarit	BookRestaurant	I-party_size_description
+7	i	BookRestaurant	I-party_size_description
+8	delu	BookRestaurant	I-party_size_description
+9	negde	BookRestaurant	O
+10	da	BookRestaurant	O
+11	jedu	BookRestaurant	O
+12	blizu	BookRestaurant	B-location
+13	Ruande	BookRestaurant	B-location
+14	.	BookRestaurant	O
+
+# id: 201
+# text-en: Play music on Lastfm
+# text: Pusti muziku na Lastfm
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	muziku	PlayMusic	O
+3	na	PlayMusic	O
+4	Lastfm	PlayMusic	B-service
+
+# id: 202
+# text-en: Will it be snowy at the current position by March 3 ?
+# text: Hoće li biti snega na ovoj lokaciji do 3. marta ?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	snega	weather/find	B-condition_description
+5	na	weather/find	O
+6	ovoj	weather/find	B-location
+7	lokaciji	weather/find	I-location
+8	do	weather/find	O
+9	3	weather/find	B-datetime
+10	.	weather/find	I-datetime
+11	marta	weather/find	I-datetime
+12	?	weather/find	O
+
+# id: 203
+# text-en: Find me a table for 8 somewhee in Hollenberg in nine weeks
+# text: Nađi mi sto za 8 osoba negde u Holenbergu za devet nedelja
+# intent: BookRestaurant
+1	Nađi	BookRestaurant	O
+2	mi	BookRestaurant	O
+3	sto	BookRestaurant	O
+4	za	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	osoba	BookRestaurant	O
+7	negde	BookRestaurant	O
+8	u	BookRestaurant	O
+9	Holenbergu	BookRestaurant	B-location
+10	za	BookRestaurant	B-datetime
+11	devet	BookRestaurant	I-datetime
+12	nedelja	BookRestaurant	I-datetime
+
+# id: 204
+# text-en: play a track from 2004
+# text: pusti pesmu iz 2004.
+# intent: PlayMusic
+1	pusti	PlayMusic	O
+2	pesmu	PlayMusic	B-music_item
+3	iz	PlayMusic	O
+4	2004	PlayMusic	B-datetime
+5	.	PlayMusic	I-datetime
+
+# id: 205
+# text-en: Tell me what films are currently playing at AMC Theaters
+# text: Kaži mi koji filmovi se trenutno prikazuju u bioskopima AMC
+# intent: SearchScreeningEvent
+1	Kaži	SearchScreeningEvent	O
+2	mi	SearchScreeningEvent	O
+3	koji	SearchScreeningEvent	O
+4	filmovi	SearchScreeningEvent	B-movie_type
+5	se	SearchScreeningEvent	O
+6	trenutno	SearchScreeningEvent	O
+7	prikazuju	SearchScreeningEvent	O
+8	u	SearchScreeningEvent	O
+9	bioskopima	SearchScreeningEvent	B-location
+10	AMC	SearchScreeningEvent	I-location
+
+# id: 206
+# text-en: Show me the TV show Limit of Love: Umizaru
+# text: Pokaži mi TV seriju Limit of Love: Umizaru
+# intent: SearchCreativeWork
+1	Pokaži	SearchCreativeWork	O
+2	mi	SearchCreativeWork	O
+3	TV	SearchCreativeWork	B-object_type
+4	seriju	SearchCreativeWork	I-object_type
+5	Limit	SearchCreativeWork	B-object_name
+6	of	SearchCreativeWork	I-object_name
+7	Love:	SearchCreativeWork	I-object_name
+8	Umizaru	SearchCreativeWork	I-object_name
+
+# id: 207
+# text-en: Show me the photograph Rock You Baby
+# text: Pokaži mi fotografiju Rock You Baby
+# intent: SearchCreativeWork
+1	Pokaži	SearchCreativeWork	O
+2	mi	SearchCreativeWork	O
+3	fotografiju	SearchCreativeWork	B-object_type
+4	Rock	SearchCreativeWork	B-object_name
+5	You	SearchCreativeWork	I-object_name
+6	Baby	SearchCreativeWork	I-object_name
+
+# id: 208
+# text-en: is Tarzan of the Apes playing at Cobb Theatres
+# text: da li se Tarzan of the Apes prikazuje u Cobb Theatres
+# intent: SearchScreeningEvent
+1	da	SearchScreeningEvent	O
+2	li	SearchScreeningEvent	O
+3	se	SearchScreeningEvent	O
+4	Tarzan	SearchScreeningEvent	B-movie_name
+5	of	SearchScreeningEvent	I-movie_name
+6	the	SearchScreeningEvent	I-movie_name
+7	Apes	SearchScreeningEvent	I-movie_name
+8	prikazuje	SearchScreeningEvent	O
+9	u	SearchScreeningEvent	O
+10	Cobb	SearchScreeningEvent	B-location
+11	Theatres	SearchScreeningEvent	I-location
+
+# id: 209
+# text-en: put Kan Mikami on Pre-Party R&B Jams
+# text: stavi Kana Mikamija [Kan Mikami] na Pre-Party R&B Jams
+# intent: AddToPlaylist
+1	stavi	AddToPlaylist	O
+2	Kana	AddToPlaylist	B-artist
+3	Mikamija	AddToPlaylist	I-artist
+4	[	AddToPlaylist	O
+5	Kan	AddToPlaylist	B-artist
+6	Mikami	AddToPlaylist	I-artist
+7	]	AddToPlaylist	O
+8	na	AddToPlaylist	O
+9	Pre-Party	AddToPlaylist	B-playlist
+10	R	AddToPlaylist	I-playlist
+11	&	AddToPlaylist	I-playlist
+12	B	AddToPlaylist	I-playlist
+13	Jams	AddToPlaylist	I-playlist
+
+# id: 210
+# text-en: is it going to blizzard at my current position
+# text: hoće li biti mećave na mojoj trenutnoj lokaciji
+# intent: weather/find
+1	hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	mećave	weather/find	B-condition_description
+5	na	weather/find	O
+6	mojoj	weather/find	O
+7	trenutnoj	weather/find	B-location
+8	lokaciji	weather/find	I-location
+
+# id: 211
+# text-en: book a table for me and my step uncle in Malta at a cafeteria
+# text: rezerviši sto za mene i mog polu-ujaka na Malti u kafeteriji
+# intent: BookRestaurant
+1	rezerviši	BookRestaurant	O
+2	sto	BookRestaurant	O
+3	za	BookRestaurant	O
+4	mene	BookRestaurant	B-party_size_description
+5	i	BookRestaurant	I-party_size_description
+6	mog	BookRestaurant	I-party_size_description
+7	polu-ujaka	BookRestaurant	I-party_size_description
+8	na	BookRestaurant	O
+9	Malti	BookRestaurant	B-location
+10	u	BookRestaurant	O
+11	kafeteriji	BookRestaurant	B-restaurant_type
+
+# id: 212
+# text-en: Play the most popular twenties record from Leland Sklar
+# text: Pusti najpopularniju ploču iz dvadesetih Lilanda Sklara [Leland Sklar]
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	najpopularniju	PlayMusic	B-sort
+3	ploču	PlayMusic	B-music_item
+4	iz	PlayMusic	O
+5	dvadesetih	PlayMusic	B-datetime
+6	Lilanda	PlayMusic	B-artist
+7	Sklara	PlayMusic	I-artist
+8	[	PlayMusic	O
+9	Leland	PlayMusic	B-artist
+10	Sklar	PlayMusic	I-artist
+11	]	PlayMusic	O
+
+# id: 213
+# text-en: Show me the forecast for Wisconsin
+# text: Pokaži mi prognozu za Viskonsin
+# intent: weather/find
+1	Pokaži	weather/find	O
+2	mi	weather/find	O
+3	prognozu	weather/find	O
+4	za	weather/find	O
+5	Viskonsin	weather/find	B-location
+
+# id: 214
+# text-en: find a photograph called Between the Days
+# text: nađi fotografiju zvanu Between the Days
+# intent: SearchCreativeWork
+1	nađi	SearchCreativeWork	O
+2	fotografiju	SearchCreativeWork	B-object_type
+3	zvanu	SearchCreativeWork	O
+4	Between	SearchCreativeWork	B-object_name
+5	the	SearchCreativeWork	I-object_name
+6	Days	SearchCreativeWork	I-object_name
+
+# id: 215
+# text-en: book at The Halal Guys on Oct. 17
+# text: rezerviši u The Halal Guys za 17. oktobar
+# intent: BookRestaurant
+1	rezerviši	BookRestaurant	O
+2	u	BookRestaurant	O
+3	The	BookRestaurant	B-restaurant_name
+4	Halal	BookRestaurant	I-restaurant_name
+5	Guys	BookRestaurant	I-restaurant_name
+6	za	BookRestaurant	O
+7	17	BookRestaurant	B-datetime
+8	.	BookRestaurant	I-datetime
+9	oktobar	BookRestaurant	I-datetime
+
+# id: 216
+# text-en: Please tell me the forecast for Guinea-Bissau
+# text: Molim te kaži mi prognozu za Gvineju Bisao
+# intent: weather/find
+1	Molim	weather/find	O
+2	te	weather/find	O
+3	kaži	weather/find	O
+4	mi	weather/find	O
+5	prognozu	weather/find	O
+6	za	weather/find	O
+7	Gvineju	weather/find	B-location
+8	Bisao	weather/find	I-location
+
+# id: 217
+# text-en: Add this song to my the perfect italian dinner playlist
+# text: Dodaj ovu pesmu na moju plejlistu perfect italian dinner
+# intent: AddToPlaylist
+1	Dodaj	AddToPlaylist	O
+2	ovu	AddToPlaylist	O
+3	pesmu	AddToPlaylist	B-music_item
+4	na	AddToPlaylist	O
+5	moju	AddToPlaylist	B-reference
+6	plejlistu	AddToPlaylist	O
+7	perfect	AddToPlaylist	B-playlist
+8	italian	AddToPlaylist	I-playlist
+9	dinner	AddToPlaylist	I-playlist
+
+# id: 218
+# text-en: weather in Tioga Colorado
+# text: vreme u Tiogi u Koloradu
+# intent: weather/find
+1	vreme	weather/find	O
+2	u	weather/find	O
+3	Tiogi	weather/find	B-location
+4	u	weather/find	O
+5	Koloradu	weather/find	B-location
+
+# id: 219
+# text-en: I want to listen to the Music of Ghost in the Shell: Stand Alone Complex
+# text: Hoću da slušam muziku iz Ghost in the Shell: Stand Alone Complex
+# intent: SearchCreativeWork
+1	Hoću	SearchCreativeWork	O
+2	da	SearchCreativeWork	O
+3	slušam	SearchCreativeWork	O
+4	muziku	SearchCreativeWork	B-object_name
+5	iz	SearchCreativeWork	I-object_name
+6	Ghost	SearchCreativeWork	I-object_name
+7	in	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Shell:	SearchCreativeWork	I-object_name
+10	Stand	SearchCreativeWork	I-object_name
+11	Alone	SearchCreativeWork	I-object_name
+12	Complex	SearchCreativeWork	I-object_name
+
+# id: 220
+# text-en: Show me Happiness Was Free .
+# text: Prikaži mi Happiness Was Free .
+# intent: SearchCreativeWork
+1	Prikaži	SearchCreativeWork	O
+2	mi	SearchCreativeWork	O
+3	Happiness	SearchCreativeWork	B-object_name
+4	Was	SearchCreativeWork	I-object_name
+5	Free	SearchCreativeWork	I-object_name
+6	.	SearchCreativeWork	O
+
+# id: 221
+# text-en: Is it supposed to rain nearby my current location at 0 o'clock ?
+# text: Hoće li biti kiše u blizini moje trenutne lokacije u ponoć ?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	kiše	weather/find	B-condition_description
+5	u	weather/find	O
+6	blizini	weather/find	B-location
+7	moje	weather/find	O
+8	trenutne	weather/find	B-location
+9	lokacije	weather/find	I-location
+10	u	weather/find	O
+11	ponoć	weather/find	B-datetime
+12	?	weather/find	O
+
+# id: 222
+# text-en: book a table in Fairview neighboring the area
+# text: rezerviši sto u Fairview u blizini ove lokacije
+# intent: BookRestaurant
+1	rezerviši	BookRestaurant	O
+2	sto	BookRestaurant	O
+3	u	BookRestaurant	O
+4	Fairview	BookRestaurant	B-location
+5	u	BookRestaurant	B-location
+6	blizini	BookRestaurant	I-location
+7	ove	BookRestaurant	O
+8	lokacije	BookRestaurant	B-location
+
+# id: 223
+# text-en: what is the forecast for 15:04 in Georgia for overcast conditions in Valley View
+# text: koja je prognoza za 15:04 u Džordžiji za oblačno vreme u Valley View
+# intent: weather/find
+1	koja	weather/find	O
+2	je	weather/find	O
+3	prognoza	weather/find	O
+4	za	weather/find	O
+5	15:04	weather/find	B-datetime
+6	u	weather/find	O
+7	Džordžiji	weather/find	B-location
+8	za	weather/find	O
+9	oblačno	weather/find	B-condition_description
+10	vreme	weather/find	O
+11	u	weather/find	O
+12	Valley	weather/find	B-location
+13	View	weather/find	I-location
+
+# id: 224
+# text-en: Can I see the movie schedules ?
+# text: Mogu li da vidim respored filmova ?
+# intent: SearchScreeningEvent
+1	Mogu	SearchScreeningEvent	O
+2	li	SearchScreeningEvent	O
+3	da	SearchScreeningEvent	O
+4	vidim	SearchScreeningEvent	O
+5	respored	SearchScreeningEvent	B-object_type
+6	filmova	SearchScreeningEvent	I-object_type
+7	?	SearchScreeningEvent	O
+
+# id: 225
+# text-en: find a movie house closest showing Operation: Kingdom
+# text: nađi najbliži bioskop u kom se prikazuje Operation: Kingdom
+# intent: SearchScreeningEvent
+1	nađi	SearchScreeningEvent	O
+2	najbliži	SearchScreeningEvent	B-location
+3	bioskop	SearchScreeningEvent	B-object_location_type
+4	u	SearchScreeningEvent	O
+5	kom	SearchScreeningEvent	O
+6	se	SearchScreeningEvent	O
+7	prikazuje	SearchScreeningEvent	O
+8	Operation:	SearchScreeningEvent	B-movie_name
+9	Kingdom	SearchScreeningEvent	I-movie_name
+
+# id: 226
+# text-en: Find a trailer called Storm Center .
+# text: Nađi trejler po imenu Storm Center .
+# intent: SearchCreativeWork
+1	Nađi	SearchCreativeWork	O
+2	trejler	SearchCreativeWork	B-object_type
+3	po	SearchCreativeWork	O
+4	imenu	SearchCreativeWork	O
+5	Storm	SearchCreativeWork	B-object_name
+6	Center	SearchCreativeWork	I-object_name
+7	.	SearchCreativeWork	O
+
+# id: 227
+# text-en: put this album on my dubstep dangles dirty playlist
+# text: stavi ovaj album na moju plejlistu dubstep dangles dirty
+# intent: AddToPlaylist
+1	stavi	AddToPlaylist	O
+2	ovaj	AddToPlaylist	O
+3	album	AddToPlaylist	B-music_item
+4	na	AddToPlaylist	O
+5	moju	AddToPlaylist	B-reference
+6	plejlistu	AddToPlaylist	O
+7	dubstep	AddToPlaylist	B-playlist
+8	dangles	AddToPlaylist	I-playlist
+9	dirty	AddToPlaylist	I-playlist
+
+# id: 228
+# text-en: What are the movie schedules
+# text: Koji je raspored prikazivanja filmova
+# intent: SearchScreeningEvent
+1	Koji	SearchScreeningEvent	O
+2	je	SearchScreeningEvent	O
+3	raspored	SearchScreeningEvent	B-object_type
+4	prikazivanja	SearchScreeningEvent	I-object_type
+5	filmova	SearchScreeningEvent	I-object_type
+
+# id: 229
+# text-en: Play a song by Juanes on Last Fm
+# text: Pusti pesmu Huanesa [Juanes] na Last Fm-u
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	pesmu	PlayMusic	B-music_item
+3	Huanesa	PlayMusic	B-artist
+4	[	PlayMusic	O
+5	Juanes	PlayMusic	B-artist
+6	]	PlayMusic	O
+7	na	PlayMusic	O
+8	Last	PlayMusic	B-service
+9	Fm-u	PlayMusic	I-service
+
+# id: 230
+# text-en: Assign 0 points out of 6 to The Gate of Worlds
+# text: Dodeli The Gate of Worlds 0 poena od 6
+# intent: RateBook
+1	Dodeli	RateBook	O
+2	The	RateBook	B-object_name
+3	Gate	RateBook	I-object_name
+4	of	RateBook	I-object_name
+5	Worlds	RateBook	I-object_name
+6	0	RateBook	B-rating_value
+7	poena	RateBook	B-rating_unit
+8	od	RateBook	O
+9	6	RateBook	B-best_rating
+
+# id: 231
+# text-en: Play some David Mallett on last fm
+# text: Pusti nešto od Dejvida Maleta [David Mallett] na last fm-u
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	nešto	PlayMusic	O
+3	od	PlayMusic	O
+4	Dejvida	PlayMusic	B-artist
+5	Maleta	PlayMusic	I-artist
+6	[	PlayMusic	O
+7	David	PlayMusic	B-artist
+8	Mallett	PlayMusic	I-artist
+9	]	PlayMusic	O
+10	na	PlayMusic	O
+11	last	PlayMusic	B-service
+12	fm-u	PlayMusic	I-service
+
+# id: 232
+# text-en: Find me the movie times
+# text: Nađi mi vremena prikazivanja filmova
+# intent: SearchScreeningEvent
+1	Nađi	SearchScreeningEvent	O
+2	mi	SearchScreeningEvent	O
+3	vremena	SearchScreeningEvent	B-object_type
+4	prikazivanja	SearchScreeningEvent	I-object_type
+5	filmova	SearchScreeningEvent	I-object_type
+
+# id: 233
+# text-en: Will it be windy at 4 PM in NY ?
+# text: Hoće li biti vetrovito u 4 po podne u Njujorku [NY] ?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	vetrovito	weather/find	B-condition_description
+5	u	weather/find	O
+6	4	weather/find	B-datetime
+7	po	weather/find	I-datetime
+8	podne	weather/find	I-datetime
+9	u	weather/find	O
+10	Njujorku	weather/find	B-location
+11	[	weather/find	O
+12	NY	weather/find	B-location
+13	]	weather/find	O
+14	?	weather/find	O
+
+# id: 234
+# text-en: Book me a restaurant for nine in Statham
+# text: Rezerviši mi restoran za devetoro u Stetamu [Statham]
+# intent: BookRestaurant
+1	Rezerviši	BookRestaurant	O
+2	mi	BookRestaurant	O
+3	restoran	BookRestaurant	B-restaurant_type
+4	za	BookRestaurant	O
+5	devetoro	BookRestaurant	B-party_size_number
+6	u	BookRestaurant	O
+7	Stetamu	BookRestaurant	B-location
+8	[	BookRestaurant	O
+9	Statham	BookRestaurant	B-location
+10	]	BookRestaurant	O
+
+# id: 235
+# text-en: find a video game called IBM Program temporary fix
+# text: nađi video igru po imenu IBM Program temporary fix
+# intent: SearchCreativeWork
+1	nađi	SearchCreativeWork	O
+2	video	SearchCreativeWork	B-object_type
+3	igru	SearchCreativeWork	I-object_type
+4	po	SearchCreativeWork	O
+5	imenu	SearchCreativeWork	O
+6	IBM	SearchCreativeWork	B-object_name
+7	Program	SearchCreativeWork	I-object_name
+8	temporary	SearchCreativeWork	I-object_name
+9	fix	SearchCreativeWork	I-object_name
+
+# id: 236
+# text-en: Find a table for one at a popular churrascaria for three weeks from now
+# text: Nađi sto za jednog u popularnoj ćevabdžinici za tri nedelje
+# intent: BookRestaurant
+1	Nađi	BookRestaurant	O
+2	sto	BookRestaurant	O
+3	za	BookRestaurant	O
+4	jednog	BookRestaurant	B-party_size_number
+5	u	BookRestaurant	O
+6	popularnoj	BookRestaurant	B-sort
+7	ćevabdžinici	BookRestaurant	B-restaurant_type
+8	za	BookRestaurant	B-datetime
+9	tri	BookRestaurant	I-datetime
+10	nedelje	BookRestaurant	I-datetime
+
+# id: 237
+# text-en: For Mirrorshades I rate it three stars
+# text: Mirrorshades ocenjujem sa tri zvezdice
+# intent: RateBook
+1	Mirrorshades	RateBook	B-object_name
+2	ocenjujem	RateBook	O
+3	sa	RateBook	O
+4	tri	RateBook	B-rating_value
+5	zvezdice	RateBook	B-rating_unit
+
+# id: 238
+# text-en: Book a restaurant that serves agnolotti in Colorado City Idaho .
+# text: Rezerviši restoran koji služi anjoloti pastu u Kolorado Sitiju u Ajdahu .
+# intent: BookRestaurant
+1	Rezerviši	BookRestaurant	O
+2	restoran	BookRestaurant	B-restaurant_type
+3	koji	BookRestaurant	O
+4	služi	BookRestaurant	O
+5	anjoloti	BookRestaurant	B-served_dish
+6	pastu	BookRestaurant	I-served_dish
+7	u	BookRestaurant	O
+8	Kolorado	BookRestaurant	B-location
+9	Sitiju	BookRestaurant	I-location
+10	u	BookRestaurant	O
+11	Ajdahu	BookRestaurant	B-location
+12	.	BookRestaurant	O
+
+# id: 239
+# text-en: Add bright and breezy to my This Is Gucci Mane playlist
+# text: Dodaj bright and breezy na moju plejlistu This Is Gucci Mane
+# intent: AddToPlaylist
+1	Dodaj	AddToPlaylist	O
+2	bright	AddToPlaylist	B-entity_name
+3	and	AddToPlaylist	I-entity_name
+4	breezy	AddToPlaylist	I-entity_name
+5	na	AddToPlaylist	O
+6	moju	AddToPlaylist	B-reference
+7	plejlistu	AddToPlaylist	O
+8	This	AddToPlaylist	B-playlist
+9	Is	AddToPlaylist	I-playlist
+10	Gucci	AddToPlaylist	I-playlist
+11	Mane	AddToPlaylist	I-playlist
+
+# id: 240
+# text-en: Can you give me the weather for here
+# text: Možeš da mi daš vremensku prognozu za ovde
+# intent: weather/find
+1	Možeš	weather/find	O
+2	da	weather/find	O
+3	mi	weather/find	O
+4	daš	weather/find	O
+5	vremensku	weather/find	O
+6	prognozu	weather/find	O
+7	za	weather/find	O
+8	ovde	weather/find	B-location
+
+# id: 241
+# text-en: Add Ashley McIsaac to my r&b party classics playlist
+# text: Dodaj Ešlija MekAjzaka [Ashley McIsaac] na moju plejlistu r&b party classics
+# intent: AddToPlaylist
+1	Dodaj	AddToPlaylist	O
+2	Ešlija	AddToPlaylist	B-artist
+3	MekAjzaka	AddToPlaylist	I-artist
+4	[	AddToPlaylist	O
+5	Ashley	AddToPlaylist	B-artist
+6	McIsaac	AddToPlaylist	I-artist
+7	]	AddToPlaylist	O
+8	na	AddToPlaylist	O
+9	moju	AddToPlaylist	B-reference
+10	plejlistu	AddToPlaylist	O
+11	r	AddToPlaylist	B-playlist
+12	&	AddToPlaylist	I-playlist
+13	b	AddToPlaylist	I-playlist
+14	party	AddToPlaylist	I-playlist
+15	classics	AddToPlaylist	I-playlist
+
+# id: 242
+# text-en: I'd like to see the saga 12 Soulful Nights of Christmas
+# text: Želeo bih da vidim sagu 12 Soulful Nights of Christmas
+# intent: SearchCreativeWork
+1	Želeo	SearchCreativeWork	O
+2	bih	SearchCreativeWork	O
+3	da	SearchCreativeWork	O
+4	vidim	SearchCreativeWork	O
+5	sagu	SearchCreativeWork	B-object_type
+6	12	SearchCreativeWork	B-object_name
+7	Soulful	SearchCreativeWork	I-object_name
+8	Nights	SearchCreativeWork	I-object_name
+9	of	SearchCreativeWork	I-object_name
+10	Christmas	SearchCreativeWork	I-object_name
+
+# id: 243
+# text-en: I need a reservation for 6 PM. with a party of 10 at Sand Lake
+# text: Treba mi rezervacija za 6 po podne za grupu od desetoro u Send Lejku [Sand Lake]
+# intent: BookRestaurant
+1	Treba	BookRestaurant	O
+2	mi	BookRestaurant	O
+3	rezervacija	BookRestaurant	O
+4	za	BookRestaurant	O
+5	6	BookRestaurant	B-datetime
+6	po	BookRestaurant	I-datetime
+7	podne	BookRestaurant	I-datetime
+8	za	BookRestaurant	O
+9	grupu	BookRestaurant	O
+10	od	BookRestaurant	O
+11	desetoro	BookRestaurant	B-party_size_number
+12	u	BookRestaurant	O
+13	Send	BookRestaurant	B-location
+14	Lejku	BookRestaurant	I-location
+15	[	BookRestaurant	O
+16	Sand	BookRestaurant	B-location
+17	Lake	BookRestaurant	I-location
+18	]	BookRestaurant	I-location
+
+# id: 244
+# text-en: Use Groove Shark to play music from the eighties
+# text: Pusti muziku iz osamdesetih na Groove Shark
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	muziku	PlayMusic	O
+3	iz	PlayMusic	O
+4	osamdesetih	PlayMusic	B-datetime
+5	na	PlayMusic	O
+6	Groove	PlayMusic	B-service
+7	Shark	PlayMusic	I-service
+
+# id: 245
+# text-en: find soundtrack titled The House of the Yellow Carpet
+# text: nađi saundtrek pod nazivom The House of the Yellow Carpet
+# intent: SearchCreativeWork
+1	nađi	SearchCreativeWork	O
+2	saundtrek	SearchCreativeWork	B-object_type
+3	pod	SearchCreativeWork	O
+4	nazivom	SearchCreativeWork	O
+5	The	SearchCreativeWork	B-object_name
+6	House	SearchCreativeWork	I-object_name
+7	of	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Yellow	SearchCreativeWork	I-object_name
+10	Carpet	SearchCreativeWork	I-object_name
+
+# id: 246
+# text-en: Which is the nearest cinema showing movies that start in nineteen seconds ?
+# text: Koji je najbliži bioskop u kome se prikazuju filmovi koji počinju za devetnaest sekundi
+# intent: SearchScreeningEvent
+1	Koji	SearchScreeningEvent	O
+2	je	SearchScreeningEvent	O
+3	najbliži	SearchScreeningEvent	B-location
+4	bioskop	SearchScreeningEvent	B-object_location_type
+5	u	SearchScreeningEvent	O
+6	kome	SearchScreeningEvent	O
+7	se	SearchScreeningEvent	O
+8	prikazuju	SearchScreeningEvent	O
+9	filmovi	SearchScreeningEvent	B-movie_type
+10	koji	SearchScreeningEvent	O
+11	počinju	SearchScreeningEvent	O
+12	za	SearchScreeningEvent	B-datetime
+13	devetnaest	SearchScreeningEvent	I-datetime
+14	sekundi	SearchScreeningEvent	I-datetime
+
+# id: 247
+# text-en: Add morten harket to this is puccini
+# text: Dodaj mortena harketa [morten harket] na this is puccini
+# intent: AddToPlaylist
+1	Dodaj	AddToPlaylist	O
+2	mortena	AddToPlaylist	B-artist
+3	harketa	AddToPlaylist	I-artist
+4	[	AddToPlaylist	O
+5	morten	AddToPlaylist	B-artist
+6	harket	AddToPlaylist	I-artist
+7	]	AddToPlaylist	O
+8	na	AddToPlaylist	O
+9	this	AddToPlaylist	B-playlist
+10	is	AddToPlaylist	I-playlist
+11	puccini	AddToPlaylist	I-playlist
+
+# id: 248
+# text-en: Open Spotify and play a song from the twenties by Richard Harvey
+# text: Otvori Spotifaj i pusti pesmu iz dvadesetih od Ričarda Harvija [Richard Harvey]
+# intent: PlayMusic
+1	Otvori	PlayMusic	O
+2	Spotifaj	PlayMusic	B-service
+3	i	PlayMusic	O
+4	pusti	PlayMusic	O
+5	pesmu	PlayMusic	B-music_item
+6	iz	PlayMusic	O
+7	dvadesetih	PlayMusic	B-datetime
+8	od	PlayMusic	O
+9	Ričarda	PlayMusic	B-artist
+10	Harvija	PlayMusic	I-artist
+11	[	PlayMusic	O
+12	Richard	PlayMusic	B-artist
+13	Harvey	PlayMusic	I-artist
+14	]	PlayMusic	O
+
+# id: 249
+# text-en: I want to book a restaurant
+# text: Želim da rezervišem restoran
+# intent: BookRestaurant
+1	Želim	BookRestaurant	O
+2	da	BookRestaurant	O
+3	rezervišem	BookRestaurant	O
+4	restoran	BookRestaurant	B-restaurant_type
+
+# id: 250
+# text-en: Play the album Vibrations by Marion Elise Raven
+# text: Pusti album Vibrations od Marion Elis Rejven [Marion Elise Raven]
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	album	PlayMusic	B-music_item
+3	Vibrations	PlayMusic	B-album
+4	od	PlayMusic	O
+5	Marion	PlayMusic	B-artist
+6	Elis	PlayMusic	I-artist
+7	Rejven	PlayMusic	I-artist
+8	[	PlayMusic	O
+9	Marion	PlayMusic	B-artist
+10	Elise	PlayMusic	I-artist
+11	Raven	PlayMusic	I-artist
+12	]	PlayMusic	O
+
+# id: 251
+# text-en: add this artist to my Jazz playlist
+# text: dodaj ovog izvođača na moju plejlistu Jazz
+# intent: AddToPlaylist
+1	dodaj	AddToPlaylist	O
+2	ovog	AddToPlaylist	O
+3	izvođača	AddToPlaylist	B-music_item
+4	na	AddToPlaylist	O
+5	moju	AddToPlaylist	B-reference
+6	plejlistu	AddToPlaylist	O
+7	Jazz	AddToPlaylist	B-playlist
+
+# id: 252
+# text-en: I want to find the show From Where to Eternity .
+# text: Hoću da nađem seriju From Where to Eternity .
+# intent: SearchCreativeWork
+1	Hoću	SearchCreativeWork	O
+2	da	SearchCreativeWork	O
+3	nađem	SearchCreativeWork	O
+4	seriju	SearchCreativeWork	B-object_type
+5	From	SearchCreativeWork	B-object_name
+6	Where	SearchCreativeWork	I-object_name
+7	to	SearchCreativeWork	I-object_name
+8	Eternity	SearchCreativeWork	I-object_name
+9	.	SearchCreativeWork	O
+
+# id: 253
+# text-en: play the top-twenty songs by The Kleptones on Spotify
+# text: pusti top dvadeset pesama od The Kleptones na Spotifaju
+# intent: PlayMusic
+1	pusti	PlayMusic	O
+2	top	PlayMusic	B-sort
+3	dvadeset	PlayMusic	I-sort
+4	pesama	PlayMusic	O
+5	od	PlayMusic	O
+6	The	PlayMusic	B-artist
+7	Kleptones	PlayMusic	I-artist
+8	na	PlayMusic	O
+9	Spotifaju	PlayMusic	B-service
+
+# id: 254
+# text-en: How will the weather be in six minutes close to Moosic
+# text: Kakvo će biti vreme za šest minuta u blizini Musika [Moosic]
+# intent: weather/find
+1	Kakvo	weather/find	O
+2	će	weather/find	O
+3	biti	weather/find	O
+4	vreme	weather/find	O
+5	za	weather/find	B-datetime
+6	šest	weather/find	I-datetime
+7	minuta	weather/find	I-datetime
+8	u	weather/find	B-location
+9	blizini	weather/find	I-location
+10	Musika	weather/find	B-location
+11	[	weather/find	I-location
+12	Moosic	weather/find	B-location
+13	]	weather/find	O
+
+# id: 255
+# text-en: I wish to listen to some fifties music.
+# text: Želim da slušam neku muziku iz pedesetih.
+# intent: PlayMusic
+1	Želim	PlayMusic	O
+2	da	PlayMusic	O
+3	slušam	PlayMusic	O
+4	neku	PlayMusic	O
+5	muziku	PlayMusic	O
+6	iz	PlayMusic	O
+7	pedesetih	PlayMusic	B-datetime
+8	.	PlayMusic	O
+
+# id: 256
+# text-en: what time is Utamaro and His Five Women showing at Alamo Drafthouse Cinema
+# text: Kad se daje Utamaro and His Five Women u bioskopu Alamo Drafthouse
+# intent: SearchScreeningEvent
+1	Kad	SearchScreeningEvent	O
+2	se	SearchScreeningEvent	O
+3	daje	SearchScreeningEvent	O
+4	Utamaro	SearchScreeningEvent	B-movie_name
+5	and	SearchScreeningEvent	I-movie_name
+6	His	SearchScreeningEvent	I-movie_name
+7	Five	SearchScreeningEvent	I-movie_name
+8	Women	SearchScreeningEvent	I-movie_name
+9	u	SearchScreeningEvent	O
+10	bioskopu	SearchScreeningEvent	B-location
+11	Alamo	SearchScreeningEvent	I-location
+12	Drafthouse	SearchScreeningEvent	I-location
+
+# id: 257
+# text-en: Find a photograph of Adventure Time: The Secret of the Nameless Kingdom
+# text: Nađi fotografiju Adventure Time: The Secret of the Nameless Kingdom
+# intent: SearchCreativeWork
+1	Nađi	SearchCreativeWork	O
+2	fotografiju	SearchCreativeWork	B-object_type
+3	Adventure	SearchCreativeWork	B-object_name
+4	Time:	SearchCreativeWork	I-object_name
+5	The	SearchCreativeWork	I-object_name
+6	Secret	SearchCreativeWork	I-object_name
+7	of	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Nameless	SearchCreativeWork	I-object_name
+10	Kingdom	SearchCreativeWork	I-object_name
+
+# id: 258
+# text-en: put Do You Love Me on my acoustic soul playlist
+# text: stavi Do You Love Me na moju plejlistu acoustic soul
+# intent: AddToPlaylist
+1	stavi	AddToPlaylist	O
+2	Do	AddToPlaylist	B-entity_name
+3	You	AddToPlaylist	I-entity_name
+4	Love	AddToPlaylist	I-entity_name
+5	Me	AddToPlaylist	I-entity_name
+6	na	AddToPlaylist	O
+7	moju	AddToPlaylist	B-reference
+8	plejlistu	AddToPlaylist	O
+9	acoustic	AddToPlaylist	B-playlist
+10	soul	AddToPlaylist	I-playlist
+
+# id: 259
+# text-en: Play me the best Charles Neidich song
+# text: Pusti mi najbolju pesmu Čarlsa Najdika [Charles Neidich]
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	mi	PlayMusic	O
+3	najbolju	PlayMusic	B-sort
+4	pesmu	PlayMusic	B-music_item
+5	Čarlsa	PlayMusic	B-artist
+6	Najdika	PlayMusic	I-artist
+7	[	PlayMusic	O
+8	Charles	PlayMusic	B-artist
+9	Neidich	PlayMusic	I-artist
+10	]	PlayMusic	O
+
+# id: 260
+# text-en: On may the thirteenth, 2037 what will it be like in Wilderville , Montenegro
+# text: Trinaestog maja 2037. kako će biti u Vajldervilu u Crnoj Gori
+# intent: weather/find
+1	Trinaestog	weather/find	B-datetime
+2	maja	weather/find	I-datetime
+3	2037	weather/find	I-datetime
+4	.	weather/find	I-datetime
+5	kako	weather/find	O
+6	će	weather/find	O
+7	biti	weather/find	O
+8	u	weather/find	O
+9	Vajldervilu	weather/find	B-location
+10	u	weather/find	O
+11	Crnoj	weather/find	B-location
+12	Gori	weather/find	I-location
+
+# id: 261
+# text-en: Find movie schedules for ArcLight Hollywood .
+# text: Nađi raspored prikazivanja za ArcLight Hollywood .
+# intent: SearchScreeningEvent
+1	Nađi	SearchScreeningEvent	O
+2	raspored	SearchScreeningEvent	B-object_type
+3	prikazivanja	SearchScreeningEvent	I-object_type
+4	za	SearchScreeningEvent	O
+5	ArcLight	SearchScreeningEvent	B-location
+6	Hollywood	SearchScreeningEvent	I-location
+7	.	SearchScreeningEvent	O
+
+# id: 262
+# text-en: Find a TV series called Church of the Truly Warped .
+# text: Nađi TV seriju koja se zove Church of the Truly Warped .
+# intent: SearchCreativeWork
+1	Nađi	SearchCreativeWork	O
+2	TV	SearchCreativeWork	B-object_type
+3	seriju	SearchCreativeWork	I-object_type
+4	koja	SearchCreativeWork	O
+5	se	SearchCreativeWork	O
+6	zove	SearchCreativeWork	O
+7	Church	SearchCreativeWork	B-object_name
+8	of	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	Truly	SearchCreativeWork	I-object_name
+11	Warped	SearchCreativeWork	I-object_name
+12	.	SearchCreativeWork	O
+
+# id: 263
+# text-en: what is the forecast for in eighteen minutes here for colder temps
+# text: koja je prognoza za hladnije temperature ovde za osamnaest minuta
+# intent: weather/find
+1	koja	weather/find	O
+2	je	weather/find	O
+3	prognoza	weather/find	O
+4	za	weather/find	O
+5	hladnije	weather/find	B-condition_temperature
+6	temperature	weather/find	O
+7	ovde	weather/find	B-location
+8	za	weather/find	B-datetime
+9	osamnaest	weather/find	I-datetime
+10	minuta	weather/find	I-datetime
+
+# id: 264
+# text-en: Book a restaurant at sixteen o'clock in SC
+# text: Rezerviši restoran za u šestnaest časova u Južnoj Karolini [SC]
+# intent: BookRestaurant
+1	Rezerviši	BookRestaurant	O
+2	restoran	BookRestaurant	B-restaurant_type
+3	za	BookRestaurant	O
+4	u	BookRestaurant	O
+5	šestnaest	BookRestaurant	B-datetime
+6	časova	BookRestaurant	I-datetime
+7	u	BookRestaurant	O
+8	Južnoj	BookRestaurant	B-location
+9	Karolini	BookRestaurant	I-location
+10	[	BookRestaurant	O
+11	SC	BookRestaurant	B-location
+12	]	BookRestaurant	O
+
+# id: 265
+# text-en: stacy watson and adriana want to go to the best osteria in Hallowell Minnesota this afternoon
+# text: stejsi votson i adrijana [stacy watson and adriana] žele da idu u najbolju osteriju u Halovelu u Minesoti ovog popodneva
+# intent: BookRestaurant
+1	stejsi	BookRestaurant	B-party_size_description
+2	votson	BookRestaurant	I-party_size_description
+3	i	BookRestaurant	I-party_size_description
+4	adrijana	BookRestaurant	I-party_size_description
+5	[	BookRestaurant	O
+6	stacy	BookRestaurant	B-party_size_description
+7	watson	BookRestaurant	I-party_size_description
+8	and	BookRestaurant	I-party_size_description
+9	adriana	BookRestaurant	I-party_size_description
+10	]	BookRestaurant	O
+11	žele	BookRestaurant	O
+12	da	BookRestaurant	O
+13	idu	BookRestaurant	O
+14	u	BookRestaurant	O
+15	najbolju	BookRestaurant	B-sort
+16	osteriju	BookRestaurant	B-restaurant_type
+17	u	BookRestaurant	O
+18	Halovelu	BookRestaurant	B-location
+19	u	BookRestaurant	O
+20	Minesoti	BookRestaurant	B-location
+21	ovog	BookRestaurant	O
+22	popodneva	BookRestaurant	B-datetime
+
+# id: 266
+# text-en: is it going to be chilly in Western Sahara in 13 hours
+# text: hoće li biti prohladno u Zapadnoj Sahari za 13 sati
+# intent: weather/find
+1	hoće	weather/find	O
+2	li	weather/find	O
+3	biti	weather/find	O
+4	prohladno	weather/find	B-condition_temperature
+5	u	weather/find	O
+6	Zapadnoj	weather/find	B-location
+7	Sahari	weather/find	I-location
+8	za	weather/find	O
+9	13	weather/find	B-datetime
+10	sati	weather/find	I-datetime
+
+# id: 267
+# text-en: add Armen Movsessian to this is skepta playlist
+# text: dodaj Armena Movsesijana [Armen Movsessian] na plejlistu this is skepta
+# intent: AddToPlaylist
+1	dodaj	AddToPlaylist	O
+2	Armena	AddToPlaylist	B-artist
+3	Movsesijana	AddToPlaylist	I-artist
+4	[	AddToPlaylist	O
+5	Armen	AddToPlaylist	B-artist
+6	Movsessian	AddToPlaylist	I-artist
+7	]	AddToPlaylist	O
+8	na	AddToPlaylist	O
+9	plejlistu	AddToPlaylist	O
+10	this	AddToPlaylist	B-playlist
+11	is	AddToPlaylist	I-playlist
+12	skepta	AddToPlaylist	I-playlist
+
+# id: 268
+# text-en: Rate this current essay three out of 6 stars
+# text: Oceni ovaj esej sa tri od 6 zvezdica
+# intent: RateBook
+1	Oceni	RateBook	O
+2	ovaj	RateBook	B-object_select
+3	esej	RateBook	B-object_type
+4	sa	RateBook	O
+5	tri	RateBook	B-rating_value
+6	od	RateBook	O
+7	6	RateBook	B-best_rating
+8	zvezdica	RateBook	B-rating_unit
+
+# id: 269
+# text-en: Find a reservation for three at a top-rated restaurant
+# text: Nađi rezervaciju za troje u najcenjenijem restoranu
+# intent: BookRestaurant
+1	Nađi	BookRestaurant	O
+2	rezervaciju	BookRestaurant	O
+3	za	BookRestaurant	O
+4	troje	BookRestaurant	B-party_size_number
+5	u	BookRestaurant	O
+6	najcenjenijem	BookRestaurant	B-sort
+7	restoranu	BookRestaurant	B-restaurant_type
+
+# id: 270
+# text-en: rate the current novel 0 of 6
+# text: oceni ovaj roman sa 0 od 6
+# intent: RateBook
+1	oceni	RateBook	O
+2	ovaj	RateBook	B-object_select
+3	roman	RateBook	B-object_type
+4	sa	RateBook	O
+5	0	RateBook	B-rating_value
+6	od	RateBook	O
+7	6	RateBook	B-best_rating
+
+# id: 271
+# text-en: I'd like to see the showtimes for Silly Movie 2.0 at the movie house
+# text: Želela bih da vidim raspored prikazivanja za Silly Movie 2.0 u bioskopu
+# intent: SearchScreeningEvent
+1	Želela	SearchScreeningEvent	O
+2	bih	SearchScreeningEvent	O
+3	da	SearchScreeningEvent	O
+4	vidim	SearchScreeningEvent	O
+5	raspored	SearchScreeningEvent	O
+6	prikazivanja	SearchScreeningEvent	O
+7	za	SearchScreeningEvent	O
+8	Silly	SearchScreeningEvent	B-movie_name
+9	Movie	SearchScreeningEvent	I-movie_name
+10	2	SearchScreeningEvent	I-movie_name
+11	.	SearchScreeningEvent	I-movie_name
+12	0	SearchScreeningEvent	I-movie_name
+13	u	SearchScreeningEvent	O
+14	bioskopu	SearchScreeningEvent	B-object_location_type
+
+# id: 272
+# text-en: Will it get chillier in Sinclair in 8 hours
+# text: Hoće li zahladiti u Sinkleru za 8 sati
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	zahladiti	weather/find	B-condition_temperature
+4	u	weather/find	O
+5	Sinkleru	weather/find	B-location
+6	za	weather/find	B-datetime
+7	8	weather/find	I-datetime
+8	sati	weather/find	I-datetime
+
+# id: 273
+# text-en: add this tune to my in the arms of a woman
+# text: dodaj ovu pesmu na moju in the arms of a woman
+# intent: AddToPlaylist
+1	dodaj	AddToPlaylist	O
+2	ovu	AddToPlaylist	O
+3	pesmu	AddToPlaylist	B-music_item
+4	na	AddToPlaylist	O
+5	moju	AddToPlaylist	B-reference
+6	in	AddToPlaylist	B-playlist
+7	the	AddToPlaylist	I-playlist
+8	arms	AddToPlaylist	I-playlist
+9	of	AddToPlaylist	I-playlist
+10	a	AddToPlaylist	I-playlist
+11	woman	AddToPlaylist	I-playlist
+
+# id: 274
+# text-en: book for 3 in U.S. Virgin Islands
+# text: rezerviši za troje na Američkim Devičanskim Ostrvima
+# intent: BookRestaurant
+1	rezerviši	BookRestaurant	O
+2	za	BookRestaurant	O
+3	troje	BookRestaurant	B-party_size_number
+4	na	BookRestaurant	O
+5	Američkim	BookRestaurant	B-location
+6	Devičanskim	BookRestaurant	I-location
+7	Ostrvima	BookRestaurant	I-location
+
+# id: 275
+# text-en: Will it be chillier in La Mesa ?
+# text: Hoće li zahladiti u La Mesi [La Mesa] ?
+# intent: weather/find
+1	Hoće	weather/find	O
+2	li	weather/find	O
+3	zahladiti	weather/find	B-condition_temperature
+4	u	weather/find	O
+5	La	weather/find	B-location
+6	Mesi	weather/find	I-location
+7	[	weather/find	O
+8	La	weather/find	B-location
+9	Mesa	weather/find	I-location
+10	]	weather/find	O
+11	?	weather/find	O
+
+# id: 276
+# text-en: Rate this essay 2 out of 6 stars
+# text: Oceni ovaj esej sa 2 od 6 zvezdica
+# intent: RateBook
+1	Oceni	RateBook	O
+2	ovaj	RateBook	B-object_select
+3	esej	RateBook	B-object_type
+4	sa	RateBook	O
+5	2	RateBook	B-rating_value
+6	od	RateBook	O
+7	6	RateBook	B-best_rating
+8	zvezdica	RateBook	B-rating_unit
+
+# id: 277
+# text-en: Give three stars / 6 to My Sister, My Love
+# text: Daj My Sister, My Love tri zvezdice / 6
+# intent: RateBook
+1	Daj	RateBook	O
+2	My	RateBook	B-object_name
+3	Sister	RateBook	I-object_name
+4	,	RateBook	I-object_name
+5	My	RateBook	I-object_name
+6	Love	RateBook	I-object_name
+7	tri	RateBook	B-rating_value
+8	zvezdice	RateBook	B-rating_unit
+9	/	RateBook	O
+10	6	RateBook	B-best_rating
+
+# id: 278
+# text-en: Find the movie schedule for Marcus Corporation .
+# text: Nađi raspored filmova za Marcus Corporation .
+# intent: SearchScreeningEvent
+1	Nađi	SearchScreeningEvent	O
+2	raspored	SearchScreeningEvent	B-object_type
+3	filmova	SearchScreeningEvent	I-object_type
+4	za	SearchScreeningEvent	O
+5	Marcus	SearchScreeningEvent	B-location
+6	Corporation	SearchScreeningEvent	I-location
+7	.	SearchScreeningEvent	O
+
+# id: 279
+# text-en: What movies are scheduled in the neighbourhood ?
+# text: Koji filmovi su zakazani u komšiluku ?
+# intent: SearchScreeningEvent
+1	Koji	SearchScreeningEvent	O
+2	filmovi	SearchScreeningEvent	B-movie_type
+3	su	SearchScreeningEvent	O
+4	zakazani	SearchScreeningEvent	O
+5	u	SearchScreeningEvent	B-location
+6	komšiluku	SearchScreeningEvent	I-location
+7	?	SearchScreeningEvent	O
+
+# id: 280
+# text-en: add cross bones style to Guest List TaKe
+# text: dodaj cross bones style na Guest List TaKe
+# intent: AddToPlaylist
+1	dodaj	AddToPlaylist	O
+2	cross	AddToPlaylist	B-entity_name
+3	bones	AddToPlaylist	I-entity_name
+4	style	AddToPlaylist	I-entity_name
+5	na	AddToPlaylist	O
+6	Guest	AddToPlaylist	B-playlist
+7	List	AddToPlaylist	I-playlist
+8	TaKe	AddToPlaylist	I-playlist
+
+# id: 281
+# text-en: Find a reservation for a tavern that serves pizzas for a party of 6
+# text: Nađi rezervaciju za birtiju koja služi picu za grupu od 6
+# intent: BookRestaurant
+1	Nađi	BookRestaurant	O
+2	rezervaciju	BookRestaurant	O
+3	za	BookRestaurant	O
+4	birtiju	BookRestaurant	B-restaurant_type
+5	koja	BookRestaurant	O
+6	služi	BookRestaurant	O
+7	picu	BookRestaurant	B-served_dish
+8	za	BookRestaurant	O
+9	grupu	BookRestaurant	O
+10	od	BookRestaurant	O
+11	6	BookRestaurant	B-party_size_number
+
+# id: 282
+# text-en: Rate The Art of Nijinsky 5 points
+# text: Oceni The Art of Nijinsky sa 5 poena
+# intent: RateBook
+1	Oceni	RateBook	O
+2	The	RateBook	B-object_name
+3	Art	RateBook	I-object_name
+4	of	RateBook	I-object_name
+5	Nijinsky	RateBook	I-object_name
+6	sa	RateBook	O
+7	5	RateBook	B-rating_value
+8	poena	RateBook	B-rating_unit
+
+# id: 283
+# text-en: add Jacob Hoggard to my get going playlist
+# text: dodaj Džejkoba Hogarda [Jacob Hoggard] na moju plejlistu get going
+# intent: AddToPlaylist
+1	dodaj	AddToPlaylist	O
+2	Džejkoba	AddToPlaylist	B-artist
+3	Hogarda	AddToPlaylist	I-artist
+4	[	AddToPlaylist	O
+5	Jacob	AddToPlaylist	B-artist
+6	Hoggard	AddToPlaylist	I-artist
+7	]	AddToPlaylist	O
+8	na	AddToPlaylist	O
+9	moju	AddToPlaylist	B-reference
+10	plejlistu	AddToPlaylist	O
+11	get	AddToPlaylist	B-playlist
+12	going	AddToPlaylist	I-playlist
+
+# id: 284
+# text-en: Give me a list of movie times for films in the area .
+# text: Daj mi spisak prikazivanja za filmove u okolini .
+# intent: SearchScreeningEvent
+1	Daj	SearchScreeningEvent	O
+2	mi	SearchScreeningEvent	O
+3	spisak	SearchScreeningEvent	O
+4	prikazivanja	SearchScreeningEvent	B-object_type
+5	za	SearchScreeningEvent	O
+6	filmove	SearchScreeningEvent	B-movie_type
+7	u	SearchScreeningEvent	B-location
+8	okolini	SearchScreeningEvent	I-location
+9	.	SearchScreeningEvent	O
+
+# id: 285
+# text-en: find The Ultimate Gift , a television show
+# text: nađi The Ultimate Gift, TV seriju
+# intent: SearchCreativeWork
+1	nađi	SearchCreativeWork	O
+2	The	SearchCreativeWork	B-object_name
+3	Ultimate	SearchCreativeWork	I-object_name
+4	Gift	SearchCreativeWork	I-object_name
+5	,	SearchCreativeWork	O
+6	TV	SearchCreativeWork	B-object_type
+7	seriju	SearchCreativeWork	I-object_type
+
+# id: 286
+# text-en: What's the weather close-by Triumph
+# text: Kakvo je vreme u blizini Trijumfa [Triumph]
+# intent: weather/find
+1	Kakvo	weather/find	O
+2	je	weather/find	O
+3	vreme	weather/find	O
+4	u	weather/find	B-location
+5	blizini	weather/find	I-location
+6	Trijumfa	weather/find	B-location
+7	[	weather/find	O
+8	Triumph	weather/find	B-location
+9	]	weather/find	O
+
+# id: 287
+# text-en: when can i see A Handful of Dust in a movie theatre
+# text: Kada mogu da gledam A Handful of Dust u bioskopu
+# intent: SearchScreeningEvent
+1	Kada	SearchScreeningEvent	O
+2	mogu	SearchScreeningEvent	O
+3	da	SearchScreeningEvent	O
+4	gledam	SearchScreeningEvent	O
+5	A	SearchScreeningEvent	B-movie_name
+6	Handful	SearchScreeningEvent	I-movie_name
+7	of	SearchScreeningEvent	I-movie_name
+8	Dust	SearchScreeningEvent	I-movie_name
+9	u	SearchScreeningEvent	O
+10	bioskopu	SearchScreeningEvent	B-object_location_type
+
+# id: 288
+# text-en: Please put an album by Joseph Meyer on my POP GOES THE 80s playlist
+# text: Molim dodaj album Džozefa Majera [Joseph Meyer] na moju plejlistu POP GOES THE 80s
+# intent: AddToPlaylist
+1	Molim	AddToPlaylist	O
+2	dodaj	AddToPlaylist	O
+3	album	AddToPlaylist	B-music_item
+4	Džozefa	AddToPlaylist	B-artist
+5	Majera	AddToPlaylist	I-artist
+6	[	AddToPlaylist	O
+7	Joseph	AddToPlaylist	B-artist
+8	Meyer	AddToPlaylist	I-artist
+9	]	AddToPlaylist	O
+10	na	AddToPlaylist	O
+11	moju	AddToPlaylist	B-reference
+12	plejlistu	AddToPlaylist	O
+13	POP	AddToPlaylist	B-playlist
+14	GOES	AddToPlaylist	I-playlist
+15	THE	AddToPlaylist	I-playlist
+16	80s	AddToPlaylist	I-playlist
+
+# id: 289
+# text-en: show of From South Africa to South Carolina
+# text: prikazivanja From South Africa to South Carolina
+# intent: SearchCreativeWork
+1	prikazivanja	SearchCreativeWork	B-object_type
+2	From	SearchCreativeWork	B-object_name
+3	South	SearchCreativeWork	I-object_name
+4	Africa	SearchCreativeWork	I-object_name
+5	to	SearchCreativeWork	I-object_name
+6	South	SearchCreativeWork	I-object_name
+7	Carolina	SearchCreativeWork	I-object_name
+
+# id: 290
+# text-en: book a top-rated osteria seven weeks from now
+# text: rezerviši najcenjeniju osteriju za sedam nedelja
+# intent: BookRestaurant
+1	rezerviši	BookRestaurant	O
+2	najcenjeniju	BookRestaurant	B-sort
+3	osteriju	BookRestaurant	B-restaurant_type
+4	za	BookRestaurant	B-datetime
+5	sedam	BookRestaurant	I-datetime
+6	nedelja	BookRestaurant	I-datetime
+
+# id: 291
+# text-en: What movie house is showing Flower and Snake at 08:56:29 ?
+# text: Koji bioskop prikazuje Flower and Snake u 08:56:29 ?
+# intent: SearchScreeningEvent
+1	Koji	SearchScreeningEvent	O
+2	bioskop	SearchScreeningEvent	B-object_location_type
+3	prikazuje	SearchScreeningEvent	O
+4	Flower	SearchScreeningEvent	B-movie_name
+5	and	SearchScreeningEvent	I-movie_name
+6	Snake	SearchScreeningEvent	I-movie_name
+7	u	SearchScreeningEvent	O
+8	08:56:29	SearchScreeningEvent	B-datetime
+9	?	SearchScreeningEvent	O
+
+# id: 292
+# text-en: Find a restaurant in FM that servec quiche
+# text: Nađi restoran u FM koji služi kiš
+# intent: BookRestaurant
+1	Nađi	BookRestaurant	O
+2	restoran	BookRestaurant	B-restaurant_type
+3	u	BookRestaurant	O
+4	FM	BookRestaurant	B-location
+5	koji	BookRestaurant	O
+6	služi	BookRestaurant	O
+7	kiš	BookRestaurant	B-served_dish
+
+# id: 293
+# text-en: Book a reservation for 7 people at The French Laundry on june the 8th, 2029
+# text: Napravi rezervaciju za 7 osoba u The French Laundry za 8. jun 2029.
+# intent: BookRestaurant
+1	Napravi	BookRestaurant	O
+2	rezervaciju	BookRestaurant	O
+3	za	BookRestaurant	O
+4	7	BookRestaurant	B-party_size_number
+5	osoba	BookRestaurant	O
+6	u	BookRestaurant	O
+7	The	BookRestaurant	B-restaurant_name
+8	French	BookRestaurant	I-restaurant_name
+9	Laundry	BookRestaurant	I-restaurant_name
+10	za	BookRestaurant	O
+11	8	BookRestaurant	B-datetime
+12	.	BookRestaurant	I-datetime
+13	jun	BookRestaurant	I-datetime
+14	2029	BookRestaurant	I-datetime
+15	.	BookRestaurant	I-datetime
+
+# id: 294
+# text-en: play fourties tunes
+# text: pusti muziku iz četrdesetih
+# intent: PlayMusic
+1	pusti	PlayMusic	O
+2	muziku	PlayMusic	O
+3	iz	PlayMusic	O
+4	četrdesetih	PlayMusic	B-datetime
+
+# id: 295
+# text-en: When will the Santikos Theatres be showing animated movies
+# text: Kada će bioskopi Santikos da prikazuju animirane filmove
+# intent: SearchScreeningEvent
+1	Kada	SearchScreeningEvent	O
+2	će	SearchScreeningEvent	O
+3	bioskopi	SearchScreeningEvent	B-location
+4	Santikos	SearchScreeningEvent	I-location
+5	da	SearchScreeningEvent	O
+6	prikazuju	SearchScreeningEvent	O
+7	animirane	SearchScreeningEvent	B-movie_type
+8	filmove	SearchScreeningEvent	I-movie_type
+
+# id: 296
+# text-en: Play music on Itunes
+# text: Pusti muziku na Itunes
+# intent: PlayMusic
+1	Pusti	PlayMusic	O
+2	muziku	PlayMusic	O
+3	na	PlayMusic	O
+4	Itunes	PlayMusic	B-service
+
+# id: 297
+# text-en: show book name Straight No Chase
+# text: Pokaži knjigu pod nazivom Straight No Chase
+# intent: SearchCreativeWork
+1	Pokaži	SearchCreativeWork	O
+2	knjigu	SearchCreativeWork	B-object_type
+3	pod	SearchCreativeWork	O
+4	nazivom	SearchCreativeWork	O
+5	Straight	SearchCreativeWork	B-object_name
+6	No	SearchCreativeWork	I-object_name
+7	Chase	SearchCreativeWork	I-object_name
+
+# id: 298
+# text-en: Find the movie schedules for movies close by
+# text: Nađi raspored prikazivanja za filmove u blizini
+# intent: SearchScreeningEvent
+1	Nađi	SearchScreeningEvent	O
+2	raspored	SearchScreeningEvent	B-object_type
+3	prikazivanja	SearchScreeningEvent	I-object_type
+4	za	SearchScreeningEvent	O
+5	filmove	SearchScreeningEvent	B-movie_type
+6	u	SearchScreeningEvent	B-location
+7	blizini	SearchScreeningEvent	I-location
+
+# id: 299
+# text-en: this winter , meredith, betty and erika want to food at a gastropub that is in the same area as fran's location .
+# text: ove zime, meredit, beti i erika žele da jedu u gastropabu koji je u okolini Frenine lokacije .
+# intent: BookRestaurant
+1	ove	BookRestaurant	B-datetime
+2	zime	BookRestaurant	I-datetime
+3	,	BookRestaurant	O
+4	meredit	BookRestaurant	B-party_size_description
+5	,	BookRestaurant	I-party_size_description
+6	beti	BookRestaurant	I-party_size_description
+7	i	BookRestaurant	I-party_size_description
+8	erika	BookRestaurant	I-party_size_description
+9	žele	BookRestaurant	O
+10	da	BookRestaurant	O
+11	jedu	BookRestaurant	O
+12	u	BookRestaurant	O
+13	gastropabu	BookRestaurant	B-restaurant_type
+14	koji	BookRestaurant	O
+15	je	BookRestaurant	O
+16	u	BookRestaurant	B-location
+17	okolini	BookRestaurant	I-location
+18	Frenine	BookRestaurant	B-location
+19	lokacije	BookRestaurant	I-location
+20	.	BookRestaurant	O
+
+# id: 300
+# text-en: Add tune to my Para comer
+# text: Dodaj pesmu na moju listu Para comer
+# intent: AddToPlaylist
+1	Dodaj	AddToPlaylist	O
+2	pesmu	AddToPlaylist	B-music_item
+3	na	AddToPlaylist	O
+4	moju	AddToPlaylist	B-reference
+5	listu	AddToPlaylist	O
+6	Para	AddToPlaylist	B-playlist
+7	comer	AddToPlaylist	I-playlist
+

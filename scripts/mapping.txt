@@ -1,0 +1,12 @@
+current_location location
+country location
+city location
+geographic_poi location
+location_name location
+poi location
+spatial_relation location
+state location
+timeRange datetime
+year datetime
+playlist_owner reference
+GetWeather weather/find

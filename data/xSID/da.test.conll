@@ -1,0 +1,6359 @@
+# id: 89
+# text-en: show all reminders
+# text: vis alle påmindelser
+# intent: reminder/show_reminders
+1	vis	reminder/show_reminders	O
+2	alle	reminder/show_reminders	B-reference
+3	påmindelser	reminder/show_reminders	O
+
+# id: 290
+# text-en: Do I need a sweater?
+# text: Får jeg brug for en sweater?
+# intent: weather/find
+1	Får	weather/find	O
+2	jeg	weather/find	O
+3	brug	weather/find	O
+4	for	weather/find	O
+5	en	weather/find	O
+6	sweater	weather/find	B-weather/attribute
+7	?	weather/find	O
+
+# id: 101
+# text-en: Add a reminder for today at 4pm
+# text: Tilføj en påmindelse til i dag klokken 4 om aftenen
+# intent: reminder/set_reminder
+1	Tilføj	reminder/set_reminder	O
+2	en	reminder/set_reminder	O
+3	påmindelse	reminder/set_reminder	O
+4	til	reminder/set_reminder	O
+5	i	reminder/set_reminder	B-datetime
+6	dag	reminder/set_reminder	I-datetime
+7	klokken	reminder/set_reminder	I-datetime
+8	4	reminder/set_reminder	I-datetime
+9	om	reminder/set_reminder	I-datetime
+10	aftenen	reminder/set_reminder	I-datetime
+
+# id: 98
+# text-en: Cancel my reminder
+# text: Anullér min påmindelse
+# intent: reminder/cancel_reminder
+1	Anullér	reminder/cancel_reminder	O
+2	min	reminder/cancel_reminder	B-reference
+3	påmindelse	reminder/cancel_reminder	O
+
+# id: 108
+# text-en: Remind me to get gas.
+# text: Mind mig om at få benzin.
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	få	reminder/set_reminder	B-reminder/todo
+6	benzin	reminder/set_reminder	I-reminder/todo
+7	.	reminder/set_reminder	O
+
+# id: 267
+# text-en: Do I need an umbrella on Wednesday?
+# text: Får jeg brug for en paraply på onsdag?
+# intent: weather/find
+1	Får	weather/find	O
+2	jeg	weather/find	O
+3	brug	weather/find	O
+4	for	weather/find	O
+5	en	weather/find	O
+6	paraply	weather/find	B-weather/attribute
+7	på	weather/find	O
+8	onsdag	weather/find	B-datetime
+9	?	weather/find	O
+
+# id: 39
+# text-en: snooze my alarms for five minutes
+# text: snooze mine alarmer i fem minutter
+# intent: alarm/snooze_alarm
+1	snooze	alarm/snooze_alarm	O
+2	mine	alarm/snooze_alarm	B-reference
+3	alarmer	alarm/snooze_alarm	O
+4	i	alarm/snooze_alarm	B-datetime
+5	fem	alarm/snooze_alarm	I-datetime
+6	minutter	alarm/snooze_alarm	I-datetime
+
+# id: 112
+# text-en: set a birthday reminder for max
+# text: sæt en fødselsdags påmindelse til max
+# intent: reminder/set_reminder
+1	sæt	reminder/set_reminder	O
+2	en	reminder/set_reminder	O
+3	fødselsdags	reminder/set_reminder	B-reminder/todo
+4	påmindelse	reminder/set_reminder	I-reminder/todo
+5	til	reminder/set_reminder	I-reminder/todo
+6	max	reminder/set_reminder	I-reminder/todo
+
+# id: 243
+# text-en: Show me all reminders
+# text: Vis mig alle påmindelser
+# intent: reminder/show_reminders
+1	Vis	reminder/show_reminders	O
+2	mig	reminder/show_reminders	O
+3	alle	reminder/show_reminders	B-reference
+4	påmindelser	reminder/show_reminders	O
+
+# id: 224
+# text-en: Show all alarms.
+# text: Vis all alarmer.
+# intent: alarm/show_alarms
+1	Vis	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarmer	alarm/show_alarms	O
+4	.	alarm/show_alarms	O
+
+# id: 137
+# text-en: Is it going to rain today?
+# text: Kommer det til at regne i dag?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	regne	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 67
+# text-en: Set alarm for 8am
+# text: Sæt en alarm til klokken 8 om morgenen
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	klokken	alarm/set_alarm	B-datetime
+6	8	alarm/set_alarm	I-datetime
+7	om	alarm/set_alarm	I-datetime
+8	morgenen	alarm/set_alarm	I-datetime
+
+# id: 276
+# text-en: What is the temperature today?
+# text: Hvad er temperaturen i dag?
+# intent: weather/find
+1	Hvad	weather/find	O
+2	er	weather/find	O
+3	temperaturen	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 87
+# text-en: Show my reminder
+# text: Vis min påmidelse
+# intent: reminder/show_reminders
+1	Vis	reminder/show_reminders	O
+2	min	reminder/show_reminders	B-reference
+3	påmidelse	reminder/show_reminders	O
+
+# id: 64
+# text-en: Show all alarms
+# text: Vis alle alarmer
+# intent: alarm/show_alarms
+1	Vis	alarm/show_alarms	O
+2	alle	alarm/show_alarms	B-reference
+3	alarmer	alarm/show_alarms	O
+
+# id: 118
+# text-en: Remind me to talk to Ben about Georgia
+# text: Mind mig om at snakke med Ben om Georgia
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	snakke	reminder/set_reminder	B-reminder/todo
+6	med	reminder/set_reminder	I-reminder/todo
+7	Ben	reminder/set_reminder	I-reminder/todo
+8	om	reminder/set_reminder	I-reminder/todo
+9	Georgia	reminder/set_reminder	I-reminder/todo
+
+# id: 226
+# text-en: Set alarm for 5 am
+# text: Sæt alarm til klokken 5 om morgenen
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	til	alarm/set_alarm	O
+4	klokken	alarm/set_alarm	B-datetime
+5	5	alarm/set_alarm	I-datetime
+6	om	alarm/set_alarm	I-datetime
+7	morgenen	alarm/set_alarm	I-datetime
+
+# id: 201
+# text-en: is it cloudy today
+# text: er det skyet i dag
+# intent: weather/find
+1	er	weather/find	O
+2	det	weather/find	O
+3	skyet	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+
+# id: 203
+# text-en: How many inches of rain will we get today?
+# text: Hvor mange millimeter regn får vi i dag?
+# intent: weather/find
+1	Hvor	weather/find	O
+2	mange	weather/find	O
+3	millimeter	weather/find	B-weather/attribute
+4	regn	weather/find	I-weather/attribute
+5	får	weather/find	O
+6	vi	weather/find	O
+7	i	weather/find	B-datetime
+8	dag	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 252
+# text-en: Remind me to call my sister tomorrow
+# text: Mind mig om at ringe til min søster i morgen
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	ringe	reminder/set_reminder	B-reminder/todo
+6	til	reminder/set_reminder	I-reminder/todo
+7	min	reminder/set_reminder	I-reminder/todo
+8	søster	reminder/set_reminder	I-reminder/todo
+9	i	reminder/set_reminder	B-datetime
+10	morgen	reminder/set_reminder	I-datetime
+
+# id: 45
+# text-en: stop alarm
+# text: stop alarmen
+# intent: alarm/cancel_alarm
+1	stop	alarm/cancel_alarm	O
+2	alarmen	alarm/cancel_alarm	O
+
+# id: 161
+# text-en: Is it going to be hot this week?
+# text: Kommer det til at blive varmt denne uge?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	blive	weather/find	O
+6	varmt	weather/find	B-weather/attribute
+7	denne	weather/find	B-datetime
+8	uge	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 232
+# text-en: Set alarm for 3pm.
+# text: Sæt alarm til klokken 3 om eftermiddagen.
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	til	alarm/set_alarm	O
+4	klokken	alarm/set_alarm	B-datetime
+5	3	alarm/set_alarm	I-datetime
+6	om	alarm/set_alarm	I-datetime
+7	eftermiddagen	alarm/set_alarm	I-datetime
+8	.	alarm/set_alarm	O
+
+# id: 190
+# text-en: will it snow today
+# text: skal det sne i dag
+# intent: weather/find
+1	skal	weather/find	O
+2	det	weather/find	O
+3	sne	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+
+# id: 7
+# text-en: delete all alarms
+# text: slet alle alarmer
+# intent: alarm/cancel_alarm
+1	slet	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 241
+# text-en: Show me my reminders
+# text: Vis mig mine påmindelser
+# intent: reminder/show_reminders
+1	Vis	reminder/show_reminders	O
+2	mig	reminder/show_reminders	O
+3	mine	reminder/show_reminders	B-reference
+4	påmindelser	reminder/show_reminders	O
+
+# id: 227
+# text-en: How much time is left on alarm
+# text: Hvor meget tid er der tilbage på alarmen
+# intent: alarm/time_left_on_alarm
+1	Hvor	alarm/time_left_on_alarm	O
+2	meget	alarm/time_left_on_alarm	O
+3	tid	alarm/time_left_on_alarm	O
+4	er	alarm/time_left_on_alarm	O
+5	der	alarm/time_left_on_alarm	O
+6	tilbage	alarm/time_left_on_alarm	O
+7	på	alarm/time_left_on_alarm	O
+8	alarmen	alarm/time_left_on_alarm	O
+
+# id: 88
+# text-en: What are my reminders?
+# text: Hvilke påmindelser har jeg?
+# intent: reminder/show_reminders
+1	Hvilke	reminder/show_reminders	O
+2	påmindelser	reminder/show_reminders	O
+3	har	reminder/show_reminders	O
+4	jeg	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# id: 237
+# text-en: Set an alarm for 8am daily
+# text: Sæt en daglig alarm til klokken 8 om morgenen
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	daglig	alarm/set_alarm	B-recurring_datetime
+4	alarm	alarm/set_alarm	O
+5	til	alarm/set_alarm	O
+6	klokken	alarm/set_alarm	B-recurring_datetime
+7	8	alarm/set_alarm	I-recurring_datetime
+8	om	alarm/set_alarm	I-recurring_datetime
+9	morgenen	alarm/set_alarm	I-recurring_datetime
+
+# id: 37
+# text-en: can you show me the alarms?
+# text: kan du vise mig alarmerne?
+# intent: alarm/show_alarms
+1	kan	alarm/show_alarms	O
+2	du	alarm/show_alarms	O
+3	vise	alarm/show_alarms	O
+4	mig	alarm/show_alarms	O
+5	alarmerne	alarm/show_alarms	O
+6	?	alarm/show_alarms	O
+
+# id: 197
+# text-en: Is Disney world expecting storms today?
+# text: Forventer Disney world storm i dag?
+# intent: weather/find
+1	Forventer	weather/find	O
+2	Disney	weather/find	B-location
+3	world	weather/find	I-location
+4	storm	weather/find	B-weather/attribute
+5	i	weather/find	B-datetime
+6	dag	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 190
+# text-en: will it snow today
+# text: skal det sne i dag
+# intent: weather/find
+1	skal	weather/find	O
+2	det	weather/find	O
+3	sne	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+
+# id: 38
+# text-en: show all alarms
+# text: vis alle alarmer
+# intent: alarm/show_alarms
+1	vis	alarm/show_alarms	O
+2	alle	alarm/show_alarms	B-reference
+3	alarmer	alarm/show_alarms	O
+
+# id: 163
+# text-en: Is it cold today?
+# text: Er det koldt i dag?
+# intent: weather/find
+1	Er	weather/find	O
+2	det	weather/find	O
+3	koldt	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 53
+# text-en: Please cancel the alarm for Thursday morning.
+# text: Anullér alarmen torsdag morgen
+# intent: alarm/cancel_alarm
+1	Anullér	alarm/cancel_alarm	O
+2	alarmen	alarm/cancel_alarm	O
+3	torsdag	alarm/cancel_alarm	B-datetime
+4	morgen	alarm/cancel_alarm	I-datetime
+
+# id: 137
+# text-en: Is it going to rain today?
+# text: Kommer det til at regne i dag?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	regne	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 284
+# text-en: is it snowing in canada
+# text: sner det i canada
+# intent: weather/find
+1	sner	weather/find	B-weather/attribute
+2	det	weather/find	O
+3	i	weather/find	O
+4	canada	weather/find	B-location
+
+# id: 139
+# text-en: What will the high be today?
+# text: Hvad bliver den højeste temperatur i dag?
+# intent: weather/find
+1	Hvad	weather/find	O
+2	bliver	weather/find	O
+3	den	weather/find	O
+4	højeste	weather/find	B-weather/attribute
+5	temperatur	weather/find	I-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 194
+# text-en: Will it snow enough tonight to make travelling hazardous?
+# text: Vil det sne nok i aften til at gøre færdsel usikkert?
+# intent: weather/find
+1	Vil	weather/find	O
+2	det	weather/find	O
+3	sne	weather/find	B-weather/attribute
+4	nok	weather/find	O
+5	i	weather/find	B-datetime
+6	aften	weather/find	I-datetime
+7	til	weather/find	O
+8	at	weather/find	O
+9	gøre	weather/find	O
+10	færdsel	weather/find	O
+11	usikkert	weather/find	O
+12	?	weather/find	O
+
+# id: 89
+# text-en: show all reminders
+# text: vis alle påmindelser
+# intent: reminder/show_reminders
+1	vis	reminder/show_reminders	O
+2	alle	reminder/show_reminders	B-reference
+3	påmindelser	reminder/show_reminders	O
+
+# id: 245
+# text-en: delete all reminders
+# text: slet alle påmindelser
+# intent: reminder/cancel_reminder
+1	slet	reminder/cancel_reminder	O
+2	alle	reminder/cancel_reminder	B-reference
+3	påmindelser	reminder/cancel_reminder	O
+
+# id: 212
+# text-en: will i need a jacket tomorrow?
+# text: får jeg brug for en jakke i morgen?
+# intent: weather/find
+1	får	weather/find	O
+2	jeg	weather/find	O
+3	brug	weather/find	O
+4	for	weather/find	O
+5	en	weather/find	O
+6	jakke	weather/find	B-weather/attribute
+7	i	weather/find	B-datetime
+8	morgen	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 227
+# text-en: How much time is left on alarm
+# text: Hvor meget tid er der tilbage på alarmen
+# intent: alarm/time_left_on_alarm
+1	Hvor	alarm/time_left_on_alarm	O
+2	meget	alarm/time_left_on_alarm	O
+3	tid	alarm/time_left_on_alarm	O
+4	er	alarm/time_left_on_alarm	O
+5	der	alarm/time_left_on_alarm	O
+6	tilbage	alarm/time_left_on_alarm	O
+7	på	alarm/time_left_on_alarm	O
+8	alarmen	alarm/time_left_on_alarm	O
+
+# id: 221
+# text-en: Pause the alarm
+# text: Sæt alarmen på pause
+# intent: alarm/snooze_alarm
+1	Sæt	alarm/snooze_alarm	O
+2	alarmen	alarm/snooze_alarm	O
+3	på	alarm/snooze_alarm	O
+4	pause	alarm/snooze_alarm	O
+
+# id: 3
+# text-en: Show me all the alarms
+# text: Vis mig alle alarmer
+# intent: alarm/show_alarms
+1	Vis	alarm/show_alarms	O
+2	mig	alarm/show_alarms	O
+3	alle	alarm/show_alarms	B-reference
+4	alarmer	alarm/show_alarms	O
+
+# id: 205
+# text-en: What's the weather like in yellowstone?
+# text: Hvordan er vejret i yellowstone?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	er	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	O
+5	yellowstone	weather/find	B-location
+6	?	weather/find	O
+
+# id: 153
+# text-en: What's the weather like today?
+# text: Hvordan er vejret i dag?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	er	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 95
+# text-en: Delete my reminder for picking up Patrick from school tomorrow.
+# text: Slet mine påmindelse om at hente Patrick fra skole i morgen
+# intent: reminder/cancel_reminder
+1	Slet	reminder/cancel_reminder	O
+2	mine	reminder/cancel_reminder	B-reference
+3	påmindelse	reminder/cancel_reminder	O
+4	om	reminder/cancel_reminder	O
+5	at	reminder/cancel_reminder	O
+6	hente	reminder/cancel_reminder	B-reminder/todo
+7	Patrick	reminder/cancel_reminder	I-reminder/todo
+8	fra	reminder/cancel_reminder	I-reminder/todo
+9	skole	reminder/cancel_reminder	I-reminder/todo
+10	i	reminder/cancel_reminder	B-datetime
+11	morgen	reminder/cancel_reminder	I-datetime
+
+# id: 104
+# text-en: Remind me tomorrow at this time to schedule a doctor appointment
+# text: Påmind mig i morgen på denne tid at lave en aftale hos lægen
+# intent: reminder/set_reminder
+1	Påmind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	i	reminder/set_reminder	B-datetime
+4	morgen	reminder/set_reminder	I-datetime
+5	på	reminder/set_reminder	I-datetime
+6	denne	reminder/set_reminder	I-datetime
+7	tid	reminder/set_reminder	I-datetime
+8	at	reminder/set_reminder	O
+9	lave	reminder/set_reminder	B-reminder/todo
+10	en	reminder/set_reminder	I-reminder/todo
+11	aftale	reminder/set_reminder	I-reminder/todo
+12	hos	reminder/set_reminder	I-reminder/todo
+13	lægen	reminder/set_reminder	I-reminder/todo
+
+# id: 263
+# text-en: Remind me to drop off rent
+# text: Mind mig om at aflevere husleje
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	aflevere	reminder/set_reminder	B-reminder/todo
+6	husleje	reminder/set_reminder	I-reminder/todo
+
+# id: 151
+# text-en: when will the rain end?
+# text: hvornår stopper regnen?
+# intent: weather/find
+1	hvornår	weather/find	O
+2	stopper	weather/find	O
+3	regnen	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: 223
+# text-en: cancel alarms
+# text: anullér alarmer
+# intent: alarm/cancel_alarm
+1	anullér	alarm/cancel_alarm	O
+2	alarmer	alarm/cancel_alarm	O
+
+# id: 122
+# text-en: Remind me to call Stephanie on Tuesday
+# text: Mind mig om at ringe til Stephanie på tirsdag
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	ringe	reminder/set_reminder	B-reminder/todo
+6	til	reminder/set_reminder	I-reminder/todo
+7	Stephanie	reminder/set_reminder	I-reminder/todo
+8	på	reminder/set_reminder	O
+9	tirsdag	reminder/set_reminder	B-datetime
+
+# id: 48
+# text-en: show all my alarms
+# text: vis alle mine alarmer
+# intent: alarm/show_alarms
+1	vis	alarm/show_alarms	O
+2	alle	alarm/show_alarms	B-reference
+3	mine	alarm/show_alarms	O
+4	alarmer	alarm/show_alarms	O
+
+# id: 168
+# text-en: How hot will it get today?
+# text: Hvor varmt vil det blive i dag?
+# intent: weather/find
+1	Hvor	weather/find	O
+2	varmt	weather/find	B-weather/attribute
+3	vil	weather/find	O
+4	det	weather/find	O
+5	blive	weather/find	O
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 47
+# text-en: Set alarm for 5 pm tonight
+# text: Sæt en alarm til klokken 5 i aften
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	klokken	alarm/set_alarm	B-datetime
+6	5	alarm/set_alarm	I-datetime
+7	i	alarm/set_alarm	I-datetime
+8	aften	alarm/set_alarm	I-datetime
+
+# id: 247
+# text-en: remind me to go to the doctors on august 21st 3 pm
+# text: mind mig on at gå til lægen den 21 august klokken 3 om eftermiddagen
+# intent: reminder/set_reminder
+1	mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	on	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	gå	reminder/set_reminder	B-reminder/todo
+6	til	reminder/set_reminder	I-reminder/todo
+7	lægen	reminder/set_reminder	I-reminder/todo
+8	den	reminder/set_reminder	O
+9	21	reminder/set_reminder	B-datetime
+10	august	reminder/set_reminder	I-datetime
+11	klokken	reminder/set_reminder	I-datetime
+12	3	reminder/set_reminder	I-datetime
+13	om	reminder/set_reminder	I-datetime
+14	eftermiddagen	reminder/set_reminder	I-datetime
+
+# id: 244
+# text-en: cancel my recurring reminder to take meds daily at 7 am
+# text: anullér min tilbagevendende påmindelse om at tage medicin dagligt klokken 7 om morgenen
+# intent: reminder/cancel_reminder
+1	anullér	reminder/cancel_reminder	O
+2	min	reminder/cancel_reminder	O
+3	tilbagevendende	reminder/cancel_reminder	O
+4	påmindelse	reminder/cancel_reminder	O
+5	om	reminder/cancel_reminder	O
+6	at	reminder/cancel_reminder	O
+7	tage	reminder/cancel_reminder	B-reminder/todo
+8	medicin	reminder/cancel_reminder	I-reminder/todo
+9	dagligt	reminder/cancel_reminder	B-recurring_datetime
+10	klokken	reminder/cancel_reminder	I-recurring_datetime
+11	7	reminder/cancel_reminder	I-recurring_datetime
+12	om	reminder/cancel_reminder	I-recurring_datetime
+13	morgenen	reminder/cancel_reminder	I-recurring_datetime
+
+# id: 174
+# text-en: when does the forecast next show rain
+# text: hvornår viser vejrudsigten regn igen?
+# intent: weather/find
+1	hvornår	weather/find	O
+2	viser	weather/find	O
+3	vejrudsigten	weather/find	O
+4	regn	weather/find	B-weather/attribute
+5	igen	weather/find	O
+6	?	weather/find	O
+
+# id: 220
+# text-en: What time is my alarm set for tomorrow morning?
+# text: Hvad tid står min alarm til i morgen tidlig?
+# intent: alarm/show_alarms
+1	Hvad	alarm/show_alarms	O
+2	tid	alarm/show_alarms	O
+3	står	alarm/show_alarms	O
+4	min	alarm/show_alarms	B-reference
+5	alarm	alarm/show_alarms	O
+6	til	alarm/show_alarms	O
+7	i	alarm/show_alarms	B-datetime
+8	morgen	alarm/show_alarms	I-datetime
+9	tidlig	alarm/show_alarms	I-datetime
+10	?	alarm/show_alarms	O
+
+# id: 190
+# text-en: will it snow today
+# text: skal det sne i dag
+# intent: weather/find
+1	skal	weather/find	O
+2	det	weather/find	O
+3	sne	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+
+# id: 8
+# text-en: Turn off my alarm.
+# text: Sluk min alarm.
+# intent: alarm/cancel_alarm
+1	Sluk	alarm/cancel_alarm	O
+2	min	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	.	alarm/cancel_alarm	O
+
+# id: 35
+# text-en: Cancel all alarms
+# text: Anullér alle alarmer
+# intent: alarm/cancel_alarm
+1	Anullér	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 120
+# text-en: remind me to buy groceries
+# text: mind mig om at købe dagligvarer
+# intent: reminder/set_reminder
+1	mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	købe	reminder/set_reminder	B-reminder/todo
+6	dagligvarer	reminder/set_reminder	I-reminder/todo
+
+# id: 44
+# text-en: I need an alarm set for a 9 am breakfast
+# text: Jeg skal bruge en alarm til morgenmad klokken 9 om morgenen
+# intent: alarm/set_alarm
+1	Jeg	alarm/set_alarm	O
+2	skal	alarm/set_alarm	O
+3	bruge	alarm/set_alarm	O
+4	en	alarm/set_alarm	O
+5	alarm	alarm/set_alarm	O
+6	til	alarm/set_alarm	O
+7	morgenmad	alarm/set_alarm	O
+8	klokken	alarm/set_alarm	B-datetime
+9	9	alarm/set_alarm	I-datetime
+10	om	alarm/set_alarm	I-datetime
+11	morgenen	alarm/set_alarm	I-datetime
+
+# id: 127
+# text-en: set reminder to watch the Colts one hour before game starts
+# text: sæt en påmidelse til at se Colts en time før kampen starter
+# intent: reminder/set_reminder
+1	sæt	reminder/set_reminder	O
+2	en	reminder/set_reminder	O
+3	påmidelse	reminder/set_reminder	O
+4	til	reminder/set_reminder	O
+5	at	reminder/set_reminder	O
+6	se	reminder/set_reminder	B-reminder/todo
+7	Colts	reminder/set_reminder	I-reminder/todo
+8	en	reminder/set_reminder	B-datetime
+9	time	reminder/set_reminder	I-datetime
+10	før	reminder/set_reminder	I-datetime
+11	kampen	reminder/set_reminder	I-datetime
+12	starter	reminder/set_reminder	I-datetime
+
+# id: 1
+# text-en: cancel all alarms
+# text: slet alle alarmer
+# intent: alarm/cancel_alarm
+1	slet	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 106
+# text-en: Cancel my third reminder on this list.
+# text: Anullér min tredje påmindelse på denne liste.
+# intent: reminder/cancel_reminder
+1	Anullér	reminder/cancel_reminder	O
+2	min	reminder/cancel_reminder	B-reference
+3	tredje	reminder/cancel_reminder	I-reference
+4	påmindelse	reminder/cancel_reminder	O
+5	på	reminder/cancel_reminder	O
+6	denne	reminder/cancel_reminder	O
+7	liste	reminder/cancel_reminder	O
+8	.	reminder/cancel_reminder	O
+
+# id: 36
+# text-en: set alarm for 6 am
+# text: sæt alarm til klokken 6 om morgenen
+# intent: alarm/set_alarm
+1	sæt	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	til	alarm/set_alarm	O
+4	klokken	alarm/set_alarm	B-datetime
+5	6	alarm/set_alarm	I-datetime
+6	om	alarm/set_alarm	I-datetime
+7	morgenen	alarm/set_alarm	I-datetime
+
+# id: 49
+# text-en: Reset this alarm now and start at 2 pm
+# text: Nulstil alarmen nu og start den klokken 2 i eftermiddag
+# intent: alarm/cancel_alarm
+1	Nulstil	alarm/cancel_alarm	O
+2	alarmen	alarm/cancel_alarm	O
+3	nu	alarm/cancel_alarm	B-datetime
+4	og	alarm/cancel_alarm	O
+5	start	alarm/cancel_alarm	O
+6	den	alarm/cancel_alarm	O
+7	klokken	alarm/cancel_alarm	B-datetime
+8	2	alarm/cancel_alarm	I-datetime
+9	i	alarm/cancel_alarm	I-datetime
+10	eftermiddag	alarm/cancel_alarm	I-datetime
+
+# id: 154
+# text-en: Is it going to snow?
+# text: Kommer det til at sne?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	sne	weather/find	B-weather/attribute
+6	?	weather/find	O
+
+# id: 250
+# text-en: Remind me to pay rent.
+# text: Mind mig om at betale husleje.
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	betale	reminder/set_reminder	B-reminder/todo
+6	husleje	reminder/set_reminder	I-reminder/todo
+7	.	reminder/set_reminder	O
+
+# id: 283
+# text-en: whats the low for tomorrow
+# text: hvad er den laveste temperatur i morgen
+# intent: weather/find
+1	hvad	weather/find	O
+2	er	weather/find	O
+3	den	weather/find	O
+4	laveste	weather/find	B-weather/attribute
+5	temperatur	weather/find	I-weather/attribute
+6	i	weather/find	B-datetime
+7	morgen	weather/find	I-datetime
+
+# id: 213
+# text-en: Is it going to be sunny today?
+# text: Kommer det til at blive solskin i dag?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	blive	weather/find	O
+6	solskin	weather/find	B-weather/attribute
+7	i	weather/find	B-datetime
+8	dag	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 84
+# text-en: How many reminders do I have today?
+# text: Hvor mange påmindelser har jeg i dag?
+# intent: reminder/show_reminders
+1	Hvor	reminder/show_reminders	O
+2	mange	reminder/show_reminders	O
+3	påmindelser	reminder/show_reminders	O
+4	har	reminder/show_reminders	O
+5	jeg	reminder/show_reminders	O
+6	i	reminder/show_reminders	O
+7	dag	reminder/show_reminders	B-datetime
+8	?	reminder/show_reminders	O
+
+# id: 261
+# text-en: What are my reminders for tomorrow?
+# text: Hvad er mine påmindelser for i morgen?
+# intent: reminder/show_reminders
+1	Hvad	reminder/show_reminders	O
+2	er	reminder/show_reminders	O
+3	mine	reminder/show_reminders	B-reference
+4	påmindelser	reminder/show_reminders	O
+5	for	reminder/show_reminders	O
+6	i	reminder/show_reminders	B-datetime
+7	morgen	reminder/show_reminders	I-datetime
+8	?	reminder/show_reminders	O
+
+# id: 85
+# text-en: Cancel all my reminders.
+# text: Anullér alle mine påmidelser.
+# intent: reminder/cancel_reminder
+1	Anullér	reminder/cancel_reminder	O
+2	alle	reminder/cancel_reminder	B-reference
+3	mine	reminder/cancel_reminder	I-reference
+4	påmidelser	reminder/cancel_reminder	O
+5	.	reminder/cancel_reminder	O
+
+# id: 233
+# text-en: set alarm for 6am tomorrow
+# text: sæt alarm til klokken 6 i morgen tidlig
+# intent: alarm/set_alarm
+1	sæt	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	til	alarm/set_alarm	O
+4	klokken	alarm/set_alarm	B-datetime
+5	6	alarm/set_alarm	I-datetime
+6	i	alarm/set_alarm	I-datetime
+7	morgen	alarm/set_alarm	I-datetime
+8	tidlig	alarm/set_alarm	I-datetime
+
+# id: 76
+# text-en: Set alarm for 30 minutes
+# text: Sæt en alarm til 30 minutter
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	30	alarm/set_alarm	B-datetime
+6	minutter	alarm/set_alarm	I-datetime
+
+# id: 12
+# text-en: Set an alarm for an hour from now.
+# text: Sæt en alarm til en time fra nu.
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	en	alarm/set_alarm	B-datetime
+6	time	alarm/set_alarm	I-datetime
+7	fra	alarm/set_alarm	I-datetime
+8	nu	alarm/set_alarm	I-datetime
+9	.	alarm/set_alarm	O
+
+# id: 1
+# text-en: cancel all alarms
+# text: slet alle alarmer
+# intent: alarm/cancel_alarm
+1	slet	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 206
+# text-en: weather update Los Angeles
+# text: vejr opdatering Los Angeles
+# intent: weather/find
+1	vejr	weather/find	O
+2	opdatering	weather/find	O
+3	Los	weather/find	B-location
+4	Angeles	weather/find	I-location
+
+# id: 1
+# text-en: cancel all alarms
+# text: slet alle alarmer
+# intent: alarm/cancel_alarm
+1	slet	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 84
+# text-en: How many reminders do I have today?
+# text: Hvor mange påmindelser har jeg i dag?
+# intent: reminder/show_reminders
+1	Hvor	reminder/show_reminders	O
+2	mange	reminder/show_reminders	O
+3	påmindelser	reminder/show_reminders	O
+4	har	reminder/show_reminders	O
+5	jeg	reminder/show_reminders	O
+6	i	reminder/show_reminders	O
+7	dag	reminder/show_reminders	B-datetime
+8	?	reminder/show_reminders	O
+
+# id: 115
+# text-en: Remind me to get paper towels at the store tomorrow
+# text: Mind mig om at købe køkkenrulle i morgen
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	købe	reminder/set_reminder	B-reminder/todo
+6	køkkenrulle	reminder/set_reminder	I-reminder/todo
+7	i	reminder/set_reminder	B-datetime
+8	morgen	reminder/set_reminder	I-datetime
+
+# id: 93
+# text-en: show me all my reminders
+# text: vis mig alle mine påmindelser
+# intent: reminder/show_reminders
+1	vis	reminder/show_reminders	O
+2	mig	reminder/show_reminders	O
+3	alle	reminder/show_reminders	B-reference
+4	mine	reminder/show_reminders	I-reference
+5	påmindelser	reminder/show_reminders	O
+
+# id: 36
+# text-en: set alarm for 6 am
+# text: sæt alarm til klokken 6 om morgenen
+# intent: alarm/set_alarm
+1	sæt	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	til	alarm/set_alarm	O
+4	klokken	alarm/set_alarm	B-datetime
+5	6	alarm/set_alarm	I-datetime
+6	om	alarm/set_alarm	I-datetime
+7	morgenen	alarm/set_alarm	I-datetime
+
+# id: 181
+# text-en: will it snow tomorrow
+# text: skal det sne i morgen
+# intent: weather/find
+1	skal	weather/find	O
+2	det	weather/find	O
+3	sne	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	morgen	weather/find	I-datetime
+
+# id: 21
+# text-en: cancel my alarm for tomorrow morning
+# text: anullér min alarm til i morgen tidlig
+# intent: alarm/cancel_alarm
+1	anullér	alarm/cancel_alarm	O
+2	min	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	til	alarm/cancel_alarm	O
+5	i	alarm/cancel_alarm	B-datetime
+6	morgen	alarm/cancel_alarm	I-datetime
+7	tidlig	alarm/cancel_alarm	I-datetime
+
+# id: 59
+# text-en: Set the alarm for noon on Mondays only.
+# text: Sæt alarmen til middag på mandage kun.
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	alarmen	alarm/set_alarm	O
+3	til	alarm/set_alarm	O
+4	middag	alarm/set_alarm	B-recurring_datetime
+5	på	alarm/set_alarm	I-recurring_datetime
+6	mandage	alarm/set_alarm	I-recurring_datetime
+7	kun	alarm/set_alarm	O
+8	.	alarm/set_alarm	O
+
+# id: 168
+# text-en: How hot will it get today?
+# text: Hvor varmt vil det blive i dag?
+# intent: weather/find
+1	Hvor	weather/find	O
+2	varmt	weather/find	B-weather/attribute
+3	vil	weather/find	O
+4	det	weather/find	O
+5	blive	weather/find	O
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 242
+# text-en: remind me to set alarms for morning
+# text: mind mig om at sæt alarmer til i morgen
+# intent: reminder/set_reminder
+1	mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	sæt	reminder/set_reminder	B-reminder/todo
+6	alarmer	reminder/set_reminder	I-reminder/todo
+7	til	reminder/set_reminder	O
+8	i	reminder/set_reminder	B-datetime
+9	morgen	reminder/set_reminder	I-datetime
+
+# id: 7
+# text-en: delete all alarms
+# text: slet alle alarmer
+# intent: alarm/cancel_alarm
+1	slet	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 216
+# text-en: show my alarms
+# text: vis mine alarmer
+# intent: alarm/show_alarms
+1	vis	alarm/show_alarms	O
+2	mine	alarm/show_alarms	B-reference
+3	alarmer	alarm/show_alarms	O
+
+# id: 9
+# text-en: dismiss alarm
+# text: afvis alarm
+# intent: alarm/cancel_alarm
+1	afvis	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 276
+# text-en: What is the temperature today?
+# text: Hvad er temperaturen i dag?
+# intent: weather/find
+1	Hvad	weather/find	O
+2	er	weather/find	O
+3	temperaturen	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 9
+# text-en: dismiss alarm
+# text: afvis alarm
+# intent: alarm/cancel_alarm
+1	afvis	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 38
+# text-en: show all alarms
+# text: vis alle alarmer
+# intent: alarm/show_alarms
+1	vis	alarm/show_alarms	O
+2	alle	alarm/show_alarms	B-reference
+3	alarmer	alarm/show_alarms	O
+
+# id: 61
+# text-en: set alarm for every 30 minutes
+# text: sæt en alarm til hvert 30 minut
+# intent: alarm/set_alarm
+1	sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	hvert	alarm/set_alarm	B-recurring_datetime
+6	30	alarm/set_alarm	I-recurring_datetime
+7	minut	alarm/set_alarm	I-recurring_datetime
+
+# id: 166
+# text-en: What is the temperature going to be today?
+# text: Hvad kommer temperaturen til at blive i dag?
+# intent: weather/find
+1	Hvad	weather/find	O
+2	kommer	weather/find	O
+3	temperaturen	weather/find	B-weather/attribute
+4	til	weather/find	O
+5	at	weather/find	O
+6	blive	weather/find	O
+7	i	weather/find	B-datetime
+8	dag	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 177
+# text-en: Is it going to be hot today?
+# text: Kommer det til at blive varmt i dag?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	blive	weather/find	O
+6	varmt	weather/find	B-weather/attribute
+7	i	weather/find	B-datetime
+8	dag	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 269
+# text-en: Is it going to rain tomorrow?
+# text: Kommer det til at regne i morgen?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	regne	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	morgen	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 235
+# text-en: Cancel the next alarm
+# text: Anullér den næste alarm
+# intent: alarm/cancel_alarm
+1	Anullér	alarm/cancel_alarm	O
+2	den	alarm/cancel_alarm	O
+3	næste	alarm/cancel_alarm	B-reference
+4	alarm	alarm/cancel_alarm	O
+
+# id: 265
+# text-en: Remind me to go to grocery store today
+# text: Mind mig om at gå i supermarkedet i dag
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	gå	reminder/set_reminder	B-reminder/todo
+6	i	reminder/set_reminder	I-reminder/todo
+7	supermarkedet	reminder/set_reminder	I-reminder/todo
+8	i	reminder/set_reminder	B-datetime
+9	dag	reminder/set_reminder	I-datetime
+
+# id: 86
+# text-en: cancel my reminders for next week
+# text: anullér mine påmindelser for næste uge
+# intent: reminder/cancel_reminder
+1	anullér	reminder/cancel_reminder	O
+2	mine	reminder/cancel_reminder	B-reference
+3	påmindelser	reminder/cancel_reminder	O
+4	for	reminder/cancel_reminder	O
+5	næste	reminder/cancel_reminder	B-datetime
+6	uge	reminder/cancel_reminder	I-datetime
+
+# id: 114
+# text-en: remind me to take dog to groomer tuesday at 3pm
+# text: mind mig om at tage hunden til groomer på tisdag klokken 3 om eftermiddagen
+# intent: reminder/set_reminder
+1	mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	tage	reminder/set_reminder	B-reminder/todo
+6	hunden	reminder/set_reminder	I-reminder/todo
+7	til	reminder/set_reminder	I-reminder/todo
+8	groomer	reminder/set_reminder	I-reminder/todo
+9	på	reminder/set_reminder	O
+10	tisdag	reminder/set_reminder	B-datetime
+11	klokken	reminder/set_reminder	I-datetime
+12	3	reminder/set_reminder	I-datetime
+13	om	reminder/set_reminder	I-datetime
+14	eftermiddagen	reminder/set_reminder	I-datetime
+
+# id: 130
+# text-en: Remind me to pick up flowers for Jen for our anniversary on the 28th.
+# text: Mind mig om at hente blomster til Jen til vores jubilæum den 28.
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	hente	reminder/set_reminder	B-reminder/todo
+6	blomster	reminder/set_reminder	I-reminder/todo
+7	til	reminder/set_reminder	I-reminder/todo
+8	Jen	reminder/set_reminder	I-reminder/todo
+9	til	reminder/set_reminder	I-reminder/todo
+10	vores	reminder/set_reminder	I-reminder/todo
+11	jubilæum	reminder/set_reminder	I-reminder/todo
+12	den	reminder/set_reminder	B-datetime
+13	28	reminder/set_reminder	I-datetime
+14	.	reminder/set_reminder	I-datetime
+
+# id: 153
+# text-en: What's the weather like today?
+# text: Hvordan er vejret i dag?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	er	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 133
+# text-en: Remind me to make a doctor's appointment tomorrow.
+# text: Mind mig om at lave en aftale hos lægen i morgen.
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	lave	reminder/set_reminder	B-reminder/todo
+6	en	reminder/set_reminder	I-reminder/todo
+7	aftale	reminder/set_reminder	I-reminder/todo
+8	hos	reminder/set_reminder	I-reminder/todo
+9	lægen	reminder/set_reminder	I-reminder/todo
+10	i	reminder/set_reminder	B-datetime
+11	morgen	reminder/set_reminder	I-datetime
+12	.	reminder/set_reminder	O
+
+# id: 43
+# text-en: turn off all alarms
+# text: sluk alle alarmer
+# intent: alarm/cancel_alarm
+1	sluk	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 200
+# text-en: Should I bring a raincoat?
+# text: Skal jeg medbringe en regnjakke?
+# intent: weather/find
+1	Skal	weather/find	O
+2	jeg	weather/find	O
+3	medbringe	weather/find	O
+4	en	weather/find	O
+5	regnjakke	weather/find	B-weather/attribute
+6	?	weather/find	O
+
+# id: 157
+# text-en: What is the severe weather forecast?
+# text: Hvad er den alvorlige vejr udsigt?
+# intent: weather/find
+1	Hvad	weather/find	O
+2	er	weather/find	O
+3	den	weather/find	O
+4	alvorlige	weather/find	B-weather/attribute
+5	vejr	weather/find	O
+6	udsigt	weather/find	O
+7	?	weather/find	O
+
+# id: 97
+# text-en: remind me of next weeks doctor appointment
+# text: mind mig om næste uges læge aftale
+# intent: reminder/set_reminder
+1	mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	næste	reminder/set_reminder	B-datetime
+5	uges	reminder/set_reminder	I-datetime
+6	læge	reminder/set_reminder	B-reminder/todo
+7	aftale	reminder/set_reminder	I-reminder/todo
+
+# id: 99
+# text-en: set reminder to go to the store at 8am
+# text: sæt en påmindelse til at gå i butikken klokken 8 om morgenen
+# intent: reminder/set_reminder
+1	sæt	reminder/set_reminder	O
+2	en	reminder/set_reminder	O
+3	påmindelse	reminder/set_reminder	O
+4	til	reminder/set_reminder	O
+5	at	reminder/set_reminder	O
+6	gå	reminder/set_reminder	B-reminder/todo
+7	i	reminder/set_reminder	I-reminder/todo
+8	butikken	reminder/set_reminder	I-reminder/todo
+9	klokken	reminder/set_reminder	B-datetime
+10	8	reminder/set_reminder	I-datetime
+11	om	reminder/set_reminder	I-datetime
+12	morgenen	reminder/set_reminder	I-datetime
+
+# id: 91
+# text-en: Set reminder to get the dry cleaning.
+# text: Sæt en påmindelse om at hente renseri.
+# intent: reminder/set_reminder
+1	Sæt	reminder/set_reminder	O
+2	en	reminder/set_reminder	O
+3	påmindelse	reminder/set_reminder	O
+4	om	reminder/set_reminder	O
+5	at	reminder/set_reminder	O
+6	hente	reminder/set_reminder	B-reminder/todo
+7	renseri	reminder/set_reminder	I-reminder/todo
+8	.	reminder/set_reminder	O
+
+# id: 184
+# text-en: when is it cool down
+# text: hvornår er det kølet ned
+# intent: weather/find
+1	hvornår	weather/find	O
+2	er	weather/find	O
+3	det	weather/find	O
+4	kølet	weather/find	B-weather/attribute
+5	ned	weather/find	O
+
+# id: 141
+# text-en: will it rain this week
+# text: vil det regne denne uge
+# intent: weather/find
+1	vil	weather/find	O
+2	det	weather/find	O
+3	regne	weather/find	B-weather/attribute
+4	denne	weather/find	B-datetime
+5	uge	weather/find	I-datetime
+
+# id: 7
+# text-en: delete all alarms
+# text: slet alle alarmer
+# intent: alarm/cancel_alarm
+1	slet	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 223
+# text-en: cancel alarms
+# text: anullér alarmer
+# intent: alarm/cancel_alarm
+1	anullér	alarm/cancel_alarm	O
+2	alarmer	alarm/cancel_alarm	O
+
+# id: 219
+# text-en: show me my alarms
+# text: vis mig mine alarmer
+# intent: alarm/show_alarms
+1	vis	alarm/show_alarms	O
+2	mig	alarm/show_alarms	O
+3	mine	alarm/show_alarms	B-reference
+4	alarmer	alarm/show_alarms	O
+
+# id: 40
+# text-en: What time do I have an alarm set for?
+# text: Hvad tid har jeg sat en alarm til?
+# intent: alarm/show_alarms
+1	Hvad	alarm/show_alarms	O
+2	tid	alarm/show_alarms	O
+3	har	alarm/show_alarms	O
+4	jeg	alarm/show_alarms	O
+5	sat	alarm/show_alarms	O
+6	en	alarm/show_alarms	O
+7	alarm	alarm/show_alarms	O
+8	til	alarm/show_alarms	O
+9	?	alarm/show_alarms	O
+
+# id: 147
+# text-en: Is it going to rain Saturday?
+# text: Kommer det til at regne lørdag?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	regne	weather/find	B-weather/attribute
+6	lørdag	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 210
+# text-en: how hot is it going to get today
+# text: hvor varmt bliver det i dag
+# intent: weather/find
+1	hvor	weather/find	O
+2	varmt	weather/find	B-weather/attribute
+3	bliver	weather/find	O
+4	det	weather/find	O
+5	i	weather/find	B-datetime
+6	dag	weather/find	I-datetime
+
+# id: 231
+# text-en: Reset all alarms
+# text: Nulstil alle alarmer
+# intent: alarm/cancel_alarm
+1	Nulstil	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 164
+# text-en: Weather in Tahoe this weekend?
+# text: Vejret i Tahoe denne weekend?
+# intent: weather/find
+1	Vejret	weather/find	O
+2	i	weather/find	O
+3	Tahoe	weather/find	B-location
+4	denne	weather/find	B-datetime
+5	weekend	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 176
+# text-en: Do I need a coat today?
+# text: Har jeg brug for en jakke i dag?
+# intent: weather/find
+1	Har	weather/find	O
+2	jeg	weather/find	O
+3	brug	weather/find	O
+4	for	weather/find	O
+5	en	weather/find	O
+6	jakke	weather/find	B-weather/attribute
+7	i	weather/find	B-datetime
+8	dag	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 170
+# text-en: When will the rain stop?
+# text: Hvornår stopper regnen?
+# intent: weather/find
+1	Hvornår	weather/find	O
+2	stopper	weather/find	O
+3	regnen	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: 107
+# text-en: Set a reminder to call my school on Monday at 4 PM
+# text: Sæt en påmindelse til at ringe til min skole på mandag klokken 4 om aftenen
+# intent: reminder/set_reminder
+1	Sæt	reminder/set_reminder	O
+2	en	reminder/set_reminder	O
+3	påmindelse	reminder/set_reminder	O
+4	til	reminder/set_reminder	O
+5	at	reminder/set_reminder	O
+6	ringe	reminder/set_reminder	B-reminder/todo
+7	til	reminder/set_reminder	I-reminder/todo
+8	min	reminder/set_reminder	I-reminder/todo
+9	skole	reminder/set_reminder	I-reminder/todo
+10	på	reminder/set_reminder	O
+11	mandag	reminder/set_reminder	B-datetime
+12	klokken	reminder/set_reminder	I-datetime
+13	4	reminder/set_reminder	I-datetime
+14	om	reminder/set_reminder	I-datetime
+15	aftenen	reminder/set_reminder	I-datetime
+
+# id: 8
+# text-en: Turn off my alarm.
+# text: Sluk min alarm.
+# intent: alarm/cancel_alarm
+1	Sluk	alarm/cancel_alarm	O
+2	min	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	.	alarm/cancel_alarm	O
+
+# id: 296
+# text-en: How cold will it be tonight?
+# text: Hvor koldt bliver det i aften?
+# intent: weather/find
+1	Hvor	weather/find	O
+2	koldt	weather/find	B-weather/attribute
+3	bliver	weather/find	O
+4	det	weather/find	O
+5	i	weather/find	B-datetime
+6	aften	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 68
+# text-en: Set alarm for 7 am tomorrow.
+# text: Sæt en alarm til klokken 7 i morgen tidlig.
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	klokken	alarm/set_alarm	B-datetime
+6	7	alarm/set_alarm	I-datetime
+7	i	alarm/set_alarm	I-datetime
+8	morgen	alarm/set_alarm	I-datetime
+9	tidlig	alarm/set_alarm	I-datetime
+10	.	alarm/set_alarm	O
+
+# id: 81
+# text-en: Cancel my reminder to pick up Rob
+# text: Anullér min påmindelse om at hente Rob
+# intent: reminder/cancel_reminder
+1	Anullér	reminder/cancel_reminder	O
+2	min	reminder/cancel_reminder	B-reference
+3	påmindelse	reminder/cancel_reminder	O
+4	om	reminder/cancel_reminder	O
+5	at	reminder/cancel_reminder	O
+6	hente	reminder/cancel_reminder	B-reminder/todo
+7	Rob	reminder/cancel_reminder	I-reminder/todo
+
+# id: 117
+# text-en: Create a reminder for tomorrow to buy milk.
+# text: Lav en påmindelse til i morgen på at købe mælk.
+# intent: reminder/set_reminder
+1	Lav	reminder/set_reminder	O
+2	en	reminder/set_reminder	O
+3	påmindelse	reminder/set_reminder	O
+4	til	reminder/set_reminder	O
+5	i	reminder/set_reminder	B-datetime
+6	morgen	reminder/set_reminder	I-datetime
+7	på	reminder/set_reminder	O
+8	at	reminder/set_reminder	O
+9	købe	reminder/set_reminder	B-reminder/todo
+10	mælk	reminder/set_reminder	I-reminder/todo
+11	.	reminder/set_reminder	O
+
+# id: 41
+# text-en: set alarm for 6pm
+# text: sæt en alarm til klokken 6 om morgenen
+# intent: alarm/set_alarm
+1	sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	klokken	alarm/set_alarm	B-datetime
+6	6	alarm/set_alarm	I-datetime
+7	om	alarm/set_alarm	I-datetime
+8	morgenen	alarm/set_alarm	I-datetime
+
+# id: 24
+# text-en: schedule a daily alarm for 7:30 pm until deleted
+# text: lav en daglig alarm til 7:30 om aftenen indtil slettet
+# intent: alarm/set_alarm
+1	lav	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	daglig	alarm/set_alarm	B-recurring_datetime
+4	alarm	alarm/set_alarm	O
+5	til	alarm/set_alarm	O
+6	7:30	alarm/set_alarm	B-recurring_datetime
+7	om	alarm/set_alarm	I-recurring_datetime
+8	aftenen	alarm/set_alarm	I-recurring_datetime
+9	indtil	alarm/set_alarm	O
+10	slettet	alarm/set_alarm	O
+
+# id: 248
+# text-en: remind me to set an alarm for ups
+# text: mind mig om at sætte en alarm til ups
+# intent: reminder/set_reminder
+1	mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	sætte	reminder/set_reminder	B-reminder/todo
+6	en	reminder/set_reminder	I-reminder/todo
+7	alarm	reminder/set_reminder	I-reminder/todo
+8	til	reminder/set_reminder	I-reminder/todo
+9	ups	reminder/set_reminder	I-reminder/todo
+
+# id: 98
+# text-en: Cancel my reminder
+# text: Anullér min påmindelse
+# intent: reminder/cancel_reminder
+1	Anullér	reminder/cancel_reminder	O
+2	min	reminder/cancel_reminder	B-reference
+3	påmindelse	reminder/cancel_reminder	O
+
+# id: 271
+# text-en: Is it going to snow today?
+# text: Kommer det til at sne i dag?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	sne	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 3
+# text-en: Show me all the alarms
+# text: Vis mig alle alarmer
+# intent: alarm/show_alarms
+1	Vis	alarm/show_alarms	O
+2	mig	alarm/show_alarms	O
+3	alle	alarm/show_alarms	B-reference
+4	alarmer	alarm/show_alarms	O
+
+# id: 89
+# text-en: show all reminders
+# text: vis alle påmindelser
+# intent: reminder/show_reminders
+1	vis	reminder/show_reminders	O
+2	alle	reminder/show_reminders	B-reference
+3	påmindelser	reminder/show_reminders	O
+
+# id: 225
+# text-en: how much time is left on my alarm
+# text: hvor meget tid er der tilbage på min alarm
+# intent: alarm/time_left_on_alarm
+1	hvor	alarm/time_left_on_alarm	O
+2	meget	alarm/time_left_on_alarm	O
+3	tid	alarm/time_left_on_alarm	O
+4	er	alarm/time_left_on_alarm	O
+5	der	alarm/time_left_on_alarm	O
+6	tilbage	alarm/time_left_on_alarm	O
+7	på	alarm/time_left_on_alarm	O
+8	min	alarm/time_left_on_alarm	B-reference
+9	alarm	alarm/time_left_on_alarm	O
+
+# id: 55
+# text-en: set alarm for 2 hours
+# text: sæt en alarm til 2 timer
+# intent: alarm/set_alarm
+1	sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	2	alarm/set_alarm	B-datetime
+6	timer	alarm/set_alarm	I-datetime
+
+# id: 258
+# text-en: Remind me to get bread after work
+# text: Mind mig om at købe brød efter arbejde
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	købe	reminder/set_reminder	B-reminder/todo
+6	brød	reminder/set_reminder	I-reminder/todo
+7	efter	reminder/set_reminder	B-datetime
+8	arbejde	reminder/set_reminder	I-datetime
+
+# id: 279
+# text-en: Will it rain today?
+# text: Skal det regne i dag?
+# intent: weather/find
+1	Skal	weather/find	O
+2	det	weather/find	O
+3	regne	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 155
+# text-en: read today's weather forecast
+# text: læs vejrudsigten for i dag
+# intent: weather/find
+1	læs	weather/find	O
+2	vejrudsigten	weather/find	O
+3	for	weather/find	O
+4	i	weather/find	O
+5	dag	weather/find	B-datetime
+
+# id: 16
+# text-en: What time is my alarm set for?
+# text: Hvad tid er min alarm sat til?
+# intent: alarm/show_alarms
+1	Hvad	alarm/show_alarms	O
+2	tid	alarm/show_alarms	O
+3	er	alarm/show_alarms	O
+4	min	alarm/show_alarms	B-reference
+5	alarm	alarm/show_alarms	O
+6	sat	alarm/show_alarms	O
+7	til	alarm/show_alarms	O
+8	?	alarm/show_alarms	O
+
+# id: 255
+# text-en: at 4 tomorrow remind me to go to the mall
+# text: mind mig om at gå i centret i morgen klokken 4
+# intent: reminder/set_reminder
+1	mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	gå	reminder/set_reminder	B-reminder/todo
+6	i	reminder/set_reminder	I-reminder/todo
+7	centret	reminder/set_reminder	I-reminder/todo
+8	i	reminder/set_reminder	B-datetime
+9	morgen	reminder/set_reminder	I-datetime
+10	klokken	reminder/set_reminder	I-datetime
+11	4	reminder/set_reminder	I-datetime
+
+# id: 282
+# text-en: do I need to bring an umbrella today
+# text: skal jeg medbringe en paraply i dag
+# intent: weather/find
+1	skal	weather/find	O
+2	jeg	weather/find	O
+3	medbringe	weather/find	O
+4	en	weather/find	O
+5	paraply	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+
+# id: 87
+# text-en: Show my reminder
+# text: Vis min påmidelse
+# intent: reminder/show_reminders
+1	Vis	reminder/show_reminders	O
+2	min	reminder/show_reminders	B-reference
+3	påmidelse	reminder/show_reminders	O
+
+# id: 100
+# text-en: Show all my reminders
+# text: Vis alle mine påmindelser
+# intent: reminder/show_reminders
+1	Vis	reminder/show_reminders	O
+2	alle	reminder/show_reminders	B-reference
+3	mine	reminder/show_reminders	I-reference
+4	påmindelser	reminder/show_reminders	O
+
+# id: 111
+# text-en: Set a reminder for dog food on Monday.
+# text: Sæt en påmindelse til hunde mad på mandag.
+# intent: reminder/set_reminder
+1	Sæt	reminder/set_reminder	O
+2	en	reminder/set_reminder	O
+3	påmindelse	reminder/set_reminder	O
+4	til	reminder/set_reminder	O
+5	hunde	reminder/set_reminder	B-reminder/todo
+6	mad	reminder/set_reminder	I-reminder/todo
+7	på	reminder/set_reminder	O
+8	mandag	reminder/set_reminder	B-datetime
+9	.	reminder/set_reminder	O
+
+# id: 96
+# text-en: Set reminder "Sub yoga class Tuesday night at Bala" for tomorrow
+# text: Sæt en påmindelse "Sub yoga class Tuesday night at Bala" til i morgen
+# intent: reminder/set_reminder
+1	Sæt	reminder/set_reminder	O
+2	en	reminder/set_reminder	O
+3	påmindelse	reminder/set_reminder	O
+4	"	reminder/set_reminder	O
+5	Sub	reminder/set_reminder	B-reminder/todo
+6	yoga	reminder/set_reminder	I-reminder/todo
+7	class	reminder/set_reminder	I-reminder/todo
+8	Tuesday	reminder/set_reminder	I-reminder/todo
+9	night	reminder/set_reminder	I-reminder/todo
+10	at	reminder/set_reminder	I-reminder/todo
+11	Bala	reminder/set_reminder	I-reminder/todo
+12	"	reminder/set_reminder	O
+13	til	reminder/set_reminder	O
+14	i	reminder/set_reminder	B-datetime
+15	morgen	reminder/set_reminder	I-datetime
+
+# id: 83
+# text-en: Cancel all reminders for today
+# text: Anullér alle påmindelser for i dag
+# intent: reminder/cancel_reminder
+1	Anullér	reminder/cancel_reminder	O
+2	alle	reminder/cancel_reminder	B-reference
+3	påmindelser	reminder/cancel_reminder	O
+4	for	reminder/cancel_reminder	O
+5	i	reminder/cancel_reminder	O
+6	dag	reminder/cancel_reminder	B-datetime
+
+# id: 158
+# text-en: What will the weather be in New York city this week
+# text: Hvordan vil vejret være i New York City denne uge
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	vil	weather/find	O
+3	vejret	weather/find	O
+4	være	weather/find	O
+5	i	weather/find	O
+6	New	weather/find	B-location
+7	York	weather/find	I-location
+8	City	weather/find	I-location
+9	denne	weather/find	B-datetime
+10	uge	weather/find	I-datetime
+
+# id: 129
+# text-en: remind me of a doctor visit Thursday at 12 pm
+# text: mind mig om en aftale hos lægen torsdag klokken 12 om eftermiddagen
+# intent: reminder/set_reminder
+1	mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	en	reminder/set_reminder	O
+5	aftale	reminder/set_reminder	B-reminder/todo
+6	hos	reminder/set_reminder	I-reminder/todo
+7	lægen	reminder/set_reminder	I-reminder/todo
+8	torsdag	reminder/set_reminder	B-datetime
+9	klokken	reminder/set_reminder	I-datetime
+10	12	reminder/set_reminder	I-datetime
+11	om	reminder/set_reminder	I-datetime
+12	eftermiddagen	reminder/set_reminder	I-datetime
+
+# id: 27
+# text-en: Set an alarm for 6:50 pm
+# text: Sæt en alarm til klokken 6:50 i aften
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	klokken	alarm/set_alarm	B-datetime
+6	6:50	alarm/set_alarm	I-datetime
+7	i	alarm/set_alarm	I-datetime
+8	aften	alarm/set_alarm	I-datetime
+
+# id: 271
+# text-en: Is it going to snow today?
+# text: Kommer det til at sne i dag?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	sne	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 239
+# text-en: What alarms are set?
+# text: Hvilke alarmer er sat?
+# intent: alarm/show_alarms
+1	Hvilke	alarm/show_alarms	O
+2	alarmer	alarm/show_alarms	O
+3	er	alarm/show_alarms	O
+4	sat	alarm/show_alarms	O
+5	?	alarm/show_alarms	O
+
+# id: 90
+# text-en: Set a reminder alarm for October 7
+# text: Sæt en påmindelses alarm til den 7 oktober
+# intent: reminder/set_reminder
+1	Sæt	reminder/set_reminder	O
+2	en	reminder/set_reminder	O
+3	påmindelses	reminder/set_reminder	O
+4	alarm	reminder/set_reminder	O
+5	til	reminder/set_reminder	O
+6	den	reminder/set_reminder	B-datetime
+7	7	reminder/set_reminder	I-datetime
+8	oktober	reminder/set_reminder	I-datetime
+
+# id: 183
+# text-en: Will there be snow today?
+# text: Kommer det til at sne i dag?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	sne	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 50
+# text-en: snooze alarm for 15 minutes
+# text: snooze alarmen i 15 minutter
+# intent: alarm/snooze_alarm
+1	snooze	alarm/snooze_alarm	O
+2	alarmen	alarm/snooze_alarm	O
+3	i	alarm/snooze_alarm	O
+4	15	alarm/snooze_alarm	B-datetime
+5	minutter	alarm/snooze_alarm	I-datetime
+
+# id: 298
+# text-en: How much snow are they predicting?
+# text: Hvor meget sne forudser de der kommer?
+# intent: weather/find
+1	Hvor	weather/find	O
+2	meget	weather/find	O
+3	sne	weather/find	B-weather/attribute
+4	forudser	weather/find	O
+5	de	weather/find	O
+6	der	weather/find	O
+7	kommer	weather/find	O
+8	?	weather/find	O
+
+# id: 274
+# text-en: is it hot outside
+# text: er det varm udenfor
+# intent: weather/find
+1	er	weather/find	O
+2	det	weather/find	O
+3	varm	weather/find	B-weather/attribute
+4	udenfor	weather/find	B-location
+
+# id: 166
+# text-en: What is the temperature going to be today?
+# text: Hvad kommer temperaturen til at blive i dag?
+# intent: weather/find
+1	Hvad	weather/find	O
+2	kommer	weather/find	O
+3	temperaturen	weather/find	B-weather/attribute
+4	til	weather/find	O
+5	at	weather/find	O
+6	blive	weather/find	O
+7	i	weather/find	B-datetime
+8	dag	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 289
+# text-en: what will the weather be like in Dallas tomorrow
+# text: hvordan bliver vejret i Dallas i morgen
+# intent: weather/find
+1	hvordan	weather/find	O
+2	bliver	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	O
+5	Dallas	weather/find	B-location
+6	i	weather/find	B-datetime
+7	morgen	weather/find	I-datetime
+
+# id: 103
+# text-en: Show me all my reminders for today
+# text: Vis mig alle mine påmindelser for i dag
+# intent: reminder/show_reminders
+1	Vis	reminder/show_reminders	O
+2	mig	reminder/show_reminders	O
+3	alle	reminder/show_reminders	B-reference
+4	mine	reminder/show_reminders	I-reference
+5	påmindelser	reminder/show_reminders	O
+6	for	reminder/show_reminders	O
+7	i	reminder/show_reminders	B-datetime
+8	dag	reminder/show_reminders	I-datetime
+
+# id: 109
+# text-en: Set a weekly reminder for groceries.
+# text: Sæt en ugentlig påmindelse til indkøb.
+# intent: reminder/set_reminder
+1	Sæt	reminder/set_reminder	O
+2	en	reminder/set_reminder	O
+3	ugentlig	reminder/set_reminder	B-recurring_datetime
+4	påmindelse	reminder/set_reminder	O
+5	til	reminder/set_reminder	O
+6	indkøb	reminder/set_reminder	B-reminder/todo
+7	.	reminder/set_reminder	O
+
+# id: 285
+# text-en: weather
+# text: vejr
+# intent: weather/find
+1	vejr	weather/find	O
+
+# id: 144
+# text-en: Is it supposed to rain all day?
+# text: Skal det regne hele dagen?
+# intent: weather/find
+1	Skal	weather/find	O
+2	det	weather/find	O
+3	regne	weather/find	B-weather/attribute
+4	hele	weather/find	B-datetime
+5	dagen	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 162
+# text-en: is it going to rain tomorrow
+# text: kommer det til at regne i morgen
+# intent: weather/find
+1	kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	regne	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	morgen	weather/find	I-datetime
+
+# id: 134
+# text-en: Remind me to reply to work emails tonight
+# text: Mind mig om at svare på arbejds emails i aften
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	svare	reminder/set_reminder	B-reminder/todo
+6	på	reminder/set_reminder	I-reminder/todo
+7	arbejds	reminder/set_reminder	I-reminder/todo
+8	emails	reminder/set_reminder	I-reminder/todo
+9	i	reminder/set_reminder	B-datetime
+10	aften	reminder/set_reminder	I-datetime
+
+# id: 215
+# text-en: Delete alarms
+# text: Slet alarmer
+# intent: alarm/cancel_alarm
+1	Slet	alarm/cancel_alarm	O
+2	alarmer	alarm/cancel_alarm	O
+
+# id: 5
+# text-en: Cancel my alarms
+# text: Anullér mine alarmer
+# intent: alarm/cancel_alarm
+1	Anullér	alarm/cancel_alarm	O
+2	mine	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 179
+# text-en: Can I wear shorts today?
+# text: Kan jeg gå i shorts i dag?
+# intent: weather/find
+1	Kan	weather/find	O
+2	jeg	weather/find	O
+3	gå	weather/find	O
+4	i	weather/find	O
+5	shorts	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 202
+# text-en: Will it rain tomorrow?
+# text: Kommer det til at regne i morgen?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	regne	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	morgen	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 28
+# text-en: Set alarm for 10 am
+# text: Sæt en alarm til klokken 10 om morgenen
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	klokken	alarm/set_alarm	B-datetime
+6	10	alarm/set_alarm	I-datetime
+7	om	alarm/set_alarm	I-datetime
+8	morgenen	alarm/set_alarm	I-datetime
+
+# id: 165
+# text-en: Is it going to rain this week?
+# text: Kommer det til at regne denne uge?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	regne	weather/find	B-weather/attribute
+6	denne	weather/find	B-datetime
+7	uge	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 89
+# text-en: show all reminders
+# text: vis alle påmindelser
+# intent: reminder/show_reminders
+1	vis	reminder/show_reminders	O
+2	alle	reminder/show_reminders	B-reference
+3	påmindelser	reminder/show_reminders	O
+
+# id: 223
+# text-en: cancel alarms
+# text: anullér alarmer
+# intent: alarm/cancel_alarm
+1	anullér	alarm/cancel_alarm	O
+2	alarmer	alarm/cancel_alarm	O
+
+# id: 43
+# text-en: turn off all alarms
+# text: sluk alle alarmer
+# intent: alarm/cancel_alarm
+1	sluk	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 2
+# text-en: show all alarms preset
+# text: vis alle alarm indstillinger
+# intent: alarm/show_alarms
+1	vis	alarm/show_alarms	O
+2	alle	alarm/show_alarms	B-reference
+3	alarm	alarm/show_alarms	O
+4	indstillinger	alarm/show_alarms	O
+
+# id: 69
+# text-en: Set alarm every minute for 20 minutes.
+# text: Sæt en alarm til hvert minut i 20 minutter.
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	hvert	alarm/set_alarm	B-recurring_datetime
+6	minut	alarm/set_alarm	I-recurring_datetime
+7	i	alarm/set_alarm	I-recurring_datetime
+8	20	alarm/set_alarm	I-recurring_datetime
+9	minutter	alarm/set_alarm	I-recurring_datetime
+10	.	alarm/set_alarm	O
+
+# id: 88
+# text-en: What are my reminders?
+# text: Hvilke påmindelser har jeg?
+# intent: reminder/show_reminders
+1	Hvilke	reminder/show_reminders	O
+2	påmindelser	reminder/show_reminders	O
+3	har	reminder/show_reminders	O
+4	jeg	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# id: 31
+# text-en: cancel alarm for tomorrow
+# text: anullér alarm for i morgen
+# intent: alarm/cancel_alarm
+1	anullér	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+3	for	alarm/cancel_alarm	O
+4	i	alarm/cancel_alarm	B-datetime
+5	morgen	alarm/cancel_alarm	I-datetime
+
+# id: 198
+# text-en: Do I need an umbrella today?
+# text: Skal jeg bruge en paraply i dag?
+# intent: weather/find
+1	Skal	weather/find	O
+2	jeg	weather/find	O
+3	bruge	weather/find	O
+4	en	weather/find	O
+5	paraply	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 182
+# text-en: is it supposed to snow today?
+# text: skal det sne i dag?
+# intent: weather/find
+1	skal	weather/find	O
+2	det	weather/find	O
+3	sne	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 131
+# text-en: Remind me to call my mom tonight
+# text: Mind mig om at ringe til min mor i aften
+# intent: reminder/set_reminder
+1	Mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	ringe	reminder/set_reminder	B-reminder/todo
+6	til	reminder/set_reminder	I-reminder/todo
+7	min	reminder/set_reminder	I-reminder/todo
+8	mor	reminder/set_reminder	I-reminder/todo
+9	i	reminder/set_reminder	B-datetime
+10	aften	reminder/set_reminder	I-datetime
+
+# id: 294
+# text-en: will it rain today?
+# text: skal det regne i dag?
+# intent: weather/find
+1	skal	weather/find	O
+2	det	weather/find	O
+3	regne	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 147
+# text-en: Is it going to rain Saturday?
+# text: Kommer det til at regne lørdag?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	regne	weather/find	B-weather/attribute
+6	lørdag	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 218
+# text-en: Will you set the alarm every minute for 20 minutes?
+# text: Vil du sætte alarmen hvert minut i 20 minutter?
+# intent: alarm/set_alarm
+1	Vil	alarm/set_alarm	O
+2	du	alarm/set_alarm	O
+3	sætte	alarm/set_alarm	O
+4	alarmen	alarm/set_alarm	O
+5	hvert	alarm/set_alarm	B-recurring_datetime
+6	minut	alarm/set_alarm	I-recurring_datetime
+7	i	alarm/set_alarm	I-recurring_datetime
+8	20	alarm/set_alarm	I-recurring_datetime
+9	minutter	alarm/set_alarm	I-recurring_datetime
+10	?	alarm/set_alarm	O
+
+# id: 189
+# text-en: Tropical storms in caribbean
+# text: Tropiske storme i Caribien
+# intent: weather/find
+1	Tropiske	weather/find	B-weather/attribute
+2	storme	weather/find	I-weather/attribute
+3	i	weather/find	O
+4	Caribien	weather/find	B-location
+
+# id: 1
+# text-en: cancel all alarms
+# text: slet alle alarmer
+# intent: alarm/cancel_alarm
+1	slet	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 71
+# text-en: Set alarm for every nine minutes.
+# text: Sæt en alarm til hvert niende minut.
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	hvert	alarm/set_alarm	B-recurring_datetime
+6	niende	alarm/set_alarm	I-recurring_datetime
+7	minut	alarm/set_alarm	I-recurring_datetime
+8	.	alarm/set_alarm	O
+
+# id: 121
+# text-en: Delete the last two reminders on my list
+# text: Slet de to sidste påmindelser på min liste
+# intent: reminder/cancel_reminder
+1	Slet	reminder/cancel_reminder	O
+2	de	reminder/cancel_reminder	O
+3	to	reminder/cancel_reminder	B-reference
+4	sidste	reminder/cancel_reminder	I-reference
+5	påmindelser	reminder/cancel_reminder	O
+6	på	reminder/cancel_reminder	O
+7	min	reminder/cancel_reminder	O
+8	liste	reminder/cancel_reminder	O
+
+# id: 152
+# text-en: hows the weather today
+# text: hvordan er vejret i dag?
+# intent: weather/find
+1	hvordan	weather/find	O
+2	er	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 4
+# text-en: turn on my alarm
+# text: tænd min alarm
+# intent: alarm/set_alarm
+1	tænd	alarm/set_alarm	O
+2	min	alarm/set_alarm	B-reference
+3	alarm	alarm/set_alarm	O
+
+# id: 171
+# text-en: What is the humidity today?
+# text: Hvordan er luftfugtigheden i dag?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	er	weather/find	O
+3	luftfugtigheden	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 248
+# text-en: remind me to set an alarm for ups
+# text: mind mig om at sætte en alarm til ups
+# intent: reminder/set_reminder
+1	mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	sætte	reminder/set_reminder	B-reminder/todo
+6	en	reminder/set_reminder	I-reminder/todo
+7	alarm	reminder/set_reminder	I-reminder/todo
+8	til	reminder/set_reminder	I-reminder/todo
+9	ups	reminder/set_reminder	I-reminder/todo
+
+# id: 160
+# text-en: Will it snow this weekend?
+# text: Vil det sne denne weekend?
+# intent: weather/find
+1	Vil	weather/find	O
+2	det	weather/find	O
+3	sne	weather/find	B-weather/attribute
+4	denne	weather/find	B-datetime
+5	weekend	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 168
+# text-en: How hot will it get today?
+# text: Hvor varmt vil det blive i dag?
+# intent: weather/find
+1	Hvor	weather/find	O
+2	varmt	weather/find	B-weather/attribute
+3	vil	weather/find	O
+4	det	weather/find	O
+5	blive	weather/find	O
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 74
+# text-en: What time is my alarm set for
+# text: Hvad tid er min alarm sat til
+# intent: alarm/show_alarms
+1	Hvad	alarm/show_alarms	O
+2	tid	alarm/show_alarms	O
+3	er	alarm/show_alarms	O
+4	min	alarm/show_alarms	B-reference
+5	alarm	alarm/show_alarms	O
+6	sat	alarm/show_alarms	O
+7	til	alarm/show_alarms	O
+
+# id: 153
+# text-en: What's the weather like today?
+# text: Hvordan er vejret i dag?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	er	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 202
+# text-en: Will it rain tomorrow?
+# text: Kommer det til at regne i morgen?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	regne	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	morgen	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 52
+# text-en: Cancel my alarm for 5:15am on Tuesday
+# text: Anullér min alarm tirsdag morgen klokken 5:15
+# intent: alarm/cancel_alarm
+1	Anullér	alarm/cancel_alarm	O
+2	min	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	tirsdag	alarm/cancel_alarm	B-datetime
+5	morgen	alarm/cancel_alarm	I-datetime
+6	klokken	alarm/cancel_alarm	I-datetime
+7	5:15	alarm/cancel_alarm	I-datetime
+
+# id: 262
+# text-en: cancel reminder for tonight's game
+# text: anullér påmindelse for kampen i aften
+# intent: reminder/cancel_reminder
+1	anullér	reminder/cancel_reminder	O
+2	påmindelse	reminder/cancel_reminder	O
+3	for	reminder/cancel_reminder	O
+4	kampen	reminder/cancel_reminder	B-reminder/todo
+5	i	reminder/cancel_reminder	B-datetime
+6	aften	reminder/cancel_reminder	I-datetime
+
+# id: 56
+# text-en: set alarm for 3am
+# text: sæt en alarm til klokken 3 om morgenen
+# intent: alarm/set_alarm
+1	sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	klokken	alarm/set_alarm	B-datetime
+6	3	alarm/set_alarm	I-datetime
+7	om	alarm/set_alarm	I-datetime
+8	morgenen	alarm/set_alarm	I-datetime
+
+# id: 228
+# text-en: cancel all alarms for saturday
+# text: anullér alle alarmer til på lørdag
+# intent: alarm/cancel_alarm
+1	anullér	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+4	til	alarm/cancel_alarm	O
+5	på	alarm/cancel_alarm	O
+6	lørdag	alarm/cancel_alarm	B-datetime
+
+# id: 136
+# text-en: i need a reminder to pick Lisa up
+# text: jeg skal bruge en påmindelse til at hente Lisa
+# intent: reminder/set_reminder
+1	jeg	reminder/set_reminder	O
+2	skal	reminder/set_reminder	O
+3	bruge	reminder/set_reminder	O
+4	en	reminder/set_reminder	O
+5	påmindelse	reminder/set_reminder	O
+6	til	reminder/set_reminder	O
+7	at	reminder/set_reminder	O
+8	hente	reminder/set_reminder	B-reminder/todo
+9	Lisa	reminder/set_reminder	I-reminder/todo
+
+# id: 156
+# text-en: What is the high today?
+# text: Hvad er den højeste temperatur i dag?
+# intent: weather/find
+1	Hvad	weather/find	O
+2	er	weather/find	O
+3	den	weather/find	O
+4	højeste	weather/find	B-weather/attribute
+5	temperatur	weather/find	I-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 169
+# text-en: Is it going to be cloudy today in Grindstone?
+# text: Bliver det skyet i Grindstone i dag?
+# intent: weather/find
+1	Bliver	weather/find	O
+2	det	weather/find	O
+3	skyet	weather/find	B-weather/attribute
+4	i	weather/find	O
+5	Grindstone	weather/find	B-location
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 128
+# text-en: Remind me later
+# text: Påmind mig senere
+# intent: reminder/set_reminder
+1	Påmind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	senere	reminder/set_reminder	B-datetime
+
+# id: 195
+# text-en: what is the weather in france today
+# text: hvordan er vejret i frankrig i dag
+# intent: weather/find
+1	hvordan	weather/find	O
+2	er	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	O
+5	frankrig	weather/find	B-location
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+
+# id: 275
+# text-en: Will it be sunny for the party on Saturday?
+# text: Bliver det solskin til festen på lørdag?
+# intent: weather/find
+1	Bliver	weather/find	O
+2	det	weather/find	O
+3	solskin	weather/find	B-weather/attribute
+4	til	weather/find	O
+5	festen	weather/find	O
+6	på	weather/find	O
+7	lørdag	weather/find	B-datetime
+8	?	weather/find	O
+
+# id: 269
+# text-en: Is it going to rain tomorrow?
+# text: Kommer det til at regne i morgen?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	regne	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	morgen	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 179
+# text-en: Can I wear shorts today?
+# text: Kan jeg gå i shorts i dag?
+# intent: weather/find
+1	Kan	weather/find	O
+2	jeg	weather/find	O
+3	gå	weather/find	O
+4	i	weather/find	O
+5	shorts	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 87
+# text-en: Show my reminder
+# text: Vis min påmidelse
+# intent: reminder/show_reminders
+1	Vis	reminder/show_reminders	O
+2	min	reminder/show_reminders	B-reference
+3	påmidelse	reminder/show_reminders	O
+
+# id: 142
+# text-en: what is the average forecast for september
+# text: hvad er den gennemsnitlige vejrudsigt for september
+# intent: weather/find
+1	hvad	weather/find	O
+2	er	weather/find	O
+3	den	weather/find	O
+4	gennemsnitlige	weather/find	O
+5	vejrudsigt	weather/find	O
+6	for	weather/find	O
+7	september	weather/find	B-datetime
+
+# id: 163
+# text-en: Is it cold today?
+# text: Er det koldt i dag?
+# intent: weather/find
+1	Er	weather/find	O
+2	det	weather/find	O
+3	koldt	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 79
+# text-en: Cancel all reminders
+# text: Anullér alle påmindelser
+# intent: reminder/cancel_reminder
+1	Anullér	reminder/cancel_reminder	O
+2	alle	reminder/cancel_reminder	B-reference
+3	påmindelser	reminder/cancel_reminder	O
+
+# id: 191
+# text-en: is it hot?
+# text: er det varmt?
+# intent: weather/find
+1	er	weather/find	O
+2	det	weather/find	O
+3	varmt	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: 6
+# text-en: Make alarm for weekends at 2pm
+# text: Lav en alarm til weekender klokken 2 om eftermiddagen
+# intent: alarm/set_alarm
+1	Lav	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	weekender	alarm/set_alarm	B-recurring_datetime
+6	klokken	alarm/set_alarm	I-recurring_datetime
+7	2	alarm/set_alarm	I-recurring_datetime
+8	om	alarm/set_alarm	I-recurring_datetime
+9	eftermiddagen	alarm/set_alarm	I-recurring_datetime
+
+# id: 66
+# text-en: Set alarm for 2 am
+# text: Sæt en alarm til klokken 2 om morgenen
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	klokken	alarm/set_alarm	B-datetime
+6	2	alarm/set_alarm	I-datetime
+7	om	alarm/set_alarm	I-datetime
+8	morgenen	alarm/set_alarm	I-datetime
+
+# id: 171
+# text-en: What is the humidity today?
+# text: Hvordan er luftfugtigheden i dag?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	er	weather/find	O
+3	luftfugtigheden	weather/find	B-weather/attribute
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 48
+# text-en: show all my alarms
+# text: vis alle mine alarmer
+# intent: alarm/show_alarms
+1	vis	alarm/show_alarms	O
+2	alle	alarm/show_alarms	B-reference
+3	mine	alarm/show_alarms	O
+4	alarmer	alarm/show_alarms	O
+
+# id: 119
+# text-en: Show me all my reminders
+# text: Vis mig alle mine påmindelser
+# intent: reminder/show_reminders
+1	Vis	reminder/show_reminders	O
+2	mig	reminder/show_reminders	O
+3	alle	reminder/show_reminders	B-reference
+4	mine	reminder/show_reminders	I-reference
+5	påmindelser	reminder/show_reminders	O
+
+# id: 1
+# text-en: cancel all alarms
+# text: slet alle alarmer
+# intent: alarm/cancel_alarm
+1	slet	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 172
+# text-en: Is there a storm headed for my area?
+# text: Er der en storm på vej mod mit område?
+# intent: weather/find
+1	Er	weather/find	O
+2	der	weather/find	O
+3	en	weather/find	O
+4	storm	weather/find	B-weather/attribute
+5	på	weather/find	O
+6	vej	weather/find	O
+7	mod	weather/find	O
+8	mit	weather/find	B-location
+9	område	weather/find	I-location
+10	?	weather/find	O
+
+# id: 143
+# text-en: what's the weather today
+# text: hvordan er vejret i dag
+# intent: weather/find
+1	hvordan	weather/find	O
+2	er	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	B-datetime
+5	dag	weather/find	I-datetime
+
+# id: 126
+# text-en: delete last reminder
+# text: slet den sidste påmindelse
+# intent: reminder/cancel_reminder
+1	slet	reminder/cancel_reminder	O
+2	den	reminder/cancel_reminder	B-reference
+3	sidste	reminder/cancel_reminder	I-reference
+4	påmindelse	reminder/cancel_reminder	O
+
+# id: 46
+# text-en: What time is left on the alarm.
+# text: Hvor lang tid er der tilbage på alarmen
+# intent: alarm/time_left_on_alarm
+1	Hvor	alarm/time_left_on_alarm	O
+2	lang	alarm/time_left_on_alarm	O
+3	tid	alarm/time_left_on_alarm	O
+4	er	alarm/time_left_on_alarm	O
+5	der	alarm/time_left_on_alarm	O
+6	tilbage	alarm/time_left_on_alarm	O
+7	på	alarm/time_left_on_alarm	O
+8	alarmen	alarm/time_left_on_alarm	O
+
+# id: 230
+# text-en: Cancel all my alarms for Sunday.
+# text: Anullér alle mine alarmer til søndag.
+# intent: alarm/cancel_alarm
+1	Anullér	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	mine	alarm/cancel_alarm	I-reference
+4	alarmer	alarm/cancel_alarm	O
+5	til	alarm/cancel_alarm	O
+6	søndag	alarm/cancel_alarm	B-datetime
+7	.	alarm/cancel_alarm	O
+
+# id: 168
+# text-en: How hot will it get today?
+# text: Hvor varmt vil det blive i dag?
+# intent: weather/find
+1	Hvor	weather/find	O
+2	varmt	weather/find	B-weather/attribute
+3	vil	weather/find	O
+4	det	weather/find	O
+5	blive	weather/find	O
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 57
+# text-en: I'd like you to create a new alarm for 8:45 tomorrow morning
+# text: Jeg vil gerne have dig til at lave en alarm til klokken 8:45 i morgen tidlig
+# intent: alarm/set_alarm
+1	Jeg	alarm/set_alarm	O
+2	vil	alarm/set_alarm	O
+3	gerne	alarm/set_alarm	O
+4	have	alarm/set_alarm	O
+5	dig	alarm/set_alarm	O
+6	til	alarm/set_alarm	O
+7	at	alarm/set_alarm	O
+8	lave	alarm/set_alarm	O
+9	en	alarm/set_alarm	O
+10	alarm	alarm/set_alarm	O
+11	til	alarm/set_alarm	O
+12	klokken	alarm/set_alarm	B-datetime
+13	8:45	alarm/set_alarm	I-datetime
+14	i	alarm/set_alarm	I-datetime
+15	morgen	alarm/set_alarm	I-datetime
+16	tidlig	alarm/set_alarm	I-datetime
+
+# id: 1
+# text-en: cancel all alarms
+# text: slet alle alarmer
+# intent: alarm/cancel_alarm
+1	slet	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+
+# id: 271
+# text-en: Is it going to snow today?
+# text: Kommer det til at sne i dag?
+# intent: weather/find
+1	Kommer	weather/find	O
+2	det	weather/find	O
+3	til	weather/find	O
+4	at	weather/find	O
+5	sne	weather/find	B-weather/attribute
+6	i	weather/find	B-datetime
+7	dag	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 132
+# text-en: remind me to buy ice
+# text: mind mig om at købe is
+# intent: reminder/set_reminder
+1	mind	reminder/set_reminder	O
+2	mig	reminder/set_reminder	O
+3	om	reminder/set_reminder	O
+4	at	reminder/set_reminder	O
+5	købe	reminder/set_reminder	B-reminder/todo
+6	is	reminder/set_reminder	I-reminder/todo
+
+# id: 89
+# text-en: show all reminders
+# text: vis alle påmindelser
+# intent: reminder/show_reminders
+1	vis	reminder/show_reminders	O
+2	alle	reminder/show_reminders	B-reference
+3	påmindelser	reminder/show_reminders	O
+
+# id: 38
+# text-en: show all alarms
+# text: vis alle alarmer
+# intent: alarm/show_alarms
+1	vis	alarm/show_alarms	O
+2	alle	alarm/show_alarms	B-reference
+3	alarmer	alarm/show_alarms	O
+
+# id: 273
+# text-en: What's the weather in San Francisco?
+# text: Hvordan er vejret i San Francisco?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	er	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	O
+5	San	weather/find	B-location
+6	Francisco	weather/find	I-location
+7	?	weather/find	O
+
+# id: 79
+# text-en: Cancel all reminders
+# text: Anullér alle påmindelser
+# intent: reminder/cancel_reminder
+1	Anullér	reminder/cancel_reminder	O
+2	alle	reminder/cancel_reminder	B-reference
+3	påmindelser	reminder/cancel_reminder	O
+
+# id: 135
+# text-en: Cancel reminder for concert
+# text: Anullér påmindelse til koncert
+# intent: reminder/cancel_reminder
+1	Anullér	reminder/cancel_reminder	O
+2	påmindelse	reminder/cancel_reminder	O
+3	til	reminder/cancel_reminder	O
+4	koncert	reminder/cancel_reminder	B-reminder/todo
+
+# id: 251
+# text-en: Cancel the alarm for tomorrow morning
+# text: Anullér alarmen for i morgen tidlig
+# intent: alarm/cancel_alarm
+1	Anullér	alarm/cancel_alarm	O
+2	alarmen	alarm/cancel_alarm	O
+3	for	alarm/cancel_alarm	O
+4	i	alarm/cancel_alarm	B-datetime
+5	morgen	alarm/cancel_alarm	I-datetime
+6	tidlig	alarm/cancel_alarm	I-datetime
+
+# id: 141
+# text-en: will it rain this week
+# text: vil det regne denne uge
+# intent: weather/find
+1	vil	weather/find	O
+2	det	weather/find	O
+3	regne	weather/find	B-weather/attribute
+4	denne	weather/find	B-datetime
+5	uge	weather/find	I-datetime
+
+# id: 204
+# text-en: What is the weather like on Wednesday for golfing?
+# text: Hvordan er vejret på onsdag til golf?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	er	weather/find	O
+3	vejret	weather/find	O
+4	på	weather/find	O
+5	onsdag	weather/find	B-datetime
+6	til	weather/find	O
+7	golf	weather/find	O
+8	?	weather/find	O
+
+# id: 38
+# text-en: show all alarms
+# text: vis alle alarmer
+# intent: alarm/show_alarms
+1	vis	alarm/show_alarms	O
+2	alle	alarm/show_alarms	B-reference
+3	alarmer	alarm/show_alarms	O
+
+# id: 75
+# text-en: turn off all alarms for tomorrow
+# text: sluk alle alarmer til i morgen
+# intent: alarm/cancel_alarm
+1	sluk	alarm/cancel_alarm	O
+2	alle	alarm/cancel_alarm	B-reference
+3	alarmer	alarm/cancel_alarm	O
+4	til	alarm/cancel_alarm	O
+5	i	alarm/cancel_alarm	B-datetime
+6	morgen	alarm/cancel_alarm	I-datetime
+
+# id: 72
+# text-en: Set alarm for 5pm tonight
+# text: Sæt en alarm til klokken 5 i aften
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	en	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	til	alarm/set_alarm	O
+5	klokken	alarm/set_alarm	B-datetime
+6	5	alarm/set_alarm	I-datetime
+7	i	alarm/set_alarm	I-datetime
+8	aften	alarm/set_alarm	I-datetime
+
+# id: 10
+# text-en: set alarm for 7 tomorrow
+# text: Sæt alarm til klokken 7 i morgen
+# intent: alarm/set_alarm
+1	Sæt	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	til	alarm/set_alarm	O
+4	klokken	alarm/set_alarm	B-datetime
+5	7	alarm/set_alarm	I-datetime
+6	i	alarm/set_alarm	I-datetime
+7	morgen	alarm/set_alarm	I-datetime
+
+# id: 138
+# text-en: Will it be sunny tomorrow?
+# text: Vil det blive solskin i morgen?
+# intent: weather/find
+1	Vil	weather/find	O
+2	det	weather/find	O
+3	blive	weather/find	O
+4	solskin	weather/find	B-weather/attribute
+5	i	weather/find	B-datetime
+6	morgen	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 277
+# text-en: how hot will it be today
+# text: hvor varmt bliver det i dag
+# intent: weather/find
+1	hvor	weather/find	O
+2	varmt	weather/find	B-weather/attribute
+3	bliver	weather/find	O
+4	det	weather/find	O
+5	i	weather/find	B-datetime
+6	dag	weather/find	I-datetime
+
+# id: 1
+# text-en: Give zero stars to Halo: Ghosts of Onyx
+# text: Give nul stjerner til Halo: Ghosts of Onyx
+# intent: RateBook
+1	Give	RateBook	O
+2	nul	RateBook	B-rating_value
+3	stjerner	RateBook	O
+4	til	RateBook	O
+5	Halo:	RateBook	B-object_name
+6	Ghosts	RateBook	I-object_name
+7	of	RateBook	I-object_name
+8	Onyx	RateBook	I-object_name
+
+# id: 2
+# text-en: Play music by Joy Nilo .
+# text: Spil musik med Joy Nilo .
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	musik	PlayMusic	O
+3	med	PlayMusic	O
+4	Joy	PlayMusic	B-artist
+5	Nilo	PlayMusic	I-artist
+6	.	PlayMusic	O
+
+# id: 3
+# text-en: Please find me the video game titled 20 Hours in America .
+# text: Venligst find videospillet 20 Hours in America til mig .
+# intent: SearchCreativeWork
+1	Venligst	SearchCreativeWork	O
+2	find	SearchCreativeWork	O
+3	videospillet	SearchCreativeWork	B-object_type
+4	20	SearchCreativeWork	B-object_name
+5	Hours	SearchCreativeWork	I-object_name
+6	in	SearchCreativeWork	I-object_name
+7	America	SearchCreativeWork	I-object_name
+8	til	SearchCreativeWork	O
+9	mig	SearchCreativeWork	B-object_name
+10	.	SearchCreativeWork	O
+
+# id: 4
+# text-en: Play my inventive playlist
+# text: Spil min inventive playliste
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	min	PlayMusic	B-playlist
+3	inventive	PlayMusic	B-playlist
+4	playliste	PlayMusic	O
+
+# id: 5
+# text-en: Book spot for 9 at Thurmont
+# text: Reservér bord til 9 på Thurmont
+# intent: BookRestaurant
+1	Reservér	BookRestaurant	O
+2	bord	BookRestaurant	B-music_item
+3	til	BookRestaurant	O
+4	9	BookRestaurant	B-party_size_number
+5	på	BookRestaurant	O
+6	Thurmont	BookRestaurant	B-restaurant_name
+
+# id: 6
+# text-en: Add this tune to dorthy's 80's party playlist
+# text: Tilføj denne sang til dorthy's 80's party playliste
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	denne	AddToPlaylist	O
+3	sang	AddToPlaylist	B-music_item
+4	til	AddToPlaylist	O
+5	dorthy's	AddToPlaylist	B-reference
+6	80's	AddToPlaylist	B-playlist
+7	party	AddToPlaylist	I-playlist
+8	playliste	AddToPlaylist	O
+
+# id: 7
+# text-en: Play the newest melody on Last Fm by Eddie Vinson .
+# text: Spil den nyeste sang med Eddie Vinson på Last Fm .
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	den	PlayMusic	O
+3	nyeste	PlayMusic	B-sort
+4	sang	PlayMusic	B-music_item
+5	med	PlayMusic	O
+6	Eddie	PlayMusic	B-artist
+7	Vinson	PlayMusic	I-artist
+8	på	PlayMusic	O
+9	Last	PlayMusic	B-service
+10	Fm	PlayMusic	I-service
+11	.	PlayMusic	O
+
+# id: 8
+# text-en: Check the forecast for Nebraska .
+# text: Kontroller vejrudsigten for Nebraska .
+# intent: weather/find
+1	Kontroller	weather/find	O
+2	vejrudsigten	weather/find	O
+3	for	weather/find	O
+4	Nebraska	weather/find	B-location
+5	.	weather/find	O
+
+# id: 9
+# text-en: Is there a storm now in NC ?
+# text: Stormer det i NC ?
+# intent: weather/find
+1	Stormer	weather/find	O
+2	det	weather/find	O
+3	i	weather/find	O
+4	NC	weather/find	B-location
+5	?	weather/find	O
+
+# id: 10
+# text-en: I want to listen to an ep from 1998 .
+# text: Jeg vil gerne lytte til en ep fra 1998 .
+# intent: PlayMusic
+1	Jeg	PlayMusic	O
+2	vil	PlayMusic	O
+3	gerne	PlayMusic	O
+4	lytte	PlayMusic	O
+5	til	PlayMusic	O
+6	en	PlayMusic	O
+7	ep	PlayMusic	B-music_item
+8	fra	PlayMusic	O
+9	1998	PlayMusic	B-datetime
+10	.	PlayMusic	O
+
+# id: 11
+# text-en: I need times for A Yiddish World Remembered at Dipson Theatres
+# text: Jeg vil gerne have spilletiderne for A Yiddish World Remembered på Dipson Theatres
+# intent: SearchScreeningEvent
+1	Jeg	SearchScreeningEvent	O
+2	vil	SearchScreeningEvent	O
+3	gerne	SearchScreeningEvent	O
+4	have	SearchScreeningEvent	O
+5	spilletiderne	SearchScreeningEvent	O
+6	for	SearchScreeningEvent	O
+7	A	SearchScreeningEvent	B-movie_name
+8	Yiddish	SearchScreeningEvent	I-movie_name
+9	World	SearchScreeningEvent	I-movie_name
+10	Remembered	SearchScreeningEvent	I-movie_name
+11	på	SearchScreeningEvent	O
+12	Dipson	SearchScreeningEvent	B-location
+13	Theatres	SearchScreeningEvent	I-location
+
+# id: 12
+# text-en: Give 1 out of 6 rating to the current textbook
+# text: Give 1 ud af 6 stjerner til den nuværende bog
+# intent: RateBook
+1	Give	RateBook	O
+2	1	RateBook	B-rating_value
+3	ud	RateBook	O
+4	af	RateBook	O
+5	6	RateBook	B-best_rating
+6	stjerner	RateBook	O
+7	til	RateBook	O
+8	den	RateBook	O
+9	nuværende	RateBook	B-object_select
+10	bog	RateBook	B-object_type
+
+# id: 13
+# text-en: Add the Matt Murphy tune to the Flow Español playlist.
+# text: Tilføj Matt Murphy sangen til Flow Españon playlisten.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	Matt	AddToPlaylist	B-artist
+3	Murphy	AddToPlaylist	I-artist
+4	sangen	AddToPlaylist	B-music_item
+5	til	AddToPlaylist	O
+6	Flow	AddToPlaylist	B-playlist
+7	Españon	AddToPlaylist	I-playlist
+8	playlisten	AddToPlaylist	O
+9	.	AddToPlaylist	O
+
+# id: 14
+# text-en: I want to book a sundanese gastropub nearby in Texas for 3 people on 5/20/2025 .
+# text: Jeg vil gerne reservérer et bord til 3 på en sundanesisk gastropub nær Texas den 5/20/2025 .
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	reservérer	BookRestaurant	O
+5	et	BookRestaurant	O
+6	bord	BookRestaurant	O
+7	til	BookRestaurant	O
+8	3	BookRestaurant	B-party_size_number
+9	på	BookRestaurant	O
+10	en	BookRestaurant	O
+11	sundanesisk	BookRestaurant	B-cuisine
+12	gastropub	BookRestaurant	B-restaurant_type
+13	nær	BookRestaurant	O
+14	Texas	BookRestaurant	B-location
+15	den	BookRestaurant	O
+16	5	BookRestaurant	B-datetime
+17	/	BookRestaurant	I-datetime
+18	20	BookRestaurant	I-datetime
+19	/	BookRestaurant	I-datetime
+20	2025	BookRestaurant	I-datetime
+21	.	BookRestaurant	O
+
+# id: 15
+# text-en: Could you find the TV series The Approach
+# text: Kan du finde TV serien The Approach
+# intent: SearchCreativeWork
+1	Kan	SearchCreativeWork	O
+2	du	SearchCreativeWork	O
+3	finde	SearchCreativeWork	O
+4	TV	SearchCreativeWork	B-object_type
+5	serien	SearchCreativeWork	I-object_type
+6	The	SearchCreativeWork	B-object_name
+7	Approach	SearchCreativeWork	I-object_name
+
+# id: 16
+# text-en: Give this chronicle a 2 rating.
+# text: Give denne krønike en 2 stjernet bedømmelse.
+# intent: RateBook
+1	Give	RateBook	O
+2	denne	RateBook	B-object_select
+3	krønike	RateBook	B-object_part_of_series_type
+4	en	RateBook	O
+5	2	RateBook	B-rating_value
+6	stjernet	RateBook	O
+7	bedømmelse	RateBook	O
+8	.	RateBook	O
+
+# id: 17
+# text-en: Give The American Scene 2 of 6 stars
+# text: Give The American Scene 2 ud af 6 stjerner
+# intent: RateBook
+1	Give	RateBook	O
+2	The	RateBook	B-object_name
+3	American	RateBook	I-object_name
+4	Scene	RateBook	I-object_name
+5	2	RateBook	B-rating_value
+6	ud	RateBook	O
+7	af	RateBook	O
+8	6	RateBook	B-best_rating
+9	stjerner	RateBook	O
+
+# id: 18
+# text-en: Add emilie autumn to my Nação Reggae playlist.
+# text: Tilføj emilie autumn til min Nação Reggae playliste.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	emilie	AddToPlaylist	B-artist
+3	autumn	AddToPlaylist	I-artist
+4	til	AddToPlaylist	O
+5	min	AddToPlaylist	B-reference
+6	Nação	AddToPlaylist	B-playlist
+7	Reggae	AddToPlaylist	I-playlist
+8	playliste	AddToPlaylist	O
+9	.	AddToPlaylist	O
+
+# id: 19
+# text-en: I want to book a jewish restaurant in Gambia .
+# text: Jeg vil gerne reservérer bord på en jødisk restaurant i Gambia .
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	reservérer	BookRestaurant	O
+5	bord	BookRestaurant	O
+6	på	BookRestaurant	O
+7	en	BookRestaurant	O
+8	jødisk	BookRestaurant	B-cuisine
+9	restaurant	BookRestaurant	B-restaurant_type
+10	i	BookRestaurant	O
+11	Gambia	BookRestaurant	B-location
+12	.	BookRestaurant	O
+
+# id: 20
+# text-en: book a table at a Fried chicken restaurant
+# text: reservér bord på en Fried chicken restaurant
+# intent: BookRestaurant
+1	reservér	BookRestaurant	O
+2	bord	BookRestaurant	O
+3	på	BookRestaurant	O
+4	en	BookRestaurant	O
+5	Fried	BookRestaurant	B-restaurant_name
+6	chicken	BookRestaurant	I-restaurant_name
+7	restaurant	BookRestaurant	O
+
+# id: 21
+# text-en: add we have a theme song to my House Afterwork playlist
+# text: tilføj we have a theme song til min House Afterwork playliste
+# intent: AddToPlaylist
+1	tilføj	AddToPlaylist	O
+2	we	AddToPlaylist	O
+3	have	AddToPlaylist	O
+4	a	AddToPlaylist	O
+5	theme	AddToPlaylist	B-music_item
+6	song	AddToPlaylist	B-music_item
+7	til	AddToPlaylist	O
+8	min	AddToPlaylist	B-reference
+9	House	AddToPlaylist	B-playlist
+10	Afterwork	AddToPlaylist	I-playlist
+11	playliste	AddToPlaylist	O
+
+# id: 22
+# text-en: What will the weather be not far from here on October the nineteenth, 2026 ?
+# text: Hvordan bliver vejret i nærheden af her den nittende oktober 2026 ?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	bliver	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	O
+5	nærheden	weather/find	B-location
+6	af	weather/find	O
+7	her	weather/find	B-location
+8	den	weather/find	O
+9	nittende	weather/find	B-datetime
+10	oktober	weather/find	I-datetime
+11	2026	weather/find	I-datetime
+12	?	weather/find	O
+
+# id: 23
+# text-en: Weather in Walden Russia on 12/26/2018
+# text: Vejret i Walden Rusland den 12/26/2018
+# intent: weather/find
+1	Vejret	weather/find	O
+2	i	weather/find	O
+3	Walden	weather/find	B-location
+4	Rusland	weather/find	B-location
+5	den	weather/find	O
+6	12	weather/find	B-datetime
+7	/	weather/find	I-datetime
+8	26	weather/find	I-datetime
+9	/	weather/find	O
+10	2018	weather/find	B-datetime
+
+# id: 24
+# text-en: I want to book a restaurant for my father in law and I in Buckner a year from now .
+# text: Jeg vil gerne reservérer bord på en restaurant til min svigerfar og jeg i Buckner om et år .
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	reservérer	BookRestaurant	O
+5	bord	BookRestaurant	O
+6	på	BookRestaurant	O
+7	en	BookRestaurant	O
+8	restaurant	BookRestaurant	B-restaurant_type
+9	til	BookRestaurant	O
+10	min	BookRestaurant	B-party_size_description
+11	svigerfar	BookRestaurant	I-party_size_description
+12	og	BookRestaurant	I-party_size_description
+13	jeg	BookRestaurant	I-party_size_description
+14	i	BookRestaurant	O
+15	Buckner	BookRestaurant	B-location
+16	om	BookRestaurant	B-datetime
+17	et	BookRestaurant	I-datetime
+18	år	BookRestaurant	I-datetime
+19	.	BookRestaurant	O
+
+# id: 25
+# text-en: Rate this book a 1
+# text: Give denne bog 1 stjerne
+# intent: RateBook
+1	Give	RateBook	O
+2	denne	RateBook	B-object_select
+3	bog	RateBook	B-object_type
+4	1	RateBook	B-rating_value
+5	stjerne	RateBook	O
+
+# id: 26
+# text-en: add this artist to my spotlight on country 2016 playlist
+# text: tilføj denne kunstner til min spotlight on country 2016 playliste
+# intent: AddToPlaylist
+1	tilføj	AddToPlaylist	O
+2	denne	AddToPlaylist	O
+3	kunstner	AddToPlaylist	B-music_item
+4	til	AddToPlaylist	O
+5	min	AddToPlaylist	B-playlist
+6	spotlight	AddToPlaylist	B-playlist
+7	on	AddToPlaylist	I-playlist
+8	country	AddToPlaylist	I-playlist
+9	2016	AddToPlaylist	I-playlist
+10	playliste	AddToPlaylist	O
+
+# id: 27
+# text-en: Could you locate the Epic Conditions picture ?
+# text: Kan du finde Epic Conditions billedet ?
+# intent: SearchCreativeWork
+1	Kan	SearchCreativeWork	O
+2	du	SearchCreativeWork	O
+3	finde	SearchCreativeWork	O
+4	Epic	SearchCreativeWork	B-object_name
+5	Conditions	SearchCreativeWork	I-object_name
+6	billedet	SearchCreativeWork	O
+7	?	SearchCreativeWork	O
+
+# id: 28
+# text-en: Play rich sex on Iheart
+# text: Spil rich sex på Iheart
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	rich	PlayMusic	B-track
+3	sex	PlayMusic	I-track
+4	på	PlayMusic	O
+5	Iheart	PlayMusic	B-service
+
+# id: 29
+# text-en: Is Bartok the Magnificent playing at seven AM ?
+# text: Spiller Bartok the Magnificent klokken 7 om morgenen ?
+# intent: SearchScreeningEvent
+1	Spiller	SearchScreeningEvent	O
+2	Bartok	SearchScreeningEvent	B-movie_name
+3	the	SearchScreeningEvent	I-movie_name
+4	Magnificent	SearchScreeningEvent	I-movie_name
+5	klokken	SearchScreeningEvent	B-datetime
+6	7	SearchScreeningEvent	I-datetime
+7	om	SearchScreeningEvent	I-datetime
+8	morgenen	SearchScreeningEvent	I-datetime
+9	?	SearchScreeningEvent	O
+
+# id: 30
+# text-en: Play something on Zvooq
+# text: Spil noget på Zvooq
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	noget	PlayMusic	O
+3	på	PlayMusic	O
+4	Zvooq	PlayMusic	B-service
+
+# id: 31
+# text-en: Let me hear Chris Knight music
+# text: Lad mig høre noget Chris Knight musik
+# intent: PlayMusic
+1	Lad	PlayMusic	O
+2	mig	PlayMusic	O
+3	høre	PlayMusic	O
+4	noget	PlayMusic	O
+5	Chris	PlayMusic	B-artist
+6	Knight	PlayMusic	I-artist
+7	musik	PlayMusic	O
+
+# id: 32
+# text-en: play Jill Sobule album
+# text: spil Jill Sobule albummet
+# intent: PlayMusic
+1	spil	PlayMusic	O
+2	Jill	PlayMusic	B-album
+3	Sobule	PlayMusic	I-album
+4	albummet	PlayMusic	B-music_item
+
+# id: 33
+# text-en: Give four stars to The Broken Window
+# text: Give fire stjerner til The Broken Window
+# intent: RateBook
+1	Give	RateBook	O
+2	fire	RateBook	B-rating_value
+3	stjerner	RateBook	O
+4	til	RateBook	O
+5	The	RateBook	B-object_name
+6	Broken	RateBook	I-object_name
+7	Window	RateBook	I-object_name
+
+# id: 34
+# text-en: Tell me the forecast for 6 am in Tatra-Nationalpark
+# text: Fortæl mig vejrudsigten for Tatra-Nationalpark klokken 6 om morgenen
+# intent: weather/find
+1	Fortæl	weather/find	O
+2	mig	weather/find	O
+3	vejrudsigten	weather/find	O
+4	for	weather/find	O
+5	Tatra-Nationalpark	weather/find	B-location
+6	klokken	weather/find	B-datetime
+7	6	weather/find	I-datetime
+8	om	weather/find	I-datetime
+9	morgenen	weather/find	I-datetime
+
+# id: 35
+# text-en: Please book me a table at a bistro which serves lorna doone .
+# text: Reservér venligst et bord på en bistro der serverer lorna doone .
+# intent: BookRestaurant
+1	Reservér	BookRestaurant	O
+2	venligst	BookRestaurant	O
+3	et	BookRestaurant	O
+4	bord	BookRestaurant	O
+5	på	BookRestaurant	O
+6	en	BookRestaurant	O
+7	bistro	BookRestaurant	B-restaurant_type
+8	der	BookRestaurant	O
+9	serverer	BookRestaurant	O
+10	lorna	BookRestaurant	B-served_dish
+11	doone	BookRestaurant	I-served_dish
+12	.	BookRestaurant	O
+
+# id: 36
+# text-en: Rate The Mystery of the Tolling Bell series 4 stars .
+# text: Give 4 stjerner til The Mystery of the Tolling Bell serien
+# intent: RateBook
+1	Give	RateBook	O
+2	4	RateBook	B-rating_value
+3	stjerner	RateBook	O
+4	til	RateBook	O
+5	The	RateBook	B-object_name
+6	Mystery	RateBook	I-object_name
+7	of	RateBook	I-object_name
+8	the	RateBook	I-object_name
+9	Tolling	RateBook	I-object_name
+10	Bell	RateBook	I-object_name
+11	serien	RateBook	B-object_part_of_series_type
+
+# id: 37
+# text-en: Use Groove Shark to play music
+# text: Brug Groove Shark til at spille noget musik
+# intent: PlayMusic
+1	Brug	PlayMusic	O
+2	Groove	PlayMusic	B-service
+3	Shark	PlayMusic	I-service
+4	til	PlayMusic	O
+5	at	PlayMusic	O
+6	spille	PlayMusic	O
+7	noget	PlayMusic	O
+8	musik	PlayMusic	O
+
+# id: 38
+# text-en: Check the timings for Snowbound at the closest movie theatre .
+# text: Tjek spilletiderne for Snowbound hos den nærmeste biograf -
+# intent: SearchScreeningEvent
+1	Tjek	SearchScreeningEvent	O
+2	spilletiderne	SearchScreeningEvent	O
+3	for	SearchScreeningEvent	O
+4	Snowbound	SearchScreeningEvent	B-movie_name
+5	hos	SearchScreeningEvent	O
+6	den	SearchScreeningEvent	O
+7	nærmeste	SearchScreeningEvent	B-location
+8	biograf	SearchScreeningEvent	B-object_location_type
+9	-	SearchScreeningEvent	O
+
+# id: 39
+# text-en: Please open Zvooq
+# text: Venligst åben Zvooq
+# intent: PlayMusic
+1	Venligst	PlayMusic	O
+2	åben	PlayMusic	O
+3	Zvooq	PlayMusic	B-service
+
+# id: 40
+# text-en: book spot for 1 at Town of Ramsgate in Merit
+# text: reservér bord til 1 på Town of Ramsgate i Merit
+# intent: BookRestaurant
+1	reservér	BookRestaurant	O
+2	bord	BookRestaurant	O
+3	til	BookRestaurant	O
+4	1	BookRestaurant	B-party_size_number
+5	på	BookRestaurant	O
+6	Town	BookRestaurant	B-restaurant_name
+7	of	BookRestaurant	I-restaurant_name
+8	Ramsgate	BookRestaurant	I-restaurant_name
+9	i	BookRestaurant	O
+10	Merit	BookRestaurant	B-location
+
+# id: 41
+# text-en: Will I Think I Do be playing at 7 PM ?
+# text: Spiller I Think I Do klokken 7 i aften ?
+# intent: SearchScreeningEvent
+1	Spiller	SearchScreeningEvent	O
+2	I	SearchScreeningEvent	B-movie_name
+3	Think	SearchScreeningEvent	I-movie_name
+4	I	SearchScreeningEvent	I-movie_name
+5	Do	SearchScreeningEvent	I-movie_name
+6	klokken	SearchScreeningEvent	B-datetime
+7	7	SearchScreeningEvent	I-datetime
+8	i	SearchScreeningEvent	O
+9	aften	SearchScreeningEvent	B-datetime
+10	?	SearchScreeningEvent	O
+
+# id: 42
+# text-en: will Custer National Forest be chillier at seven Pm
+# text: Bliver det koldere i Custer National Forest klokken syv i aften
+# intent: weather/find
+1	Bliver	weather/find	O
+2	det	weather/find	O
+3	koldere	weather/find	B-condition_temperature
+4	i	weather/find	O
+5	Custer	weather/find	B-location
+6	National	weather/find	I-location
+7	Forest	weather/find	I-location
+8	klokken	weather/find	B-datetime
+9	syv	weather/find	I-datetime
+10	i	weather/find	O
+11	aften	weather/find	B-datetime
+
+# id: 43
+# text-en: I want to listen to something on Youtube
+# text: Jeg vil lytte til noget på Youtube
+# intent: PlayMusic
+1	Jeg	PlayMusic	O
+2	vil	PlayMusic	O
+3	lytte	PlayMusic	O
+4	til	PlayMusic	O
+5	noget	PlayMusic	O
+6	på	PlayMusic	O
+7	Youtube	PlayMusic	B-service
+
+# id: 44
+# text-en: Search for the game Difficult Loves
+# text: Søg efter spillet Difficult Loves
+# intent: SearchCreativeWork
+1	Søg	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	spillet	SearchCreativeWork	B-object_type
+4	Difficult	SearchCreativeWork	B-object_name
+5	Loves	SearchCreativeWork	I-object_name
+
+# id: 45
+# text-en: What's the weather forecast for Bothe-Napa Valley State Park close by february 20 ?
+# text: Hvad er vejrudsigten for Bothe-Napa Valley State Park tæt på den 20 februar ?
+# intent: weather/find
+1	Hvad	weather/find	O
+2	er	weather/find	O
+3	vejrudsigten	weather/find	O
+4	for	weather/find	O
+5	Bothe-Napa	weather/find	B-location
+6	Valley	weather/find	I-location
+7	State	weather/find	I-location
+8	Park	weather/find	I-location
+9	tæt	weather/find	B-location
+10	på	weather/find	O
+11	den	weather/find	O
+12	20	weather/find	B-datetime
+13	februar	weather/find	I-datetime
+14	?	weather/find	O
+
+# id: 46
+# text-en: show me the schedule of movie The Great Gildersleeve near movie house
+# text: Vis mig spilletiderne for The Great Gildersleeve i den nærmeste biograf
+# intent: SearchScreeningEvent
+1	Vis	SearchScreeningEvent	O
+2	mig	SearchScreeningEvent	O
+3	spilletiderne	SearchScreeningEvent	O
+4	for	SearchScreeningEvent	O
+5	The	SearchScreeningEvent	B-movie_name
+6	Great	SearchScreeningEvent	I-movie_name
+7	Gildersleeve	SearchScreeningEvent	I-movie_name
+8	i	SearchScreeningEvent	O
+9	den	SearchScreeningEvent	O
+10	nærmeste	SearchScreeningEvent	B-object_type
+11	biograf	SearchScreeningEvent	B-object_location_type
+
+# id: 47
+# text-en: Tell me the weather forecast for Gibsland
+# text: Give mig vejrudsigten for Gibsland
+# intent: weather/find
+1	Give	weather/find	O
+2	mig	weather/find	O
+3	vejrudsigten	weather/find	O
+4	for	weather/find	O
+5	Gibsland	weather/find	B-location
+
+# id: 48
+# text-en: Can I get the times for movies in the neighbourhood
+# text: Kan jeg få spilletiderne for biograf film i nærheden
+# intent: SearchScreeningEvent
+1	Kan	SearchScreeningEvent	O
+2	jeg	SearchScreeningEvent	O
+3	få	SearchScreeningEvent	O
+4	spilletiderne	SearchScreeningEvent	O
+5	for	SearchScreeningEvent	O
+6	biograf	SearchScreeningEvent	B-movie_type
+7	film	SearchScreeningEvent	B-movie_type
+8	i	SearchScreeningEvent	B-location
+9	nærheden	SearchScreeningEvent	I-location
+
+# id: 49
+# text-en: Rate Soul Music a 0 .
+# text: Bedøm Soul Music 0 stjerner .
+# intent: RateBook
+1	Bedøm	RateBook	O
+2	Soul	RateBook	B-object_name
+3	Music	RateBook	I-object_name
+4	0	RateBook	B-rating_value
+5	stjerner	RateBook	O
+6	.	RateBook	O
+
+# id: 50
+# text-en: Book a reservation for five people for a tatar taverna in Sargents
+# text: Lav en reservation til fem på en tatar taverna i Sargents
+# intent: BookRestaurant
+1	Lav	BookRestaurant	O
+2	en	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	til	BookRestaurant	O
+5	fem	BookRestaurant	B-party_size_number
+6	på	BookRestaurant	O
+7	en	BookRestaurant	O
+8	tatar	BookRestaurant	B-cuisine
+9	taverna	BookRestaurant	B-restaurant_type
+10	i	BookRestaurant	O
+11	Sargents	BookRestaurant	B-location
+
+# id: 51
+# text-en: Play All Things Must Pass .
+# text: Spil All Things Must Pass .
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	All	PlayMusic	B-track
+3	Things	PlayMusic	I-track
+4	Must	PlayMusic	I-track
+5	Pass	PlayMusic	I-track
+6	.	PlayMusic	O
+
+# id: 52
+# text-en: What is the rain forecast for one hour from now in South Korea
+# text: Hvad er vejrudsigten om en time i Syd Korea
+# intent: weather/find
+1	Hvad	weather/find	O
+2	er	weather/find	O
+3	vejrudsigten	weather/find	B-condition_description
+4	om	weather/find	B-datetime
+5	en	weather/find	B-datetime
+6	time	weather/find	I-datetime
+7	i	weather/find	O
+8	Syd	weather/find	B-location
+9	Korea	weather/find	I-location
+
+# id: 53
+# text-en: Book a spot for 4 in Oklahoma at South Street Diner
+# text: Reservér bord til 4 på South Street Diner i Oklahoma
+# intent: BookRestaurant
+1	Reservér	BookRestaurant	O
+2	bord	BookRestaurant	O
+3	til	BookRestaurant	O
+4	4	BookRestaurant	B-party_size_number
+5	på	BookRestaurant	O
+6	South	BookRestaurant	B-restaurant_name
+7	Street	BookRestaurant	I-restaurant_name
+8	Diner	BookRestaurant	I-restaurant_name
+9	i	BookRestaurant	O
+10	Oklahoma	BookRestaurant	B-location
+
+# id: 54
+# text-en: Play music off Netflix .
+# text: Spil musik fra Netflix
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	musik	PlayMusic	O
+3	fra	PlayMusic	O
+4	Netflix	PlayMusic	B-service
+
+# id: 55
+# text-en: I want to see Shattered Image .
+# text: Jeg vil gerne se Shatered Image .
+# intent: SearchScreeningEvent
+1	Jeg	SearchScreeningEvent	O
+2	vil	SearchScreeningEvent	O
+3	gerne	SearchScreeningEvent	O
+4	se	SearchScreeningEvent	O
+5	Shatered	SearchScreeningEvent	B-movie_name
+6	Image	SearchScreeningEvent	I-movie_name
+7	.	SearchScreeningEvent	O
+
+# id: 56
+# text-en: Search for The Sound of One Hand Clapping
+# text: Søg efter The Sound of One Hand Clapping
+# intent: SearchCreativeWork
+1	Søg	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	The	SearchCreativeWork	B-object_name
+4	Sound	SearchCreativeWork	I-object_name
+5	of	SearchCreativeWork	I-object_name
+6	One	SearchCreativeWork	I-object_name
+7	Hand	SearchCreativeWork	I-object_name
+8	Clapping	SearchCreativeWork	I-object_name
+
+# id: 57
+# text-en: Look for the album Wolves Within
+# text: Kig efter albummet Wolves Within
+# intent: SearchCreativeWork
+1	Kig	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	albummet	SearchCreativeWork	B-object_type
+4	Wolves	SearchCreativeWork	B-object_name
+5	Within	SearchCreativeWork	I-object_name
+
+# id: 58
+# text-en: is We Are Northern Lights playing in any movie theatre
+# text: spiller We Are Northern Lights i en biograf
+# intent: SearchScreeningEvent
+1	spiller	SearchScreeningEvent	O
+2	We	SearchScreeningEvent	B-movie_name
+3	Are	SearchScreeningEvent	I-movie_name
+4	Northern	SearchScreeningEvent	I-movie_name
+5	Lights	SearchScreeningEvent	I-movie_name
+6	i	SearchScreeningEvent	O
+7	en	SearchScreeningEvent	O
+8	biograf	SearchScreeningEvent	B-object_location_type
+
+# id: 59
+# text-en: Add our little corner of the world music from gilmore girls to my The Funny Thing About Football Is playlist.
+# text: Tilføj our little corner of the world musikken fra gilmore girls til min The Funny Thing About Football Is playliste.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	our	AddToPlaylist	B-entity_name
+3	little	AddToPlaylist	I-entity_name
+4	corner	AddToPlaylist	I-entity_name
+5	of	AddToPlaylist	I-entity_name
+6	the	AddToPlaylist	I-entity_name
+7	world	AddToPlaylist	I-entity_name
+8	musikken	AddToPlaylist	O
+9	fra	AddToPlaylist	O
+10	gilmore	AddToPlaylist	O
+11	girls	AddToPlaylist	O
+12	til	AddToPlaylist	O
+13	min	AddToPlaylist	B-reference
+14	The	AddToPlaylist	B-playlist
+15	Funny	AddToPlaylist	I-playlist
+16	Thing	AddToPlaylist	I-playlist
+17	About	AddToPlaylist	I-playlist
+18	Football	AddToPlaylist	I-playlist
+19	Is	AddToPlaylist	I-playlist
+20	playliste	AddToPlaylist	O
+21	.	AddToPlaylist	O
+
+# id: 60
+# text-en: what is the forecast for hotter weather at Southford Falls State Park
+# text: hvad er vejrudsigten for varmere vejr i Southford Falls State Park
+# intent: weather/find
+1	hvad	weather/find	O
+2	er	weather/find	O
+3	vejrudsigten	weather/find	O
+4	for	weather/find	O
+5	varmere	weather/find	B-condition_description
+6	vejr	weather/find	B-condition_description
+7	i	weather/find	O
+8	Southford	weather/find	B-location
+9	Falls	weather/find	I-location
+10	State	weather/find	I-location
+11	Park	weather/find	I-location
+
+# id: 61
+# text-en: Please book me a table at a pizzeria with a parking facility in Ghana .
+# text: Reservér venligst et bor på et pizzeria i Ghana med parkering
+# intent: BookRestaurant
+1	Reservér	BookRestaurant	O
+2	venligst	BookRestaurant	O
+3	et	BookRestaurant	O
+4	bor	BookRestaurant	O
+5	på	BookRestaurant	O
+6	et	BookRestaurant	O
+7	pizzeria	BookRestaurant	B-restaurant_type
+8	i	BookRestaurant	O
+9	Ghana	BookRestaurant	B-location
+10	med	BookRestaurant	O
+11	parkering	BookRestaurant	B-facility
+
+# id: 62
+# text-en: I want to hear a seventies sound track .
+# text: Jeg vil gerne høre et halvfjerser soundtrack .
+# intent: PlayMusic
+1	Jeg	PlayMusic	O
+2	vil	PlayMusic	O
+3	gerne	PlayMusic	O
+4	høre	PlayMusic	O
+5	et	PlayMusic	O
+6	halvfjerser	PlayMusic	B-datetime
+7	soundtrack	PlayMusic	B-music_item
+8	.	PlayMusic	O
+
+# id: 63
+# text-en: Weather in two hours in Uzbekistan
+# text: Vjeret i Uzbekistan om to timer
+# intent: weather/find
+1	Vjeret	weather/find	O
+2	i	weather/find	O
+3	Uzbekistan	weather/find	B-location
+4	om	weather/find	B-datetime
+5	to	weather/find	I-datetime
+6	timer	weather/find	I-datetime
+
+# id: 64
+# text-en: Please find me the Journal of the British Astronomical Association movie .
+# text: Find venligst filmen the Journal of the British Astronomical Association .
+# intent: SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	venligst	SearchCreativeWork	O
+3	filmen	SearchCreativeWork	B-object_type
+4	the	SearchCreativeWork	O
+5	Journal	SearchCreativeWork	B-object_name
+6	of	SearchCreativeWork	I-object_name
+7	the	SearchCreativeWork	I-object_name
+8	British	SearchCreativeWork	I-object_name
+9	Astronomical	SearchCreativeWork	I-object_name
+10	Association	SearchCreativeWork	I-object_name
+11	.	SearchCreativeWork	O
+
+# id: 65
+# text-en: Book a reservation for 8 people in Wardville , Kansas
+# text: Lav en reservation til 8 i Wardville , Kansas
+# intent: BookRestaurant
+1	Lav	BookRestaurant	O
+2	en	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	til	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	i	BookRestaurant	O
+7	Wardville	BookRestaurant	B-location
+8	,	BookRestaurant	O
+9	Kansas	BookRestaurant	B-location
+
+# id: 66
+# text-en: What will the weather be faraway from here ?
+# text: Hvordan bliver vejret langt her fra ?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	bliver	weather/find	O
+3	vejret	weather/find	O
+4	langt	weather/find	B-location
+5	her	weather/find	I-location
+6	fra	weather/find	I-location
+7	?	weather/find	O
+
+# id: 67
+# text-en: Add Richard McNamara newest song to the Just Smile playlist
+# text: Tilføj Richard McNamaras nyeste sang til Just Smile playlisten
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	Richard	AddToPlaylist	B-artist
+3	McNamaras	AddToPlaylist	I-artist
+4	nyeste	AddToPlaylist	O
+5	sang	AddToPlaylist	B-music_item
+6	til	AddToPlaylist	O
+7	Just	AddToPlaylist	B-playlist
+8	Smile	AddToPlaylist	I-playlist
+9	playlisten	AddToPlaylist	O
+
+# id: 68
+# text-en: how cold will it be here in 1 second
+# text: hvor koldt bliver det her om 1 sekund
+# intent: weather/find
+1	hvor	weather/find	O
+2	koldt	weather/find	B-condition_temperature
+3	bliver	weather/find	O
+4	det	weather/find	O
+5	her	weather/find	B-location
+6	om	weather/find	B-datetime
+7	1	weather/find	I-datetime
+8	sekund	weather/find	I-datetime
+
+# id: 69
+# text-en: Looking for a painting with the title With You
+# text: Leder efter et maleri med title With You
+# intent: SearchCreativeWork
+1	Leder	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	et	SearchCreativeWork	O
+4	maleri	SearchCreativeWork	B-object_type
+5	med	SearchCreativeWork	O
+6	title	SearchCreativeWork	O
+7	With	SearchCreativeWork	B-object_name
+8	You	SearchCreativeWork	I-object_name
+
+# id: 70
+# text-en: Find the creative work Deadly Weapons
+# text: Find det kreative arbejde Deadly Weapons
+# intent: SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	det	SearchCreativeWork	O
+3	kreative	SearchCreativeWork	O
+4	arbejde	SearchCreativeWork	O
+5	Deadly	SearchCreativeWork	B-object_name
+6	Weapons	SearchCreativeWork	I-object_name
+
+# id: 71
+# text-en: What will the weather be in nov. in Brookneal ?
+# text: Hvordan bliver vejret i nov. i Brookneal ?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	bliver	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	O
+5	nov	weather/find	B-datetime
+6	.	weather/find	O
+7	i	weather/find	O
+8	Brookneal	weather/find	B-location
+9	?	weather/find	O
+
+# id: 72
+# text-en: Book a reservation at tavern for noodle
+# text: Lav en reservation på et værtshus for noodle
+# intent: BookRestaurant
+1	Lav	BookRestaurant	O
+2	en	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	på	BookRestaurant	O
+5	et	BookRestaurant	O
+6	værtshus	BookRestaurant	B-restaurant_type
+7	for	BookRestaurant	O
+8	noodle	BookRestaurant	B-served_dish
+
+# id: 73
+# text-en: what is the forecast for Costa Rica
+# text: Hvad er vejrudsigten for Costa Rica
+# intent: weather/find
+1	Hvad	weather/find	O
+2	er	weather/find	O
+3	vejrudsigten	weather/find	O
+4	for	weather/find	O
+5	Costa	weather/find	B-location
+6	Rica	weather/find	I-location
+
+# id: 74
+# text-en: Is The Two Gladiators playing
+# text: Spiller The Two Gladiators
+# intent: SearchScreeningEvent
+1	Spiller	SearchScreeningEvent	O
+2	The	SearchScreeningEvent	B-movie_name
+3	Two	SearchScreeningEvent	I-movie_name
+4	Gladiators	SearchScreeningEvent	I-movie_name
+
+# id: 75
+# text-en: what movies at Star Theatres .
+# text: hvilke film spiller hos Star Theatres .
+# intent: SearchScreeningEvent
+1	hvilke	SearchScreeningEvent	O
+2	film	SearchScreeningEvent	B-movie_type
+3	spiller	SearchScreeningEvent	O
+4	hos	SearchScreeningEvent	O
+5	Star	SearchScreeningEvent	B-location
+6	Theatres	SearchScreeningEvent	I-location
+7	.	SearchScreeningEvent	O
+
+# id: 76
+# text-en: Can you please find me the Harry Hood saga ?
+# text: Kan du finde Harry Hood sagaen til mig ?
+# intent: SearchCreativeWork
+1	Kan	SearchCreativeWork	O
+2	du	SearchCreativeWork	O
+3	finde	SearchCreativeWork	O
+4	Harry	SearchCreativeWork	B-object_name
+5	Hood	SearchCreativeWork	I-object_name
+6	sagaen	SearchCreativeWork	B-object_type
+7	til	SearchCreativeWork	I-object_type
+8	mig	SearchCreativeWork	I-object_type
+9	?	SearchCreativeWork	O
+
+# id: 77
+# text-en: add this tune to my Sleepify playlist
+# text: tilføj denne sang til min Sleepify playliste
+# intent: AddToPlaylist
+1	tilføj	AddToPlaylist	O
+2	denne	AddToPlaylist	O
+3	sang	AddToPlaylist	B-music_item
+4	til	AddToPlaylist	O
+5	min	AddToPlaylist	B-reference
+6	Sleepify	AddToPlaylist	B-playlist
+7	playliste	AddToPlaylist	O
+
+# id: 78
+# text-en: Is Any Which Way You Can playing in 15 seconds
+# text: Spiller Any Which Way You Can om 15 sekunder
+# intent: SearchScreeningEvent
+1	Spiller	SearchScreeningEvent	O
+2	Any	SearchScreeningEvent	B-movie_name
+3	Which	SearchScreeningEvent	I-movie_name
+4	Way	SearchScreeningEvent	I-movie_name
+5	You	SearchScreeningEvent	I-movie_name
+6	Can	SearchScreeningEvent	I-movie_name
+7	om	SearchScreeningEvent	O
+8	15	SearchScreeningEvent	B-datetime
+9	sekunder	SearchScreeningEvent	I-datetime
+
+# id: 79
+# text-en: Play music from E-type .
+# text: Spil musik fra E-type .
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	musik	PlayMusic	O
+3	fra	PlayMusic	O
+4	E-type	PlayMusic	B-artist
+5	.	PlayMusic	O
+
+# id: 80
+# text-en: Give one start to the current book
+# text: Give en stjerne til denne bog
+# intent: RateBook
+1	Give	RateBook	O
+2	en	RateBook	O
+3	stjerne	RateBook	O
+4	til	RateBook	O
+5	denne	RateBook	B-object_select
+6	bog	RateBook	B-object_type
+
+# id: 81
+# text-en: Play Another Passenger from Louis Nelson Delisle .
+# text: Spil Another Passenger med Louis Nelson Delisle .
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	Another	PlayMusic	B-album
+3	Passenger	PlayMusic	I-album
+4	med	PlayMusic	O
+5	Louis	PlayMusic	B-artist
+6	Nelson	PlayMusic	I-artist
+7	Delisle	PlayMusic	I-artist
+8	.	PlayMusic	O
+
+# id: 82
+# text-en: Where can I find the movie schedules
+# text: Hvor kan jeg finde spilletiderne for film
+# intent: SearchScreeningEvent
+1	Hvor	SearchScreeningEvent	O
+2	kan	SearchScreeningEvent	O
+3	jeg	SearchScreeningEvent	O
+4	finde	SearchScreeningEvent	O
+5	spilletiderne	SearchScreeningEvent	O
+6	for	SearchScreeningEvent	O
+7	film	SearchScreeningEvent	B-object_type
+
+# id: 83
+# text-en: what's the forecast for sep. 26 in Emerado Saint Pierre and Miquelon
+# text: hvad er vejrudsigten for den 26 sep. i Emerado Saint Pierre og Miquelon
+# intent: weather/find
+1	hvad	weather/find	O
+2	er	weather/find	O
+3	vejrudsigten	weather/find	O
+4	for	weather/find	O
+5	den	weather/find	O
+6	26	weather/find	B-datetime
+7	sep	weather/find	I-datetime
+8	.	weather/find	O
+9	i	weather/find	O
+10	Emerado	weather/find	B-location
+11	Saint	weather/find	B-location
+12	Pierre	weather/find	I-location
+13	og	weather/find	I-location
+14	Miquelon	weather/find	I-location
+
+# id: 84
+# text-en: Lets eat near Oakfield 17 seconds from now at Ted Peters Famous Smoked Fish
+# text: Lad os spise på Ted Peters Famous Smoked Fish nær Oakfield om 17 sekunder
+# intent: BookRestaurant
+1	Lad	BookRestaurant	O
+2	os	BookRestaurant	O
+3	spise	BookRestaurant	O
+4	på	BookRestaurant	O
+5	Ted	BookRestaurant	B-restaurant_name
+6	Peters	BookRestaurant	I-restaurant_name
+7	Famous	BookRestaurant	I-restaurant_name
+8	Smoked	BookRestaurant	I-restaurant_name
+9	Fish	BookRestaurant	I-restaurant_name
+10	nær	BookRestaurant	B-location
+11	Oakfield	BookRestaurant	B-location
+12	om	BookRestaurant	B-datetime
+13	17	BookRestaurant	I-datetime
+14	sekunder	BookRestaurant	I-datetime
+
+# id: 85
+# text-en: get me the trailer of Good Morning Sunshine
+# text: find traileren for Good Morning Sunshine til mig
+# intent: SearchCreativeWork
+1	find	SearchCreativeWork	O
+2	traileren	SearchCreativeWork	B-object_type
+3	for	SearchCreativeWork	O
+4	Good	SearchCreativeWork	B-object_name
+5	Morning	SearchCreativeWork	I-object_name
+6	Sunshine	SearchCreativeWork	I-object_name
+7	til	SearchCreativeWork	I-object_name
+8	mig	SearchCreativeWork	I-object_name
+
+# id: 86
+# text-en: I want to book a brasserie for 3 people in Netherlands Antilles .
+# text: Jewg vil gerne reservérer bord på et brasserie til 3 på Den Nederlandske Antiller .
+# intent: BookRestaurant
+1	Jewg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	reservérer	BookRestaurant	O
+5	bord	BookRestaurant	O
+6	på	BookRestaurant	O
+7	et	BookRestaurant	O
+8	brasserie	BookRestaurant	B-restaurant_type
+9	til	BookRestaurant	O
+10	3	BookRestaurant	B-party_size_number
+11	på	BookRestaurant	O
+12	Den	BookRestaurant	B-location
+13	Nederlandske	BookRestaurant	I-location
+14	Antiller	BookRestaurant	I-location
+15	.	BookRestaurant	O
+
+# id: 87
+# text-en: rate this current album 0 stars
+# text: give dette album 0 stjerner
+# intent: RateBook
+1	give	RateBook	O
+2	dette	RateBook	B-object_select
+3	album	RateBook	B-object_type
+4	0	RateBook	B-rating_value
+5	stjerner	RateBook	O
+
+# id: 88
+# text-en: Like to book a seat in Monaco for the Yankee Doodle Coffee Shop
+# text: Jeg vil gerne reservérer plads på Yankee Doodle Coffee Shop i Monaco
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	reservérer	BookRestaurant	O
+5	plads	BookRestaurant	O
+6	på	BookRestaurant	O
+7	Yankee	BookRestaurant	B-restaurant_name
+8	Doodle	BookRestaurant	I-restaurant_name
+9	Coffee	BookRestaurant	I-restaurant_name
+10	Shop	BookRestaurant	I-restaurant_name
+11	i	BookRestaurant	O
+12	Monaco	BookRestaurant	B-location
+
+# id: 89
+# text-en: Add the artist to the political punks playlist.
+# text: Tilføj kunstneren til political punks playlisten.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	kunstneren	AddToPlaylist	B-music_item
+3	til	AddToPlaylist	O
+4	political	AddToPlaylist	B-playlist
+5	punks	AddToPlaylist	I-playlist
+6	playlisten	AddToPlaylist	O
+7	.	AddToPlaylist	O
+
+# id: 90
+# text-en: Will it be colder four months from now in Suwanee AK
+# text: Bliver det koldere i Suwanee AK om fire måneder
+# intent: weather/find
+1	Bliver	weather/find	O
+2	det	weather/find	O
+3	koldere	weather/find	B-condition_temperature
+4	i	weather/find	O
+5	Suwanee	weather/find	B-location
+6	AK	weather/find	B-location
+7	om	weather/find	B-datetime
+8	fire	weather/find	I-datetime
+9	måneder	weather/find	I-datetime
+
+# id: 91
+# text-en: add Muzika za decu to my Crash Course playlist
+# text: tilføj Muzika za decu til min Crash Course playliste
+# intent: AddToPlaylist
+1	tilføj	AddToPlaylist	O
+2	Muzika	AddToPlaylist	B-entity_name
+3	za	AddToPlaylist	I-entity_name
+4	decu	AddToPlaylist	I-entity_name
+5	til	AddToPlaylist	O
+6	min	AddToPlaylist	B-reference
+7	Crash	AddToPlaylist	B-playlist
+8	Course	AddToPlaylist	I-playlist
+9	playliste	AddToPlaylist	O
+
+# id: 92
+# text-en: Can you look up the Molecular Oncology saga ?
+# text: Kan du finde Molecular Oncology sagaen ?
+# intent: SearchCreativeWork
+1	Kan	SearchCreativeWork	O
+2	du	SearchCreativeWork	O
+3	finde	SearchCreativeWork	O
+4	Molecular	SearchCreativeWork	B-object_name
+5	Oncology	SearchCreativeWork	I-object_name
+6	sagaen	SearchCreativeWork	B-object_type
+7	?	SearchCreativeWork	O
+
+# id: 93
+# text-en: I want to book a restaurant for six people in Wagstaff AK .
+# text: Jeg vil gerne reservérer bord til 6 i Wagstaff AK .
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	reservérer	BookRestaurant	O
+5	bord	BookRestaurant	O
+6	til	BookRestaurant	O
+7	6	BookRestaurant	B-party_size_number
+8	i	BookRestaurant	O
+9	Wagstaff	BookRestaurant	B-location
+10	AK	BookRestaurant	B-location
+11	.	BookRestaurant	O
+
+# id: 94
+# text-en: Play some symphony music from David Lindley .
+# text: Spil noget symfonimusik med David Lindley .
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	noget	PlayMusic	O
+3	symfonimusik	PlayMusic	B-music_item
+4	med	PlayMusic	O
+5	David	PlayMusic	B-artist
+6	Lindley	PlayMusic	I-artist
+7	.	PlayMusic	O
+
+# id: 95
+# text-en: Please fine me the TV series , Now We Are Married .
+# text: Find venligst TV serien Now We Are Married til mig .
+# intent: SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	venligst	SearchCreativeWork	O
+3	TV	SearchCreativeWork	B-object_type
+4	serien	SearchCreativeWork	I-object_type
+5	Now	SearchCreativeWork	B-object_name
+6	We	SearchCreativeWork	I-object_name
+7	Are	SearchCreativeWork	I-object_name
+8	Married	SearchCreativeWork	I-object_name
+9	til	SearchCreativeWork	I-object_name
+10	mig	SearchCreativeWork	I-object_name
+11	.	SearchCreativeWork	O
+
+# id: 96
+# text-en: I want to see Outcast .
+# text: Jeg vil gerne se Outcast .
+# intent: SearchScreeningEvent
+1	Jeg	SearchScreeningEvent	O
+2	vil	SearchScreeningEvent	O
+3	gerne	SearchScreeningEvent	O
+4	se	SearchScreeningEvent	O
+5	Outcast	SearchScreeningEvent	B-movie_name
+6	.	SearchScreeningEvent	O
+
+# id: 97
+# text-en: add the current track to my This Is Tchaikovsky playlist
+# text: tilføj dette nummer til min This Is Tchaikovsky playliste
+# intent: AddToPlaylist
+1	tilføj	AddToPlaylist	O
+2	dette	AddToPlaylist	O
+3	nummer	AddToPlaylist	B-music_item
+4	til	AddToPlaylist	O
+5	min	AddToPlaylist	B-reference
+6	This	AddToPlaylist	B-playlist
+7	Is	AddToPlaylist	I-playlist
+8	Tchaikovsky	AddToPlaylist	I-playlist
+9	playliste	AddToPlaylist	O
+
+# id: 98
+# text-en: Play This Is: Miles Davis on Lastfm .
+# text: Spil This Is: Miles Davis på Lastfm .
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	This	PlayMusic	B-album
+3	Is:	PlayMusic	I-album
+4	Miles	PlayMusic	B-artist
+5	Davis	PlayMusic	I-artist
+6	på	PlayMusic	O
+7	Lastfm	PlayMusic	B-service
+8	.	PlayMusic	O
+
+# id: 99
+# text-en: book the best table in Tanzania for 5 people at a diner
+# text: reservér det bedste bord for 5 på en diner i Tanzania
+# intent: BookRestaurant
+1	reservér	BookRestaurant	O
+2	det	BookRestaurant	O
+3	bedste	BookRestaurant	B-sort
+4	bord	BookRestaurant	O
+5	for	BookRestaurant	O
+6	5	BookRestaurant	B-party_size_number
+7	på	BookRestaurant	O
+8	en	BookRestaurant	O
+9	diner	BookRestaurant	B-restaurant_type
+10	i	BookRestaurant	O
+11	Tanzania	BookRestaurant	B-location
+
+# id: 100
+# text-en: Let's hear good Mohammad Mamle on Vimeo .
+# text: Lad os høre Mohammad Mamle på Vimeo .
+# intent: PlayMusic
+1	Lad	PlayMusic	O
+2	os	PlayMusic	O
+3	høre	PlayMusic	O
+4	Mohammad	PlayMusic	B-artist
+5	Mamle	PlayMusic	I-artist
+6	på	PlayMusic	O
+7	Vimeo	PlayMusic	B-service
+8	.	PlayMusic	O
+
+# id: 101
+# text-en: Put Vandemataram Srinivas 's track onto HipHop Hot 50 .
+# text: Tilføj Vandemataram Sriniva's sang til HipHop Hot 50 playlisten
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	Vandemataram	AddToPlaylist	B-artist
+3	Sriniva's	AddToPlaylist	I-artist
+4	sang	AddToPlaylist	B-music_item
+5	til	AddToPlaylist	O
+6	HipHop	AddToPlaylist	B-playlist
+7	Hot	AddToPlaylist	I-playlist
+8	50	AddToPlaylist	I-playlist
+9	playlisten	AddToPlaylist	O
+
+# id: 102
+# text-en: Get me the Secret South song .
+# text: Find Secret South sangen til mig .
+# intent: SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	Secret	SearchCreativeWork	B-object_name
+3	South	SearchCreativeWork	I-object_name
+4	sangen	SearchCreativeWork	B-object_type
+5	til	SearchCreativeWork	I-object_type
+6	mig	SearchCreativeWork	I-object_type
+7	.	SearchCreativeWork	O
+
+# id: 103
+# text-en: nineties songs on Zvooq
+# text: halvfemser sange på Zvooq
+# intent: PlayMusic
+1	halvfemser	PlayMusic	B-datetime
+2	sange	PlayMusic	O
+3	på	PlayMusic	O
+4	Zvooq	PlayMusic	B-service
+
+# id: 104
+# text-en: what is the forecast in Admire in TX starting at seventeen
+# text: hvad er vejrudsigten for Admire i TX fra den syttende
+# intent: weather/find
+1	hvad	weather/find	O
+2	er	weather/find	O
+3	vejrudsigten	weather/find	O
+4	for	weather/find	O
+5	Admire	weather/find	B-location
+6	i	weather/find	O
+7	TX	weather/find	B-location
+8	fra	weather/find	O
+9	den	weather/find	B-datetime
+10	syttende	weather/find	I-datetime
+
+# id: 105
+# text-en: Play something on Last Fm
+# text: Spil noget på Last Fm
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	noget	PlayMusic	O
+3	på	PlayMusic	O
+4	Last	PlayMusic	B-service
+5	Fm	PlayMusic	I-service
+
+# id: 106
+# text-en: I want to see The Portrait of a Lady at the nearest cinema .
+# text: Jeg vil gerne se The Portrait of a Lady i den nærmeste biograf .
+# intent: SearchScreeningEvent
+1	Jeg	SearchScreeningEvent	O
+2	vil	SearchScreeningEvent	O
+3	gerne	SearchScreeningEvent	O
+4	se	SearchScreeningEvent	O
+5	The	SearchScreeningEvent	B-movie_name
+6	Portrait	SearchScreeningEvent	I-movie_name
+7	of	SearchScreeningEvent	I-movie_name
+8	a	SearchScreeningEvent	I-movie_name
+9	Lady	SearchScreeningEvent	I-movie_name
+10	i	SearchScreeningEvent	O
+11	den	SearchScreeningEvent	O
+12	nærmeste	SearchScreeningEvent	B-location
+13	biograf	SearchScreeningEvent	B-object_location_type
+14	.	SearchScreeningEvent	O
+
+# id: 107
+# text-en: Please find me Phineas Redux .
+# text: Find venligst Phineas Redux til mig .
+# intent: SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	venligst	SearchCreativeWork	B-object_name
+3	Phineas	SearchCreativeWork	B-object_name
+4	Redux	SearchCreativeWork	I-object_name
+5	til	SearchCreativeWork	O
+6	mig	SearchCreativeWork	B-object_name
+7	.	SearchCreativeWork	O
+
+# id: 108
+# text-en: Add the 40 cal tune to the laundry playlist.
+# text: Tilføj 40 cal sangen til laundry playlisten.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	40	AddToPlaylist	B-artist
+3	cal	AddToPlaylist	I-artist
+4	sangen	AddToPlaylist	B-music_item
+5	til	AddToPlaylist	O
+6	laundry	AddToPlaylist	B-playlist
+7	playlisten	AddToPlaylist	O
+8	.	AddToPlaylist	O
+
+# id: 109
+# text-en: Open itunes and play Ben Burnley Ready To Die
+# text: Åben Itunes og spil Ready To Die med Ben Burnley
+# intent: PlayMusic
+1	Åben	PlayMusic	O
+2	Itunes	PlayMusic	B-service
+3	og	PlayMusic	O
+4	spil	PlayMusic	O
+5	Ready	PlayMusic	B-album
+6	To	PlayMusic	I-album
+7	Die	PlayMusic	I-album
+8	med	PlayMusic	O
+9	Ben	PlayMusic	B-artist
+10	Burnley	PlayMusic	I-artist
+
+# id: 110
+# text-en: What will the weather be in Monument of Lihula on december the 5th ?
+# text: Hvordan bliver vejret i Monument of Lihula den 5 december ?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	bliver	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	O
+5	Monument	weather/find	B-location
+6	of	weather/find	I-location
+7	Lihula	weather/find	I-location
+8	den	weather/find	O
+9	5	weather/find	B-datetime
+10	december	weather/find	I-datetime
+11	?	weather/find	O
+
+# id: 111
+# text-en: Show the Sexy Dance 2 times at the closest movie house
+# text: Vis mig Sexy Dance 2 i den nærmeste movie house
+# intent: SearchScreeningEvent
+1	Vis	SearchScreeningEvent	O
+2	mig	SearchScreeningEvent	O
+3	Sexy	SearchScreeningEvent	B-movie_name
+4	Dance	SearchScreeningEvent	I-movie_name
+5	2	SearchScreeningEvent	I-movie_name
+6	i	SearchScreeningEvent	O
+7	den	SearchScreeningEvent	O
+8	nærmeste	SearchScreeningEvent	B-location
+9	movie	SearchScreeningEvent	B-object_location_type
+10	house	SearchScreeningEvent	I-object_location_type
+
+# id: 112
+# text-en: Looking for a song with the title of Live at the Kings Center
+# text: Leder efter en sang med titlen Live at the Kings Center
+# intent: SearchCreativeWork
+1	Leder	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	en	SearchCreativeWork	O
+4	sang	SearchCreativeWork	B-object_type
+5	med	SearchCreativeWork	O
+6	titlen	SearchCreativeWork	O
+7	Live	SearchCreativeWork	B-object_name
+8	at	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	Kings	SearchCreativeWork	I-object_name
+11	Center	SearchCreativeWork	I-object_name
+
+# id: 113
+# text-en: What's the weather like in Tyonek , New Jersey
+# text: Hvordan er vejret i Tyonek , New Jersey
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	er	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	O
+5	Tyonek	weather/find	B-location
+6	,	weather/find	O
+7	New	weather/find	B-location
+8	Jersey	weather/find	I-location
+
+# id: 114
+# text-en: I want to book Tupelo Honey Cafe in New Jersey for five people.
+# text: Jeg vil gerne reservérer Tupelo Honey Cafe i New Jersey for fem personer.
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	reservérer	BookRestaurant	O
+5	Tupelo	BookRestaurant	B-restaurant_name
+6	Honey	BookRestaurant	I-restaurant_name
+7	Cafe	BookRestaurant	I-restaurant_name
+8	i	BookRestaurant	O
+9	New	BookRestaurant	B-location
+10	Jersey	BookRestaurant	I-location
+11	for	BookRestaurant	O
+12	fem	BookRestaurant	B-party_size_number
+13	personer	BookRestaurant	O
+14	.	BookRestaurant	O
+
+# id: 115
+# text-en: book spot for my nieces and I at a tea house
+# text: reservér et bord til mine niecer og jeg på et tea house
+# intent: BookRestaurant
+1	reservér	BookRestaurant	O
+2	et	BookRestaurant	O
+3	bord	BookRestaurant	O
+4	til	BookRestaurant	O
+5	mine	BookRestaurant	B-party_size_description
+6	niecer	BookRestaurant	I-party_size_description
+7	og	BookRestaurant	I-party_size_description
+8	jeg	BookRestaurant	I-party_size_description
+9	på	BookRestaurant	O
+10	et	BookRestaurant	O
+11	tea	BookRestaurant	B-restaurant_type
+12	house	BookRestaurant	I-restaurant_type
+
+# id: 116
+# text-en: Will it be hot in the Netherlands on February 16th ?
+# text: Bliver det varmt i Holland den 16 februar ?
+# intent: weather/find
+1	Bliver	weather/find	O
+2	det	weather/find	O
+3	varmt	weather/find	B-condition_temperature
+4	i	weather/find	O
+5	Holland	weather/find	B-location
+6	den	weather/find	O
+7	16	weather/find	B-datetime
+8	februar	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 117
+# text-en: I'd like to add jordan rudess onto the Divertido para niños playlist.
+# text: Jeg vil gerne tilføj jordan rudess til Divertido para niños playlisten.
+# intent: AddToPlaylist
+1	Jeg	AddToPlaylist	O
+2	vil	AddToPlaylist	O
+3	gerne	AddToPlaylist	O
+4	tilføj	AddToPlaylist	O
+5	jordan	AddToPlaylist	B-artist
+6	rudess	AddToPlaylist	I-artist
+7	til	AddToPlaylist	O
+8	Divertido	AddToPlaylist	B-playlist
+9	para	AddToPlaylist	I-playlist
+10	niños	AddToPlaylist	I-playlist
+11	playlisten	AddToPlaylist	O
+12	.	AddToPlaylist	O
+
+# id: 118
+# text-en: Rate In the Company of Cheerful Ladies a zero out of 6
+# text: Bedøm In The Company of Cheerful Ladies nul ud af 6
+# intent: RateBook
+1	Bedøm	RateBook	O
+2	In	RateBook	B-object_name
+3	The	RateBook	I-object_name
+4	Company	RateBook	I-object_name
+5	of	RateBook	I-object_name
+6	Cheerful	RateBook	I-object_name
+7	Ladies	RateBook	I-object_name
+8	nul	RateBook	B-rating_value
+9	ud	RateBook	O
+10	af	RateBook	O
+11	6	RateBook	B-best_rating
+
+# id: 119
+# text-en: Book me a reservation for the best bistro
+# text: Reservér et bord til mig på den bedste bistro
+# intent: BookRestaurant
+1	Reservér	BookRestaurant	O
+2	et	BookRestaurant	O
+3	bord	BookRestaurant	O
+4	til	BookRestaurant	O
+5	mig	BookRestaurant	O
+6	på	BookRestaurant	O
+7	den	BookRestaurant	O
+8	bedste	BookRestaurant	B-sort
+9	bistro	BookRestaurant	B-restaurant_type
+
+# id: 120
+# text-en: rate the current textbook 1 out of 6
+# text: bedøm bogen 1 ud af 6
+# intent: RateBook
+1	bedøm	RateBook	O
+2	bogen	RateBook	B-object_type
+3	1	RateBook	B-rating_value
+4	ud	RateBook	O
+5	af	RateBook	O
+6	6	RateBook	B-best_rating
+
+# id: 121
+# text-en: what are the movie times
+# text: hvad er film spilletiderne
+# intent: SearchScreeningEvent
+1	hvad	SearchScreeningEvent	O
+2	er	SearchScreeningEvent	O
+3	film	SearchScreeningEvent	B-object_type
+4	spilletiderne	SearchScreeningEvent	I-object_type
+
+# id: 122
+# text-en: What will the weather be in Ohio ?
+# text: Hvordan bliver vejret i Ohio ?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	bliver	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	O
+5	Ohio	weather/find	B-location
+6	?	weather/find	O
+
+# id: 123
+# text-en: Add this artist to Showstopper Being Mary Jane
+# text: Tilføj denne kunstner til Showstopper Being Mary Jane
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	denne	AddToPlaylist	O
+3	kunstner	AddToPlaylist	B-object_type
+4	til	AddToPlaylist	O
+5	Showstopper	AddToPlaylist	B-object_name
+6	Being	AddToPlaylist	I-object_name
+7	Mary	AddToPlaylist	I-object_name
+8	Jane	AddToPlaylist	I-object_name
+
+# id: 124
+# text-en: Book a reservation for my babies and I
+# text: Lav en reservation til mine børn og jeg
+# intent: BookRestaurant
+1	Lav	BookRestaurant	O
+2	en	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	til	BookRestaurant	O
+5	mine	BookRestaurant	B-party_size_description
+6	børn	BookRestaurant	I-party_size_description
+7	og	BookRestaurant	I-party_size_description
+8	jeg	BookRestaurant	I-party_size_description
+
+# id: 125
+# text-en: What will the weather be in Sarygamyş Sanctuary on august 21, 2035 ?
+# text: Hvordan bliver vejret i Sarygamyş Sanctuary den 21 august 2035 ?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	bliver	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	O
+5	Sarygamyş	weather/find	B-location
+6	Sanctuary	weather/find	I-location
+7	den	weather/find	O
+8	21	weather/find	B-datetime
+9	august	weather/find	I-datetime
+10	2035	weather/find	I-datetime
+11	?	weather/find	O
+
+# id: 126
+# text-en: Rate Ruth five out of 6 points .
+# text: Bedøm Ruth fem ud af 6 point .
+# intent: RateBook
+1	Bedøm	RateBook	O
+2	Ruth	RateBook	B-object_name
+3	fem	RateBook	B-rating_value
+4	ud	RateBook	O
+5	af	RateBook	O
+6	6	RateBook	B-best_rating
+7	point	RateBook	B-rating_unit
+8	.	RateBook	O
+
+# id: 127
+# text-en: Reminiscences of the Anti-Japanese Guerillas chronicle deserves zero points out of 6 for a rating.
+# text: Krøniken Reminiscences of the Anti-Japanese Guerillas fortjener en nul ud af sek point bedømmelse.
+# intent: RateBook
+1	Krøniken	RateBook	B-object_name
+2	Reminiscences	RateBook	B-object_name
+3	of	RateBook	I-object_name
+4	the	RateBook	I-object_name
+5	Anti-Japanese	RateBook	I-object_name
+6	Guerillas	RateBook	I-object_name
+7	fortjener	RateBook	O
+8	en	RateBook	O
+9	nul	RateBook	B-rating_value
+10	ud	RateBook	O
+11	af	RateBook	O
+12	sek	RateBook	O
+13	point	RateBook	O
+14	bedømmelse	RateBook	O
+15	.	RateBook	O
+
+# id: 128
+# text-en: Show me Southern Theatres movie times
+# text: Vis mig spilletiderne for Southern Theatres
+# intent: SearchScreeningEvent
+1	Vis	SearchScreeningEvent	O
+2	mig	SearchScreeningEvent	O
+3	spilletiderne	SearchScreeningEvent	O
+4	for	SearchScreeningEvent	O
+5	Southern	SearchScreeningEvent	B-location
+6	Theatres	SearchScreeningEvent	I-location
+
+# id: 129
+# text-en: Find the movie schedule close by
+# text: Find spilletiderne for den nærmeste biograf
+# intent: SearchScreeningEvent
+1	Find	SearchScreeningEvent	O
+2	spilletiderne	SearchScreeningEvent	O
+3	for	SearchScreeningEvent	O
+4	den	SearchScreeningEvent	O
+5	nærmeste	SearchScreeningEvent	B-location
+6	biograf	SearchScreeningEvent	B-object_type
+
+# id: 130
+# text-en: Add this album to the Spanish Beat playlist
+# text: Tilføj dette album til Spanish Beat playlisten
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	dette	AddToPlaylist	O
+3	album	AddToPlaylist	B-music_item
+4	til	AddToPlaylist	O
+5	Spanish	AddToPlaylist	B-playlist
+6	Beat	AddToPlaylist	I-playlist
+7	playlisten	AddToPlaylist	O
+
+# id: 131
+# text-en: Book a reservation for 6 people for a creole tavern in Montenegro
+# text: Reservér bord til 6 på en kreols taverne i Montenegro
+# intent: BookRestaurant
+1	Reservér	BookRestaurant	O
+2	bord	BookRestaurant	O
+3	til	BookRestaurant	O
+4	6	BookRestaurant	B-party_size_number
+5	på	BookRestaurant	O
+6	en	BookRestaurant	O
+7	kreols	BookRestaurant	B-cuisine
+8	taverne	BookRestaurant	B-restaurant_type
+9	i	BookRestaurant	O
+10	Montenegro	BookRestaurant	B-location
+
+# id: 132
+# text-en: Give the Catedral series four stars .
+# text: Give Catedral serien fire stjerner
+# intent: RateBook
+1	Give	RateBook	O
+2	Catedral	RateBook	B-object_name
+3	serien	RateBook	B-object_part_of_series_type
+4	fire	RateBook	B-rating_value
+5	stjerner	RateBook	O
+
+# id: 133
+# text-en: Add The Famous Flower of Serving-Men to my evening acoustic playlist.
+# text: Tilføj The Famous Flower of Serving-Men to my evening acoustic playlist.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	The	AddToPlaylist	B-entity_name
+3	Famous	AddToPlaylist	I-entity_name
+4	Flower	AddToPlaylist	I-entity_name
+5	of	AddToPlaylist	I-entity_name
+6	Serving-Men	AddToPlaylist	I-entity_name
+7	to	AddToPlaylist	O
+8	my	AddToPlaylist	B-reference
+9	evening	AddToPlaylist	B-playlist
+10	acoustic	AddToPlaylist	I-playlist
+11	playlist	AddToPlaylist	O
+12	.	AddToPlaylist	O
+
+# id: 134
+# text-en: Show me the schedule for ArcLight Hollywood for only animated movies
+# text: Vis mig spilletiderne for animerede film på ArcLight Hollywood
+# intent: SearchScreeningEvent
+1	Vis	SearchScreeningEvent	O
+2	mig	SearchScreeningEvent	O
+3	spilletiderne	SearchScreeningEvent	O
+4	for	SearchScreeningEvent	O
+5	animerede	SearchScreeningEvent	B-movie_type
+6	film	SearchScreeningEvent	I-movie_type
+7	på	SearchScreeningEvent	O
+8	ArcLight	SearchScreeningEvent	B-location
+9	Hollywood	SearchScreeningEvent	I-location
+
+# id: 135
+# text-en: Please search for the painting titled This Is the Night .
+# text: Søg venligst efter et maleri med titlen This Is the Night .
+# intent: SearchCreativeWork
+1	Søg	SearchCreativeWork	O
+2	venligst	SearchCreativeWork	O
+3	efter	SearchCreativeWork	O
+4	et	SearchCreativeWork	O
+5	maleri	SearchCreativeWork	B-object_type
+6	med	SearchCreativeWork	O
+7	titlen	SearchCreativeWork	O
+8	This	SearchCreativeWork	B-object_name
+9	Is	SearchCreativeWork	I-object_name
+10	the	SearchCreativeWork	I-object_name
+11	Night	SearchCreativeWork	I-object_name
+12	.	SearchCreativeWork	O
+
+# id: 136
+# text-en: What will the humidity be in the current spot at 15:19:29 ?
+# text: Hvordan bliver luftfugtigheden på min nuværende lokation klokken 15:19:29 ?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	bliver	weather/find	O
+3	luftfugtigheden	weather/find	B-condition_description
+4	på	weather/find	O
+5	min	weather/find	O
+6	nuværende	weather/find	B-location
+7	lokation	weather/find	I-location
+8	klokken	weather/find	B-datetime
+9	15:19:29	weather/find	B-datetime
+10	?	weather/find	O
+
+# id: 137
+# text-en: i want to see JLA Adventures: Trapped In Time
+# text: jeg vil gerne se JLA Adventures: Trapped In Time
+# intent: SearchScreeningEvent
+1	jeg	SearchScreeningEvent	O
+2	vil	SearchScreeningEvent	O
+3	gerne	SearchScreeningEvent	O
+4	se	SearchScreeningEvent	O
+5	JLA	SearchScreeningEvent	B-movie_name
+6	Adventures:	SearchScreeningEvent	I-movie_name
+7	Trapped	SearchScreeningEvent	I-movie_name
+8	In	SearchScreeningEvent	I-movie_name
+9	Time	SearchScreeningEvent	I-movie_name
+
+# id: 138
+# text-en: Add a derek watkins tune to This Is Johnny Cash
+# text: Tilføj en derek watkins sang til This Is Johnny Cash playlisten
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	en	AddToPlaylist	O
+3	derek	AddToPlaylist	B-artist
+4	watkins	AddToPlaylist	I-artist
+5	sang	AddToPlaylist	B-music_item
+6	til	AddToPlaylist	O
+7	This	AddToPlaylist	B-playlist
+8	Is	AddToPlaylist	I-playlist
+9	Johnny	AddToPlaylist	I-playlist
+10	Cash	AddToPlaylist	I-playlist
+11	playlisten	AddToPlaylist	O
+
+# id: 139
+# text-en: Find a creative work called Fire in the Hole
+# text: Find det kreative arbejde med navnet Fire in the Hole
+# intent: SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	det	SearchCreativeWork	O
+3	kreative	SearchCreativeWork	O
+4	arbejde	SearchCreativeWork	O
+5	med	SearchCreativeWork	O
+6	navnet	SearchCreativeWork	O
+7	Fire	SearchCreativeWork	B-object_name
+8	in	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	Hole	SearchCreativeWork	I-object_name
+
+# id: 140
+# text-en: book a table near pat's college
+# text: reservér et bord tæt på pat's universitet
+# intent: BookRestaurant
+1	reservér	BookRestaurant	O
+2	et	BookRestaurant	O
+3	bord	BookRestaurant	O
+4	tæt	BookRestaurant	B-location
+5	på	BookRestaurant	O
+6	pat's	BookRestaurant	B-location
+7	universitet	BookRestaurant	I-location
+
+# id: 141
+# text-en: Is Patrick Still Lives showing at AMC Theaters
+# text: Spiller Patric Still Lives i et AMC Theatres
+# intent: SearchScreeningEvent
+1	Spiller	SearchScreeningEvent	O
+2	Patric	SearchScreeningEvent	B-movie_name
+3	Still	SearchScreeningEvent	I-movie_name
+4	Lives	SearchScreeningEvent	I-movie_name
+5	i	SearchScreeningEvent	O
+6	et	SearchScreeningEvent	O
+7	AMC	SearchScreeningEvent	B-location
+8	Theatres	SearchScreeningEvent	I-location
+
+# id: 142
+# text-en: I want to book a joint in a spa .
+# text: Jeg vil gerne book et spa ophold sammen .
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	book	BookRestaurant	O
+5	et	BookRestaurant	O
+6	spa	BookRestaurant	B-facility
+7	ophold	BookRestaurant	O
+8	sammen	BookRestaurant	B-restaurant_type
+9	.	BookRestaurant	O
+
+# id: 143
+# text-en: need a table somewhere in Quarryville 14 hours from now
+# text: har brug for et bord et sted i Quarryville om 14 timer
+# intent: BookRestaurant
+1	har	BookRestaurant	O
+2	brug	BookRestaurant	O
+3	for	BookRestaurant	O
+4	et	BookRestaurant	O
+5	bord	BookRestaurant	O
+6	et	BookRestaurant	O
+7	sted	BookRestaurant	O
+8	i	BookRestaurant	O
+9	Quarryville	BookRestaurant	B-location
+10	om	BookRestaurant	O
+11	14	BookRestaurant	B-datetime
+12	timer	BookRestaurant	I-datetime
+
+# id: 144
+# text-en: play some Gary Lee Conner
+# text: spil noget med Gary Lee Conner
+# intent: PlayMusic
+1	spil	PlayMusic	O
+2	noget	PlayMusic	O
+3	med	PlayMusic	O
+4	Gary	PlayMusic	B-artist
+5	Lee	PlayMusic	I-artist
+6	Conner	PlayMusic	I-artist
+
+# id: 145
+# text-en: show the closest movie theatre that shows Boycott
+# text: find den nærmeste biograf der viser Boycott
+# intent: SearchScreeningEvent
+1	find	SearchScreeningEvent	O
+2	den	SearchScreeningEvent	O
+3	nærmeste	SearchScreeningEvent	B-location
+4	biograf	SearchScreeningEvent	B-object_type
+5	der	SearchScreeningEvent	O
+6	viser	SearchScreeningEvent	O
+7	Boycott	SearchScreeningEvent	B-object_name
+
+# id: 146
+# text-en: Please play my ecstatic playlist.
+# text: Spil venligst min ecstatic playliste.
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	venligst	PlayMusic	O
+3	min	PlayMusic	O
+4	ecstatic	PlayMusic	B-playlist
+5	playliste	PlayMusic	O
+6	.	PlayMusic	O
+
+# id: 147
+# text-en: Please look up the song The Mad Magician .
+# text: find venligst sangen The Mad Magician .
+# intent: SearchCreativeWork
+1	find	SearchCreativeWork	O
+2	venligst	SearchCreativeWork	O
+3	sangen	SearchCreativeWork	O
+4	The	SearchCreativeWork	B-object_name
+5	Mad	SearchCreativeWork	I-object_name
+6	Magician	SearchCreativeWork	I-object_name
+7	.	SearchCreativeWork	O
+
+# id: 148
+# text-en: Check the schedule for Bow Tie Cinemas .
+# text: Tjek spilletiderne på Bow Tie Cinemas .
+# intent: SearchScreeningEvent
+1	Tjek	SearchScreeningEvent	O
+2	spilletiderne	SearchScreeningEvent	O
+3	på	SearchScreeningEvent	O
+4	Bow	SearchScreeningEvent	B-location
+5	Tie	SearchScreeningEvent	I-location
+6	Cinemas	SearchScreeningEvent	I-location
+7	.	SearchScreeningEvent	O
+
+# id: 149
+# text-en: Book me a reservation for a party of 3 at a pub in Northern Mariana Islands
+# text: Lav en reservation til 3 på en pub i Nordmarianerne
+# intent: BookRestaurant
+1	Lav	BookRestaurant	O
+2	en	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	til	BookRestaurant	O
+5	3	BookRestaurant	B-party_size_number
+6	på	BookRestaurant	O
+7	en	BookRestaurant	O
+8	pub	BookRestaurant	B-restaurant_type
+9	i	BookRestaurant	O
+10	Nordmarianerne	BookRestaurant	B-location
+
+# id: 150
+# text-en: I need to add to my Infinite Indie Folk list the works of Rahim Shah
+# text: Jeg skal tilføje værkerne fra Rahim Shah til min Infinite Indie Faolk liste
+# intent: AddToPlaylist
+1	Jeg	AddToPlaylist	O
+2	skal	AddToPlaylist	O
+3	tilføje	AddToPlaylist	O
+4	værkerne	AddToPlaylist	O
+5	fra	AddToPlaylist	O
+6	Rahim	AddToPlaylist	B-artist
+7	Shah	AddToPlaylist	I-artist
+8	til	AddToPlaylist	O
+9	min	AddToPlaylist	B-reference
+10	Infinite	AddToPlaylist	B-playlist
+11	Indie	AddToPlaylist	I-playlist
+12	Faolk	AddToPlaylist	I-playlist
+13	liste	AddToPlaylist	O
+
+# id: 151
+# text-en: Add Jerry Calliste, Jr to my Te quiero playlist.
+# text: Tilføj Jerry Calliste, Jr til min Te quiero playliste.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	Jerry	AddToPlaylist	B-artist
+3	Calliste	AddToPlaylist	I-artist
+4	,	AddToPlaylist	I-artist
+5	Jr	AddToPlaylist	I-artist
+6	til	AddToPlaylist	O
+7	min	AddToPlaylist	B-reference
+8	Te	AddToPlaylist	B-playlist
+9	quiero	AddToPlaylist	I-playlist
+10	playliste	AddToPlaylist	O
+11	.	AddToPlaylist	O
+
+# id: 152
+# text-en: How much colder will it be not far from Utah around 3 Am ?
+# text: Hvor meget køligere vil det være tæt på Utah omkring klokken 3 om morgenen
+# intent: weather/find
+1	Hvor	weather/find	O
+2	meget	weather/find	O
+3	køligere	weather/find	O
+4	vil	weather/find	O
+5	det	weather/find	O
+6	være	weather/find	O
+7	tæt	weather/find	B-location
+8	på	weather/find	O
+9	Utah	weather/find	B-location
+10	omkring	weather/find	O
+11	klokken	weather/find	B-datetime
+12	3	weather/find	I-datetime
+13	om	weather/find	I-datetime
+14	morgenen	weather/find	I-datetime
+
+# id: 153
+# text-en: Add the album to the Hipster Soul playlist.
+# text: Tilføj albummet til Hipster Soul playlisten.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	albummet	AddToPlaylist	B-music_item
+3	til	AddToPlaylist	O
+4	Hipster	AddToPlaylist	B-playlist
+5	Soul	AddToPlaylist	I-playlist
+6	playlisten	AddToPlaylist	O
+7	.	AddToPlaylist	O
+
+# id: 154
+# text-en: I want to eat a delicatessen in thirteen hours that serves eastern european food
+# text: Om tretten timer vil jeg gerne spise en delikatesse der serverer østeuropæisk mad
+# intent: BookRestaurant
+1	Om	BookRestaurant	O
+2	tretten	BookRestaurant	B-datetime
+3	timer	BookRestaurant	I-datetime
+4	vil	BookRestaurant	O
+5	jeg	BookRestaurant	O
+6	gerne	BookRestaurant	O
+7	spise	BookRestaurant	O
+8	en	BookRestaurant	O
+9	delikatesse	BookRestaurant	B-restaurant_type
+10	der	BookRestaurant	O
+11	serverer	BookRestaurant	O
+12	østeuropæisk	BookRestaurant	B-cuisine
+13	mad	BookRestaurant	I-cuisine
+
+# id: 155
+# text-en: play a sixties soundtrack
+# text: afspil et tredser soundtrack
+# intent: PlayMusic
+1	afspil	PlayMusic	O
+2	et	PlayMusic	O
+3	tredser	PlayMusic	B-object_name
+4	soundtrack	PlayMusic	B-object_type
+
+# id: 156
+# text-en: Give this album one stars
+# text: Give dette album én stjerne
+# intent: RateBook
+1	Give	RateBook	O
+2	dette	RateBook	B-object_select
+3	album	RateBook	B-object_type
+4	én	RateBook	B-rating_value
+5	stjerne	RateBook	O
+
+# id: 157
+# text-en: Play the greatest music from Bryan Maclean .
+# text: Afspil det bedste music fra Bryan Maclean .
+# intent: PlayMusic
+1	Afspil	PlayMusic	O
+2	det	PlayMusic	O
+3	bedste	PlayMusic	B-sort
+4	music	PlayMusic	O
+5	fra	PlayMusic	O
+6	Bryan	PlayMusic	B-artist
+7	Maclean	PlayMusic	I-artist
+8	.	PlayMusic	O
+
+# id: 158
+# text-en: what is the forecast in Nicodemus and nearby
+# text: Hvad er vejrudsigten for Nicodemus og omegn
+# intent: weather/find
+1	Hvad	weather/find	O
+2	er	weather/find	O
+3	vejrudsigten	weather/find	O
+4	for	weather/find	O
+5	Nicodemus	weather/find	B-location
+6	og	weather/find	O
+7	omegn	weather/find	B-location
+
+# id: 159
+# text-en: Looking for a game called Phinally Phamous
+# text: Leder efter et spil der hedder Phinally Phamous
+# intent: SearchCreativeWork
+1	Leder	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	et	SearchCreativeWork	O
+4	spil	SearchCreativeWork	B-object_type
+5	der	SearchCreativeWork	O
+6	hedder	SearchCreativeWork	O
+7	Phinally	SearchCreativeWork	B-object_name
+8	Phamous	SearchCreativeWork	I-object_name
+
+# id: 160
+# text-en: Give a rating of 2 to Juneteenth .
+# text: Give en bedømmelse på 2 til Juneteenth .
+# intent: RateBook
+1	Give	RateBook	O
+2	en	RateBook	O
+3	bedømmelse	RateBook	O
+4	på	RateBook	O
+5	2	RateBook	B-rating_value
+6	til	RateBook	O
+7	Juneteenth	RateBook	B-object_name
+8	.	RateBook	O
+
+# id: 161
+# text-en: Give zero stars to Rhialto the Marvellous
+# text: Give nul stjerner til Rhialto the Marvellous
+# intent: RateBook
+1	Give	RateBook	O
+2	nul	RateBook	B-rating_value
+3	stjerner	RateBook	O
+4	til	RateBook	O
+5	Rhialto	RateBook	B-object_name
+6	the	RateBook	I-object_name
+7	Marvellous	RateBook	I-object_name
+
+# id: 162
+# text-en: I want to hear soundtrack music on Youtube from Helena Iren Michaelsen
+# text: Jeg vil gerne høre soundtrack musik af Helena Iren Michaelsen på Youtube
+# intent: PlayMusic
+1	Jeg	PlayMusic	O
+2	vil	PlayMusic	O
+3	gerne	PlayMusic	O
+4	høre	PlayMusic	O
+5	soundtrack	PlayMusic	B-music_item
+6	musik	PlayMusic	O
+7	af	PlayMusic	O
+8	Helena	PlayMusic	B-artist
+9	Iren	PlayMusic	I-artist
+10	Michaelsen	PlayMusic	I-artist
+11	på	PlayMusic	O
+12	Youtube	PlayMusic	B-service
+
+# id: 163
+# text-en: book a table on 1/20/2023 for 5 people in MH
+# text: bestil bord til 5 den 1/20/2023 i MH
+# intent: BookRestaurant
+1	bestil	BookRestaurant	O
+2	bord	BookRestaurant	O
+3	til	BookRestaurant	O
+4	5	BookRestaurant	B-party_size_number
+5	den	BookRestaurant	B-datetime
+6	1	BookRestaurant	I-datetime
+7	/	BookRestaurant	I-datetime
+8	20	BookRestaurant	I-datetime
+9	/	BookRestaurant	I-datetime
+10	2023	BookRestaurant	I-datetime
+11	i	BookRestaurant	O
+12	MH	BookRestaurant	B-location
+
+# id: 164
+# text-en: movie schedules close by for animated movies
+# text: spilletider for animerede film tæt på
+# intent: SearchScreeningEvent
+1	spilletider	SearchScreeningEvent	O
+2	for	SearchScreeningEvent	O
+3	animerede	SearchScreeningEvent	B-movie_type
+4	film	SearchScreeningEvent	I-movie_type
+5	tæt	SearchScreeningEvent	B-location
+6	på	SearchScreeningEvent	I-location
+
+# id: 165
+# text-en: Add jack white to my playlist This Is Shakira
+# text: Tilføj jack white til min This Is Shakira playliste
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	jack	AddToPlaylist	B-artist
+3	white	AddToPlaylist	I-artist
+4	til	AddToPlaylist	O
+5	min	AddToPlaylist	B-reference
+6	This	AddToPlaylist	B-playlist
+7	Is	AddToPlaylist	I-playlist
+8	Shakira	AddToPlaylist	I-playlist
+9	playliste	AddToPlaylist	O
+
+# id: 166
+# text-en: I want to book a restaurant for five people in Sri Lanka .
+# text: Jeg vil gerne bestille bord til fem på en restaurant i Sri Lanka .
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	bestille	BookRestaurant	O
+5	bord	BookRestaurant	O
+6	til	BookRestaurant	O
+7	fem	BookRestaurant	B-party_size_number
+8	på	BookRestaurant	O
+9	en	BookRestaurant	O
+10	restaurant	BookRestaurant	B-restaurant_type
+11	i	BookRestaurant	O
+12	Sri	BookRestaurant	B-location
+13	Lanka	BookRestaurant	I-location
+14	.	BookRestaurant	O
+
+# id: 167
+# text-en: Please search for the television show , Episodi di The Blacklist .
+# text: Søg efter fjernsyns programmet , Episodi di The Blacklist .
+# intent: SearchCreativeWork
+1	Søg	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	fjernsyns	SearchCreativeWork	B-object_type
+4	programmet	SearchCreativeWork	I-object_type
+5	,	SearchCreativeWork	O
+6	Episodi	SearchCreativeWork	B-object_name
+7	di	SearchCreativeWork	I-object_name
+8	The	SearchCreativeWork	I-object_name
+9	Blacklist	SearchCreativeWork	I-object_name
+10	.	SearchCreativeWork	O
+
+# id: 168
+# text-en: what is the forecast for colder temps beginning on Law Day here
+# text: hvad er udsigten til koldere temperaturer i begyndelsen af Law Day her
+# intent: weather/find
+1	hvad	weather/find	O
+2	er	weather/find	O
+3	udsigten	weather/find	O
+4	til	weather/find	O
+5	koldere	weather/find	B-condition_temperature
+6	temperaturer	weather/find	O
+7	i	weather/find	O
+8	begyndelsen	weather/find	B-datetime
+9	af	weather/find	I-datetime
+10	Law	weather/find	I-datetime
+11	Day	weather/find	I-datetime
+12	her	weather/find	B-location
+
+# id: 169
+# text-en: I want to book a restaurant for ten people.
+# text: Jeg vil gerne bestille bord til ti på en restaurant.
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	bestille	BookRestaurant	O
+5	bord	BookRestaurant	O
+6	til	BookRestaurant	O
+7	ti	BookRestaurant	B-party_size_number
+8	på	BookRestaurant	O
+9	en	BookRestaurant	O
+10	restaurant	BookRestaurant	B-restaurant_type
+11	.	BookRestaurant	O
+
+# id: 170
+# text-en: Play something by Duke Ellington from the seventies
+# text: Spil noget fra halvfjerserne med Duke Ellington
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	noget	PlayMusic	O
+3	fra	PlayMusic	B-datetime
+4	halvfjerserne	PlayMusic	I-datetime
+5	med	PlayMusic	O
+6	Duke	PlayMusic	B-artist
+7	Ellington	PlayMusic	I-artist
+
+# id: 171
+# text-en: Rate Cotton Comes to Harlem a 2
+# text: Give Cotton Comes to Harlem en 2'er
+# intent: RateBook
+1	Give	RateBook	O
+2	Cotton	RateBook	B-object_name
+3	Comes	RateBook	I-object_name
+4	to	RateBook	I-object_name
+5	Harlem	RateBook	I-object_name
+6	en	RateBook	O
+7	2'er	RateBook	B-rating_value
+
+# id: 172
+# text-en: Add a song to my playlist madden nfl 16
+# text: Tilføj en sang til min madden nfl 16 playliste
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	en	AddToPlaylist	O
+3	sang	AddToPlaylist	B-music_item
+4	til	AddToPlaylist	O
+5	min	AddToPlaylist	B-reference
+6	madden	AddToPlaylist	I-reference
+7	nfl	AddToPlaylist	B-playlist
+8	16	AddToPlaylist	I-playlist
+9	playliste	AddToPlaylist	O
+
+# id: 173
+# text-en: Add Toyan to my Epic Gaming playlist.
+# text: Tilføj Toyan til min Epic Gamin playliste.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	Toyan	AddToPlaylist	B-artist
+3	til	AddToPlaylist	O
+4	min	AddToPlaylist	B-reference
+5	Epic	AddToPlaylist	B-playlist
+6	Gamin	AddToPlaylist	I-playlist
+7	playliste	AddToPlaylist	O
+8	.	AddToPlaylist	O
+
+# id: 174
+# text-en: play some new Les Vandyke on Slacker
+# text: Spil noget nyt med Les Vandyke på Slacker
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	noget	PlayMusic	O
+3	nyt	PlayMusic	B-sort
+4	med	PlayMusic	O
+5	Les	PlayMusic	B-artist
+6	Vandyke	PlayMusic	I-artist
+7	på	PlayMusic	O
+8	Slacker	PlayMusic	B-service
+
+# id: 175
+# text-en: rate the Three Junes one out of 6
+# text: Give the Three June én ud af 6
+# intent: RateBook
+1	Give	RateBook	O
+2	the	RateBook	O
+3	Three	RateBook	B-object_name
+4	June	RateBook	I-object_name
+5	én	RateBook	B-rating_value
+6	ud	RateBook	O
+7	af	RateBook	O
+8	6	RateBook	B-best_rating
+
+# id: 176
+# text-en: Book a reservation for nine people at a bakery in Nunez
+# text: Lav en reservation til ni på en bageri i Nunez
+# intent: BookRestaurant
+1	Lav	BookRestaurant	O
+2	en	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	til	BookRestaurant	O
+5	ni	BookRestaurant	B-party_size_number
+6	på	BookRestaurant	O
+7	en	BookRestaurant	O
+8	bageri	BookRestaurant	B-restaurant_type
+9	i	BookRestaurant	O
+10	Nunez	BookRestaurant	B-location
+
+# id: 177
+# text-en: Rate this current novel two out of 6 .
+# text: Bedøm den nuværende roman to ud af 6 .
+# intent: RateBook
+1	Bedøm	RateBook	O
+2	den	RateBook	O
+3	nuværende	RateBook	B-object_select
+4	roman	RateBook	B-object_type
+5	to	RateBook	B-rating_value
+6	ud	RateBook	O
+7	af	RateBook	O
+8	6	RateBook	B-best_rating
+9	.	RateBook	O
+
+# id: 178
+# text-en: Play The Happy Blues by Ronnie Wood .
+# text: Afspil The Happy Blues med Ronnie Wood .
+# intent: PlayMusic
+1	Afspil	PlayMusic	O
+2	The	PlayMusic	B-album
+3	Happy	PlayMusic	I-album
+4	Blues	PlayMusic	I-album
+5	med	PlayMusic	O
+6	Ronnie	PlayMusic	B-artist
+7	Wood	PlayMusic	I-artist
+8	.	PlayMusic	O
+
+# id: 179
+# text-en: Play a symphony from 2013 .
+# text: Afspil en symfoni fra 2013 .
+# intent: PlayMusic
+1	Afspil	PlayMusic	O
+2	en	PlayMusic	O
+3	symfoni	PlayMusic	B-music_item
+4	fra	PlayMusic	O
+5	2013	PlayMusic	B-datetime
+6	.	PlayMusic	O
+
+# id: 180
+# text-en: Play Subconscious Lobotomy from Jennifer Paull .
+# text: Afspil Subconscious Lobotomy med Jennifer Paull .
+# intent: PlayMusic
+1	Afspil	PlayMusic	O
+2	Subconscious	PlayMusic	B-album
+3	Lobotomy	PlayMusic	I-album
+4	med	PlayMusic	O
+5	Jennifer	PlayMusic	B-artist
+6	Paull	PlayMusic	I-artist
+7	.	PlayMusic	O
+
+# id: 181
+# text-en: Give The Crystal Snare 5 stars
+# text: Give The Crystal Snare 5 stjerner
+# intent: RateBook
+1	Give	RateBook	O
+2	The	RateBook	B-object_name
+3	Crystal	RateBook	I-object_name
+4	Snare	RateBook	I-object_name
+5	5	RateBook	B-rating_value
+6	stjerner	RateBook	O
+
+# id: 182
+# text-en: Give zero stars to this textbook
+# text: Give nul stjerner til denne bog
+# intent: RateBook
+1	Give	RateBook	O
+2	nul	RateBook	B-rating_value
+3	stjerner	RateBook	O
+4	til	RateBook	O
+5	denne	RateBook	B-object_select
+6	bog	RateBook	B-object_type
+
+# id: 183
+# text-en: Rate the current series 4 points
+# text: Bedøm den nuværende serie 4 point
+# intent: RateBook
+1	Bedøm	RateBook	O
+2	den	RateBook	O
+3	nuværende	RateBook	B-object_select
+4	serie	RateBook	B-object_part_of_series_type
+5	4	RateBook	B-rating_value
+6	point	RateBook	B-rating_unit
+
+# id: 184
+# text-en: I want a table at James D. Conrey House in Urbank California
+# text: Jeg vil gerne reservere et bord på James D. Conrey House i Urbank Californien
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	reservere	BookRestaurant	O
+5	et	BookRestaurant	O
+6	bord	BookRestaurant	O
+7	på	BookRestaurant	O
+8	James	BookRestaurant	B-restaurant_name
+9	D	BookRestaurant	I-restaurant_name
+10	.	BookRestaurant	I-restaurant_name
+11	Conrey	BookRestaurant	I-restaurant_name
+12	House	BookRestaurant	I-restaurant_name
+13	i	BookRestaurant	O
+14	Urbank	BookRestaurant	B-location
+15	Californien	BookRestaurant	B-location
+
+# id: 185
+# text-en: Is Babar: King of the Elephants playing
+# text: Spiller Babar: King of the Elephants
+# intent: SearchScreeningEvent
+1	Spiller	SearchScreeningEvent	O
+2	Babar:	SearchScreeningEvent	B-movie_name
+3	King	SearchScreeningEvent	I-movie_name
+4	of	SearchScreeningEvent	I-movie_name
+5	the	SearchScreeningEvent	I-movie_name
+6	Elephants	SearchScreeningEvent	I-movie_name
+
+# id: 186
+# text-en: Add a song to this is racionais mc's
+# text: Tilføj en sang til this is racionais mc's
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	en	AddToPlaylist	O
+3	sang	AddToPlaylist	B-music_item
+4	til	AddToPlaylist	O
+5	this	AddToPlaylist	B-playlist
+6	is	AddToPlaylist	I-playlist
+7	racionais	AddToPlaylist	I-playlist
+8	mc's	AddToPlaylist	I-playlist
+
+# id: 187
+# text-en: rate the current essay zero out of 6 stars
+# text: bedøm det aktuelle essay nul ud af 6 stjerner
+# intent: RateBook
+1	bedøm	RateBook	O
+2	det	RateBook	O
+3	aktuelle	RateBook	B-object_select
+4	essay	RateBook	B-object_type
+5	nul	RateBook	B-rating_value
+6	ud	RateBook	O
+7	af	RateBook	O
+8	6	RateBook	B-best_rating
+9	stjerner	RateBook	O
+
+# id: 188
+# text-en: Let's hear stuff from Andrew Hewitt .
+# text: Lad os høre noget fra Andrew Hewitt .
+# intent: PlayMusic
+1	Lad	PlayMusic	O
+2	os	PlayMusic	O
+3	høre	PlayMusic	O
+4	noget	PlayMusic	O
+5	fra	PlayMusic	O
+6	Andrew	PlayMusic	B-artist
+7	Hewitt	PlayMusic	I-artist
+8	.	PlayMusic	O
+
+# id: 189
+# text-en: Find animated movies close by
+# text: Find animerede film i nærheden
+# intent: SearchScreeningEvent
+1	Find	SearchScreeningEvent	O
+2	animerede	SearchScreeningEvent	B-movie_type
+3	film	SearchScreeningEvent	I-movie_type
+4	i	SearchScreeningEvent	B-location
+5	nærheden	SearchScreeningEvent	I-location
+
+# id: 190
+# text-en: give the current chronicle five of 6 points
+# text: give den nuværende krønike fem ud af 6 point
+# intent: RateBook
+1	give	RateBook	O
+2	den	RateBook	O
+3	nuværende	RateBook	B-object_select
+4	krønike	RateBook	B-object_part_of_series_type
+5	fem	RateBook	B-rating_value
+6	ud	RateBook	O
+7	af	RateBook	O
+8	6	RateBook	B-best_rating
+9	point	RateBook	B-rating_unit
+
+# id: 191
+# text-en: I need a table for 4 in Saint Helena at Settha Palace Hotel
+# text: Jeg skal bruge et bord til 4 på Settha Palace Hotel i Saint Helena
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	skal	BookRestaurant	O
+3	bruge	BookRestaurant	O
+4	et	BookRestaurant	O
+5	bord	BookRestaurant	O
+6	til	BookRestaurant	O
+7	4	BookRestaurant	B-party_size_number
+8	på	BookRestaurant	O
+9	Settha	BookRestaurant	B-restaurant_name
+10	Palace	BookRestaurant	I-restaurant_name
+11	Hotel	BookRestaurant	I-restaurant_name
+12	i	BookRestaurant	O
+13	Saint	BookRestaurant	B-location
+14	Helena	BookRestaurant	I-location
+
+# id: 192
+# text-en: What is the weather going to be like in Virginia on st. patrick's day ?
+# text: Hvordan bliver vejret i Virginia på st. patrick's day ?
+# intent: weather/find
+1	Hvordan	weather/find	O
+2	bliver	weather/find	O
+3	vejret	weather/find	O
+4	i	weather/find	O
+5	Virginia	weather/find	B-location
+6	på	weather/find	O
+7	st	weather/find	B-datetime
+8	.	weather/find	I-datetime
+9	patrick's	weather/find	I-datetime
+10	day	weather/find	I-datetime
+11	?	weather/find	O
+
+# id: 193
+# text-en: I need a list of Speakeasy Theaters movie times
+# text: Jeg skal bruge en liste af spilletider for Speakeasy Theaters
+# intent: SearchScreeningEvent
+1	Jeg	SearchScreeningEvent	O
+2	skal	SearchScreeningEvent	O
+3	bruge	SearchScreeningEvent	O
+4	en	SearchScreeningEvent	O
+5	liste	SearchScreeningEvent	O
+6	af	SearchScreeningEvent	O
+7	spilletider	SearchScreeningEvent	O
+8	for	SearchScreeningEvent	O
+9	Speakeasy	SearchScreeningEvent	B-location
+10	Theaters	SearchScreeningEvent	I-location
+
+# id: 194
+# text-en: Look for the television show Meet the Prince
+# text: Søg efter fjernsyns programmet Meet the Prince
+# intent: SearchCreativeWork
+1	Søg	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	fjernsyns	SearchCreativeWork	B-object_type
+4	programmet	SearchCreativeWork	I-object_type
+5	Meet	SearchCreativeWork	B-object_name
+6	the	SearchCreativeWork	I-object_name
+7	Prince	SearchCreativeWork	I-object_name
+
+# id: 195
+# text-en: Please get me the Compulsive Disclosure song .
+# text: Skaf mig Compulsive Disclosure sangen .
+# intent: SearchCreativeWork
+1	Skaf	SearchCreativeWork	O
+2	mig	SearchCreativeWork	O
+3	Compulsive	SearchCreativeWork	B-object_name
+4	Disclosure	SearchCreativeWork	I-object_name
+5	sangen	SearchCreativeWork	B-object_type
+6	.	SearchCreativeWork	O
+
+# id: 196
+# text-en: Play Trance Life on Zvooq .
+# text: Afspil Trance Life på Zvooq .
+# intent: PlayMusic
+1	Afspil	PlayMusic	O
+2	Trance	PlayMusic	B-playlist
+3	Life	PlayMusic	I-playlist
+4	på	PlayMusic	O
+5	Zvooq	PlayMusic	B-service
+6	.	PlayMusic	O
+
+# id: 197
+# text-en: Please find me the work, Serious Awesomeness !.
+# text: Find filmen Serious Awesomeness til mig !.
+# intent: SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	filmen	SearchCreativeWork	O
+3	Serious	SearchCreativeWork	B-object_name
+4	Awesomeness	SearchCreativeWork	I-object_name
+5	til	SearchCreativeWork	I-object_name
+6	mig	SearchCreativeWork	I-object_name
+7	!	SearchCreativeWork	O
+8	.	SearchCreativeWork	O
+
+# id: 198
+# text-en: i want to see I Dream of Jeanie in a movie theatre
+# text: Jeg vil gerne se I Dream of Jeanie i en biograf
+# intent: SearchScreeningEvent
+1	Jeg	SearchScreeningEvent	O
+2	vil	SearchScreeningEvent	O
+3	gerne	SearchScreeningEvent	O
+4	se	SearchScreeningEvent	O
+5	I	SearchScreeningEvent	B-movie_name
+6	Dream	SearchScreeningEvent	I-movie_name
+7	of	SearchScreeningEvent	I-movie_name
+8	Jeanie	SearchScreeningEvent	I-movie_name
+9	i	SearchScreeningEvent	O
+10	en	SearchScreeningEvent	O
+11	biograf	SearchScreeningEvent	B-object_location_type
+
+# id: 199
+# text-en: Play Paul Mccartney
+# text: Spil Paul Mccartney
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	Paul	PlayMusic	B-artist
+3	Mccartney	PlayMusic	I-artist
+
+# id: 200
+# text-en: Rate the current novel 3 stars
+# text: Bedøm den nuværende roman med 3 stjerner
+# intent: RateBook
+1	Bedøm	RateBook	O
+2	den	RateBook	O
+3	nuværende	RateBook	B-object_select
+4	roman	RateBook	B-object_type
+5	med	RateBook	O
+6	3	RateBook	B-rating_value
+7	stjerner	RateBook	O
+
+# id: 201
+# text-en: Can you search the book , Paris - When It Sizzles ?
+# text: Kan du finde bogen , Paris - When It Sizzles ?
+# intent: SearchCreativeWork
+1	Kan	SearchCreativeWork	O
+2	du	SearchCreativeWork	O
+3	finde	SearchCreativeWork	O
+4	bogen	SearchCreativeWork	B-object_type
+5	,	SearchCreativeWork	O
+6	Paris	SearchCreativeWork	B-object_name
+7	-	SearchCreativeWork	I-object_name
+8	When	SearchCreativeWork	I-object_name
+9	It	SearchCreativeWork	I-object_name
+10	Sizzles	SearchCreativeWork	I-object_name
+11	?	SearchCreativeWork	O
+
+# id: 202
+# text-en: play some seventies Filipp Kirkorow
+# text: spil noget med Filipp Kirkorow fra halvfjerserne
+# intent: PlayMusic
+1	spil	PlayMusic	O
+2	noget	PlayMusic	O
+3	med	PlayMusic	O
+4	Filipp	PlayMusic	B-artist
+5	Kirkorow	PlayMusic	I-artist
+6	fra	PlayMusic	O
+7	halvfjerserne	PlayMusic	B-datetime
+
+# id: 203
+# text-en: I want to book a bougatsa restaurant in next year nearby Penn for three people.
+# text: Jeg vil gerne reservérer et bord til tre på en bougatsa restaurant nær Penn til næste år
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	reservérer	BookRestaurant	O
+5	et	BookRestaurant	O
+6	bord	BookRestaurant	O
+7	til	BookRestaurant	O
+8	tre	BookRestaurant	B-party_size_number
+9	på	BookRestaurant	O
+10	en	BookRestaurant	O
+11	bougatsa	BookRestaurant	B-cuisine
+12	restaurant	BookRestaurant	B-restaurant_type
+13	nær	BookRestaurant	O
+14	Penn	BookRestaurant	B-location
+15	til	BookRestaurant	O
+16	næste	BookRestaurant	B-datetime
+17	år	BookRestaurant	I-datetime
+
+# id: 204
+# text-en: Will it be rainy in Tenino ?
+# text: Bliver det regnvejr i Tenino ?
+# intent: weather/find
+1	Bliver	weather/find	O
+2	det	weather/find	O
+3	regnvejr	weather/find	B-condition_description
+4	i	weather/find	O
+5	Tenino	weather/find	B-location
+6	?	weather/find	O
+
+# id: 205
+# text-en: Please look up Three Essays on the Theory of Sexuality show .
+# text: Søg efter Three Essays on the Theory of Sexuality show .
+# intent: SearchCreativeWork
+1	Søg	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	Three	SearchCreativeWork	B-object_name
+4	Essays	SearchCreativeWork	I-object_name
+5	on	SearchCreativeWork	I-object_name
+6	the	SearchCreativeWork	I-object_name
+7	Theory	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	Sexuality	SearchCreativeWork	I-object_name
+10	show	SearchCreativeWork	B-object_type
+11	.	SearchCreativeWork	O
+
+# id: 206
+# text-en: I want to eat in Ramona
+# text: Jeg vil gerne spise i Ramona
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	spise	BookRestaurant	O
+5	i	BookRestaurant	O
+6	Ramona	BookRestaurant	B-location
+
+# id: 207
+# text-en: Add the boy george track to the Emo Forever playlist.
+# text: Tilføj sangen boy george til Emo Forever playlisten.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	sangen	AddToPlaylist	B-music_item
+3	boy	AddToPlaylist	B-artist
+4	george	AddToPlaylist	I-artist
+5	til	AddToPlaylist	O
+6	Emo	AddToPlaylist	B-playlist
+7	Forever	AddToPlaylist	I-playlist
+8	playlisten	AddToPlaylist	O
+9	.	AddToPlaylist	O
+
+# id: 208
+# text-en: I want to book a steakhouse in Vimy Ridge .
+# text: Jeg vil gerne reservérer bord på et steakhouse i Vimy Ridge .
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	reservérer	BookRestaurant	O
+5	bord	BookRestaurant	O
+6	på	BookRestaurant	O
+7	et	BookRestaurant	O
+8	steakhouse	BookRestaurant	B-restaurant_type
+9	i	BookRestaurant	O
+10	Vimy	BookRestaurant	B-location
+11	Ridge	BookRestaurant	I-location
+12	.	BookRestaurant	O
+
+# id: 209
+# text-en: Is Without Witness playing twenty two hours from now
+# text: Spiller Without Witness om to og tyve timer
+# intent: SearchScreeningEvent
+1	Spiller	SearchScreeningEvent	O
+2	Without	SearchScreeningEvent	B-movie_name
+3	Witness	SearchScreeningEvent	I-movie_name
+4	om	SearchScreeningEvent	O
+5	to	SearchScreeningEvent	B-datetime
+6	og	SearchScreeningEvent	I-datetime
+7	tyve	SearchScreeningEvent	I-datetime
+8	timer	SearchScreeningEvent	I-datetime
+
+# id: 210
+# text-en: Book spot for 9
+# text: Reserver et bord til 9
+# intent: BookRestaurant
+1	Reserver	BookRestaurant	O
+2	et	BookRestaurant	O
+3	bord	BookRestaurant	O
+4	til	BookRestaurant	O
+5	9	BookRestaurant	B-party_size_number
+
+# id: 211
+# text-en: add this track to my Hands Up playlist
+# text: tilføj denne sang til min Hands Up playliste
+# intent: AddToPlaylist
+1	tilføj	AddToPlaylist	O
+2	denne	AddToPlaylist	O
+3	sang	AddToPlaylist	B-music_item
+4	til	AddToPlaylist	O
+5	min	AddToPlaylist	B-reference
+6	Hands	AddToPlaylist	B-playlist
+7	Up	AddToPlaylist	I-playlist
+8	playliste	AddToPlaylist	O
+
+# id: 212
+# text-en: Play something from 90s Pop Rock Essentials
+# text: Spil noget fra 90s Pop Rock Essentials
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	noget	PlayMusic	O
+3	fra	PlayMusic	O
+4	90s	PlayMusic	B-playlist
+5	Pop	PlayMusic	I-playlist
+6	Rock	PlayMusic	I-playlist
+7	Essentials	PlayMusic	I-playlist
+
+# id: 213
+# text-en: Can you find me the Blue Spring trailer ?
+# text: Kan du finde traileren for Blue Spring ?
+# intent: SearchCreativeWork
+1	Kan	SearchCreativeWork	O
+2	du	SearchCreativeWork	O
+3	finde	SearchCreativeWork	O
+4	traileren	SearchCreativeWork	B-object_type
+5	for	SearchCreativeWork	O
+6	Blue	SearchCreativeWork	B-object_name
+7	Spring	SearchCreativeWork	I-object_name
+8	?	SearchCreativeWork	O
+
+# id: 214
+# text-en: Give two stars out of 6 to 36 Children
+# text: Give to ud af 6 stjerner til 36 Children
+# intent: RateBook
+1	Give	RateBook	O
+2	to	RateBook	B-rating_value
+3	ud	RateBook	O
+4	af	RateBook	O
+5	6	RateBook	B-best_rating
+6	stjerner	RateBook	O
+7	til	RateBook	O
+8	36	RateBook	B-object_name
+9	Children	RateBook	I-object_name
+
+# id: 215
+# text-en: I want animated movies at MJR Theatres
+# text: Jeg vil gerne se animerede film hos MJR Theatres
+# intent: SearchScreeningEvent
+1	Jeg	SearchScreeningEvent	O
+2	vil	SearchScreeningEvent	O
+3	gerne	SearchScreeningEvent	O
+4	se	SearchScreeningEvent	O
+5	animerede	SearchScreeningEvent	B-movie_type
+6	film	SearchScreeningEvent	I-movie_type
+7	hos	SearchScreeningEvent	O
+8	MJR	SearchScreeningEvent	B-location
+9	Theatres	SearchScreeningEvent	I-location
+
+# id: 216
+# text-en: Add the artist mike to the Sexy as Folk playlist.
+# text: Tilføj kunstneren mik til Sexy as Folk playlisten.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	kunstneren	AddToPlaylist	B-artist
+3	mik	AddToPlaylist	I-artist
+4	til	AddToPlaylist	O
+5	Sexy	AddToPlaylist	B-playlist
+6	as	AddToPlaylist	I-playlist
+7	Folk	AddToPlaylist	I-playlist
+8	playlisten	AddToPlaylist	O
+9	.	AddToPlaylist	O
+
+# id: 217
+# text-en: add Highway Patrolman in my playlist this is al green
+# text: tilføj Highway Patrolman til min this is al greem playliste
+# intent: AddToPlaylist
+1	tilføj	AddToPlaylist	O
+2	Highway	AddToPlaylist	B-entity_name
+3	Patrolman	AddToPlaylist	I-entity_name
+4	til	AddToPlaylist	O
+5	min	AddToPlaylist	B-reference
+6	this	AddToPlaylist	B-playlist
+7	is	AddToPlaylist	I-playlist
+8	al	AddToPlaylist	I-playlist
+9	greem	AddToPlaylist	I-playlist
+10	playliste	AddToPlaylist	O
+
+# id: 218
+# text-en: Find me the novel with the name To Lose My Life …
+# text: Find romanen med titlen To Lose My Life til mig
+# intent: SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	romanen	SearchCreativeWork	B-object_type
+3	med	SearchCreativeWork	O
+4	titlen	SearchCreativeWork	O
+5	To	SearchCreativeWork	B-object_name
+6	Lose	SearchCreativeWork	I-object_name
+7	My	SearchCreativeWork	I-object_name
+8	Life	SearchCreativeWork	I-object_name
+9	til	SearchCreativeWork	I-object_name
+10	mig	SearchCreativeWork	I-object_name
+
+# id: 219
+# text-en: mark this album a score of 5
+# text: give dette album en score på 5
+# intent: RateBook
+1	give	RateBook	O
+2	dette	RateBook	B-object_select
+3	album	RateBook	B-object_type
+4	en	RateBook	O
+5	score	RateBook	O
+6	på	RateBook	O
+7	5	RateBook	B-rating_value
+
+# id: 220
+# text-en: Is Rare Birds showing at the nearest movie theatre at noon .
+# text: Spiller Rare Bird hos den nærmeste biograf klokken 12 i eftermiddag .
+# intent: SearchScreeningEvent
+1	Spiller	SearchScreeningEvent	O
+2	Rare	SearchScreeningEvent	B-movie_name
+3	Bird	SearchScreeningEvent	I-movie_name
+4	hos	SearchScreeningEvent	O
+5	den	SearchScreeningEvent	O
+6	nærmeste	SearchScreeningEvent	B-location
+7	biograf	SearchScreeningEvent	B-object_location_type
+8	klokken	SearchScreeningEvent	O
+9	12	SearchScreeningEvent	B-datetime
+10	i	SearchScreeningEvent	O
+11	eftermiddag	SearchScreeningEvent	B-datetime
+12	.	SearchScreeningEvent	O
+
+# id: 221
+# text-en: Rate The 8-Week Cholesterol Cure three out of 6 .
+# text: Give The 8-Week Cholesterol Cure tre ud af 6 .
+# intent: RateBook
+1	Give	RateBook	O
+2	The	RateBook	B-object_name
+3	8-Week	RateBook	I-object_name
+4	Cholesterol	RateBook	I-object_name
+5	Cure	RateBook	I-object_name
+6	tre	RateBook	B-rating_value
+7	ud	RateBook	O
+8	af	RateBook	O
+9	6	RateBook	B-best_rating
+10	.	RateBook	O
+
+# id: 222
+# text-en: Add martin barre to my punk unplugged playlist.
+# text: Tilføj martin barre til min playliste punk unplugged.
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	martin	AddToPlaylist	B-artist
+3	barre	AddToPlaylist	I-artist
+4	til	AddToPlaylist	O
+5	min	AddToPlaylist	B-reference
+6	playliste	AddToPlaylist	O
+7	punk	AddToPlaylist	B-playlist
+8	unplugged	AddToPlaylist	I-playlist
+9	.	AddToPlaylist	O
+
+# id: 223
+# text-en: rate the current novel zero out of 6
+# text: give den nuværende roman nul ud af 6
+# intent: RateBook
+1	give	RateBook	O
+2	den	RateBook	O
+3	nuværende	RateBook	B-object_select
+4	roman	RateBook	B-object_type
+5	nul	RateBook	B-rating_value
+6	ud	RateBook	O
+7	af	RateBook	O
+8	6	RateBook	B-best_rating
+
+# id: 224
+# text-en: What times will The Young Swordsman be showing at my cinema ?
+# text: På hvilke tidspunkter spiller The Young Swordsman hos min biograf ?
+# intent: SearchScreeningEvent
+1	På	SearchScreeningEvent	O
+2	hvilke	SearchScreeningEvent	O
+3	tidspunkter	SearchScreeningEvent	O
+4	spiller	SearchScreeningEvent	O
+5	The	SearchScreeningEvent	B-movie_name
+6	Young	SearchScreeningEvent	I-movie_name
+7	Swordsman	SearchScreeningEvent	I-movie_name
+8	hos	SearchScreeningEvent	O
+9	min	SearchScreeningEvent	O
+10	biograf	SearchScreeningEvent	B-object_location_type
+11	?	SearchScreeningEvent	O
+
+# id: 225
+# text-en: What are the movies showing in the neighbourhood
+# text: Hvilke film spiller i nærheden
+# intent: SearchScreeningEvent
+1	Hvilke	SearchScreeningEvent	O
+2	film	SearchScreeningEvent	B-movie_type
+3	spiller	SearchScreeningEvent	O
+4	i	SearchScreeningEvent	B-location
+5	nærheden	SearchScreeningEvent	I-location
+
+# id: 226
+# text-en: I want to book Oregon Electric Station in North City .
+# text: Jeg vil gerne reservérer Oregon Electric Station i North City .
+# intent: BookRestaurant
+1	Jeg	BookRestaurant	O
+2	vil	BookRestaurant	O
+3	gerne	BookRestaurant	O
+4	reservérer	BookRestaurant	O
+5	Oregon	BookRestaurant	B-restaurant_name
+6	Electric	BookRestaurant	I-restaurant_name
+7	Station	BookRestaurant	I-restaurant_name
+8	i	BookRestaurant	O
+9	North	BookRestaurant	B-location
+10	City	BookRestaurant	I-location
+11	.	BookRestaurant	O
+
+# id: 227
+# text-en: how's the weather here at two Am
+# text: hvordan bliver vejret her klokken to i morgen tidlig
+# intent: weather/find
+1	hvordan	weather/find	O
+2	bliver	weather/find	O
+3	vejret	weather/find	O
+4	her	weather/find	O
+5	klokken	weather/find	B-datetime
+6	to	weather/find	I-datetime
+7	i	weather/find	O
+8	morgen	weather/find	B-datetime
+9	tidlig	weather/find	B-datetime
+
+# id: 228
+# text-en: Fine the movie schedules for the Wanda Group .
+# text: Find spilletiderne for Wanda Group .
+# intent: SearchScreeningEvent
+1	Find	SearchScreeningEvent	O
+2	spilletiderne	SearchScreeningEvent	B-object_type
+3	for	SearchScreeningEvent	O
+4	Wanda	SearchScreeningEvent	B-location
+5	Group	SearchScreeningEvent	I-location
+6	.	SearchScreeningEvent	O
+
+# id: 229
+# text-en: what is the forecast for Waurika in Samoa
+# text: Hvad er vejrudsigten for Waurika i Samoa
+# intent: weather/find
+1	Hvad	weather/find	O
+2	er	weather/find	O
+3	vejrudsigten	weather/find	O
+4	for	weather/find	O
+5	Waurika	weather/find	B-location
+6	i	weather/find	O
+7	Samoa	weather/find	B-location
+
+# id: 230
+# text-en: Show the movie schedules in the neighborhood
+# text: Vis spilletiderne for biografer i nærheden
+# intent: SearchScreeningEvent
+1	Vis	SearchScreeningEvent	O
+2	spilletiderne	SearchScreeningEvent	O
+3	for	SearchScreeningEvent	O
+4	biografer	SearchScreeningEvent	B-object_type
+5	i	SearchScreeningEvent	B-location
+6	nærheden	SearchScreeningEvent	I-location
+
+# id: 231
+# text-en: Play some blues britânico .
+# text: Spil noget blues britânico .
+# intent: PlayMusic
+1	Spil	PlayMusic	O
+2	noget	PlayMusic	O
+3	blues	PlayMusic	B-genre
+4	britânico	PlayMusic	I-genre
+5	.	PlayMusic	O
+
+# id: 232
+# text-en: Is No Time to Be Young showing at AMC Theaters
+# text: Spiller Is No Time to Be Youg på AMC Theaters
+# intent: SearchScreeningEvent
+1	Spiller	SearchScreeningEvent	O
+2	Is	SearchScreeningEvent	B-movie_name
+3	No	SearchScreeningEvent	I-movie_name
+4	Time	SearchScreeningEvent	I-movie_name
+5	to	SearchScreeningEvent	I-movie_name
+6	Be	SearchScreeningEvent	I-movie_name
+7	Youg	SearchScreeningEvent	I-movie_name
+8	på	SearchScreeningEvent	O
+9	AMC	SearchScreeningEvent	B-location
+10	Theaters	SearchScreeningEvent	I-location
+
+# id: 233
+# text-en: Please look up and find me Monty Python Live at the Hollywood Bowl .
+# text: Søg efter og find Monty Python Live at the Hollywood Bowl til mig .
+# intent: SearchCreativeWork
+1	Søg	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	og	SearchCreativeWork	O
+4	find	SearchCreativeWork	O
+5	Monty	SearchCreativeWork	B-object_name
+6	Python	SearchCreativeWork	I-object_name
+7	Live	SearchCreativeWork	I-object_name
+8	at	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	Hollywood	SearchCreativeWork	I-object_name
+11	Bowl	SearchCreativeWork	I-object_name
+12	til	SearchCreativeWork	O
+13	mig	SearchCreativeWork	O
+14	.	SearchCreativeWork	O
+
+# id: 234
+# text-en: what is the forecast for here for blizzard conditions at five pm
+# text: hvad er udsigten for snestorms forhold her klokken fem i aften
+# intent: weather/find
+1	hvad	weather/find	O
+2	er	weather/find	O
+3	udsigten	weather/find	O
+4	for	weather/find	O
+5	snestorms	weather/find	B-served_dish
+6	forhold	weather/find	O
+7	her	weather/find	O
+8	klokken	weather/find	B-datetime
+9	fem	weather/find	I-datetime
+10	i	weather/find	I-datetime
+11	aften	weather/find	I-datetime
+
+# id: 235
+# text-en: add ireland in the junior eurovision song contest 2015 to my Jazzy Dinner playlist
+# text: tilføj ireland in the junior eurovision song contest 2015 til min Jazzy Dinner playliste
+# intent: AddToPlaylist
+1	tilføj	AddToPlaylist	O
+2	ireland	AddToPlaylist	B-entity_name
+3	in	AddToPlaylist	O
+4	the	AddToPlaylist	O
+5	junior	AddToPlaylist	B-playlist
+6	eurovision	AddToPlaylist	I-playlist
+7	song	AddToPlaylist	I-playlist
+8	contest	AddToPlaylist	I-playlist
+9	2015	AddToPlaylist	I-playlist
+10	til	AddToPlaylist	O
+11	min	AddToPlaylist	B-playlist
+12	Jazzy	AddToPlaylist	I-playlist
+13	Dinner	AddToPlaylist	I-playlist
+14	playliste	AddToPlaylist	O
+
+# id: 236
+# text-en: Add a song to Indie Hipster
+# text: Tilføj en sang til Indie Hipster
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	en	AddToPlaylist	O
+3	sang	AddToPlaylist	B-music_item
+4	til	AddToPlaylist	O
+5	Indie	AddToPlaylist	B-playlist
+6	Hipster	AddToPlaylist	I-playlist
+
+# id: 237
+# text-en: Can you find me the National Anthem of the Ancient Britons television show ?
+# text: Kan du finde National Anthem of the Ancient Britons fjernsyns programmet til mig ?
+# intent: SearchCreativeWork
+1	Kan	SearchCreativeWork	O
+2	du	SearchCreativeWork	O
+3	finde	SearchCreativeWork	O
+4	National	SearchCreativeWork	B-object_name
+5	Anthem	SearchCreativeWork	I-object_name
+6	of	SearchCreativeWork	I-object_name
+7	the	SearchCreativeWork	I-object_name
+8	Ancient	SearchCreativeWork	I-object_name
+9	Britons	SearchCreativeWork	I-object_name
+10	fjernsyns	SearchCreativeWork	B-object_type
+11	programmet	SearchCreativeWork	I-object_type
+12	til	SearchCreativeWork	O
+13	mig	SearchCreativeWork	O
+14	?	SearchCreativeWork	O
+
+# id: 238
+# text-en: To the travelling playlist, please add this David Gahan song .
+# text: Tilføj denne David Gahan sang til travelling playlisten .
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	denne	AddToPlaylist	O
+3	David	AddToPlaylist	B-artist
+4	Gahan	AddToPlaylist	I-artist
+5	sang	AddToPlaylist	B-music_item
+6	til	AddToPlaylist	O
+7	travelling	AddToPlaylist	B-playlist
+8	playlisten	AddToPlaylist	O
+9	.	AddToPlaylist	O
+
+# id: 239
+# text-en: I want to hear them from the artist Murcof
+# text: Jeg vil gerne høre dem fra kunstneren Murcof
+# intent: PlayMusic
+1	Jeg	PlayMusic	O
+2	vil	PlayMusic	O
+3	gerne	PlayMusic	O
+4	høre	PlayMusic	O
+5	dem	PlayMusic	O
+6	fra	PlayMusic	O
+7	kunstneren	PlayMusic	O
+8	Murcof	PlayMusic	B-artist
+
+# id: 240
+# text-en: rate The Gift: Imagination and the Erotic Life of Property five stars
+# text: Give The Gift: Imagination and the Erotic Life of Property fem stjerner
+# intent: RateBook
+1	Give	RateBook	O
+2	The	RateBook	B-object_name
+3	Gift:	RateBook	I-object_name
+4	Imagination	RateBook	I-object_name
+5	and	RateBook	I-object_name
+6	the	RateBook	I-object_name
+7	Erotic	RateBook	I-object_name
+8	Life	RateBook	I-object_name
+9	of	RateBook	I-object_name
+10	Property	RateBook	I-object_name
+11	fem	RateBook	B-rating_value
+12	stjerner	RateBook	O
+
+# id: 241
+# text-en: Find me a TV show called Baby Blue
+# text: Find en TV serie ved navn Baby Blue til mig
+# intent: SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	en	SearchCreativeWork	O
+3	TV	SearchCreativeWork	B-object_type
+4	serie	SearchCreativeWork	I-object_type
+5	ved	SearchCreativeWork	O
+6	navn	SearchCreativeWork	O
+7	Baby	SearchCreativeWork	B-object_name
+8	Blue	SearchCreativeWork	I-object_name
+9	til	SearchCreativeWork	I-object_name
+10	mig	SearchCreativeWork	I-object_name
+
+# id: 242
+# text-en: look for the book The Girl Who Was Plugged In
+# text: søg efter bogen The Girl Who Was Plugged In
+# intent: SearchCreativeWork
+1	søg	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	bogen	SearchCreativeWork	B-object_type
+4	The	SearchCreativeWork	B-object_name
+5	Girl	SearchCreativeWork	I-object_name
+6	Who	SearchCreativeWork	I-object_name
+7	Was	SearchCreativeWork	I-object_name
+8	Plugged	SearchCreativeWork	I-object_name
+9	In	SearchCreativeWork	I-object_name
+
+# id: 243
+# text-en: phyllis ward and veronica need a table at a restaurant in 152 days
+# text: phyllis ward og veronica skal bruge et bord på en restaurant om 152 dage
+# intent: BookRestaurant
+1	phyllis	BookRestaurant	B-party_size_description
+2	ward	BookRestaurant	I-party_size_description
+3	og	BookRestaurant	I-party_size_description
+4	veronica	BookRestaurant	I-party_size_description
+5	skal	BookRestaurant	O
+6	bruge	BookRestaurant	O
+7	et	BookRestaurant	O
+8	bord	BookRestaurant	O
+9	på	BookRestaurant	O
+10	en	BookRestaurant	O
+11	restaurant	BookRestaurant	B-restaurant_type
+12	om	BookRestaurant	B-datetime
+13	152	BookRestaurant	I-datetime
+14	dage	BookRestaurant	I-datetime
+
+# id: 244
+# text-en: Book a popular restaurant for 5 people
+# text: Reservér bord til 5 på en populær restaurant
+# intent: BookRestaurant
+1	Reservér	BookRestaurant	O
+2	bord	BookRestaurant	O
+3	til	BookRestaurant	O
+4	5	BookRestaurant	B-party_size_number
+5	på	BookRestaurant	O
+6	en	BookRestaurant	O
+7	populær	BookRestaurant	B-sort
+8	restaurant	BookRestaurant	B-restaurant_type
+
+# id: 245
+# text-en: Book a reservation for The Dome, Edinburgh close to Brooklawn
+# text: Lav en reservation på The Dome, Edinburgh nær Brooklawn
+# intent: BookRestaurant
+1	Lav	BookRestaurant	O
+2	en	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	på	BookRestaurant	O
+5	The	BookRestaurant	B-restaurant_name
+6	Dome	BookRestaurant	I-restaurant_name
+7	,	BookRestaurant	O
+8	Edinburgh	BookRestaurant	B-location
+9	nær	BookRestaurant	O
+10	Brooklawn	BookRestaurant	B-location
+
+# id: 246
+# text-en: Add this album to Old School Death Metal
+# text: Tilføj dette album til Old School Death Metal
+# intent: AddToPlaylist
+1	Tilføj	AddToPlaylist	O
+2	dette	AddToPlaylist	O
+3	album	AddToPlaylist	B-music_item
+4	til	AddToPlaylist	O
+5	Old	AddToPlaylist	B-playlist
+6	School	AddToPlaylist	I-playlist
+7	Death	AddToPlaylist	I-playlist
+8	Metal	AddToPlaylist	I-playlist
+
+# id: 247
+# text-en: Look for the TV series Jersey Boys
+# text: Søg efter TV serien Jersey Boys
+# intent: SearchCreativeWork
+1	Søg	SearchCreativeWork	O
+2	efter	SearchCreativeWork	O
+3	TV	SearchCreativeWork	B-object_type
+4	serien	SearchCreativeWork	I-object_type
+5	Jersey	SearchCreativeWork	B-object_name
+6	Boys	SearchCreativeWork	I-object_name
+
+# id: 248
+# text-en: Book a reservation for nine people at the best pub nearby Tangier in six months
+# text: Lav en reservation til ni på den bedste pub nær Tangier om seks måneder
+# intent: BookRestaurant
+1	Lav	BookRestaurant	O
+2	en	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	til	BookRestaurant	O
+5	ni	BookRestaurant	B-party_size_number
+6	på	BookRestaurant	O
+7	den	BookRestaurant	O
+8	bedste	BookRestaurant	B-sort
+9	pub	BookRestaurant	B-restaurant_type
+10	nær	BookRestaurant	O
+11	Tangier	BookRestaurant	B-location
+12	om	BookRestaurant	B-datetime
+13	seks	BookRestaurant	I-datetime
+14	måneder	BookRestaurant	I-datetime
+
+# id: 249
+# text-en: Show me the movies at Harkins Theatres .
+# text: Vi mig filmene der spille på Harkins Theatres .
+# intent: SearchScreeningEvent
+1	Vi	SearchScreeningEvent	O
+2	mig	SearchScreeningEvent	O
+3	filmene	SearchScreeningEvent	B-movie_type
+4	der	SearchScreeningEvent	O
+5	spille	SearchScreeningEvent	O
+6	på	SearchScreeningEvent	O
+7	Harkins	SearchScreeningEvent	B-location
+8	Theatres	SearchScreeningEvent	I-location
+9	.	SearchScreeningEvent	O
+
+# id: 250
+# text-en: book a party at their campus within the same area for churrascaria
+# text: reservér en fest på deres campus indenfor det samme område som churrascaria
+# intent: BookRestaurant
+1	reservér	BookRestaurant	O
+2	en	BookRestaurant	O
+3	fest	BookRestaurant	O
+4	på	BookRestaurant	O
+5	deres	BookRestaurant	B-location
+6	campus	BookRestaurant	I-location
+7	indenfor	BookRestaurant	B-location
+8	det	BookRestaurant	I-location
+9	samme	BookRestaurant	I-location
+10	område	BookRestaurant	I-location
+11	som	BookRestaurant	O
+12	churrascaria	BookRestaurant	B-restaurant_type
+

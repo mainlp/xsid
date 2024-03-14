@@ -1,0 +1,3413 @@
+# id: 137
+# text-en: Is it going to rain today?
+# text: Bugün yağmur yağacak mı?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	yağmur	weather/find	B-weather/attribute
+3	yağacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 167
+# text-en: how hot is it going to be today
+# text: bugün ne kadar sıcak olacak
+# intent: weather/find
+1	bugün	weather/find	B-datetime
+2	ne	weather/find	O
+3	kadar	weather/find	O
+4	sıcak	weather/find	B-weather/attribute
+5	olacak	weather/find	O
+
+# id: 150
+# text-en: How hot is it?
+# text: Ne kadar sıcak?
+# intent: weather/find
+1	Ne	weather/find	O
+2	kadar	weather/find	O
+3	sıcak	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: 188
+# text-en: Will it be sunny today?
+# text: Bugün güneşli olacak mı?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	güneşli	weather/find	B-weather/attribute
+3	olacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 280
+# text-en: Is it cloudy today?
+# text: Bugün bulutlu mu?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	bulutlu	weather/find	B-weather/attribute
+3	mu	weather/find	O
+4	?	weather/find	O
+
+# id: 85
+# text-en: Cancel all my reminders.
+# text: Tüm hatırlatıcılarımı iptal et.
+# intent: reminder/cancel_reminder
+1	Tüm	reminder/cancel_reminder	B-reference
+2	hatırlatıcılarımı	reminder/cancel_reminder	B-reference-part
+3	iptal	reminder/cancel_reminder	O
+4	et	reminder/cancel_reminder	O
+5	.	reminder/cancel_reminder	O
+
+# id: 78
+# text-en: what alarms do I have set?
+# text: hangi alarmları kurdum?
+# intent: alarm/show_alarms
+1	hangi	alarm/show_alarms	O
+2	alarmları	alarm/show_alarms	O
+3	kurdum	alarm/show_alarms	O
+4	?	alarm/show_alarms	O
+
+# id: 238
+# text-en: I need an alarm for 5pm to remind me to take my medicine
+# text: İlacımı almayı hatırlatması için öğleden sonra 5'e bir alarm ihtiyacım var
+# intent: alarm/set_alarm
+1	İlacımı	alarm/set_alarm	B-reminder/todo
+2	almayı	alarm/set_alarm	I-reminder/todo
+3	hatırlatması	alarm/set_alarm	O
+4	için	alarm/set_alarm	O
+5	öğleden	alarm/set_alarm	B-datetime
+6	sonra	alarm/set_alarm	I-datetime
+7	5'e	alarm/set_alarm	I-datetime
+8	bir	alarm/set_alarm	O
+9	alarm	alarm/set_alarm	O
+10	ihtiyacım	alarm/set_alarm	O
+11	var	alarm/set_alarm	O
+
+# id: 19
+# text-en: set alarm for every 3 minutes
+# text: her 3 dakikaya alarm kur
+# intent: alarm/set_alarm
+1	her	alarm/set_alarm	B-recurring_datetime
+2	3	alarm/set_alarm	I-recurring_datetime
+3	dakikaya	alarm/set_alarm	I-recurring_datetime
+4	alarm	alarm/set_alarm	O
+5	kur	alarm/set_alarm	O
+
+# id: 291
+# text-en: Is it going to storm today?
+# text: Bugün fırtına olacak mı?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	fırtına	weather/find	B-weather/attribute
+3	olacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 18
+# text-en: Cancel this afternoon's alarm.
+# text: Bu öğleden sonranın alarmını iptal et.
+# intent: alarm/cancel_alarm
+1	Bu	alarm/cancel_alarm	B-datetime
+2	öğleden	alarm/cancel_alarm	I-datetime
+3	sonranın	alarm/cancel_alarm	I-datetime
+4	alarmını	alarm/cancel_alarm	O
+5	iptal	alarm/cancel_alarm	O
+6	et	alarm/cancel_alarm	O
+7	.	alarm/cancel_alarm	O
+
+# id: 146
+# text-en: Is it going to rain next week
+# text: Gelecek hafta yağmur yağacak mı?
+# intent: weather/find
+1	Gelecek	weather/find	B-datetime
+2	hafta	weather/find	I-datetime
+3	yağmur	weather/find	B-weather/attribute
+4	yağacak	weather/find	O
+5	mı	weather/find	O
+6	?	weather/find	O
+
+# id: 293
+# text-en: What's next week's forecast?
+# text: Gelececk haftanın hava tahmini nedir?
+# intent: weather/find
+1	Gelececk	weather/find	B-datetime
+2	haftanın	weather/find	I-datetime
+3	hava	weather/find	O
+4	tahmini	weather/find	O
+5	nedir	weather/find	O
+6	?	weather/find	O
+
+# id: 125
+# text-en: Read me my reminders.
+# text: Hatırlatıcılarımı oku.
+# intent: reminder/show_reminders
+1	Hatırlatıcılarımı	reminder/show_reminders	B-reference-part
+2	oku	reminder/show_reminders	O
+3	.	reminder/show_reminders	O
+
+# id: 64
+# text-en: Show all alarms
+# text: Tüm alarmları göster
+# intent: alarm/show_alarms
+1	Tüm	alarm/show_alarms	B-reference
+2	alarmları	alarm/show_alarms	O
+3	göster	alarm/show_alarms	O
+
+# id: 29
+# text-en: Alarm every five minutes for 20 minutes please
+# text: 20 dakika boyunca her 5 dakikada bir alarm ver lütfen
+# intent: alarm/set_alarm
+1	20	alarm/set_alarm	B-recurring_datetime
+2	dakika	alarm/set_alarm	I-recurring_datetime
+3	boyunca	alarm/set_alarm	I-recurring_datetime
+4	her	alarm/set_alarm	I-recurring_datetime
+5	5	alarm/set_alarm	I-recurring_datetime
+6	dakikada	alarm/set_alarm	I-recurring_datetime
+7	bir	alarm/set_alarm	O
+8	alarm	alarm/set_alarm	O
+9	ver	alarm/set_alarm	O
+10	lütfen	alarm/set_alarm	O
+
+# id: 25
+# text-en: Change tomorrow mornings alarm to 6 am.
+# text: Yarınki alarmı sabah 6'ya değiştir.
+# intent: alarm/modify_alarm
+1	Yarınki	alarm/modify_alarm	B-datetime
+2	alarmı	alarm/modify_alarm	O
+3	sabah	alarm/modify_alarm	B-datetime
+4	6'ya	alarm/modify_alarm	I-datetime
+5	değiştir	alarm/modify_alarm	O
+6	.	alarm/modify_alarm	O
+
+# id: 254
+# text-en: cancel all reminders
+# text: tüm hatırlatıcıları iptal et
+# intent: reminder/cancel_reminder
+1	tüm	reminder/cancel_reminder	B-reference
+2	hatırlatıcıları	reminder/cancel_reminder	O
+3	iptal	reminder/cancel_reminder	O
+4	et	reminder/cancel_reminder	O
+
+# id: 236
+# text-en: Show me my alarms
+# text: Alarmlarımı göster
+# intent: alarm/show_alarms
+1	Alarmlarımı	alarm/show_alarms	B-reference-part
+2	göster	alarm/show_alarms	O
+
+# id: 51
+# text-en: Cancel alarms
+# text: alarmları iptal et
+# intent: alarm/cancel_alarm
+1	alarmları	alarm/cancel_alarm	O
+2	iptal	alarm/cancel_alarm	O
+3	et	alarm/cancel_alarm	O
+
+# id: 20
+# text-en: Set alarm for 6 am tomorrow
+# text: Yarın sabah 6'ya alarm kur
+# intent: alarm/set_alarm
+1	Yarın	alarm/set_alarm	B-datetime
+2	sabah	alarm/set_alarm	I-datetime
+3	6'ya	alarm/set_alarm	I-datetime
+4	alarm	alarm/set_alarm	O
+5	kur	alarm/set_alarm	O
+
+# id: 22
+# text-en: Set alarm for 7 am tomorrow
+# text: Yarın sabah 7'ye alarm kur
+# intent: alarm/set_alarm
+1	Yarın	alarm/set_alarm	B-datetime
+2	sabah	alarm/set_alarm	I-datetime
+3	7'ye	alarm/set_alarm	I-datetime
+4	alarm	alarm/set_alarm	O
+5	kur	alarm/set_alarm	O
+
+# id: 36
+# text-en: set alarm for 6 am
+# text: Sabah 6'ya alarm kur
+# intent: alarm/set_alarm
+1	Sabah	alarm/set_alarm	B-datetime
+2	6'ya	alarm/set_alarm	I-datetime
+3	alarm	alarm/set_alarm	O
+4	kur	alarm/set_alarm	O
+
+# id: 136
+# text-en: i need a reminder to pick Lisa up
+# text: Lisa'yı almak için bir hatırlatıcıya ihtiyacım var
+# intent: reminder/set_reminder
+1	Lisa'yı	reminder/set_reminder	B-reminder/todo
+2	almak	reminder/set_reminder	I-reminder/todo
+3	için	reminder/set_reminder	O
+4	bir	reminder/set_reminder	O
+5	hatırlatıcıya	reminder/set_reminder	O
+6	ihtiyacım	reminder/set_reminder	O
+7	var	reminder/set_reminder	O
+
+# id: 38
+# text-en: show all alarms
+# text: tüm alarmları göster
+# intent: alarm/show_alarms
+1	tüm	alarm/show_alarms	B-reference
+2	alarmları	alarm/show_alarms	O
+3	göster	alarm/show_alarms	O
+
+# id: 11
+# text-en: Turn off all alarms
+# text: Tüm alarmları kapat
+# intent: alarm/cancel_alarm
+1	Tüm	alarm/cancel_alarm	B-reference
+2	alarmları	alarm/cancel_alarm	O
+3	kapat	alarm/cancel_alarm	O
+
+# id: 88
+# text-en: What are my reminders?
+# text: Hatırlatmacılarım neler?
+# intent: reminder/show_reminders
+1	Hatırlatmacılarım	reminder/show_reminders	B-reference-part
+2	neler	reminder/show_reminders	O
+3	?	reminder/show_reminders	O
+
+# id: 274
+# text-en: is it hot outside
+# text: dışarısı sıcak mı
+# intent: weather/find
+1	dışarısı	weather/find	B-location
+2	sıcak	weather/find	B-weather/attribute
+3	mı	weather/find	O
+
+# id: 34
+# text-en: Snooze alarm
+# text: Alarmı ertele
+# intent: alarm/snooze_alarm
+1	Alarmı	alarm/snooze_alarm	O
+2	ertele	alarm/snooze_alarm	O
+
+# id: 14
+# text-en: alarm on
+# text: alarmı aç
+# intent: alarm/set_alarm
+1	alarmı	alarm/set_alarm	O
+2	aç	alarm/set_alarm	O
+
+# id: 62
+# text-en: Set an alarm for 6 am on Wed
+# text: Çarşamba sabah 6'ya bir alarm kur
+# intent: alarm/set_alarm
+1	Çarşamba	alarm/set_alarm	B-datetime
+2	sabah	alarm/set_alarm	I-datetime
+3	6'ya	alarm/set_alarm	I-datetime
+4	bir	alarm/set_alarm	O
+5	alarm	alarm/set_alarm	O
+6	kur	alarm/set_alarm	O
+
+# id: 82
+# text-en: remind me to submit my lesson plans every monday by the end of the day
+# text: her pazartesi gün sonunda ders planlarımı göndermeyi hatırlat
+# intent: reminder/set_reminder
+1	her	reminder/set_reminder	B-recurring_datetime
+2	pazartesi	reminder/set_reminder	I-recurring_datetime
+3	gün	reminder/set_reminder	I-recurring_datetime
+4	sonunda	reminder/set_reminder	I-recurring_datetime
+5	ders	reminder/set_reminder	B-reminder/todo
+6	planlarımı	reminder/set_reminder	I-reminder/todo
+7	göndermeyi	reminder/set_reminder	I-reminder/todo
+8	hatırlat	reminder/set_reminder	O
+
+# id: 167
+# text-en: how hot is it going to be today
+# text: bugün ne kadar sıcak olacak
+# intent: weather/find
+1	bugün	weather/find	B-datetime
+2	ne	weather/find	O
+3	kadar	weather/find	O
+4	sıcak	weather/find	B-weather/attribute
+5	olacak	weather/find	O
+
+# id: 23
+# text-en: Clear all set alarms.
+# text: Ayarlanmış tüm alarmları temizle
+# intent: alarm/cancel_alarm
+1	Ayarlanmış	alarm/cancel_alarm	O
+2	tüm	alarm/cancel_alarm	B-reference
+3	alarmları	alarm/cancel_alarm	O
+4	temizle	alarm/cancel_alarm	O
+
+# id: 64
+# text-en: Show all alarms
+# text: Tüm alarmları göster
+# intent: alarm/show_alarms
+1	Tüm	alarm/show_alarms	B-reference
+2	alarmları	alarm/show_alarms	O
+3	göster	alarm/show_alarms	O
+
+# id: 188
+# text-en: Will it be sunny today?
+# text: Bugün güneşli olacak mı?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	güneşli	weather/find	B-weather/attribute
+3	olacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 287
+# text-en: What is the humidity level today
+# text: Bugünkü nemlilik oranı nedir
+# intent: weather/find
+1	Bugünkü	weather/find	B-datetime
+2	nemlilik	weather/find	B-weather/attribute
+3	oranı	weather/find	I-weather/attribute
+4	nedir	weather/find	O
+
+# id: 79
+# text-en: Cancel all reminders
+# text: Tüm hatırlatıcıları iptal et
+# intent: reminder/cancel_reminder
+1	Tüm	reminder/cancel_reminder	B-datetime
+2	hatırlatıcıları	reminder/cancel_reminder	O
+3	iptal	reminder/cancel_reminder	O
+4	et	reminder/cancel_reminder	O
+
+# id: 63
+# text-en: set an alarm for fifteen minutes
+# text: on beş dakikaya bir alarm kur
+# intent: alarm/set_alarm
+1	on	alarm/set_alarm	B-datetime
+2	beş	alarm/set_alarm	I-datetime
+3	dakikaya	alarm/set_alarm	I-datetime
+4	bir	alarm/set_alarm	O
+5	alarm	alarm/set_alarm	O
+6	kur	alarm/set_alarm	O
+
+# id: 60
+# text-en: Please set my alarm for 4am this Saturday.
+# text: Lütfen Cumartesi sabah 4'e alarmımı kur.
+# intent: alarm/set_alarm
+1	Lütfen	alarm/set_alarm	O
+2	Cumartesi	alarm/set_alarm	B-datetime
+3	sabah	alarm/set_alarm	I-datetime
+4	4'e	alarm/set_alarm	I-datetime
+5	alarmımı	alarm/set_alarm	B-reference-part
+6	kur	alarm/set_alarm	O
+7	.	alarm/set_alarm	O
+
+# id: 105
+# text-en: Give me a reminder for house closing at 10am tomorrow.
+# text: Yarın sabah 10'da ev temizliği için bir hatırlatıcısı ver.
+# intent: reminder/set_reminder
+1	Yarın	reminder/set_reminder	B-datetime
+2	sabah	reminder/set_reminder	I-datetime
+3	10'da	reminder/set_reminder	I-datetime
+4	ev	reminder/set_reminder	B-reminder/todo
+5	temizliği	reminder/set_reminder	I-reminder/todo
+6	için	reminder/set_reminder	O
+7	bir	reminder/set_reminder	O
+8	hatırlatıcısı	reminder/set_reminder	O
+9	ver	reminder/set_reminder	O
+10	.	reminder/set_reminder	O
+
+# id: 7
+# text-en: delete all alarms
+# text: tüm alarmları sil
+# intent: alarm/cancel_alarm
+1	tüm	alarm/cancel_alarm	B-reference
+2	alarmları	alarm/cancel_alarm	O
+3	sil	alarm/cancel_alarm	O
+
+# id: 58
+# text-en: How many alarms do I have set for Sunday?
+# text: Pazar gününe kurulmuş kaç tane alarmım var?
+# intent: alarm/show_alarms
+1	Pazar	alarm/show_alarms	B-datetime
+2	gününe	alarm/show_alarms	I-datetime
+3	kurulmuş	alarm/show_alarms	O
+4	kaç	alarm/show_alarms	O
+5	tane	alarm/show_alarms	O
+6	alarmım	alarm/show_alarms	O
+7	var	alarm/show_alarms	O
+8	?	alarm/show_alarms	O
+
+# id: 38
+# text-en: show all alarms
+# text: tüm alarmları göster
+# intent: alarm/show_alarms
+1	tüm	alarm/show_alarms	B-reference
+2	alarmları	alarm/show_alarms	O
+3	göster	alarm/show_alarms	O
+
+# id: 213
+# text-en: Is it going to be sunny today?
+# text: Bugün güneşlii olacak mı?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	güneşlii	weather/find	B-weather/attribute
+3	olacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 222
+# text-en: set alarm for 615am
+# text: alarmı sabah 615'e kur
+# intent: alarm/set_alarm
+1	alarmı	alarm/set_alarm	O
+2	sabah	alarm/set_alarm	B-datetime
+3	615'e	alarm/set_alarm	I-datetime
+4	kur	alarm/set_alarm	O
+
+# id: 229
+# text-en: Set two alarms for tomorrow morning
+# text: Yarın sabah için iki alarm kur
+# intent: alarm/set_alarm
+1	Yarın	alarm/set_alarm	B-datetime
+2	sabah	alarm/set_alarm	I-datetime
+3	için	alarm/set_alarm	O
+4	iki	alarm/set_alarm	O
+5	alarm	alarm/set_alarm	O
+6	kur	alarm/set_alarm	O
+
+# id: 11
+# text-en: Turn off all alarms
+# text: Tüm alarmları kapat
+# intent: alarm/cancel_alarm
+1	Tüm	alarm/cancel_alarm	B-reference
+2	alarmları	alarm/cancel_alarm	O
+3	kapat	alarm/cancel_alarm	O
+
+# id: 175
+# text-en: What is the temperature like in London right now?
+# text: Şu anda Londra'da sıcaklık nasıl?
+# intent: weather/find
+1	Şu	weather/find	B-datetime
+2	anda	weather/find	I-datetime
+3	Londra'da	weather/find	B-location
+4	sıcaklık	weather/find	B-weather/attribute
+5	nasıl	weather/find	O
+6	?	weather/find	O
+
+# id: 246
+# text-en: Cancel my last reminder
+# text: Son hatırlatıcımı iptal et
+# intent: reminder/cancel_reminder
+1	Son	reminder/cancel_reminder	B-reference
+2	hatırlatıcımı	reminder/cancel_reminder	B-reference-part
+3	iptal	reminder/cancel_reminder	O
+4	et	reminder/cancel_reminder	O
+
+# id: 259
+# text-en: Set a reminder to go to the grocery store later
+# text: Sonra markete gitmek için bir hatırlatıcı ayarla
+# intent: reminder/set_reminder
+1	Sonra	reminder/set_reminder	B-datetime
+2	markete	reminder/set_reminder	B-reminder/todo
+3	gitmek	reminder/set_reminder	I-reminder/todo
+4	için	reminder/set_reminder	O
+5	bir	reminder/set_reminder	O
+6	hatırlatıcı	reminder/set_reminder	O
+7	ayarla	reminder/set_reminder	O
+
+# id: 186
+# text-en: What will be the heat index today?
+# text: bugün ısı indeksi ne olacak?
+# intent: weather/find
+1	bugün	weather/find	B-datetime
+2	ısı	weather/find	B-weather/attribute
+3	indeksi	weather/find	I-weather/attribute
+4	ne	weather/find	O
+5	olacak	weather/find	O
+6	?	weather/find	O
+
+# id: 211
+# text-en: How cold will it be today?
+# text: Bugün ne kadar soğuk olacak?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	ne	weather/find	O
+3	kadar	weather/find	O
+4	soğuk	weather/find	B-weather/attribute
+5	olacak	weather/find	O
+6	?	weather/find	O
+
+# id: 190
+# text-en: will it snow today
+# text: bugün kar yağacak mı
+# intent: weather/find
+1	bugün	weather/find	B-datetime
+2	kar	weather/find	B-weather/attribute
+3	yağacak	weather/find	O
+4	mı	weather/find	O
+
+# id: 13
+# text-en: Set alarm for 5am
+# text: Sabah 5'e alarm kur
+# intent: alarm/set_alarm
+1	Sabah	alarm/set_alarm	B-datetime
+2	5'e	alarm/set_alarm	I-datetime
+3	alarm	alarm/set_alarm	O
+4	kur	alarm/set_alarm	O
+
+# id: 26
+# text-en: turn off alarm
+# text: alarmı kapat
+# intent: alarm/cancel_alarm
+1	alarmı	alarm/cancel_alarm	O
+2	kapat	alarm/cancel_alarm	O
+
+# id: 1
+# text-en: cancel all alarms
+# text: tüm alarmları iptal et
+# intent: alarm/cancel_alarm
+1	tüm	alarm/cancel_alarm	B-reference
+2	alarmları	alarm/cancel_alarm	O
+3	iptal	alarm/cancel_alarm	O
+4	et	alarm/cancel_alarm	O
+
+# id: 264
+# text-en: Add reminder to swim at 11am tomorrow
+# text: Yarın sabah 11'de yüzmek için hatırlatıcı ekle
+# intent: reminder/set_reminder
+1	Yarın	reminder/set_reminder	B-datetime
+2	sabah	reminder/set_reminder	I-datetime
+3	11'de	reminder/set_reminder	I-datetime
+4	yüzmek	reminder/set_reminder	B-reminder/todo
+5	için	reminder/set_reminder	O
+6	hatırlatıcı	reminder/set_reminder	O
+7	ekle	reminder/set_reminder	O
+
+# id: 87
+# text-en: Show my reminder
+# text: Hatırlatıcılarımı göster
+# intent: reminder/show_reminders
+1	Hatırlatıcılarımı	reminder/show_reminders	B-reference-part
+2	göster	reminder/show_reminders	O
+
+# id: 70
+# text-en: Cancel my alarm on Saturday
+# text: Cumartesi günkü tüm alarmlarımı iptal et
+# intent: alarm/cancel_alarm
+1	Cumartesi	alarm/cancel_alarm	B-datetime
+2	günkü	alarm/cancel_alarm	I-datetime
+3	tüm	alarm/cancel_alarm	B-reference
+4	alarmlarımı	alarm/cancel_alarm	B-reference-part
+5	iptal	alarm/cancel_alarm	O
+6	et	alarm/cancel_alarm	O
+
+# id: 270
+# text-en: Is it cold out?
+# text: hava soğuk mu?
+# intent: weather/find
+1	hava	weather/find	O
+2	soğuk	weather/find	B-weather/attribute
+3	mu	weather/find	O
+4	?	weather/find	O
+
+# id: 286
+# text-en: Is it humid today?
+# text: Bugün nemli mi?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	nemli	weather/find	B-weather/attribute
+3	mi	weather/find	O
+4	?	weather/find	O
+
+# id: 73
+# text-en: Set alarm every minute for 11 minutes
+# text: 11 dakika boyunca her dakikaya alarm kur
+# intent: alarm/set_alarm
+1	11	alarm/set_alarm	B-recurring_datetime
+2	dakika	alarm/set_alarm	I-recurring_datetime
+3	boyunca	alarm/set_alarm	I-recurring_datetime
+4	her	alarm/set_alarm	I-recurring_datetime
+5	dakikaya	alarm/set_alarm	I-recurring_datetime
+6	alarm	alarm/set_alarm	O
+7	kur	alarm/set_alarm	O
+
+# id: 87
+# text-en: Show my reminder
+# text: Hatırlatıcılarımı göster
+# intent: reminder/show_reminders
+1	Hatırlatıcılarımı	reminder/show_reminders	B-reference-part
+2	göster	reminder/show_reminders	O
+
+# id: 192
+# text-en: Is it going to be windy today?
+# text: Bugün rüzgarlı olacak mı?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	rüzgarlı	weather/find	B-weather/attribute
+3	olacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 240
+# text-en: Cancel tomorrow's reminders
+# text: Yarınki hatırlatıcıları iptal et
+# intent: reminder/cancel_reminder
+1	Yarınki	reminder/cancel_reminder	B-datetime
+2	hatırlatıcıları	reminder/cancel_reminder	O
+3	iptal	reminder/cancel_reminder	O
+4	et	reminder/cancel_reminder	O
+
+# id: 140
+# text-en: tell me the 3 day forecast
+# text: 3 günlük tahmini söyle
+# intent: weather/find
+1	3	weather/find	B-datetime
+2	günlük	weather/find	I-datetime
+3	tahmini	weather/find	O
+4	söyle	weather/find	O
+
+# id: 272
+# text-en: how many inches of rain are we suppose to get tomorrow?
+# text: yarın kaç inç yağmur yağmasını bekliyoruz?
+# intent: weather/find
+1	yarın	weather/find	B-datetime
+2	kaç	weather/find	O
+3	inç	weather/find	B-weather/attribute
+4	yağmur	weather/find	I-weather/attribute
+5	yağmasını	weather/find	O
+6	bekliyoruz	weather/find	O
+7	?	weather/find	O
+
+# id: 80
+# text-en: remind me about the wedding
+# text: bana düğünü hatırlat
+# intent: reminder/set_reminder
+1	bana	reminder/set_reminder	O
+2	düğünü	reminder/set_reminder	B-reminder/todo
+3	hatırlat	reminder/set_reminder	O
+
+# id: 42
+# text-en: Snooze all alarms
+# text: Tüm alarmları ertele
+# intent: alarm/snooze_alarm
+1	Tüm	alarm/snooze_alarm	B-reference
+2	alarmları	alarm/snooze_alarm	O
+3	ertele	alarm/snooze_alarm	O
+
+# id: 214
+# text-en: When will it rain today?
+# text: Bugün ne zaman yağmur yağacak?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	ne	weather/find	O
+3	zaman	weather/find	O
+4	yağmur	weather/find	B-weather/attribute
+5	yağacak	weather/find	O
+6	?	weather/find	O
+
+# id: 38
+# text-en: show all alarms
+# text: tüm alarmları göster
+# intent: alarm/show_alarms
+1	tüm	alarm/show_alarms	B-reference
+2	alarmları	alarm/show_alarms	O
+3	göster	alarm/show_alarms	O
+
+# id: 11
+# text-en: Turn off all alarms
+# text: Tüm alarmları kapat
+# intent: alarm/cancel_alarm
+1	Tüm	alarm/cancel_alarm	B-reference
+2	alarmları	alarm/cancel_alarm	O
+3	kapat	alarm/cancel_alarm	O
+
+# id: 137
+# text-en: Is it going to rain today?
+# text: Bugün yağmur yağacak mı?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	yağmur	weather/find	B-weather/attribute
+3	yağacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 260
+# text-en: Show all reminders for tomorrow
+# text: Yarınki tüm hatırlatıcıları göster
+# intent: reminder/show_reminders
+1	Yarınki	reminder/show_reminders	B-datetime
+2	tüm	reminder/show_reminders	B-reference
+3	hatırlatıcıları	reminder/show_reminders	O
+4	göster	reminder/show_reminders	O
+
+# id: 21
+# text-en: cancel my alarm for tomorrow morning
+# text: yarın sabahki alarmımı iptal et
+# intent: alarm/cancel_alarm
+1	yarın	alarm/cancel_alarm	B-datetime
+2	sabahki	alarm/cancel_alarm	I-datetime
+3	alarmımı	alarm/cancel_alarm	B-reference-part
+4	iptal	alarm/cancel_alarm	O
+5	et	alarm/cancel_alarm	O
+
+# id: 150
+# text-en: How hot is it?
+# text: Ne kadar sıcak?
+# intent: weather/find
+1	Ne	weather/find	O
+2	kadar	weather/find	O
+3	sıcak	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: 253
+# text-en: remind me to buy milk tonight
+# text: bu gece süt almayı hatırlat
+# intent: reminder/set_reminder
+1	bu	reminder/set_reminder	B-datetime
+2	gece	reminder/set_reminder	I-datetime
+3	süt	reminder/set_reminder	B-reminder/todo
+4	almayı	reminder/set_reminder	I-reminder/todo
+5	hatırlat	reminder/set_reminder	O
+
+# id: 79
+# text-en: Cancel all reminders
+# text: Tüm hatırlatıcıları iptal et
+# intent: reminder/cancel_reminder
+1	Tüm	reminder/cancel_reminder	B-datetime
+2	hatırlatıcıları	reminder/cancel_reminder	O
+3	iptal	reminder/cancel_reminder	O
+4	et	reminder/cancel_reminder	O
+
+# id: 64
+# text-en: Show all alarms
+# text: Tüm alarmları göster
+# intent: alarm/show_alarms
+1	Tüm	alarm/show_alarms	B-reference
+2	alarmları	alarm/show_alarms	O
+3	göster	alarm/show_alarms	O
+
+# id: 21
+# text-en: cancel my alarm for tomorrow morning
+# text: yarın sabahki alarmımı iptal et
+# intent: alarm/cancel_alarm
+1	yarın	alarm/cancel_alarm	B-datetime
+2	sabahki	alarm/cancel_alarm	I-datetime
+3	alarmımı	alarm/cancel_alarm	B-reference-part
+4	iptal	alarm/cancel_alarm	O
+5	et	alarm/cancel_alarm	O
+
+# id: 138
+# text-en: Will it be sunny tomorrow?
+# text: Yarın hava güneşli olacak mı?
+# intent: weather/find
+1	Yarın	weather/find	B-datetime
+2	hava	weather/find	O
+3	güneşli	weather/find	B-weather/attribute
+4	olacak	weather/find	O
+5	mı	weather/find	O
+6	?	weather/find	O
+
+# id: 32
+# text-en: Cancel alarm for tomorrow morning
+# text: Yarın sabahki alarmı iptal et
+# intent: alarm/cancel_alarm
+1	Yarın	alarm/cancel_alarm	B-datetime
+2	sabahki	alarm/cancel_alarm	I-datetime
+3	alarmı	alarm/cancel_alarm	O
+4	iptal	alarm/cancel_alarm	O
+5	et	alarm/cancel_alarm	O
+
+# id: 249
+# text-en: show all reminders for tomorrow morning
+# text: yarın sabahki gün hatırlatıcıları göster
+# intent: reminder/show_reminders
+1	yarın	reminder/show_reminders	B-datetime
+2	sabahki	reminder/show_reminders	I-datetime
+3	gün	reminder/show_reminders	O
+4	hatırlatıcıları	reminder/show_reminders	O
+5	göster	reminder/show_reminders	O
+
+# id: 171
+# text-en: What is the humidity today?
+# text: Bugünkü nem oranı nedir?
+# intent: weather/find
+1	Bugünkü	weather/find	B-datetime
+2	nem	weather/find	B-weather/attribute
+3	oranı	weather/find	O
+4	nedir	weather/find	O
+5	?	weather/find	O
+
+# id: 295
+# text-en: When is it going to rain?
+# text: Ne zaman yağmur yağacak?
+# intent: weather/find
+1	Ne	weather/find	O
+2	zaman	weather/find	O
+3	yağmur	weather/find	B-weather/attribute
+4	yağacak	weather/find	O
+5	?	weather/find	O
+
+# id: 187
+# text-en: How hot is it
+# text: ne kadar sıcak
+# intent: weather/find
+1	ne	weather/find	O
+2	kadar	weather/find	O
+3	sıcak	weather/find	B-weather/attribute
+
+# id: 113
+# text-en: show me my reminders
+# text: hatırlatıcılarımı göster
+# intent: reminder/show_reminders
+1	hatırlatıcılarımı	reminder/show_reminders	B-reference-part
+2	göster	reminder/show_reminders	O
+
+# id: 149
+# text-en: What is the 5 day forecast?
+# text: 5 günlük tahmin nedir?
+# intent: weather/find
+1	5	weather/find	B-datetime
+2	günlük	weather/find	I-datetime
+3	tahmin	weather/find	O
+4	nedir	weather/find	O
+5	?	weather/find	O
+
+# id: 36
+# text-en: set alarm for 6 am
+# text: Sabah 6'ya alarm kur
+# intent: alarm/set_alarm
+1	Sabah	alarm/set_alarm	B-datetime
+2	6'ya	alarm/set_alarm	I-datetime
+3	alarm	alarm/set_alarm	O
+4	kur	alarm/set_alarm	O
+
+# id: 163
+# text-en: Is it cold today?
+# text: Bugün hava soğuk mu?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	hava	weather/find	O
+3	soğuk	weather/find	B-weather/attribute
+4	mu	weather/find	O
+5	?	weather/find	O
+
+# id: 107
+# text-en: Set a reminder to call my school on Monday at 4 PM
+# text: Pazartesi öğleden sonra 4'te okumu aramak için hatırlatıcısı ayarla
+# intent: reminder/set_reminder
+1	Pazartesi	reminder/set_reminder	B-datetime
+2	öğleden	reminder/set_reminder	I-datetime
+3	sonra	reminder/set_reminder	I-datetime
+4	4'te	reminder/set_reminder	I-datetime
+5	okumu	reminder/set_reminder	B-reminder/todo
+6	aramak	reminder/set_reminder	I-reminder/todo
+7	için	reminder/set_reminder	O
+8	hatırlatıcısı	reminder/set_reminder	O
+9	ayarla	reminder/set_reminder	O
+
+# id: 95
+# text-en: Delete my reminder for picking up Patrick from school tomorrow.
+# text: Yarın Patrick'i okuldan almak için olan hatırlatıcıyı sil.
+# intent: reminder/cancel_reminder
+1	Yarın	reminder/cancel_reminder	B-datetime
+2	Patrick'i	reminder/cancel_reminder	B-reminder/todo
+3	okuldan	reminder/cancel_reminder	I-reminder/todo
+4	almak	reminder/cancel_reminder	I-reminder/todo
+5	için	reminder/cancel_reminder	O
+6	olan	reminder/cancel_reminder	O
+7	hatırlatıcıyı	reminder/cancel_reminder	O
+8	sil	reminder/cancel_reminder	O
+9	.	reminder/cancel_reminder	O
+
+# id: 299
+# text-en: How cold will it be in the morning?
+# text: Sabah ne kadar soğuk olacak?
+# intent: weather/find
+1	Sabah	weather/find	B-datetime
+2	ne	weather/find	O
+3	kadar	weather/find	O
+4	soğuk	weather/find	B-weather/attribute
+5	olacak	weather/find	O
+6	?	weather/find	O
+
+# id: 196
+# text-en: do i need an umbrella tomorrow
+# text: yarın bir şemsiyeye ihtiyacım var mı
+# intent: weather/find
+1	yarın	weather/find	B-datetime
+2	bir	weather/find	O
+3	şemsiyeye	weather/find	B-weather/attribute
+4	ihtiyacım	weather/find	O
+5	var	weather/find	O
+6	mı	weather/find	O
+
+# id: 87
+# text-en: Show my reminder
+# text: Hatırlatıcılarımı göster
+# intent: reminder/show_reminders
+1	Hatırlatıcılarımı	reminder/show_reminders	B-reference-part
+2	göster	reminder/show_reminders	O
+
+# id: 33
+# text-en: Stop alarm for 6:00 am
+# text: Sabah 6'da alarmı durdur
+# intent: alarm/cancel_alarm
+1	Sabah	alarm/cancel_alarm	B-datetime
+2	6'da	alarm/cancel_alarm	I-datetime
+3	alarmı	alarm/cancel_alarm	O
+4	durdur	alarm/cancel_alarm	O
+
+# id: 35
+# text-en: Cancel all alarms
+# text: Tüm alarmları iptal et
+# intent: alarm/cancel_alarm
+1	Tüm	alarm/cancel_alarm	B-reference
+2	alarmları	alarm/cancel_alarm	O
+3	iptal	alarm/cancel_alarm	O
+4	et	alarm/cancel_alarm	O
+
+# id: 188
+# text-en: Will it be sunny today?
+# text: Bugün güneşli olacak mı?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	güneşli	weather/find	B-weather/attribute
+3	olacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 193
+# text-en: what is the weather in london?
+# text: londra'daki hava durumu nasıl?
+# intent: weather/find
+1	londra'daki	weather/find	B-location
+2	hava	weather/find	O
+3	durumu	weather/find	O
+4	nasıl	weather/find	O
+5	?	weather/find	O
+
+# id: 88
+# text-en: What are my reminders?
+# text: Hatırlatmacılarım neler?
+# intent: reminder/show_reminders
+1	Hatırlatmacılarım	reminder/show_reminders	B-reference-part
+2	neler	reminder/show_reminders	O
+3	?	reminder/show_reminders	O
+
+# id: 116
+# text-en: Cancel my reminder to text Dad
+# text: Babama mesaj gönderme hatırlatıcımı iptal et
+# intent: reminder/cancel_reminder
+1	Babama	reminder/cancel_reminder	B-reminder/todo
+2	mesaj	reminder/cancel_reminder	I-reminder/todo
+3	gönderme	reminder/cancel_reminder	I-reminder/todo
+4	hatırlatıcımı	reminder/cancel_reminder	B-reference-part
+5	iptal	reminder/cancel_reminder	O
+6	et	reminder/cancel_reminder	O
+
+# id: 36
+# text-en: set alarm for 6 am
+# text: Sabah 6'ya alarm kur
+# intent: alarm/set_alarm
+1	Sabah	alarm/set_alarm	B-datetime
+2	6'ya	alarm/set_alarm	I-datetime
+3	alarm	alarm/set_alarm	O
+4	kur	alarm/set_alarm	O
+
+# id: 15
+# text-en: turn off the alarm
+# text: alarmı kapat
+# intent: alarm/cancel_alarm
+1	alarmı	alarm/cancel_alarm	O
+2	kapat	alarm/cancel_alarm	O
+
+# id: 65
+# text-en: cancel the alarm
+# text: tüm alarmları iptal et
+# intent: alarm/cancel_alarm
+1	tüm	alarm/cancel_alarm	O
+2	alarmları	alarm/cancel_alarm	O
+3	iptal	alarm/cancel_alarm	O
+4	et	alarm/cancel_alarm	O
+
+# id: 26
+# text-en: turn off alarm
+# text: alarmı kapat
+# intent: alarm/cancel_alarm
+1	alarmı	alarm/cancel_alarm	O
+2	kapat	alarm/cancel_alarm	O
+
+# id: 102
+# text-en: remind me to call mom today at 2 p.m.
+# text: bugün 4'de annemi aramayı hatırlat
+# intent: reminder/set_reminder
+1	bugün	reminder/set_reminder	B-datetime
+2	4'de	reminder/set_reminder	I-datetime
+3	annemi	reminder/set_reminder	B-reminder/todo
+4	aramayı	reminder/set_reminder	I-reminder/todo
+5	hatırlat	reminder/set_reminder	O
+
+# id: 1
+# text-en: cancel all alarms
+# text: tüm alarmları iptal et
+# intent: alarm/cancel_alarm
+1	tüm	alarm/cancel_alarm	B-reference
+2	alarmları	alarm/cancel_alarm	O
+3	iptal	alarm/cancel_alarm	O
+4	et	alarm/cancel_alarm	O
+
+# id: 268
+# text-en: is it going to be hot tomorrow
+# text: yarın sıcak olacak mı
+# intent: weather/find
+1	yarın	weather/find	B-datetime
+2	sıcak	weather/find	B-weather/attribute
+3	olacak	weather/find	O
+4	mı	weather/find	O
+
+# id: 185
+# text-en: is it cold out today?
+# text: bugün hava soğuk mu?
+# intent: weather/find
+1	bugün	weather/find	B-datetime
+2	hava	weather/find	O
+3	soğuk	weather/find	B-weather/attribute
+4	mu	weather/find	O
+5	?	weather/find	O
+
+# id: 47
+# text-en: Set alarm for 5 pm tonight
+# text: Öğleden sonra 5'e alarm kur
+# intent: alarm/set_alarm
+1	Öğleden	alarm/set_alarm	B-datetime
+2	sonra	alarm/set_alarm	I-datetime
+3	5'e	alarm/set_alarm	I-datetime
+4	alarm	alarm/set_alarm	O
+5	kur	alarm/set_alarm	O
+
+# id: 145
+# text-en: Will it rain this weekend?
+# text: Bu hafta yağmur yağacak mı?
+# intent: weather/find
+1	Bu	weather/find	B-datetime
+2	hafta	weather/find	I-datetime
+3	yağmur	weather/find	B-weather/attribute
+4	yağacak	weather/find	O
+5	mı	weather/find	O
+6	?	weather/find	O
+
+# id: 209
+# text-en: is it going to rain today
+# text: bugün yağmur yağacak mı?
+# intent: weather/find
+1	bugün	weather/find	B-datetime
+2	yağmur	weather/find	B-weather/attribute
+3	yağacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 17
+# text-en: set an alarm for monday at 3 am
+# text: pazartesi sabah 3'e alarm kur
+# intent: alarm/set_alarm
+1	pazartesi	alarm/set_alarm	B-datetime
+2	sabah	alarm/set_alarm	I-datetime
+3	3'e	alarm/set_alarm	I-datetime
+4	alarm	alarm/set_alarm	O
+5	kur	alarm/set_alarm	O
+
+# id: 14
+# text-en: alarm on
+# text: alarmı aç
+# intent: alarm/set_alarm
+1	alarmı	alarm/set_alarm	O
+2	aç	alarm/set_alarm	O
+
+# id: 178
+# text-en: Is it going to rain on Saturday?
+# text: Cumartesi yağmur yağacak mı?
+# intent: weather/find
+1	Cumartesi	weather/find	B-datetime
+2	yağmur	weather/find	B-weather/attribute
+3	yağacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 226
+# text-en: Set alarm for 5 am
+# text: Sabah 5'e alarm kur
+# intent: alarm/set_alarm
+1	Sabah	alarm/set_alarm	B-datetime
+2	5'e	alarm/set_alarm	I-datetime
+3	alarm	alarm/set_alarm	O
+4	kur	alarm/set_alarm	O
+
+# id: 148
+# text-en: Will I need a coat today?
+# text: Bugün monta ihtiyacım olacak mı?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	monta	weather/find	B-weather/attribute
+3	ihtiyacım	weather/find	O
+4	olacak	weather/find	O
+5	mı	weather/find	O
+6	?	weather/find	O
+
+# id: 26
+# text-en: turn off alarm
+# text: alarmı kapat
+# intent: alarm/cancel_alarm
+1	alarmı	alarm/cancel_alarm	O
+2	kapat	alarm/cancel_alarm	O
+
+# id: 180
+# text-en: What weather warnings do I have?
+# text: Hangi hava durumu uyarılarım var?
+# intent: weather/find
+1	Hangi	weather/find	O
+2	hava	weather/find	O
+3	durumu	weather/find	O
+4	uyarılarım	weather/find	B-weather/attribute
+5	var	weather/find	O
+6	?	weather/find	O
+
+# id: 123
+# text-en: Cancel the reminder for the meeting at the lodge
+# text: Locadaki toplantı için hatırlatıyıcı iptal et
+# intent: reminder/cancel_reminder
+1	Locadaki	reminder/cancel_reminder	B-reminder/todo
+2	toplantı	reminder/cancel_reminder	I-reminder/todo
+3	için	reminder/cancel_reminder	O
+4	hatırlatıyıcı	reminder/cancel_reminder	O
+5	iptal	reminder/cancel_reminder	O
+6	et	reminder/cancel_reminder	O
+
+# id: 292
+# text-en: Should I wear a coat today
+# text: Bugün mont giymeli miyim
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	mont	weather/find	B-weather/attribute
+3	giymeli	weather/find	O
+4	miyim	weather/find	O
+
+# id: 234
+# text-en: Turn off all alarms.
+# text: tüm alarmları kapat.
+# intent: alarm/cancel_alarm
+1	tüm	alarm/cancel_alarm	B-reference
+2	alarmları	alarm/cancel_alarm	O
+3	kapat	alarm/cancel_alarm	O
+4	.	alarm/cancel_alarm	O
+
+# id: 38
+# text-en: show all alarms
+# text: tüm alarmları göster
+# intent: alarm/show_alarms
+1	tüm	alarm/show_alarms	B-reference
+2	alarmları	alarm/show_alarms	O
+3	göster	alarm/show_alarms	O
+
+# id: 30
+# text-en: Make a new alarm for Thursday at 1pm.
+# text: Perşembe öğleden sonra 1'e yeni bir alarm kur.
+# intent: alarm/set_alarm
+1	Perşembe	alarm/set_alarm	B-datetime
+2	öğleden	alarm/set_alarm	I-datetime
+3	sonra	alarm/set_alarm	I-datetime
+4	1'e	alarm/set_alarm	I-datetime
+5	yeni	alarm/set_alarm	O
+6	bir	alarm/set_alarm	O
+7	alarm	alarm/set_alarm	O
+8	kur	alarm/set_alarm	O
+9	.	alarm/set_alarm	O
+
+# id: 92
+# text-en: Remind me to go to the dentist next Monday.
+# text: Gelecek Pazartesi dişçiye gitmeyi hatırlat.
+# intent: reminder/set_reminder
+1	Gelecek	reminder/set_reminder	B-datetime
+2	Pazartesi	reminder/set_reminder	I-datetime
+3	dişçiye	reminder/set_reminder	B-reminder/todo
+4	gitmeyi	reminder/set_reminder	I-reminder/todo
+5	hatırlat	reminder/set_reminder	O
+6	.	reminder/set_reminder	O
+
+# id: 208
+# text-en: should I bring an umbrella today
+# text: bugün bir şemsiye getirmeli miyim?
+# intent: weather/find
+1	bugün	weather/find	B-datetime
+2	bir	weather/find	O
+3	şemsiye	weather/find	B-weather/attribute
+4	getirmeli	weather/find	O
+5	miyim	weather/find	O
+6	?	weather/find	O
+
+# id: 173
+# text-en: how is the weather this week?
+# text: bu hafta hava durumu nasıl?
+# intent: weather/find
+1	bu	weather/find	B-datetime
+2	hafta	weather/find	I-datetime
+3	hava	weather/find	O
+4	durumu	weather/find	O
+5	nasıl	weather/find	O
+6	?	weather/find	O
+
+# id: 207
+# text-en: is it below freezing today?
+# text: bugün hava sıfır derecenin altında mı?
+# intent: weather/find
+1	bugün	weather/find	B-datetime
+2	hava	weather/find	O
+3	sıfır	weather/find	B-weather/attribute
+4	derecenin	weather/find	I-weather/attribute
+5	altında	weather/find	I-weather/attribute
+6	mı	weather/find	O
+7	?	weather/find	O
+
+# id: 266
+# text-en: Delete all reminders
+# text: Tüm hatırlatıcıları sil
+# intent: reminder/cancel_reminder
+1	Tüm	reminder/cancel_reminder	B-datetime
+2	hatırlatıcıları	reminder/cancel_reminder	O
+3	sil	reminder/cancel_reminder	O
+
+# id: 137
+# text-en: Is it going to rain today?
+# text: Bugün yağmur yağacak mı?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	yağmur	weather/find	B-weather/attribute
+3	yağacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 145
+# text-en: Will it rain this weekend?
+# text: Bu hafta yağmur yağacak mı?
+# intent: weather/find
+1	Bu	weather/find	B-datetime
+2	hafta	weather/find	I-datetime
+3	yağmur	weather/find	B-weather/attribute
+4	yağacak	weather/find	O
+5	mı	weather/find	O
+6	?	weather/find	O
+
+# id: 256
+# text-en: Set reminder for mom's visit next week
+# text: Gelecek hafta annemin ziyareti için hatırlatıcı ayarla
+# intent: reminder/set_reminder
+1	Gelecek	reminder/set_reminder	B-datetime
+2	hafta	reminder/set_reminder	I-datetime
+3	annemin	reminder/set_reminder	B-reminder/todo
+4	ziyareti	reminder/set_reminder	I-reminder/todo
+5	için	reminder/set_reminder	O
+6	hatırlatıcı	reminder/set_reminder	O
+7	ayarla	reminder/set_reminder	O
+
+# id: 288
+# text-en: Will it snow tomorrow?
+# text: Yarın kar yağacak mı?
+# intent: weather/find
+1	Yarın	weather/find	B-datetime
+2	kar	weather/find	B-weather/attribute
+3	yağacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 89
+# text-en: show all reminders
+# text: tüm hatırlatıcıları göster
+# intent: reminder/show_reminders
+1	tüm	reminder/show_reminders	B-reference
+2	hatırlatıcıları	reminder/show_reminders	O
+3	göster	reminder/show_reminders	O
+
+# id: 176
+# text-en: Do I need a coat today?
+# text: Bugün monta ihtiyacım var mı?
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	monta	weather/find	B-weather/attribute
+3	ihtiyacım	weather/find	O
+4	var	weather/find	O
+5	mı	weather/find	O
+6	?	weather/find	O
+
+# id: 278
+# text-en: is it going to snow thursday
+# text: perşembe kar yağacak mı
+# intent: weather/find
+1	perşembe	weather/find	B-datetime
+2	kar	weather/find	B-weather/attribute
+3	yağacak	weather/find	O
+4	mı	weather/find	O
+
+# id: 94
+# text-en: Remind me to buy coffee at Starbucks this afternoon
+# text: Bu öğleden sonra Starbucks'tan kahve almayı hatırlat
+# intent: reminder/set_reminder
+1	Bu	reminder/set_reminder	B-datetime
+2	öğleden	reminder/set_reminder	I-datetime
+3	sonra	reminder/set_reminder	I-datetime
+4	Starbucks'tan	reminder/set_reminder	B-reminder/todo
+5	kahve	reminder/set_reminder	I-reminder/todo
+6	almayı	reminder/set_reminder	I-reminder/todo
+7	hatırlat	reminder/set_reminder	O
+
+# id: 54
+# text-en: Set an alarm for every ten minutes, starting at 5:30 and ending at 6 am.
+# text: Sabah 5:30'dan başlayarak 6'ya kadar her on dakika için bir alarm kur.
+# intent: alarm/set_alarm
+1	Sabah	alarm/set_alarm	B-datetime
+2	5:30'dan	alarm/set_alarm	I-datetime
+3	başlayarak	alarm/set_alarm	I-datetime
+4	6'ya	alarm/set_alarm	I-datetime
+5	kadar	alarm/set_alarm	I-datetime
+6	her	alarm/set_alarm	I-datetime
+7	on	alarm/set_alarm	I-datetime
+8	dakika	alarm/set_alarm	I-datetime
+9	için	alarm/set_alarm	O
+10	bir	alarm/set_alarm	O
+11	alarm	alarm/set_alarm	O
+12	kur	alarm/set_alarm	O
+13	.	alarm/set_alarm	O
+
+# id: 178
+# text-en: Is it going to rain on Saturday?
+# text: Cumartesi yağmur yağacak mı?
+# intent: weather/find
+1	Cumartesi	weather/find	B-datetime
+2	yağmur	weather/find	B-weather/attribute
+3	yağacak	weather/find	O
+4	mı	weather/find	O
+5	?	weather/find	O
+
+# id: 217
+# text-en: Set eh alarm to 7:20am for the shoe release.
+# text: Sabah 7:20'ye ayakkabıyı satışa çıkartmak için eh alarmı kur.
+# intent: alarm/set_alarm
+1	Sabah	alarm/set_alarm	B-datetime
+2	7:20'ye	alarm/set_alarm	I-datetime
+3	ayakkabıyı	alarm/set_alarm	B-reminder/todo
+4	satışa	alarm/set_alarm	I-reminder/todo
+5	çıkartmak	alarm/set_alarm	I-reminder/todo
+6	için	alarm/set_alarm	O
+7	eh	alarm/set_alarm	O
+8	alarmı	alarm/set_alarm	O
+9	kur	alarm/set_alarm	O
+10	.	alarm/set_alarm	O
+
+# id: 297
+# text-en: Will there be storms in Bordentown today
+# text: Bugün Bordentown'da fırtına olacak mı
+# intent: weather/find
+1	Bugün	weather/find	B-datetime
+2	Bordentown'da	weather/find	B-location
+3	fırtına	weather/find	B-weather/attribute
+4	olacak	weather/find	O
+5	mı	weather/find	O
+
+# id: 159
+# text-en: what is the current temperature
+# text: şu anki sıcaklık nedir?
+# intent: weather/find
+1	şu	weather/find	B-datetime
+2	anki	weather/find	I-datetime
+3	sıcaklık	weather/find	B-weather/attribute
+4	nedir	weather/find	O
+5	?	weather/find	O
+
+# id: 257
+# text-en: remind me to make Dan's lunch at 7:30am tomorrow.
+# text: yarın sabah 7:30'da Dan'ın öğle yemeğini hazırlamyı hatırlat
+# intent: reminder/set_reminder
+1	yarın	reminder/set_reminder	B-datetime
+2	sabah	reminder/set_reminder	I-datetime
+3	7:30'da	reminder/set_reminder	I-datetime
+4	Dan'ın	reminder/set_reminder	B-reminder/todo
+5	öğle	reminder/set_reminder	I-reminder/todo
+6	yemeğini	reminder/set_reminder	I-reminder/todo
+7	hazırlamyı	reminder/set_reminder	I-reminder/todo
+8	hatırlat	reminder/set_reminder	O
+
+# id: 77
+# text-en: Set alarm for 6:30am tomorrow.
+# text: Yarın sabah 6.30'a alarm kur.
+# intent: alarm/set_alarm
+1	Yarın	alarm/set_alarm	B-datetime
+2	sabah	alarm/set_alarm	I-datetime
+3	6	alarm/set_alarm	I-datetime
+4	.	alarm/set_alarm	I-datetime
+5	30'a	alarm/set_alarm	I-datetime
+6	alarm	alarm/set_alarm	O
+7	kur	alarm/set_alarm	O
+8	.	alarm/set_alarm	O
+
+# id: 110
+# text-en: Do I have any reminders set?
+# text: Ayarlanmış hatırlatıcılarım var mı?
+# intent: reminder/show_reminders
+1	Ayarlanmış	reminder/show_reminders	O
+2	hatırlatıcılarım	reminder/show_reminders	O
+3	var	reminder/show_reminders	O
+4	mı	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# id: 124
+# text-en: Is my dentist appointment in my reminder ?
+# text: Dişçi randevum hatırlatıcımda mı ?
+# intent: reminder/show_reminders
+1	Dişçi	reminder/show_reminders	B-reminder/todo
+2	randevum	reminder/show_reminders	I-reminder/todo
+3	hatırlatıcımda	reminder/show_reminders	B-reference-part
+4	mı	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# id: 199
+# text-en: when will it stop raining?
+# text: yağmur ne zaman duracak?
+# intent: weather/find
+1	yağmur	weather/find	B-weather/attribute
+2	ne	weather/find	O
+3	zaman	weather/find	O
+4	duracak	weather/find	O
+5	?	weather/find	O
+
+# id: 281
+# text-en: Is it going to snow this week?
+# text: Bu hafta kar yağacak mı?
+# intent: weather/find
+1	Bu	weather/find	B-datetime
+2	hafta	weather/find	I-datetime
+3	kar	weather/find	B-weather/attribute
+4	yağacak	weather/find	O
+5	mı	weather/find	O
+6	?	weather/find	O
+
+# id: 26
+# text-en: turn off alarm
+# text: alarmı kapat
+# intent: alarm/cancel_alarm
+1	alarmı	alarm/cancel_alarm	O
+2	kapat	alarm/cancel_alarm	O
+
+# id: 1
+# text-en: I would give Half a Life 3 out of 6
+# text: Half a Life'a 6 üzerinden 3 veririm
+# intent: RateBook
+1	Half	RateBook	B-object_name
+2	a	RateBook	I-object_name
+3	Life'a	RateBook	I-object_name
+4	6	RateBook	B-best_rating
+5	üzerinden	RateBook	O
+6	3	RateBook	B-rating_value
+7	veririm	RateBook	O
+
+# id: 2
+# text-en: Play some Mf Doom from the sixties on pandora .
+# text: Pandora'da altmışlı yıllardan biraz Mf Doom oynayın .
+# intent: PlayMusic
+1	Pandora'da	PlayMusic	B-service
+2	altmışlı	PlayMusic	B-datetime
+3	yıllardan	PlayMusic	I-datetime
+4	biraz	PlayMusic	O
+5	Mf	PlayMusic	B-artist
+6	Doom	PlayMusic	I-artist
+7	oynayın	PlayMusic	O
+8	.	PlayMusic	O
+
+# id: 3
+# text-en: Search for Chasing Fortune a TV series .
+# text: Chasing Fortune TV dizisini ara .
+# intent: SearchCreativeWork
+1	Chasing	SearchCreativeWork	B-object_name
+2	Fortune	SearchCreativeWork	I-object_name
+3	TV	SearchCreativeWork	B-object_type
+4	dizisini	SearchCreativeWork	I-object_type
+5	ara	SearchCreativeWork	O
+6	.	SearchCreativeWork	O
+
+# id: 4
+# text-en: Play shadowplay by Dana on Deezer .
+# text: Deezer'da Dana'nın shadowplay'ini çal.
+# intent: PlayMusic
+1	Deezer'da	PlayMusic	B-service
+2	Dana'nın	PlayMusic	B-artist
+3	shadowplay'ini	PlayMusic	B-track
+4	çal	PlayMusic	O
+5	.	PlayMusic	O
+
+# id: 5
+# text-en: me and imelda want a reservation in Missouri at seven am
+# text: ben ve imelda sabah yedide Missouri'de rezervasyon yaptırmak istiyoruz
+# intent: BookRestaurant
+1	ben	BookRestaurant	B-party_size_description
+2	ve	BookRestaurant	I-party_size_description
+3	imelda	BookRestaurant	I-party_size_description
+4	sabah	BookRestaurant	B-datetime
+5	yedide	BookRestaurant	I-datetime
+6	Missouri'de	BookRestaurant	B-location
+7	rezervasyon	BookRestaurant	O
+8	yaptırmak	BookRestaurant	O
+9	istiyoruz	BookRestaurant	O
+
+# id: 6
+# text-en: add bob klose to la mejor música para tus fiestas
+# text: bob klose'u la mejor música para tus fiestas'a ekle
+# intent: AddToPlaylist
+1	bob	AddToPlaylist	B-artist
+2	klose'u	AddToPlaylist	I-artist
+3	la	AddToPlaylist	B-playlist
+4	mejor	AddToPlaylist	I-playlist
+5	música	AddToPlaylist	I-playlist
+6	para	AddToPlaylist	I-playlist
+7	tus	AddToPlaylist	I-playlist
+8	fiestas'a	AddToPlaylist	I-playlist
+9	ekle	AddToPlaylist	O
+
+# id: 7
+# text-en: play Luis Alfonzo Larrain from 1995
+# text: 1995'ten Luis Alfonzo Larrain'i çal
+# intent: PlayMusic
+1	1995'ten	PlayMusic	B-datetime
+2	Luis	PlayMusic	B-artist
+3	Alfonzo	PlayMusic	I-artist
+4	Larrain'i	PlayMusic	I-artist
+5	çal	PlayMusic	O
+
+# id: 8
+# text-en: What will the weather be like in the Bahamas eleven years and a half from now
+# text: Bundan on bir buçuk yıl sonra Bahamalar'da hava nasıl olacak
+# intent: weather/find
+1	Bundan	weather/find	B-datetime
+2	on	weather/find	I-datetime
+3	bir	weather/find	I-datetime
+4	buçuk	weather/find	I-datetime
+5	yıl	weather/find	I-datetime
+6	sonra	weather/find	I-datetime
+7	Bahamalar'da	weather/find	B-location
+8	hava	weather/find	O
+9	nasıl	weather/find	O
+10	olacak	weather/find	O
+
+# id: 9
+# text-en: What will the weather be like in Arizona on october the 3rd
+# text: 3 Ekim'de Arizona'da hava nasıl olacak
+# intent: weather/find
+1	3	weather/find	B-datetime
+2	Ekim'de	weather/find	I-datetime
+3	Arizona'da	weather/find	B-location
+4	hava	weather/find	O
+5	nasıl	weather/find	O
+6	olacak	weather/find	O
+
+# id: 10
+# text-en: Play opera music on google music
+# text: google music'te opera müziği çal
+# intent: PlayMusic
+1	google	PlayMusic	B-service
+2	music'te	PlayMusic	I-service
+3	opera	PlayMusic	B-genre
+4	müziği	PlayMusic	O
+5	çal	PlayMusic	O
+
+# id: 11
+# text-en: find Vegucated starting at zero pm
+# text: gece 0'da başlayan Vegucated'ı bul
+# intent: SearchScreeningEvent
+1	gece	SearchScreeningEvent	B-datetime
+2	0'da	SearchScreeningEvent	I-datetime
+3	başlayan	SearchScreeningEvent	O
+4	Vegucated'ı	SearchScreeningEvent	B-movie_name
+5	bul	SearchScreeningEvent	O
+
+# id: 12
+# text-en: Give the current novel a 3 out of 6 rating
+# text: Mevcut romana 6 üzerinden 3 puan ver
+# intent: RateBook
+1	Mevcut	RateBook	B-object_select
+2	romana	RateBook	B-object_type
+3	6	RateBook	B-best_rating
+4	üzerinden	RateBook	O
+5	3	RateBook	B-rating_value
+6	puan	RateBook	O
+7	ver	RateBook	O
+
+# id: 13
+# text-en: I'd like to add this album to funtime .
+# text: Bu albümü funtime'a eklemek istiyorum .
+# intent: AddToPlaylist
+1	Bu	AddToPlaylist	O
+2	albümü	AddToPlaylist	B-music_item
+3	funtime'a	AddToPlaylist	B-playlist
+4	eklemek	AddToPlaylist	O
+5	istiyorum	AddToPlaylist	O
+6	.	AddToPlaylist	O
+
+# id: 14
+# text-en: I need a table for 4 at a restaurant around 0 AM .
+# text: Gece 0 civarında bir restoranda 4 kişilik bir masaya ihtiyacım var .
+# intent: BookRestaurant
+1	Gece	BookRestaurant	B-datetime
+2	0	BookRestaurant	I-datetime
+3	civarında	BookRestaurant	O
+4	bir	BookRestaurant	O
+5	restoranda	BookRestaurant	B-restaurant_type
+6	4	BookRestaurant	B-party_size_number
+7	kişilik	BookRestaurant	O
+8	bir	BookRestaurant	O
+9	masaya	BookRestaurant	O
+10	ihtiyacım	BookRestaurant	O
+11	var	BookRestaurant	O
+12	.	BookRestaurant	O
+
+# id: 15
+# text-en: find the picture Louder Than Bombs
+# text: Louder Than Bombs resmini bul
+# intent: SearchCreativeWork
+1	Louder	SearchCreativeWork	B-object_name
+2	Than	SearchCreativeWork	I-object_name
+3	Bombs	SearchCreativeWork	I-object_name
+4	resmini	SearchCreativeWork	B-object_type
+5	bul	SearchCreativeWork	O
+
+# id: 16
+# text-en: Give 2 out of 6 points to A Tale of Time City
+# text: A Tale of Time City'ye 6 üzerinden 2 puan ver
+# intent: RateBook
+1	A	RateBook	B-object_name
+2	Tale	RateBook	I-object_name
+3	of	RateBook	I-object_name
+4	Time	RateBook	I-object_name
+5	City'ye	RateBook	I-object_name
+6	6	RateBook	B-best_rating
+7	üzerinden	RateBook	O
+8	2	RateBook	B-rating_value
+9	puan	RateBook	B-rating_unit
+10	ver	RateBook	O
+
+# id: 17
+# text-en: add this current book five stars
+# text: bu mevcut kitaba beş yıldız ekle
+# intent: RateBook
+1	bu	RateBook	O
+2	mevcut	RateBook	B-object_select
+3	kitaba	RateBook	B-object_type
+4	beş	RateBook	B-rating_value
+5	yıldız	RateBook	B-rating_unit
+6	ekle	RateBook	O
+
+# id: 18
+# text-en: add track 70s smash hits to my
+# text: 70s smash hits parçasını benimkine ekle
+# intent: AddToPlaylist
+1	70s	AddToPlaylist	B-playlist
+2	smash	AddToPlaylist	I-playlist
+3	hits	AddToPlaylist	I-playlist
+4	parçasını	AddToPlaylist	B-music_item
+5	benimkine	AddToPlaylist	B-reference
+6	ekle	AddToPlaylist	O
+
+# id: 19
+# text-en: book near Montana restaurant serving sri lankan food for 6 that is highly rated on tues.
+# text: salı günleri yüksek puan alan, sri lanka yemekleri sunan Montana yakınlarındaki restorana revervasyon yap
+# intent: BookRestaurant
+1	salı	BookRestaurant	B-datetime
+2	günleri	BookRestaurant	I-datetime
+3	yüksek	BookRestaurant	B-sort
+4	puan	BookRestaurant	I-sort
+5	alan	BookRestaurant	I-sort
+6	,	BookRestaurant	O
+7	sri	BookRestaurant	B-cuisine
+8	lanka	BookRestaurant	I-cuisine
+9	yemekleri	BookRestaurant	I-cuisine
+10	sunan	BookRestaurant	O
+11	Montana	BookRestaurant	B-location
+12	yakınlarındaki	BookRestaurant	B-location
+13	restorana	BookRestaurant	B-restaurant_type
+14	revervasyon	BookRestaurant	O
+15	yap	BookRestaurant	B-datetime
+
+# id: 20
+# text-en: Book me a lunch at Boreas for a party of 8
+# text: Bana 8 kişilik bir parti için Boreas'ta bir öğle yemeği rezervasyonu yap
+# intent: BookRestaurant
+1	Bana	BookRestaurant	O
+2	8	BookRestaurant	B-party_size_number
+3	kişilik	BookRestaurant	O
+4	bir	BookRestaurant	O
+5	parti	BookRestaurant	O
+6	için	BookRestaurant	O
+7	Boreas'ta	BookRestaurant	B-restaurant_name
+8	bir	BookRestaurant	O
+9	öğle	BookRestaurant	B-datetime
+10	yemeği	BookRestaurant	I-datetime
+11	rezervasyonu	BookRestaurant	O
+12	yap	BookRestaurant	O
+
+# id: 21
+# text-en: Please put another tune into the laundry playlist.
+# text: Lütfen çamaşırhane çalma listesine bir başka melodi koy.
+# intent: AddToPlaylist
+1	Lütfen	AddToPlaylist	O
+2	çamaşırhane	AddToPlaylist	B-playlist
+3	çalma	AddToPlaylist	O
+4	listesine	AddToPlaylist	O
+5	bir	AddToPlaylist	O
+6	başka	AddToPlaylist	O
+7	melodi	AddToPlaylist	B-music_item
+8	koy	AddToPlaylist	O
+9	.	AddToPlaylist	O
+
+# id: 22
+# text-en: what is the PW forecast for stormy weather
+# text: fırtınalı hava için PW tahmini nedir
+# intent: weather/find
+1	fırtınalı	weather/find	B-condition_description
+2	hava	weather/find	O
+3	için	weather/find	O
+4	PW	weather/find	B-location
+5	tahmini	weather/find	O
+6	nedir	weather/find	O
+
+# id: 23
+# text-en: What is the predicted weather for my current spot next month ?
+# text: Önümüzdeki ay şu anda bulunduğum bölge için tahmini hava durumu nedir ?
+# intent: weather/find
+1	Önümüzdeki	weather/find	B-datetime
+2	ay	weather/find	I-datetime
+3	şu	weather/find	B-location
+4	anda	weather/find	I-location
+5	bulunduğum	weather/find	I-location
+6	bölge	weather/find	I-location
+7	için	weather/find	O
+8	tahmini	weather/find	O
+9	hava	weather/find	O
+10	durumu	weather/find	O
+11	nedir	weather/find	O
+12	?	weather/find	O
+
+# id: 24
+# text-en: Book a reservation for 1 on march 17
+# text: 17 Mart için 1 kişilik rezervasyon yap
+# intent: BookRestaurant
+1	17	BookRestaurant	B-datetime
+2	Mart	BookRestaurant	I-datetime
+3	için	BookRestaurant	O
+4	1	BookRestaurant	B-party_size_number
+5	kişilik	BookRestaurant	O
+6	rezervasyon	BookRestaurant	O
+7	yap	BookRestaurant	O
+
+# id: 25
+# text-en: The current album gets three out of 6 points
+# text: Mevcut albüm 6 üzerinden üç puan alıyor
+# intent: RateBook
+1	Mevcut	RateBook	B-object_select
+2	albüm	RateBook	B-object_type
+3	6	RateBook	B-best_rating
+4	üzerinden	RateBook	O
+5	üç	RateBook	B-rating_value
+6	puan	RateBook	O
+7	alıyor	RateBook	O
+
+# id: 26
+# text-en: Add the Nastya Kamenskih song to my The Martin Garrix Show playlist.
+# text: Nastya Kamenskih'in şarkısını The Martin Garrix Show çalma listeme ekle.
+# intent: AddToPlaylist
+1	Nastya	AddToPlaylist	B-artist
+2	Kamenskih'in	AddToPlaylist	I-artist
+3	şarkısını	AddToPlaylist	B-music_item
+4	The	AddToPlaylist	B-playlist
+5	Martin	AddToPlaylist	I-playlist
+6	Garrix	AddToPlaylist	I-playlist
+7	Show	AddToPlaylist	I-playlist
+8	çalma	AddToPlaylist	O
+9	listeme	AddToPlaylist	B-reference
+10	ekle	AddToPlaylist	O
+11	.	AddToPlaylist	O
+
+# id: 27
+# text-en: Wish to hear the album Since I Saw You Last
+# text: Since I Saw You Last albümünü duymak isterim
+# intent: SearchCreativeWork
+1	Since	SearchCreativeWork	B-object_name
+2	I	SearchCreativeWork	I-object_name
+3	Saw	SearchCreativeWork	I-object_name
+4	You	SearchCreativeWork	I-object_name
+5	Last	SearchCreativeWork	I-object_name
+6	albümünü	SearchCreativeWork	B-object_type
+7	duymak	SearchCreativeWork	O
+8	isterim	SearchCreativeWork	O
+
+# id: 28
+# text-en: play top tunes by Joseph Utsler
+# text: Joseph Utsler'in en popüler şarkılarını çal
+# intent: PlayMusic
+1	Joseph	PlayMusic	B-artist
+2	Utsler'in	PlayMusic	I-artist
+3	en	PlayMusic	B-sort
+4	popüler	PlayMusic	I-sort
+5	şarkılarını	PlayMusic	O
+6	çal	PlayMusic	O
+
+# id: 29
+# text-en: Find the schedule for Ghost World .
+# text: Ghost World zaman çizelgesini bul .
+# intent: SearchScreeningEvent
+1	Ghost	SearchScreeningEvent	B-movie_name
+2	World	SearchScreeningEvent	I-movie_name
+3	zaman	SearchScreeningEvent	B-object_type
+4	çizelgesini	SearchScreeningEvent	I-object_type
+5	bul	SearchScreeningEvent	O
+6	.	SearchScreeningEvent	O
+
+# id: 30
+# text-en: I want to listen to a concerto from Timour Moutsouraev .
+# text: Timour Moutsouraev'den bir konçerto dinlemek istiyorum .
+# intent: PlayMusic
+1	Timour	PlayMusic	B-artist
+2	Moutsouraev'den	PlayMusic	I-artist
+3	bir	PlayMusic	O
+4	konçerto	PlayMusic	B-music_item
+5	dinlemek	PlayMusic	O
+6	istiyorum	PlayMusic	O
+7	.	PlayMusic	O
+
+# id: 31
+# text-en: play the album Everybody Happy by Lee Aaron
+# text: Lee Aaron'ın Everybody Happy albümünü çal
+# intent: PlayMusic
+1	Lee	PlayMusic	B-artist
+2	Aaron'ın	PlayMusic	I-artist
+3	Everybody	PlayMusic	B-album
+4	Happy	PlayMusic	I-album
+5	albümünü	PlayMusic	B-music_item
+6	çal	PlayMusic	O
+
+# id: 32
+# text-en: play Fereydoun Farrokhzad best track
+# text: Fereydoun Farrokhzad'ın en iyi parçasını çal
+# intent: PlayMusic
+1	Fereydoun	PlayMusic	B-artist
+2	Farrokhzad'ın	PlayMusic	I-artist
+3	en	PlayMusic	B-sort
+4	iyi	PlayMusic	I-sort
+5	parçasını	PlayMusic	B-music_item
+6	çal	PlayMusic	O
+
+# id: 33
+# text-en: rate the current book three stars
+# text: mevcut kitabı üç yıldızla derecelendir
+# intent: RateBook
+1	mevcut	RateBook	B-object_select
+2	kitabı	RateBook	B-object_type
+3	üç	RateBook	B-rating_value
+4	yıldızla	RateBook	B-rating_unit
+5	derecelendir	RateBook	O
+
+# id: 34
+# text-en: What will the weather be in Meeres-Nationalpark Insel Bastimentos at twelve PM ?
+# text: Meeres-Nationalpark Insel Bastimentos'da hava öğlen on iki'de nasıl olacak?
+# intent: weather/find
+1	Meeres-Nationalpark	weather/find	B-location
+2	Insel	weather/find	I-location
+3	Bastimentos'da	weather/find	I-location
+4	hava	weather/find	O
+5	öğlen	weather/find	B-datetime
+6	on	weather/find	I-datetime
+7	iki'de	weather/find	I-datetime
+8	nasıl	weather/find	O
+9	olacak	weather/find	O
+10	?	weather/find	O
+
+# id: 35
+# text-en: Book a table for 10 people at a restaurant which offers internet .
+# text: İnternet sunan bir restoranda 10 kişilik masa ayırt.
+# intent: BookRestaurant
+1	İnternet	BookRestaurant	B-facility
+2	sunan	BookRestaurant	O
+3	bir	BookRestaurant	O
+4	restoranda	BookRestaurant	B-restaurant_type
+5	10	BookRestaurant	B-party_size_number
+6	kişilik	BookRestaurant	O
+7	masa	BookRestaurant	O
+8	ayırt	BookRestaurant	O
+9	.	BookRestaurant	O
+
+# id: 36
+# text-en: give five points to The Tenor Wore Tapshoes
+# text: The Tenor Wore Tapshoes'a beş puan ver
+# intent: RateBook
+1	The	RateBook	B-object_name
+2	Tenor	RateBook	I-object_name
+3	Wore	RateBook	I-object_name
+4	Tapshoes'a	RateBook	I-object_name
+5	beş	RateBook	B-rating_value
+6	puan	RateBook	B-rating_unit
+7	ver	RateBook	O
+
+# id: 37
+# text-en: Play a tune by Houston on Spotify
+# text: Spotify'da Houston'dan bir melodi çal
+# intent: PlayMusic
+1	Spotify'da	PlayMusic	B-service
+2	Houston'dan	PlayMusic	B-artist
+3	bir	PlayMusic	O
+4	melodi	PlayMusic	B-music_item
+5	çal	PlayMusic	O
+
+# id: 38
+# text-en: find a movie theatre with Life and Death
+# text: Lifee and Death bulunan bir sinema salonu bul
+# intent: SearchScreeningEvent
+1	Lifee	SearchScreeningEvent	B-movie_name
+2	and	SearchScreeningEvent	I-movie_name
+3	Death	SearchScreeningEvent	I-movie_name
+4	bulunan	SearchScreeningEvent	O
+5	bir	SearchScreeningEvent	O
+6	sinema	SearchScreeningEvent	B-object_location_type
+7	salonu	SearchScreeningEvent	I-object_location_type
+8	bul	SearchScreeningEvent	O
+
+# id: 39
+# text-en: Play music from the playlist Get Your Mind Right
+# text: Get Your Mind Right çalma listesinden müzik çal
+# intent: PlayMusic
+1	Get	PlayMusic	B-playlist
+2	Your	PlayMusic	I-playlist
+3	Mind	PlayMusic	I-playlist
+4	Right	PlayMusic	I-playlist
+5	çalma	PlayMusic	O
+6	listesinden	PlayMusic	O
+7	müzik	PlayMusic	O
+8	çal	PlayMusic	O
+
+# id: 40
+# text-en: book a table today at a steakhouse for eight that serves sashimi
+# text: bugün sashimi servis eden bir et lokantasından sekiz kişilik bir masa ayırt
+# intent: BookRestaurant
+1	bugün	BookRestaurant	B-datetime
+2	sashimi	BookRestaurant	B-served_dish
+3	servis	BookRestaurant	O
+4	eden	BookRestaurant	O
+5	bir	BookRestaurant	O
+6	et	BookRestaurant	B-restaurant_type
+7	lokantasından	BookRestaurant	I-restaurant_type
+8	sekiz	BookRestaurant	B-party_size_number
+9	kişilik	BookRestaurant	O
+10	bir	BookRestaurant	O
+11	masa	BookRestaurant	O
+12	ayırt	BookRestaurant	O
+
+# id: 41
+# text-en: find animated movies at Caribbean Cinemas
+# text: Caribbean Cinemas'daki animasyon filmlerini bul
+# intent: SearchScreeningEvent
+1	Caribbean	SearchScreeningEvent	B-location
+2	Cinemas'daki	SearchScreeningEvent	I-location
+3	animasyon	SearchScreeningEvent	B-movie_type
+4	filmlerini	SearchScreeningEvent	I-movie_type
+5	bul	SearchScreeningEvent	O
+
+# id: 42
+# text-en: Will there be a storm nearby
+# text: Yakınlarda bir fırtına olacak mı
+# intent: weather/find
+1	Yakınlarda	weather/find	B-location
+2	bir	weather/find	O
+3	fırtına	weather/find	B-condition_description
+4	olacak	weather/find	O
+5	mı	weather/find	O
+
+# id: 43
+# text-en: Play some melody from the eighties on Spotify
+# text: Spotify'da seksenlerden bir melodi çal
+# intent: PlayMusic
+1	Spotify'da	PlayMusic	B-service
+2	seksenlerden	PlayMusic	B-datetime
+3	bir	PlayMusic	O
+4	melodi	PlayMusic	B-music_item
+5	çal	PlayMusic	O
+
+# id: 44
+# text-en: Where can I find The World According to Paris ?
+# text: The World According to Paris'i nerede bulabilirim?
+# intent: SearchCreativeWork
+1	The	SearchCreativeWork	B-object_name
+2	World	SearchCreativeWork	I-object_name
+3	According	SearchCreativeWork	I-object_name
+4	to	SearchCreativeWork	I-object_name
+5	Paris'i	SearchCreativeWork	I-object_name
+6	nerede	SearchCreativeWork	O
+7	bulabilirim	SearchCreativeWork	O
+8	?	SearchCreativeWork	O
+
+# id: 45
+# text-en: Tell me when it will be hotter in China
+# text: Çin'de ne zaman daha sıcak olacağını söyle
+# intent: weather/find
+1	Çin'de	weather/find	B-location
+2	ne	weather/find	O
+3	zaman	weather/find	O
+4	daha	weather/find	O
+5	sıcak	weather/find	B-condition_temperature
+6	olacağını	weather/find	O
+7	söyle	weather/find	O
+
+# id: 46
+# text-en: What are the movie times for the Caribbean Cinemas ?
+# text: Caribbean Cinemas'da film saatleri nedir?
+# intent: SearchScreeningEvent
+1	Caribbean	SearchScreeningEvent	B-location
+2	Cinemas'da	SearchScreeningEvent	I-location
+3	film	SearchScreeningEvent	B-object_type
+4	saatleri	SearchScreeningEvent	I-object_type
+5	nedir	SearchScreeningEvent	O
+6	?	SearchScreeningEvent	O
+
+# id: 47
+# text-en: Will the wind die down at my current location by supper time?
+# text: Şu an bulunduğum yerde akşam yemeği vaktine kadar rüzgar dinecek mi?
+# intent: weather/find
+1	Şu	weather/find	B-location
+2	an	weather/find	I-location
+3	bulunduğum	weather/find	I-location
+4	yerde	weather/find	I-location
+5	akşam	weather/find	B-datetime
+6	yemeği	weather/find	I-datetime
+7	vaktine	weather/find	O
+8	kadar	weather/find	O
+9	rüzgar	weather/find	B-condition_description
+10	dinecek	weather/find	O
+11	mi	weather/find	O
+12	?	weather/find	O
+
+# id: 48
+# text-en: Find me The Twinkler playing at National Amusements in 2 minutes
+# text: Bana 2 dakika içinde National Amusements'ta oynayan Twinkler'ı bul
+# intent: SearchScreeningEvent
+1	Bana	SearchScreeningEvent	O
+2	2	SearchScreeningEvent	B-datetime
+3	dakika	SearchScreeningEvent	I-datetime
+4	içinde	SearchScreeningEvent	I-datetime
+5	National	SearchScreeningEvent	B-location
+6	Amusements'ta	SearchScreeningEvent	I-location
+7	oynayan	SearchScreeningEvent	O
+8	Twinkler'ı	SearchScreeningEvent	B-movie_name
+9	bul	SearchScreeningEvent	O
+
+# id: 49
+# text-en: I give Hadon of Ancient Opar two out of 6 points
+# text: Hadon of Ancient Opar'a 6 üzerinden 2 puan veriyorum
+# intent: RateBook
+1	Hadon	RateBook	B-object_name
+2	of	RateBook	I-object_name
+3	Ancient	RateBook	I-object_name
+4	Opar'a	RateBook	I-object_name
+5	6	RateBook	B-best_rating
+6	üzerinden	RateBook	O
+7	2	RateBook	B-rating_value
+8	puan	RateBook	B-rating_unit
+9	veriyorum	RateBook	O
+
+# id: 50
+# text-en: I'm looking to bring shawn, marguerite and della to a place to eat at near Rwanda .
+# text: shawn, marguerite ve della'yı Ruanda yakınlarındaki yemek yenecek bir mekana götürmek istiyorum .
+# intent: BookRestaurant
+1	shawn	BookRestaurant	B-party_size_description
+2	,	BookRestaurant	I-party_size_description
+3	marguerite	BookRestaurant	I-party_size_description
+4	ve	BookRestaurant	I-party_size_description
+5	della'yı	BookRestaurant	I-party_size_description
+6	Ruanda	BookRestaurant	B-location
+7	yakınlarındaki	BookRestaurant	B-location
+8	yemek	BookRestaurant	O
+9	yenecek	BookRestaurant	O
+10	bir	BookRestaurant	O
+11	mekana	BookRestaurant	O
+12	götürmek	BookRestaurant	O
+13	istiyorum	BookRestaurant	O
+14	.	BookRestaurant	O
+
+# id: 51
+# text-en: Play music on Lastfm
+# text: Lastfm'de müzik çal
+# intent: PlayMusic
+1	Lastfm'de	PlayMusic	B-service
+2	müzik	PlayMusic	O
+3	çal	PlayMusic	O
+
+# id: 52
+# text-en: Will it be snowy at the current position by March 3 ?
+# text: Mevcut konumda hava 3 Mart'a kadar karlı mı olacak?
+# intent: weather/find
+1	Mevcut	weather/find	B-location
+2	konumda	weather/find	I-location
+3	hava	weather/find	O
+4	3	weather/find	B-datetime
+5	Mart'a	weather/find	I-datetime
+6	kadar	weather/find	O
+7	karlı	weather/find	B-condition_description
+8	mı	weather/find	O
+9	olacak	weather/find	O
+10	?	weather/find	O
+
+# id: 53
+# text-en: Find me a table for 8 somewhee in Hollenberg in nine weeks
+# text: Bana dokuz haftada Hollenberg'de 8 kişilik bir masa bul
+# intent: BookRestaurant
+1	Bana	BookRestaurant	O
+2	dokuz	BookRestaurant	B-datetime
+3	haftada	BookRestaurant	I-datetime
+4	Hollenberg'de	BookRestaurant	B-location
+5	8	BookRestaurant	B-party_size_number
+6	kişilik	BookRestaurant	O
+7	bir	BookRestaurant	O
+8	masa	BookRestaurant	O
+9	bul	BookRestaurant	O
+
+# id: 54
+# text-en: play a track from 2004
+# text: 2004'ten bir parça çal
+# intent: PlayMusic
+1	2004'ten	PlayMusic	B-datetime
+2	bir	PlayMusic	O
+3	parça	PlayMusic	B-music_item
+4	çal	PlayMusic	O
+
+# id: 55
+# text-en: Tell me what films are currently playing at AMC Theaters
+# text: AMC Sinemalarında şu anda hangi filmlerin oynatıldığını söyle
+# intent: SearchScreeningEvent
+1	AMC	SearchScreeningEvent	B-location
+2	Sinemalarında	SearchScreeningEvent	I-location
+3	şu	SearchScreeningEvent	O
+4	anda	SearchScreeningEvent	O
+5	hangi	SearchScreeningEvent	O
+6	filmlerin	SearchScreeningEvent	B-movie_type
+7	oynatıldığını	SearchScreeningEvent	O
+8	söyle	SearchScreeningEvent	O
+
+# id: 56
+# text-en: Show me the TV show Limit of Love: Umizaru
+# text: Limit of Love: Umizaru TV programını göster
+# intent: SearchCreativeWork
+1	Limit	SearchCreativeWork	B-object_name
+2	of	SearchCreativeWork	I-object_name
+3	Love:	SearchCreativeWork	I-object_name
+4	Umizaru	SearchCreativeWork	I-object_name
+5	TV	SearchCreativeWork	B-object_type
+6	programını	SearchCreativeWork	I-object_type
+7	göster	SearchCreativeWork	O
+
+# id: 57
+# text-en: Show me the photograph Rock You Baby
+# text: Rock You Baby fotoğrafını göster
+# intent: SearchCreativeWork
+1	Rock	SearchCreativeWork	B-object_name
+2	You	SearchCreativeWork	I-object_name
+3	Baby	SearchCreativeWork	I-object_name
+4	fotoğrafını	SearchCreativeWork	B-object_type
+5	göster	SearchCreativeWork	O
+
+# id: 58
+# text-en: is Tarzan of the Apes playing at Cobb Theatres
+# text: Tarzan of the Apes Cobb Tiyatrolarında oynuyor mu
+# intent: SearchScreeningEvent
+1	Tarzan	SearchScreeningEvent	B-movie_name
+2	of	SearchScreeningEvent	I-movie_name
+3	the	SearchScreeningEvent	I-movie_name
+4	Apes	SearchScreeningEvent	I-movie_name
+5	Cobb	SearchScreeningEvent	B-location
+6	Tiyatrolarında	SearchScreeningEvent	I-location
+7	oynuyor	SearchScreeningEvent	O
+8	mu	SearchScreeningEvent	O
+
+# id: 59
+# text-en: put Kan Mikami on Pre-Party R&B Jams
+# text: Kan Mikami'yi Pre-Party R&B Jams'e koy
+# intent: AddToPlaylist
+1	Kan	AddToPlaylist	B-artist
+2	Mikami'yi	AddToPlaylist	I-artist
+3	Pre-Party	AddToPlaylist	B-playlist
+4	R	AddToPlaylist	I-playlist
+5	&	AddToPlaylist	I-playlist
+6	B	AddToPlaylist	I-playlist
+7	Jams'e	AddToPlaylist	I-playlist
+8	koy	AddToPlaylist	O
+
+# id: 60
+# text-en: is it going to blizzard at my current position
+# text: şu anki konumumda kar fırtınası olacak mı
+# intent: weather/find
+1	şu	weather/find	B-location
+2	anki	weather/find	I-location
+3	konumumda	weather/find	I-location
+4	kar	weather/find	B-condition_description
+5	fırtınası	weather/find	I-condition_description
+6	olacak	weather/find	O
+7	mı	weather/find	O
+
+# id: 61
+# text-en: book a table for me and my step uncle in Malta at a cafeteria
+# text: Malta'daki üvey amcam ve benim için bir kafeteryada masa ayırt
+# intent: BookRestaurant
+1	Malta'daki	BookRestaurant	B-location
+2	üvey	BookRestaurant	B-party_size_description
+3	amcam	BookRestaurant	I-party_size_description
+4	ve	BookRestaurant	I-party_size_description
+5	benim	BookRestaurant	I-party_size_description
+6	için	BookRestaurant	O
+7	bir	BookRestaurant	O
+8	kafeteryada	BookRestaurant	B-restaurant_type
+9	masa	BookRestaurant	O
+10	ayırt	BookRestaurant	O
+
+# id: 62
+# text-en: Play the most popular twenties record from Leland Sklar
+# text: Leland Sklar'ın en popüler yirmiler plağını çal
+# intent: PlayMusic
+1	Leland	PlayMusic	B-artist
+2	Sklar'ın	PlayMusic	I-artist
+3	en	PlayMusic	B-sort
+4	popüler	PlayMusic	I-sort
+5	yirmiler	PlayMusic	B-datetime
+6	plağını	PlayMusic	B-music_item
+7	çal	PlayMusic	O
+
+# id: 63
+# text-en: Show me the forecast for Wisconsin
+# text: Wisconsin için hava tahminini göster
+# intent: weather/find
+1	Wisconsin	weather/find	B-location
+2	için	weather/find	O
+3	hava	weather/find	O
+4	tahminini	weather/find	O
+5	göster	weather/find	O
+
+# id: 64
+# text-en: find a photograph called Between the Days
+# text: Between the Days adlı fotoğrafı bul
+# intent: SearchCreativeWork
+1	Between	SearchCreativeWork	B-object_name
+2	the	SearchCreativeWork	I-object_name
+3	Days	SearchCreativeWork	I-object_name
+4	adlı	SearchCreativeWork	O
+5	fotoğrafı	SearchCreativeWork	B-object_type
+6	bul	SearchCreativeWork	O
+
+# id: 65
+# text-en: book at The Halal Guys on Oct. 17
+# text: The Halal Guys'tan 17 Ekim için rezervasyon yap
+# intent: BookRestaurant
+1	The	BookRestaurant	B-restaurant_name
+2	Halal	BookRestaurant	I-restaurant_name
+3	Guys'tan	BookRestaurant	I-restaurant_name
+4	17	BookRestaurant	B-datetime
+5	Ekim	BookRestaurant	I-datetime
+6	için	BookRestaurant	O
+7	rezervasyon	BookRestaurant	O
+8	yap	BookRestaurant	O
+
+# id: 66
+# text-en: Please tell me the forecast for Guinea-Bissau
+# text: Lütfen Gine-Bissau için hava tahminini söyle
+# intent: weather/find
+1	Lütfen	weather/find	O
+2	Gine-Bissau	weather/find	B-location
+3	için	weather/find	O
+4	hava	weather/find	O
+5	tahminini	weather/find	O
+6	söyle	weather/find	O
+
+# id: 67
+# text-en: Add this song to my the perfect italian dinner playlist
+# text: Bu şarkıyı the perfect italian dinner şarkı listeme ekle
+# intent: AddToPlaylist
+1	Bu	AddToPlaylist	O
+2	şarkıyı	AddToPlaylist	B-music_item
+3	the	AddToPlaylist	B-playlist
+4	perfect	AddToPlaylist	I-playlist
+5	italian	AddToPlaylist	I-playlist
+6	dinner	AddToPlaylist	I-playlist
+7	şarkı	AddToPlaylist	O
+8	listeme	AddToPlaylist	O
+9	ekle	AddToPlaylist	O
+
+# id: 68
+# text-en: weather in Tioga Colorado
+# text: Tioga Colorado hava durumu
+# intent: weather/find
+1	Tioga	weather/find	B-location
+2	Colorado	weather/find	B-location
+3	hava	weather/find	O
+4	durumu	weather/find	O
+
+# id: 69
+# text-en: I want to listen to the Music of Ghost in the Shell: Stand Alone Complex
+# text: Ghost of the Shell: Stand Alone Complex'i dinlemek istiyorum
+# intent: SearchCreativeWork
+1	Ghost	SearchCreativeWork	B-object_name
+2	of	SearchCreativeWork	I-object_name
+3	the	SearchCreativeWork	I-object_name
+4	Shell:	SearchCreativeWork	I-object_name
+5	Stand	SearchCreativeWork	I-object_name
+6	Alone	SearchCreativeWork	I-object_name
+7	Complex'i	SearchCreativeWork	I-object_name
+8	dinlemek	SearchCreativeWork	O
+9	istiyorum	SearchCreativeWork	O
+
+# id: 70
+# text-en: Show me Happiness Was Free .
+# text: Happiness Was Free'yi Göster.
+# intent: SearchCreativeWork
+1	Happiness	SearchCreativeWork	B-object_name
+2	Was	SearchCreativeWork	I-object_name
+3	Free'yi	SearchCreativeWork	I-object_name
+4	Göster	SearchCreativeWork	O
+5	.	SearchCreativeWork	O
+
+# id: 71
+# text-en: Is it supposed to rain nearby my current location at 0 o'clock ?
+# text: Saat 0'da bulunduğum yerin yakınında yağmur yağması mı bekleniyor?
+# intent: weather/find
+1	Saat	weather/find	B-datetime
+2	0'da	weather/find	I-datetime
+3	bulunduğum	weather/find	B-location
+4	yerin	weather/find	I-location
+5	yakınında	weather/find	B-location
+6	yağmur	weather/find	B-condition_description
+7	yağması	weather/find	O
+8	mı	weather/find	O
+9	bekleniyor	weather/find	O
+10	?	weather/find	O
+
+# id: 72
+# text-en: book a table in Fairview neighboring the area
+# text: bölgeye komşu Fairview'da bir masa ayırt
+# intent: BookRestaurant
+1	bölgeye	BookRestaurant	B-location
+2	komşu	BookRestaurant	B-location
+3	Fairview'da	BookRestaurant	B-location
+4	bir	BookRestaurant	O
+5	masa	BookRestaurant	O
+6	ayırt	BookRestaurant	O
+
+# id: 73
+# text-en: what is the forecast for 15:04 in Georgia for overcast conditions in Valley View
+# text: Valley View'deki kapalı hava koşulları için Gürcistan'da 15:04'de hava tahmini nedir
+# intent: weather/find
+1	Valley	weather/find	B-location
+2	View'deki	weather/find	I-location
+3	kapalı	weather/find	B-condition_description
+4	hava	weather/find	O
+5	koşulları	weather/find	O
+6	için	weather/find	O
+7	Gürcistan'da	weather/find	B-location
+8	15:04'de	weather/find	B-datetime
+9	hava	weather/find	O
+10	tahmini	weather/find	O
+11	nedir	weather/find	O
+
+# id: 74
+# text-en: Can I see the movie schedules ?
+# text: Film seanslarını görebilir miyim?
+# intent: SearchScreeningEvent
+1	Film	SearchScreeningEvent	B-object_type
+2	seanslarını	SearchScreeningEvent	I-object_type
+3	görebilir	SearchScreeningEvent	O
+4	miyim	SearchScreeningEvent	O
+5	?	SearchScreeningEvent	O
+
+# id: 75
+# text-en: find a movie house closest showing Operation: Kingdom
+# text: Operation: Kingdom'ı gösteren en yakın film evini bul
+# intent: SearchScreeningEvent
+1	Operation:	SearchScreeningEvent	B-object_name
+2	Kingdom'ı	SearchScreeningEvent	I-object_name
+3	gösteren	SearchScreeningEvent	O
+4	en	SearchScreeningEvent	O
+5	yakın	SearchScreeningEvent	B-location
+6	film	SearchScreeningEvent	B-movie_type
+7	evini	SearchScreeningEvent	I-movie_type
+8	bul	SearchScreeningEvent	O
+
+# id: 76
+# text-en: Find a trailer called Storm Center .
+# text: Storm Center adlı fragmanı bul .
+# intent: SearchCreativeWork
+1	Storm	SearchCreativeWork	B-object_name
+2	Center	SearchCreativeWork	I-object_name
+3	adlı	SearchCreativeWork	O
+4	fragmanı	SearchCreativeWork	B-object_type
+5	bul	SearchCreativeWork	O
+6	.	SearchCreativeWork	O
+
+# id: 77
+# text-en: put this album on my dubstep dangles dirty playlist
+# text: bu albümü dubstep dangles dirty şarkı listeme koy
+# intent: AddToPlaylist
+1	bu	AddToPlaylist	O
+2	albümü	AddToPlaylist	B-music_item
+3	dubstep	AddToPlaylist	B-playlist
+4	dangles	AddToPlaylist	I-playlist
+5	dirty	AddToPlaylist	I-playlist
+6	şarkı	AddToPlaylist	O
+7	listeme	AddToPlaylist	B-reference
+8	koy	AddToPlaylist	O
+
+# id: 78
+# text-en: What are the movie schedules
+# text: Film seansları nelerdir
+# intent: SearchScreeningEvent
+1	Film	SearchScreeningEvent	B-object_type
+2	seansları	SearchScreeningEvent	I-object_type
+3	nelerdir	SearchScreeningEvent	O
+
+# id: 79
+# text-en: Play a song by Juanes on Last Fm
+# text: Last Fm'de Juanes'in bir şarkısını çal
+# intent: PlayMusic
+1	Last	PlayMusic	B-service
+2	Fm'de	PlayMusic	I-service
+3	Juanes'in	PlayMusic	B-artist
+4	bir	PlayMusic	O
+5	şarkısını	PlayMusic	B-music_item
+6	çal	PlayMusic	O
+
+# id: 80
+# text-en: Assign 0 points out of 6 to The Gate of Worlds
+# text: The Gate of Worlds'e 6 üzerinden 0 puan ver
+# intent: RateBook
+1	The	RateBook	B-object_name
+2	Gate	RateBook	I-object_name
+3	of	RateBook	I-object_name
+4	Worlds'e	RateBook	I-object_name
+5	6	RateBook	B-best_rating
+6	üzerinden	RateBook	O
+7	0	RateBook	B-rating_value
+8	puan	RateBook	B-rating_unit
+9	ver	RateBook	O
+
+# id: 81
+# text-en: Play some David Mallett on last fm
+# text: Last Fm'de biraz David Mallett çal
+# intent: PlayMusic
+1	Last	PlayMusic	B-service
+2	Fm'de	PlayMusic	I-service
+3	biraz	PlayMusic	O
+4	David	PlayMusic	B-artist
+5	Mallett	PlayMusic	I-artist
+6	çal	PlayMusic	O
+
+# id: 82
+# text-en: Find me the movie times
+# text: Bana film zamanlarını bul
+# intent: SearchScreeningEvent
+1	Bana	SearchScreeningEvent	O
+2	film	SearchScreeningEvent	B-object_type
+3	zamanlarını	SearchScreeningEvent	I-object_type
+4	bul	SearchScreeningEvent	O
+
+# id: 83
+# text-en: Will it be windy at 4 PM in NY ?
+# text: NY'da öğleden sonra 4'te hava rüzgarlı mı olacak?
+# intent: weather/find
+1	NY'da	weather/find	B-location
+2	öğleden	weather/find	B-datetime
+3	sonra	weather/find	I-datetime
+4	4'te	weather/find	I-datetime
+5	hava	weather/find	O
+6	rüzgarlı	weather/find	B-condition_description
+7	mı	weather/find	O
+8	olacak	weather/find	O
+9	?	weather/find	O
+
+# id: 84
+# text-en: Book me a restaurant for nine in Statham
+# text: Statham'da dokuz kişilik bir restoran rezervasyonu yap
+# intent: BookRestaurant
+1	Statham'da	BookRestaurant	B-location
+2	dokuz	BookRestaurant	B-party_size_number
+3	kişilik	BookRestaurant	O
+4	bir	BookRestaurant	O
+5	restoran	BookRestaurant	B-restaurant_type
+6	rezervasyonu	BookRestaurant	O
+7	yap	BookRestaurant	O
+
+# id: 85
+# text-en: find a video game called IBM Program temporary fix
+# text: IBM Program temporary fix adlı video oyununu bul
+# intent: SearchCreativeWork
+1	IBM	SearchCreativeWork	B-object_name
+2	Program	SearchCreativeWork	I-object_name
+3	temporary	SearchCreativeWork	I-object_name
+4	fix	SearchCreativeWork	I-object_name
+5	adlı	SearchCreativeWork	O
+6	video	SearchCreativeWork	B-object_type
+7	oyununu	SearchCreativeWork	I-object_type
+8	bul	SearchCreativeWork	O
+
+# id: 86
+# text-en: Find a table for one at a popular churrascaria for three weeks from now
+# text: Şu andan itibaren üç hafta içinde popüler bir churrascaria'da tek kişilik bir masa bul
+# intent: BookRestaurant
+1	Şu	BookRestaurant	B-datetime
+2	andan	BookRestaurant	I-datetime
+3	itibaren	BookRestaurant	I-datetime
+4	üç	BookRestaurant	I-datetime
+5	hafta	BookRestaurant	I-datetime
+6	içinde	BookRestaurant	I-datetime
+7	popüler	BookRestaurant	B-sort
+8	bir	BookRestaurant	O
+9	churrascaria'da	BookRestaurant	B-restaurant_type
+10	tek	BookRestaurant	B-party_size_number
+11	kişilik	BookRestaurant	O
+12	bir	BookRestaurant	O
+13	masa	BookRestaurant	O
+14	bul	BookRestaurant	O
+
+# id: 87
+# text-en: For Mirrorshades I rate it three stars
+# text: Mirrorshades'e üç yıldız veriyorum
+# intent: RateBook
+1	Mirrorshades'e	RateBook	B-object_name
+2	üç	RateBook	B-rating_value
+3	yıldız	RateBook	B-rating_unit
+4	veriyorum	RateBook	O
+
+# id: 88
+# text-en: Book a restaurant that serves agnolotti in Colorado City Idaho .
+# text: Colorado City Idaho'da agnolotti sunan bir restoranda rezervasyon yap.
+# intent: BookRestaurant
+1	Colorado	BookRestaurant	B-location
+2	City	BookRestaurant	I-location
+3	Idaho'da	BookRestaurant	B-location
+4	agnolotti	BookRestaurant	B-served_dish
+5	sunan	BookRestaurant	O
+6	bir	BookRestaurant	O
+7	restoranda	BookRestaurant	B-restaurant_type
+8	rezervasyon	BookRestaurant	O
+9	yap	BookRestaurant	O
+10	.	BookRestaurant	O
+
+# id: 89
+# text-en: Add bright and breezy to my This Is Gucci Mane playlist
+# text: This Is Gucci Mane şarkı listeme bright and breezy'yi ekle
+# intent: AddToPlaylist
+1	This	AddToPlaylist	B-playlist
+2	Is	AddToPlaylist	I-playlist
+3	Gucci	AddToPlaylist	I-playlist
+4	Mane	AddToPlaylist	I-playlist
+5	şarkı	AddToPlaylist	O
+6	listeme	AddToPlaylist	B-reference
+7	bright	AddToPlaylist	B-entity_name
+8	and	AddToPlaylist	I-entity_name
+9	breezy'yi	AddToPlaylist	I-entity_name
+10	ekle	AddToPlaylist	O
+
+# id: 90
+# text-en: Can you give me the weather for here
+# text: Bana buranın hava durumunu verir misin
+# intent: weather/find
+1	Bana	weather/find	O
+2	buranın	weather/find	B-location
+3	hava	weather/find	O
+4	durumunu	weather/find	O
+5	verir	weather/find	O
+6	misin	weather/find	O
+
+# id: 91
+# text-en: Add Ashley McIsaac to my r&b party classics playlist
+# text: Ashley McIsaac'ı r&b party classics oynatma listeme ekle
+# intent: AddToPlaylist
+1	Ashley	AddToPlaylist	B-artist
+2	McIsaac'ı	AddToPlaylist	I-artist
+3	r	AddToPlaylist	B-playlist
+4	&	AddToPlaylist	I-playlist
+5	b	AddToPlaylist	I-playlist
+6	party	AddToPlaylist	I-playlist
+7	classics	AddToPlaylist	I-playlist
+8	oynatma	AddToPlaylist	O
+9	listeme	AddToPlaylist	O
+10	ekle	AddToPlaylist	O
+
+# id: 92
+# text-en: I'd like to see the saga 12 Soulful Nights of Christmas
+# text: 12 Soulful Nights of Christmas destanını görmek isterim
+# intent: SearchCreativeWork
+1	12	SearchCreativeWork	B-object_name
+2	Soulful	SearchCreativeWork	I-object_name
+3	Nights	SearchCreativeWork	I-object_name
+4	of	SearchCreativeWork	I-object_name
+5	Christmas	SearchCreativeWork	I-object_name
+6	destanını	SearchCreativeWork	B-object_type
+7	görmek	SearchCreativeWork	O
+8	isterim	SearchCreativeWork	O
+
+# id: 93
+# text-en: I need a reservation for 6 PM. with a party of 10 at Sand Lake
+# text: Akşam 6'da 10 kişilik bir parti için Sand Lake'de bir rezervasyona ihtiyacım var
+# intent: BookRestaurant
+1	Akşam	BookRestaurant	B-datetime
+2	6'da	BookRestaurant	I-datetime
+3	10	BookRestaurant	B-party_size_number
+4	kişilik	BookRestaurant	O
+5	bir	BookRestaurant	O
+6	parti	BookRestaurant	O
+7	için	BookRestaurant	O
+8	Sand	BookRestaurant	B-location
+9	Lake'de	BookRestaurant	I-location
+10	bir	BookRestaurant	O
+11	rezervasyona	BookRestaurant	O
+12	ihtiyacım	BookRestaurant	O
+13	var	BookRestaurant	O
+
+# id: 94
+# text-en: Use Groove Shark to play music from the eighties
+# text: Seksenlerden müzik çalmak için Groove Shark'ı kullanın
+# intent: PlayMusic
+1	Seksenlerden	PlayMusic	B-datetime
+2	müzik	PlayMusic	O
+3	çalmak	PlayMusic	O
+4	için	PlayMusic	O
+5	Groove	PlayMusic	B-service
+6	Shark'ı	PlayMusic	I-service
+7	kullanın	PlayMusic	O
+
+# id: 95
+# text-en: find soundtrack titled The House of the Yellow Carpet
+# text: The House of the Yellow Carpet adlı film müziğini bul
+# intent: SearchCreativeWork
+1	The	SearchCreativeWork	B-object_name
+2	House	SearchCreativeWork	I-object_name
+3	of	SearchCreativeWork	I-object_name
+4	the	SearchCreativeWork	I-object_name
+5	Yellow	SearchCreativeWork	I-object_name
+6	Carpet	SearchCreativeWork	I-object_name
+7	adlı	SearchCreativeWork	O
+8	film	SearchCreativeWork	B-object_type
+9	müziğini	SearchCreativeWork	I-object_type
+10	bul	SearchCreativeWork	O
+
+# id: 96
+# text-en: Which is the nearest cinema showing movies that start in nineteen seconds ?
+# text: On dokuz saniye içinde başlayacak filmleri gösteren en yakın sinema hangisi?
+# intent: SearchScreeningEvent
+1	On	SearchScreeningEvent	B-datetime
+2	dokuz	SearchScreeningEvent	I-datetime
+3	saniye	SearchScreeningEvent	I-datetime
+4	içinde	SearchScreeningEvent	I-datetime
+5	başlayacak	SearchScreeningEvent	O
+6	filmleri	SearchScreeningEvent	B-movie_type
+7	gösteren	SearchScreeningEvent	O
+8	en	SearchScreeningEvent	B-location
+9	yakın	SearchScreeningEvent	I-location
+10	sinema	SearchScreeningEvent	B-object_location_type
+11	hangisi	SearchScreeningEvent	O
+12	?	SearchScreeningEvent	O
+
+# id: 97
+# text-en: Add morten harket to this is puccini
+# text: morten harket'i this is puccini'ye ekle
+# intent: AddToPlaylist
+1	morten	AddToPlaylist	B-artist
+2	harket'i	AddToPlaylist	I-artist
+3	this	AddToPlaylist	B-playlist
+4	is	AddToPlaylist	I-playlist
+5	puccini'ye	AddToPlaylist	I-playlist
+6	ekle	AddToPlaylist	O
+
+# id: 98
+# text-en: Open Spotify and play a song from the twenties by Richard Harvey
+# text: Spotify'ı aç ve yirmili yıllardan Richard Harvey'ın bir şarkısını çal
+# intent: PlayMusic
+1	Spotify'ı	PlayMusic	B-service
+2	aç	PlayMusic	O
+3	ve	PlayMusic	O
+4	yirmili	PlayMusic	B-datetime
+5	yıllardan	PlayMusic	I-datetime
+6	Richard	PlayMusic	B-artist
+7	Harvey'ın	PlayMusic	I-artist
+8	bir	PlayMusic	O
+9	şarkısını	PlayMusic	B-music_item
+10	çal	PlayMusic	O
+
+# id: 99
+# text-en: I want to book a restaurant
+# text: Bir restoranda yer ayırtmak istiyorum
+# intent: BookRestaurant
+1	Bir	BookRestaurant	O
+2	restoranda	BookRestaurant	B-restaurant_type
+3	yer	BookRestaurant	O
+4	ayırtmak	BookRestaurant	O
+5	istiyorum	BookRestaurant	O
+
+# id: 100
+# text-en: Play the album Vibrations by Marion Elise Raven
+# text: Marion Elise Raven'in Vibrations albümünü çal
+# intent: PlayMusic
+1	Marion	PlayMusic	B-artist
+2	Elise	PlayMusic	I-artist
+3	Raven'in	PlayMusic	I-artist
+4	Vibrations	PlayMusic	B-album
+5	albümünü	PlayMusic	B-music_item
+6	çal	PlayMusic	O
+
+# id: 101
+# text-en: add this artist to my Jazz playlist
+# text: bu sanatçıyı Jazz şarkı listeme ekle
+# intent: AddToPlaylist
+1	bu	AddToPlaylist	O
+2	sanatçıyı	AddToPlaylist	B-music_item
+3	Jazz	AddToPlaylist	B-playlist
+4	şarkı	AddToPlaylist	O
+5	listeme	AddToPlaylist	B-reference
+6	ekle	AddToPlaylist	O
+
+# id: 102
+# text-en: I want to find the show From Where to Eternity .
+# text: From Where to Eternity şovunu bulmak istiyorum.
+# intent: SearchCreativeWork
+1	From	SearchCreativeWork	B-object_name
+2	Where	SearchCreativeWork	I-object_name
+3	to	SearchCreativeWork	I-object_name
+4	Eternity	SearchCreativeWork	I-object_name
+5	şovunu	SearchCreativeWork	B-object_type
+6	bulmak	SearchCreativeWork	O
+7	istiyorum	SearchCreativeWork	O
+8	.	SearchCreativeWork	O
+
+# id: 103
+# text-en: play the top-twenty songs by The Kleptones on Spotify
+# text: Spotify'da The Kleptones'un en iyi yirmi şarkısını çal
+# intent: PlayMusic
+1	Spotify'da	PlayMusic	B-service
+2	The	PlayMusic	B-artist
+3	Kleptones'un	PlayMusic	I-artist
+4	en	PlayMusic	B-sort
+5	iyi	PlayMusic	I-sort
+6	yirmi	PlayMusic	I-sort
+7	şarkısını	PlayMusic	O
+8	çal	PlayMusic	O
+
+# id: 104
+# text-en: How will the weather be in six minutes close to Moosic
+# text: Altı dakika içinde Moosic yakınlarında hava nasıl olacak
+# intent: weather/find
+1	Altı	weather/find	B-datetime
+2	dakika	weather/find	I-datetime
+3	içinde	weather/find	I-datetime
+4	Moosic	weather/find	B-location
+5	yakınlarında	weather/find	B-location
+6	hava	weather/find	O
+7	nasıl	weather/find	O
+8	olacak	weather/find	O
+
+# id: 105
+# text-en: I wish to listen to some fifties music.
+# text: Ellilerden birkaç müzik dinlemek istiyorum.
+# intent: PlayMusic
+1	Ellilerden	PlayMusic	B-datetime
+2	birkaç	PlayMusic	O
+3	müzik	PlayMusic	O
+4	dinlemek	PlayMusic	O
+5	istiyorum	PlayMusic	O
+6	.	PlayMusic	O
+
+# id: 106
+# text-en: what time is Utamaro and His Five Women showing at Alamo Drafthouse Cinema
+# text: Utamaro and His Five Women Alamo Drafthouse Sinemasında saat kaçta gösteriliyor
+# intent: SearchScreeningEvent
+1	Utamaro	SearchScreeningEvent	B-object_name
+2	and	SearchScreeningEvent	I-object_name
+3	His	SearchScreeningEvent	I-object_name
+4	Five	SearchScreeningEvent	I-object_name
+5	Women	SearchScreeningEvent	I-object_name
+6	Alamo	SearchScreeningEvent	B-location
+7	Drafthouse	SearchScreeningEvent	I-location
+8	Sinemasında	SearchScreeningEvent	I-location
+9	saat	SearchScreeningEvent	O
+10	kaçta	SearchScreeningEvent	O
+11	gösteriliyor	SearchScreeningEvent	O
+
+# id: 107
+# text-en: Find a photograph of Adventure Time: The Secret of the Nameless Kingdom
+# text: Adventure Time: The Secret of the Nameless Kingdom'ın bir fotoğrafını bul
+# intent: SearchCreativeWork
+1	Adventure	SearchCreativeWork	B-object_name
+2	Time:	SearchCreativeWork	I-object_name
+3	The	SearchCreativeWork	I-object_name
+4	Secret	SearchCreativeWork	I-object_name
+5	of	SearchCreativeWork	I-object_name
+6	the	SearchCreativeWork	I-object_name
+7	Nameless	SearchCreativeWork	I-object_name
+8	Kingdom'ın	SearchCreativeWork	I-object_name
+9	bir	SearchCreativeWork	O
+10	fotoğrafını	SearchCreativeWork	B-object_type
+11	bul	SearchCreativeWork	O
+
+# id: 108
+# text-en: put Do You Love Me on my acoustic soul playlist
+# text: Do You Love Me'yi acoustic soul şarkı listeme koy
+# intent: AddToPlaylist
+1	Do	AddToPlaylist	B-entity_name
+2	You	AddToPlaylist	I-entity_name
+3	Love	AddToPlaylist	I-entity_name
+4	Me'yi	AddToPlaylist	I-entity_name
+5	acoustic	AddToPlaylist	B-playlist
+6	soul	AddToPlaylist	I-playlist
+7	şarkı	AddToPlaylist	O
+8	listeme	AddToPlaylist	B-reference
+9	koy	AddToPlaylist	O
+
+# id: 109
+# text-en: Play me the best Charles Neidich song
+# text: En iyi Charles Neidich şarkısını çal
+# intent: PlayMusic
+1	En	PlayMusic	B-sort
+2	iyi	PlayMusic	I-sort
+3	Charles	PlayMusic	B-artist
+4	Neidich	PlayMusic	I-artist
+5	şarkısını	PlayMusic	B-music_item
+6	çal	PlayMusic	O
+
+# id: 110
+# text-en: On may the thirteenth, 2037 what will it be like in Wilderville , Montenegro
+# text: Onüç mayıs 2037'de Karadağ, Wilderville'de durum nasıl olacak
+# intent: weather/find
+1	Onüç	weather/find	B-datetime
+2	mayıs	weather/find	I-datetime
+3	2037'de	weather/find	I-datetime
+4	Karadağ	weather/find	B-location
+5	,	weather/find	O
+6	Wilderville'de	weather/find	B-location
+7	durum	weather/find	O
+8	nasıl	weather/find	O
+9	olacak	weather/find	O
+
+# id: 111
+# text-en: Find movie schedules for ArcLight Hollywood .
+# text: ArcLight Hollywood için film seanslarını bul .
+# intent: SearchScreeningEvent
+1	ArcLight	SearchScreeningEvent	B-location
+2	Hollywood	SearchScreeningEvent	I-location
+3	için	SearchScreeningEvent	O
+4	film	SearchScreeningEvent	B-object_type
+5	seanslarını	SearchScreeningEvent	I-object_type
+6	bul	SearchScreeningEvent	O
+7	.	SearchScreeningEvent	O
+
+# id: 112
+# text-en: Find a TV series called Church of the Truly Warped .
+# text: Church of the Truly Warped adlı diziyi bul .
+# intent: SearchCreativeWork
+1	Church	SearchCreativeWork	B-object_name
+2	of	SearchCreativeWork	I-object_name
+3	the	SearchCreativeWork	I-object_name
+4	Truly	SearchCreativeWork	I-object_name
+5	Warped	SearchCreativeWork	I-object_name
+6	adlı	SearchCreativeWork	O
+7	diziyi	SearchCreativeWork	B-object_type
+8	bul	SearchCreativeWork	O
+9	.	SearchCreativeWork	O
+
+# id: 113
+# text-en: what is the forecast for in eighteen minutes here for colder temps
+# text: daha soğuk sıcaklıklar için burada on sekiz dakika içindeki hava tahmini nedir
+# intent: weather/find
+1	daha	weather/find	O
+2	soğuk	weather/find	B-condition_temperature
+3	sıcaklıklar	weather/find	O
+4	için	weather/find	O
+5	burada	weather/find	B-location
+6	on	weather/find	B-datetime
+7	sekiz	weather/find	I-datetime
+8	dakika	weather/find	I-datetime
+9	içindeki	weather/find	I-datetime
+10	hava	weather/find	O
+11	tahmini	weather/find	O
+12	nedir	weather/find	O
+
+# id: 114
+# text-en: Book a restaurant at sixteen o'clock in SC
+# text: SC'de saat on altı için bir restoran rezervasyonu yap
+# intent: BookRestaurant
+1	SC'de	BookRestaurant	B-location
+2	saat	BookRestaurant	B-datetime
+3	on	BookRestaurant	I-datetime
+4	altı	BookRestaurant	I-datetime
+5	için	BookRestaurant	O
+6	bir	BookRestaurant	O
+7	restoran	BookRestaurant	B-restaurant_type
+8	rezervasyonu	BookRestaurant	O
+9	yap	BookRestaurant	O
+
+# id: 115
+# text-en: stacy watson and adriana want to go to the best osteria in Hallowell Minnesota this afternoon
+# text: stacy watson ve adriana bu öğleden sonra Hallowell Minnesota’daki en iyi osteria’ya gitmek istiyorlar
+# intent: BookRestaurant
+1	stacy	BookRestaurant	B-party_size_description
+2	watson	BookRestaurant	I-party_size_description
+3	ve	BookRestaurant	I-party_size_description
+4	adriana	BookRestaurant	I-party_size_description
+5	bu	BookRestaurant	O
+6	öğleden	BookRestaurant	B-datetime
+7	sonra	BookRestaurant	I-datetime
+8	Hallowell	BookRestaurant	B-location
+9	Minnesota	BookRestaurant	B-location
+10	’	BookRestaurant	I-location
+11	daki	BookRestaurant	I-location
+12	en	BookRestaurant	B-sort
+13	iyi	BookRestaurant	I-sort
+14	osteria	BookRestaurant	B-restaurant_type
+15	’	BookRestaurant	I-restaurant_type
+16	ya	BookRestaurant	O
+17	gitmek	BookRestaurant	O
+18	istiyorlar	BookRestaurant	O
+
+# id: 116
+# text-en: is it going to be chilly in Western Sahara in 13 hours
+# text: 13 saat içinde Batı Sahra'da hava soğuk mu olacak
+# intent: weather/find
+1	13	weather/find	B-datetime
+2	saat	weather/find	I-datetime
+3	içinde	weather/find	I-datetime
+4	Batı	weather/find	B-location
+5	Sahra'da	weather/find	I-location
+6	hava	weather/find	O
+7	soğuk	weather/find	B-condition_temperature
+8	mu	weather/find	O
+9	olacak	weather/find	O
+
+# id: 117
+# text-en: add Armen Movsessian to this is skepta playlist
+# text: this is skepta oynatma listesine Armen Movsessian'ı ekle
+# intent: AddToPlaylist
+1	this	AddToPlaylist	B-playlist
+2	is	AddToPlaylist	I-playlist
+3	skepta	AddToPlaylist	I-playlist
+4	oynatma	AddToPlaylist	O
+5	listesine	AddToPlaylist	O
+6	Armen	AddToPlaylist	B-artist
+7	Movsessian'ı	AddToPlaylist	I-artist
+8	ekle	AddToPlaylist	O
+
+# id: 118
+# text-en: Rate this current essay three out of 6 stars
+# text: Mevcut makaleye 6 üzerinden üç yıldız ver
+# intent: RateBook
+1	Mevcut	RateBook	B-object_select
+2	makaleye	RateBook	B-object_type
+3	6	RateBook	B-best_rating
+4	üzerinden	RateBook	O
+5	üç	RateBook	B-rating_value
+6	yıldız	RateBook	B-rating_unit
+7	ver	RateBook	O
+
+# id: 119
+# text-en: Find a reservation for three at a top-rated restaurant
+# text: çok beğenilen bir restoranda üç kişilik bir rezervasyon bul
+# intent: BookRestaurant
+1	çok	BookRestaurant	B-sort
+2	beğenilen	BookRestaurant	I-sort
+3	bir	BookRestaurant	O
+4	restoranda	BookRestaurant	B-restaurant_type
+5	üç	BookRestaurant	B-party_size_number
+6	kişilik	BookRestaurant	O
+7	bir	BookRestaurant	O
+8	rezervasyon	BookRestaurant	O
+9	bul	BookRestaurant	O
+
+# id: 120
+# text-en: rate the current novel 0 of 6
+# text: mevcut romana 6 üzerinden 0 ver
+# intent: RateBook
+1	mevcut	RateBook	B-object_select
+2	romana	RateBook	B-object_type
+3	6	RateBook	B-best_rating
+4	üzerinden	RateBook	O
+5	0	RateBook	B-rating_value
+6	ver	RateBook	O
+
+# id: 121
+# text-en: I'd like to see the showtimes for Silly Movie 2.0 at the movie house
+# text: Silly Movie 2.0'ın sinema salonundaki seanslarını görmek istiyorum
+# intent: SearchScreeningEvent
+1	Silly	SearchScreeningEvent	B-movie_name
+2	Movie	SearchScreeningEvent	I-movie_name
+3	2	SearchScreeningEvent	I-movie_name
+4	.	SearchScreeningEvent	I-movie_name
+5	0'ın	SearchScreeningEvent	I-movie_name
+6	sinema	SearchScreeningEvent	B-object_location_type
+7	salonundaki	SearchScreeningEvent	I-object_location_type
+8	seanslarını	SearchScreeningEvent	O
+9	görmek	SearchScreeningEvent	O
+10	istiyorum	SearchScreeningEvent	O
+
+# id: 122
+# text-en: Will it get chillier in Sinclair in 8 hours
+# text: 8 saat içinde Sinclair'da hava daha soğuk mu olacak
+# intent: weather/find
+1	8	weather/find	B-datetime
+2	saat	weather/find	I-datetime
+3	içinde	weather/find	I-datetime
+4	Sinclair'da	weather/find	B-location
+5	hava	weather/find	O
+6	daha	weather/find	B-condition_temperature
+7	soğuk	weather/find	I-condition_temperature
+8	mu	weather/find	O
+9	olacak	weather/find	O
+
+# id: 123
+# text-en: add this tune to my in the arms of a woman
+# text: bu melodiyi benim in the arms of a woman'a ekle
+# intent: AddToPlaylist
+1	bu	AddToPlaylist	O
+2	melodiyi	AddToPlaylist	B-music_item
+3	benim	AddToPlaylist	B-reference
+4	in	AddToPlaylist	B-playlist
+5	the	AddToPlaylist	I-playlist
+6	arms	AddToPlaylist	I-playlist
+7	of	AddToPlaylist	I-playlist
+8	a	AddToPlaylist	I-playlist
+9	woman'a	AddToPlaylist	I-playlist
+10	ekle	AddToPlaylist	O
+
+# id: 124
+# text-en: book for 3 in U.S. Virgin Islands
+# text: ABD Virjin Adaları'nda 3 kişilik rezervasyon yap
+# intent: BookRestaurant
+1	ABD	BookRestaurant	B-location
+2	Virjin	BookRestaurant	I-location
+3	Adaları'nda	BookRestaurant	I-location
+4	3	BookRestaurant	B-party_size_number
+5	kişilik	BookRestaurant	O
+6	rezervasyon	BookRestaurant	O
+7	yap	BookRestaurant	O
+
+# id: 125
+# text-en: Will it be chillier in La Mesa ?
+# text: La Mesa'da hava daha soğuk mu olacak?
+# intent: weather/find
+1	La	weather/find	B-location
+2	Mesa'da	weather/find	I-location
+3	hava	weather/find	O
+4	daha	weather/find	B-condition_temperature
+5	soğuk	weather/find	I-condition_temperature
+6	mu	weather/find	O
+7	olacak	weather/find	O
+8	?	weather/find	O
+
+# id: 126
+# text-en: Rate this essay 2 out of 6 stars
+# text: Bu makaleye 6 üzerinden 2 yıldız ver
+# intent: RateBook
+1	Bu	RateBook	B-object_select
+2	makaleye	RateBook	B-object_type
+3	6	RateBook	B-best_rating
+4	üzerinden	RateBook	O
+5	2	RateBook	B-rating_value
+6	yıldız	RateBook	B-rating_unit
+7	ver	RateBook	O
+
+# id: 127
+# text-en: Give three stars / 6 to My Sister, My Love
+# text: My Sister, My Love'a 6 üzerinden üç yıldız ver
+# intent: RateBook
+1	My	RateBook	B-object_name
+2	Sister	RateBook	I-object_name
+3	,	RateBook	I-object_name
+4	My	RateBook	I-object_name
+5	Love'a	RateBook	I-object_name
+6	6	RateBook	B-best_rating
+7	üzerinden	RateBook	O
+8	üç	RateBook	B-rating_value
+9	yıldız	RateBook	B-rating_unit
+10	ver	RateBook	O
+
+# id: 128
+# text-en: Find the movie schedule for Marcus Corporation .
+# text: Marcus Corporation'ın film seanslarını bul .
+# intent: SearchScreeningEvent
+1	Marcus	SearchScreeningEvent	B-location
+2	Corporation'ın	SearchScreeningEvent	I-location
+3	film	SearchScreeningEvent	B-object_type
+4	seanslarını	SearchScreeningEvent	I-object_type
+5	bul	SearchScreeningEvent	O
+6	.	SearchScreeningEvent	O
+
+# id: 129
+# text-en: What movies are scheduled in the neighbourhood ?
+# text: Mahallede hangi filmler planlandı ?
+# intent: SearchScreeningEvent
+1	Mahallede	SearchScreeningEvent	B-location
+2	hangi	SearchScreeningEvent	O
+3	filmler	SearchScreeningEvent	B-movie_type
+4	planlandı	SearchScreeningEvent	O
+5	?	SearchScreeningEvent	O
+
+# id: 130
+# text-en: add cross bones style to Guest List TaKe
+# text: Guest List TaKe'e cross bones style'ı ekle
+# intent: AddToPlaylist
+1	Guest	AddToPlaylist	B-playlist
+2	List	AddToPlaylist	I-playlist
+3	TaKe'e	AddToPlaylist	I-playlist
+4	cross	AddToPlaylist	B-entity_name
+5	bones	AddToPlaylist	I-entity_name
+6	style'ı	AddToPlaylist	I-entity_name
+7	ekle	AddToPlaylist	O
+
+# id: 131
+# text-en: Find a reservation for a tavern that serves pizzas for a party of 6
+# text: 6 kişilik bir parti için pizza sunan bir tavernada rezervasyon bul
+# intent: BookRestaurant
+1	6	BookRestaurant	B-party_size_number
+2	kişilik	BookRestaurant	O
+3	bir	BookRestaurant	O
+4	parti	BookRestaurant	O
+5	için	BookRestaurant	O
+6	pizza	BookRestaurant	B-served_dish
+7	sunan	BookRestaurant	O
+8	bir	BookRestaurant	O
+9	tavernada	BookRestaurant	B-restaurant_type
+10	rezervasyon	BookRestaurant	O
+11	bul	BookRestaurant	O
+
+# id: 132
+# text-en: Rate The Art of Nijinsky 5 points
+# text: The Art of Nijinsky'ye 5 puan ver
+# intent: RateBook
+1	The	RateBook	B-object_name
+2	Art	RateBook	I-object_name
+3	of	RateBook	I-object_name
+4	Nijinsky'ye	RateBook	I-object_name
+5	5	RateBook	B-rating_value
+6	puan	RateBook	B-rating_unit
+7	ver	RateBook	O
+
+# id: 133
+# text-en: add Jacob Hoggard to my get going playlist
+# text: Jacob Hoggard'ı get going ​​oynatma listeme ekle
+# intent: AddToPlaylist
+1	Jacob	AddToPlaylist	B-artist
+2	Hoggard'ı	AddToPlaylist	I-artist
+3	get	AddToPlaylist	B-playlist
+4	going	AddToPlaylist	I-playlist
+5	oynatma	AddToPlaylist	O
+6	listeme	AddToPlaylist	B-reference
+7	ekle	AddToPlaylist	O
+
+# id: 134
+# text-en: Give me a list of movie times for films in the area .
+# text: Bana bölgedeki filmlerin seanslarının bir listesini ver .
+# intent: SearchScreeningEvent
+1	Bana	SearchScreeningEvent	O
+2	bölgedeki	SearchScreeningEvent	B-location
+3	filmlerin	SearchScreeningEvent	B-movie_type
+4	seanslarının	SearchScreeningEvent	B-object_type
+5	bir	SearchScreeningEvent	O
+6	listesini	SearchScreeningEvent	O
+7	ver	SearchScreeningEvent	O
+8	.	SearchScreeningEvent	O
+
+# id: 135
+# text-en: find The Ultimate Gift , a television show
+# text: The Ultimate Gift televizyon programını bul
+# intent: SearchCreativeWork
+1	The	SearchCreativeWork	B-object_name
+2	Ultimate	SearchCreativeWork	I-object_name
+3	Gift	SearchCreativeWork	I-object_name
+4	televizyon	SearchCreativeWork	B-object_type
+5	programını	SearchCreativeWork	I-object_type
+6	bul	SearchCreativeWork	O
+
+# id: 136
+# text-en: What's the weather close-by Triumph
+# text: Triumph yakınlarında hava nasıl
+# intent: weather/find
+1	Triumph	weather/find	B-location
+2	yakınlarında	weather/find	B-location
+3	hava	weather/find	O
+4	nasıl	weather/find	O
+
+# id: 137
+# text-en: when can i see A Handful of Dust in a movie theatre
+# text: A Handful of Dust'ı ne zaman sinemada görebilirim
+# intent: SearchScreeningEvent
+1	A	SearchScreeningEvent	B-movie_name
+2	Handful	SearchScreeningEvent	I-movie_name
+3	of	SearchScreeningEvent	I-movie_name
+4	Dust'ı	SearchScreeningEvent	I-movie_name
+5	ne	SearchScreeningEvent	O
+6	zaman	SearchScreeningEvent	O
+7	sinemada	SearchScreeningEvent	B-object_location_type
+8	görebilirim	SearchScreeningEvent	O
+
+# id: 138
+# text-en: Please put an album by Joseph Meyer on my POP GOES THE 80s playlist
+# text: Lütfen POP GOES THE 80s çalma listeme bir Joseph Meyer albümü koy
+# intent: AddToPlaylist
+1	Lütfen	AddToPlaylist	O
+2	POP	AddToPlaylist	B-playlist
+3	GOES	AddToPlaylist	I-playlist
+4	THE	AddToPlaylist	I-playlist
+5	80s	AddToPlaylist	I-playlist
+6	çalma	AddToPlaylist	O
+7	listeme	AddToPlaylist	B-reference
+8	bir	AddToPlaylist	O
+9	Joseph	AddToPlaylist	B-artist
+10	Meyer	AddToPlaylist	I-artist
+11	albümü	AddToPlaylist	B-music_item
+12	koy	AddToPlaylist	O
+
+# id: 139
+# text-en: show of From South Africa to South Carolina
+# text: From South Africa to South Carolina'nın gösterisi
+# intent: SearchCreativeWork
+1	From	SearchCreativeWork	B-location
+2	South	SearchCreativeWork	I-location
+3	Africa	SearchCreativeWork	I-location
+4	to	SearchCreativeWork	I-location
+5	South	SearchCreativeWork	I-location
+6	Carolina'nın	SearchCreativeWork	I-location
+7	gösterisi	SearchCreativeWork	O
+
+# id: 140
+# text-en: book a top-rated osteria seven weeks from now
+# text: bundan yedi hafta sonraya çok beğenilen bir osteria'da rezervasyon yap
+# intent: BookRestaurant
+1	bundan	BookRestaurant	B-datetime
+2	yedi	BookRestaurant	I-datetime
+3	hafta	BookRestaurant	I-datetime
+4	sonraya	BookRestaurant	I-datetime
+5	çok	BookRestaurant	B-sort
+6	beğenilen	BookRestaurant	I-sort
+7	bir	BookRestaurant	O
+8	osteria'da	BookRestaurant	B-restaurant_type
+9	rezervasyon	BookRestaurant	O
+10	yap	BookRestaurant	O
+
+# id: 141
+# text-en: What movie house is showing Flower and Snake at 08:56:29 ?
+# text: Hangi film salonu Flower and Snake'i 08:56:29'da gösteriyor?
+# intent: SearchScreeningEvent
+1	Hangi	SearchScreeningEvent	O
+2	film	SearchScreeningEvent	B-object_location_type
+3	salonu	SearchScreeningEvent	I-object_location_type
+4	Flower	SearchScreeningEvent	B-object_name
+5	and	SearchScreeningEvent	I-object_name
+6	Snake'i	SearchScreeningEvent	I-object_name
+7	08:56:29'da	SearchScreeningEvent	B-datetime
+8	gösteriyor	SearchScreeningEvent	O
+9	?	SearchScreeningEvent	O
+
+# id: 142
+# text-en: Find a restaurant in FM that servec quiche
+# text: FM'de kiş servis eden bir restoran bul
+# intent: BookRestaurant
+1	FM'de	BookRestaurant	B-location
+2	kiş	BookRestaurant	B-served_dish
+3	servis	BookRestaurant	O
+4	eden	BookRestaurant	O
+5	bir	BookRestaurant	O
+6	restoran	BookRestaurant	B-restaurant_type
+7	bul	BookRestaurant	O
+
+# id: 143
+# text-en: Book a reservation for 7 people at The French Laundry on june the 8th, 2029
+# text: 8 Haziran 2029'da The French Laundry'de 7 kişilik bir rezervasyon yap
+# intent: BookRestaurant
+1	8	BookRestaurant	B-datetime
+2	Haziran	BookRestaurant	I-datetime
+3	2029'da	BookRestaurant	I-datetime
+4	The	BookRestaurant	B-restaurant_name
+5	French	BookRestaurant	I-restaurant_name
+6	Laundry'de	BookRestaurant	I-restaurant_name
+7	7	BookRestaurant	B-party_size_number
+8	kişilik	BookRestaurant	O
+9	bir	BookRestaurant	O
+10	rezervasyon	BookRestaurant	O
+11	yap	BookRestaurant	O
+
+# id: 144
+# text-en: play fourties tunes
+# text: kırkların melodilerini çal
+# intent: PlayMusic
+1	kırkların	PlayMusic	B-datetime
+2	melodilerini	PlayMusic	O
+3	çal	PlayMusic	O
+
+# id: 145
+# text-en: When will the Santikos Theatres be showing animated movies
+# text: Santikos Tiyatroları ne zaman animasyon filmleri gösterecek?
+# intent: SearchScreeningEvent
+1	Santikos	SearchScreeningEvent	B-location
+2	Tiyatroları	SearchScreeningEvent	I-location
+3	ne	SearchScreeningEvent	O
+4	zaman	SearchScreeningEvent	O
+5	animasyon	SearchScreeningEvent	B-movie_type
+6	filmleri	SearchScreeningEvent	I-movie_type
+7	gösterecek	SearchScreeningEvent	O
+8	?	SearchScreeningEvent	O
+
+# id: 146
+# text-en: Play music on Itunes
+# text: Itunes'ta müzik çal
+# intent: PlayMusic
+1	Itunes'ta	PlayMusic	B-service
+2	müzik	PlayMusic	O
+3	çal	PlayMusic	O
+
+# id: 147
+# text-en: show book name Straight No Chase
+# text: Straight No Chase adlı kitabı göster
+# intent: SearchCreativeWork
+1	Straight	SearchCreativeWork	B-object_name
+2	No	SearchCreativeWork	I-object_name
+3	Chase	SearchCreativeWork	I-object_name
+4	adlı	SearchCreativeWork	O
+5	kitabı	SearchCreativeWork	B-object_type
+6	göster	SearchCreativeWork	O
+
+# id: 148
+# text-en: Find the movie schedules for movies close by
+# text: Yakındaki filmler için film seanslarını bul
+# intent: SearchScreeningEvent
+1	Yakındaki	SearchScreeningEvent	B-location
+2	filmler	SearchScreeningEvent	B-movie_type
+3	için	SearchScreeningEvent	O
+4	film	SearchScreeningEvent	B-object_type
+5	seanslarını	SearchScreeningEvent	I-object_type
+6	bul	SearchScreeningEvent	O
+
+# id: 149
+# text-en: this winter , meredith, betty and erika want to food at a gastropub that is in the same area as fran's location .
+# text: bu kış, meredith, betty ve erica, fran's ile aynı bölgede bulunan bir gastropub'da yemek yemek istiyor.
+# intent: BookRestaurant
+1	bu	BookRestaurant	B-datetime
+2	kış	BookRestaurant	I-datetime
+3	,	BookRestaurant	O
+4	meredith	BookRestaurant	B-party_size_description
+5	,	BookRestaurant	I-party_size_description
+6	betty	BookRestaurant	I-party_size_description
+7	ve	BookRestaurant	I-party_size_description
+8	erica	BookRestaurant	I-party_size_description
+9	,	BookRestaurant	O
+10	fran's	BookRestaurant	B-location
+11	ile	BookRestaurant	O
+12	aynı	BookRestaurant	B-location
+13	bölgede	BookRestaurant	I-location
+14	bulunan	BookRestaurant	I-location
+15	bir	BookRestaurant	O
+16	gastropub'da	BookRestaurant	B-restaurant_type
+17	yemek	BookRestaurant	O
+18	yemek	BookRestaurant	O
+19	istiyor	BookRestaurant	O
+20	.	BookRestaurant	O
+
+# id: 150
+# text-en: Add tune to my Para comer
+# text: Benim Para comer'e melodi ekle
+# intent: AddToPlaylist
+1	Benim	AddToPlaylist	B-reference
+2	Para	AddToPlaylist	B-playlist
+3	comer'e	AddToPlaylist	I-playlist
+4	melodi	AddToPlaylist	B-music_item
+5	ekle	AddToPlaylist	O
+

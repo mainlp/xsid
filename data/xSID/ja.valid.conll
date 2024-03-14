@@ -1,0 +1,2200 @@
+# id: 137
+# text-en: Is it going to rain today?
+# text: 今日 は 雨 が 降り ます か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	雨	weather/find	B-weather/attribute
+5	が	weather/find	O
+6	降	weather/find	O
+7	り	weather/find	O
+8	ます	weather/find	O
+9	か	weather/find	O
+10	？	weather/find	O
+
+# id: 167
+# text-en: how hot is it going to be today
+# text: 今日 は どれ くらい 暑く なり ます か
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	どれ	weather/find	O
+5	くらい	weather/find	O
+6	暑	weather/find	B-weather/attribute
+7	く	weather/find	I-weather/attribute
+8	なり	weather/find	O
+9	ます	weather/find	O
+10	か	weather/find	O
+
+# id: 150
+# text-en: How hot is it?
+# text: どれ くらい 暑い です か ？
+# intent: weather/find
+1	どれ	weather/find	O
+2	くらい	weather/find	O
+3	暑	weather/find	B-weather/attribute
+4	い	weather/find	I-weather/attribute
+5	です	weather/find	O
+6	か	weather/find	O
+7	？	weather/find	O
+
+# id: 188
+# text-en: Will it be sunny today?
+# text: 今日 は 晴れ ます か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	晴	weather/find	B-weather/attribute
+5	れ	weather/find	I-weather/attribute
+6	ます	weather/find	O
+7	か	weather/find	O
+8	？	weather/find	O
+
+# id: 280
+# text-en: Is it cloudy today?
+# text: 今日 は 曇 です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	曇	weather/find	B-weather/attribute
+5	です	weather/find	O
+6	か	weather/find	O
+7	？	weather/find	O
+
+# id: 85
+# text-en: Cancel all my reminders.
+# text: リマインダー を すべて キャンセル する 。
+# intent: reminder/cancel_reminder
+1	リマインダー	reminder/cancel_reminder	O
+2	を	reminder/cancel_reminder	O
+3	すべて	reminder/cancel_reminder	B-reference
+4	キャンセル	reminder/cancel_reminder	O
+5	する	reminder/cancel_reminder	O
+6	。	reminder/cancel_reminder	O
+
+# id: 78
+# text-en: what alarms do I have set?
+# text: どの よう な アラーム を 設定 し まし た か ？
+# intent: alarm/show_alarms
+1	どの	alarm/show_alarms	O
+2	よう	alarm/show_alarms	O
+3	な	alarm/show_alarms	O
+4	アラーム	alarm/show_alarms	O
+5	を	alarm/show_alarms	O
+6	設	alarm/show_alarms	O
+7	定	alarm/show_alarms	O
+8	し	alarm/show_alarms	O
+9	まし	alarm/show_alarms	O
+10	た	alarm/show_alarms	O
+11	か	alarm/show_alarms	O
+12	？	alarm/show_alarms	O
+
+# id: 238
+# text-en: I need an alarm for 5pm to remind me to take my medicine
+# text: 薬 を 飲む よう に リマインド する 午後 5 時 の アラーム が 必要 です
+# intent: alarm/set_alarm
+1	薬	alarm/set_alarm	B-reminder/todo
+2	を	alarm/set_alarm	I-reminder/todo
+3	飲	alarm/set_alarm	I-reminder/todo
+4	む	alarm/set_alarm	I-reminder/todo
+5	よう	alarm/set_alarm	O
+6	に	alarm/set_alarm	O
+7	リマインド	alarm/set_alarm	O
+8	する	alarm/set_alarm	O
+9	午	alarm/set_alarm	B-datetime
+10	後	alarm/set_alarm	I-datetime
+11	5	alarm/set_alarm	I-datetime
+12	時	alarm/set_alarm	I-datetime
+13	の	alarm/set_alarm	O
+14	アラーム	alarm/set_alarm	O
+15	が	alarm/set_alarm	O
+16	必	alarm/set_alarm	O
+17	要	alarm/set_alarm	O
+18	です	alarm/set_alarm	O
+
+# id: 19
+# text-en: set alarm for every 3 minutes
+# text: 3 分 ごと に アラーム を 設定
+# intent: alarm/set_alarm
+1	3	alarm/set_alarm	B-recurring_datetime
+2	分	alarm/set_alarm	I-recurring_datetime
+3	ごと	alarm/set_alarm	I-recurring_datetime
+4	に	alarm/set_alarm	O
+5	アラーム	alarm/set_alarm	O
+6	を	alarm/set_alarm	O
+7	設	alarm/set_alarm	O
+8	定	alarm/set_alarm	O
+
+# id: 291
+# text-en: Is it going to storm today?
+# text: 今日 は 嵐 に なり ます か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	嵐	weather/find	B-weather/attribute
+5	に	weather/find	O
+6	なり	weather/find	O
+7	ます	weather/find	O
+8	か	weather/find	O
+9	？	weather/find	O
+
+# id: 18
+# text-en: Cancel this afternoon's alarm.
+# text: 今日 の 午後 の アラーム を キャンセル する 。
+# intent: alarm/cancel_alarm
+1	今	alarm/cancel_alarm	B-datetime
+2	日	alarm/cancel_alarm	I-datetime
+3	の	alarm/cancel_alarm	I-datetime
+4	午	alarm/cancel_alarm	I-datetime
+5	後	alarm/cancel_alarm	I-datetime
+6	の	alarm/cancel_alarm	O
+7	アラーム	alarm/cancel_alarm	O
+8	を	alarm/cancel_alarm	O
+9	キャンセル	alarm/cancel_alarm	O
+10	する	alarm/cancel_alarm	O
+11	。	alarm/cancel_alarm	O
+
+# id: 146
+# text-en: Is it going to rain next week
+# text: 来週 は 雨 が 降り ます か
+# intent: weather/find
+1	来	weather/find	B-datetime
+2	週	weather/find	I-datetime
+3	は	weather/find	O
+4	雨	weather/find	B-weather/attribute
+5	が	weather/find	O
+6	降	weather/find	O
+7	り	weather/find	O
+8	ます	weather/find	O
+9	か	weather/find	O
+
+# id: 293
+# text-en: What's next week's forecast?
+# text: 来週 の 天気 予報 は ？
+# intent: weather/find
+1	来	weather/find	B-datetime
+2	週	weather/find	I-datetime
+3	の	weather/find	O
+4	天	weather/find	O
+5	気	weather/find	O
+6	予	weather/find	O
+7	報	weather/find	O
+8	は	weather/find	O
+9	？	weather/find	O
+
+# id: 125
+# text-en: Read me my reminders.
+# text: リマインダー を 読み上げる 。
+# intent: reminder/show_reminders
+1	リマインダー	reminder/show_reminders	O
+2	を	reminder/show_reminders	O
+3	読	reminder/show_reminders	O
+4	み	reminder/show_reminders	O
+5	上	reminder/show_reminders	O
+6	げる	reminder/show_reminders	O
+7	。	reminder/show_reminders	O
+
+# id: 64
+# text-en: Show all alarms
+# text: すべて の アラーム を 表示 する
+# intent: alarm/show_alarms
+1	すべて	alarm/show_alarms	B-reference
+2	の	alarm/show_alarms	O
+3	アラーム	alarm/show_alarms	O
+4	を	alarm/show_alarms	O
+5	表	alarm/show_alarms	O
+6	示	alarm/show_alarms	O
+7	する	alarm/show_alarms	O
+
+# id: 29
+# text-en: Alarm every five minutes for 20 minutes please
+# text: 2 0 分 の 間 5 分 ごと に アラーム し て ください
+# intent: alarm/set_alarm
+1	2	alarm/set_alarm	B-recurring_datetime
+2	0	alarm/set_alarm	I-recurring_datetime
+3	分	alarm/set_alarm	I-recurring_datetime
+4	の	alarm/set_alarm	I-recurring_datetime
+5	間	alarm/set_alarm	I-recurring_datetime
+6	5	alarm/set_alarm	I-recurring_datetime
+7	分	alarm/set_alarm	I-recurring_datetime
+8	ごと	alarm/set_alarm	I-recurring_datetime
+9	に	alarm/set_alarm	O
+10	アラーム	alarm/set_alarm	O
+11	し	alarm/set_alarm	O
+12	て	alarm/set_alarm	O
+13	ください	alarm/set_alarm	O
+
+# id: 25
+# text-en: Change tomorrow mornings alarm to 6 am.
+# text: 明日 の 朝 の アラーム を 午前 6 時 に 変更 する 。
+# intent: alarm/modify_alarm
+1	明	alarm/modify_alarm	B-datetime
+2	日	alarm/modify_alarm	I-datetime
+3	の	alarm/modify_alarm	I-datetime
+4	朝	alarm/modify_alarm	I-datetime
+5	の	alarm/modify_alarm	O
+6	アラーム	alarm/modify_alarm	O
+7	を	alarm/modify_alarm	O
+8	午	alarm/modify_alarm	B-datetime
+9	前	alarm/modify_alarm	I-datetime
+10	6	alarm/modify_alarm	I-datetime
+11	時	alarm/modify_alarm	I-datetime
+12	に	alarm/modify_alarm	O
+13	変	alarm/modify_alarm	O
+14	更	alarm/modify_alarm	O
+15	する	alarm/modify_alarm	O
+16	。	alarm/modify_alarm	O
+
+# id: 254
+# text-en: cancel all reminders
+# text: すべて の リマインダー を キャンセル
+# intent: reminder/cancel_reminder
+1	すべて	reminder/cancel_reminder	B-reference
+2	の	reminder/cancel_reminder	O
+3	リマインダー	reminder/cancel_reminder	O
+4	を	reminder/cancel_reminder	O
+5	キャンセル	reminder/cancel_reminder	O
+
+# id: 236
+# text-en: Show me my alarms
+# text: アラーム を 見せ て
+# intent: alarm/show_alarms
+1	アラーム	alarm/show_alarms	O
+2	を	alarm/show_alarms	O
+3	見	alarm/show_alarms	O
+4	せ	alarm/show_alarms	O
+5	て	alarm/show_alarms	O
+
+# id: 51
+# text-en: Cancel alarms
+# text: アラーム を キャンセル する
+# intent: alarm/cancel_alarm
+1	アラーム	alarm/cancel_alarm	O
+2	を	alarm/cancel_alarm	O
+3	キャンセル	alarm/cancel_alarm	O
+4	する	alarm/cancel_alarm	O
+
+# id: 20
+# text-en: Set alarm for 6 am tomorrow
+# text: アラーム を 明日 の 午前 6 時 に 設定 する
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	を	alarm/set_alarm	O
+3	明	alarm/set_alarm	B-datetime
+4	日	alarm/set_alarm	I-datetime
+5	の	alarm/set_alarm	I-datetime
+6	午	alarm/set_alarm	I-datetime
+7	前	alarm/set_alarm	I-datetime
+8	6	alarm/set_alarm	I-datetime
+9	時	alarm/set_alarm	I-datetime
+10	に	alarm/set_alarm	O
+11	設	alarm/set_alarm	O
+12	定	alarm/set_alarm	O
+13	する	alarm/set_alarm	O
+
+# id: 22
+# text-en: Set alarm for 7 am tomorrow
+# text: アラーム を 明日 の 午前 7 時 に 設定 する
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	を	alarm/set_alarm	O
+3	明	alarm/set_alarm	B-datetime
+4	日	alarm/set_alarm	I-datetime
+5	の	alarm/set_alarm	I-datetime
+6	午	alarm/set_alarm	I-datetime
+7	前	alarm/set_alarm	I-datetime
+8	7	alarm/set_alarm	I-datetime
+9	時	alarm/set_alarm	I-datetime
+10	に	alarm/set_alarm	O
+11	設	alarm/set_alarm	O
+12	定	alarm/set_alarm	O
+13	する	alarm/set_alarm	O
+
+# id: 36
+# text-en: set alarm for 6 am
+# text: アラーム を 午前 6 時 に 設定
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	を	alarm/set_alarm	O
+3	午	alarm/set_alarm	B-datetime
+4	前	alarm/set_alarm	I-datetime
+5	6	alarm/set_alarm	I-datetime
+6	時	alarm/set_alarm	I-datetime
+7	に	alarm/set_alarm	O
+8	設	alarm/set_alarm	O
+9	定	alarm/set_alarm	O
+
+# id: 136
+# text-en: i need a reminder to pick Lisa up
+# text: リサ を 迎え に 行く ため の リマインダー が 必要
+# intent: reminder/set_reminder
+1	リサ	reminder/set_reminder	B-reminder/todo
+2	を	reminder/set_reminder	I-reminder/todo
+3	迎	reminder/set_reminder	I-reminder/todo
+4	え	reminder/set_reminder	I-reminder/todo
+5	に	reminder/set_reminder	I-reminder/todo
+6	行	reminder/set_reminder	I-reminder/todo
+7	く	reminder/set_reminder	I-reminder/todo
+8	ため	reminder/set_reminder	O
+9	の	reminder/set_reminder	O
+10	リマインダー	reminder/set_reminder	O
+11	が	reminder/set_reminder	O
+12	必	reminder/set_reminder	O
+13	要	reminder/set_reminder	O
+
+# id: 38
+# text-en: show all alarms
+# text: すべて の アラーム を 表示
+# intent: alarm/show_alarms
+1	すべて	alarm/show_alarms	B-reference
+2	の	alarm/show_alarms	O
+3	アラーム	alarm/show_alarms	O
+4	を	alarm/show_alarms	O
+5	表	alarm/show_alarms	O
+6	示	alarm/show_alarms	O
+
+# id: 11
+# text-en: Turn off all alarms
+# text: すべて の アラーム を オフ に する
+# intent: alarm/cancel_alarm
+1	すべて	alarm/cancel_alarm	B-reference
+2	の	alarm/cancel_alarm	O
+3	アラーム	alarm/cancel_alarm	O
+4	を	alarm/cancel_alarm	O
+5	オフ	alarm/cancel_alarm	O
+6	に	alarm/cancel_alarm	O
+7	する	alarm/cancel_alarm	O
+
+# id: 88
+# text-en: What are my reminders?
+# text: リマインダー は 何 です か ？
+# intent: reminder/show_reminders
+1	リマインダー	reminder/show_reminders	O
+2	は	reminder/show_reminders	O
+3	何	reminder/show_reminders	O
+4	です	reminder/show_reminders	O
+5	か	reminder/show_reminders	O
+6	？	reminder/show_reminders	O
+
+# id: 274
+# text-en: is it hot outside
+# text: 外 は 暑い です か
+# intent: weather/find
+1	外	weather/find	B-location
+2	は	weather/find	O
+3	暑	weather/find	B-weather/attribute
+4	い	weather/find	I-weather/attribute
+5	です	weather/find	O
+6	か	weather/find	O
+
+# id: 34
+# text-en: Snooze alarm
+# text: アラーム を スヌーズ する
+# intent: alarm/snooze_alarm
+1	アラーム	alarm/snooze_alarm	O
+2	を	alarm/snooze_alarm	O
+3	スヌーズ	alarm/snooze_alarm	O
+4	する	alarm/snooze_alarm	O
+
+# id: 14
+# text-en: alarm on
+# text: アラーム オン
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	オン	alarm/set_alarm	O
+
+# id: 62
+# text-en: Set an alarm for 6 am on Wed
+# text: 水曜 日 の 午前 6 時 に アラーム を 設定 する
+# intent: alarm/set_alarm
+1	水	alarm/set_alarm	B-datetime
+2	曜	alarm/set_alarm	I-datetime
+3	日	alarm/set_alarm	I-datetime
+4	の	alarm/set_alarm	I-datetime
+5	午	alarm/set_alarm	I-datetime
+6	前	alarm/set_alarm	I-datetime
+7	6	alarm/set_alarm	I-datetime
+8	時	alarm/set_alarm	I-datetime
+9	に	alarm/set_alarm	O
+10	アラーム	alarm/set_alarm	O
+11	を	alarm/set_alarm	O
+12	設	alarm/set_alarm	O
+13	定	alarm/set_alarm	O
+14	する	alarm/set_alarm	O
+
+# id: 82
+# text-en: remind me to submit my lesson plans every monday by the end of the day
+# text: 毎週 月曜 の 終わり まで に 授業 計画 を 提出 する よう 通知
+# intent: reminder/set_reminder
+1	毎	reminder/set_reminder	B-recurring_datetime
+2	週	reminder/set_reminder	I-recurring_datetime
+3	月	reminder/set_reminder	I-recurring_datetime
+4	曜	reminder/set_reminder	I-recurring_datetime
+5	の	reminder/set_reminder	I-recurring_datetime
+6	終	reminder/set_reminder	I-recurring_datetime
+7	わり	reminder/set_reminder	I-recurring_datetime
+8	まで	reminder/set_reminder	I-recurring_datetime
+9	に	reminder/set_reminder	O
+10	授	reminder/set_reminder	B-reminder/todo
+11	業	reminder/set_reminder	I-reminder/todo
+12	計	reminder/set_reminder	I-reminder/todo
+13	画	reminder/set_reminder	I-reminder/todo
+14	を	reminder/set_reminder	I-reminder/todo
+15	提	reminder/set_reminder	I-reminder/todo
+16	出	reminder/set_reminder	I-reminder/todo
+17	する	reminder/set_reminder	I-reminder/todo
+18	よう	reminder/set_reminder	O
+19	通	reminder/set_reminder	O
+20	知	reminder/set_reminder	O
+
+# id: 167
+# text-en: how hot is it going to be today
+# text: 今日 は どれ くらい 暑く なり ます か
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	どれ	weather/find	O
+5	くらい	weather/find	O
+6	暑	weather/find	B-weather/attribute
+7	く	weather/find	I-weather/attribute
+8	なり	weather/find	O
+9	ます	weather/find	O
+10	か	weather/find	O
+
+# id: 23
+# text-en: Clear all set alarms.
+# text: 設定 さ れ て いる すべて の アラーム を クリア する 。
+# intent: alarm/cancel_alarm
+1	設	alarm/cancel_alarm	O
+2	定	alarm/cancel_alarm	O
+3	さ	alarm/cancel_alarm	O
+4	れ	alarm/cancel_alarm	O
+5	て	alarm/cancel_alarm	O
+6	いる	alarm/cancel_alarm	O
+7	すべて	alarm/cancel_alarm	B-reference
+8	の	alarm/cancel_alarm	O
+9	アラーム	alarm/cancel_alarm	O
+10	を	alarm/cancel_alarm	O
+11	クリア	alarm/cancel_alarm	O
+12	する	alarm/cancel_alarm	O
+13	。	alarm/cancel_alarm	O
+
+# id: 64
+# text-en: Show all alarms
+# text: すべて の アラーム を 表示 する
+# intent: alarm/show_alarms
+1	すべて	alarm/show_alarms	B-reference
+2	の	alarm/show_alarms	O
+3	アラーム	alarm/show_alarms	O
+4	を	alarm/show_alarms	O
+5	表	alarm/show_alarms	O
+6	示	alarm/show_alarms	O
+7	する	alarm/show_alarms	O
+
+# id: 188
+# text-en: Will it be sunny today?
+# text: 今日 は 晴れ ます か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	晴	weather/find	B-weather/attribute
+5	れ	weather/find	I-weather/attribute
+6	ます	weather/find	O
+7	か	weather/find	O
+8	？	weather/find	O
+
+# id: 287
+# text-en: What is the humidity level today
+# text: 今日 の 湿度 レベル は 何 度 です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	の	weather/find	O
+4	湿	weather/find	B-weather/attribute
+5	度	weather/find	I-weather/attribute
+6	レベル	weather/find	I-weather/attribute
+7	は	weather/find	O
+8	何	weather/find	O
+9	度	weather/find	O
+10	です	weather/find	O
+11	か	weather/find	O
+12	？	weather/find	O
+
+# id: 79
+# text-en: Cancel all reminders
+# text: すべて の リマインダー を キャンセル する
+# intent: reminder/cancel_reminder
+1	すべて	reminder/cancel_reminder	B-reference
+2	の	reminder/cancel_reminder	O
+3	リマインダー	reminder/cancel_reminder	O
+4	を	reminder/cancel_reminder	O
+5	キャンセル	reminder/cancel_reminder	O
+6	する	reminder/cancel_reminder	O
+
+# id: 63
+# text-en: set an alarm for fifteen minutes
+# text: アラーム を 1 5 分 に 設定
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	を	alarm/set_alarm	O
+3	1	alarm/set_alarm	B-datetime
+4	5	alarm/set_alarm	I-datetime
+5	分	alarm/set_alarm	I-datetime
+6	に	alarm/set_alarm	O
+7	設	alarm/set_alarm	O
+8	定	alarm/set_alarm	O
+
+# id: 60
+# text-en: Please set my alarm for 4am this Saturday.
+# text: 今週 の 土曜 日 の 午前 4 時 に アラーム を 設定 し て ください 。
+# intent: alarm/set_alarm
+1	今	alarm/set_alarm	B-datetime
+2	週	alarm/set_alarm	I-datetime
+3	の	alarm/set_alarm	I-datetime
+4	土	alarm/set_alarm	I-datetime
+5	曜	alarm/set_alarm	I-datetime
+6	日	alarm/set_alarm	I-datetime
+7	の	alarm/set_alarm	I-datetime
+8	午	alarm/set_alarm	I-datetime
+9	前	alarm/set_alarm	I-datetime
+10	4	alarm/set_alarm	I-datetime
+11	時	alarm/set_alarm	I-datetime
+12	に	alarm/set_alarm	O
+13	アラーム	alarm/set_alarm	O
+14	を	alarm/set_alarm	O
+15	設	alarm/set_alarm	O
+16	定	alarm/set_alarm	O
+17	し	alarm/set_alarm	O
+18	て	alarm/set_alarm	O
+19	ください	alarm/set_alarm	O
+20	。	alarm/set_alarm	O
+
+# id: 105
+# text-en: Give me a reminder for house closing at 10am tomorrow.
+# text: 明日 の 午前 1 0 時 に 家 を 閉める リマインダー を 通知 する 。
+# intent: reminder/set_reminder
+1	明	reminder/set_reminder	B-datetime
+2	日	reminder/set_reminder	I-datetime
+3	の	reminder/set_reminder	I-datetime
+4	午	reminder/set_reminder	I-datetime
+5	前	reminder/set_reminder	I-datetime
+6	1	reminder/set_reminder	I-datetime
+7	0	reminder/set_reminder	I-datetime
+8	時	reminder/set_reminder	I-datetime
+9	に	reminder/set_reminder	O
+10	家	reminder/set_reminder	B-reminder/todo
+11	を	reminder/set_reminder	I-reminder/todo
+12	閉	reminder/set_reminder	I-reminder/todo
+13	める	reminder/set_reminder	I-reminder/todo
+14	リマインダー	reminder/set_reminder	O
+15	を	reminder/set_reminder	O
+16	通	reminder/set_reminder	O
+17	知	reminder/set_reminder	O
+18	する	reminder/set_reminder	O
+19	。	reminder/set_reminder	O
+
+# id: 7
+# text-en: delete all alarms
+# text: すべて の アラーム を 削除
+# intent: alarm/cancel_alarm
+1	すべて	alarm/cancel_alarm	B-reference
+2	の	alarm/cancel_alarm	O
+3	アラーム	alarm/cancel_alarm	O
+4	を	alarm/cancel_alarm	O
+5	削	alarm/cancel_alarm	O
+6	除	alarm/cancel_alarm	O
+
+# id: 58
+# text-en: How many alarms do I have set for Sunday?
+# text: 日曜 日 に アラーム を いく つ 設定 し て い ます か ？
+# intent: alarm/show_alarms
+1	日	alarm/show_alarms	B-datetime
+2	曜	alarm/show_alarms	I-datetime
+3	日	alarm/show_alarms	I-datetime
+4	に	alarm/show_alarms	O
+5	アラーム	alarm/show_alarms	O
+6	を	alarm/show_alarms	O
+7	いく	alarm/show_alarms	O
+8	つ	alarm/show_alarms	O
+9	設	alarm/show_alarms	O
+10	定	alarm/show_alarms	O
+11	し	alarm/show_alarms	O
+12	て	alarm/show_alarms	O
+13	い	alarm/show_alarms	O
+14	ます	alarm/show_alarms	O
+15	か	alarm/show_alarms	O
+16	？	alarm/show_alarms	O
+
+# id: 38
+# text-en: show all alarms
+# text: すべて の アラーム を 表示
+# intent: alarm/show_alarms
+1	すべて	alarm/show_alarms	B-reference
+2	の	alarm/show_alarms	O
+3	アラーム	alarm/show_alarms	O
+4	を	alarm/show_alarms	O
+5	表	alarm/show_alarms	O
+6	示	alarm/show_alarms	O
+
+# id: 213
+# text-en: Is it going to be sunny today?
+# text: 今日 は 晴れる でしょう か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	晴	weather/find	B-weather/attribute
+5	れる	weather/find	I-weather/attribute
+6	でしょう	weather/find	O
+7	か	weather/find	O
+8	？	weather/find	O
+
+# id: 222
+# text-en: set alarm for 615am
+# text: アラーム を 6 時 1 5 分 に 設定
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	を	alarm/set_alarm	O
+3	6	alarm/set_alarm	B-datetime
+4	時	alarm/set_alarm	I-datetime
+5	1	alarm/set_alarm	I-datetime
+6	5	alarm/set_alarm	I-datetime
+7	分	alarm/set_alarm	I-datetime
+8	に	alarm/set_alarm	O
+9	設	alarm/set_alarm	O
+10	定	alarm/set_alarm	O
+
+# id: 229
+# text-en: Set two alarms for tomorrow morning
+# text: 明日 の 朝 に アラーム を 2 つ 設定 する
+# intent: alarm/set_alarm
+1	明	alarm/set_alarm	B-datetime
+2	日	alarm/set_alarm	I-datetime
+3	の	alarm/set_alarm	I-datetime
+4	朝	alarm/set_alarm	I-datetime
+5	に	alarm/set_alarm	O
+6	アラーム	alarm/set_alarm	O
+7	を	alarm/set_alarm	O
+8	2	alarm/set_alarm	O
+9	つ	alarm/set_alarm	O
+10	設	alarm/set_alarm	O
+11	定	alarm/set_alarm	O
+12	する	alarm/set_alarm	O
+
+# id: 11
+# text-en: Turn off all alarms
+# text: すべて の アラーム を オフ に する
+# intent: alarm/cancel_alarm
+1	すべて	alarm/cancel_alarm	B-reference
+2	の	alarm/cancel_alarm	O
+3	アラーム	alarm/cancel_alarm	O
+4	を	alarm/cancel_alarm	O
+5	オフ	alarm/cancel_alarm	O
+6	に	alarm/cancel_alarm	O
+7	する	alarm/cancel_alarm	O
+
+# id: 175
+# text-en: What is the temperature like in London right now?
+# text: ロンドン の 現在 の 気温 は 何 度 です か ？
+# intent: weather/find
+1	ロンドン	weather/find	B-location
+2	の	weather/find	O
+3	現	weather/find	B-datetime
+4	在	weather/find	I-datetime
+5	の	weather/find	O
+6	気	weather/find	B-weather/attribute
+7	温	weather/find	I-weather/attribute
+8	は	weather/find	O
+9	何	weather/find	O
+10	度	weather/find	O
+11	です	weather/find	O
+12	か	weather/find	O
+13	？	weather/find	O
+
+# id: 246
+# text-en: Cancel my last reminder
+# text: 最後 の リマインダー を キャンセル する
+# intent: reminder/cancel_reminder
+1	最	reminder/cancel_reminder	B-reference
+2	後	reminder/cancel_reminder	I-reference
+3	の	reminder/cancel_reminder	O
+4	リマインダー	reminder/cancel_reminder	O
+5	を	reminder/cancel_reminder	O
+6	キャンセル	reminder/cancel_reminder	O
+7	する	reminder/cancel_reminder	O
+
+# id: 259
+# text-en: Set a reminder to go to the grocery store later
+# text: 後 で 食料 品 店 に 行く よう に リマインダー を 設定 する
+# intent: reminder/set_reminder
+1	後	reminder/set_reminder	B-datetime
+2	で	reminder/set_reminder	O
+3	食	reminder/set_reminder	B-reminder/todo
+4	料	reminder/set_reminder	I-reminder/todo
+5	品	reminder/set_reminder	I-reminder/todo
+6	店	reminder/set_reminder	I-reminder/todo
+7	に	reminder/set_reminder	I-reminder/todo
+8	行	reminder/set_reminder	I-reminder/todo
+9	く	reminder/set_reminder	I-reminder/todo
+10	よう	reminder/set_reminder	O
+11	に	reminder/set_reminder	O
+12	リマインダー	reminder/set_reminder	O
+13	を	reminder/set_reminder	O
+14	設	reminder/set_reminder	O
+15	定	reminder/set_reminder	O
+16	する	reminder/set_reminder	O
+
+# id: 186
+# text-en: What will be the heat index today?
+# text: 今日 の 体感 温度 は 何 度 です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	の	weather/find	O
+4	体	weather/find	B-weather/attribute
+5	感	weather/find	I-weather/attribute
+6	温	weather/find	I-weather/attribute
+7	度	weather/find	I-weather/attribute
+8	は	weather/find	O
+9	何	weather/find	O
+10	度	weather/find	O
+11	です	weather/find	O
+12	か	weather/find	O
+13	？	weather/find	O
+
+# id: 211
+# text-en: How cold will it be today?
+# text: 今日 は どれ くらい 寒い です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	どれ	weather/find	O
+5	くらい	weather/find	O
+6	寒	weather/find	B-weather/attribute
+7	い	weather/find	I-weather/attribute
+8	です	weather/find	O
+9	か	weather/find	O
+10	？	weather/find	O
+
+# id: 190
+# text-en: will it snow today
+# text: 今日 は 雪 が 降り ます か
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	雪	weather/find	B-weather/attribute
+5	が	weather/find	O
+6	降	weather/find	O
+7	り	weather/find	O
+8	ます	weather/find	O
+9	か	weather/find	O
+
+# id: 13
+# text-en: Set alarm for 5am
+# text: アラーム を 午前 5 時 に 設定 する
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	を	alarm/set_alarm	O
+3	午	alarm/set_alarm	B-datetime
+4	前	alarm/set_alarm	I-datetime
+5	5	alarm/set_alarm	I-datetime
+6	時	alarm/set_alarm	I-datetime
+7	に	alarm/set_alarm	O
+8	設	alarm/set_alarm	O
+9	定	alarm/set_alarm	O
+10	する	alarm/set_alarm	O
+
+# id: 26
+# text-en: turn off alarm
+# text: アラーム を オフ
+# intent: alarm/cancel_alarm
+1	アラーム	alarm/cancel_alarm	O
+2	を	alarm/cancel_alarm	O
+3	オフ	alarm/cancel_alarm	O
+
+# id: 1
+# text-en: cancel all alarms
+# text: すべて の アラーム を キャンセル
+# intent: alarm/cancel_alarm
+1	すべて	alarm/cancel_alarm	B-reference
+2	の	alarm/cancel_alarm	O
+3	アラーム	alarm/cancel_alarm	O
+4	を	alarm/cancel_alarm	O
+5	キャンセル	alarm/cancel_alarm	O
+
+# id: 264
+# text-en: Add reminder to swim at 11am tomorrow
+# text: 明日 の 午前 1 1 時 に 泳ぐ よう リマインダー を 追加 する
+# intent: reminder/set_reminder
+1	明	reminder/set_reminder	B-datetime
+2	日	reminder/set_reminder	I-datetime
+3	の	reminder/set_reminder	I-datetime
+4	午	reminder/set_reminder	I-datetime
+5	前	reminder/set_reminder	I-datetime
+6	1	reminder/set_reminder	I-datetime
+7	1	reminder/set_reminder	I-datetime
+8	時	reminder/set_reminder	I-datetime
+9	に	reminder/set_reminder	O
+10	泳	reminder/set_reminder	B-reminder/todo
+11	ぐ	reminder/set_reminder	I-reminder/todo
+12	よう	reminder/set_reminder	O
+13	リマインダー	reminder/set_reminder	O
+14	を	reminder/set_reminder	O
+15	追	reminder/set_reminder	O
+16	加	reminder/set_reminder	O
+17	する	reminder/set_reminder	O
+
+# id: 87
+# text-en: Show my reminder
+# text: リマインダー を 表示 する
+# intent: reminder/show_reminders
+1	リマインダー	reminder/show_reminders	O
+2	を	reminder/show_reminders	O
+3	表	reminder/show_reminders	O
+4	示	reminder/show_reminders	O
+5	する	reminder/show_reminders	O
+
+# id: 70
+# text-en: Cancel my alarm on Saturday
+# text: 土曜 日 の アラーム を キャンセル する
+# intent: alarm/cancel_alarm
+1	土	alarm/cancel_alarm	B-datetime
+2	曜	alarm/cancel_alarm	I-datetime
+3	日	alarm/cancel_alarm	I-datetime
+4	の	alarm/cancel_alarm	O
+5	アラーム	alarm/cancel_alarm	O
+6	を	alarm/cancel_alarm	O
+7	キャンセル	alarm/cancel_alarm	O
+8	する	alarm/cancel_alarm	O
+
+# id: 270
+# text-en: Is it cold out?
+# text: 外 は 寒い です か ？
+# intent: weather/find
+1	外	weather/find	B-location
+2	は	weather/find	O
+3	寒	weather/find	B-weather/attribute
+4	い	weather/find	I-weather/attribute
+5	です	weather/find	O
+6	か	weather/find	O
+7	？	weather/find	O
+
+# id: 286
+# text-en: Is it humid today?
+# text: 今日 は 湿度 が 高い です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	湿	weather/find	B-weather/attribute
+5	度	weather/find	I-weather/attribute
+6	が	weather/find	O
+7	高	weather/find	O
+8	い	weather/find	O
+9	です	weather/find	O
+10	か	weather/find	O
+11	？	weather/find	O
+
+# id: 73
+# text-en: Set alarm every minute for 11 minutes
+# text: 毎分 の アラーム を 1 1 分間 設定 する
+# intent: alarm/set_alarm
+1	毎	alarm/set_alarm	B-recurring_datetime
+2	分	alarm/set_alarm	I-recurring_datetime
+3	の	alarm/set_alarm	O
+4	アラーム	alarm/set_alarm	O
+5	を	alarm/set_alarm	O
+6	1	alarm/set_alarm	B-recurring_datetime
+7	1	alarm/set_alarm	I-recurring_datetime
+8	分	alarm/set_alarm	I-recurring_datetime
+9	間	alarm/set_alarm	I-recurring_datetime
+10	設	alarm/set_alarm	O
+11	定	alarm/set_alarm	O
+12	する	alarm/set_alarm	O
+
+# id: 87
+# text-en: Show my reminder
+# text: リマインダー を 表示 する
+# intent: reminder/show_reminders
+1	リマインダー	reminder/show_reminders	O
+2	を	reminder/show_reminders	O
+3	表	reminder/show_reminders	O
+4	示	reminder/show_reminders	O
+5	する	reminder/show_reminders	O
+
+# id: 192
+# text-en: Is it going to be windy today?
+# text: 今日 は 風 が 強い でしょう か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	風	weather/find	B-weather/attribute
+5	が	weather/find	O
+6	強	weather/find	O
+7	い	weather/find	O
+8	でしょう	weather/find	O
+9	か	weather/find	O
+10	？	weather/find	O
+
+# id: 240
+# text-en: Cancel tomorrow's reminders
+# text: 明日 の リマインダー を キャンセル する
+# intent: reminder/cancel_reminder
+1	明	reminder/cancel_reminder	B-datetime
+2	日	reminder/cancel_reminder	I-datetime
+3	の	reminder/cancel_reminder	O
+4	リマインダー	reminder/cancel_reminder	O
+5	を	reminder/cancel_reminder	O
+6	キャンセル	reminder/cancel_reminder	O
+7	する	reminder/cancel_reminder	O
+
+# id: 140
+# text-en: tell me the 3 day forecast
+# text: 3 日間 の 天気 予報 を 教え て
+# intent: weather/find
+1	3	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	間	weather/find	I-datetime
+4	の	weather/find	O
+5	天	weather/find	O
+6	気	weather/find	O
+7	予	weather/find	O
+8	報	weather/find	O
+9	を	weather/find	O
+10	教	weather/find	O
+11	え	weather/find	O
+12	て	weather/find	O
+
+# id: 272
+# text-en: how many inches of rain are we suppose to get tomorrow?
+# text: 明日 は 何 インチ の 雨 が 降る 予報 です か ？
+# intent: weather/find
+1	明	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	何	weather/find	O
+5	インチ	weather/find	O
+6	の	weather/find	O
+7	雨	weather/find	B-weather/attribute
+8	が	weather/find	O
+9	降	weather/find	O
+10	る	weather/find	O
+11	予	weather/find	O
+12	報	weather/find	O
+13	です	weather/find	O
+14	か	weather/find	O
+15	？	weather/find	O
+
+# id: 80
+# text-en: remind me about the wedding
+# text: 結婚 式 に つい て リマインド
+# intent: reminder/set_reminder
+1	結	reminder/set_reminder	B-reminder/todo
+2	婚	reminder/set_reminder	I-reminder/todo
+3	式	reminder/set_reminder	I-reminder/todo
+4	に	reminder/set_reminder	O
+5	つい	reminder/set_reminder	O
+6	て	reminder/set_reminder	O
+7	リマインド	reminder/set_reminder	O
+
+# id: 42
+# text-en: Snooze all alarms
+# text: すべて の アラーム を スヌーズ する
+# intent: alarm/snooze_alarm
+1	すべて	alarm/snooze_alarm	B-reference
+2	の	alarm/snooze_alarm	O
+3	アラーム	alarm/snooze_alarm	O
+4	を	alarm/snooze_alarm	O
+5	スヌーズ	alarm/snooze_alarm	O
+6	する	alarm/snooze_alarm	O
+
+# id: 214
+# text-en: When will it rain today?
+# text: 今日 は いつ 雨 が 降り ます か 。
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	いつ	weather/find	O
+5	雨	weather/find	B-weather/attribute
+6	が	weather/find	O
+7	降	weather/find	O
+8	り	weather/find	O
+9	ます	weather/find	O
+10	か	weather/find	O
+11	。	weather/find	O
+
+# id: 38
+# text-en: show all alarms
+# text: すべて の アラーム を 表示
+# intent: alarm/show_alarms
+1	すべて	alarm/show_alarms	B-reference
+2	の	alarm/show_alarms	O
+3	アラーム	alarm/show_alarms	O
+4	を	alarm/show_alarms	O
+5	表	alarm/show_alarms	O
+6	示	alarm/show_alarms	O
+
+# id: 11
+# text-en: Turn off all alarms
+# text: すべて の アラーム を オフ に する
+# intent: alarm/cancel_alarm
+1	すべて	alarm/cancel_alarm	B-reference
+2	の	alarm/cancel_alarm	O
+3	アラーム	alarm/cancel_alarm	O
+4	を	alarm/cancel_alarm	O
+5	オフ	alarm/cancel_alarm	O
+6	に	alarm/cancel_alarm	O
+7	する	alarm/cancel_alarm	O
+
+# id: 137
+# text-en: Is it going to rain today?
+# text: 今日 は 雨 が 降り ます か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	雨	weather/find	B-weather/attribute
+5	が	weather/find	O
+6	降	weather/find	O
+7	り	weather/find	O
+8	ます	weather/find	O
+9	か	weather/find	O
+10	？	weather/find	O
+
+# id: 260
+# text-en: Show all reminders for tomorrow
+# text: 明日 の リマインダー を すべて 表示 する
+# intent: reminder/show_reminders
+1	明	reminder/show_reminders	B-datetime
+2	日	reminder/show_reminders	I-datetime
+3	の	reminder/show_reminders	O
+4	リマインダー	reminder/show_reminders	O
+5	を	reminder/show_reminders	O
+6	すべて	reminder/show_reminders	B-reference
+7	表	reminder/show_reminders	O
+8	示	reminder/show_reminders	O
+9	する	reminder/show_reminders	O
+
+# id: 21
+# text-en: cancel my alarm for tomorrow morning
+# text: 明日 の 朝 の アラーム を キャンセル
+# intent: alarm/cancel_alarm
+1	明	alarm/cancel_alarm	B-datetime
+2	日	alarm/cancel_alarm	I-datetime
+3	の	alarm/cancel_alarm	I-datetime
+4	朝	alarm/cancel_alarm	I-datetime
+5	の	alarm/cancel_alarm	O
+6	アラーム	alarm/cancel_alarm	O
+7	を	alarm/cancel_alarm	O
+8	キャンセル	alarm/cancel_alarm	O
+
+# id: 150
+# text-en: How hot is it?
+# text: どれ くらい 暑い です か ？
+# intent: weather/find
+1	どれ	weather/find	O
+2	くらい	weather/find	O
+3	暑	weather/find	B-weather/attribute
+4	い	weather/find	I-weather/attribute
+5	です	weather/find	O
+6	か	weather/find	O
+7	？	weather/find	O
+
+# id: 253
+# text-en: remind me to buy milk tonight
+# text: 今夜 は 牛乳 を 買う よう に リマインド
+# intent: reminder/set_reminder
+1	今	reminder/set_reminder	B-datetime
+2	夜	reminder/set_reminder	I-datetime
+3	は	reminder/set_reminder	O
+4	牛	reminder/set_reminder	B-reminder/todo
+5	乳	reminder/set_reminder	I-reminder/todo
+6	を	reminder/set_reminder	I-reminder/todo
+7	買	reminder/set_reminder	I-reminder/todo
+8	う	reminder/set_reminder	I-reminder/todo
+9	よう	reminder/set_reminder	O
+10	に	reminder/set_reminder	O
+11	リマインド	reminder/set_reminder	O
+
+# id: 79
+# text-en: Cancel all reminders
+# text: すべて の リマインダー を キャンセル する
+# intent: reminder/cancel_reminder
+1	すべて	reminder/cancel_reminder	B-reference
+2	の	reminder/cancel_reminder	O
+3	リマインダー	reminder/cancel_reminder	O
+4	を	reminder/cancel_reminder	O
+5	キャンセル	reminder/cancel_reminder	O
+6	する	reminder/cancel_reminder	O
+
+# id: 64
+# text-en: Show all alarms
+# text: すべて の アラーム を 表示 する
+# intent: alarm/show_alarms
+1	すべて	alarm/show_alarms	B-reference
+2	の	alarm/show_alarms	O
+3	アラーム	alarm/show_alarms	O
+4	を	alarm/show_alarms	O
+5	表	alarm/show_alarms	O
+6	示	alarm/show_alarms	O
+7	する	alarm/show_alarms	O
+
+# id: 21
+# text-en: cancel my alarm for tomorrow morning
+# text: 明日 の 朝 の アラーム を キャンセル
+# intent: alarm/cancel_alarm
+1	明	alarm/cancel_alarm	B-datetime
+2	日	alarm/cancel_alarm	I-datetime
+3	の	alarm/cancel_alarm	I-datetime
+4	朝	alarm/cancel_alarm	I-datetime
+5	の	alarm/cancel_alarm	O
+6	アラーム	alarm/cancel_alarm	O
+7	を	alarm/cancel_alarm	O
+8	キャンセル	alarm/cancel_alarm	O
+
+# id: 138
+# text-en: Will it be sunny tomorrow?
+# text: 明日 は 晴れ ます か ？
+# intent: weather/find
+1	明	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	晴	weather/find	B-weather/attribute
+5	れ	weather/find	I-weather/attribute
+6	ます	weather/find	O
+7	か	weather/find	O
+8	？	weather/find	O
+
+# id: 32
+# text-en: Cancel alarm for tomorrow morning
+# text: 明日 の 朝 の アラーム を キャンセル する
+# intent: alarm/cancel_alarm
+1	明	alarm/cancel_alarm	B-datetime
+2	日	alarm/cancel_alarm	I-datetime
+3	の	alarm/cancel_alarm	I-datetime
+4	朝	alarm/cancel_alarm	I-datetime
+5	の	alarm/cancel_alarm	O
+6	アラーム	alarm/cancel_alarm	O
+7	を	alarm/cancel_alarm	O
+8	キャンセル	alarm/cancel_alarm	O
+9	する	alarm/cancel_alarm	O
+
+# id: 249
+# text-en: show all reminders for tomorrow morning
+# text: 明日 の 朝 の リマインダー を すべて 表示
+# intent: reminder/show_reminders
+1	明	reminder/show_reminders	B-datetime
+2	日	reminder/show_reminders	I-datetime
+3	の	reminder/show_reminders	I-datetime
+4	朝	reminder/show_reminders	I-datetime
+5	の	reminder/show_reminders	O
+6	リマインダー	reminder/show_reminders	O
+7	を	reminder/show_reminders	O
+8	すべて	reminder/show_reminders	O
+9	表	reminder/show_reminders	O
+10	示	reminder/show_reminders	O
+
+# id: 171
+# text-en: What is the humidity today?
+# text: 今日 の 湿度 は 何 度 です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	の	weather/find	O
+4	湿	weather/find	B-weather/attribute
+5	度	weather/find	I-weather/attribute
+6	は	weather/find	O
+7	何	weather/find	O
+8	度	weather/find	O
+9	です	weather/find	O
+10	か	weather/find	O
+11	？	weather/find	O
+
+# id: 295
+# text-en: When is it going to rain?
+# text: いつ 雨 が 降り ます か ？
+# intent: weather/find
+1	いつ	weather/find	O
+2	雨	weather/find	B-weather/attribute
+3	が	weather/find	O
+4	降	weather/find	O
+5	り	weather/find	O
+6	ます	weather/find	O
+7	か	weather/find	O
+8	？	weather/find	O
+
+# id: 187
+# text-en: How hot is it
+# text: どれ くらい 暑い です か
+# intent: weather/find
+1	どれ	weather/find	O
+2	くらい	weather/find	O
+3	暑	weather/find	B-weather/attribute
+4	い	weather/find	I-weather/attribute
+5	です	weather/find	O
+6	か	weather/find	O
+
+# id: 113
+# text-en: show me my reminders
+# text: リマインダー を 表示
+# intent: reminder/show_reminders
+1	リマインダー	reminder/show_reminders	O
+2	を	reminder/show_reminders	O
+3	表	reminder/show_reminders	O
+4	示	reminder/show_reminders	O
+
+# id: 149
+# text-en: What is the 5 day forecast?
+# text: 5 日間 の 天気 予報 は どう です か ？
+# intent: weather/find
+1	5	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	間	weather/find	I-datetime
+4	の	weather/find	O
+5	天	weather/find	O
+6	気	weather/find	O
+7	予	weather/find	O
+8	報	weather/find	O
+9	は	weather/find	O
+10	どう	weather/find	O
+11	です	weather/find	O
+12	か	weather/find	O
+13	？	weather/find	O
+
+# id: 36
+# text-en: set alarm for 6 am
+# text: アラーム を 午前 6 時 に 設定
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	を	alarm/set_alarm	O
+3	午	alarm/set_alarm	B-datetime
+4	前	alarm/set_alarm	I-datetime
+5	6	alarm/set_alarm	I-datetime
+6	時	alarm/set_alarm	I-datetime
+7	に	alarm/set_alarm	O
+8	設	alarm/set_alarm	O
+9	定	alarm/set_alarm	O
+
+# id: 163
+# text-en: Is it cold today?
+# text: 今日 は 寒い です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	寒	weather/find	B-weather/attribute
+5	い	weather/find	I-weather/attribute
+6	です	weather/find	O
+7	か	weather/find	O
+8	？	weather/find	O
+
+# id: 107
+# text-en: Set a reminder to call my school on Monday at 4 PM
+# text: 月曜 日 午後 4 時 に 学校 に 電話 する よう リマインダー を 設定 する
+# intent: reminder/set_reminder
+1	月	reminder/set_reminder	B-datetime
+2	曜	reminder/set_reminder	I-datetime
+3	日	reminder/set_reminder	I-datetime
+4	午	reminder/set_reminder	I-datetime
+5	後	reminder/set_reminder	I-datetime
+6	4	reminder/set_reminder	I-datetime
+7	時	reminder/set_reminder	I-datetime
+8	に	reminder/set_reminder	O
+9	学	reminder/set_reminder	B-reminder/todo
+10	校	reminder/set_reminder	I-reminder/todo
+11	に	reminder/set_reminder	I-reminder/todo
+12	電	reminder/set_reminder	I-reminder/todo
+13	話	reminder/set_reminder	I-reminder/todo
+14	する	reminder/set_reminder	I-reminder/todo
+15	よう	reminder/set_reminder	O
+16	リマインダー	reminder/set_reminder	O
+17	を	reminder/set_reminder	O
+18	設	reminder/set_reminder	O
+19	定	reminder/set_reminder	O
+20	する	reminder/set_reminder	O
+
+# id: 95
+# text-en: Delete my reminder for picking up Patrick from school tomorrow.
+# text: 明日 学校 から パトリック を 連れ て 帰る と いう リマインダー を 削除 する 。
+# intent: reminder/cancel_reminder
+1	明	reminder/cancel_reminder	B-datetime
+2	日	reminder/cancel_reminder	I-datetime
+3	学	reminder/cancel_reminder	B-reminder/todo
+4	校	reminder/cancel_reminder	I-reminder/todo
+5	から	reminder/cancel_reminder	I-reminder/todo
+6	パトリック	reminder/cancel_reminder	I-reminder/todo
+7	を	reminder/cancel_reminder	I-reminder/todo
+8	連	reminder/cancel_reminder	I-reminder/todo
+9	れ	reminder/cancel_reminder	I-reminder/todo
+10	て	reminder/cancel_reminder	I-reminder/todo
+11	帰	reminder/cancel_reminder	I-reminder/todo
+12	る	reminder/cancel_reminder	I-reminder/todo
+13	と	reminder/cancel_reminder	O
+14	いう	reminder/cancel_reminder	O
+15	リマインダー	reminder/cancel_reminder	O
+16	を	reminder/cancel_reminder	O
+17	削	reminder/cancel_reminder	O
+18	除	reminder/cancel_reminder	O
+19	する	reminder/cancel_reminder	O
+20	。	reminder/cancel_reminder	O
+
+# id: 299
+# text-en: How cold will it be in the morning?
+# text: 朝 は どれ くらい 寒い です か 。
+# intent: weather/find
+1	朝	weather/find	B-datetime
+2	は	weather/find	O
+3	どれ	weather/find	O
+4	くらい	weather/find	O
+5	寒	weather/find	B-weather/attribute
+6	い	weather/find	I-weather/attribute
+7	です	weather/find	O
+8	か	weather/find	O
+9	。	weather/find	O
+
+# id: 196
+# text-en: do i need an umbrella tomorrow
+# text: 明日 傘 は 必要 です か
+# intent: weather/find
+1	明	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	傘	weather/find	B-weather/attribute
+4	は	weather/find	O
+5	必	weather/find	O
+6	要	weather/find	O
+7	です	weather/find	O
+8	か	weather/find	O
+
+# id: 87
+# text-en: Show my reminder
+# text: リマインダー を 表示 する
+# intent: reminder/show_reminders
+1	リマインダー	reminder/show_reminders	O
+2	を	reminder/show_reminders	O
+3	表	reminder/show_reminders	O
+4	示	reminder/show_reminders	O
+5	する	reminder/show_reminders	O
+
+# id: 33
+# text-en: Stop alarm for 6:00 am
+# text: 午前 6 時 の アラーム を 停止
+# intent: alarm/cancel_alarm
+1	午	alarm/cancel_alarm	B-datetime
+2	前	alarm/cancel_alarm	I-datetime
+3	6	alarm/cancel_alarm	I-datetime
+4	時	alarm/cancel_alarm	I-datetime
+5	の	alarm/cancel_alarm	O
+6	アラーム	alarm/cancel_alarm	O
+7	を	alarm/cancel_alarm	O
+8	停	alarm/cancel_alarm	O
+9	止	alarm/cancel_alarm	O
+
+# id: 35
+# text-en: Cancel all alarms
+# text: すべて の アラーム を キャンセル する
+# intent: alarm/cancel_alarm
+1	すべて	alarm/cancel_alarm	B-reference
+2	の	alarm/cancel_alarm	O
+3	アラーム	alarm/cancel_alarm	O
+4	を	alarm/cancel_alarm	O
+5	キャンセル	alarm/cancel_alarm	O
+6	する	alarm/cancel_alarm	O
+
+# id: 188
+# text-en: Will it be sunny today?
+# text: 今日 は 晴れ ます か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	晴	weather/find	B-weather/attribute
+5	れ	weather/find	I-weather/attribute
+6	ます	weather/find	O
+7	か	weather/find	O
+8	？	weather/find	O
+
+# id: 193
+# text-en: what is the weather in london?
+# text: ロンドン の 天気 は ？
+# intent: weather/find
+1	ロンドン	weather/find	B-location
+2	の	weather/find	O
+3	天	weather/find	O
+4	気	weather/find	O
+5	は	weather/find	O
+6	？	weather/find	O
+
+# id: 88
+# text-en: What are my reminders?
+# text: リマインダー は 何 です か ？
+# intent: reminder/show_reminders
+1	リマインダー	reminder/show_reminders	O
+2	は	reminder/show_reminders	O
+3	何	reminder/show_reminders	O
+4	です	reminder/show_reminders	O
+5	か	reminder/show_reminders	O
+6	？	reminder/show_reminders	O
+
+# id: 116
+# text-en: Cancel my reminder to text Dad
+# text: パパ に メッセージ を 送信 する リマインダー を キャンセル する
+# intent: reminder/cancel_reminder
+1	パパ	reminder/cancel_reminder	B-reminder/todo
+2	に	reminder/cancel_reminder	I-reminder/todo
+3	メッセージ	reminder/cancel_reminder	I-reminder/todo
+4	を	reminder/cancel_reminder	I-reminder/todo
+5	送	reminder/cancel_reminder	I-reminder/todo
+6	信	reminder/cancel_reminder	I-reminder/todo
+7	する	reminder/cancel_reminder	I-reminder/todo
+8	リマインダー	reminder/cancel_reminder	O
+9	を	reminder/cancel_reminder	O
+10	キャンセル	reminder/cancel_reminder	O
+11	する	reminder/cancel_reminder	O
+
+# id: 36
+# text-en: set alarm for 6 am
+# text: アラーム を 午前 6 時 に 設定
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	を	alarm/set_alarm	O
+3	午	alarm/set_alarm	B-datetime
+4	前	alarm/set_alarm	I-datetime
+5	6	alarm/set_alarm	I-datetime
+6	時	alarm/set_alarm	I-datetime
+7	に	alarm/set_alarm	O
+8	設	alarm/set_alarm	O
+9	定	alarm/set_alarm	O
+
+# id: 15
+# text-en: turn off the alarm
+# text: アラーム を オフ
+# intent: alarm/cancel_alarm
+1	アラーム	alarm/cancel_alarm	O
+2	を	alarm/cancel_alarm	O
+3	オフ	alarm/cancel_alarm	O
+
+# id: 65
+# text-en: cancel the alarm
+# text: アラーム を キャンセル
+# intent: alarm/cancel_alarm
+1	アラーム	alarm/cancel_alarm	O
+2	を	alarm/cancel_alarm	O
+3	キャンセル	alarm/cancel_alarm	O
+
+# id: 26
+# text-en: turn off alarm
+# text: アラーム を オフ
+# intent: alarm/cancel_alarm
+1	アラーム	alarm/cancel_alarm	O
+2	を	alarm/cancel_alarm	O
+3	オフ	alarm/cancel_alarm	O
+
+# id: 102
+# text-en: remind me to call mom today at 2 p.m.
+# text: 今日 の 午後 2 時 に ママ に 電話 する こと を リマインド
+# intent: reminder/set_reminder
+1	今	reminder/set_reminder	B-datetime
+2	日	reminder/set_reminder	I-datetime
+3	の	reminder/set_reminder	I-datetime
+4	午	reminder/set_reminder	I-datetime
+5	後	reminder/set_reminder	I-datetime
+6	2	reminder/set_reminder	I-datetime
+7	時	reminder/set_reminder	I-datetime
+8	に	reminder/set_reminder	O
+9	ママ	reminder/set_reminder	B-reminder/todo
+10	に	reminder/set_reminder	I-reminder/todo
+11	電	reminder/set_reminder	I-reminder/todo
+12	話	reminder/set_reminder	I-reminder/todo
+13	する	reminder/set_reminder	I-reminder/todo
+14	こと	reminder/set_reminder	O
+15	を	reminder/set_reminder	O
+16	リマインド	reminder/set_reminder	O
+
+# id: 1
+# text-en: cancel all alarms
+# text: すべて の アラーム を キャンセル
+# intent: alarm/cancel_alarm
+1	すべて	alarm/cancel_alarm	B-reference
+2	の	alarm/cancel_alarm	O
+3	アラーム	alarm/cancel_alarm	O
+4	を	alarm/cancel_alarm	O
+5	キャンセル	alarm/cancel_alarm	O
+
+# id: 268
+# text-en: is it going to be hot tomorrow
+# text: 明日 は 暑く なる でしょう か
+# intent: weather/find
+1	明	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	暑	weather/find	B-weather/attribute
+5	く	weather/find	I-weather/attribute
+6	なる	weather/find	O
+7	でしょう	weather/find	O
+8	か	weather/find	O
+
+# id: 185
+# text-en: is it cold out today?
+# text: 今日 は 外 寒い です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	外	weather/find	B-location
+5	寒	weather/find	B-weather/attribute
+6	い	weather/find	I-weather/attribute
+7	です	weather/find	O
+8	か	weather/find	O
+9	？	weather/find	O
+
+# id: 47
+# text-en: Set alarm for 5 pm tonight
+# text: アラーム を 今夜 の 午後 5 時 に 設定 する
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	を	alarm/set_alarm	O
+3	今	alarm/set_alarm	B-datetime
+4	夜	alarm/set_alarm	I-datetime
+5	の	alarm/set_alarm	I-datetime
+6	午	alarm/set_alarm	I-datetime
+7	後	alarm/set_alarm	I-datetime
+8	5	alarm/set_alarm	I-datetime
+9	時	alarm/set_alarm	I-datetime
+10	に	alarm/set_alarm	O
+11	設	alarm/set_alarm	O
+12	定	alarm/set_alarm	O
+13	する	alarm/set_alarm	O
+
+# id: 145
+# text-en: Will it rain this weekend?
+# text: 今週 末 は 雨 が 降り ます か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	週	weather/find	I-datetime
+3	末	weather/find	I-datetime
+4	は	weather/find	O
+5	雨	weather/find	B-weather/attribute
+6	が	weather/find	O
+7	降	weather/find	O
+8	り	weather/find	O
+9	ます	weather/find	O
+10	か	weather/find	O
+11	？	weather/find	O
+
+# id: 209
+# text-en: is it going to rain today
+# text: 今日 は 雨 が 降り ます か
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	雨	weather/find	B-weather/attribute
+5	が	weather/find	O
+6	降	weather/find	O
+7	り	weather/find	O
+8	ます	weather/find	O
+9	か	weather/find	O
+
+# id: 17
+# text-en: set an alarm for monday at 3 am
+# text: 月曜 日 の 午前 3 時 に アラーム を 設定
+# intent: alarm/set_alarm
+1	月	alarm/set_alarm	B-datetime
+2	曜	alarm/set_alarm	I-datetime
+3	日	alarm/set_alarm	I-datetime
+4	の	alarm/set_alarm	I-datetime
+5	午	alarm/set_alarm	I-datetime
+6	前	alarm/set_alarm	I-datetime
+7	3	alarm/set_alarm	I-datetime
+8	時	alarm/set_alarm	I-datetime
+9	に	alarm/set_alarm	O
+10	アラーム	alarm/set_alarm	O
+11	を	alarm/set_alarm	O
+12	設	alarm/set_alarm	O
+13	定	alarm/set_alarm	O
+
+# id: 14
+# text-en: alarm on
+# text: アラーム オン
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	オン	alarm/set_alarm	O
+
+# id: 178
+# text-en: Is it going to rain on Saturday?
+# text: 土曜 日 は 雨 が 降り ます か ？
+# intent: weather/find
+1	土	weather/find	B-datetime
+2	曜	weather/find	I-datetime
+3	日	weather/find	I-datetime
+4	は	weather/find	O
+5	雨	weather/find	B-weather/attribute
+6	が	weather/find	O
+7	降	weather/find	O
+8	り	weather/find	O
+9	ます	weather/find	O
+10	か	weather/find	O
+11	？	weather/find	O
+
+# id: 226
+# text-en: Set alarm for 5 am
+# text: アラーム を 午前 5 時 に 設定 する
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	を	alarm/set_alarm	O
+3	午	alarm/set_alarm	B-datetime
+4	前	alarm/set_alarm	I-datetime
+5	5	alarm/set_alarm	I-datetime
+6	時	alarm/set_alarm	I-datetime
+7	に	alarm/set_alarm	O
+8	設	alarm/set_alarm	O
+9	定	alarm/set_alarm	O
+10	する	alarm/set_alarm	O
+
+# id: 148
+# text-en: Will I need a coat today?
+# text: 今日 は コート が 必要 です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	コート	weather/find	B-weather/attribute
+5	が	weather/find	O
+6	必	weather/find	O
+7	要	weather/find	O
+8	です	weather/find	O
+9	か	weather/find	O
+10	？	weather/find	O
+
+# id: 26
+# text-en: turn off alarm
+# text: アラーム を オフ
+# intent: alarm/cancel_alarm
+1	アラーム	alarm/cancel_alarm	O
+2	を	alarm/cancel_alarm	O
+3	オフ	alarm/cancel_alarm	O
+
+# id: 180
+# text-en: What weather warnings do I have?
+# text: どの よう な 気象 警報 が あり ます か ？
+# intent: weather/find
+1	どの	weather/find	O
+2	よう	weather/find	O
+3	な	weather/find	O
+4	気	weather/find	O
+5	象	weather/find	O
+6	警	weather/find	B-weather/attribute
+7	報	weather/find	I-weather/attribute
+8	が	weather/find	O
+9	あり	weather/find	O
+10	ます	weather/find	O
+11	か	weather/find	O
+12	？	weather/find	O
+
+# id: 123
+# text-en: Cancel the reminder for the meeting at the lodge
+# text: ロッジ で の 会議 の リマインダー を キャンセル する
+# intent: reminder/cancel_reminder
+1	ロッジ	reminder/cancel_reminder	B-reminder/todo
+2	で	reminder/cancel_reminder	I-reminder/todo
+3	の	reminder/cancel_reminder	I-reminder/todo
+4	会	reminder/cancel_reminder	I-reminder/todo
+5	議	reminder/cancel_reminder	I-reminder/todo
+6	の	reminder/cancel_reminder	O
+7	リマインダー	reminder/cancel_reminder	O
+8	を	reminder/cancel_reminder	O
+9	キャンセル	reminder/cancel_reminder	O
+10	する	reminder/cancel_reminder	O
+
+# id: 292
+# text-en: Should I wear a coat today
+# text: 今日 は コート を 着る べき です か
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	コート	weather/find	B-weather/attribute
+5	を	weather/find	O
+6	着	weather/find	O
+7	る	weather/find	O
+8	べき	weather/find	O
+9	です	weather/find	O
+10	か	weather/find	O
+
+# id: 234
+# text-en: Turn off all alarms.
+# text: すべて の アラーム を オフ に する 。
+# intent: alarm/cancel_alarm
+1	すべて	alarm/cancel_alarm	B-reference
+2	の	alarm/cancel_alarm	O
+3	アラーム	alarm/cancel_alarm	O
+4	を	alarm/cancel_alarm	O
+5	オフ	alarm/cancel_alarm	O
+6	に	alarm/cancel_alarm	O
+7	する	alarm/cancel_alarm	O
+8	。	alarm/cancel_alarm	O
+
+# id: 38
+# text-en: show all alarms
+# text: すべて の アラーム を 表示
+# intent: alarm/show_alarms
+1	すべて	alarm/show_alarms	B-reference
+2	の	alarm/show_alarms	O
+3	アラーム	alarm/show_alarms	O
+4	を	alarm/show_alarms	O
+5	表	alarm/show_alarms	O
+6	示	alarm/show_alarms	O
+
+# id: 30
+# text-en: Make a new alarm for Thursday at 1pm.
+# text: 木曜 日 の 午後 1 時 に 新しい アラーム を 作成 する 。
+# intent: alarm/set_alarm
+1	木	alarm/set_alarm	B-datetime
+2	曜	alarm/set_alarm	I-datetime
+3	日	alarm/set_alarm	I-datetime
+4	の	alarm/set_alarm	I-datetime
+5	午	alarm/set_alarm	I-datetime
+6	後	alarm/set_alarm	I-datetime
+7	1	alarm/set_alarm	I-datetime
+8	時	alarm/set_alarm	I-datetime
+9	に	alarm/set_alarm	O
+10	新	alarm/set_alarm	O
+11	しい	alarm/set_alarm	O
+12	アラーム	alarm/set_alarm	O
+13	を	alarm/set_alarm	O
+14	作	alarm/set_alarm	O
+15	成	alarm/set_alarm	O
+16	する	alarm/set_alarm	O
+17	。	alarm/set_alarm	O
+
+# id: 92
+# text-en: Remind me to go to the dentist next Monday.
+# text: 来週 の 月曜 日 に 歯 医者 に 行く よう に リマインド する 。
+# intent: reminder/set_reminder
+1	来	reminder/set_reminder	B-datetime
+2	週	reminder/set_reminder	I-datetime
+3	の	reminder/set_reminder	I-datetime
+4	月	reminder/set_reminder	I-datetime
+5	曜	reminder/set_reminder	I-datetime
+6	日	reminder/set_reminder	I-datetime
+7	に	reminder/set_reminder	O
+8	歯	reminder/set_reminder	B-reminder/todo
+9	医	reminder/set_reminder	I-reminder/todo
+10	者	reminder/set_reminder	I-reminder/todo
+11	に	reminder/set_reminder	I-reminder/todo
+12	行	reminder/set_reminder	I-reminder/todo
+13	く	reminder/set_reminder	I-reminder/todo
+14	よう	reminder/set_reminder	O
+15	に	reminder/set_reminder	O
+16	リマインド	reminder/set_reminder	O
+17	する	reminder/set_reminder	O
+18	。	reminder/set_reminder	O
+
+# id: 208
+# text-en: should I bring an umbrella today
+# text: 今日 は 傘 を 持っ て いき ます か
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	傘	weather/find	B-weather/attribute
+5	を	weather/find	O
+6	持	weather/find	O
+7	っ	weather/find	O
+8	て	weather/find	O
+9	いき	weather/find	O
+10	ます	weather/find	O
+11	か	weather/find	O
+
+# id: 173
+# text-en: how is the weather this week?
+# text: 今週 の 天気 は どう です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	週	weather/find	I-datetime
+3	の	weather/find	O
+4	天	weather/find	O
+5	気	weather/find	O
+6	は	weather/find	O
+7	どう	weather/find	O
+8	です	weather/find	O
+9	か	weather/find	O
+10	？	weather/find	O
+
+# id: 207
+# text-en: is it below freezing today?
+# text: 今日 は 氷点 下 です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	氷	weather/find	B-weather/attribute
+5	点	weather/find	I-weather/attribute
+6	下	weather/find	I-weather/attribute
+7	です	weather/find	O
+8	か	weather/find	O
+9	？	weather/find	O
+
+# id: 266
+# text-en: Delete all reminders
+# text: すべて の リマインダー を 削除 する
+# intent: reminder/cancel_reminder
+1	すべて	reminder/cancel_reminder	B-reference
+2	の	reminder/cancel_reminder	O
+3	リマインダー	reminder/cancel_reminder	O
+4	を	reminder/cancel_reminder	O
+5	削	reminder/cancel_reminder	O
+6	除	reminder/cancel_reminder	O
+7	する	reminder/cancel_reminder	O
+
+# id: 137
+# text-en: Is it going to rain today?
+# text: 今日 は 雨 が 降り ます か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	雨	weather/find	B-weather/attribute
+5	が	weather/find	O
+6	降	weather/find	O
+7	り	weather/find	O
+8	ます	weather/find	O
+9	か	weather/find	O
+10	？	weather/find	O
+
+# id: 145
+# text-en: Will it rain this weekend?
+# text: 今週 末 は 雨 が 降り ます か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	週	weather/find	I-datetime
+3	末	weather/find	I-datetime
+4	は	weather/find	O
+5	雨	weather/find	B-weather/attribute
+6	が	weather/find	O
+7	降	weather/find	O
+8	り	weather/find	O
+9	ます	weather/find	O
+10	か	weather/find	O
+11	？	weather/find	O
+
+# id: 256
+# text-en: Set reminder for mom's visit next week
+# text: 来週 の ママ の 訪問 の リマインダー を 設定 する
+# intent: reminder/set_reminder
+1	来	reminder/set_reminder	B-datetime
+2	週	reminder/set_reminder	I-datetime
+3	の	reminder/set_reminder	O
+4	ママ	reminder/set_reminder	B-reminder/todo
+5	の	reminder/set_reminder	I-reminder/todo
+6	訪	reminder/set_reminder	I-reminder/todo
+7	問	reminder/set_reminder	I-reminder/todo
+8	の	reminder/set_reminder	O
+9	リマインダー	reminder/set_reminder	O
+10	を	reminder/set_reminder	O
+11	設	reminder/set_reminder	O
+12	定	reminder/set_reminder	O
+13	する	reminder/set_reminder	O
+
+# id: 288
+# text-en: Will it snow tomorrow?
+# text: 明日 は 雪 が 降り ます か ？
+# intent: weather/find
+1	明	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	雪	weather/find	B-weather/attribute
+5	が	weather/find	O
+6	降	weather/find	O
+7	り	weather/find	O
+8	ます	weather/find	O
+9	か	weather/find	O
+10	？	weather/find	O
+
+# id: 89
+# text-en: show all reminders
+# text: すべて の リマインダー を 表示
+# intent: reminder/show_reminders
+1	すべて	reminder/show_reminders	B-reference
+2	の	reminder/show_reminders	O
+3	リマインダー	reminder/show_reminders	O
+4	を	reminder/show_reminders	O
+5	表	reminder/show_reminders	O
+6	示	reminder/show_reminders	O
+
+# id: 176
+# text-en: Do I need a coat today?
+# text: 今日 は コート が 必要 です か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	は	weather/find	O
+4	コート	weather/find	B-weather/attribute
+5	が	weather/find	O
+6	必	weather/find	O
+7	要	weather/find	O
+8	です	weather/find	O
+9	か	weather/find	O
+10	？	weather/find	O
+
+# id: 278
+# text-en: is it going to snow thursday
+# text: 木曜 日 は 雪 に なり ます か
+# intent: weather/find
+1	木	weather/find	B-datetime
+2	曜	weather/find	I-datetime
+3	日	weather/find	I-datetime
+4	は	weather/find	O
+5	雪	weather/find	B-weather/attribute
+6	に	weather/find	O
+7	なり	weather/find	O
+8	ます	weather/find	O
+9	か	weather/find	O
+
+# id: 94
+# text-en: Remind me to buy coffee at Starbucks this afternoon
+# text: 今日 の 午後 、 スターバックス で コーヒー を 買う よう に リマインド する
+# intent: reminder/set_reminder
+1	今	reminder/set_reminder	B-datetime
+2	日	reminder/set_reminder	I-datetime
+3	の	reminder/set_reminder	I-datetime
+4	午	reminder/set_reminder	I-datetime
+5	後	reminder/set_reminder	I-datetime
+6	、	reminder/set_reminder	O
+7	スターバックス	reminder/set_reminder	B-reminder/todo
+8	で	reminder/set_reminder	I-reminder/todo
+9	コーヒー	reminder/set_reminder	I-reminder/todo
+10	を	reminder/set_reminder	I-reminder/todo
+11	買	reminder/set_reminder	I-reminder/todo
+12	う	reminder/set_reminder	I-reminder/todo
+13	よう	reminder/set_reminder	O
+14	に	reminder/set_reminder	O
+15	リマインド	reminder/set_reminder	O
+16	する	reminder/set_reminder	O
+
+# id: 54
+# text-en: Set an alarm for every ten minutes, starting at 5:30 and ending at 6 am.
+# text: 5 時 3 0 分 から 午前 6 時 まで 、 1 0 分 ごと に アラーム を 設定 する 。
+# intent: alarm/set_alarm
+1	5	alarm/set_alarm	B-recurring_datetime
+2	時	alarm/set_alarm	I-recurring_datetime
+3	3	alarm/set_alarm	I-recurring_datetime
+4	0	alarm/set_alarm	I-recurring_datetime
+5	分	alarm/set_alarm	I-recurring_datetime
+6	から	alarm/set_alarm	I-recurring_datetime
+7	午	alarm/set_alarm	I-recurring_datetime
+8	前	alarm/set_alarm	I-recurring_datetime
+9	6	alarm/set_alarm	I-recurring_datetime
+10	時	alarm/set_alarm	I-recurring_datetime
+11	まで	alarm/set_alarm	I-recurring_datetime
+12	、	alarm/set_alarm	I-recurring_datetime
+13	1	alarm/set_alarm	I-recurring_datetime
+14	0	alarm/set_alarm	I-recurring_datetime
+15	分	alarm/set_alarm	I-recurring_datetime
+16	ごと	alarm/set_alarm	I-recurring_datetime
+17	に	alarm/set_alarm	O
+18	アラーム	alarm/set_alarm	O
+19	を	alarm/set_alarm	O
+20	設	alarm/set_alarm	O
+21	定	alarm/set_alarm	O
+22	する	alarm/set_alarm	O
+23	。	alarm/set_alarm	O
+
+# id: 178
+# text-en: Is it going to rain on Saturday?
+# text: 土曜 日 は 雨 が 降り ます か ？
+# intent: weather/find
+1	土	weather/find	B-datetime
+2	曜	weather/find	I-datetime
+3	日	weather/find	I-datetime
+4	は	weather/find	O
+5	雨	weather/find	B-weather/attribute
+6	が	weather/find	O
+7	降	weather/find	O
+8	り	weather/find	O
+9	ます	weather/find	O
+10	か	weather/find	O
+11	？	weather/find	O
+
+# id: 217
+# text-en: Set eh alarm to 7:20am for the shoe release.
+# text: 靴 の リリース の ため に アラーム を 午前 7 時 2 0 分 に 設定 する 。
+# intent: alarm/set_alarm
+1	靴	alarm/set_alarm	B-reminder/todo
+2	の	alarm/set_alarm	I-reminder/todo
+3	リリース	alarm/set_alarm	I-reminder/todo
+4	の	alarm/set_alarm	O
+5	ため	alarm/set_alarm	O
+6	に	alarm/set_alarm	O
+7	アラーム	alarm/set_alarm	O
+8	を	alarm/set_alarm	O
+9	午	alarm/set_alarm	B-datetime
+10	前	alarm/set_alarm	I-datetime
+11	7	alarm/set_alarm	I-datetime
+12	時	alarm/set_alarm	I-datetime
+13	2	alarm/set_alarm	I-datetime
+14	0	alarm/set_alarm	I-datetime
+15	分	alarm/set_alarm	I-datetime
+16	に	alarm/set_alarm	O
+17	設	alarm/set_alarm	O
+18	定	alarm/set_alarm	O
+19	する	alarm/set_alarm	O
+20	。	alarm/set_alarm	O
+
+# id: 297
+# text-en: Will there be storms in Bordentown today
+# text: 今日 、 ボーデンタウン に 嵐 は 来 ます か
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	日	weather/find	I-datetime
+3	、	weather/find	O
+4	ボーデンタウン	weather/find	B-location
+5	に	weather/find	O
+6	嵐	weather/find	B-weather/attribute
+7	は	weather/find	O
+8	来	weather/find	O
+9	ます	weather/find	O
+10	か	weather/find	O
+
+# id: 159
+# text-en: what is the current temperature
+# text: 現在 の 気温 は 何 度
+# intent: weather/find
+1	現	weather/find	B-datetime
+2	在	weather/find	I-datetime
+3	の	weather/find	O
+4	気	weather/find	B-weather/attribute
+5	温	weather/find	I-weather/attribute
+6	は	weather/find	O
+7	何	weather/find	O
+8	度	weather/find	O
+
+# id: 257
+# text-en: remind me to make Dan's lunch at 7:30am tomorrow.
+# text: 明日 の 午前 7 時 3 0 分 に ダン の ランチ を 作る よう に リマインド し て 。
+# intent: reminder/set_reminder
+1	明	reminder/set_reminder	B-datetime
+2	日	reminder/set_reminder	I-datetime
+3	の	reminder/set_reminder	I-datetime
+4	午	reminder/set_reminder	I-datetime
+5	前	reminder/set_reminder	I-datetime
+6	7	reminder/set_reminder	I-datetime
+7	時	reminder/set_reminder	I-datetime
+8	3	reminder/set_reminder	I-datetime
+9	0	reminder/set_reminder	I-datetime
+10	分	reminder/set_reminder	I-datetime
+11	に	reminder/set_reminder	O
+12	ダン	reminder/set_reminder	B-reminder/todo
+13	の	reminder/set_reminder	I-reminder/todo
+14	ランチ	reminder/set_reminder	I-reminder/todo
+15	を	reminder/set_reminder	I-reminder/todo
+16	作	reminder/set_reminder	I-reminder/todo
+17	る	reminder/set_reminder	I-reminder/todo
+18	よう	reminder/set_reminder	O
+19	に	reminder/set_reminder	O
+20	リマインド	reminder/set_reminder	O
+21	し	reminder/set_reminder	O
+22	て	reminder/set_reminder	O
+23	。	reminder/set_reminder	O
+
+# id: 77
+# text-en: Set alarm for 6:30am tomorrow.
+# text: アラーム を 明日 の 午前 6 時 3 0 分 に 設定 する 。
+# intent: alarm/set_alarm
+1	アラーム	alarm/set_alarm	O
+2	を	alarm/set_alarm	O
+3	明	alarm/set_alarm	B-datetime
+4	日	alarm/set_alarm	I-datetime
+5	の	alarm/set_alarm	I-datetime
+6	午	alarm/set_alarm	I-datetime
+7	前	alarm/set_alarm	I-datetime
+8	6	alarm/set_alarm	I-datetime
+9	時	alarm/set_alarm	I-datetime
+10	3	alarm/set_alarm	I-datetime
+11	0	alarm/set_alarm	I-datetime
+12	分	alarm/set_alarm	I-datetime
+13	に	alarm/set_alarm	O
+14	設	alarm/set_alarm	O
+15	定	alarm/set_alarm	O
+16	する	alarm/set_alarm	O
+17	。	alarm/set_alarm	O
+
+# id: 110
+# text-en: Do I have any reminders set?
+# text: リマインダー を 設定 し て い ます か ？
+# intent: reminder/show_reminders
+1	リマインダー	reminder/show_reminders	O
+2	を	reminder/show_reminders	O
+3	設	reminder/show_reminders	O
+4	定	reminder/show_reminders	O
+5	し	reminder/show_reminders	O
+6	て	reminder/show_reminders	O
+7	い	reminder/show_reminders	O
+8	ます	reminder/show_reminders	O
+9	か	reminder/show_reminders	O
+10	？	reminder/show_reminders	O
+
+# id: 124
+# text-en: Is my dentist appointment in my reminder ?
+# text: リマインダー に 歯 医者 の 予約 は あり ます か ？
+# intent: reminder/show_reminders
+1	リマインダー	reminder/show_reminders	O
+2	に	reminder/show_reminders	O
+3	歯	reminder/show_reminders	B-reminder/todo
+4	医	reminder/show_reminders	I-reminder/todo
+5	者	reminder/show_reminders	I-reminder/todo
+6	の	reminder/show_reminders	I-reminder/todo
+7	予	reminder/show_reminders	I-reminder/todo
+8	約	reminder/show_reminders	I-reminder/todo
+9	は	reminder/show_reminders	O
+10	あり	reminder/show_reminders	O
+11	ます	reminder/show_reminders	O
+12	か	reminder/show_reminders	O
+13	？	reminder/show_reminders	O
+
+# id: 199
+# text-en: when will it stop raining?
+# text: いつ 雨 が やみ ます か ？
+# intent: weather/find
+1	いつ	weather/find	O
+2	雨	weather/find	B-weather/attribute
+3	が	weather/find	O
+4	やみ	weather/find	O
+5	ます	weather/find	O
+6	か	weather/find	O
+7	？	weather/find	O
+
+# id: 281
+# text-en: Is it going to snow this week?
+# text: 今週 は 雪 が 降り ます か ？
+# intent: weather/find
+1	今	weather/find	B-datetime
+2	週	weather/find	I-datetime
+3	は	weather/find	O
+4	雪	weather/find	B-weather/attribute
+5	が	weather/find	O
+6	降	weather/find	O
+7	り	weather/find	O
+8	ます	weather/find	O
+9	か	weather/find	O
+10	？	weather/find	O
+
+# id: 26
+# text-en: turn off alarm
+# text: アラーム を オフ
+# intent: alarm/cancel_alarm
+1	アラーム	alarm/cancel_alarm	O
+2	を	alarm/cancel_alarm	O
+3	オフ	alarm/cancel_alarm	O
+

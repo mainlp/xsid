@@ -1,0 +1,2 @@
+Namespace(ignore_case=False, order=4, ref='./data/mt.tok/en-it/dev.it', sacrebleu=False, sentence_bleu=False, sys='./data/multiNLU/mt.train.it/dev.best.tok')
+BLEU4 = 44.73, 72.9/52.9/40.7/31.6 (BP=0.948, ratio=0.949, syslen=2926474, reflen=3083783)

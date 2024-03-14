@@ -1,0 +1,6092 @@
+# id: 1
+# text-en: show all reminders
+# text: 显示所有的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	所有	reminder/show_reminders	B-reference
+3	的	reminder/show_reminders	O
+4	提醒	reminder/show_reminders	O
+
+# id: 2
+# text-en: Do I need a sweater?
+# text: 我需要毛衣吗？
+# intent: weather/find
+1	我	weather/find	O
+2	需要	weather/find	O
+3	毛衣	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 3
+# text-en: Add a reminder for today at 4pm
+# text: 增加一项提醒在今天下午4点
+# intent: reminder/set_reminder
+1	增加	reminder/set_reminder	O
+2	一项	reminder/set_reminder	O
+3	提醒	reminder/set_reminder	O
+4	在	reminder/set_reminder	O
+5	今天	reminder/set_reminder	B-datetime
+6	下午	reminder/set_reminder	I-datetime
+7	4点	reminder/set_reminder	I-datetime
+
+# id: 4
+# text-en: Cancel my reminder
+# text: 取消我的提醒
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	我的	reminder/cancel_reminder	B-reference
+3	提醒	reminder/cancel_reminder	O
+
+# id: 5
+# text-en: Remind me to get gas.
+# text: 提醒我加油。
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	加油	reminder/set_reminder	B-reminder/todo
+4	。	reminder/set_reminder	O
+
+# id: 6
+# text-en: Do I need an umbrella on Wednesday?
+# text: 周三我需要带雨伞吗？
+# intent: weather/find
+1	周三	weather/find	B-datetime
+2	我	weather/find	O
+3	需要	weather/find	O
+4	带	weather/find	O
+5	雨伞	weather/find	B-weather/attribute
+6	吗？	weather/find	O
+
+# id: 7
+# text-en: snooze my alarms for five minutes
+# text: 推迟我的闹钟五分钟
+# intent: alarm/snooze_alarm
+1	推迟	alarm/snooze_alarm	O
+2	我的	alarm/snooze_alarm	O
+3	闹钟	alarm/snooze_alarm	O
+4	五	alarm/snooze_alarm	B-datetime
+5	分钟	alarm/snooze_alarm	I-datetime
+
+# id: 8
+# text-en: set a birthday reminder for max
+# text: 设置一个max生日的提醒
+# intent: reminder/set_reminder
+1	设置	reminder/set_reminder	O
+2	一个	reminder/set_reminder	O
+3	max	reminder/set_reminder	B-reminder/todo
+4	生日	reminder/set_reminder	I-reminder/todo
+5	的	reminder/set_reminder	I-reminder/todo
+6	提醒	reminder/set_reminder	I-reminder/todo
+
+# id: 9
+# text-en: Show me all reminders
+# text: 给我看所有的提醒
+# intent: reminder/show_reminders
+1	给	reminder/show_reminders	O
+2	我看	reminder/show_reminders	O
+3	所有	reminder/show_reminders	B-reference
+4	的	reminder/show_reminders	O
+5	提醒	reminder/show_reminders	O
+
+# id: 10
+# text-en: Show all alarms.
+# text: 显示所有的闹钟。
+# intent: alarm/show_alarms
+1	显示	alarm/show_alarms	O
+2	所有	alarm/show_alarms	B-reference
+3	的	alarm/show_alarms	O
+4	闹钟。	alarm/show_alarms	O
+
+# id: 11
+# text-en: Is it going to rain today?
+# text: 今天会下雨吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 12
+# text-en: Set alarm for 8am
+# text: 设置闹钟为上午8点
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	为	alarm/set_alarm	O
+4	上午	alarm/set_alarm	B-datetime
+5	8点	alarm/set_alarm	I-datetime
+
+# id: 13
+# text-en: What is the temperature today?
+# text: 今天的气温怎么样？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	的	weather/find	O
+3	气温	weather/find	B-weather/attribute
+4	怎么样？	weather/find	O
+
+# id: 14
+# text-en: Show my reminder
+# text: 显示我的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	我的	reminder/show_reminders	B-reference
+3	提醒	reminder/show_reminders	O
+
+# id: 15
+# text-en: Show all alarms
+# text: 显示所有的闹钟
+# intent: alarm/show_alarms
+1	显示	alarm/show_alarms	O
+2	所有	alarm/show_alarms	B-reference
+3	的	alarm/show_alarms	O
+4	闹钟	alarm/show_alarms	O
+
+# id: 16
+# text-en: Remind me to talk to Ben about Georgia
+# text: 提醒我去和Ben谈关于Georgia
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	B-reminder/todo
+3	去和	reminder/set_reminder	I-reminder/todo
+4	Ben	reminder/set_reminder	I-reminder/todo
+5	谈	reminder/set_reminder	I-reminder/todo
+6	关于	reminder/set_reminder	I-reminder/todo
+7	Georgia	reminder/set_reminder	I-reminder/todo
+
+# id: 17
+# text-en: Set alarm for 5 am
+# text: 设置闹钟会上午5点
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	会	alarm/set_alarm	O
+4	上午	alarm/set_alarm	B-datetime
+5	5点	alarm/set_alarm	I-datetime
+
+# id: 18
+# text-en: is it cloudy today
+# text: 今天会是阴天吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	是	weather/find	O
+4	阴天	weather/find	B-weather/attribute
+5	吗？	weather/find	O
+
+# id: 19
+# text-en: How many inches of rain will we get today?
+# text: 今天我们要下几英寸的雨？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	我们	weather/find	O
+3	要	weather/find	O
+4	下	weather/find	O
+5	几	weather/find	O
+6	英寸	weather/find	B-weather/attribute
+7	的	weather/find	I-weather/attribute
+8	雨	weather/find	I-weather/attribute
+9	？	weather/find	O
+
+# id: 20
+# text-en: Remind me to call my sister tomorrow
+# text: 提醒我明天打电话给我的姐姐
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	明天	reminder/set_reminder	B-datetime
+4	打电话	reminder/set_reminder	B-reminder/todo
+5	给	reminder/set_reminder	I-reminder/todo
+6	我的	reminder/set_reminder	I-reminder/todo
+7	姐姐	reminder/set_reminder	I-reminder/todo
+
+# id: 21
+# text-en: stop alarm
+# text: 关掉闹钟
+# intent: alarm/cancel_alarm
+1	关掉	alarm/cancel_alarm	O
+2	闹钟	alarm/cancel_alarm	O
+
+# id: 22
+# text-en: Is it going to be hot this week?
+# text: 这周将会热吗？
+# intent: weather/find
+1	这周	weather/find	B-datetime
+2	将会	weather/find	O
+3	热	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 23
+# text-en: Set alarm for 3pm.
+# text: 设置下午3点的闹钟。
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	下午	alarm/set_alarm	B-datetime
+3	3点	alarm/set_alarm	I-datetime
+4	的闹钟。	alarm/set_alarm	O
+
+# id: 24
+# text-en: will it snow today
+# text: 今天会下雪吗
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雪	weather/find	B-weather/attribute
+4	吗	weather/find	O
+
+# id: 25
+# text-en: delete all alarms
+# text: 删除所有的闹钟
+# intent: alarm/cancel_alarm
+1	删除	alarm/cancel_alarm	O
+2	所有	alarm/cancel_alarm	B-reference
+3	的	alarm/cancel_alarm	O
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 26
+# text-en: Show me my reminders
+# text: 给我看我的提醒
+# intent: reminder/show_reminders
+1	给	reminder/show_reminders	O
+2	我	reminder/show_reminders	O
+3	看	reminder/show_reminders	O
+4	我的	reminder/show_reminders	B-reference
+5	提醒	reminder/show_reminders	O
+
+# id: 27
+# text-en: How much time is left on alarm
+# text: 闹钟还剩多少时间了
+# intent: alarm/time_left_on_alarm
+1	闹钟	alarm/time_left_on_alarm	O
+2	还剩	alarm/time_left_on_alarm	O
+3	多少	alarm/time_left_on_alarm	O
+4	时间了	alarm/time_left_on_alarm	O
+
+# id: 28
+# text-en: What are my reminders?
+# text: 我的提醒是什么？
+# intent: reminder/show_reminders
+1	我的	reminder/show_reminders	B-reference
+2	提醒	reminder/show_reminders	O
+3	是什么？	reminder/show_reminders	O
+
+# id: 29
+# text-en: Set an alarm for 8am daily
+# text: 设置一个每天上午8点的闹钟
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	一个	alarm/set_alarm	O
+3	每天	alarm/set_alarm	B-recurring_datetime
+4	上午	alarm/set_alarm	I-recurring_datetime
+5	8	alarm/set_alarm	I-recurring_datetime
+6	点	alarm/set_alarm	I-recurring_datetime
+7	的闹钟	alarm/set_alarm	O
+
+# id: 30
+# text-en: can you show me the alarms?
+# text: 你能给我看下闹钟吗？
+# intent: alarm/show_alarms
+1	你	alarm/show_alarms	O
+2	能	alarm/show_alarms	O
+3	给	alarm/show_alarms	O
+4	我	alarm/show_alarms	O
+5	看下	alarm/show_alarms	O
+6	闹钟	alarm/show_alarms	O
+7	吗？	alarm/show_alarms	O
+
+# id: 31
+# text-en: Is Disney world expecting storms today?
+# text: 迪士尼世界今天会有风暴吗？
+# intent: weather/find
+1	迪士尼	weather/find	B-location
+2	世界	weather/find	I-location
+3	今天	weather/find	B-datetime
+4	会	weather/find	O
+5	有	weather/find	O
+6	风暴	weather/find	B-weather/attribute
+7	吗？	weather/find	O
+
+# id: 32
+# text-en: will it snow today
+# text: 今天会下雪吗
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雪	weather/find	B-weather/attribute
+4	吗	weather/find	O
+
+# id: 33
+# text-en: show all alarms
+# text: 显示所有的闹钟
+# intent: alarm/show_alarms
+1	显示	alarm/show_alarms	O
+2	所有	alarm/show_alarms	B-reference
+3	的	alarm/show_alarms	O
+4	闹钟	alarm/show_alarms	O
+
+# id: 34
+# text-en: Is it cold today?
+# text: 今天冷吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	冷	weather/find	B-weather/attribute
+3	吗？	weather/find	O
+
+# id: 35
+# text-en: Please cancel the alarm for Thursday morning.
+# text: 请取消在周四上午的闹钟。
+# intent: alarm/cancel_alarm
+1	请	alarm/cancel_alarm	O
+2	取消	alarm/cancel_alarm	O
+3	在	alarm/cancel_alarm	O
+4	周四	alarm/cancel_alarm	B-datetime
+5	上午	alarm/cancel_alarm	I-datetime
+6	的	alarm/cancel_alarm	O
+7	闹钟。	alarm/cancel_alarm	O
+
+# id: 36
+# text-en: Is it going to rain today?
+# text: 今天会下雨吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 37
+# text-en: is it snowing in canada
+# text: 加拿大正在下雪吗
+# intent: weather/find
+1	加拿大	weather/find	B-location
+2	正在	weather/find	O
+3	下雪	weather/find	B-weather/attribute
+4	吗	weather/find	O
+
+# id: 38
+# text-en: What will the high be today?
+# text: 今天 的 最高 气温 将会 是 多少 ?
+# intent: weather/find
+1	今天	weather/find	O
+2	的	weather/find	O
+3	最高	weather/find	O
+4	气温	weather/find	O
+5	将会	weather/find	O
+6	是	weather/find	O
+7	多少	weather/find	O
+8	?	weather/find	O
+
+# id: 39
+# text-en: Will it snow enough tonight to make travelling hazardous?
+# text: 今晚下雪会使旅行变得危险吗？
+# intent: weather/find
+1	今晚	weather/find	B-datetime
+2	下雪	weather/find	B-weather/attribute
+3	会	weather/find	O
+4	使	weather/find	O
+5	旅行	weather/find	O
+6	变得	weather/find	O
+7	危险	weather/find	O
+8	吗？	weather/find	O
+
+# id: 40
+# text-en: show all reminders
+# text: 显示所有的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	所有	reminder/show_reminders	B-reference
+3	的	reminder/show_reminders	O
+4	提醒	reminder/show_reminders	O
+
+# id: 41
+# text-en: delete all reminders
+# text: 删除所有的提醒
+# intent: reminder/cancel_reminder
+1	删除	reminder/cancel_reminder	O
+2	所有	reminder/cancel_reminder	B-reference
+3	的	reminder/cancel_reminder	O
+4	提醒	reminder/cancel_reminder	O
+
+# id: 42
+# text-en: will i need a jacket tomorrow?
+# text: 明天我需要带一件外套吗？
+# intent: weather/find
+1	明天	weather/find	B-datetime
+2	我	weather/find	O
+3	需要	weather/find	O
+4	带	weather/find	O
+5	一件	weather/find	O
+6	外套	weather/find	B-weather/attribute
+7	吗？	weather/find	O
+
+# id: 43
+# text-en: How much time is left on alarm
+# text: 闹钟还剩多少时间了
+# intent: alarm/time_left_on_alarm
+1	闹钟	alarm/time_left_on_alarm	O
+2	还剩	alarm/time_left_on_alarm	O
+3	多少	alarm/time_left_on_alarm	O
+4	时间了	alarm/time_left_on_alarm	O
+
+# id: 44
+# text-en: Pause the alarm
+# text: 暂停闹钟
+# intent: alarm/snooze_alarm
+1	暂停	alarm/snooze_alarm	O
+2	闹钟	alarm/snooze_alarm	O
+
+# id: 45
+# text-en: Show me all the alarms
+# text: 告诉我所有的闹钟
+# intent: alarm/show_alarms
+1	告诉	alarm/show_alarms	O
+2	我	alarm/show_alarms	O
+3	所有	alarm/show_alarms	B-reference
+4	的	alarm/show_alarms	O
+5	闹钟	alarm/show_alarms	O
+
+# id: 46
+# text-en: What's the weather like in yellowstone?
+# text: 黄石的天气怎么样？
+# intent: weather/find
+1	黄石	weather/find	B-location
+2	的	weather/find	O
+3	天气	weather/find	O
+4	怎么样？	weather/find	O
+
+# id: 47
+# text-en: What's the weather like today?
+# text: 今天的天气怎么样？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	的	weather/find	O
+3	天气	weather/find	O
+4	怎么样？	weather/find	O
+
+# id: 48
+# text-en: Delete my reminder for picking up Patrick from school tomorrow.
+# text: 删除我的明天去学校接Partick的提醒。
+# intent: reminder/cancel_reminder
+1	删除	reminder/cancel_reminder	O
+2	我的	reminder/cancel_reminder	B-reference
+3	明天	reminder/cancel_reminder	B-datetime
+4	去	reminder/cancel_reminder	B-reminder/todo
+5	学校	reminder/cancel_reminder	I-reminder/todo
+6	接	reminder/cancel_reminder	I-reminder/todo
+7	Partick	reminder/cancel_reminder	I-reminder/todo
+8	的提醒。	reminder/cancel_reminder	O
+
+# id: 49
+# text-en: Remind me tomorrow at this time to schedule a doctor appointment
+# text: 提醒我明天这个时候去安排医生预约
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	B-datetime
+3	明天	reminder/set_reminder	I-datetime
+4	这个	reminder/set_reminder	I-datetime
+5	时候	reminder/set_reminder	I-datetime
+6	去	reminder/set_reminder	O
+7	安排	reminder/set_reminder	B-reminder/todo
+8	医生	reminder/set_reminder	I-reminder/todo
+9	预约	reminder/set_reminder	I-reminder/todo
+
+# id: 50
+# text-en: Remind me to drop off rent
+# text: 提醒我去交房租
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	去	reminder/set_reminder	O
+4	交	reminder/set_reminder	B-reminder/todo
+5	房租	reminder/set_reminder	I-reminder/todo
+
+# id: 51
+# text-en: when will the rain end?
+# text: 雨什么时候会停？博登敦
+# intent: weather/find
+1	雨	weather/find	B-weather/attribute
+2	什么	weather/find	O
+3	时候	weather/find	O
+4	会	weather/find	O
+5	停？博登敦	weather/find	O
+
+# id: 52
+# text-en: cancel alarms
+# text: 取消闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	闹钟	alarm/cancel_alarm	O
+
+# id: 53
+# text-en: Remind me to call Stephanie on Tuesday
+# text: 提醒我周二打电话给Stephanie
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	周二	reminder/set_reminder	B-datetime
+4	打电话	reminder/set_reminder	B-reminder/todo
+5	给Stephanie	reminder/set_reminder	I-reminder/todo
+
+# id: 54
+# text-en: show all my alarms
+# text: 显示所有我的闹钟
+# intent: alarm/show_alarms
+1	显示	alarm/show_alarms	O
+2	所有	alarm/show_alarms	B-reference
+3	我的	alarm/show_alarms	I-reference
+4	闹钟	alarm/show_alarms	O
+
+# id: 55
+# text-en: How hot will it get today?
+# text: 今天会变的多热？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	变	weather/find	O
+4	的	weather/find	O
+5	多	weather/find	O
+6	热	weather/find	B-weather/attribute
+7	？	weather/find	O
+
+# id: 56
+# text-en: Set alarm for 5 pm tonight
+# text: 设置闹钟在今晚5点
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	在	alarm/set_alarm	O
+4	今晚	alarm/set_alarm	B-datetime
+5	5点	alarm/set_alarm	I-datetime
+
+# id: 57
+# text-en: remind me to go to the doctors on august 21st 3 pm
+# text: 提醒我八月21号下午3点去看医生
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	八月	reminder/set_reminder	B-datetime
+4	21	reminder/set_reminder	I-datetime
+5	号	reminder/set_reminder	I-datetime
+6	下午3点	reminder/set_reminder	I-datetime
+7	去	reminder/set_reminder	O
+8	看	reminder/set_reminder	B-reminder/todo
+9	医生	reminder/set_reminder	I-reminder/todo
+
+# id: 58
+# text-en: cancel my recurring reminder to take meds daily at 7 am
+# text: 取消我的每天早上7点服用药物的定期提醒
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	我的	reminder/cancel_reminder	O
+3	每天	reminder/cancel_reminder	B-recurring_datetime
+4	早上	reminder/cancel_reminder	I-recurring_datetime
+5	7点	reminder/cancel_reminder	I-recurring_datetime
+6	服用	reminder/cancel_reminder	B-reminder/todo
+7	药物	reminder/cancel_reminder	I-reminder/todo
+8	的	reminder/cancel_reminder	O
+9	定期	reminder/cancel_reminder	O
+10	提醒	reminder/cancel_reminder	O
+
+# id: 59
+# text-en: when does the forecast next show rain
+# text: 预报什么时候下雨
+# intent: weather/find
+1	预报	weather/find	O
+2	什么	weather/find	O
+3	时候	weather/find	O
+4	下雨	weather/find	B-weather/attribute
+
+# id: 60
+# text-en: What time is my alarm set for tomorrow morning?
+# text: 我明天早上的闹钟设置的是什么时间？
+# intent: alarm/show_alarms
+1	我	alarm/show_alarms	B-reference
+2	明天	alarm/show_alarms	B-datetime
+3	早上	alarm/show_alarms	I-datetime
+4	的	alarm/show_alarms	O
+5	闹钟	alarm/show_alarms	O
+6	设置	alarm/show_alarms	O
+7	的	alarm/show_alarms	O
+8	是	alarm/show_alarms	O
+9	什么	alarm/show_alarms	O
+10	时间？	alarm/show_alarms	O
+
+# id: 61
+# text-en: will it snow today
+# text: 今天会下雪吗
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雪	weather/find	B-weather/attribute
+4	吗	weather/find	O
+
+# id: 62
+# text-en: Turn off my alarm.
+# text: 关掉我的闹钟
+# intent: alarm/cancel_alarm
+1	关	alarm/cancel_alarm	O
+2	掉	alarm/cancel_alarm	O
+3	我的	alarm/cancel_alarm	B-reference
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 63
+# text-en: Cancel all alarms
+# text: 取消所有的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	所有	alarm/cancel_alarm	B-reference
+3	的	alarm/cancel_alarm	O
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 64
+# text-en: remind me to buy groceries
+# text: 提醒我去购买杂货
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	去	reminder/set_reminder	O
+4	购买	reminder/set_reminder	B-reminder/todo
+5	杂货	reminder/set_reminder	I-reminder/todo
+
+# id: 65
+# text-en: I need an alarm set for a 9 am breakfast
+# text: 我需要一个闹钟设置在上午9点早餐
+# intent: alarm/set_alarm
+1	我	alarm/set_alarm	O
+2	需要	alarm/set_alarm	O
+3	一个	alarm/set_alarm	O
+4	闹钟	alarm/set_alarm	O
+5	设置	alarm/set_alarm	O
+6	在	alarm/set_alarm	O
+7	上午9点	alarm/set_alarm	B-datetime
+8	早餐	alarm/set_alarm	O
+
+# id: 66
+# text-en: set reminder to watch the Colts one hour before game starts
+# text: 设置提醒在游戏开始前一小时观看Colts
+# intent: reminder/set_reminder
+1	设置	reminder/set_reminder	O
+2	提醒	reminder/set_reminder	O
+3	在	reminder/set_reminder	B-datetime
+4	游戏	reminder/set_reminder	I-datetime
+5	开始	reminder/set_reminder	I-datetime
+6	前	reminder/set_reminder	I-datetime
+7	一小时	reminder/set_reminder	I-datetime
+8	观	reminder/set_reminder	O
+9	看	reminder/set_reminder	B-reminder/todo
+10	Colts	reminder/set_reminder	I-reminder/todo
+
+# id: 67
+# text-en: cancel all alarms
+# text: 取消所有的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	所有	alarm/cancel_alarm	B-reference
+3	的	alarm/cancel_alarm	O
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 68
+# text-en: Cancel my third reminder on this list.
+# text: 取消列表上我的第三条提醒。
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	列表上	reminder/cancel_reminder	O
+3	我的	reminder/cancel_reminder	B-reference
+4	第三条	reminder/cancel_reminder	I-reference
+5	提醒。	reminder/cancel_reminder	O
+
+# id: 69
+# text-en: set alarm for 6 am
+# text: 设置闹钟在上午6点
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	在	alarm/set_alarm	O
+4	上午6点	alarm/set_alarm	B-datetime
+
+# id: 70
+# text-en: Reset this alarm now and start at 2 pm
+# text: 重新设置这个闹钟现在并且在下午2点开始
+# intent: alarm/cancel_alarm
+1	重新设置	alarm/cancel_alarm	O
+2	这个	alarm/cancel_alarm	B-reference
+3	闹钟	alarm/cancel_alarm	O
+4	现在	alarm/cancel_alarm	B-datetime
+5	并且	alarm/cancel_alarm	O
+6	在	alarm/cancel_alarm	O
+7	下午2点	alarm/cancel_alarm	B-datetime
+8	开始	alarm/cancel_alarm	O
+
+# id: 71
+# text-en: Is it going to snow?
+# text: 今天会下雪吗？
+# intent: weather/find
+1	今天	weather/find	O
+2	会	weather/find	O
+3	下雪	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 72
+# text-en: Remind me to pay rent.
+# text: 提醒我付房租。
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	付	reminder/set_reminder	B-reminder/todo
+4	房租	reminder/set_reminder	I-reminder/todo
+5	。	reminder/set_reminder	O
+
+# id: 73
+# text-en: whats the low for tomorrow
+# text: 明天 的 最低 气温 是 多少
+# intent: weather/find
+1	明天	weather/find	O
+2	的	weather/find	O
+3	最低	weather/find	O
+4	气温	weather/find	O
+5	是	weather/find	O
+6	多少	weather/find	O
+
+# id: 74
+# text-en: Is it going to be sunny today?
+# text: 今天会是天晴吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	是	weather/find	O
+4	天晴	weather/find	B-weather/attribute
+5	吗？	weather/find	O
+
+# id: 75
+# text-en: How many reminders do I have today?
+# text: 我今天有多少个提醒？
+# intent: reminder/show_reminders
+1	我	reminder/show_reminders	O
+2	今天	reminder/show_reminders	B-datetime
+3	有	reminder/show_reminders	O
+4	多少个	reminder/show_reminders	O
+5	提醒？	reminder/show_reminders	O
+
+# id: 76
+# text-en: What are my reminders for tomorrow?
+# text: 明天我的提醒是什么？
+# intent: reminder/show_reminders
+1	明天	reminder/show_reminders	B-datetime
+2	我的	reminder/show_reminders	B-reference
+3	提醒	reminder/show_reminders	O
+4	是	reminder/show_reminders	O
+5	什么？	reminder/show_reminders	O
+
+# id: 77
+# text-en: Cancel all my reminders.
+# text: 取消我的所有的提醒
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	我的	reminder/cancel_reminder	B-reference
+3	所有	reminder/cancel_reminder	I-reference
+4	的	reminder/cancel_reminder	O
+5	提醒	reminder/cancel_reminder	O
+
+# id: 78
+# text-en: set alarm for 6am tomorrow
+# text: 设置明天上午6点的闹钟
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	明天	alarm/set_alarm	B-datetime
+3	上午6点	alarm/set_alarm	I-datetime
+4	的闹钟	alarm/set_alarm	O
+
+# id: 79
+# text-en: Set alarm for 30 minutes
+# text: 设置闹钟为30分钟
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	为	alarm/set_alarm	O
+4	30	alarm/set_alarm	B-datetime
+5	分钟	alarm/set_alarm	I-datetime
+
+# id: 80
+# text-en: Set an alarm for an hour from now.
+# text: 设置从现在开始一个小时之后的闹钟。
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	从	alarm/set_alarm	B-datetime
+3	现在开始	alarm/set_alarm	I-datetime
+4	一个	alarm/set_alarm	I-datetime
+5	小时	alarm/set_alarm	I-datetime
+6	之后	alarm/set_alarm	I-datetime
+7	的	alarm/set_alarm	O
+8	闹钟。	alarm/set_alarm	O
+
+# id: 81
+# text-en: cancel all alarms
+# text: 取消所有的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	所有	alarm/cancel_alarm	B-reference
+3	的	alarm/cancel_alarm	O
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 82
+# text-en: weather update Los Angeles
+# text: 洛杉矶的天气更新
+# intent: weather/find
+1	洛杉矶	weather/find	B-location
+2	的天气	weather/find	O
+3	更新	weather/find	O
+
+# id: 83
+# text-en: cancel all alarms
+# text: 取消所有的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	所有	alarm/cancel_alarm	B-reference
+3	的	alarm/cancel_alarm	O
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 84
+# text-en: How many reminders do I have today?
+# text: 我今天有多少个提醒？
+# intent: reminder/show_reminders
+1	我	reminder/show_reminders	O
+2	今天	reminder/show_reminders	B-datetime
+3	有	reminder/show_reminders	O
+4	多少个	reminder/show_reminders	O
+5	提醒？	reminder/show_reminders	O
+
+# id: 85
+# text-en: Remind me to get paper towels at the store tomorrow
+# text: 提醒我明天去商店取厕纸
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	明天	reminder/set_reminder	B-datetime
+4	去	reminder/set_reminder	B-reminder/todo
+5	商店	reminder/set_reminder	I-reminder/todo
+6	取	reminder/set_reminder	I-reminder/todo
+7	厕纸	reminder/set_reminder	I-reminder/todo
+
+# id: 86
+# text-en: show me all my reminders
+# text: 显示我的所有的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	我的	reminder/show_reminders	B-reference
+3	所有	reminder/show_reminders	I-reference
+4	的	reminder/show_reminders	O
+5	提醒	reminder/show_reminders	O
+
+# id: 87
+# text-en: set alarm for 6 am
+# text: 设置闹钟在上午6点
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	在	alarm/set_alarm	O
+4	上午6点	alarm/set_alarm	B-datetime
+
+# id: 88
+# text-en: will it snow tomorrow
+# text: 明天将会下雪吗？
+# intent: weather/find
+1	明天	weather/find	B-datetime
+2	将	weather/find	O
+3	会	weather/find	O
+4	下雪	weather/find	B-weather/attribute
+5	吗？	weather/find	O
+
+# id: 89
+# text-en: cancel my alarm for tomorrow morning
+# text: 取消我的明天上午的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	我的	alarm/cancel_alarm	B-reference
+3	明天	alarm/cancel_alarm	B-datetime
+4	上午	alarm/cancel_alarm	I-datetime
+5	的	alarm/cancel_alarm	O
+6	闹钟	alarm/cancel_alarm	O
+
+# id: 90
+# text-en: Set the alarm for noon on Mondays only.
+# text: 只设置在每周一中午的闹钟。
+# intent: alarm/set_alarm
+1	只	alarm/set_alarm	O
+2	设置	alarm/set_alarm	O
+3	在	alarm/set_alarm	O
+4	每	alarm/set_alarm	B-recurring_datetime
+5	周一	alarm/set_alarm	I-recurring_datetime
+6	中午	alarm/set_alarm	I-recurring_datetime
+7	的	alarm/set_alarm	O
+8	闹钟。	alarm/set_alarm	O
+
+# id: 91
+# text-en: How hot will it get today?
+# text: 今天会变的多热？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	变	weather/find	O
+4	的	weather/find	O
+5	多	weather/find	O
+6	热	weather/find	B-weather/attribute
+7	？	weather/find	O
+
+# id: 92
+# text-en: remind me to set alarms for morning
+# text: 提醒我设置明天的闹钟
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	设置	reminder/set_reminder	B-datetime
+4	明天	reminder/set_reminder	I-datetime
+5	的	reminder/set_reminder	B-reminder/todo
+6	闹钟	reminder/set_reminder	I-reminder/todo
+
+# id: 93
+# text-en: delete all alarms
+# text: 删除所有的闹钟
+# intent: alarm/cancel_alarm
+1	删除	alarm/cancel_alarm	O
+2	所有	alarm/cancel_alarm	B-reference
+3	的	alarm/cancel_alarm	O
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 94
+# text-en: show my alarms
+# text: 显示我的闹钟
+# intent: alarm/show_alarms
+1	显示	alarm/show_alarms	O
+2	我的	alarm/show_alarms	B-reference
+3	闹钟	alarm/show_alarms	O
+
+# id: 95
+# text-en: dismiss alarm
+# text: 关掉闹钟
+# intent: alarm/cancel_alarm
+1	关掉	alarm/cancel_alarm	O
+2	闹钟	alarm/cancel_alarm	O
+
+# id: 96
+# text-en: What is the temperature today?
+# text: 今天的气温怎么样？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	的	weather/find	O
+3	气温	weather/find	B-weather/attribute
+4	怎么样？	weather/find	O
+
+# id: 97
+# text-en: dismiss alarm
+# text: 关掉闹钟
+# intent: alarm/cancel_alarm
+1	关掉	alarm/cancel_alarm	O
+2	闹钟	alarm/cancel_alarm	O
+
+# id: 98
+# text-en: show all alarms
+# text: 显示所有的闹钟
+# intent: alarm/show_alarms
+1	显示	alarm/show_alarms	O
+2	所有	alarm/show_alarms	B-reference
+3	的	alarm/show_alarms	O
+4	闹钟	alarm/show_alarms	O
+
+# id: 99
+# text-en: set alarm for every 30 minutes
+# text: 设置闹钟为每30分种
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	为	alarm/set_alarm	O
+4	每	alarm/set_alarm	B-recurring_datetime
+5	30	alarm/set_alarm	I-recurring_datetime
+6	分种	alarm/set_alarm	I-recurring_datetime
+
+# id: 100
+# text-en: What is the temperature going to be today?
+# text: 今天的气温将会是怎样的？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	的	weather/find	O
+3	气温	weather/find	B-weather/attribute
+4	将会	weather/find	O
+5	是	weather/find	O
+6	怎样的？	weather/find	O
+
+# id: 101
+# text-en: Is it going to be hot today?
+# text: 今天将会很热吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	将会	weather/find	O
+3	很	weather/find	O
+4	热	weather/find	B-weather/attribute
+5	吗？	weather/find	O
+
+# id: 102
+# text-en: Is it going to rain tomorrow?
+# text: 明天会下雨吗？
+# intent: weather/find
+1	明天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 103
+# text-en: Cancel the next alarm
+# text: 取消我的下一个闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	我的	alarm/cancel_alarm	O
+3	下一个	alarm/cancel_alarm	B-reference
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 104
+# text-en: Remind me to go to grocery store today
+# text: 提醒我今天我去杂货店的提醒
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	今天	reminder/set_reminder	B-datetime
+4	我	reminder/set_reminder	O
+5	去	reminder/set_reminder	B-reminder/todo
+6	杂货店	reminder/set_reminder	I-reminder/todo
+7	的	reminder/set_reminder	O
+8	提醒	reminder/set_reminder	O
+
+# id: 105
+# text-en: cancel my reminders for next week
+# text: 取消我的下个星期的闹钟
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	我的	reminder/cancel_reminder	B-reference
+3	下个	reminder/cancel_reminder	B-datetime
+4	星期	reminder/cancel_reminder	I-datetime
+5	的	reminder/cancel_reminder	O
+6	闹钟	reminder/cancel_reminder	O
+
+# id: 106
+# text-en: remind me to take dog to groomer tuesday at 3pm
+# text: 提醒我周二下午3点带狗去美容师
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	周二	reminder/set_reminder	B-datetime
+4	下午3点	reminder/set_reminder	I-datetime
+5	带	reminder/set_reminder	B-reminder/todo
+6	狗	reminder/set_reminder	I-reminder/todo
+7	去	reminder/set_reminder	I-reminder/todo
+8	美容师	reminder/set_reminder	I-reminder/todo
+
+# id: 107
+# text-en: Remind me to pick up flowers for Jen for our anniversary on the 28th.
+# text: 提醒我在28号去取花给Jen为我们的周年纪念日。
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	在	reminder/set_reminder	O
+4	28	reminder/set_reminder	B-datetime
+5	号	reminder/set_reminder	I-datetime
+6	去	reminder/set_reminder	O
+7	取花给	reminder/set_reminder	B-reminder/todo
+8	Jen	reminder/set_reminder	I-reminder/todo
+9	为	reminder/set_reminder	I-reminder/todo
+10	我们	reminder/set_reminder	I-reminder/todo
+11	的	reminder/set_reminder	I-reminder/todo
+12	周年纪念日	reminder/set_reminder	I-reminder/todo
+13	。	reminder/set_reminder	O
+
+# id: 108
+# text-en: What's the weather like today?
+# text: 今天的天气怎么样？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	的	weather/find	O
+3	天气	weather/find	O
+4	怎么样？	weather/find	O
+
+# id: 109
+# text-en: Remind me to make a doctor's appointment tomorrow.
+# text: 提醒我明天去安排一个医生预约。
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	明天	reminder/set_reminder	B-datetime
+4	去	reminder/set_reminder	O
+5	安排	reminder/set_reminder	B-reminder/todo
+6	一个	reminder/set_reminder	I-reminder/todo
+7	医生	reminder/set_reminder	I-reminder/todo
+8	预约	reminder/set_reminder	I-reminder/todo
+9	。	reminder/set_reminder	O
+
+# id: 110
+# text-en: turn off all alarms
+# text: 关掉所有的闹钟
+# intent: alarm/cancel_alarm
+1	关	alarm/cancel_alarm	O
+2	掉	alarm/cancel_alarm	O
+3	所有	alarm/cancel_alarm	B-reference
+4	的	alarm/cancel_alarm	O
+5	闹钟	alarm/cancel_alarm	O
+
+# id: 111
+# text-en: Should I bring a raincoat?
+# text: 我需要带雨衣吗？
+# intent: weather/find
+1	我	weather/find	O
+2	需要	weather/find	O
+3	带	weather/find	O
+4	雨衣	weather/find	B-weather/attribute
+5	吗？	weather/find	O
+
+# id: 112
+# text-en: What is the severe weather forecast?
+# text: 恶劣的天气预报是什么？
+# intent: weather/find
+1	恶劣	weather/find	B-weather/attribute
+2	的	weather/find	O
+3	天气	weather/find	O
+4	预报	weather/find	O
+5	是	weather/find	O
+6	什么？	weather/find	O
+
+# id: 113
+# text-en: remind me of next weeks doctor appointment
+# text: 提醒我下个星期有医生预约
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	下个	reminder/set_reminder	B-datetime
+4	星期	reminder/set_reminder	I-datetime
+5	有	reminder/set_reminder	O
+6	医生	reminder/set_reminder	B-reminder/todo
+7	预约	reminder/set_reminder	I-reminder/todo
+
+# id: 114
+# text-en: set reminder to go to the store at 8am
+# text: 设置提醒上午8点去商店
+# intent: reminder/set_reminder
+1	设置	reminder/set_reminder	O
+2	提醒	reminder/set_reminder	O
+3	上午	reminder/set_reminder	B-datetime
+4	8点	reminder/set_reminder	I-datetime
+5	去	reminder/set_reminder	B-reminder/todo
+6	商店	reminder/set_reminder	I-reminder/todo
+
+# id: 115
+# text-en: Set reminder to get the dry cleaning.
+# text: 设置提醒要去干洗。
+# intent: reminder/set_reminder
+1	设置	reminder/set_reminder	O
+2	提醒	reminder/set_reminder	B-reminder/todo
+3	要去	reminder/set_reminder	I-reminder/todo
+4	干洗	reminder/set_reminder	I-reminder/todo
+5	。	reminder/set_reminder	O
+
+# id: 116
+# text-en: when is it cool down
+# text: 什么时候气温会下降？
+# intent: weather/find
+1	什么	weather/find	O
+2	时候	weather/find	O
+3	气温	weather/find	O
+4	会	weather/find	O
+5	下降	weather/find	B-weather/attribute
+6	？	weather/find	O
+
+# id: 117
+# text-en: will it rain this week
+# text: 这周会下雨吗？
+# intent: weather/find
+1	这周	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 118
+# text-en: delete all alarms
+# text: 删除所有的闹钟
+# intent: alarm/cancel_alarm
+1	删除	alarm/cancel_alarm	O
+2	所有	alarm/cancel_alarm	B-reference
+3	的	alarm/cancel_alarm	O
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 119
+# text-en: cancel alarms
+# text: 取消闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	闹钟	alarm/cancel_alarm	O
+
+# id: 120
+# text-en: show me my alarms
+# text: 给我看我的闹钟
+# intent: alarm/show_alarms
+1	给我	alarm/show_alarms	O
+2	看	alarm/show_alarms	O
+3	我	alarm/show_alarms	B-reference
+4	的	alarm/show_alarms	I-reference
+5	闹钟	alarm/show_alarms	O
+
+# id: 121
+# text-en: What time do I have an alarm set for?
+# text: 我设置的什么时间的闹钟？
+# intent: alarm/show_alarms
+1	我	alarm/show_alarms	O
+2	设置的	alarm/show_alarms	O
+3	什么	alarm/show_alarms	O
+4	时间的	alarm/show_alarms	O
+5	闹钟？	alarm/show_alarms	O
+
+# id: 122
+# text-en: Is it going to rain Saturday?
+# text: 星期六会下雨吗？
+# intent: weather/find
+1	星期六	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 123
+# text-en: how hot is it going to get today
+# text: 今天会有多热
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	有	weather/find	O
+4	多	weather/find	O
+5	热	weather/find	B-weather/attribute
+
+# id: 124
+# text-en: Reset all alarms
+# text: 重新设置所有的闹钟
+# intent: alarm/cancel_alarm
+1	重新	alarm/cancel_alarm	O
+2	设置	alarm/cancel_alarm	O
+3	所有的	alarm/cancel_alarm	B-reference
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 125
+# text-en: Weather in Tahoe this weekend?
+# text: 这个周末Tahoe的天气怎么样？
+# intent: weather/find
+1	这个	weather/find	B-datetime
+2	周末	weather/find	I-datetime
+3	Tahoe	weather/find	B-location
+4	的	weather/find	O
+5	天气	weather/find	O
+6	怎么样？	weather/find	O
+
+# id: 126
+# text-en: Do I need a coat today?
+# text: 我今天需要一件大衣吗？
+# intent: weather/find
+1	我	weather/find	O
+2	今天	weather/find	B-datetime
+3	需要	weather/find	O
+4	一件	weather/find	O
+5	大衣	weather/find	B-weather/attribute
+6	吗？	weather/find	O
+
+# id: 127
+# text-en: When will the rain stop?
+# text: 雨什么时候会停呢？
+# intent: weather/find
+1	雨	weather/find	B-weather/attribute
+2	什么	weather/find	O
+3	时候	weather/find	O
+4	会	weather/find	O
+5	停	weather/find	O
+6	呢？	weather/find	O
+
+# id: 128
+# text-en: Set a reminder to call my school on Monday at 4 PM
+# text: 设置一个提醒在周一下午4点打电话给我的学校
+# intent: reminder/set_reminder
+1	设置	reminder/set_reminder	O
+2	一个	reminder/set_reminder	O
+3	提醒	reminder/set_reminder	O
+4	在	reminder/set_reminder	O
+5	周一	reminder/set_reminder	B-datetime
+6	下午	reminder/set_reminder	I-datetime
+7	4点	reminder/set_reminder	I-datetime
+8	打电话	reminder/set_reminder	B-reminder/todo
+9	给	reminder/set_reminder	I-reminder/todo
+10	我的	reminder/set_reminder	I-reminder/todo
+11	学校	reminder/set_reminder	I-reminder/todo
+
+# id: 129
+# text-en: Turn off my alarm.
+# text: 关掉我的闹钟
+# intent: alarm/cancel_alarm
+1	关	alarm/cancel_alarm	O
+2	掉	alarm/cancel_alarm	O
+3	我的	alarm/cancel_alarm	B-reference
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 130
+# text-en: How cold will it be tonight?
+# text: 今晚会很冷吗？
+# intent: weather/find
+1	今晚	weather/find	B-datetime
+2	会	weather/find	O
+3	很	weather/find	O
+4	冷	weather/find	B-weather/attribute
+5	吗？	weather/find	O
+
+# id: 131
+# text-en: Set alarm for 7 am tomorrow.
+# text: 设置闹钟为明天上午7点。
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	为	alarm/set_alarm	O
+4	明天	alarm/set_alarm	B-datetime
+5	上午7点	alarm/set_alarm	I-datetime
+6	。	alarm/set_alarm	O
+
+# id: 132
+# text-en: Cancel my reminder to pick up Rob
+# text: 取消我的提醒去接送Rob
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	我的	reminder/cancel_reminder	B-reference
+3	提醒	reminder/cancel_reminder	O
+4	去	reminder/cancel_reminder	O
+5	接送	reminder/cancel_reminder	B-reminder/todo
+6	Rob	reminder/cancel_reminder	I-reminder/todo
+
+# id: 133
+# text-en: Create a reminder for tomorrow to buy milk.
+# text: 建立一个提醒明天去买牛奶。
+# intent: reminder/set_reminder
+1	建立	reminder/set_reminder	O
+2	一个	reminder/set_reminder	O
+3	提醒	reminder/set_reminder	O
+4	明天	reminder/set_reminder	B-datetime
+5	去	reminder/set_reminder	O
+6	买	reminder/set_reminder	B-reminder/todo
+7	牛奶。	reminder/set_reminder	I-reminder/todo
+
+# id: 134
+# text-en: set alarm for 6pm
+# text: 设置闹钟在下午6点
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	在	alarm/set_alarm	O
+4	下午6点	alarm/set_alarm	B-datetime
+
+# id: 135
+# text-en: schedule a daily alarm for 7:30 pm until deleted
+# text: 设置一个每天闹钟为下午7：30直到删除
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	一个	alarm/set_alarm	O
+3	每天	alarm/set_alarm	B-recurring_datetime
+4	闹钟	alarm/set_alarm	O
+5	为	alarm/set_alarm	O
+6	下午7：30	alarm/set_alarm	B-recurring_datetime
+7	直到	alarm/set_alarm	O
+8	删除	alarm/set_alarm	O
+
+# id: 136
+# text-en: remind me to set an alarm for ups
+# text: 提醒我设置ups闹钟
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	设置	reminder/set_reminder	B-reminder/todo
+4	ups	reminder/set_reminder	I-reminder/todo
+5	闹钟	reminder/set_reminder	I-reminder/todo
+
+# id: 137
+# text-en: Cancel my reminder
+# text: 取消我的提醒
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	我的	reminder/cancel_reminder	B-reference
+3	提醒	reminder/cancel_reminder	O
+
+# id: 138
+# text-en: Is it going to snow today?
+# text: 今天会下雪吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雪	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 139
+# text-en: Show me all the alarms
+# text: 告诉我所有的闹钟
+# intent: alarm/show_alarms
+1	告诉	alarm/show_alarms	O
+2	我	alarm/show_alarms	O
+3	所有	alarm/show_alarms	B-reference
+4	的	alarm/show_alarms	O
+5	闹钟	alarm/show_alarms	O
+
+# id: 140
+# text-en: show all reminders
+# text: 显示所有的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	所有	reminder/show_reminders	B-reference
+3	的	reminder/show_reminders	O
+4	提醒	reminder/show_reminders	O
+
+# id: 141
+# text-en: how much time is left on my alarm
+# text: 我的闹钟还剩多少时间了
+# intent: alarm/time_left_on_alarm
+1	我的	alarm/time_left_on_alarm	B-reference
+2	闹钟	alarm/time_left_on_alarm	O
+3	还剩	alarm/time_left_on_alarm	O
+4	多少	alarm/time_left_on_alarm	O
+5	时间了	alarm/time_left_on_alarm	O
+
+# id: 142
+# text-en: set alarm for 2 hours
+# text: 设置2个小时的闹钟
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	2个	alarm/set_alarm	B-datetime
+3	小时	alarm/set_alarm	I-datetime
+4	的	alarm/set_alarm	O
+5	闹钟	alarm/set_alarm	O
+
+# id: 143
+# text-en: Remind me to get bread after work
+# text: 提醒我在下班后去取面包
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	在	reminder/set_reminder	O
+4	下班后	reminder/set_reminder	B-datetime
+5	去	reminder/set_reminder	O
+6	取	reminder/set_reminder	B-reminder/todo
+7	面包	reminder/set_reminder	I-reminder/todo
+
+# id: 144
+# text-en: Will it rain today?
+# text: 今天会下雨吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 145
+# text-en: read today's weather forecast
+# text: 读今天的天气预报
+# intent: weather/find
+1	读	weather/find	O
+2	今天	weather/find	B-datetime
+3	的	weather/find	O
+4	天气	weather/find	O
+5	预报	weather/find	O
+
+# id: 146
+# text-en: What time is my alarm set for?
+# text: 什么时间我的闹钟设置？
+# intent: alarm/show_alarms
+1	什么	alarm/show_alarms	O
+2	时间	alarm/show_alarms	O
+3	我的	alarm/show_alarms	B-reference
+4	闹钟	alarm/show_alarms	O
+5	设置？	alarm/show_alarms	O
+
+# id: 147
+# text-en: at 4 tomorrow remind me to go to the mall
+# text: 在明天四点提醒我去商场
+# intent: reminder/set_reminder
+1	在	reminder/set_reminder	O
+2	明天	reminder/set_reminder	B-datetime
+3	四点	reminder/set_reminder	I-datetime
+4	提醒	reminder/set_reminder	O
+5	我	reminder/set_reminder	O
+6	去	reminder/set_reminder	B-reminder/todo
+7	商场	reminder/set_reminder	I-reminder/todo
+
+# id: 148
+# text-en: do I need to bring an umbrella today
+# text: 今天我需要带雨伞吗
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	我	weather/find	O
+3	需要	weather/find	O
+4	带	weather/find	O
+5	雨伞	weather/find	B-weather/attribute
+6	吗	weather/find	O
+
+# id: 149
+# text-en: Show my reminder
+# text: 显示我的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	我的	reminder/show_reminders	B-reference
+3	提醒	reminder/show_reminders	O
+
+# id: 150
+# text-en: Show all my reminders
+# text: 显示我的所有的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	我的	reminder/show_reminders	B-reference
+3	所有的	reminder/show_reminders	I-reference
+4	提醒	reminder/show_reminders	O
+
+# id: 151
+# text-en: Set a reminder for dog food on Monday.
+# text: 设置一个周一狗粮的提醒。
+# intent: reminder/set_reminder
+1	设置	reminder/set_reminder	O
+2	一个	reminder/set_reminder	O
+3	周一	reminder/set_reminder	B-datetime
+4	狗粮	reminder/set_reminder	B-reminder/todo
+5	的	reminder/set_reminder	O
+6	提醒。	reminder/set_reminder	O
+
+# id: 152
+# text-en: Set reminder "Sub yoga class Tuesday night at Bala" for tomorrow
+# text: 设置提醒明天“周二晚上在Bala上Subyoga课”的提醒
+# intent: reminder/set_reminder
+1	设置	reminder/set_reminder	O
+2	提醒	reminder/set_reminder	O
+3	明天	reminder/set_reminder	B-datetime
+4	“	reminder/set_reminder	O
+5	周二	reminder/set_reminder	B-reminder/todo
+6	晚上	reminder/set_reminder	I-reminder/todo
+7	在	reminder/set_reminder	I-reminder/todo
+8	Bala	reminder/set_reminder	I-reminder/todo
+9	上	reminder/set_reminder	I-reminder/todo
+10	Sub	reminder/set_reminder	I-reminder/todo
+11	yoga	reminder/set_reminder	I-reminder/todo
+12	课	reminder/set_reminder	I-reminder/todo
+13	”	reminder/set_reminder	O
+14	的提醒	reminder/set_reminder	O
+
+# id: 153
+# text-en: Cancel all reminders for today
+# text: 取消今天所有的提醒
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	今天	reminder/cancel_reminder	B-datetime
+3	所有	reminder/cancel_reminder	B-reference
+4	的	reminder/cancel_reminder	O
+5	提醒	reminder/cancel_reminder	O
+
+# id: 154
+# text-en: What will the weather be in New York city this week
+# text: 这个星期纽约的天气将会是怎样的？
+# intent: weather/find
+1	这个	weather/find	B-datetime
+2	星期	weather/find	I-datetime
+3	纽约	weather/find	B-location
+4	的	weather/find	O
+5	天气	weather/find	O
+6	将会	weather/find	O
+7	是	weather/find	O
+8	怎样的？	weather/find	O
+
+# id: 155
+# text-en: remind me of a doctor visit Thursday at 12 pm
+# text: 提醒我周四下午12点要去拜访医生
+# intent: reminder/set_reminder
+1	提醒我	reminder/set_reminder	O
+2	周四	reminder/set_reminder	B-datetime
+3	下午12点	reminder/set_reminder	I-datetime
+4	要去	reminder/set_reminder	O
+5	拜访	reminder/set_reminder	B-reminder/todo
+6	医生	reminder/set_reminder	I-reminder/todo
+
+# id: 156
+# text-en: Set an alarm for 6:50 pm
+# text: 设置一个闹钟在下午6：50
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	一个	alarm/set_alarm	O
+3	闹钟	alarm/set_alarm	O
+4	在	alarm/set_alarm	O
+5	下午6：50	alarm/set_alarm	B-datetime
+
+# id: 157
+# text-en: Is it going to snow today?
+# text: 今天会下雪吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雪	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 158
+# text-en: What alarms are set?
+# text: 闹钟设置的是什么时间
+# intent: alarm/show_alarms
+1	闹钟	alarm/show_alarms	O
+2	设置	alarm/show_alarms	O
+3	的	alarm/show_alarms	O
+4	是	alarm/show_alarms	O
+5	什么	alarm/show_alarms	O
+6	时间	alarm/show_alarms	O
+
+# id: 159
+# text-en: Set a reminder alarm for October 7
+# text: 设置一个在十月7号的提醒闹钟
+# intent: reminder/set_reminder
+1	设置	reminder/set_reminder	O
+2	一个	reminder/set_reminder	O
+3	在	reminder/set_reminder	O
+4	十月7号	reminder/set_reminder	B-datetime
+5	的	reminder/set_reminder	O
+6	提醒	reminder/set_reminder	O
+7	闹钟	reminder/set_reminder	O
+
+# id: 160
+# text-en: Will there be snow today?
+# text: 今天会有下雪吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	有	weather/find	O
+4	下雪	weather/find	B-weather/attribute
+5	吗？	weather/find	O
+
+# id: 161
+# text-en: snooze alarm for 15 minutes
+# text: 推迟闹钟为15分钟
+# intent: alarm/snooze_alarm
+1	推迟	alarm/snooze_alarm	O
+2	闹钟	alarm/snooze_alarm	O
+3	为	alarm/snooze_alarm	O
+4	15分钟	alarm/snooze_alarm	B-datetime
+
+# id: 162
+# text-en: How much snow are they predicting?
+# text: 他们预测会有多大的雪？
+# intent: weather/find
+1	他们	weather/find	O
+2	预测	weather/find	O
+3	会有	weather/find	O
+4	多大	weather/find	O
+5	的	weather/find	O
+6	雪	weather/find	B-weather/attribute
+7	？	weather/find	O
+
+# id: 163
+# text-en: is it hot outside
+# text: 外面热吗
+# intent: weather/find
+1	外面	weather/find	B-location
+2	热	weather/find	B-weather/attribute
+3	吗	weather/find	O
+
+# id: 164
+# text-en: What is the temperature going to be today?
+# text: 今天的气温将会是怎样的？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	的	weather/find	O
+3	气温	weather/find	B-weather/attribute
+4	将会	weather/find	O
+5	是	weather/find	O
+6	怎样的？	weather/find	O
+
+# id: 165
+# text-en: what will the weather be like in Dallas tomorrow
+# text: 达拉斯明天的天气将会是怎样
+# intent: weather/find
+1	达拉斯	weather/find	B-location
+2	明天	weather/find	B-datetime
+3	的	weather/find	O
+4	天气	weather/find	O
+5	将	weather/find	O
+6	会	weather/find	O
+7	是怎样	weather/find	O
+
+# id: 166
+# text-en: Show me all my reminders for today
+# text: 显示我的今天所有的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	我的	reminder/show_reminders	B-reference
+3	今天	reminder/show_reminders	B-datetime
+4	所有的	reminder/show_reminders	B-reference
+5	提醒	reminder/show_reminders	O
+
+# id: 167
+# text-en: Set a weekly reminder for groceries.
+# text: 设置一个一周购物提醒。
+# intent: reminder/set_reminder
+1	设置	reminder/set_reminder	O
+2	一个	reminder/set_reminder	O
+3	一周	reminder/set_reminder	O
+4	购物	reminder/set_reminder	B-reminder/todo
+5	提醒。	reminder/set_reminder	O
+
+# id: 168
+# text-en: weather
+# text: 天气
+# intent: weather/find
+1	天气	weather/find	O
+
+# id: 169
+# text-en: Is it supposed to rain all day?
+# text: 今天全天会下雨吗？
+# intent: weather/find
+1	今天全天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 170
+# text-en: is it going to rain tomorrow
+# text: 明天将会下雨吗
+# intent: weather/find
+1	明天	weather/find	B-datetime
+2	将会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗	weather/find	O
+
+# id: 171
+# text-en: Remind me to reply to work emails tonight
+# text: 提醒我今晚要回复工作邮件
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	今晚	reminder/set_reminder	B-datetime
+4	要	reminder/set_reminder	O
+5	回复	reminder/set_reminder	B-reminder/todo
+6	工作	reminder/set_reminder	I-reminder/todo
+7	邮件	reminder/set_reminder	I-reminder/todo
+
+# id: 172
+# text-en: Delete alarms
+# text: 删除闹钟
+# intent: alarm/cancel_alarm
+1	删除	alarm/cancel_alarm	O
+2	闹钟	alarm/cancel_alarm	O
+
+# id: 173
+# text-en: Cancel my alarms
+# text: 取消我的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	我的	alarm/cancel_alarm	B-reference
+3	闹钟	alarm/cancel_alarm	O
+
+# id: 174
+# text-en: Can I wear shorts today?
+# text: 今天我可以传短裤吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	我	weather/find	O
+3	可以	weather/find	O
+4	传	weather/find	O
+5	短裤	weather/find	B-weather/attribute
+6	吗？	weather/find	O
+
+# id: 175
+# text-en: Will it rain tomorrow?
+# text: 明天会下雨吗？
+# intent: weather/find
+1	明天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 176
+# text-en: Set alarm for 10 am
+# text: 设置闹钟在上午10点
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	在	alarm/set_alarm	O
+4	上午10点	alarm/set_alarm	B-datetime
+
+# id: 177
+# text-en: Is it going to rain this week?
+# text: 这周会下雨吗？
+# intent: weather/find
+1	这周	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 178
+# text-en: show all reminders
+# text: 显示所有的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	所有	reminder/show_reminders	B-reference
+3	的	reminder/show_reminders	O
+4	提醒	reminder/show_reminders	O
+
+# id: 179
+# text-en: cancel alarms
+# text: 取消闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	闹钟	alarm/cancel_alarm	O
+
+# id: 180
+# text-en: turn off all alarms
+# text: 关掉所有的闹钟
+# intent: alarm/cancel_alarm
+1	关	alarm/cancel_alarm	O
+2	掉	alarm/cancel_alarm	O
+3	所有	alarm/cancel_alarm	B-reference
+4	的	alarm/cancel_alarm	O
+5	闹钟	alarm/cancel_alarm	O
+
+# id: 181
+# text-en: show all alarms preset
+# text: 显示所有的闹钟预设
+# intent: alarm/show_alarms
+1	显示	alarm/show_alarms	O
+2	所有	alarm/show_alarms	B-reference
+3	的	alarm/show_alarms	O
+4	闹钟	alarm/show_alarms	O
+5	预设	alarm/show_alarms	O
+
+# id: 182
+# text-en: Set alarm every minute for 20 minutes.
+# text: 设置闹钟为20分钟以内每分钟响一次。
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	为	alarm/set_alarm	O
+4	20	alarm/set_alarm	B-recurring_datetime
+5	分钟以内	alarm/set_alarm	I-recurring_datetime
+6	每分钟	alarm/set_alarm	I-recurring_datetime
+7	响	alarm/set_alarm	O
+8	一次。	alarm/set_alarm	O
+
+# id: 183
+# text-en: What are my reminders?
+# text: 我的提醒是什么？
+# intent: reminder/show_reminders
+1	我的	reminder/show_reminders	B-reference
+2	提醒	reminder/show_reminders	O
+3	是什么？	reminder/show_reminders	O
+
+# id: 184
+# text-en: cancel alarm for tomorrow
+# text: 取消明天的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	明天	alarm/cancel_alarm	B-datetime
+3	的	alarm/cancel_alarm	O
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 185
+# text-en: Do I need an umbrella today?
+# text: 今天我需要雨伞吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	我	weather/find	O
+3	需要	weather/find	O
+4	雨伞	weather/find	B-weather/attribute
+5	吗？	weather/find	O
+
+# id: 186
+# text-en: is it supposed to snow today?
+# text: 今天应该会下雪吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	应该	weather/find	O
+3	会	weather/find	O
+4	下雪	weather/find	B-weather/attribute
+5	吗？	weather/find	O
+
+# id: 187
+# text-en: Remind me to call my mom tonight
+# text: 提醒我今晚打电话给我的妈妈
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	今晚	reminder/set_reminder	B-datetime
+4	打电话	reminder/set_reminder	B-reminder/todo
+5	给	reminder/set_reminder	I-reminder/todo
+6	我的	reminder/set_reminder	I-reminder/todo
+7	妈妈	reminder/set_reminder	I-reminder/todo
+
+# id: 188
+# text-en: will it rain today?
+# text: 今天会下雨吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 189
+# text-en: Is it going to rain Saturday?
+# text: 星期六会下雨吗？
+# intent: weather/find
+1	星期六	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 190
+# text-en: Will you set the alarm every minute for 20 minutes?
+# text: 你能设置一个20分钟以内每分钟响一次的闹钟吗？
+# intent: alarm/set_alarm
+1	你能	alarm/set_alarm	O
+2	设置	alarm/set_alarm	O
+3	一个	alarm/set_alarm	O
+4	20	alarm/set_alarm	B-recurring_datetime
+5	分钟以内	alarm/set_alarm	I-recurring_datetime
+6	每分钟	alarm/set_alarm	I-recurring_datetime
+7	响一次	alarm/set_alarm	O
+8	的	alarm/set_alarm	O
+9	闹钟	alarm/set_alarm	O
+10	吗？	alarm/set_alarm	O
+
+# id: 191
+# text-en: Tropical storms in caribbean
+# text: 加勒比海的热带风暴
+# intent: weather/find
+1	加勒比海	weather/find	B-location
+2	的	weather/find	O
+3	热带风暴	weather/find	B-weather/attribute
+
+# id: 192
+# text-en: cancel all alarms
+# text: 取消所有的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	所有	alarm/cancel_alarm	B-reference
+3	的	alarm/cancel_alarm	O
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 193
+# text-en: Set alarm for every nine minutes.
+# text: 设置闹钟为每九分钟响一次。
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	为	alarm/set_alarm	O
+4	每	alarm/set_alarm	B-recurring_datetime
+5	九分钟	alarm/set_alarm	I-recurring_datetime
+6	响一次。	alarm/set_alarm	O
+
+# id: 194
+# text-en: Delete the last two reminders on my list
+# text: 删除我的列表上最后的两个提醒
+# intent: reminder/cancel_reminder
+1	删除	reminder/cancel_reminder	O
+2	我的	reminder/cancel_reminder	O
+3	列表	reminder/cancel_reminder	O
+4	上	reminder/cancel_reminder	O
+5	最后	reminder/cancel_reminder	B-reference
+6	的	reminder/cancel_reminder	I-reference
+7	两个	reminder/cancel_reminder	I-reference
+8	提醒	reminder/cancel_reminder	O
+
+# id: 195
+# text-en: hows the weather today
+# text: 今天的天气怎么样
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	的	weather/find	O
+3	天气	weather/find	O
+4	怎么样	weather/find	O
+
+# id: 196
+# text-en: turn on my alarm
+# text: 打开我的闹钟
+# intent: alarm/set_alarm
+1	打开	alarm/set_alarm	O
+2	我的	alarm/set_alarm	B-reference
+3	闹钟	alarm/set_alarm	O
+
+# id: 197
+# text-en: What is the humidity today?
+# text: 今天的湿度怎么样？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	的	weather/find	O
+3	湿度	weather/find	B-weather/attribute
+4	怎么样？	weather/find	O
+
+# id: 198
+# text-en: remind me to set an alarm for ups
+# text: 提醒我设置ups闹钟
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	设置	reminder/set_reminder	B-reminder/todo
+4	ups	reminder/set_reminder	I-reminder/todo
+5	闹钟	reminder/set_reminder	I-reminder/todo
+
+# id: 199
+# text-en: Will it snow this weekend?
+# text: 这个周末会下雪吗？
+# intent: weather/find
+1	这个	weather/find	B-datetime
+2	周末	weather/find	I-datetime
+3	会	weather/find	O
+4	下雪	weather/find	B-weather/attribute
+5	吗？	weather/find	O
+
+# id: 200
+# text-en: How hot will it get today?
+# text: 今天会变的多热？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	变	weather/find	O
+4	的	weather/find	O
+5	多	weather/find	O
+6	热	weather/find	B-weather/attribute
+7	？	weather/find	O
+
+# id: 201
+# text-en: What time is my alarm set for
+# text: 我的闹钟是设置的什么时间
+# intent: alarm/show_alarms
+1	我的	alarm/show_alarms	B-reference
+2	闹钟	alarm/show_alarms	O
+3	是	alarm/show_alarms	O
+4	设置的	alarm/show_alarms	O
+5	什么	alarm/show_alarms	O
+6	时间	alarm/show_alarms	O
+
+# id: 202
+# text-en: What's the weather like today?
+# text: 今天的天气怎么样？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	的	weather/find	O
+3	天气	weather/find	O
+4	怎么样？	weather/find	O
+
+# id: 203
+# text-en: Will it rain tomorrow?
+# text: 明天会下雨吗？
+# intent: weather/find
+1	明天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 204
+# text-en: Cancel my alarm for 5:15am on Tuesday
+# text: 取消我的在周二上午5：15的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	我的	alarm/cancel_alarm	B-reference
+3	在	alarm/cancel_alarm	O
+4	周二	alarm/cancel_alarm	B-datetime
+5	上午5：15	alarm/cancel_alarm	I-datetime
+6	的	alarm/cancel_alarm	O
+7	闹钟	alarm/cancel_alarm	O
+
+# id: 205
+# text-en: cancel reminder for tonight's game
+# text: 取消今天游戏的提醒
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	今天	reminder/cancel_reminder	O
+3	游戏	reminder/cancel_reminder	B-reminder/todo
+4	的	reminder/cancel_reminder	O
+5	提醒	reminder/cancel_reminder	O
+
+# id: 206
+# text-en: set alarm for 3am
+# text: 设置闹钟在上午3点
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	在	alarm/set_alarm	O
+4	上午3点	alarm/set_alarm	B-datetime
+
+# id: 207
+# text-en: cancel all alarms for saturday
+# text: 取消周六所有的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	周六	alarm/cancel_alarm	B-datetime
+3	所有	alarm/cancel_alarm	B-reference
+4	的	alarm/cancel_alarm	I-reference
+5	闹钟	alarm/cancel_alarm	O
+
+# id: 208
+# text-en: i need a reminder to pick Lisa up
+# text: 我需要一个提醒去接Lisa
+# intent: reminder/set_reminder
+1	我需要	reminder/set_reminder	O
+2	一个	reminder/set_reminder	O
+3	提醒	reminder/set_reminder	O
+4	去	reminder/set_reminder	O
+5	接	reminder/set_reminder	B-reminder/todo
+6	Lisa	reminder/set_reminder	I-reminder/todo
+
+# id: 209
+# text-en: What is the high today?
+# text: 今天 的 最高 气温 是 多少 ?
+# intent: weather/find
+1	今天	weather/find	O
+2	的	weather/find	O
+3	最高	weather/find	O
+4	气温	weather/find	O
+5	是	weather/find	O
+6	多少	weather/find	O
+7	?	weather/find	O
+
+# id: 210
+# text-en: Is it going to be cloudy today in Grindstone?
+# text: 今天Grindstone会是阴天吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	Grindstone	weather/find	B-location
+3	会	weather/find	O
+4	是	weather/find	O
+5	阴天	weather/find	B-weather/attribute
+6	吗？	weather/find	O
+
+# id: 211
+# text-en: Remind me later
+# text: 之后提醒我
+# intent: reminder/set_reminder
+1	之后	reminder/set_reminder	B-datetime
+2	提醒	reminder/set_reminder	O
+3	我	reminder/set_reminder	O
+
+# id: 212
+# text-en: what is the weather in france today
+# text: 今天法国的天气怎么样？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	法国	weather/find	B-location
+3	的	weather/find	O
+4	天气	weather/find	O
+5	怎么样？	weather/find	O
+
+# id: 213
+# text-en: Will it be sunny for the party on Saturday?
+# text: 周六的派对会天晴吗？
+# intent: weather/find
+1	周六	weather/find	B-datetime
+2	的	weather/find	O
+3	派对	weather/find	O
+4	会	weather/find	O
+5	天晴	weather/find	B-weather/attribute
+6	吗？	weather/find	O
+
+# id: 214
+# text-en: Is it going to rain tomorrow?
+# text: 明天会下雨吗？
+# intent: weather/find
+1	明天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 215
+# text-en: Can I wear shorts today?
+# text: 今天我可以传短裤吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	我	weather/find	O
+3	可以	weather/find	O
+4	传	weather/find	O
+5	短裤	weather/find	B-weather/attribute
+6	吗？	weather/find	O
+
+# id: 216
+# text-en: Show my reminder
+# text: 显示我的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	我的	reminder/show_reminders	B-reference
+3	提醒	reminder/show_reminders	O
+
+# id: 217
+# text-en: what is the average forecast for september
+# text: 九月的平均天气预报是什么
+# intent: weather/find
+1	九月	weather/find	B-datetime
+2	的	weather/find	O
+3	平均	weather/find	O
+4	天气	weather/find	O
+5	预报	weather/find	O
+6	是什么	weather/find	O
+
+# id: 218
+# text-en: Is it cold today?
+# text: 今天冷吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	冷	weather/find	B-weather/attribute
+3	吗？	weather/find	O
+
+# id: 219
+# text-en: Cancel all reminders
+# text: 取消所有的提醒
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	所有	reminder/cancel_reminder	B-reference
+3	的	reminder/cancel_reminder	O
+4	提醒	reminder/cancel_reminder	O
+
+# id: 220
+# text-en: is it hot?
+# text: 热吗？
+# intent: weather/find
+1	热	weather/find	B-weather/attribute
+2	吗？	weather/find	O
+
+# id: 221
+# text-en: Make alarm for weekends at 2pm
+# text: 设置周末下午两点的闹钟
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	周末	alarm/set_alarm	B-recurring_datetime
+3	下午两点	alarm/set_alarm	I-recurring_datetime
+4	的闹钟	alarm/set_alarm	O
+
+# id: 222
+# text-en: Set alarm for 2 am
+# text: 设置闹钟为上午2点
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	为	alarm/set_alarm	O
+4	上午	alarm/set_alarm	B-datetime
+5	2点	alarm/set_alarm	I-datetime
+
+# id: 223
+# text-en: What is the humidity today?
+# text: 今天的湿度怎么样？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	的	weather/find	O
+3	湿度	weather/find	B-weather/attribute
+4	怎么样？	weather/find	O
+
+# id: 224
+# text-en: show all my alarms
+# text: 显示所有我的闹钟
+# intent: alarm/show_alarms
+1	显示	alarm/show_alarms	O
+2	所有	alarm/show_alarms	B-reference
+3	我的	alarm/show_alarms	I-reference
+4	闹钟	alarm/show_alarms	O
+
+# id: 225
+# text-en: Show me all my reminders
+# text: 显示我的所有的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	我的	reminder/show_reminders	B-reference
+3	所有	reminder/show_reminders	I-reference
+4	的	reminder/show_reminders	I-reference
+5	提醒	reminder/show_reminders	O
+
+# id: 226
+# text-en: cancel all alarms
+# text: 取消所有的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	所有	alarm/cancel_alarm	B-reference
+3	的	alarm/cancel_alarm	O
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 227
+# text-en: Is there a storm headed for my area?
+# text: 风暴会到达我所在的区域吗？
+# intent: weather/find
+1	风暴	weather/find	B-weather/attribute
+2	会	weather/find	O
+3	到达	weather/find	O
+4	我	weather/find	B-location
+5	所在	weather/find	I-location
+6	的区域	weather/find	I-location
+7	吗？	weather/find	O
+
+# id: 228
+# text-en: what's the weather today
+# text: 今天的天气怎么样
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	的	weather/find	O
+3	天气	weather/find	O
+4	怎么样	weather/find	O
+
+# id: 229
+# text-en: delete last reminder
+# text: 删除最后一个提醒
+# intent: reminder/cancel_reminder
+1	删除	reminder/cancel_reminder	O
+2	最后	reminder/cancel_reminder	B-reference
+3	一个	reminder/cancel_reminder	O
+4	提醒	reminder/cancel_reminder	O
+
+# id: 230
+# text-en: What time is left on the alarm.
+# text: 闹钟还剩多少时间。
+# intent: alarm/time_left_on_alarm
+1	闹钟	alarm/time_left_on_alarm	O
+2	还剩	alarm/time_left_on_alarm	O
+3	多少	alarm/time_left_on_alarm	O
+4	时间。	alarm/time_left_on_alarm	O
+
+# id: 231
+# text-en: Cancel all my alarms for Sunday.
+# text: 取消星期天我的所有的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	星期天	alarm/cancel_alarm	B-datetime
+3	我的	alarm/cancel_alarm	B-reference
+4	所有的	alarm/cancel_alarm	I-reference
+5	闹钟	alarm/cancel_alarm	O
+
+# id: 232
+# text-en: How hot will it get today?
+# text: 今天会变的多热？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	变	weather/find	O
+4	的	weather/find	O
+5	多	weather/find	O
+6	热	weather/find	B-weather/attribute
+7	？	weather/find	O
+
+# id: 233
+# text-en: I'd like you to create a new alarm for 8:45 tomorrow morning
+# text: 我想要你去设置一个新的闹钟在明天上午8：45
+# intent: alarm/set_alarm
+1	我	alarm/set_alarm	O
+2	想	alarm/set_alarm	O
+3	要	alarm/set_alarm	O
+4	你	alarm/set_alarm	O
+5	去	alarm/set_alarm	O
+6	设置	alarm/set_alarm	O
+7	一个	alarm/set_alarm	O
+8	新的	alarm/set_alarm	O
+9	闹钟	alarm/set_alarm	O
+10	在	alarm/set_alarm	O
+11	明天	alarm/set_alarm	B-datetime
+12	上午	alarm/set_alarm	I-datetime
+13	8：45	alarm/set_alarm	I-datetime
+
+# id: 234
+# text-en: cancel all alarms
+# text: 取消所有的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	所有	alarm/cancel_alarm	B-reference
+3	的	alarm/cancel_alarm	O
+4	闹钟	alarm/cancel_alarm	O
+
+# id: 235
+# text-en: Is it going to snow today?
+# text: 今天会下雪吗？
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	下雪	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 236
+# text-en: remind me to buy ice
+# text: 提醒我去买冰
+# intent: reminder/set_reminder
+1	提醒	reminder/set_reminder	O
+2	我	reminder/set_reminder	O
+3	去	reminder/set_reminder	O
+4	买	reminder/set_reminder	B-reminder/todo
+5	冰	reminder/set_reminder	I-reminder/todo
+
+# id: 237
+# text-en: show all reminders
+# text: 显示所有的提醒
+# intent: reminder/show_reminders
+1	显示	reminder/show_reminders	O
+2	所有	reminder/show_reminders	B-reference
+3	的	reminder/show_reminders	O
+4	提醒	reminder/show_reminders	O
+
+# id: 238
+# text-en: show all alarms
+# text: 显示所有的闹钟
+# intent: alarm/show_alarms
+1	显示	alarm/show_alarms	O
+2	所有	alarm/show_alarms	B-reference
+3	的	alarm/show_alarms	O
+4	闹钟	alarm/show_alarms	O
+
+# id: 239
+# text-en: What's the weather in San Francisco?
+# text: 旧金山的天气怎么样？
+# intent: weather/find
+1	旧金山	weather/find	B-location
+2	的	weather/find	O
+3	天气	weather/find	O
+4	怎么样？	weather/find	O
+
+# id: 240
+# text-en: Cancel all reminders
+# text: 取消所有的提醒
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	所有	reminder/cancel_reminder	B-reference
+3	的	reminder/cancel_reminder	O
+4	提醒	reminder/cancel_reminder	O
+
+# id: 241
+# text-en: Cancel reminder for concert
+# text: 取消音乐会提醒
+# intent: reminder/cancel_reminder
+1	取消	reminder/cancel_reminder	O
+2	音乐会	reminder/cancel_reminder	B-reminder/todo
+3	提醒	reminder/cancel_reminder	O
+
+# id: 242
+# text-en: Cancel the alarm for tomorrow morning
+# text: 取消明天上午的闹钟
+# intent: alarm/cancel_alarm
+1	取消	alarm/cancel_alarm	O
+2	明天	alarm/cancel_alarm	B-datetime
+3	上午	alarm/cancel_alarm	I-datetime
+4	的	alarm/cancel_alarm	O
+5	闹钟	alarm/cancel_alarm	O
+
+# id: 243
+# text-en: will it rain this week
+# text: 这周会下雨吗？
+# intent: weather/find
+1	这周	weather/find	B-datetime
+2	会	weather/find	O
+3	下雨	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 244
+# text-en: What is the weather like on Wednesday for golfing?
+# text: 周三打高尔夫的天气会是怎样的？
+# intent: weather/find
+1	周三	weather/find	B-datetime
+2	打高尔夫	weather/find	O
+3	的	weather/find	O
+4	天气	weather/find	O
+5	会	weather/find	O
+6	是怎样的？	weather/find	O
+
+# id: 245
+# text-en: show all alarms
+# text: 显示所有的闹钟
+# intent: alarm/show_alarms
+1	显示	alarm/show_alarms	O
+2	所有	alarm/show_alarms	B-reference
+3	的	alarm/show_alarms	O
+4	闹钟	alarm/show_alarms	O
+
+# id: 246
+# text-en: turn off all alarms for tomorrow
+# text: 打开明天所有的闹钟
+# intent: alarm/cancel_alarm
+1	打开	alarm/cancel_alarm	O
+2	明天	alarm/cancel_alarm	B-datetime
+3	所有	alarm/cancel_alarm	B-reference
+4	的	alarm/cancel_alarm	O
+5	闹钟	alarm/cancel_alarm	O
+
+# id: 247
+# text-en: Set alarm for 5pm tonight
+# text: 设置闹钟为今晚5点钟
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	闹钟	alarm/set_alarm	O
+3	为	alarm/set_alarm	O
+4	今晚	alarm/set_alarm	B-datetime
+5	5点钟	alarm/set_alarm	I-datetime
+
+# id: 248
+# text-en: set alarm for 7 tomorrow
+# text: 设置明天七点的闹钟
+# intent: alarm/set_alarm
+1	设置	alarm/set_alarm	O
+2	明天	alarm/set_alarm	B-datetime
+3	七点	alarm/set_alarm	I-datetime
+4	的	alarm/set_alarm	O
+5	闹钟	alarm/set_alarm	O
+
+# id: 249
+# text-en: Will it be sunny tomorrow?
+# text: 明天会天晴吗？
+# intent: weather/find
+1	明天	weather/find	B-datetime
+2	会	weather/find	O
+3	天晴	weather/find	B-weather/attribute
+4	吗？	weather/find	O
+
+# id: 250
+# text-en: how hot will it be today
+# text: 今天会有多热
+# intent: weather/find
+1	今天	weather/find	B-datetime
+2	会	weather/find	O
+3	有	weather/find	O
+4	多	weather/find	O
+5	热	weather/find	B-weather/attribute
+
+# id: 251
+# text-en: Give zero stars to Halo: Ghosts of Onyx
+# text: 给 Halo: Ghosts of Onyx 打 零 颗 星
+# intent: RateBook
+1	给	RateBook	O
+2	Halo:	RateBook	B-object_name
+3	Ghosts	RateBook	I-object_name
+4	of	RateBook	I-object_name
+5	Onyx	RateBook	I-object_name
+6	打	RateBook	O
+7	零	RateBook	B-rating_value
+8	颗	RateBook	O
+9	星	RateBook	B-rating_unit
+
+# id: 252
+# text-en: Play music by Joy Nilo .
+# text: 播放 Joy Nilo 的 歌曲 。
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	Joy	PlayMusic	B-artist
+3	Nilo	PlayMusic	I-artist
+4	的	PlayMusic	O
+5	歌曲	PlayMusic	O
+6	。	PlayMusic	O
+
+# id: 253
+# text-en: Please find me the video game titled 20 Hours in America .
+# text: 请 给 我 找到 名字 是 20 Hours in America 的 电子 游戏 。
+# intent: SearchCreativeWork
+1	请	SearchCreativeWork	O
+2	给	SearchCreativeWork	O
+3	我	SearchCreativeWork	O
+4	找到	SearchCreativeWork	O
+5	名字	SearchCreativeWork	O
+6	是	SearchCreativeWork	O
+7	20	SearchCreativeWork	B-object_name
+8	Hours	SearchCreativeWork	I-object_name
+9	in	SearchCreativeWork	I-object_name
+10	America	SearchCreativeWork	I-object_name
+11	的	SearchCreativeWork	O
+12	电子	SearchCreativeWork	B-object_type
+13	游戏	SearchCreativeWork	I-object_type
+14	。	SearchCreativeWork	O
+
+# id: 254
+# text-en: Play my inventive playlist
+# text: 播放 我的 创造性 播放 列表
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	我的	PlayMusic	O
+3	创造性	PlayMusic	B-playlist
+4	播放	PlayMusic	O
+5	列表	PlayMusic	O
+
+# id: 255
+# text-en: Book spot for 9 at Thurmont
+# text: 预订 在 Thurmont 9 点 的 位子
+# intent: BookRestaurant
+1	预订	BookRestaurant	O
+2	在	BookRestaurant	O
+3	Thurmont	BookRestaurant	B-location
+4	9	BookRestaurant	B-party_size_number
+5	点	BookRestaurant	I-party_size_number
+6	的	BookRestaurant	O
+7	位子	BookRestaurant	O
+
+# id: 256
+# text-en: Add this tune to dorthy's 80's party playlist
+# text: 将 此 音乐 添加 到 dorthy's 80's party 的 播放 列表 中
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	此	AddToPlaylist	O
+3	音乐	AddToPlaylist	B-music_item
+4	添加	AddToPlaylist	O
+5	到	AddToPlaylist	O
+6	dorthy's	AddToPlaylist	B-reference
+7	80's	AddToPlaylist	B-playlist
+8	party	AddToPlaylist	I-playlist
+9	的	AddToPlaylist	O
+10	播放	AddToPlaylist	O
+11	列表	AddToPlaylist	O
+12	中	AddToPlaylist	O
+
+# id: 257
+# text-en: Play the newest melody on Last Fm by Eddie Vinson .
+# text: 在 Last Fm 上 播放 Eddie Vinson 的 最新 旋律 。
+# intent: PlayMusic
+1	在	PlayMusic	O
+2	Last	PlayMusic	B-service
+3	Fm	PlayMusic	I-service
+4	上	PlayMusic	O
+5	播放	PlayMusic	O
+6	Eddie	PlayMusic	B-artist
+7	Vinson	PlayMusic	I-artist
+8	的	PlayMusic	O
+9	最新	PlayMusic	B-sort
+10	旋律	PlayMusic	B-music_item
+11	。	PlayMusic	O
+
+# id: 258
+# text-en: Check the forecast for Nebraska .
+# text: 查看 内布拉斯加州 的 天气 预报 。
+# intent: weather/find
+1	查看	weather/find	O
+2	内布拉斯加州	weather/find	B-location
+3	的	weather/find	O
+4	天气	weather/find	O
+5	预报	weather/find	O
+6	。	weather/find	O
+
+# id: 259
+# text-en: Is there a storm now in NC ?
+# text: 纽约 现在 有 风暴 吗 ？
+# intent: weather/find
+1	纽约	weather/find	B-location
+2	现在	weather/find	B-datetime
+3	有	weather/find	O
+4	风暴	weather/find	B-condition_description
+5	吗	weather/find	O
+6	？	weather/find	O
+
+# id: 260
+# text-en: I want to listen to an ep from 1998 .
+# text: 我 想 听 1988 年 的 ep .
+# intent: PlayMusic
+1	我	PlayMusic	O
+2	想	PlayMusic	O
+3	听	PlayMusic	O
+4	1988	PlayMusic	B-datetime
+5	年	PlayMusic	O
+6	的	PlayMusic	O
+7	ep	PlayMusic	B-music_item
+8	.	PlayMusic	O
+
+# id: 261
+# text-en: I need times for A Yiddish World Remembered at Dipson Theatres
+# text: 我 需要 时间 在 迪普森 剧院 的 A Yiddish World Remembered
+# intent: SearchScreeningEvent
+1	我	SearchScreeningEvent	O
+2	需要	SearchScreeningEvent	O
+3	时间	SearchScreeningEvent	B-object_type
+4	在	SearchScreeningEvent	O
+5	迪普森	SearchScreeningEvent	B-location
+6	剧院	SearchScreeningEvent	I-location
+7	的	SearchScreeningEvent	O
+8	A	SearchScreeningEvent	B-movie_name
+9	Yiddish	SearchScreeningEvent	I-movie_name
+10	World	SearchScreeningEvent	I-movie_name
+11	Remembered	SearchScreeningEvent	I-movie_name
+
+# id: 262
+# text-en: Give 1 out of 6 rating to the current textbook
+# text: 对 当前 的 教科书 评分 为 六分 中 的 一分
+# intent: RateBook
+1	对	RateBook	O
+2	当前	RateBook	B-object_select
+3	的	RateBook	O
+4	教科书	RateBook	B-object_type
+5	评分	RateBook	O
+6	为	RateBook	O
+7	六分	RateBook	B-best_rating
+8	中	RateBook	O
+9	的	RateBook	O
+10	一分	RateBook	B-rating_value
+
+# id: 263
+# text-en: Add the Matt Murphy tune to the Flow Español playlist.
+# text: 把 Matt Murphy 的 旋律 添加 在 the Flow Español 播放 列表 中 。
+# intent: AddToPlaylist
+1	把	AddToPlaylist	O
+2	Matt	AddToPlaylist	B-artist
+3	Murphy	AddToPlaylist	I-artist
+4	的	AddToPlaylist	O
+5	旋律	AddToPlaylist	B-music_item
+6	添加	AddToPlaylist	O
+7	在	AddToPlaylist	O
+8	the	AddToPlaylist	O
+9	Flow	AddToPlaylist	B-playlist
+10	Español	AddToPlaylist	I-playlist
+11	播放	AddToPlaylist	I-playlist
+12	列表	AddToPlaylist	O
+13	中	AddToPlaylist	O
+14	。	AddToPlaylist	O
+
+# id: 264
+# text-en: I want to book a sundanese gastropub nearby in Texas for 3 people on 5/20/2025 .
+# text: 我 想 于 2025 年 5 月 20 日 在 德克萨斯州 附近 为 3 个 人 预订 一家 sundanese 美食馆 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	于	BookRestaurant	O
+4	2025	BookRestaurant	B-datetime
+5	年	BookRestaurant	I-datetime
+6	5	BookRestaurant	I-datetime
+7	月	BookRestaurant	I-datetime
+8	20	BookRestaurant	I-datetime
+9	日	BookRestaurant	I-datetime
+10	在	BookRestaurant	O
+11	德克萨斯州	BookRestaurant	B-location
+12	附近	BookRestaurant	B-location
+13	为	BookRestaurant	O
+14	3	BookRestaurant	B-party_size_number
+15	个	BookRestaurant	O
+16	人	BookRestaurant	O
+17	预订	BookRestaurant	O
+18	一家	BookRestaurant	O
+19	sundanese	BookRestaurant	B-cuisine
+20	美食馆	BookRestaurant	B-restaurant_type
+21	。	BookRestaurant	O
+
+# id: 265
+# text-en: Could you find the TV series The Approach
+# text: 你 能 找到 The Approach 电视剧 吗
+# intent: SearchCreativeWork
+1	你	SearchCreativeWork	O
+2	能	SearchCreativeWork	O
+3	找到	SearchCreativeWork	O
+4	The	SearchCreativeWork	B-object_name
+5	Approach	SearchCreativeWork	I-object_name
+6	电视剧	SearchCreativeWork	B-object_type
+7	吗	SearchCreativeWork	O
+
+# id: 266
+# text-en: Give this chronicle a 2 rating.
+# text: 给 这 个 编年史 打 2 分 。
+# intent: RateBook
+1	给	RateBook	O
+2	这	RateBook	B-object_select
+3	个	RateBook	I-object_select
+4	编年史	RateBook	B-object_part_of_series_type
+5	打	RateBook	O
+6	2	RateBook	B-rating_value
+7	分	RateBook	O
+8	。	RateBook	O
+
+# id: 267
+# text-en: Give The American Scene 2 of 6 stars
+# text: 给 这 个 The American Scene 6 颗 星 中 的 2 颗 星
+# intent: RateBook
+1	给	RateBook	O
+2	这	RateBook	O
+3	个	RateBook	O
+4	The	RateBook	B-object_name
+5	American	RateBook	I-object_name
+6	Scene	RateBook	I-object_name
+7	6	RateBook	B-best_rating
+8	颗	RateBook	O
+9	星	RateBook	O
+10	中	RateBook	O
+11	的	RateBook	O
+12	2	RateBook	B-rating_value
+13	颗	RateBook	O
+14	星	RateBook	B-rating_unit
+
+# id: 268
+# text-en: Add emilie autumn to my Nação Reggae playlist.
+# text: 添加 emilie autumn 到 我 的 Nação Reggae 播放 列表 中 。
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	emilie	AddToPlaylist	B-artist
+3	autumn	AddToPlaylist	I-artist
+4	到	AddToPlaylist	O
+5	我	AddToPlaylist	B-reference
+6	的	AddToPlaylist	I-reference
+7	Nação	AddToPlaylist	B-playlist
+8	Reggae	AddToPlaylist	I-playlist
+9	播放	AddToPlaylist	O
+10	列表	AddToPlaylist	O
+11	中	AddToPlaylist	O
+12	。	AddToPlaylist	O
+
+# id: 269
+# text-en: I want to book a jewish restaurant in Gambia .
+# text: 我 想 在 冈比亚 订 一家 犹太 餐馆 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	在	BookRestaurant	O
+4	冈比亚	BookRestaurant	B-location
+5	订	BookRestaurant	O
+6	一家	BookRestaurant	O
+7	犹太	BookRestaurant	B-cuisine
+8	餐馆	BookRestaurant	B-restaurant_type
+9	。	BookRestaurant	O
+
+# id: 270
+# text-en: book a table at a Fried chicken restaurant
+# text: 在 炸鸡 店 预订 一张 桌子
+# intent: BookRestaurant
+1	在	BookRestaurant	O
+2	炸鸡	BookRestaurant	B-restaurant_name
+3	店	BookRestaurant	I-restaurant_name
+4	预订	BookRestaurant	O
+5	一张	BookRestaurant	O
+6	桌子	BookRestaurant	O
+
+# id: 271
+# text-en: add we have a theme song to my House Afterwork playlist
+# text: 添加 we have a theme song 到 我的 House Afterwork 播放 列表 中 。
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	we	AddToPlaylist	B-entity_name
+3	have	AddToPlaylist	I-entity_name
+4	a	AddToPlaylist	I-entity_name
+5	theme	AddToPlaylist	I-entity_name
+6	song	AddToPlaylist	I-entity_name
+7	到	AddToPlaylist	O
+8	我的	AddToPlaylist	B-reference
+9	House	AddToPlaylist	B-playlist
+10	Afterwork	AddToPlaylist	I-playlist
+11	播放	AddToPlaylist	O
+12	列表	AddToPlaylist	O
+13	中	AddToPlaylist	O
+14	。	AddToPlaylist	O
+
+# id: 272
+# text-en: What will the weather be not far from here on October the nineteenth, 2026 ?
+# text: 2026 年 10 月 19 日 离 这里 不远 的 天气 会 是 怎样 的 ？
+# intent: weather/find
+1	2026	weather/find	B-datetime
+2	年	weather/find	I-datetime
+3	10	weather/find	I-datetime
+4	月	weather/find	I-datetime
+5	19	weather/find	I-datetime
+6	日	weather/find	I-datetime
+7	离	weather/find	B-location
+8	这里	weather/find	B-location
+9	不远	weather/find	B-location
+10	的	weather/find	O
+11	天气	weather/find	O
+12	会	weather/find	O
+13	是	weather/find	O
+14	怎样	weather/find	O
+15	的	weather/find	O
+16	？	weather/find	O
+
+# id: 273
+# text-en: Weather in Walden Russia on 12/26/2018
+# text: 2018 年 12 月 26 日 瓦尔登 俄罗斯 天气
+# intent: weather/find
+1	2018	weather/find	B-datetime
+2	年	weather/find	I-datetime
+3	12	weather/find	I-datetime
+4	月	weather/find	I-datetime
+5	26	weather/find	I-datetime
+6	日	weather/find	I-datetime
+7	瓦尔登	weather/find	B-location
+8	俄罗斯	weather/find	B-location
+9	天气	weather/find	O
+
+# id: 274
+# text-en: I want to book a restaurant for my father in law and I in Buckner a year from now .
+# text: 我 想 为 我的 岳父 和 我 一年 后 在 巴克纳 预订 一家 餐馆 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	为	BookRestaurant	O
+4	我的	BookRestaurant	B-party_size_description
+5	岳父	BookRestaurant	I-party_size_description
+6	和	BookRestaurant	I-party_size_description
+7	我	BookRestaurant	I-party_size_description
+8	一年	BookRestaurant	B-datetime
+9	后	BookRestaurant	I-datetime
+10	在	BookRestaurant	O
+11	巴克纳	BookRestaurant	B-location
+12	预订	BookRestaurant	O
+13	一家	BookRestaurant	O
+14	餐馆	BookRestaurant	B-restaurant_type
+15	。	BookRestaurant	O
+
+# id: 275
+# text-en: Rate this book a 1
+# text: 给 这 本 书 评级 为 1
+# intent: RateBook
+1	给	RateBook	O
+2	这	RateBook	B-object_select
+3		RateBook	O
+4	本	RateBook	O
+5	书	RateBook	B-object_type
+6	评级	RateBook	O
+7	为	RateBook	O
+8	1	RateBook	B-rating_value
+
+# id: 276
+# text-en: add this artist to my spotlight on country 2016 playlist
+# text: 将 此 艺术家 添加 到 我 的 2016 年 国家 集锦 播放 列表 中
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	此	AddToPlaylist	O
+3	艺术家	AddToPlaylist	B-music_item
+4	添加	AddToPlaylist	O
+5	到	AddToPlaylist	O
+6	我	AddToPlaylist	B-reference
+7	的	AddToPlaylist	I-reference
+8	2016	AddToPlaylist	B-playlist
+9	年	AddToPlaylist	I-playlist
+10	国家	AddToPlaylist	I-playlist
+11	集锦	AddToPlaylist	I-playlist
+12	播放	AddToPlaylist	O
+13	列表	AddToPlaylist	O
+14	中	AddToPlaylist	O
+
+# id: 277
+# text-en: Could you locate the Epic Conditions picture ?
+# text: 你 能 找到 Epic Conditions 图片 吗 ？
+# intent: SearchCreativeWork
+1	你	SearchCreativeWork	O
+2	能	SearchCreativeWork	O
+3	找到	SearchCreativeWork	O
+4	Epic	SearchCreativeWork	B-object_name
+5	Conditions	SearchCreativeWork	I-object_name
+6	图片	SearchCreativeWork	B-object_type
+7	吗	SearchCreativeWork	O
+8	？	SearchCreativeWork	O
+
+# id: 278
+# text-en: Play rich sex on Iheart
+# text: 播放 rich sex on Iheart
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	rich	PlayMusic	B-track
+3	sex	PlayMusic	I-track
+4	on	PlayMusic	O
+5	Iheart	PlayMusic	B-service
+
+# id: 279
+# text-en: Is Bartok the Magnificent playing at seven AM ?
+# text: Bartok the Magnificent 在 早上 七点 演奏 是 不 是 很 棒 ？
+# intent: SearchScreeningEvent
+1	Bartok	SearchScreeningEvent	B-movie_name
+2	the	SearchScreeningEvent	I-movie_name
+3	Magnificent	SearchScreeningEvent	I-movie_name
+4	在	SearchScreeningEvent	O
+5	早上	SearchScreeningEvent	B-datetime
+6	七点	SearchScreeningEvent	I-datetime
+7	演奏	SearchScreeningEvent	O
+8	是	SearchScreeningEvent	O
+9	不	SearchScreeningEvent	O
+10	是	SearchScreeningEvent	O
+11	很	SearchScreeningEvent	O
+12	棒	SearchScreeningEvent	O
+13	？	SearchScreeningEvent	O
+
+# id: 280
+# text-en: Play something on Zvooq
+# text: 在 Zvooq 上 播放
+# intent: PlayMusic
+1	在	PlayMusic	O
+2	Zvooq	PlayMusic	B-service
+3	上	PlayMusic	O
+4	播放	PlayMusic	O
+
+# id: 281
+# text-en: Let me hear Chris Knight music
+# text: 让 我 听 Chris Knight 的 音乐
+# intent: PlayMusic
+1	让	PlayMusic	O
+2	我	PlayMusic	O
+3	听	PlayMusic	O
+4	Chris	PlayMusic	B-artist
+5	Knight	PlayMusic	I-artist
+6	的	PlayMusic	O
+7	音乐	PlayMusic	O
+
+# id: 282
+# text-en: play Jill Sobule album
+# text: 播放 Jill Sobule 的 专辑
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	Jill	PlayMusic	B-album
+3	Sobule	PlayMusic	I-album
+4	的	PlayMusic	O
+5	专辑	PlayMusic	B-music_item
+
+# id: 283
+# text-en: Give four stars to The Broken Window
+# text: 给 The Broken Window 打 四 颗 星
+# intent: RateBook
+1	给	RateBook	O
+2	The	RateBook	B-object_name
+3	Broken	RateBook	I-object_name
+4	Window	RateBook	I-object_name
+5	打	RateBook	O
+6	四	RateBook	B-rating_value
+7	颗	RateBook	O
+8	星	RateBook	B-rating_unit
+
+# id: 284
+# text-en: Tell me the forecast for 6 am in Tatra-Nationalpark
+# text: 告诉 我 塔特拉 国家 公园 早上 6点 的 天气 预报
+# intent: weather/find
+1	告诉	weather/find	O
+2	我	weather/find	O
+3	塔特拉	weather/find	B-location
+4	国家	weather/find	I-location
+5	公园	weather/find	O
+6	早上	weather/find	B-datetime
+7	6点	weather/find	I-datetime
+8	的	weather/find	O
+9	天气	weather/find	O
+10	预报	weather/find	O
+
+# id: 285
+# text-en: Please book me a table at a bistro which serves lorna doone .
+# text: 请 给 我 订 一张 提供 lorna doone 酒馆 的 桌子 。
+# intent: BookRestaurant
+1	请	BookRestaurant	O
+2	给	BookRestaurant	O
+3	我	BookRestaurant	O
+4	订	BookRestaurant	O
+5	一张	BookRestaurant	O
+6	提供	BookRestaurant	O
+7	lorna	BookRestaurant	B-served_dish
+8	doone	BookRestaurant	I-served_dish
+9	酒馆	BookRestaurant	B-restaurant_type
+10	的	BookRestaurant	O
+11	桌子	BookRestaurant	O
+12	。	BookRestaurant	O
+
+# id: 286
+# text-en: Rate The Mystery of the Tolling Bell series 4 stars .
+# text: 给 The Mystery of the Tolling Bell 系列 4 星 评分 。
+# intent: RateBook
+1	给	RateBook	O
+2	The	RateBook	B-object_name
+3	Mystery	RateBook	I-object_name
+4	of	RateBook	I-object_name
+5	the	RateBook	I-object_name
+6	Tolling	RateBook	I-object_name
+7	Bell	RateBook	I-object_name
+8	系列	RateBook	B-object_part_of_series_type
+9	4	RateBook	B-rating_value
+10	星	RateBook	B-rating_unit
+11	评分	RateBook	O
+12	。	RateBook	O
+
+# id: 287
+# text-en: Use Groove Shark to play music
+# text: 使 用 Groove Shark 播放 音乐
+# intent: PlayMusic
+1	使	PlayMusic	O
+2	用	PlayMusic	O
+3	Groove	PlayMusic	B-service
+4	Shark	PlayMusic	I-service
+5	播放	PlayMusic	O
+6	音乐	PlayMusic	O
+
+# id: 288
+# text-en: Check the timings for Snowbound at the closest movie theatre .
+# text: 查下 最近 的 电影院 Snowbound 的 时间 。
+# intent: SearchScreeningEvent
+1	查下	SearchScreeningEvent	O
+2	最近	SearchScreeningEvent	B-location
+3	的	SearchScreeningEvent	I-location
+4	电影院	SearchScreeningEvent	B-object_location_type
+5	Snowbound	SearchScreeningEvent	B-movie_name
+6	的	SearchScreeningEvent	O
+7	时间	SearchScreeningEvent	O
+8	。	SearchScreeningEvent	O
+
+# id: 289
+# text-en: Please open Zvooq
+# text: 请 打开 Zvooq
+# intent: PlayMusic
+1	请	PlayMusic	O
+2	打开	PlayMusic	O
+3	Zvooq	PlayMusic	B-service
+
+# id: 290
+# text-en: book spot for 1 at Town of Ramsgate in Merit
+# text: 在 拉姆斯盖特镇 的 Merit 预订 一个 人 的 位置
+# intent: BookRestaurant
+1	在	BookRestaurant	O
+2	拉姆斯盖特镇	BookRestaurant	B-restaurant_name
+3	的	BookRestaurant	O
+4	Merit	BookRestaurant	B-location
+5	预订	BookRestaurant	O
+6	一个	BookRestaurant	B-party_size_number
+7	人	BookRestaurant	O
+8	的	BookRestaurant	O
+9	位置	BookRestaurant	O
+
+# id: 291
+# text-en: Will I Think I Do be playing at 7 PM ?
+# text: I Think I Do 会 在 晚上 7 点 演奏 吗 ？
+# intent: SearchScreeningEvent
+1	I	SearchScreeningEvent	B-movie_name
+2	Think	SearchScreeningEvent	I-movie_name
+3	I	SearchScreeningEvent	I-movie_name
+4	Do	SearchScreeningEvent	I-movie_name
+5	会	SearchScreeningEvent	O
+6	在	SearchScreeningEvent	O
+7	晚上	SearchScreeningEvent	B-datetime
+8	7	SearchScreeningEvent	I-datetime
+9	点	SearchScreeningEvent	I-datetime
+10	演奏	SearchScreeningEvent	O
+11	吗	SearchScreeningEvent	O
+12	？	SearchScreeningEvent	O
+
+# id: 292
+# text-en: will Custer National Forest be chillier at seven Pm
+# text: 下午 七 点 卡斯特国家 森林 会 更 冷 吗
+# intent: weather/find
+1	下午	weather/find	B-datetime
+2	七	weather/find	I-datetime
+3	点	weather/find	I-datetime
+4	卡斯特国家	weather/find	B-location
+5	森林	weather/find	I-location
+6	会	weather/find	O
+7	更	weather/find	B-condition_temperature
+8	冷	weather/find	I-condition_temperature
+9	吗	weather/find	O
+
+# id: 293
+# text-en: I want to listen to something on Youtube
+# text: 我 想 在 Youtube 上 听 一些 东西
+# intent: PlayMusic
+1	我	PlayMusic	O
+2	想	PlayMusic	O
+3	在	PlayMusic	O
+4	Youtube	PlayMusic	B-service
+5	上	PlayMusic	O
+6	听	PlayMusic	O
+7	一些	PlayMusic	O
+8	东西	PlayMusic	O
+
+# id: 294
+# text-en: Search for the game Difficult Loves
+# text: 寻找 游戏 Difficult Loves
+# intent: SearchCreativeWork
+1	寻找	SearchCreativeWork	O
+2	游戏	SearchCreativeWork	B-object_type
+3	Difficult	SearchCreativeWork	B-object_name
+4	Loves	SearchCreativeWork	I-object_name
+
+# id: 295
+# text-en: What's the weather forecast for Bothe-Napa Valley State Park close by february 20 ?
+# text: 接近 2 月 20 日 ， 那帕谷州立 公园 的 天气 预报 怎么样 ？
+# intent: weather/find
+1	接近	weather/find	B-location
+2	2	weather/find	B-datetime
+3	月	weather/find	I-datetime
+4	20	weather/find	I-datetime
+5	日	weather/find	I-datetime
+6	，	weather/find	O
+7	那帕谷州立	weather/find	B-location
+8	公园	weather/find	I-location
+9	的	weather/find	O
+10	天气	weather/find	O
+11	预报	weather/find	O
+12	怎么样	weather/find	O
+13	？	weather/find	O
+
+# id: 296
+# text-en: show me the schedule of movie The Great Gildersleeve near movie house
+# text: 给 我 显示 The Great Gildersleeve 在 电影院 附近 的 放映 时间表
+# intent: SearchScreeningEvent
+1	给	SearchScreeningEvent	O
+2	我	SearchScreeningEvent	O
+3	显示	SearchScreeningEvent	O
+4	The	SearchScreeningEvent	B-movie_name
+5	Great	SearchScreeningEvent	I-movie_name
+6	Gildersleeve	SearchScreeningEvent	I-movie_name
+7		SearchScreeningEvent	O
+8	在	SearchScreeningEvent	O
+9	电影院	SearchScreeningEvent	B-object_location_type
+10	附近	SearchScreeningEvent	O
+11	的	SearchScreeningEvent	O
+12	放映	SearchScreeningEvent	O
+13	时间表	SearchScreeningEvent	B-object_type
+
+# id: 297
+# text-en: Tell me the weather forecast for Gibsland
+# text: 告诉 我 吉布斯兰 的 天气 预报
+# intent: weather/find
+1	告诉	weather/find	O
+2	我	weather/find	O
+3	吉布斯兰	weather/find	B-location
+4	的	weather/find	O
+5	天气	weather/find	O
+6	预报	weather/find	O
+
+# id: 298
+# text-en: Can I get the times for movies in the neighbourhood
+# text: 我 能 知 道 附近 看 电影 的 时间 吗
+# intent: SearchScreeningEvent
+1	我	SearchScreeningEvent	O
+2	能	SearchScreeningEvent	O
+3	知	SearchScreeningEvent	O
+4	道	SearchScreeningEvent	O
+5	附近	SearchScreeningEvent	B-location
+6	看	SearchScreeningEvent	O
+7	电影	SearchScreeningEvent	B-movie_type
+8	的	SearchScreeningEvent	O
+9	时间	SearchScreeningEvent	B-object_type
+10	吗	SearchScreeningEvent	O
+
+# id: 299
+# text-en: Rate Soul Music a 0 .
+# text: 给 Soul Music 评分 为 0 。
+# intent: RateBook
+1	给	RateBook	O
+2	Soul	RateBook	B-object_name
+3	Music	RateBook	I-object_name
+4	评分	RateBook	O
+5	为	RateBook	O
+6	0	RateBook	B-rating_value
+7	。	RateBook	O
+
+# id: 300
+# text-en: Book a reservation for five people for a tatar taverna in Sargents
+# text: 预订 5个 人 的 tatar taverna 在 Sargents
+# intent: BookRestaurant
+1	预订	BookRestaurant	O
+2	5个	BookRestaurant	B-party_size_number
+3	人	BookRestaurant	O
+4	的	BookRestaurant	O
+5	tatar	BookRestaurant	B-cuisine
+6	taverna	BookRestaurant	B-restaurant_type
+7	在	BookRestaurant	O
+8	Sargents	BookRestaurant	B-location
+
+# id: 301
+# text-en: Play All Things Must Pass .
+# text: 播放 All Things Must Pass 。
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	All	PlayMusic	B-track
+3	Things	PlayMusic	I-track
+4	Must	PlayMusic	I-track
+5	Pass	PlayMusic	I-track
+6	。	PlayMusic	O
+
+# id: 302
+# text-en: What is the rain forecast for one hour from now in South Korea
+# text: 韩国 从 现在 开始 一小 时 后 的 降雨 预报 是多少
+# intent: weather/find
+1	韩国	weather/find	B-location
+2	从	weather/find	B-datetime
+3	现在	weather/find	I-datetime
+4	开始	weather/find	I-datetime
+5	一小	weather/find	I-datetime
+6	时	weather/find	I-datetime
+7	后	weather/find	I-datetime
+8	的	weather/find	O
+9	降雨	weather/find	B-condition_description
+10	预报	weather/find	O
+11	是多少	weather/find	O
+
+# id: 303
+# text-en: Book a spot for 4 in Oklahoma at South Street Diner
+# text: 在 俄克拉荷马州 南 大街 的 Diner 预订 一个 4 人 的 位置
+# intent: BookRestaurant
+1	在	BookRestaurant	O
+2	俄克拉荷马州	BookRestaurant	B-location
+3	南	BookRestaurant	B-restaurant_name
+4	大街	BookRestaurant	I-restaurant_name
+5	的	BookRestaurant	I-restaurant_name
+6	Diner	BookRestaurant	I-restaurant_name
+7	预订	BookRestaurant	O
+8	一个	BookRestaurant	O
+9	4	BookRestaurant	B-party_size_number
+10	人	BookRestaurant	O
+11	的	BookRestaurant	O
+12	位置	BookRestaurant	O
+
+# id: 304
+# text-en: Play music off Netflix .
+# text: 在 Netflix 上 播放 音乐 。
+# intent: PlayMusic
+1	在	PlayMusic	O
+2	Netflix	PlayMusic	B-service
+3	上	PlayMusic	O
+4	播放	PlayMusic	O
+5	音乐	PlayMusic	O
+6	。	PlayMusic	O
+
+# id: 305
+# text-en: I want to see Shattered Image .
+# text: 我 想 看到 Shattered Image 。
+# intent: SearchScreeningEvent
+1	我	SearchScreeningEvent	O
+2	想	SearchScreeningEvent	O
+3	看到	SearchScreeningEvent	O
+4	Shattered	SearchScreeningEvent	B-movie_name
+5	Image	SearchScreeningEvent	I-movie_name
+6	。	SearchScreeningEvent	O
+
+# id: 306
+# text-en: Search for The Sound of One Hand Clapping
+# text: 搜索 The Sound of One Hand Clapping
+# intent: SearchCreativeWork
+1	搜索	SearchCreativeWork	O
+2	The	SearchCreativeWork	B-object_name
+3	Sound	SearchCreativeWork	I-object_name
+4	of	SearchCreativeWork	I-object_name
+5	One	SearchCreativeWork	I-object_name
+6	Hand	SearchCreativeWork	I-object_name
+7	Clapping	SearchCreativeWork	I-object_name
+
+# id: 307
+# text-en: Look for the album Wolves Within
+# text: 搜索 Wolves Within 专辑
+# intent: SearchCreativeWork
+1	搜索	SearchCreativeWork	O
+2	Wolves	SearchCreativeWork	B-object_name
+3	Within	SearchCreativeWork	I-object_name
+4	专辑	SearchCreativeWork	B-object_type
+
+# id: 308
+# text-en: is We Are Northern Lights playing in any movie theatre
+# text: We Are Northern Lights 是否 会 在 所有 的 电影院 播放
+# intent: SearchScreeningEvent
+1	We	SearchScreeningEvent	B-movie_name
+2	Are	SearchScreeningEvent	I-movie_name
+3	Northern	SearchScreeningEvent	I-movie_name
+4	Lights	SearchScreeningEvent	I-movie_name
+5	是否	SearchScreeningEvent	O
+6	会	SearchScreeningEvent	O
+7	在	SearchScreeningEvent	O
+8	所有	SearchScreeningEvent	O
+9	的	SearchScreeningEvent	O
+10	电影院	SearchScreeningEvent	B-object_location_type
+11	播放	SearchScreeningEvent	O
+
+# id: 309
+# text-en: Add our little corner of the world music from gilmore girls to my The Funny Thing About Football Is playlist.
+# text: 添加 our little corner of the world music from gilmore girls 到 我的 The Funny Thing About Football Is 播放 列表 。
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	our	AddToPlaylist	B-entity_name
+3	little	AddToPlaylist	I-entity_name
+4	corner	AddToPlaylist	I-entity_name
+5	of	AddToPlaylist	I-entity_name
+6	the	AddToPlaylist	I-entity_name
+7	world	AddToPlaylist	I-entity_name
+8	music	AddToPlaylist	I-entity_name
+9	from	AddToPlaylist	I-entity_name
+10	gilmore	AddToPlaylist	I-entity_name
+11	girls	AddToPlaylist	I-entity_name
+12	到	AddToPlaylist	O
+13	我的	AddToPlaylist	B-reference
+14	The	AddToPlaylist	B-playlist
+15	Funny	AddToPlaylist	I-playlist
+16	Thing	AddToPlaylist	I-playlist
+17	About	AddToPlaylist	I-playlist
+18	Football	AddToPlaylist	I-playlist
+19	Is	AddToPlaylist	I-playlist
+20	播放	AddToPlaylist	O
+21	列表	AddToPlaylist	O
+22	。	AddToPlaylist	O
+
+# id: 310
+# text-en: what is the forecast for hotter weather at Southford Falls State Park
+# text: 绍斯福德瀑布 州立 公园 的 高温 天气 预报 是 怎样 的
+# intent: weather/find
+1	绍斯福德瀑布	weather/find	B-location
+2	州立	weather/find	I-location
+3	公园	weather/find	I-location
+4	的	weather/find	O
+5	高温	weather/find	B-condition_temperature
+6	天气	weather/find	O
+7	预报	weather/find	O
+8	是	weather/find	O
+9	怎样	weather/find	O
+10	的	weather/find	O
+
+# id: 311
+# text-en: Please book me a table at a pizzeria with a parking facility in Ghana .
+# text: 请 给 我 在 加纳 一家 有 停车场 的 比萨 店 订 一张 桌子 。
+# intent: BookRestaurant
+1	请	BookRestaurant	O
+2	给	BookRestaurant	O
+3	我	BookRestaurant	O
+4	在	BookRestaurant	O
+5	加纳	BookRestaurant	B-location
+6	一家	BookRestaurant	O
+7	有	BookRestaurant	O
+8	停车场	BookRestaurant	B-facility
+9	的	BookRestaurant	O
+10	比萨	BookRestaurant	B-restaurant_type
+11	店	BookRestaurant	O
+12	订	BookRestaurant	O
+13	一张	BookRestaurant	O
+14	桌子	BookRestaurant	O
+15	。	BookRestaurant	O
+
+# id: 312
+# text-en: I want to hear a seventies sound track .
+# text: 我 想 听 七 十 年代 的 音乐 。
+# intent: PlayMusic
+1	我	PlayMusic	O
+2	想	PlayMusic	O
+3	听	PlayMusic	O
+4	七	PlayMusic	B-datetime
+5	十	PlayMusic	I-datetime
+6	年代	PlayMusic	I-datetime
+7	的	PlayMusic	O
+8	音乐	PlayMusic	B-music_item
+9	。	PlayMusic	O
+
+# id: 313
+# text-en: Weather in two hours in Uzbekistan
+# text: 乌兹别克斯坦 两 小时 内 的 天气
+# intent: weather/find
+1	乌兹别克斯坦	weather/find	B-location
+2	两	weather/find	B-datetime
+3	小时	weather/find	I-datetime
+4	内	weather/find	I-datetime
+5	的	weather/find	O
+6	天气	weather/find	O
+
+# id: 314
+# text-en: Please find me the Journal of the British Astronomical Association movie .
+# text: 请 给 我 找 电影 the Journal of the British Astronomical Association 。
+# intent: SearchCreativeWork
+1	请	SearchCreativeWork	O
+2	给	SearchCreativeWork	O
+3	我	SearchCreativeWork	O
+4	找	SearchCreativeWork	O
+5	电影	SearchCreativeWork	B-object_type
+6	the	SearchCreativeWork	B-object_name
+7	Journal	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	British	SearchCreativeWork	I-object_name
+11	Astronomical	SearchCreativeWork	I-object_name
+12	Association	SearchCreativeWork	I-object_name
+13	。	SearchCreativeWork	O
+
+# id: 315
+# text-en: Book a reservation for 8 people in Wardville , Kansas
+# text: 预订 8个 人 的 位置 在 堪萨斯州 沃德 维尔预
+# intent: BookRestaurant
+1	预订	BookRestaurant	O
+2		BookRestaurant	O
+3	8个	BookRestaurant	B-party_size_number
+4	人	BookRestaurant	O
+5	的	BookRestaurant	O
+6	位置	BookRestaurant	O
+7	在	BookRestaurant	O
+8	堪萨斯州	BookRestaurant	B-location
+9	沃德	BookRestaurant	B-location
+10	维尔预	BookRestaurant	I-location
+
+# id: 316
+# text-en: What will the weather be faraway from here ?
+# text: 离 这儿 很远 的 天气 会怎样 ？
+# intent: weather/find
+1	离	weather/find	O
+2	这儿	weather/find	B-location
+3	很远	weather/find	B-location
+4	的	weather/find	O
+5	天气	weather/find	O
+6	会怎样	weather/find	O
+7	？	weather/find	O
+
+# id: 317
+# text-en: Add Richard McNamara newest song to the Just Smile playlist
+# text: 将 Richard McNamara 的 最新 歌曲 添加 到 Just Smile 播放 列表 中
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	Richard	AddToPlaylist	B-artist
+3	McNamara	AddToPlaylist	I-artist
+4	的	AddToPlaylist	O
+5	最新	AddToPlaylist	O
+6	歌曲	AddToPlaylist	B-music_item
+7	添加	AddToPlaylist	O
+8	到	AddToPlaylist	O
+9	Just	AddToPlaylist	B-playlist
+10	Smile	AddToPlaylist	I-playlist
+11	播放	AddToPlaylist	O
+12	列表	AddToPlaylist	O
+13	中	AddToPlaylist	O
+
+# id: 318
+# text-en: how cold will it be here in 1 second
+# text: 1 秒钟 内 后 这里 会 有 多 冷
+# intent: weather/find
+1	1	weather/find	B-datetime
+2	秒钟	weather/find	I-datetime
+3	内	weather/find	I-datetime
+4	后	weather/find	O
+5	这里	weather/find	B-location
+6	会	weather/find	O
+7	有	weather/find	O
+8	多	weather/find	O
+9	冷	weather/find	B-condition_temperature
+
+# id: 319
+# text-en: Looking for a painting with the title With You
+# text: 找 一幅 名 为 With You 的 画
+# intent: SearchCreativeWork
+1	找	SearchCreativeWork	O
+2	一幅	SearchCreativeWork	O
+3	名	SearchCreativeWork	O
+4	为	SearchCreativeWork	O
+5	With	SearchCreativeWork	B-object_name
+6	You	SearchCreativeWork	I-object_name
+7	的	SearchCreativeWork	O
+8	画	SearchCreativeWork	B-object_type
+
+# id: 320
+# text-en: Find the creative work Deadly Weapons
+# text: 找到 创意 作品 Deadly Weapons
+# intent: SearchCreativeWork
+1	找到	SearchCreativeWork	O
+2	创意	SearchCreativeWork	O
+3	作品	SearchCreativeWork	O
+4	Deadly	SearchCreativeWork	B-object_name
+5	Weapons	SearchCreativeWork	I-object_name
+
+# id: 321
+# text-en: What will the weather be in nov. in Brookneal ?
+# text: Brookneal 11月 的 天气 怎么样 ？
+# intent: weather/find
+1	Brookneal	weather/find	B-location
+2	11月	weather/find	B-datetime
+3	的	weather/find	O
+4	天气	weather/find	O
+5	怎么样	weather/find	O
+6	？	weather/find	O
+
+# id: 322
+# text-en: Book a reservation at tavern for noodle
+# text: 在 tavern 预订 面条
+# intent: BookRestaurant
+1	在	BookRestaurant	O
+2	tavern	BookRestaurant	B-restaurant_type
+3	预订	BookRestaurant	O
+4	面条	BookRestaurant	B-served_dish
+
+# id: 323
+# text-en: what is the forecast for Costa Rica
+# text: 哥斯达黎加 的 天气 预报 是 什么
+# intent: weather/find
+1	哥斯达黎加	weather/find	B-location
+2	的	weather/find	O
+3	天气	weather/find	O
+4	预报	weather/find	O
+5	是	weather/find	O
+6	什么	weather/find	O
+
+# id: 324
+# text-en: Is The Two Gladiators playing
+# text: The Two Gladiators 在 播放 吗
+# intent: SearchScreeningEvent
+1	The	SearchScreeningEvent	B-movie_name
+2	Two	SearchScreeningEvent	I-movie_name
+3	Gladiators	SearchScreeningEvent	I-movie_name
+4	在	SearchScreeningEvent	O
+5	播放	SearchScreeningEvent	O
+6	吗	SearchScreeningEvent	O
+
+# id: 325
+# text-en: what movies at Star Theatres .
+# text: Star Theatres 有 什么 电影 。
+# intent: SearchScreeningEvent
+1	Star	SearchScreeningEvent	B-location
+2	Theatres	SearchScreeningEvent	I-location
+3	有	SearchScreeningEvent	O
+4	什么	SearchScreeningEvent	O
+5	电影	SearchScreeningEvent	B-movie_type
+6	。	SearchScreeningEvent	O
+
+# id: 326
+# text-en: Can you please find me the Harry Hood saga ?
+# text: 你 能 帮 我 找到 the Harry Hood saga 吗 ？
+# intent: SearchCreativeWork
+1	你	SearchCreativeWork	O
+2	能	SearchCreativeWork	O
+3	帮	SearchCreativeWork	O
+4	我	SearchCreativeWork	O
+5	找到	SearchCreativeWork	O
+6	the	SearchCreativeWork	O
+7	Harry	SearchCreativeWork	B-object_name
+8	Hood	SearchCreativeWork	I-object_name
+9	saga	SearchCreativeWork	B-object_type
+10	吗	SearchCreativeWork	O
+11	？	SearchCreativeWork	O
+
+# id: 327
+# text-en: add this tune to my Sleepify playlist
+# text: 添加 这首 旋律 到 我的 Sleepify 播放 列表 中
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	这首	AddToPlaylist	O
+3		AddToPlaylist	O
+4	旋律	AddToPlaylist	B-music_item
+5	到	AddToPlaylist	O
+6	我的	AddToPlaylist	B-reference
+7	Sleepify	AddToPlaylist	B-playlist
+8	播放	AddToPlaylist	O
+9	列表	AddToPlaylist	O
+10	中	AddToPlaylist	O
+
+# id: 328
+# text-en: Is Any Which Way You Can playing in 15 seconds
+# text: Any Which Way You Can 能 在 15 秒 内 播放 吗
+# intent: SearchScreeningEvent
+1	Any	SearchScreeningEvent	B-movie_name
+2	Which	SearchScreeningEvent	I-movie_name
+3	Way	SearchScreeningEvent	I-movie_name
+4	You	SearchScreeningEvent	I-movie_name
+5	Can	SearchScreeningEvent	I-movie_name
+6	能	SearchScreeningEvent	O
+7	在	SearchScreeningEvent	O
+8	15	SearchScreeningEvent	B-datetime
+9	秒	SearchScreeningEvent	I-datetime
+10	内	SearchScreeningEvent	I-datetime
+11	播放	SearchScreeningEvent	O
+12	吗	SearchScreeningEvent	O
+
+# id: 329
+# text-en: Play music from E-type .
+# text: 播放 E-type 中 的 音乐 。
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	E-type	PlayMusic	B-artist
+3	中	PlayMusic	O
+4	的	PlayMusic	O
+5	音乐	PlayMusic	O
+6	。	PlayMusic	O
+
+# id: 330
+# text-en: Give one start to the current book
+# text: 给 当前 这本 书 打 一分
+# intent: RateBook
+1	给	RateBook	O
+2	当前	RateBook	O
+3	这本	RateBook	B-object_select
+4	书	RateBook	B-object_type
+5	打	RateBook	O
+6	一分	RateBook	B-rating_value
+
+# id: 331
+# text-en: Play Another Passenger from Louis Nelson Delisle .
+# text: 播放 Another Passenger from Louis Nelson Delisle 。
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	Another	PlayMusic	B-album
+3	Passenger	PlayMusic	I-album
+4	from	PlayMusic	O
+5	Louis	PlayMusic	B-artist
+6	Nelson	PlayMusic	I-artist
+7	Delisle	PlayMusic	I-artist
+8	。	PlayMusic	O
+
+# id: 332
+# text-en: Where can I find the movie schedules
+# text: 我 在 哪 能 找到 电影 时间表
+# intent: SearchScreeningEvent
+1	我	SearchScreeningEvent	O
+2	在	SearchScreeningEvent	O
+3	哪	SearchScreeningEvent	O
+4	能	SearchScreeningEvent	O
+5	找到	SearchScreeningEvent	O
+6	电影	SearchScreeningEvent	B-object_type
+7	时间表	SearchScreeningEvent	I-object_type
+
+# id: 333
+# text-en: what's the forecast for sep. 26 in Emerado Saint Pierre and Miquelon
+# text: 9 月 26 日 在 埃默拉多 的 圣皮埃尔 和 密克隆 的 天气 如何
+# intent: weather/find
+1	9	weather/find	B-datetime
+2	月	weather/find	I-datetime
+3	26	weather/find	I-datetime
+4	日	weather/find	I-datetime
+5	在	weather/find	O
+6	埃默拉多	weather/find	B-location
+7	的	weather/find	O
+8	圣皮埃尔	weather/find	B-location
+9	和	weather/find	I-location
+10	密克隆	weather/find	I-location
+11	的	weather/find	O
+12	天气	weather/find	O
+13	如何	weather/find	O
+
+# id: 334
+# text-en: Lets eat near Oakfield 17 seconds from now at Ted Peters Famous Smoked Fish
+# text: 让 我们 17秒 后 在 奥克菲尔德 附近 的 Ted Peters Famous Smoked Fish 吃饭
+# intent: BookRestaurant
+1	让	BookRestaurant	O
+2	我们	BookRestaurant	O
+3	17秒	BookRestaurant	B-datetime
+4	后	BookRestaurant	I-datetime
+5	在	BookRestaurant	O
+6	奥克菲尔德	BookRestaurant	B-location
+7	附近	BookRestaurant	B-location
+8	的	BookRestaurant	O
+9	Ted	BookRestaurant	B-restaurant_name
+10	Peters	BookRestaurant	I-restaurant_name
+11	Famous	BookRestaurant	I-restaurant_name
+12	Smoked	BookRestaurant	I-restaurant_name
+13	Fish	BookRestaurant	I-restaurant_name
+14	吃饭	BookRestaurant	O
+
+# id: 335
+# text-en: get me the trailer of Good Morning Sunshine
+# text: 给我 Good Morning Sunshine 预告片
+# intent: SearchCreativeWork
+1	给我	SearchCreativeWork	O
+2	Good	SearchCreativeWork	B-object_name
+3	Morning	SearchCreativeWork	I-object_name
+4	Sunshine	SearchCreativeWork	I-object_name
+5	预告片	SearchCreativeWork	B-object_type
+
+# id: 336
+# text-en: I want to book a brasserie for 3 people in Netherlands Antilles .
+# text: 我 想 在 荷属 安的列斯群岛 为 三个 人 预订 一个 咖啡馆 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	在	BookRestaurant	O
+4	荷属	BookRestaurant	B-location
+5	安的列斯群岛	BookRestaurant	I-location
+6	为	BookRestaurant	O
+7	三个	BookRestaurant	B-party_size_number
+8	人	BookRestaurant	O
+9	预订	BookRestaurant	O
+10	一个	BookRestaurant	O
+11	咖啡馆	BookRestaurant	B-restaurant_type
+12	。	BookRestaurant	O
+
+# id: 337
+# text-en: rate this current album 0 stars
+# text: 将 当前 专辑 评为 0 星
+# intent: RateBook
+1	将	RateBook	O
+2	当前	RateBook	B-object_select
+3	专辑	RateBook	B-object_type
+4	评为	RateBook	O
+5	0	RateBook	B-rating_value
+6	星	RateBook	B-rating_unit
+
+# id: 338
+# text-en: Like to book a seat in Monaco for the Yankee Doodle Coffee Shop
+# text: 想 在 摩纳哥 预订 the Yankee Doodle Coffee Shop 的 一个 位置
+# intent: BookRestaurant
+1	想	BookRestaurant	O
+2	在	BookRestaurant	O
+3	摩纳哥	BookRestaurant	B-location
+4	预订	BookRestaurant	O
+5	the	BookRestaurant	O
+6	Yankee	BookRestaurant	B-restaurant_name
+7	Doodle	BookRestaurant	I-restaurant_name
+8	Coffee	BookRestaurant	I-restaurant_name
+9	Shop	BookRestaurant	I-restaurant_name
+10	的	BookRestaurant	O
+11	一个	BookRestaurant	O
+12	位置	BookRestaurant	O
+
+# id: 339
+# text-en: Add the artist to the political punks playlist.
+# text: 将 艺术家 添加 到 political punks 播放 列表 。
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	艺术家	AddToPlaylist	B-music_item
+3	添加	AddToPlaylist	O
+4	到	AddToPlaylist	O
+5	political	AddToPlaylist	B-playlist
+6	punks	AddToPlaylist	I-playlist
+7	播放	AddToPlaylist	O
+8	列表	AddToPlaylist	O
+9	。	AddToPlaylist	O
+
+# id: 340
+# text-en: Will it be colder four months from now in Suwanee AK
+# text: 从 现在 起 四个 月 后 苏瓦尼 阿克州 会 更 冷 吗
+# intent: weather/find
+1	从	weather/find	O
+2	现在	weather/find	O
+3	起	weather/find	O
+4	四个	weather/find	B-datetime
+5	月	weather/find	I-datetime
+6	后	weather/find	I-datetime
+7	苏瓦尼	weather/find	B-location
+8	阿克州	weather/find	B-location
+9	会	weather/find	O
+10	更	weather/find	B-condition_temperature
+11	冷	weather/find	I-condition_temperature
+12	吗	weather/find	O
+
+# id: 341
+# text-en: add Muzika za decu to my Crash Course playlist
+# text: 将 Muzika za decu 添加 到 我的 Crash Course 播放 列表
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	Muzika	AddToPlaylist	B-entity_name
+3	za	AddToPlaylist	I-entity_name
+4	decu	AddToPlaylist	I-entity_name
+5	添加	AddToPlaylist	O
+6	到	AddToPlaylist	O
+7	我的	AddToPlaylist	B-reference
+8	Crash	AddToPlaylist	B-playlist
+9	Course	AddToPlaylist	I-playlist
+10	播放	AddToPlaylist	O
+11	列表	AddToPlaylist	O
+
+# id: 342
+# text-en: Can you look up the Molecular Oncology saga ?
+# text: 你 能 查到 the Molecular Oncology saga 吗 ？
+# intent: SearchCreativeWork
+1	你	SearchCreativeWork	O
+2	能	SearchCreativeWork	O
+3	查到	SearchCreativeWork	O
+4	the	SearchCreativeWork	O
+5	Molecular	SearchCreativeWork	B-object_name
+6	Oncology	SearchCreativeWork	I-object_name
+7	saga	SearchCreativeWork	B-object_type
+8	吗	SearchCreativeWork	O
+9	？	SearchCreativeWork	O
+
+# id: 343
+# text-en: I want to book a restaurant for six people in Wagstaff AK .
+# text: 我 想 在 Wagstaff AK 为 六个 人 订 一家 餐馆 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	在	BookRestaurant	O
+4	Wagstaff	BookRestaurant	B-location
+5	AK	BookRestaurant	B-location
+6	为	BookRestaurant	O
+7	六个	BookRestaurant	B-party_size_number
+8	人	BookRestaurant	O
+9	订	BookRestaurant	O
+10	一家	BookRestaurant	O
+11	餐馆	BookRestaurant	B-restaurant_type
+12	。	BookRestaurant	O
+
+# id: 344
+# text-en: Play some symphony music from David Lindley .
+# text: 播放 David Lindley 的 交响乐 。
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	David	PlayMusic	B-artist
+3	Lindley	PlayMusic	I-artist
+4	的	PlayMusic	O
+5	交响乐	PlayMusic	B-music_item
+6	。	PlayMusic	O
+
+# id: 345
+# text-en: Please fine me the TV series , Now We Are Married .
+# text: 请 给 我 找到 Now We Are Married 电视 剧 。
+# intent: SearchCreativeWork
+1	请	SearchCreativeWork	O
+2	给	SearchCreativeWork	O
+3	我	SearchCreativeWork	O
+4	找到	SearchCreativeWork	O
+5	Now	SearchCreativeWork	B-object_name
+6	We	SearchCreativeWork	I-object_name
+7	Are	SearchCreativeWork	I-object_name
+8	Married	SearchCreativeWork	I-object_name
+9	电视	SearchCreativeWork	B-object_type
+10	剧	SearchCreativeWork	I-object_type
+11	。	SearchCreativeWork	O
+
+# id: 346
+# text-en: I want to see Outcast .
+# text: 我 想 看 Outcast 。
+# intent: SearchScreeningEvent
+1	我	SearchScreeningEvent	O
+2	想	SearchScreeningEvent	O
+3	看	SearchScreeningEvent	O
+4	Outcast	SearchScreeningEvent	B-movie_name
+5	。	SearchScreeningEvent	O
+
+# id: 347
+# text-en: add the current track to my This Is Tchaikovsky playlist
+# text: 将 当前 曲目 添加 到 我的 This Is Tchaikovsky 播放 列表
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	当前	AddToPlaylist	O
+3	曲目	AddToPlaylist	B-music_item
+4	添加	AddToPlaylist	O
+5	到	AddToPlaylist	O
+6	我的	AddToPlaylist	B-playlist
+7	This	AddToPlaylist	B-playlist
+8	Is	AddToPlaylist	I-playlist
+9	Tchaikovsky	AddToPlaylist	I-playlist
+10	播放	AddToPlaylist	I-playlist
+11	列表	AddToPlaylist	O
+
+# id: 348
+# text-en: Play This Is: Miles Davis on Lastfm .
+# text: 在 Lastfm 播放 This Is: Miles Davis 。
+# intent: PlayMusic
+1	在	PlayMusic	O
+2	Lastfm	PlayMusic	B-service
+3	播放	PlayMusic	O
+4	This	PlayMusic	B-playlist
+5	Is:	PlayMusic	I-playlist
+6	Miles	PlayMusic	I-playlist
+7	Davis	PlayMusic	I-playlist
+8	。	PlayMusic	O
+
+# id: 349
+# text-en: book the best table in Tanzania for 5 people at a diner
+# text: 为 五个 人 预订 晚餐 在 坦桑尼亚 的 一张 最好 的 桌子
+# intent: BookRestaurant
+1	为	BookRestaurant	O
+2	五个	BookRestaurant	B-party_size_number
+3	人	BookRestaurant	O
+4	预订	BookRestaurant	O
+5	晚餐	BookRestaurant	B-restaurant_type
+6	在	BookRestaurant	O
+7	坦桑尼亚	BookRestaurant	B-location
+8	的	BookRestaurant	O
+9	一张	BookRestaurant	O
+10	最好	BookRestaurant	B-sort
+11	的	BookRestaurant	O
+12	桌子	BookRestaurant	O
+
+# id: 350
+# text-en: Let's hear good Mohammad Mamle on Vimeo .
+# text: 让 我们 听 good Mohammad Mamle on Vimeo 。
+# intent: PlayMusic
+1	让	PlayMusic	O
+2	我们	PlayMusic	O
+3	听	PlayMusic	O
+4	good	PlayMusic	B-sort
+5	Mohammad	PlayMusic	B-artist
+6	Mamle	PlayMusic	I-artist
+7	on	PlayMusic	O
+8	Vimeo	PlayMusic	B-service
+9	。	PlayMusic	O
+
+# id: 351
+# text-en: Put Vandemataram Srinivas 's track onto HipHop Hot 50 .
+# text: 把 Vandemataram Srinivas 的 歌曲 放到 HipHop Hot 50 。
+# intent: AddToPlaylist
+1	把	AddToPlaylist	O
+2	Vandemataram	AddToPlaylist	B-artist
+3	Srinivas	AddToPlaylist	I-artist
+4	的	AddToPlaylist	O
+5	歌曲	AddToPlaylist	B-music_item
+6	放到	AddToPlaylist	O
+7	HipHop	AddToPlaylist	B-playlist
+8	Hot	AddToPlaylist	I-playlist
+9	50	AddToPlaylist	I-playlist
+10	。	AddToPlaylist	O
+
+# id: 352
+# text-en: Get me the Secret South song .
+# text: 给 我 Secret South 歌曲 。
+# intent: SearchCreativeWork
+1	给	SearchCreativeWork	O
+2	我	SearchCreativeWork	O
+3	Secret	SearchCreativeWork	B-object_name
+4	South	SearchCreativeWork	I-object_name
+5	歌曲	SearchCreativeWork	B-object_type
+6	。	SearchCreativeWork	O
+
+# id: 353
+# text-en: nineties songs on Zvooq
+# text: Zvooq 上 90 年代 的 歌曲
+# intent: PlayMusic
+1	Zvooq	PlayMusic	B-service
+2	上	PlayMusic	O
+3	90	PlayMusic	B-datetime
+4	年代	PlayMusic	I-datetime
+5	的	PlayMusic	O
+6	歌曲	PlayMusic	O
+
+# id: 354
+# text-en: what is the forecast in Admire in TX starting at seventeen
+# text: 田纳西州 Admire 下午 五点 开始 的 天气 预报 是 怎样的
+# intent: weather/find
+1	田纳西州	weather/find	B-location
+2	Admire	weather/find	B-location
+3	下午	weather/find	B-datetime
+4	五点	weather/find	I-datetime
+5	开始	weather/find	O
+6	的	weather/find	O
+7	天气	weather/find	O
+8	预报	weather/find	O
+9	是	weather/find	O
+10	怎样的	weather/find	O
+
+# id: 355
+# text-en: Play something on Last Fm
+# text: 在 Last Fm 播放 一些 东西
+# intent: PlayMusic
+1	在	PlayMusic	O
+2	Last	PlayMusic	B-service
+3	Fm	PlayMusic	I-service
+4	播放	PlayMusic	O
+5	一些	PlayMusic	O
+6	东西	PlayMusic	O
+
+# id: 356
+# text-en: I want to see The Portrait of a Lady at the nearest cinema .
+# text: 我 想 去 最近 的 电影院 The Portrait of a Lady 。
+# intent: SearchScreeningEvent
+1	我	SearchScreeningEvent	O
+2	想	SearchScreeningEvent	O
+3	去	SearchScreeningEvent	O
+4	最近	SearchScreeningEvent	B-location
+5	的	SearchScreeningEvent	O
+6	电影院	SearchScreeningEvent	B-object_location_type
+7	The	SearchScreeningEvent	B-movie_name
+8	Portrait	SearchScreeningEvent	I-movie_name
+9	of	SearchScreeningEvent	I-movie_name
+10	a	SearchScreeningEvent	I-movie_name
+11	Lady	SearchScreeningEvent	I-movie_name
+12	。	SearchScreeningEvent	O
+
+# id: 357
+# text-en: Please find me Phineas Redux .
+# text: 请 给 我 找到 Phineas Redux 。
+# intent: SearchCreativeWork
+1	请	SearchCreativeWork	O
+2	给	SearchCreativeWork	O
+3	我	SearchCreativeWork	O
+4	找到	SearchCreativeWork	O
+5	Phineas	SearchCreativeWork	B-object_name
+6	Redux	SearchCreativeWork	I-object_name
+7	。	SearchCreativeWork	O
+
+# id: 358
+# text-en: Add the 40 cal tune to the laundry playlist.
+# text: 把 40 cal 旋律 添加 到 laundry 播放 列表 里 。
+# intent: AddToPlaylist
+1	把	AddToPlaylist	O
+2	40	AddToPlaylist	B-artist
+3	cal	AddToPlaylist	I-artist
+4	旋律	AddToPlaylist	B-music_item
+5	添加	AddToPlaylist	O
+6	到	AddToPlaylist	O
+7	laundry	AddToPlaylist	B-playlist
+8	播放	AddToPlaylist	O
+9	列表	AddToPlaylist	O
+10	里	AddToPlaylist	O
+11	。	AddToPlaylist	O
+
+# id: 359
+# text-en: Open itunes and play Ben Burnley Ready To Die
+# text: 打开 itunes ，播放 Ben Burnley Ready To Die
+# intent: PlayMusic
+1	打开	PlayMusic	O
+2	itunes	PlayMusic	B-service
+3	，播放	PlayMusic	O
+4	Ben	PlayMusic	B-artist
+5	Burnley	PlayMusic	I-artist
+6	Ready	PlayMusic	B-album
+7	To	PlayMusic	I-album
+8	Die	PlayMusic	I-album
+
+# id: 360
+# text-en: What will the weather be in Monument of Lihula on december the 5th ?
+# text: 12 月 5 日 Monument of Lihula 的 天气 怎么样 ?
+# intent: weather/find
+1	12	weather/find	B-datetime
+2	月	weather/find	I-datetime
+3	5	weather/find	I-datetime
+4	日	weather/find	I-datetime
+5	Monument	weather/find	B-location
+6	of	weather/find	I-location
+7	Lihula	weather/find	I-location
+8	的	weather/find	O
+9	天气	weather/find	O
+10	怎么样	weather/find	O
+11	?	weather/find	O
+
+# id: 361
+# text-en: Show the Sexy Dance 2 times at the closest movie house
+# text: 显示 在 最近的 电影院 the Sexy Dance 2 的 时间表
+# intent: SearchScreeningEvent
+1	显示	SearchScreeningEvent	O
+2	在	SearchScreeningEvent	O
+3	最近的	SearchScreeningEvent	B-location
+4	电影院	SearchScreeningEvent	B-object_location_type
+5	the	SearchScreeningEvent	O
+6	Sexy	SearchScreeningEvent	B-movie_name
+7	Dance	SearchScreeningEvent	I-movie_name
+8	2	SearchScreeningEvent	I-movie_name
+9	的	SearchScreeningEvent	O
+10	时间表	SearchScreeningEvent	B-object_type
+
+# id: 362
+# text-en: Looking for a song with the title of Live at the Kings Center
+# text: 寻找 一首 名为 Live at the Kings Center 的 歌曲
+# intent: SearchCreativeWork
+1	寻找	SearchCreativeWork	O
+2	一首	SearchCreativeWork	O
+3	名为	SearchCreativeWork	O
+4	Live	SearchCreativeWork	B-object_name
+5	at	SearchCreativeWork	I-object_name
+6	the	SearchCreativeWork	I-object_name
+7	Kings	SearchCreativeWork	I-object_name
+8	Center	SearchCreativeWork	I-object_name
+9	的	SearchCreativeWork	O
+10	歌曲	SearchCreativeWork	B-object_type
+
+# id: 363
+# text-en: What's the weather like in Tyonek , New Jersey
+# text: 新泽西州 泰奥尼克 的 天气 怎么样
+# intent: weather/find
+1	新泽西州	weather/find	B-location
+2	泰奥尼克	weather/find	B-location
+3	的	weather/find	O
+4	天气	weather/find	O
+5	怎么样	weather/find	O
+
+# id: 364
+# text-en: I want to book Tupelo Honey Cafe in New Jersey for five people.
+# text: 我 想 订 新泽西 五 个 人 的 Tupelo Honey 咖啡 馆 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	订	BookRestaurant	O
+4	新泽西	BookRestaurant	B-location
+5	五	BookRestaurant	B-party_size_number
+6	个	BookRestaurant	I-party_size_number
+7	人	BookRestaurant	O
+8	的	BookRestaurant	O
+9	Tupelo	BookRestaurant	B-restaurant_name
+10	Honey	BookRestaurant	I-restaurant_name
+11	咖啡	BookRestaurant	I-restaurant_name
+12	馆	BookRestaurant	I-restaurant_name
+13	。	BookRestaurant	O
+
+# id: 365
+# text-en: book spot for my nieces and I at a tea house
+# text: 在 一家 茶馆 为 我的 侄女们 和 我 预订 位子
+# intent: BookRestaurant
+1	在	BookRestaurant	O
+2	一家	BookRestaurant	O
+3	茶馆	BookRestaurant	B-restaurant_type
+4	为	BookRestaurant	O
+5	我的	BookRestaurant	B-party_size_description
+6	侄女们	BookRestaurant	I-party_size_description
+7	和	BookRestaurant	I-party_size_description
+8	我	BookRestaurant	I-party_size_description
+9	预订	BookRestaurant	O
+10	位子	BookRestaurant	O
+
+# id: 366
+# text-en: Will it be hot in the Netherlands on February 16th ?
+# text: 2 月 16 日 荷兰 会 热 吗 ?
+# intent: weather/find
+1	2	weather/find	B-datetime
+2	月	weather/find	I-datetime
+3	16	weather/find	I-datetime
+4	日	weather/find	O
+5	荷兰	weather/find	B-location
+6	会	weather/find	O
+7	热	weather/find	B-condition_temperature
+8	吗	weather/find	O
+9	?	weather/find	O
+
+# id: 367
+# text-en: I'd like to add jordan rudess onto the Divertido para niños playlist.
+# text: 我 想 把 jordan rudess 添加到 Divertido para niños 的 播放 列表 里 。
+# intent: AddToPlaylist
+1	我	AddToPlaylist	O
+2	想	AddToPlaylist	O
+3	把	AddToPlaylist	O
+4	jordan	AddToPlaylist	B-artist
+5	rudess	AddToPlaylist	I-artist
+6	添加到	AddToPlaylist	O
+7	Divertido	AddToPlaylist	B-playlist
+8	para	AddToPlaylist	I-playlist
+9	niños	AddToPlaylist	I-playlist
+10	的	AddToPlaylist	O
+11	播放	AddToPlaylist	O
+12	列表	AddToPlaylist	O
+13	里	AddToPlaylist	O
+14	。	AddToPlaylist	O
+
+# id: 368
+# text-en: Rate In the Company of Cheerful Ladies a zero out of 6
+# text: 给 In the Company of Cheerful Ladies 评分 为 6分 中 的 0分
+# intent: RateBook
+1	给	RateBook	O
+2	In	RateBook	B-object_name
+3	the	RateBook	I-object_name
+4	Company	RateBook	I-object_name
+5	of	RateBook	I-object_name
+6	Cheerful	RateBook	I-object_name
+7	Ladies	RateBook	I-object_name
+8	评分	RateBook	O
+9	为	RateBook	O
+10	6分	RateBook	B-best_rating
+11	中	RateBook	O
+12	的	RateBook	O
+13	0分	RateBook	B-rating_value
+
+# id: 369
+# text-en: Book me a reservation for the best bistro
+# text: 给我 预订 最好 的 小酒馆
+# intent: BookRestaurant
+1	给我	BookRestaurant	O
+2	预订	BookRestaurant	O
+3	最好	BookRestaurant	B-sort
+4	的	BookRestaurant	O
+5	小酒馆	BookRestaurant	B-restaurant_type
+
+# id: 370
+# text-en: rate the current textbook 1 out of 6
+# text: 给 现在 的 教科书 打 6分 中 的 1分
+# intent: RateBook
+1	给	RateBook	O
+2	现在	RateBook	B-object_select
+3	的	RateBook	I-object_select
+4	教科书	RateBook	B-object_type
+5	打	RateBook	O
+6	6分	RateBook	B-best_rating
+7	中	RateBook	O
+8	的	RateBook	O
+9	1分	RateBook	B-rating_value
+
+# id: 371
+# text-en: what are the movie times
+# text: 电影 上映 时间 是 什么
+# intent: SearchScreeningEvent
+1	电影	SearchScreeningEvent	B-object_type
+2	上映	SearchScreeningEvent	I-object_type
+3	时间	SearchScreeningEvent	I-object_type
+4	是	SearchScreeningEvent	O
+5	什么	SearchScreeningEvent	O
+
+# id: 372
+# text-en: What will the weather be in Ohio ?
+# text: 俄亥俄州 的 天气 会 怎么样 ?
+# intent: weather/find
+1	俄亥俄州	weather/find	B-location
+2	的	weather/find	O
+3	天气	weather/find	O
+4	会	weather/find	O
+5	怎么样	weather/find	O
+6	?	weather/find	O
+
+# id: 373
+# text-en: Add this artist to Showstopper Being Mary Jane
+# text: 添加 这位 艺术家 到 Showstopper Being Mary Jane
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	这位	AddToPlaylist	O
+3	艺术家	AddToPlaylist	B-music_item
+4	到	AddToPlaylist	O
+5	Showstopper	AddToPlaylist	B-playlist
+6	Being	AddToPlaylist	I-playlist
+7	Mary	AddToPlaylist	I-playlist
+8	Jane	AddToPlaylist	I-playlist
+
+# id: 374
+# text-en: Book a reservation for my babies and I
+# text: 帮 我 和 我的 孩 子 预订 房间
+# intent: BookRestaurant
+1	帮	BookRestaurant	O
+2	我	BookRestaurant	B-party_size_description
+3	和	BookRestaurant	I-party_size_description
+4	我的	BookRestaurant	I-party_size_description
+5	孩	BookRestaurant	I-party_size_description
+6	子	BookRestaurant	O
+7	预订	BookRestaurant	O
+8	房间	BookRestaurant	O
+
+# id: 375
+# text-en: What will the weather be in Sarygamyş Sanctuary on august 21, 2035 ?
+# text: 2035年 8月 21日 Sarygamyş Sanctuary 的 天气 会 是 怎样的 ?
+# intent: weather/find
+1	2035年	weather/find	B-datetime
+2	8月	weather/find	I-datetime
+3	21日	weather/find	I-datetime
+4	Sarygamyş	weather/find	B-location
+5	Sanctuary	weather/find	I-location
+6	的	weather/find	O
+7	天气	weather/find	O
+8	会	weather/find	O
+9	是	weather/find	O
+10	怎样的	weather/find	O
+11	?	weather/find	O
+
+# id: 376
+# text-en: Rate Ruth five out of 6 points .
+# text: 给 Ruth 评分 为 6 分 中 的 5分 。
+# intent: RateBook
+1	给	RateBook	O
+2	Ruth	RateBook	B-object_name
+3	评分	RateBook	O
+4	为	RateBook	O
+5	6	RateBook	B-best_rating
+6	分	RateBook	B-rating_unit
+7	中	RateBook	O
+8	的	RateBook	O
+9	5分	RateBook	B-rating_value
+10	。	RateBook	O
+
+# id: 377
+# text-en: Reminiscences of the Anti-Japanese Guerillas chronicle deserves zero points out of 6 for a rating.
+# text: Reminiscences of the Anti-Japanese Guerillas chronicle 的 评分 为 6 分 中 的 0分 。
+# intent: RateBook
+1	Reminiscences	RateBook	B-object_name
+2	of	RateBook	I-object_name
+3	the	RateBook	I-object_name
+4	Anti-Japanese	RateBook	I-object_name
+5	Guerillas	RateBook	I-object_name
+6	chronicle	RateBook	B-object_part_of_series_type
+7	的	RateBook	O
+8	评分	RateBook	O
+9	为	RateBook	O
+10	6	RateBook	B-best_rating
+11	分	RateBook	B-rating_unit
+12	中	RateBook	O
+13	的	RateBook	O
+14	0分	RateBook	B-rating_value
+15	。	RateBook	O
+
+# id: 378
+# text-en: Show me Southern Theatres movie times
+# text: 显示 给我 Southern Theatres 的 电影 时间
+# intent: SearchScreeningEvent
+1	显示	SearchScreeningEvent	O
+2	给我	SearchScreeningEvent	O
+3	Southern	SearchScreeningEvent	B-location
+4	Theatres	SearchScreeningEvent	I-location
+5	的	SearchScreeningEvent	O
+6	电影	SearchScreeningEvent	B-object_type
+7	时间	SearchScreeningEvent	I-object_type
+
+# id: 379
+# text-en: Find the movie schedule close by
+# text: 找到 附近 的 电影 时间表
+# intent: SearchScreeningEvent
+1	找到	SearchScreeningEvent	O
+2	附近	SearchScreeningEvent	B-location
+3	的	SearchScreeningEvent	I-location
+4	电影	SearchScreeningEvent	B-object_type
+5	时间表	SearchScreeningEvent	I-object_type
+
+# id: 380
+# text-en: Add this album to the Spanish Beat playlist
+# text: 添加 这个 专辑 到 Spanish Beat 播放 列表中
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	这个	AddToPlaylist	O
+3	专辑	AddToPlaylist	B-music_item
+4	到	AddToPlaylist	O
+5	Spanish	AddToPlaylist	B-playlist
+6	Beat	AddToPlaylist	I-playlist
+7	播放	AddToPlaylist	O
+8	列表中	AddToPlaylist	O
+
+# id: 381
+# text-en: Book a reservation for 6 people for a creole tavern in Montenegro
+# text: 预订 在 黑山 的 a creole tavern 6 个 人 的 位置
+# intent: BookRestaurant
+1	预订	BookRestaurant	O
+2	在	BookRestaurant	O
+3	黑山	BookRestaurant	B-location
+4	的	BookRestaurant	O
+5	a	BookRestaurant	O
+6	creole	BookRestaurant	B-cuisine
+7	tavern	BookRestaurant	B-restaurant_type
+8	6	BookRestaurant	B-party_size_number
+9	个	BookRestaurant	O
+10	人	BookRestaurant	O
+11	的	BookRestaurant	O
+12	位置	BookRestaurant	O
+
+# id: 382
+# text-en: Give the Catedral series four stars .
+# text: 给 Catedral 系 列 四 星 。
+# intent: RateBook
+1	给	RateBook	O
+2	Catedral	RateBook	B-object_name
+3	系	RateBook	B-object_part_of_series_type
+4	列	RateBook	O
+5	四	RateBook	B-rating_value
+6	星	RateBook	B-rating_unit
+7	。	RateBook	O
+
+# id: 383
+# text-en: Add The Famous Flower of Serving-Men to my evening acoustic playlist.
+# text: 把 The Famous Flower of Serving-Men 添加 到 我的 evening acoustic 播放 列表 里 。
+# intent: AddToPlaylist
+1	把	AddToPlaylist	O
+2	The	AddToPlaylist	B-entity_name
+3	Famous	AddToPlaylist	I-entity_name
+4	Flower	AddToPlaylist	I-entity_name
+5	of	AddToPlaylist	I-entity_name
+6	Serving-Men	AddToPlaylist	I-entity_name
+7	添加	AddToPlaylist	O
+8	到	AddToPlaylist	O
+9	我的	AddToPlaylist	B-reference
+10	evening	AddToPlaylist	B-playlist
+11	acoustic	AddToPlaylist	I-playlist
+12	播放	AddToPlaylist	O
+13	列表	AddToPlaylist	O
+14	里	AddToPlaylist	O
+15	。	AddToPlaylist	O
+
+# id: 384
+# text-en: Show me the schedule for ArcLight Hollywood for only animated movies
+# text: 显示 给我 ArcLight Hollywood 只有 动画 电影 的 时间表
+# intent: SearchScreeningEvent
+1	显示	SearchScreeningEvent	O
+2	给我	SearchScreeningEvent	O
+3	ArcLight	SearchScreeningEvent	B-location
+4	Hollywood	SearchScreeningEvent	I-location
+5	只有	SearchScreeningEvent	O
+6	动画	SearchScreeningEvent	B-movie_type
+7	电影	SearchScreeningEvent	I-movie_type
+8	的	SearchScreeningEvent	O
+9	时间表	SearchScreeningEvent	B-object_type
+
+# id: 385
+# text-en: Please search for the painting titled This Is the Night .
+# text: 请 搜索 这幅 名 为 This Is the Night 的 画作 。
+# intent: SearchCreativeWork
+1	请	SearchCreativeWork	O
+2	搜索	SearchCreativeWork	O
+3	这幅	SearchCreativeWork	O
+4	名	SearchCreativeWork	O
+5	为	SearchCreativeWork	O
+6	This	SearchCreativeWork	B-object_name
+7	Is	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Night	SearchCreativeWork	I-object_name
+10	的	SearchCreativeWork	O
+11	画作	SearchCreativeWork	B-object_type
+12	。	SearchCreativeWork	O
+
+# id: 386
+# text-en: What will the humidity be in the current spot at 15:19:29 ?
+# text: 在 15:19:29 目前的 位置 的 湿度 将是 多少 ?
+# intent: weather/find
+1	在	weather/find	O
+2	15:19:29	weather/find	B-datetime
+3	目前的	weather/find	B-location
+4	位置	weather/find	I-location
+5	的	weather/find	O
+6	湿度	weather/find	B-condition_description
+7	将是	weather/find	O
+8	多少	weather/find	O
+9	?	weather/find	O
+
+# id: 387
+# text-en: i want to see JLA Adventures: Trapped In Time
+# text: 我 想 看 JLA Adventures: Trapped In Time
+# intent: SearchScreeningEvent
+1	我	SearchScreeningEvent	O
+2	想	SearchScreeningEvent	O
+3	看	SearchScreeningEvent	O
+4	JLA	SearchScreeningEvent	B-movie_name
+5	Adventures:	SearchScreeningEvent	I-movie_name
+6	Trapped	SearchScreeningEvent	I-movie_name
+7	In	SearchScreeningEvent	I-movie_name
+8	Time	SearchScreeningEvent	I-movie_name
+
+# id: 388
+# text-en: Add a derek watkins tune to This Is Johnny Cash
+# text: 添加 derek watkins 曲调 到 This Is Johnny Cash
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	derek	AddToPlaylist	B-artist
+3	watkins	AddToPlaylist	I-artist
+4	曲调	AddToPlaylist	B-music_item
+5	到	AddToPlaylist	O
+6	This	AddToPlaylist	B-playlist
+7	Is	AddToPlaylist	I-playlist
+8	Johnny	AddToPlaylist	I-playlist
+9	Cash	AddToPlaylist	I-playlist
+
+# id: 389
+# text-en: Find a creative work called Fire in the Hole
+# text: 找到 一份 创造性 的 作品 叫做 Fire in the Hole
+# intent: SearchCreativeWork
+1	找到	SearchCreativeWork	O
+2	一份	SearchCreativeWork	O
+3	创造性	SearchCreativeWork	O
+4	的	SearchCreativeWork	O
+5	作品	SearchCreativeWork	O
+6	叫做	SearchCreativeWork	O
+7	Fire	SearchCreativeWork	B-object_name
+8	in	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	Hole	SearchCreativeWork	I-object_name
+
+# id: 390
+# text-en: book a table near pat's college
+# text: 在 帕特 学院 附近 预订 一张 桌子
+# intent: BookRestaurant
+1	在	BookRestaurant	O
+2	帕特	BookRestaurant	B-location
+3	学院	BookRestaurant	I-location
+4	附近	BookRestaurant	B-location
+5	预订	BookRestaurant	O
+6	一张	BookRestaurant	O
+7	桌子	BookRestaurant	O
+
+# id: 391
+# text-en: Is Patrick Still Lives showing at AMC Theaters
+# text: Patrick Still Lives 还 在 AMC 影院 上映 吗
+# intent: SearchScreeningEvent
+1	Patrick	SearchScreeningEvent	B-movie_name
+2	Still	SearchScreeningEvent	I-movie_name
+3	Lives	SearchScreeningEvent	I-movie_name
+4	还	SearchScreeningEvent	O
+5	在	SearchScreeningEvent	O
+6	AMC	SearchScreeningEvent	B-location
+7	影院	SearchScreeningEvent	I-location
+8	上映	SearchScreeningEvent	O
+9	吗	SearchScreeningEvent	O
+
+# id: 392
+# text-en: I want to book a joint in a spa .
+# text: 我 想 预订 一家 水疗 中心 的 酒吧 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	预订	BookRestaurant	O
+4	一家	BookRestaurant	O
+5	水疗	BookRestaurant	B-facility
+6	中心	BookRestaurant	I-facility
+7	的	BookRestaurant	O
+8	酒吧	BookRestaurant	B-restaurant_type
+9	。	BookRestaurant	O
+
+# id: 393
+# text-en: need a table somewhere in Quarryville 14 hours from now
+# text: 需要 一张 桌子 14 小时 后 在 夸里维尔 的 某个 地方
+# intent: BookRestaurant
+1	需要	BookRestaurant	O
+2	一张	BookRestaurant	O
+3	桌子	BookRestaurant	O
+4	14	BookRestaurant	B-datetime
+5	小时	BookRestaurant	I-datetime
+6	后	BookRestaurant	I-datetime
+7	在	BookRestaurant	O
+8	夸里维尔	BookRestaurant	B-location
+9	的	BookRestaurant	O
+10	某个	BookRestaurant	O
+11	地方	BookRestaurant	O
+
+# id: 394
+# text-en: play some Gary Lee Conner
+# text: 播放 Gary Lee Conner
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	Gary	PlayMusic	B-artist
+3	Lee	PlayMusic	I-artist
+4	Conner	PlayMusic	I-artist
+
+# id: 395
+# text-en: show the closest movie theatre that shows Boycott
+# text: 显示 最近 的 电影 院 有 Boycott 的 表演
+# intent: SearchScreeningEvent
+1	显示	SearchScreeningEvent	O
+2	最近	SearchScreeningEvent	B-location
+3	的	SearchScreeningEvent	I-location
+4	电影	SearchScreeningEvent	B-object_location_type
+5	院	SearchScreeningEvent	I-object_location_type
+6	有	SearchScreeningEvent	O
+7	Boycott	SearchScreeningEvent	B-movie_name
+8	的	SearchScreeningEvent	O
+9	表演	SearchScreeningEvent	O
+
+# id: 396
+# text-en: Please play my ecstatic playlist.
+# text: 请 播放 我的 ecstatic 播放列表 。
+# intent: PlayMusic
+1	请	PlayMusic	O
+2	播放	PlayMusic	O
+3	我的	PlayMusic	O
+4	ecstatic	PlayMusic	B-playlist
+5	播放列表	PlayMusic	O
+6	。	PlayMusic	O
+
+# id: 397
+# text-en: Please look up the song The Mad Magician .
+# text: 请 搜索 一 下 The Mad Magician 这 首 歌 。
+# intent: SearchCreativeWork
+1	请	SearchCreativeWork	O
+2	搜索	SearchCreativeWork	O
+3	一	SearchCreativeWork	O
+4	下	SearchCreativeWork	O
+5	The	SearchCreativeWork	B-object_name
+6	Mad	SearchCreativeWork	I-object_name
+7	Magician	SearchCreativeWork	I-object_name
+8	这	SearchCreativeWork	O
+9	首	SearchCreativeWork	O
+10	歌	SearchCreativeWork	B-object_type
+11	。	SearchCreativeWork	O
+
+# id: 398
+# text-en: Check the schedule for Bow Tie Cinemas .
+# text: 查看 Bow Tie Cinemas 的 时间表 。
+# intent: SearchScreeningEvent
+1	查看	SearchScreeningEvent	O
+2	Bow	SearchScreeningEvent	B-location
+3	Tie	SearchScreeningEvent	I-location
+4	Cinemas	SearchScreeningEvent	I-location
+5	的	SearchScreeningEvent	O
+6	时间表	SearchScreeningEvent	B-object_type
+7	。	SearchScreeningEvent	O
+
+# id: 399
+# text-en: Book me a reservation for a party of 3 at a pub in Northern Mariana Islands
+# text: 帮我 在 北马里亚纳群岛 的 一家 酒吧 预订 一个 三 人 派对
+# intent: BookRestaurant
+1	帮我	BookRestaurant	O
+2	在	BookRestaurant	O
+3	北马里亚纳群岛	BookRestaurant	B-location
+4	的	BookRestaurant	O
+5	一家	BookRestaurant	O
+6	酒吧	BookRestaurant	B-restaurant_type
+7	预订	BookRestaurant	O
+8	一个	BookRestaurant	O
+9	三	BookRestaurant	B-party_size_number
+10	人	BookRestaurant	O
+11	派对	BookRestaurant	O
+
+# id: 400
+# text-en: I need to add to my Infinite Indie Folk list the works of Rahim Shah
+# text: 我 需要 把 Rahim Shah 的 作品 添加 到 我 的 Infinite Indie Folk 列表中
+# intent: AddToPlaylist
+1	我	AddToPlaylist	O
+2	需要	AddToPlaylist	O
+3	把	AddToPlaylist	O
+4	Rahim	AddToPlaylist	B-artist
+5	Shah	AddToPlaylist	I-artist
+6	的	AddToPlaylist	O
+7	作品	AddToPlaylist	O
+8	添加	AddToPlaylist	O
+9	到	AddToPlaylist	O
+10	我	AddToPlaylist	B-reference
+11	的	AddToPlaylist	I-reference
+12	Infinite	AddToPlaylist	B-playlist
+13	Indie	AddToPlaylist	I-playlist
+14	Folk	AddToPlaylist	I-playlist
+15	列表中	AddToPlaylist	O
+
+# id: 401
+# text-en: Add Jerry Calliste, Jr to my Te quiero playlist.
+# text: 把 Jerry Calliste, Jr 添加 到 我的 Te quiero 播放 列表 里 。
+# intent: AddToPlaylist
+1	把	AddToPlaylist	O
+2	Jerry	AddToPlaylist	B-artist
+3	Calliste,	AddToPlaylist	I-artist
+4	Jr	AddToPlaylist	I-artist
+5	添加	AddToPlaylist	O
+6	到	AddToPlaylist	O
+7	我的	AddToPlaylist	B-reference
+8	Te	AddToPlaylist	B-playlist
+9	quiero	AddToPlaylist	I-playlist
+10	播放	AddToPlaylist	O
+11	列表	AddToPlaylist	O
+12	里	AddToPlaylist	O
+13	。	AddToPlaylist	O
+
+# id: 402
+# text-en: How much colder will it be not far from Utah around 3 Am ?
+# text: 凌晨 3点 左右 离 犹他州 不远 的 地方 会 有 多冷 ?
+# intent: weather/find
+1	凌晨	weather/find	B-datetime
+2	3点	weather/find	I-datetime
+3	左右	weather/find	O
+4	离	weather/find	O
+5	犹他州	weather/find	B-location
+6	不远	weather/find	B-location
+7		weather/find	O
+8	的	weather/find	O
+9	地方	weather/find	O
+10	会	weather/find	O
+11	有	weather/find	O
+12	多冷	weather/find	B-condition_temperature
+13	?	weather/find	O
+
+# id: 403
+# text-en: Add the album to the Hipster Soul playlist.
+# text: 添加 这张 专辑 到 Hipster Soul 播放 列表 中 。
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	这张	AddToPlaylist	O
+3	专辑	AddToPlaylist	B-music_item
+4	到	AddToPlaylist	O
+5	Hipster	AddToPlaylist	B-playlist
+6	Soul	AddToPlaylist	I-playlist
+7	播放	AddToPlaylist	O
+8	列表	AddToPlaylist	O
+9	中	AddToPlaylist	O
+10	。	AddToPlaylist	O
+
+# id: 404
+# text-en: I want to eat a delicatessen in thirteen hours that serves eastern european food
+# text: 我 想 在 十三个 小时 内 吃到 一家 提供 东欧 食物 的 熟食店
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	在	BookRestaurant	O
+4	十三个	BookRestaurant	B-datetime
+5	小时	BookRestaurant	I-datetime
+6	内	BookRestaurant	I-datetime
+7	吃到	BookRestaurant	O
+8	一家	BookRestaurant	O
+9	提供	BookRestaurant	O
+10	东欧	BookRestaurant	B-cuisine
+11	食物	BookRestaurant	I-cuisine
+12	的	BookRestaurant	O
+13	熟食店	BookRestaurant	B-restaurant_type
+
+# id: 405
+# text-en: play a sixties soundtrack
+# text: 播放 六十 年代 的 音乐
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	六十	PlayMusic	B-datetime
+3	年代	PlayMusic	I-datetime
+4	的	PlayMusic	O
+5	音乐	PlayMusic	B-music_item
+
+# id: 406
+# text-en: Give this album one stars
+# text: 给 这张 专辑 一颗 星
+# intent: RateBook
+1	给	RateBook	O
+2	这张	RateBook	B-object_select
+3	专辑	RateBook	B-object_type
+4	一颗	RateBook	B-rating_value
+5	星	RateBook	B-rating_unit
+
+# id: 407
+# text-en: Play the greatest music from Bryan Maclean .
+# text: 播放 Bryan Maclean 最棒 的 音乐 。
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	Bryan	PlayMusic	B-artist
+3	Maclean	PlayMusic	I-artist
+4	最棒	PlayMusic	B-sort
+5	的	PlayMusic	O
+6	音乐	PlayMusic	O
+7	。	PlayMusic	O
+
+# id: 408
+# text-en: what is the forecast in Nicodemus and nearby
+# text: 尼哥底母 和 附近 地区 的 天气 预报 是 怎样的
+# intent: weather/find
+1	尼哥底母	weather/find	B-location
+2	和	weather/find	O
+3	附近	weather/find	B-location
+4	地区	weather/find	I-location
+5	的	weather/find	O
+6	天气	weather/find	O
+7	预报	weather/find	O
+8	是	weather/find	O
+9	怎样的	weather/find	O
+
+# id: 409
+# text-en: Looking for a game called Phinally Phamous
+# text: 找 一个 叫做 Phinally Phamous 的 游戏
+# intent: SearchCreativeWork
+1	找	SearchCreativeWork	O
+2	一个	SearchCreativeWork	O
+3	叫做	SearchCreativeWork	O
+4	Phinally	SearchCreativeWork	B-object_name
+5	Phamous	SearchCreativeWork	I-object_name
+6	的	SearchCreativeWork	O
+7	游戏	SearchCreativeWork	B-object_type
+
+# id: 410
+# text-en: Give a rating of 2 to Juneteenth .
+# text: 给 Juneteenth 评分 为 2分 。
+# intent: RateBook
+1	给	RateBook	O
+2	Juneteenth	RateBook	B-object_name
+3	评分	RateBook	O
+4	为	RateBook	O
+5	2分	RateBook	B-rating_value
+6	。	RateBook	O
+
+# id: 411
+# text-en: Give zero stars to Rhialto the Marvellous
+# text: 给 Rhialto the Marvellous 0 颗 星
+# intent: RateBook
+1	给	RateBook	O
+2	Rhialto	RateBook	B-object_name
+3	the	RateBook	I-object_name
+4	Marvellous	RateBook	I-object_name
+5	0	RateBook	B-rating_value
+6	颗	RateBook	O
+7	星	RateBook	B-rating_unit
+
+# id: 412
+# text-en: I want to hear soundtrack music on Youtube from Helena Iren Michaelsen
+# text: 我 想 在 Youtube 上 听 Helena Iren Michaelsen 的 原声 音乐
+# intent: PlayMusic
+1	我	PlayMusic	O
+2	想	PlayMusic	O
+3	在	PlayMusic	O
+4	Youtube	PlayMusic	B-service
+5	上	PlayMusic	O
+6	听	PlayMusic	O
+7	Helena	PlayMusic	B-artist
+8	Iren	PlayMusic	I-artist
+9	Michaelsen	PlayMusic	I-artist
+10	的	PlayMusic	O
+11	原声	PlayMusic	B-music_item
+12	音乐	PlayMusic	O
+
+# id: 413
+# text-en: book a table on 1/20/2023 for 5 people in MH
+# text: 预订 一张 2023 年 1月 20日 在 MH 的 5 人 桌
+# intent: BookRestaurant
+1	预订	BookRestaurant	O
+2	一张	BookRestaurant	O
+3	2023	BookRestaurant	B-datetime
+4	年	BookRestaurant	I-datetime
+5	1月	BookRestaurant	I-datetime
+6	20日	BookRestaurant	I-datetime
+7	在	BookRestaurant	O
+8	MH	BookRestaurant	B-location
+9	的	BookRestaurant	O
+10	5	BookRestaurant	B-party_size_number
+11	人	BookRestaurant	O
+12	桌	BookRestaurant	O
+
+# id: 414
+# text-en: movie schedules close by for animated movies
+# text: 附近 的 动画 电影 电影 时间表
+# intent: SearchScreeningEvent
+1	附近	SearchScreeningEvent	B-location
+2	的	SearchScreeningEvent	O
+3	动画	SearchScreeningEvent	B-movie_type
+4	电影	SearchScreeningEvent	I-movie_type
+5	电影	SearchScreeningEvent	B-object_type
+6	时间表	SearchScreeningEvent	I-object_type
+
+# id: 415
+# text-en: Add jack white to my playlist This Is Shakira
+# text: 添加 jack white 到 我的 This Is Shakira 播放 列表里
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	jack	AddToPlaylist	B-artist
+3	white	AddToPlaylist	I-artist
+4	到	AddToPlaylist	O
+5	我的	AddToPlaylist	B-reference
+6	This	AddToPlaylist	B-playlist
+7	Is	AddToPlaylist	I-playlist
+8	Shakira	AddToPlaylist	I-playlist
+9	播放	AddToPlaylist	O
+10	列表里	AddToPlaylist	O
+
+# id: 416
+# text-en: I want to book a restaurant for five people in Sri Lanka .
+# text: 我 想 预订 一家 在 斯里兰卡 的 五 人 餐厅 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	预订	BookRestaurant	O
+4	一家	BookRestaurant	O
+5	在	BookRestaurant	O
+6	斯里兰卡	BookRestaurant	B-location
+7	的	BookRestaurant	O
+8	五	BookRestaurant	B-party_size_number
+9	人	BookRestaurant	O
+10	餐厅	BookRestaurant	B-restaurant_type
+11	。	BookRestaurant	O
+
+# id: 417
+# text-en: Please search for the television show , Episodi di The Blacklist .
+# text: 请 搜索 电视剧 Episodi di The Blacklist 。
+# intent: SearchCreativeWork
+1	请	SearchCreativeWork	O
+2	搜索	SearchCreativeWork	O
+3	电视剧	SearchCreativeWork	B-object_type
+4	Episodi	SearchCreativeWork	B-object_name
+5	di	SearchCreativeWork	I-object_name
+6	The	SearchCreativeWork	I-object_name
+7	Blacklist	SearchCreativeWork	I-object_name
+8	。	SearchCreativeWork	O
+
+# id: 418
+# text-en: what is the forecast for colder temps beginning on Law Day here
+# text: 天气 预报 说 从 法律 日 开始 这里 会 有 更冷 的 气温 吗
+# intent: weather/find
+1	天气	weather/find	O
+2	预报	weather/find	O
+3	说	weather/find	O
+4	从	weather/find	O
+5	法律	weather/find	B-datetime
+6	日	weather/find	I-datetime
+7	开始	weather/find	O
+8	这里	weather/find	B-location
+9	会	weather/find	O
+10	有	weather/find	O
+11	更冷	weather/find	B-condition_temperature
+12	的	weather/find	O
+13	气温	weather/find	O
+14	吗	weather/find	O
+
+# id: 419
+# text-en: I want to book a restaurant for ten people.
+# text: 我 想 预订 一家 十 人 的 餐厅 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	预订	BookRestaurant	O
+4	一家	BookRestaurant	O
+5	十	BookRestaurant	B-party_size_number
+6	人	BookRestaurant	O
+7	的	BookRestaurant	O
+8	餐厅	BookRestaurant	B-restaurant_type
+9	。	BookRestaurant	O
+
+# id: 420
+# text-en: Play something by Duke Ellington from the seventies
+# text: 播放 Duke Ellington 70 年代 的 作品
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	Duke	PlayMusic	B-artist
+3	Ellington	PlayMusic	I-artist
+4	70	PlayMusic	B-datetime
+5	年代	PlayMusic	I-datetime
+6	的	PlayMusic	O
+7	作品	PlayMusic	O
+
+# id: 421
+# text-en: Rate Cotton Comes to Harlem a 2
+# text: 给 Cotton Comes to Harlem 评分 为 2分
+# intent: RateBook
+1	给	RateBook	O
+2	Cotton	RateBook	B-object_name
+3	Comes	RateBook	I-object_name
+4	to	RateBook	I-object_name
+5	Harlem	RateBook	I-object_name
+6	评分	RateBook	O
+7	为	RateBook	O
+8	2分	RateBook	B-rating_value
+
+# id: 422
+# text-en: Add a song to my playlist madden nfl 16
+# text: 添加 一首 歌 到 我的 madden nfl 16 播放 列表
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	一首	AddToPlaylist	O
+3	歌	AddToPlaylist	B-music_item
+4	到	AddToPlaylist	O
+5	我的	AddToPlaylist	B-reference
+6	madden	AddToPlaylist	B-playlist
+7	nfl	AddToPlaylist	I-playlist
+8	16	AddToPlaylist	I-playlist
+9	播放	AddToPlaylist	O
+10	列表	AddToPlaylist	O
+
+# id: 423
+# text-en: Add Toyan to my Epic Gaming playlist.
+# text: 将 Toyan 添加 到 我的 Epic Gaming 播放 列表 中 。
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	Toyan	AddToPlaylist	B-artist
+3	添加	AddToPlaylist	O
+4	到	AddToPlaylist	O
+5	我的	AddToPlaylist	B-reference
+6	Epic	AddToPlaylist	B-playlist
+7	Gaming	AddToPlaylist	I-playlist
+8	播放	AddToPlaylist	O
+9	列表	AddToPlaylist	O
+10	中	AddToPlaylist	O
+11	。	AddToPlaylist	O
+
+# id: 424
+# text-en: play some new Les Vandyke on Slacker
+# text: 播放 一些 新的 Les Vandyke on Slacker
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	一些	PlayMusic	O
+3	新的	PlayMusic	B-sort
+4	Les	PlayMusic	B-artist
+5	Vandyke	PlayMusic	I-artist
+6	on	PlayMusic	O
+7	Slacker	PlayMusic	B-service
+
+# id: 425
+# text-en: rate the Three Junes one out of 6
+# text: 给 the Three Junes 评分 为 6分 中 的 1分
+# intent: RateBook
+1	给	RateBook	O
+2	the	RateBook	O
+3	Three	RateBook	B-object_name
+4	Junes	RateBook	I-object_name
+5	评分	RateBook	O
+6	为	RateBook	O
+7	6分	RateBook	B-best_rating
+8	中	RateBook	O
+9	的	RateBook	O
+10	1分	RateBook	B-rating_value
+
+# id: 426
+# text-en: Book a reservation for nine people at a bakery in Nunez
+# text: 在 努涅斯 的 一家 面包店 为 九 个 人 订位
+# intent: BookRestaurant
+1	在	BookRestaurant	O
+2	努涅斯	BookRestaurant	B-location
+3	的	BookRestaurant	O
+4	一家	BookRestaurant	O
+5	面包店	BookRestaurant	B-restaurant_type
+6	为	BookRestaurant	O
+7	九	BookRestaurant	B-party_size_number
+8	个	BookRestaurant	O
+9	人	BookRestaurant	O
+10	订位	BookRestaurant	O
+
+# id: 427
+# text-en: Rate this current novel two out of 6 .
+# text: 把 现在 的 这部 小说 评分 为 6分 中 的 两分 。
+# intent: RateBook
+1	把	RateBook	O
+2	现在	RateBook	B-object_select
+3	的	RateBook	O
+4	这部	RateBook	O
+5	小说	RateBook	B-object_type
+6	评分	RateBook	O
+7	为	RateBook	O
+8	6分	RateBook	B-best_rating
+9	中	RateBook	O
+10	的	RateBook	O
+11	两分	RateBook	B-rating_value
+12	。	RateBook	O
+
+# id: 428
+# text-en: Play The Happy Blues by Ronnie Wood .
+# text: 播放 Ronnie Wood 的 The Happy Blues 。
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	Ronnie	PlayMusic	B-artist
+3	Wood	PlayMusic	I-artist
+4	的	PlayMusic	O
+5	The	PlayMusic	B-album
+6	Happy	PlayMusic	I-album
+7	Blues	PlayMusic	I-album
+8	。	PlayMusic	O
+
+# id: 429
+# text-en: Play a symphony from 2013 .
+# text: 演奏 2013年 的 交响乐 。
+# intent: PlayMusic
+1	演奏	PlayMusic	O
+2	2013年	PlayMusic	B-datetime
+3	的	PlayMusic	O
+4	交响乐	PlayMusic	B-music_item
+5	。	PlayMusic	O
+
+# id: 430
+# text-en: Play Subconscious Lobotomy from Jennifer Paull .
+# text: 播放 Jennifer Paull 的 Subconscious Lobotomy 。
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	Jennifer	PlayMusic	B-artist
+3	Paull	PlayMusic	I-artist
+4	的	PlayMusic	O
+5	Subconscious	PlayMusic	B-album
+6	Lobotomy	PlayMusic	I-album
+7	。	PlayMusic	O
+
+# id: 431
+# text-en: Give The Crystal Snare 5 stars
+# text: 给 The Crystal Snare 5颗 星
+# intent: RateBook
+1	给	RateBook	O
+2	The	RateBook	B-object_name
+3	Crystal	RateBook	I-object_name
+4	Snare	RateBook	I-object_name
+5	5颗	RateBook	B-rating_value
+6	星	RateBook	B-rating_unit
+
+# id: 432
+# text-en: Give zero stars to this textbook
+# text: 给 这本 教科书 打 零 颗 星
+# intent: RateBook
+1	给	RateBook	O
+2	这本	RateBook	B-object_select
+3	教科书	RateBook	B-object_type
+4	打	RateBook	O
+5	零	RateBook	B-rating_value
+6	颗	RateBook	O
+7	星	RateBook	B-rating_unit
+
+# id: 433
+# text-en: Rate the current series 4 points
+# text: 给 当前 的 系列 评级 4个 点
+# intent: RateBook
+1	给	RateBook	O
+2	当前	RateBook	B-object_select
+3	的	RateBook	O
+4	系列	RateBook	B-object_part_of_series_type
+5	评级	RateBook	O
+6	4个	RateBook	B-rating_value
+7	点	RateBook	B-rating_unit
+
+# id: 434
+# text-en: I want a table at James D. Conrey House in Urbank California
+# text: 我 想 在 加州 Urbank 的 James D. Conrey House 预订 一张 桌子
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	在	BookRestaurant	O
+4	加州	BookRestaurant	B-location
+5	Urbank	BookRestaurant	B-location
+6	的	BookRestaurant	O
+7	James	BookRestaurant	B-restaurant_name
+8	D.	BookRestaurant	I-restaurant_name
+9	Conrey	BookRestaurant	I-restaurant_name
+10	House	BookRestaurant	I-restaurant_name
+11	预订	BookRestaurant	O
+12	一张	BookRestaurant	O
+13	桌子	BookRestaurant	O
+
+# id: 435
+# text-en: Is Babar: King of the Elephants playing
+# text: Babar: King of the Elephants 正在 播放 吗
+# intent: SearchScreeningEvent
+1	Babar:	SearchScreeningEvent	B-movie_name
+2	King	SearchScreeningEvent	I-movie_name
+3	of	SearchScreeningEvent	I-movie_name
+4	the	SearchScreeningEvent	I-movie_name
+5	Elephants	SearchScreeningEvent	I-movie_name
+6	正在	SearchScreeningEvent	O
+7	播放	SearchScreeningEvent	O
+8	吗	SearchScreeningEvent	O
+
+# id: 436
+# text-en: Add a song to this is racionais mc's
+# text: 添加 一首 racionais mc 的 歌
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	一首	AddToPlaylist	O
+3	racionais	AddToPlaylist	B-playlist
+4	mc	AddToPlaylist	I-playlist
+5	的	AddToPlaylist	O
+6	歌	AddToPlaylist	B-music_item
+
+# id: 437
+# text-en: rate the current essay zero out of 6 stars
+# text: 给 现在的 文章 评分 为 6 颗 星 中 的 零 颗 星
+# intent: RateBook
+1	给	RateBook	O
+2	现在的	RateBook	B-object_select
+3	文章	RateBook	B-object_type
+4	评分	RateBook	O
+5	为	RateBook	O
+6	6	RateBook	B-best_rating
+7	颗	RateBook	O
+8	星	RateBook	O
+9	中	RateBook	O
+10	的	RateBook	O
+11	零	RateBook	B-rating_value
+12	颗	RateBook	O
+13	星	RateBook	B-rating_unit
+
+# id: 438
+# text-en: Let's hear stuff from Andrew Hewitt .
+# text: 让 我们 听听 音乐 来自 Andrew Hewitt 。
+# intent: PlayMusic
+1	让	PlayMusic	O
+2	我们	PlayMusic	O
+3	听听	PlayMusic	O
+4	音乐	PlayMusic	O
+5	来自	PlayMusic	O
+6	Andrew	PlayMusic	B-artist
+7	Hewitt	PlayMusic	I-artist
+8	。	PlayMusic	O
+
+# id: 439
+# text-en: Find animated movies close by
+# text: 寻找 附近的 动画 电影
+# intent: SearchScreeningEvent
+1	寻找	SearchScreeningEvent	O
+2	附近的	SearchScreeningEvent	B-location
+3	动画	SearchScreeningEvent	B-movie_type
+4	电影	SearchScreeningEvent	I-movie_type
+
+# id: 440
+# text-en: give the current chronicle five of 6 points
+# text: 给 当前 编年史 6 分 中 的 五 分
+# intent: RateBook
+1	给	RateBook	O
+2	当前	RateBook	B-object_select
+3	编年史	RateBook	B-object_part_of_series_type
+4	6	RateBook	B-best_rating
+5	分	RateBook	O
+6	中	RateBook	O
+7	的	RateBook	O
+8	五	RateBook	B-rating_value
+9	分	RateBook	B-rating_unit
+
+# id: 441
+# text-en: I need a table for 4 in Saint Helena at Settha Palace Hotel
+# text: 我 想 在 圣赫 勒拿岛 的 Settha Palace Hotel 预订 一张 四人 桌
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	在	BookRestaurant	O
+4	圣赫	BookRestaurant	B-location
+5	勒拿岛	BookRestaurant	I-location
+6	的	BookRestaurant	O
+7	Settha	BookRestaurant	B-restaurant_name
+8	Palace	BookRestaurant	I-restaurant_name
+9	Hotel	BookRestaurant	I-restaurant_name
+10	预订	BookRestaurant	O
+11	一张	BookRestaurant	O
+12	四人	BookRestaurant	B-party_size_number
+13	桌	BookRestaurant	O
+
+# id: 442
+# text-en: What is the weather going to be like in Virginia on st. patrick's day ?
+# text: 弗吉尼亚州 st. patrick's day 那天 的 天气 将会 是 怎样 ?
+# intent: weather/find
+1	弗吉尼亚州	weather/find	B-location
+2	st.	weather/find	B-datetime
+3	patrick's	weather/find	I-datetime
+4	day	weather/find	I-datetime
+5	那天	weather/find	O
+6	的	weather/find	O
+7	天气	weather/find	O
+8	将会	weather/find	O
+9	是	weather/find	O
+10	怎样	weather/find	O
+11	?	weather/find	O
+
+# id: 443
+# text-en: I need a list of Speakeasy Theaters movie times
+# text: 我 需要 一份 Speakeasy Theaters 电影 时间 的 清单
+# intent: SearchScreeningEvent
+1	我	SearchScreeningEvent	O
+2	需要	SearchScreeningEvent	O
+3	一份	SearchScreeningEvent	O
+4	Speakeasy	SearchScreeningEvent	B-location
+5	Theaters	SearchScreeningEvent	I-location
+6	电影	SearchScreeningEvent	B-object_type
+7	时间	SearchScreeningEvent	I-object_type
+8	的	SearchScreeningEvent	O
+9	清单	SearchScreeningEvent	O
+
+# id: 444
+# text-en: Look for the television show Meet the Prince
+# text: 寻找 电视 节目 Meet the Prince
+# intent: SearchCreativeWork
+1	寻找	SearchCreativeWork	O
+2	电视	SearchCreativeWork	B-object_type
+3	节目	SearchCreativeWork	I-object_type
+4	Meet	SearchCreativeWork	B-object_name
+5	the	SearchCreativeWork	I-object_name
+6	Prince	SearchCreativeWork	I-object_name
+
+# id: 445
+# text-en: Please get me the Compulsive Disclosure song .
+# text: 请 给 我 Compulsive Disclosure 的 歌 。
+# intent: SearchCreativeWork
+1	请	SearchCreativeWork	O
+2	给	SearchCreativeWork	O
+3	我	SearchCreativeWork	O
+4	Compulsive	SearchCreativeWork	B-object_name
+5	Disclosure	SearchCreativeWork	I-object_name
+6	的	SearchCreativeWork	O
+7	歌	SearchCreativeWork	B-object_type
+8	。	SearchCreativeWork	O
+
+# id: 446
+# text-en: Play Trance Life on Zvooq .
+# text: 在 Zvooq 播放 Trance Life 。
+# intent: PlayMusic
+1	在	PlayMusic	O
+2	Zvooq	PlayMusic	B-service
+3	播放	PlayMusic	O
+4	Trance	PlayMusic	B-playlist
+5	Life	PlayMusic	I-playlist
+6	。	PlayMusic	O
+
+# id: 447
+# text-en: Please find me the work, Serious Awesomeness !.
+# text: 请 给 我 找到 这个 作品， Serious Awesomeness ! 。
+# intent: SearchCreativeWork
+1	请	SearchCreativeWork	O
+2	给	SearchCreativeWork	O
+3	我	SearchCreativeWork	O
+4	找到	SearchCreativeWork	O
+5	这个	SearchCreativeWork	O
+6	作品，	SearchCreativeWork	O
+7	Serious	SearchCreativeWork	B-object_name
+8	Awesomeness	SearchCreativeWork	I-object_name
+9	!	SearchCreativeWork	O
+10	。	SearchCreativeWork	O
+
+# id: 448
+# text-en: i want to see I Dream of Jeanie in a movie theatre
+# text: 我 想 在 一个 电影 院 看 Dream of Jeanie
+# intent: SearchScreeningEvent
+1	我	SearchScreeningEvent	O
+2	想	SearchScreeningEvent	O
+3	在	SearchScreeningEvent	O
+4	一个	SearchScreeningEvent	O
+5	电影	SearchScreeningEvent	B-object_location_type
+6	院	SearchScreeningEvent	I-object_location_type
+7	看	SearchScreeningEvent	O
+8	Dream	SearchScreeningEvent	B-movie_name
+9	of	SearchScreeningEvent	I-movie_name
+10	Jeanie	SearchScreeningEvent	I-movie_name
+
+# id: 449
+# text-en: Play Paul Mccartney
+# text: 播放 Paul Mccartney
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	Paul	PlayMusic	B-artist
+3	Mccartney	PlayMusic	I-artist
+
+# id: 450
+# text-en: Rate the current novel 3 stars
+# text: 评分 当前 小说 3颗 星
+# intent: RateBook
+1	评分	RateBook	O
+2	当前	RateBook	B-object_select
+3	小说	RateBook	B-object_type
+4	3颗	RateBook	B-rating_value
+5	星	RateBook	B-rating_unit
+
+# id: 451
+# text-en: Can you search the book , Paris - When It Sizzles ?
+# text: 您 能 搜索 Paris - When It Sizzles 这本 书 吗 ？
+# intent: SearchCreativeWork
+1	您	SearchCreativeWork	O
+2	能	SearchCreativeWork	O
+3	搜索	SearchCreativeWork	O
+4	Paris	SearchCreativeWork	B-object_name
+5	-	SearchCreativeWork	I-object_name
+6	When	SearchCreativeWork	I-object_name
+7	It	SearchCreativeWork	I-object_name
+8	Sizzles	SearchCreativeWork	I-object_name
+9	这本	SearchCreativeWork	O
+10	书	SearchCreativeWork	B-object_type
+11	吗	SearchCreativeWork	O
+12	？	SearchCreativeWork	O
+
+# id: 452
+# text-en: play some seventies Filipp Kirkorow
+# text: 播放 一些 七十 年代 的 Filipp Kirkorow
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	一些	PlayMusic	O
+3	七十	PlayMusic	B-datetime
+4	年代	PlayMusic	I-datetime
+5	的	PlayMusic	O
+6	Filipp	PlayMusic	B-artist
+7	Kirkorow	PlayMusic	I-artist
+
+# id: 453
+# text-en: I want to book a bougatsa restaurant in next year nearby Penn for three people.
+# text: 我 想 在 明年 在 宾州 附近 为 三人 预订 一家 bougatsa 餐厅 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	在	BookRestaurant	O
+4	明年	BookRestaurant	B-datetime
+5	在	BookRestaurant	O
+6	宾州	BookRestaurant	B-location
+7	附近	BookRestaurant	B-location
+8	为	BookRestaurant	O
+9	三人	BookRestaurant	B-party_size_number
+10	预订	BookRestaurant	O
+11	一家	BookRestaurant	O
+12	bougatsa	BookRestaurant	B-cuisine
+13	餐厅	BookRestaurant	B-restaurant_type
+14	。	BookRestaurant	O
+
+# id: 454
+# text-en: Will it be rainy in Tenino ?
+# text: 特尼诺 将 会 下雨 吗 ？
+# intent: weather/find
+1	特尼诺	weather/find	B-location
+2	将	weather/find	O
+3	会	weather/find	O
+4	下雨	weather/find	B-condition_description
+5	吗	weather/find	O
+6	？	weather/find	O
+
+# id: 455
+# text-en: Please look up Three Essays on the Theory of Sexuality show .
+# text: 请 查找 Three Essays on the Theory of Sexuality 表演 。
+# intent: SearchCreativeWork
+1	请	SearchCreativeWork	O
+2	查找	SearchCreativeWork	O
+3	Three	SearchCreativeWork	B-object_name
+4	Essays	SearchCreativeWork	I-object_name
+5	on	SearchCreativeWork	I-object_name
+6	the	SearchCreativeWork	I-object_name
+7	Theory	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	Sexuality	SearchCreativeWork	I-object_name
+10	表演	SearchCreativeWork	B-object_type
+11	。	SearchCreativeWork	O
+
+# id: 456
+# text-en: I want to eat in Ramona
+# text: 我 想 在 拉莫纳 吃饭
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	在	BookRestaurant	O
+4	拉莫纳	BookRestaurant	B-location
+5	吃饭	BookRestaurant	O
+
+# id: 457
+# text-en: Add the boy george track to the Emo Forever playlist.
+# text: 添加 the boy george track 到 Emo Forever 播放 列表 。
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	the	AddToPlaylist	O
+3	boy	AddToPlaylist	B-artist
+4	george	AddToPlaylist	I-artist
+5	track	AddToPlaylist	B-music_item
+6	到	AddToPlaylist	O
+7	Emo	AddToPlaylist	B-playlist
+8	Forever	AddToPlaylist	I-playlist
+9	播放	AddToPlaylist	O
+10	列表	AddToPlaylist	O
+11	。	AddToPlaylist	O
+
+# id: 458
+# text-en: I want to book a steakhouse in Vimy Ridge .
+# text: 我 想 在 Vimy Ridge 预定 一家 牛排 馆 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	在	BookRestaurant	O
+4	Vimy	BookRestaurant	B-location
+5	Ridge	BookRestaurant	I-location
+6	预定	BookRestaurant	O
+7	一家	BookRestaurant	O
+8	牛排	BookRestaurant	B-restaurant_type
+9	馆	BookRestaurant	O
+10	。	BookRestaurant	O
+
+# id: 459
+# text-en: Is Without Witness playing twenty two hours from now
+# text: 从 现在 起 二十 二 小时 在 播放 Without Witness 吗
+# intent: SearchScreeningEvent
+1	从	SearchScreeningEvent	O
+2	现在	SearchScreeningEvent	B-datetime
+3	起	SearchScreeningEvent	I-datetime
+4	二十	SearchScreeningEvent	I-datetime
+5	二	SearchScreeningEvent	I-datetime
+6	小时	SearchScreeningEvent	I-datetime
+7	在	SearchScreeningEvent	O
+8	播放	SearchScreeningEvent	O
+9	Without	SearchScreeningEvent	B-movie_name
+10	Witness	SearchScreeningEvent	I-movie_name
+11	吗	SearchScreeningEvent	O
+
+# id: 460
+# text-en: Book spot for 9
+# text: 预订 一张 桌子 在 9点
+# intent: BookRestaurant
+1	预订	BookRestaurant	O
+2	一张	BookRestaurant	O
+3	桌子	BookRestaurant	O
+4	在	BookRestaurant	O
+5	9点	BookRestaurant	B-party_size_number
+
+# id: 461
+# text-en: add this track to my Hands Up playlist
+# text: 将 此 曲目 添加 到 我的 Hands Up 播放 列表 中
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	此	AddToPlaylist	O
+3	曲目	AddToPlaylist	B-music_item
+4	添加	AddToPlaylist	O
+5	到	AddToPlaylist	O
+6	我的	AddToPlaylist	B-reference
+7	Hands	AddToPlaylist	B-playlist
+8	Up	AddToPlaylist	I-playlist
+9	播放	AddToPlaylist	O
+10	列表	AddToPlaylist	O
+11	中	AddToPlaylist	O
+
+# id: 462
+# text-en: Play something from 90s Pop Rock Essentials
+# text: 播放 90年代 Pop Rock Essentials 的 音乐
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	90年代	PlayMusic	B-playlist
+3	Pop	PlayMusic	I-playlist
+4	Rock	PlayMusic	I-playlist
+5	Essentials	PlayMusic	I-playlist
+6	的	PlayMusic	O
+7	音乐	PlayMusic	O
+
+# id: 463
+# text-en: Can you find me the Blue Spring trailer ?
+# text: 你 能 给 我 找到 Blue Spring 的 预告片 吗 ？
+# intent: SearchCreativeWork
+1	你	SearchCreativeWork	O
+2	能	SearchCreativeWork	O
+3	给	SearchCreativeWork	O
+4	我	SearchCreativeWork	O
+5	找到	SearchCreativeWork	O
+6	Blue	SearchCreativeWork	B-object_name
+7	Spring	SearchCreativeWork	I-object_name
+8	的	SearchCreativeWork	O
+9	预告片	SearchCreativeWork	B-object_type
+10	吗	SearchCreativeWork	O
+11	？	SearchCreativeWork	O
+
+# id: 464
+# text-en: Give two stars out of 6 to 36 Children
+# text: 给 36 Children 6 颗 星 中 的 两 颗 星
+# intent: RateBook
+1	给	RateBook	O
+2	36	RateBook	B-object_name
+3	Children	RateBook	I-object_name
+4	6	RateBook	B-best_rating
+5	颗	RateBook	O
+6	星	RateBook	O
+7	中	RateBook	O
+8	的	RateBook	O
+9	两	RateBook	B-rating_value
+10	颗	RateBook	O
+11	星	RateBook	B-rating_unit
+
+# id: 465
+# text-en: I want animated movies at MJR Theatres
+# text: 我 想要 MJR剧院 的 动画 电影
+# intent: SearchScreeningEvent
+1	我	SearchScreeningEvent	O
+2	想要	SearchScreeningEvent	O
+3	MJR剧院	SearchScreeningEvent	B-location
+4	的	SearchScreeningEvent	O
+5	动画	SearchScreeningEvent	B-movie_type
+6	电影	SearchScreeningEvent	I-movie_type
+
+# id: 466
+# text-en: Add the artist mike to the Sexy as Folk playlist.
+# text: 将 歌手 mike 添加 到 Sexy as Folk 播放 列表 中 。
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	歌手	AddToPlaylist	B-music_item
+3	mike	AddToPlaylist	B-artist
+4	添加	AddToPlaylist	O
+5	到	AddToPlaylist	O
+6	Sexy	AddToPlaylist	B-playlist
+7	as	AddToPlaylist	I-playlist
+8	Folk	AddToPlaylist	I-playlist
+9	播放	AddToPlaylist	O
+10	列表	AddToPlaylist	O
+11	中	AddToPlaylist	O
+12	。	AddToPlaylist	O
+
+# id: 467
+# text-en: add Highway Patrolman in my playlist this is al green
+# text: 添加 Highway Patrolman 到 我的 this is al green 播放 列表 中
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	Highway	AddToPlaylist	B-entity_name
+3	Patrolman	AddToPlaylist	I-entity_name
+4	到	AddToPlaylist	O
+5	我的	AddToPlaylist	B-reference
+6	this	AddToPlaylist	B-playlist
+7	is	AddToPlaylist	I-playlist
+8	al	AddToPlaylist	I-playlist
+9	green	AddToPlaylist	I-playlist
+10	播放	AddToPlaylist	O
+11	列表	AddToPlaylist	O
+12	中	AddToPlaylist	O
+
+# id: 468
+# text-en: Find me the novel with the name To Lose My Life …
+# text: 给 我 找到 名字 叫 To Lose My Life … 的 小说
+# intent: SearchCreativeWork
+1	给	SearchCreativeWork	O
+2	我	SearchCreativeWork	O
+3	找到	SearchCreativeWork	O
+4	名字	SearchCreativeWork	O
+5	叫	SearchCreativeWork	O
+6	To	SearchCreativeWork	B-object_name
+7	Lose	SearchCreativeWork	I-object_name
+8	My	SearchCreativeWork	I-object_name
+9	Life	SearchCreativeWork	I-object_name
+10	…	SearchCreativeWork	O
+11	的	SearchCreativeWork	O
+12	小说	SearchCreativeWork	B-object_type
+
+# id: 469
+# text-en: mark this album a score of 5
+# text: 将 此 专辑 评分 为 5 分
+# intent: RateBook
+1	将	RateBook	O
+2	此	RateBook	B-object_select
+3	专辑	RateBook	B-object_type
+4	评分	RateBook	O
+5	为	RateBook	O
+6	5	RateBook	B-rating_value
+7	分	RateBook	O
+
+# id: 470
+# text-en: Is Rare Birds showing at the nearest movie theatre at noon .
+# text: 中午 在 最近的 电影院 有 Rare Birds 放映 吗 ？
+# intent: SearchScreeningEvent
+1	中午	SearchScreeningEvent	B-datetime
+2	在	SearchScreeningEvent	O
+3	最近的	SearchScreeningEvent	B-location
+4	电影院	SearchScreeningEvent	B-object_location_type
+5	有	SearchScreeningEvent	O
+6	Rare	SearchScreeningEvent	B-movie_name
+7	Birds	SearchScreeningEvent	I-movie_name
+8	放映	SearchScreeningEvent	O
+9	吗	SearchScreeningEvent	O
+10	？	SearchScreeningEvent	O
+
+# id: 471
+# text-en: Rate The 8-Week Cholesterol Cure three out of 6 .
+# text: 将 The 8-Week Cholesterol Cure 评分 为 6分 中 的 三分 。
+# intent: RateBook
+1	将	RateBook	O
+2	The	RateBook	B-object_name
+3	8-Week	RateBook	I-object_name
+4	Cholesterol	RateBook	I-object_name
+5	Cure	RateBook	I-object_name
+6		RateBook	O
+7	评分	RateBook	O
+8	为	RateBook	O
+9	6分	RateBook	B-best_rating
+10	中	RateBook	O
+11	的	RateBook	O
+12	三分	RateBook	B-rating_value
+13	。	RateBook	O
+
+# id: 472
+# text-en: Add martin barre to my punk unplugged playlist.
+# text: 将 Martin Barre 添加 到 我的 punk unplugged 播放 列表 中 。
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	Martin	AddToPlaylist	B-artist
+3	Barre	AddToPlaylist	I-artist
+4	添加	AddToPlaylist	O
+5	到	AddToPlaylist	O
+6	我的	AddToPlaylist	B-reference
+7	punk	AddToPlaylist	B-playlist
+8	unplugged	AddToPlaylist	I-playlist
+9	播放	AddToPlaylist	O
+10	列表	AddToPlaylist	O
+11	中	AddToPlaylist	O
+12	。	AddToPlaylist	O
+
+# id: 473
+# text-en: rate the current novel zero out of 6
+# text: 将 当前 小说 评分为 6分 中 的 零分
+# intent: RateBook
+1	将	RateBook	O
+2	当前	RateBook	B-object_select
+3	小说	RateBook	B-object_type
+4	评分为	RateBook	O
+5	6分	RateBook	B-best_rating
+6	中	RateBook	O
+7	的	RateBook	O
+8	零分	RateBook	B-rating_value
+
+# id: 474
+# text-en: What times will The Young Swordsman be showing at my cinema ?
+# text: The Young Swordsman 什么 时候 在 我的 电影院 放映 ？
+# intent: SearchScreeningEvent
+1	The	SearchScreeningEvent	B-movie_name
+2	Young	SearchScreeningEvent	I-movie_name
+3	Swordsman	SearchScreeningEvent	I-movie_name
+4	什么	SearchScreeningEvent	O
+5	时候	SearchScreeningEvent	B-object_type
+6	在	SearchScreeningEvent	O
+7	我的	SearchScreeningEvent	O
+8	电影院	SearchScreeningEvent	B-object_location_type
+9	放映	SearchScreeningEvent	O
+10	？	SearchScreeningEvent	O
+
+# id: 475
+# text-en: What are the movies showing in the neighbourhood
+# text: 在 附近 有 什么 放映 的 电影
+# intent: SearchScreeningEvent
+1	在	SearchScreeningEvent	B-location
+2	附近	SearchScreeningEvent	I-location
+3	有	SearchScreeningEvent	O
+4	什么	SearchScreeningEvent	O
+5	放映	SearchScreeningEvent	O
+6	的	SearchScreeningEvent	O
+7	电影	SearchScreeningEvent	B-movie_type
+
+# id: 476
+# text-en: I want to book Oregon Electric Station in North City .
+# text: 我 想 预定 北市 的 Oregon Electric Station 。
+# intent: BookRestaurant
+1	我	BookRestaurant	O
+2	想	BookRestaurant	O
+3	预定	BookRestaurant	O
+4	北市	BookRestaurant	B-location
+5	的	BookRestaurant	O
+6	Oregon	BookRestaurant	B-restaurant_name
+7	Electric	BookRestaurant	I-restaurant_name
+8	Station	BookRestaurant	I-restaurant_name
+9	。	BookRestaurant	O
+
+# id: 477
+# text-en: how's the weather here at two Am
+# text: 凌晨 两点 这里 的 天气 怎么样
+# intent: weather/find
+1	凌晨	weather/find	B-datetime
+2	两点	weather/find	I-datetime
+3	这里	weather/find	B-location
+4	的	weather/find	O
+5	天气	weather/find	O
+6	怎么样	weather/find	O
+
+# id: 478
+# text-en: Fine the movie schedules for the Wanda Group .
+# text: 为 the Wanda Group 找到 电影 时间表 。
+# intent: SearchScreeningEvent
+1	为	SearchScreeningEvent	O
+2	the	SearchScreeningEvent	O
+3	Wanda	SearchScreeningEvent	B-location
+4	Group	SearchScreeningEvent	I-location
+5	找到	SearchScreeningEvent	O
+6	电影	SearchScreeningEvent	B-object_type
+7	时间表	SearchScreeningEvent	I-object_type
+8	。	SearchScreeningEvent	O
+
+# id: 479
+# text-en: what is the forecast for Waurika in Samoa
+# text: 萨摩亚 的 沃里卡 的 天气 预报 是 怎样 的
+# intent: weather/find
+1	萨摩亚	weather/find	B-location
+2	的	weather/find	O
+3	沃里卡	weather/find	B-location
+4	的	weather/find	O
+5	天气	weather/find	O
+6	预报	weather/find	O
+7	是	weather/find	O
+8	怎样	weather/find	O
+9	的	weather/find	O
+
+# id: 480
+# text-en: Show the movie schedules in the neighborhood
+# text: 显示 附近 的 电影 时间表
+# intent: SearchScreeningEvent
+1	显示	SearchScreeningEvent	O
+2	附近	SearchScreeningEvent	B-location
+3	的	SearchScreeningEvent	O
+4	电影	SearchScreeningEvent	B-object_type
+5	时间表	SearchScreeningEvent	I-object_type
+
+# id: 481
+# text-en: Play some blues britânico .
+# text: 播放 blues britânico 。
+# intent: PlayMusic
+1	播放	PlayMusic	O
+2	blues	PlayMusic	B-genre
+3	britânico	PlayMusic	I-genre
+4	。	PlayMusic	O
+
+# id: 482
+# text-en: Is No Time to Be Young showing at AMC Theaters
+# text: No Time to Be Young 在 AMC Theaters 上映 吗
+# intent: SearchScreeningEvent
+1	No	SearchScreeningEvent	B-movie_name
+2	Time	SearchScreeningEvent	I-movie_name
+3	to	SearchScreeningEvent	I-movie_name
+4	Be	SearchScreeningEvent	I-movie_name
+5	Young	SearchScreeningEvent	I-movie_name
+6	在	SearchScreeningEvent	O
+7	AMC	SearchScreeningEvent	B-location
+8	Theaters	SearchScreeningEvent	I-location
+9	上映	SearchScreeningEvent	O
+10	吗	SearchScreeningEvent	O
+
+# id: 483
+# text-en: Please look up and find me Monty Python Live at the Hollywood Bowl .
+# text: 请 查找 并 给 我 找到 Monty Python Live at the Hollywood Bowl 。
+# intent: SearchCreativeWork
+1	请	SearchCreativeWork	O
+2	查找	SearchCreativeWork	O
+3	并	SearchCreativeWork	O
+4	给	SearchCreativeWork	O
+5	我	SearchCreativeWork	O
+6	找到	SearchCreativeWork	O
+7	Monty	SearchCreativeWork	B-object_name
+8	Python	SearchCreativeWork	I-object_name
+9	Live	SearchCreativeWork	I-object_name
+10	at	SearchCreativeWork	I-object_name
+11	the	SearchCreativeWork	I-object_name
+12	Hollywood	SearchCreativeWork	I-object_name
+13	Bowl	SearchCreativeWork	I-object_name
+14	。	SearchCreativeWork	O
+
+# id: 484
+# text-en: what is the forecast for here for blizzard conditions at five pm
+# text: 下午 五点 这里 的 暴风雪 情况 预报 是什么
+# intent: weather/find
+1	下午	weather/find	B-datetime
+2	五点	weather/find	I-datetime
+3	这里	weather/find	B-location
+4	的	weather/find	O
+5	暴风雪	weather/find	B-condition_description
+6	情况	weather/find	O
+7	预报	weather/find	O
+8	是什么	weather/find	O
+
+# id: 485
+# text-en: add ireland in the junior eurovision song contest 2015 to my Jazzy Dinner playlist
+# text: 将 ireland in the junior eurovision song contest 2015 添加 到 我的 Jazzy Dinner 播放 列表 中
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	ireland	AddToPlaylist	B-entity_name
+3	in	AddToPlaylist	I-entity_name
+4	the	AddToPlaylist	I-entity_name
+5	junior	AddToPlaylist	I-entity_name
+6	eurovision	AddToPlaylist	I-entity_name
+7	song	AddToPlaylist	I-entity_name
+8	contest	AddToPlaylist	I-entity_name
+9	2015	AddToPlaylist	I-entity_name
+10	添加	AddToPlaylist	O
+11	到	AddToPlaylist	O
+12	我的	AddToPlaylist	B-reference
+13	Jazzy	AddToPlaylist	B-playlist
+14	Dinner	AddToPlaylist	I-playlist
+15	播放	AddToPlaylist	O
+16	列表	AddToPlaylist	O
+17	中	AddToPlaylist	O
+
+# id: 486
+# text-en: Add a song to Indie Hipster
+# text: 添加 一首 歌曲 到 Indie Hipster
+# intent: AddToPlaylist
+1	添加	AddToPlaylist	O
+2	一首	AddToPlaylist	O
+3	歌曲	AddToPlaylist	B-music_item
+4	到	AddToPlaylist	O
+5	Indie	AddToPlaylist	B-playlist
+6	Hipster	AddToPlaylist	I-playlist
+
+# id: 487
+# text-en: Can you find me the National Anthem of the Ancient Britons television show ?
+# text: 你 能 找到 我的 the National Anthem of the Ancient Britons 电视 节目 吗 ？
+# intent: SearchCreativeWork
+1	你	SearchCreativeWork	O
+2	能	SearchCreativeWork	O
+3	找到	SearchCreativeWork	O
+4	我的	SearchCreativeWork	B-object_name
+5	the	SearchCreativeWork	I-object_name
+6	National	SearchCreativeWork	I-object_name
+7	Anthem	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	Ancient	SearchCreativeWork	I-object_name
+11	Britons	SearchCreativeWork	I-object_name
+12	电视	SearchCreativeWork	B-object_type
+13	节目	SearchCreativeWork	I-object_type
+14	吗	SearchCreativeWork	O
+15	？	SearchCreativeWork	O
+
+# id: 488
+# text-en: To the travelling playlist, please add this David Gahan song .
+# text: 在 the travelling 播放 列表 中，请 添加 这首 David Gahan 的 歌曲 。
+# intent: AddToPlaylist
+1	在	AddToPlaylist	O
+2	the	AddToPlaylist	O
+3	travelling	AddToPlaylist	B-playlist
+4	播放	AddToPlaylist	O
+5	列表	AddToPlaylist	O
+6	中，请	AddToPlaylist	O
+7	添加	AddToPlaylist	O
+8	这首	AddToPlaylist	O
+9	David	AddToPlaylist	B-artist
+10	Gahan	AddToPlaylist	I-artist
+11	的	AddToPlaylist	O
+12	歌曲	AddToPlaylist	B-music_item
+13	。	AddToPlaylist	O
+
+# id: 489
+# text-en: I want to hear them from the artist Murcof
+# text: 我 想 听 艺术家 Murcof 的 音乐
+# intent: PlayMusic
+1	我	PlayMusic	O
+2	想	PlayMusic	O
+3	听	PlayMusic	O
+4	艺术家	PlayMusic	O
+5	Murcof	PlayMusic	B-artist
+6	的	PlayMusic	O
+7	音乐	PlayMusic	B-music_item
+
+# id: 490
+# text-en: rate The Gift: Imagination and the Erotic Life of Property five stars
+# text: 给 The Gift: Imagination and the Erotic Life of Property 评分 为 5颗 星
+# intent: RateBook
+1	给	RateBook	O
+2	The	RateBook	B-object_name
+3	Gift:	RateBook	I-object_name
+4	Imagination	RateBook	I-object_name
+5	and	RateBook	I-object_name
+6	the	RateBook	I-object_name
+7	Erotic	RateBook	I-object_name
+8	Life	RateBook	I-object_name
+9	of	RateBook	I-object_name
+10	Property	RateBook	I-object_name
+11	评分	RateBook	O
+12	为	RateBook	O
+13	5颗	RateBook	B-rating_value
+14	星	RateBook	B-rating_unit
+
+# id: 491
+# text-en: Find me a TV show called Baby Blue
+# text: 找到 一个 名为 Baby Blue 的 电视 节目
+# intent: SearchCreativeWork
+1	找到	SearchCreativeWork	O
+2	一个	SearchCreativeWork	O
+3	名为	SearchCreativeWork	O
+4	Baby	SearchCreativeWork	B-object_name
+5	Blue	SearchCreativeWork	I-object_name
+6	的	SearchCreativeWork	O
+7	电视	SearchCreativeWork	B-object_type
+8	节目	SearchCreativeWork	I-object_type
+
+# id: 492
+# text-en: look for the book The Girl Who Was Plugged In
+# text: 寻找 一本 名为 The Girl Who Was Plugged In 的 书
+# intent: SearchCreativeWork
+1	寻找	SearchCreativeWork	O
+2	一本	SearchCreativeWork	O
+3	名为	SearchCreativeWork	O
+4	The	SearchCreativeWork	B-object_name
+5	Girl	SearchCreativeWork	I-object_name
+6	Who	SearchCreativeWork	I-object_name
+7	Was	SearchCreativeWork	I-object_name
+8	Plugged	SearchCreativeWork	I-object_name
+9	In	SearchCreativeWork	I-object_name
+10	的	SearchCreativeWork	O
+11	书	SearchCreativeWork	B-object_type
+
+# id: 493
+# text-en: phyllis ward and veronica need a table at a restaurant in 152 days
+# text: phyllis ward 和 veronica 在 152 天 内 在 餐厅 需要 一张 桌子
+# intent: BookRestaurant
+1	phyllis	BookRestaurant	B-party_size_description
+2	ward	BookRestaurant	I-party_size_description
+3	和	BookRestaurant	I-party_size_description
+4	veronica	BookRestaurant	I-party_size_description
+5	在	BookRestaurant	B-datetime
+6	152	BookRestaurant	I-datetime
+7	天	BookRestaurant	I-datetime
+8	内	BookRestaurant	I-datetime
+9	在	BookRestaurant	O
+10	餐厅	BookRestaurant	B-restaurant_type
+11	需要	BookRestaurant	O
+12	一张	BookRestaurant	O
+13	桌子	BookRestaurant	O
+
+# id: 494
+# text-en: Book a popular restaurant for 5 people
+# text: 为 5个 人 预订 一个 受欢迎 的 餐厅
+# intent: BookRestaurant
+1	为	BookRestaurant	O
+2	5个	BookRestaurant	B-party_size_number
+3	人	BookRestaurant	O
+4	预订	BookRestaurant	O
+5	一个	BookRestaurant	O
+6	受欢迎	BookRestaurant	B-sort
+7	的	BookRestaurant	O
+8	餐厅	BookRestaurant	B-restaurant_type
+
+# id: 495
+# text-en: Book a reservation for The Dome, Edinburgh close to Brooklawn
+# text: 预订 一个 位置 在 The Dome, Edinburgh close to Brooklawn
+# intent: BookRestaurant
+1	预订	BookRestaurant	O
+2	一个	BookRestaurant	O
+3	位置	BookRestaurant	O
+4	在	BookRestaurant	O
+5	The	BookRestaurant	B-restaurant_name
+6	Dome,	BookRestaurant	I-restaurant_name
+7	Edinburgh	BookRestaurant	I-restaurant_name
+8	close	BookRestaurant	B-location
+9	to	BookRestaurant	O
+10	Brooklawn	BookRestaurant	B-location
+
+# id: 496
+# text-en: Add this album to Old School Death Metal
+# text: 将 此 专辑 添加 到 Old School Death Metal
+# intent: AddToPlaylist
+1	将	AddToPlaylist	O
+2	此	AddToPlaylist	O
+3	专辑	AddToPlaylist	B-music_item
+4	添加	AddToPlaylist	O
+5	到	AddToPlaylist	O
+6	Old	AddToPlaylist	B-playlist
+7	School	AddToPlaylist	I-playlist
+8	Death	AddToPlaylist	I-playlist
+9	Metal	AddToPlaylist	I-playlist
+
+# id: 497
+# text-en: Look for the TV series Jersey Boys
+# text: 搜索 电视 连续剧 Jersey Boys
+# intent: SearchCreativeWork
+1	搜索	SearchCreativeWork	O
+2	电视	SearchCreativeWork	B-object_type
+3	连续剧	SearchCreativeWork	I-object_type
+4	Jersey	SearchCreativeWork	B-object_name
+5	Boys	SearchCreativeWork	I-object_name
+
+# id: 498
+# text-en: Book a reservation for nine people at the best pub nearby Tangier in six months
+# text: 六个 月 内 在 丹吉尔 附近 最好 的 酒吧 预订 九 人 的 位置
+# intent: BookRestaurant
+1	六个	BookRestaurant	B-datetime
+2	月	BookRestaurant	I-datetime
+3	内	BookRestaurant	I-datetime
+4	在	BookRestaurant	O
+5	丹吉尔	BookRestaurant	B-location
+6	附近	BookRestaurant	B-location
+7	最好	BookRestaurant	B-sort
+8	的	BookRestaurant	I-sort
+9	酒吧	BookRestaurant	B-restaurant_type
+10	预订	BookRestaurant	O
+11	九	BookRestaurant	B-party_size_number
+12	人	BookRestaurant	O
+13	的	BookRestaurant	O
+14	位置	BookRestaurant	O
+
+# id: 499
+# text-en: Show me the movies at Harkins Theatres .
+# text: 给 我 看 Harkins Theatres 的 电影 。
+# intent: SearchScreeningEvent
+1	给	SearchScreeningEvent	O
+2	我	SearchScreeningEvent	O
+3	看	SearchScreeningEvent	O
+4	Harkins	SearchScreeningEvent	B-location
+5	Theatres	SearchScreeningEvent	I-location
+6	的	SearchScreeningEvent	O
+7	电影	SearchScreeningEvent	B-movie_type
+8	。	SearchScreeningEvent	O
+
+# id: 500
+# text-en: book a party at their campus within the same area for churrascaria
+# text: 在 他们 校园 区域 内 同 一个 地方 预订 一个 派对 为了 庆祝 churrascaria
+# intent: BookRestaurant
+1	在	BookRestaurant	O
+2	他们	BookRestaurant	B-location
+3	校园	BookRestaurant	I-location
+4	区域	BookRestaurant	O
+5	内	BookRestaurant	O
+6	同	BookRestaurant	B-location
+7	一个	BookRestaurant	I-location
+8	地方	BookRestaurant	I-location
+9	预订	BookRestaurant	O
+10	一个	BookRestaurant	O
+11	派对	BookRestaurant	O
+12	为了	BookRestaurant	O
+13	庆祝	BookRestaurant	O
+14	churrascaria	BookRestaurant	B-restaurant_type
+

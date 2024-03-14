@@ -1,0 +1,282 @@
+Namespace(activation_dropout=0.0, activation_fn='relu', adam_betas='(0.9, 0.98)', adam_eps=1e-08, adaptive_input=False, adaptive_softmax_cutoff=None, adaptive_softmax_dropout=0, arch='transformer_wmt_en_de', attention_dropout=0.0, best_checkpoint_metric='loss', bpe=None, bucket_cap_mb=25, clip_norm=25, cpu=False, criterion='label_smoothed_cross_entropy', cross_self_attention=False, curriculum=0, data='../preprocessed/hi', dataset_impl=None, ddp_backend='c10d', decoder_attention_heads=8, decoder_embed_dim=512, decoder_embed_path=None, decoder_ffn_embed_dim=2048, decoder_input_dim=512, decoder_layerdrop=0, decoder_layers=6, decoder_layers_to_keep=None, decoder_learned_pos=False, decoder_normalize_before=False, decoder_output_dim=512, device_id=0, disable_validation=False, distributed_backend='nccl', distributed_init_method=None, distributed_no_spawn=False, distributed_port=-1, distributed_rank=0, distributed_world_size=1, dropout=0.3, empty_cache_freq=0, encoder_attention_heads=8, encoder_embed_dim=512, encoder_embed_path=None, encoder_ffn_embed_dim=2048, encoder_layerdrop=0, encoder_layers=6, encoder_layers_to_keep=None, encoder_learned_pos=False, encoder_normalize_before=False, fast_stat_sync=False, find_unused_parameters=False, fix_batches_to_gpus=False, fixed_validation_seed=None, fp16=False, fp16_init_scale=128, fp16_scale_tolerance=0.0, fp16_scale_window=None, keep_interval_updates=-1, keep_last_epochs=-1, label_smoothing=0.1, layer_wise_attention=False, layernorm_embedding=False, lazy_load=False, left_pad_source='True', left_pad_target='False', load_alignments=False, log_format='simple', log_interval=1000, lr=[0.0005], lr_scheduler='inverse_sqrt', max_epoch=20, max_sentences=None, max_sentences_valid=None, max_source_positions=1024, max_target_positions=1024, max_tokens=4096, max_tokens_valid=4096, max_update=0, maximize_best_checkpoint_metric=False, memory_efficient_fp16=False, min_loss_scale=0.0001, min_lr=1e-09, no_cross_attention=False, no_epoch_checkpoints=False, no_last_checkpoints=False, no_progress_bar=False, no_save=False, no_save_optimizer_state=False, no_scale_embedding=False, no_token_positional_embeddings=False, num_workers=1, optimizer='adam', optimizer_overrides='{}', raw_text=False, required_batch_size_multiple=8, reset_dataloader=False, reset_lr_scheduler=False, reset_meters=False, reset_optimizer=False, restore_file='checkpoint_last.pt', save_dir='../models/hi', save_interval=1, save_interval_updates=0, seed=1111, sentence_avg=False, share_all_embeddings=False, share_decoder_input_output_embed=False, skip_invalid_size_inputs_valid_test=False, source_lang='en', target_lang='hi', task='translation', tensorboard_logdir='', threshold_loss_scale=None, tokenizer=None, train_subset='train', truncate_source=False, update_freq=[1], upsample_primary=1, use_bmuf=False, user_dir=None, valid_subset='valid', validate_interval=1, warmup_init_lr=1e-07, warmup_updates=4000, weight_decay=0.0)
+| [en] dictionary: 29760 types
+| [hi] dictionary: 29760 types
+| loaded 10815 examples from: ../preprocessed/hi/valid.en-hi.en
+| loaded 10815 examples from: ../preprocessed/hi/valid.en-hi.hi
+| ../preprocessed/hi valid en-hi 10815 examples
+TransformerModel(
+  (encoder): TransformerEncoder(
+    (embed_tokens): Embedding(29760, 512, padding_idx=1)
+    (embed_positions): SinusoidalPositionalEmbedding()
+    (layers): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (2): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (3): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (4): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (5): TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+  )
+  (decoder): TransformerDecoder(
+    (embed_tokens): Embedding(29760, 512, padding_idx=1)
+    (embed_positions): SinusoidalPositionalEmbedding()
+    (layers): ModuleList(
+      (0): TransformerDecoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (1): TransformerDecoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (2): TransformerDecoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (3): TransformerDecoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (4): TransformerDecoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (5): TransformerDecoderLayer(
+        (self_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (k_proj): Linear(in_features=512, out_features=512, bias=True)
+          (v_proj): Linear(in_features=512, out_features=512, bias=True)
+          (q_proj): Linear(in_features=512, out_features=512, bias=True)
+          (out_proj): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=512, out_features=2048, bias=True)
+        (fc2): Linear(in_features=2048, out_features=512, bias=True)
+        (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+  )
+)
+| model transformer_wmt_en_de, criterion LabelSmoothedCrossEntropyCriterion
+| num. model params: 89849856 (num. trained: 89849856)
+| training on 1 GPUs
+| max tokens per GPU = 4096 and max sentences per GPU = None
+| no existing checkpoint found ../models/hi/checkpoint_last.pt
+| loading train data for epoch 0
+| loaded 93016 examples from: ../preprocessed/hi/train.en-hi.en
+| loaded 93016 examples from: ../preprocessed/hi/train.en-hi.hi
+| ../preprocessed/hi train en-hi 93016 examples
+| NOTICE: your device may support faster training with --fp16
+/home/robv/nlu-mt/fairseq/fairseq/optim/adam.py:160: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at  /pytorch/torch/csrc/utils/python_arg_parser.cpp:766.)
+  exp_avg.mul_(beta1).add_(1 - beta1, grad)
+| epoch 001 | loss 12.105 | nll_loss 11.698 | ppl 3322.35 | wps 19097 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 242 | lr 3.0344e-05 | gnorm 3.986 | clip 0.000 | oom 0.000 | wall 45 | train_wall 43
+| epoch 001 | valid on 'valid' subset | loss 10.544 | nll_loss 9.894 | ppl 951.7 | num_updates 242
+| saved checkpoint ../models/hi/checkpoint1.pt (epoch 1 @ 242 updates) (writing took 8.610387325286865 seconds)
+| epoch 002 | loss 9.249 | nll_loss 8.410 | ppl 340.18 | wps 19459 | ups 6 | wpb 3462.777 | bsz 384.364 | num_updates 484 | lr 6.05879e-05 | gnorm 2.634 | clip 0.000 | oom 0.000 | wall 99 | train_wall 85
+| epoch 002 | valid on 'valid' subset | loss 9.452 | nll_loss 8.523 | ppl 367.87 | num_updates 484 | best_loss 9.45242
+| saved checkpoint ../models/hi/checkpoint2.pt (epoch 2 @ 484 updates) (writing took 9.655136346817017 seconds)
+| epoch 003 | loss 8.528 | nll_loss 7.535 | ppl 185.41 | wps 17287 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 726 | lr 9.08319e-05 | gnorm 2.304 | clip 0.000 | oom 0.000 | wall 159 | train_wall 133
+| epoch 003 | valid on 'valid' subset | loss 9.044 | nll_loss 8.005 | ppl 256.83 | num_updates 726 | best_loss 9.04434
+| saved checkpoint ../models/hi/checkpoint3.pt (epoch 3 @ 726 updates) (writing took 9.388838529586792 seconds)
+| epoch 004 | loss 8.080 | nll_loss 7.025 | ppl 130.2 | wps 17374 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 968 | lr 0.000121076 | gnorm 1.998 | clip 0.000 | oom 0.000 | wall 218 | train_wall 180
+| epoch 004 | valid on 'valid' subset | loss 8.615 | nll_loss 7.556 | ppl 188.22 | num_updates 968 | best_loss 8.61519
+| saved checkpoint ../models/hi/checkpoint4.pt (epoch 4 @ 968 updates) (writing took 9.564694881439209 seconds)
+| epoch 005 | loss 7.732 | nll_loss 6.630 | ppl 99.03 | wps 16924 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 1210 | lr 0.00015132 | gnorm 1.859 | clip 0.000 | oom 0.000 | wall 279 | train_wall 229
+| epoch 005 | valid on 'valid' subset | loss 8.374 | nll_loss 7.260 | ppl 153.25 | num_updates 1210 | best_loss 8.37393
+| saved checkpoint ../models/hi/checkpoint5.pt (epoch 5 @ 1210 updates) (writing took 9.556517601013184 seconds)
+| epoch 006 | loss 7.462 | nll_loss 6.323 | ppl 80.06 | wps 18801 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 1452 | lr 0.000181564 | gnorm 1.757 | clip 0.000 | oom 0.000 | wall 335 | train_wall 272
+| epoch 006 | valid on 'valid' subset | loss 8.188 | nll_loss 7.066 | ppl 134.03 | num_updates 1452 | best_loss 8.18771
+| saved checkpoint ../models/hi/checkpoint6.pt (epoch 6 @ 1452 updates) (writing took 9.745238780975342 seconds)
+| epoch 007 | loss 7.212 | nll_loss 6.039 | ppl 65.74 | wps 19286 | ups 6 | wpb 3462.777 | bsz 384.364 | num_updates 1694 | lr 0.000211808 | gnorm 1.609 | clip 0.000 | oom 0.000 | wall 390 | train_wall 315
+| epoch 007 | valid on 'valid' subset | loss 8.006 | nll_loss 6.858 | ppl 115.98 | num_updates 1694 | best_loss 8.00555
+| saved checkpoint ../models/hi/checkpoint7.pt (epoch 7 @ 1694 updates) (writing took 9.602412462234497 seconds)
+| epoch 008 | loss 6.975 | nll_loss 5.772 | ppl 54.63 | wps 18807 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 1936 | lr 0.000242052 | gnorm 1.426 | clip 0.000 | oom 0.000 | wall 446 | train_wall 359
+| epoch 008 | valid on 'valid' subset | loss 7.770 | nll_loss 6.576 | ppl 95.42 | num_updates 1936 | best_loss 7.77004
+| saved checkpoint ../models/hi/checkpoint8.pt (epoch 8 @ 1936 updates) (writing took 9.83913254737854 seconds)
+| epoch 009 | loss 6.739 | nll_loss 5.504 | ppl 45.37 | wps 17606 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 2178 | lr 0.000272296 | gnorm 1.400 | clip 0.000 | oom 0.000 | wall 506 | train_wall 405
+| epoch 009 | valid on 'valid' subset | loss 7.551 | nll_loss 6.328 | ppl 80.33 | num_updates 2178 | best_loss 7.55065
+| saved checkpoint ../models/hi/checkpoint9.pt (epoch 9 @ 2178 updates) (writing took 9.61872673034668 seconds)
+| epoch 010 | loss 6.552 | nll_loss 5.290 | ppl 39.13 | wps 17497 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 2420 | lr 0.00030254 | gnorm 1.402 | clip 0.000 | oom 0.000 | wall 565 | train_wall 452
+| epoch 010 | valid on 'valid' subset | loss 7.432 | nll_loss 6.189 | ppl 72.98 | num_updates 2420 | best_loss 7.43237
+| saved checkpoint ../models/hi/checkpoint10.pt (epoch 10 @ 2420 updates) (writing took 9.580246686935425 seconds)
+| epoch 011 | loss 6.347 | nll_loss 5.057 | ppl 33.3 | wps 17745 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 2662 | lr 0.000332783 | gnorm 1.293 | clip 0.000 | oom 0.000 | wall 624 | train_wall 498
+| epoch 011 | valid on 'valid' subset | loss 7.298 | nll_loss 6.044 | ppl 65.96 | num_updates 2662 | best_loss 7.29819
+| saved checkpoint ../models/hi/checkpoint11.pt (epoch 11 @ 2662 updates) (writing took 9.780500411987305 seconds)
+| epoch 012 | loss 6.154 | nll_loss 4.837 | ppl 28.57 | wps 18266 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 2904 | lr 0.000363027 | gnorm 1.282 | clip 0.000 | oom 0.000 | wall 681 | train_wall 543
+| epoch 012 | valid on 'valid' subset | loss 7.266 | nll_loss 6.016 | ppl 64.73 | num_updates 2904 | best_loss 7.266
+| saved checkpoint ../models/hi/checkpoint12.pt (epoch 12 @ 2904 updates) (writing took 9.517260789871216 seconds)
+| epoch 013 | loss 6.004 | nll_loss 4.662 | ppl 25.32 | wps 18364 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 3146 | lr 0.000393271 | gnorm 1.300 | clip 0.000 | oom 0.000 | wall 739 | train_wall 588
+| epoch 013 | valid on 'valid' subset | loss 7.086 | nll_loss 5.786 | ppl 55.18 | num_updates 3146 | best_loss 7.08624
+| saved checkpoint ../models/hi/checkpoint13.pt (epoch 13 @ 3146 updates) (writing took 9.523923635482788 seconds)
+| epoch 014 | loss 5.801 | nll_loss 4.428 | ppl 21.52 | wps 17868 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 3388 | lr 0.000423515 | gnorm 1.232 | clip 0.000 | oom 0.000 | wall 797 | train_wall 634
+| epoch 014 | valid on 'valid' subset | loss 6.979 | nll_loss 5.657 | ppl 50.45 | num_updates 3388 | best_loss 6.97932
+| saved checkpoint ../models/hi/checkpoint14.pt (epoch 14 @ 3388 updates) (writing took 9.966049194335938 seconds)
+| epoch 015 | loss 5.643 | nll_loss 4.245 | ppl 18.95 | wps 16539 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 3630 | lr 0.000453759 | gnorm 1.264 | clip 0.000 | oom 0.000 | wall 860 | train_wall 683
+| epoch 015 | valid on 'valid' subset | loss 6.906 | nll_loss 5.569 | ppl 47.46 | num_updates 3630 | best_loss 6.90612
+| saved checkpoint ../models/hi/checkpoint15.pt (epoch 15 @ 3630 updates) (writing took 9.490884780883789 seconds)
+| epoch 016 | loss 5.477 | nll_loss 4.053 | ppl 16.6 | wps 18068 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 3872 | lr 0.000484003 | gnorm 1.238 | clip 0.000 | oom 0.000 | wall 918 | train_wall 729
+| epoch 016 | valid on 'valid' subset | loss 6.863 | nll_loss 5.500 | ppl 45.24 | num_updates 3872 | best_loss 6.86262
+| saved checkpoint ../models/hi/checkpoint16.pt (epoch 16 @ 3872 updates) (writing took 9.621171236038208 seconds)
+| epoch 017 | loss 5.326 | nll_loss 3.874 | ppl 14.67 | wps 16887 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 4114 | lr 0.000493024 | gnorm 1.220 | clip 0.000 | oom 0.000 | wall 979 | train_wall 777
+| epoch 017 | valid on 'valid' subset | loss 6.779 | nll_loss 5.409 | ppl 42.5 | num_updates 4114 | best_loss 6.77948
+| saved checkpoint ../models/hi/checkpoint17.pt (epoch 17 @ 4114 updates) (writing took 9.414446353912354 seconds)
+| epoch 018 | loss 5.132 | nll_loss 3.650 | ppl 12.56 | wps 18385 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 4356 | lr 0.000479133 | gnorm 1.214 | clip 0.000 | oom 0.000 | wall 1036 | train_wall 822
+| epoch 018 | valid on 'valid' subset | loss 6.786 | nll_loss 5.389 | ppl 41.89 | num_updates 4356 | best_loss 6.77948
+| saved checkpoint ../models/hi/checkpoint18.pt (epoch 18 @ 4356 updates) (writing took 6.78863787651062 seconds)
+| epoch 019 | loss 4.934 | nll_loss 3.422 | ppl 10.72 | wps 18895 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 4598 | lr 0.000466354 | gnorm 1.166 | clip 0.000 | oom 0.000 | wall 1089 | train_wall 865
+| epoch 019 | valid on 'valid' subset | loss 6.718 | nll_loss 5.302 | ppl 39.45 | num_updates 4598 | best_loss 6.71775
+| saved checkpoint ../models/hi/checkpoint19.pt (epoch 19 @ 4598 updates) (writing took 9.571962356567383 seconds)
+| epoch 020 | loss 4.766 | nll_loss 3.226 | ppl 9.36 | wps 18828 | ups 5 | wpb 3462.777 | bsz 384.364 | num_updates 4840 | lr 0.000454545 | gnorm 1.171 | clip 0.000 | oom 0.000 | wall 1145 | train_wall 909
+| epoch 020 | valid on 'valid' subset | loss 6.816 | nll_loss 5.391 | ppl 41.96 | num_updates 4840 | best_loss 6.71775
+| saved checkpoint ../models/hi/checkpoint20.pt (epoch 20 @ 4840 updates) (writing took 6.683385610580444 seconds)
+| done training in 1152.6 seconds

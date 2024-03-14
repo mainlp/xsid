@@ -1,0 +1,11 @@
+*pyc
+data/wiki
+data/ud-treebanks-v2.6
+data/MultiATIS++.v0.1
+*swp
+train.[0-9]*
+data/mt.*
+fairseq
+scripts/ud-conversion-tools/
+predictions
+mtp/logs

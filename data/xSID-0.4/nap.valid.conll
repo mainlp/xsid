@@ -1,0 +1,4170 @@
+# id: 1
+# text-en: Is it going to rain today?
+# text-it: Pioverà oggi?
+# text: Oggi chiove' ?
+# intent: weather/find
+1	Oggi	weather/find	B-datetime
+2	chiove'	weather/find	B-weather/attribute
+3	?	weather/find	O
+
+# id: 2
+# text-en: how hot is it going to be today
+# text-it: quanto caldo sarà oggi
+# text: Quanto caldo sarrà oggi ?
+# intent: weather/find
+1	Quanto	weather/find	O
+2	caldo	weather/find	B-weather/attribute
+3	sarrà	weather/find	O
+4	oggi	weather/find	B-datetime
+5	?	weather/find	O
+
+# id: 3
+# text-en: How hot is it?
+# text-it: Quanto caldo è?
+# text: Quanto caver' è ?
+# intent: weather/find
+1	Quanto	weather/find	O
+2	caver'	weather/find	B-weather/attribute
+3	è	weather/find	O
+4	?	weather/find	O
+
+# id: 4
+# text-en: Will it be sunny today?
+# text-it: Ci sarà il sole oggi?
+# text: Ci starrà 'o sole oggi ?
+# intent: weather/find
+1	Ci	weather/find	O
+2	starrà	weather/find	O
+3	'o	weather/find	O
+4	sole	weather/find	B-weather/attribute
+5	oggi	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 5
+# text-en: Is it cloudy today?
+# text-it: È nuvoloso oggi?
+# text: E' nuvoloso oggi ?
+# intent: weather/find
+1	E'	weather/find	O
+2	nuvoloso	weather/find	B-weather/attribute
+3	oggi	weather/find	B-datetime
+4	?	weather/find	O
+
+# id: 6
+# text-en: Cancel all my reminders.
+# text-it: Cancella tutti i miei promemoria.
+# text: Canciellem' tutt' 'e promemoria
+# intent: reminder/cancel_reminder
+1	Canciellem'	reminder/cancel_reminder	O
+2	tutt'	reminder/cancel_reminder	B-reference
+3	'e	reminder/cancel_reminder	O
+4	promemoria	reminder/cancel_reminder	O
+
+# id: 7
+# text-en: what alarms do I have set?
+# text-it: che sveglie ho impostato?
+# text: Quali sveglie aggio impostato ?
+# intent: alarm/show_alarms
+1	Quali	alarm/show_alarms	O
+2	sveglie	alarm/show_alarms	O
+3	aggio	alarm/show_alarms	O
+4	impostato	alarm/show_alarms	O
+5	?	alarm/show_alarms	O
+
+# id: 8
+# text-en: I need an alarm for 5pm to remind me to take my medicine
+# text-it: Ho bisogno di una sveglia per le 5 del pomeriggio per ricordarmi di prendere la mie medicina
+# text: Aggio bisogno 'e 'na sveglia p' 'e cinq' 'o pomeriggio pe' mi ricordà 'e piglià 'a mericina mia
+# intent: alarm/set_alarm
+1	Aggio	alarm/set_alarm	O
+2	bisogno	alarm/set_alarm	O
+3	'e	alarm/set_alarm	O
+4	'na	alarm/set_alarm	O
+5	sveglia	alarm/set_alarm	O
+6	p'	alarm/set_alarm	O
+7	'e	alarm/set_alarm	O
+8	cinq'	alarm/set_alarm	B-datetime
+9	'o	alarm/set_alarm	I-datetime
+10	pomeriggio	alarm/set_alarm	I-datetime
+11	pe'	alarm/set_alarm	O
+12	mi	alarm/set_alarm	O
+13	ricordà	alarm/set_alarm	O
+14	'e	alarm/set_alarm	O
+15	piglià	alarm/set_alarm	B-reminder/todo
+16	'a	alarm/set_alarm	I-reminder/todo
+17	mericina	alarm/set_alarm	I-reminder/todo
+18	mia	alarm/set_alarm	I-reminder/todo
+
+# id: 9
+# text-en: set alarm for every 3 minutes
+# text-it: imposta una sveglia per ogni 3 minuti
+# text: Imposta 'na sveglia ogni 3 minuti
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	ogni	alarm/set_alarm	B-recurring_datetime
+5	3	alarm/set_alarm	I-recurring_datetime
+6	minuti	alarm/set_alarm	I-recurring_datetime
+
+# id: 10
+# text-en: Is it going to storm today?
+# text-it: Pioverà forte oggi?
+# text: Chiuvarrà forte oggi ?
+# intent: weather/find
+1	Chiuvarrà	weather/find	B-weather/attribute
+2	forte	weather/find	I-weather/attribute
+3	oggi	weather/find	B-datetime
+4	?	weather/find	O
+
+# id: 11
+# text-en: Cancel this afternoon's alarm.
+# text-it: Cancella la sveglia di questo pomeriggio.
+# text: Canciell' 'a sveglia
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+4	'e	alarm/cancel_alarm	B-datetime
+5	'stu	alarm/cancel_alarm	I-datetime
+6	pomeriggio	alarm/cancel_alarm	I-datetime
+
+# id: 12
+# text-en: Is it going to rain next week
+# text-it: pioverà la settimana prossima
+# text: Chiuvarrà 'a semmana che 'bbene ?
+# intent: weather/find
+1	Chiuvarrà	weather/find	B-weather/attribute
+2	'a	weather/find	O
+3	semmana	weather/find	B-datetime
+4	che	weather/find	I-datetime
+5	'bbene	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 13
+# text-en: What's next week's forecast?
+# text-it: Quali sono le previsioni per la settimana prossima?
+# text: Quali song' 'e previsione pe' 'a semmana che bbene ?
+# intent: weather/find
+1	Quali	weather/find	O
+2	song'	weather/find	O
+3	'e	weather/find	O
+4	previsione	weather/find	O
+5	pe'	weather/find	B-datetime
+6	'a	weather/find	I-datetime
+7	semmana	weather/find	I-datetime
+8	che	weather/find	I-datetime
+9	bbene	weather/find	I-datetime
+10	?	weather/find	O
+
+# id: 14
+# text-en: Read me my reminders.
+# text-it: Leggimi i miei promemoria.
+# text: Lieggem' 'e promemoria miei
+# intent: reminder/show_reminders
+1	Lieggem'	reminder/show_reminders	O
+2	'e	reminder/show_reminders	O
+3	promemoria	reminder/show_reminders	O
+4	miei	reminder/show_reminders	B-reference
+
+# id: 15
+# text-en: Show all alarms
+# text-it: Visualizza tutte le sveglie
+# text: Visualizza tutt' 'e sveglie
+# intent: alarm/show_alarms
+1	Visualizza	alarm/show_alarms	O
+2	tutt'	alarm/show_alarms	B-reference
+3	'e	alarm/show_alarms	O
+4	sveglie	alarm/show_alarms	O
+
+# id: 16
+# text-en: Alarm every five minutes for 20 minutes please
+# text-it: Sveglia ogni cinque minuti per 20 minuti grazie
+# text: Sveglia ogni cinq' minuti pe' 20 minuti grazie
+# intent: alarm/set_alarm
+1	Sveglia	alarm/set_alarm	O
+2	ogni	alarm/set_alarm	B-recurring_datetime
+3	cinq'	alarm/set_alarm	I-recurring_datetime
+4	minuti	alarm/set_alarm	I-recurring_datetime
+5	pe'	alarm/set_alarm	I-recurring_datetime
+6	20	alarm/set_alarm	I-recurring_datetime
+7	minuti	alarm/set_alarm	I-recurring_datetime
+8	grazie	alarm/set_alarm	O
+
+# id: 17
+# text-en: Change tomorrow mornings alarm to 6 am.
+# text-it: Cambia la sveglia di domani mattina alle 6 di mattina.
+# text: Cagn' 'a sveglia 'e dimani 'a mmatina 'e 6 'e matina
+# intent: alarm/modify_alarm
+1	Cagn'	alarm/modify_alarm	O
+2	'a	alarm/modify_alarm	O
+3	sveglia	alarm/modify_alarm	O
+4	'e	alarm/modify_alarm	B-datetime
+5	dimani	alarm/modify_alarm	I-datetime
+6	'a	alarm/modify_alarm	I-datetime
+7	mmatina	alarm/modify_alarm	I-datetime
+8	'e	alarm/modify_alarm	O
+9	6	alarm/modify_alarm	B-datetime
+10	'e	alarm/modify_alarm	I-datetime
+11	matina	alarm/modify_alarm	I-datetime
+
+# id: 18
+# text-en: cancel all reminders
+# text-it: cancella tutti i promemoria
+# text: Canciell' tutt' 'e promemoria
+# intent: reminder/cancel_reminder
+1	Canciell'	reminder/cancel_reminder	O
+2	tutt'	reminder/cancel_reminder	B-reference
+3	'e	reminder/cancel_reminder	O
+4	promemoria	reminder/cancel_reminder	O
+
+# id: 19
+# text-en: Show me my alarms
+# text-it: Mostrami le mie sveglie
+# text: Famm' verè 'e sveglie mie
+# intent: alarm/show_alarms
+1	Famm'	alarm/show_alarms	O
+2	verè	alarm/show_alarms	O
+3	'e	alarm/show_alarms	O
+4	sveglie	alarm/show_alarms	O
+5	mie	alarm/show_alarms	B-reference
+
+# id: 20
+# text-en: Cancel alarms
+# text-it: Cancella le sveglie
+# text: Canciell' 'e sveglie
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	'e	alarm/cancel_alarm	O
+3	sveglie	alarm/cancel_alarm	O
+
+# id: 21
+# text-en: Set alarm for 6 am tomorrow
+# text-it: Imposta una sveglia alle 6 di domani mattina
+# text: Imposta 'na sveglia 'e 6 'e diman' 'a mmatina
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	'e	alarm/set_alarm	O
+5	6	alarm/set_alarm	B-datetime
+6	'e	alarm/set_alarm	I-datetime
+7	diman'	alarm/set_alarm	I-datetime
+8	'a	alarm/set_alarm	I-datetime
+9	mmatina	alarm/set_alarm	I-datetime
+
+# id: 22
+# text-en: Set alarm for 7 am tomorrow
+# text-it: Imposta una sveglia alle 7 di domani mattina
+# text: Imposta 'na sveglia 'e 7 'e diman' 'a mmatina
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	'e	alarm/set_alarm	O
+5	7	alarm/set_alarm	B-datetime
+6	'e	alarm/set_alarm	I-datetime
+7	diman'	alarm/set_alarm	I-datetime
+8	'a	alarm/set_alarm	I-datetime
+9	mmatina	alarm/set_alarm	I-datetime
+
+# id: 23
+# text-en: set alarm for 6 am
+# text-it: imposta una sveglia per le 6 di mattina
+# text: Imposta 'na sveglia pe' 6 'e matina
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	pe'	alarm/set_alarm	O
+5	6	alarm/set_alarm	B-datetime
+6	'e	alarm/set_alarm	I-datetime
+7	matina	alarm/set_alarm	I-datetime
+
+# id: 24
+# text-en: i need a reminder to pick Lisa up
+# text-it: mi serve un promemoria per prendere Lisa
+# text: Mi serve 'nu promemoria pe' 'gghiì 'a piglià a Lisa
+# intent: reminder/set_reminder
+1	Mi	reminder/set_reminder	O
+2	serve	reminder/set_reminder	O
+3	'nu	reminder/set_reminder	O
+4	promemoria	reminder/set_reminder	O
+5	pe'	reminder/set_reminder	O
+6	'gghiì	reminder/set_reminder	O
+7	'a	reminder/set_reminder	O
+8	piglià	reminder/set_reminder	B-reminder/todo
+9	a	reminder/set_reminder	I-reminder/todo
+10	Lisa	reminder/set_reminder	I-reminder/todo
+
+# id: 25
+# text-en: show all alarms
+# text-it: mostrami tutte le sveglie
+# text: Famm' vere' tutt' 'e sveglie
+# intent: alarm/show_alarms
+1	Famm'	alarm/show_alarms	O
+2	vere'	alarm/show_alarms	O
+3	tutt'	alarm/show_alarms	B-reference
+4	'e	alarm/show_alarms	O
+5	sveglie	alarm/show_alarms	O
+
+# id: 26
+# text-en: Turn off all alarms
+# text-it: Disattiva tutte le sveglie
+# text: Disattiva tutt' 'e sveglie
+# intent: alarm/cancel_alarm
+1	Disattiva	alarm/cancel_alarm	O
+2	tutt'	alarm/cancel_alarm	B-reference
+3	'e	alarm/cancel_alarm	O
+4	sveglie	alarm/cancel_alarm	O
+
+# id: 27
+# text-en: What are my reminders?
+# text-it: Quali sono i miei promemoria?
+# text: Quali song' e promemoria miei ?
+# intent: reminder/show_reminders
+1	Quali	reminder/show_reminders	O
+2	song'	reminder/show_reminders	O
+3	e	reminder/show_reminders	O
+4	promemoria	reminder/show_reminders	O
+5	miei	reminder/show_reminders	B-reference
+6	?	reminder/show_reminders	O
+
+# id: 28
+# text-en: is it hot outside
+# text-it: è caldo fuori
+# text: Fa caver' fore ?
+# intent: weather/find
+1	Fa	weather/find	O
+2	caver'	weather/find	B-weather/attribute
+3	fore	weather/find	B-location
+4	?	weather/find	O
+
+# id: 29
+# text-en: Snooze alarm
+# text-it: Postponi la sveglia
+# text: Miett' annanzi 'a sveglia
+# intent: alarm/snooze_alarm
+1	Miett'	alarm/snooze_alarm	O
+2	annanzi	alarm/snooze_alarm	O
+3	'a	alarm/snooze_alarm	O
+4	sveglia	alarm/snooze_alarm	O
+
+# id: 30
+# text-en: alarm on
+# text-it: attiva la sveglia
+# text: Attiva 'a sveglia
+# intent: alarm/set_alarm
+1	Attiva	alarm/set_alarm	O
+2	'a	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+
+# id: 31
+# text-en: Set an alarm for 6 am on Wed
+# text-it: Imposta una sveglia alle 6 di mattina di mercoledì
+# text: Imposta 'na sveglia 'e 6 'e matina 'e miercurì
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	'e	alarm/set_alarm	O
+5	6	alarm/set_alarm	B-datetime
+6	'e	alarm/set_alarm	I-datetime
+7	matina	alarm/set_alarm	I-datetime
+8	'e	alarm/set_alarm	I-datetime
+9	miercurì	alarm/set_alarm	I-datetime
+
+# id: 32
+# text-en: remind me to submit my lesson plans every monday by the end of the day
+# text-it: ricordami di inviare i miei programmi della lezione ogni lunedì entro fine giornata
+# text: Ricuordam' 'e invià 'e programma miei 'a lezione ogni lunnerì entro 'a fine d' 'a jurnata
+# intent: reminder/set_reminder
+1	Ricuordam'	reminder/set_reminder	O
+2	'e	reminder/set_reminder	O
+3	invià	reminder/set_reminder	B-reminder/todo
+4	'e	reminder/set_reminder	I-reminder/todo
+5	programma	reminder/set_reminder	I-reminder/todo
+6	miei	reminder/set_reminder	I-reminder/todo
+7	'a	reminder/set_reminder	I-reminder/todo
+8	lezione	reminder/set_reminder	I-reminder/todo
+9	ogni	reminder/set_reminder	B-recurring_datetime
+10	lunnerì	reminder/set_reminder	I-recurring_datetime
+11	entro	reminder/set_reminder	I-recurring_datetime
+12	'a	reminder/set_reminder	I-recurring_datetime
+13	fine	reminder/set_reminder	I-recurring_datetime
+14	d'	reminder/set_reminder	I-recurring_datetime
+15	'a	reminder/set_reminder	I-recurring_datetime
+16	jurnata	reminder/set_reminder	I-recurring_datetime
+
+# id: 33
+# text-en: how hot is it going to be today
+# text-it: quanto caldo sarà oggi
+# text: Quanto caldo sarrà oggi ?
+# intent: weather/find
+1	Quanto	weather/find	O
+2	caldo	weather/find	B-weather/attribute
+3	sarrà	weather/find	O
+4	oggi	weather/find	B-datetime
+5	?	weather/find	O
+
+# id: 34
+# text-en: Clear all set alarms.
+# text-it: Cancella tutte le sveglie impostate.
+# text: Canciell' tutt' 'e sveglie impostate
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	tutt'	alarm/cancel_alarm	B-reference
+3	'e	alarm/cancel_alarm	O
+4	sveglie	alarm/cancel_alarm	O
+5	impostate	alarm/cancel_alarm	O
+
+# id: 35
+# text-en: Show all alarms
+# text-it: Visualizza tutte le sveglie
+# text: Visualizza tutt' 'e sveglie
+# intent: alarm/show_alarms
+1	Visualizza	alarm/show_alarms	O
+2	tutt'	alarm/show_alarms	B-reference
+3	'e	alarm/show_alarms	O
+4	sveglie	alarm/show_alarms	O
+
+# id: 36
+# text-en: Will it be sunny today?
+# text-it: Ci sarà il sole oggi?
+# text: Ci starrà 'o sole oggi ?
+# intent: weather/find
+1	Ci	weather/find	O
+2	starrà	weather/find	O
+3	'o	weather/find	O
+4	sole	weather/find	B-weather/attribute
+5	oggi	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 37
+# text-en: What is the humidity level today
+# text-it: Qual è il livello di umidità oggi
+# text: Qual è 'o livello d' ummirità oggi'
+# intent: weather/find
+1	Qual	weather/find	O
+2	è	weather/find	O
+3	'o	weather/find	O
+4	livello	weather/find	B-weather/attribute
+5	d'	weather/find	I-weather/attribute
+6	ummirità	weather/find	I-weather/attribute
+7	oggi	weather/find	B-datetime
+
+# id: 38
+# text-en: Cancel all reminders
+# text-it: Cancella tutti i promemoria
+# text: Canciell' tutt' 'e promemoria
+# intent: reminder/cancel_reminder
+1	Canciell'	reminder/cancel_reminder	O
+2	tutt'	reminder/cancel_reminder	B-reference
+3	'e	reminder/cancel_reminder	O
+4	promemoria	reminder/cancel_reminder	O
+
+# id: 39
+# text-en: set an alarm for fifteen minutes
+# text-it: imposta una sveglia fra quindici minuti
+# text: Imposta 'na sveglia tra quinnici minuti
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	tra	alarm/set_alarm	O
+5	quinnici	alarm/set_alarm	B-datetime
+6	minuti	alarm/set_alarm	I-datetime
+
+# id: 40
+# text-en: Please set my alarm for 4am this Saturday.
+# text-it: Per favore imposta la mia sveglia per le 4 di mattina questo sabato.
+# text: Pe' favore imposta 'a sveglia mia 'p' 'e 4 'e matina stu' sabato
+# intent: alarm/set_alarm
+1	Pe'	alarm/set_alarm	O
+2	favore	alarm/set_alarm	O
+3	imposta	alarm/set_alarm	O
+4	'a	alarm/set_alarm	O
+5	sveglia	alarm/set_alarm	O
+6	mia	alarm/set_alarm	B-reference
+7	'p'	alarm/set_alarm	O
+8	'e	alarm/set_alarm	O
+9	4	alarm/set_alarm	B-datetime
+10	'e	alarm/set_alarm	I-datetime
+11	matina	alarm/set_alarm	I-datetime
+12	stu'	alarm/set_alarm	I-datetime
+13	sabato	alarm/set_alarm	I-datetime
+
+# id: 41
+# text-en: Give me a reminder for house closing at 10am tomorrow.
+# text-it: Dammi un promemoria per la chiusura della casa domani alle 10 di mattina.
+# text: Dammi 'nu promemoria p' 'a chiusura d' 'a casa dimani 'e 10 'a matina
+# intent: reminder/set_reminder
+1	Dammi	reminder/set_reminder	O
+2	'nu	reminder/set_reminder	O
+3	promemoria	reminder/set_reminder	O
+4	p'	reminder/set_reminder	O
+5	'a	reminder/set_reminder	O
+6	chiusura	reminder/set_reminder	B-reminder/todo
+7	d'	reminder/set_reminder	I-reminder/todo
+8	'a	reminder/set_reminder	I-reminder/todo
+9	casa	reminder/set_reminder	I-reminder/todo
+10	dimani	reminder/set_reminder	B-datetime
+11	'e	reminder/set_reminder	I-datetime
+12	10	reminder/set_reminder	I-datetime
+13	'a	reminder/set_reminder	I-datetime
+14	matina	reminder/set_reminder	I-datetime
+
+# id: 42
+# text-en: delete all alarms
+# text-it: cancella tutte le sveglie
+# text: Canciell' tutt' 'e sveglie
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	tutt'	alarm/cancel_alarm	B-reference
+3	'e	alarm/cancel_alarm	O
+4	sveglie	alarm/cancel_alarm	O
+
+# id: 43
+# text-en: How many alarms do I have set for Sunday?
+# text-it: Quante sveglie ho impostato per domenica?
+# text: Quante sveglie tengo impostate pe' dummenica ?
+# intent: alarm/show_alarms
+1	Quante	alarm/show_alarms	O
+2	sveglie	alarm/show_alarms	O
+3	tengo	alarm/show_alarms	O
+4	impostate	alarm/show_alarms	O
+5	pe'	alarm/show_alarms	O
+6	dummenica	alarm/show_alarms	B-datetime
+7	?	alarm/show_alarms	O
+
+# id: 44
+# text-en: show all alarms
+# text-it: mostrami tutte le sveglie
+# text: Famm' vere' tutt' 'e sveglie
+# intent: alarm/show_alarms
+1	Famm'	alarm/show_alarms	O
+2	vere'	alarm/show_alarms	O
+3	tutt'	alarm/show_alarms	B-reference
+4	'e	alarm/show_alarms	O
+5	sveglie	alarm/show_alarms	O
+
+# id: 45
+# text-en: Is it going to be sunny today?
+# text-it: Ci sarà il sole oggi?
+# text: Oggi ci starrà 'o sole'
+# intent: weather/find
+1	Oggi	weather/find	B-datetime
+2	ci	weather/find	O
+3	starrà	weather/find	O
+4	'o	weather/find	O
+5	sole	weather/find	B-weather/attribute
+
+# id: 46
+# text-en: set alarm for 615am
+# text-it: imposta una sveglia per le 615 di mattina
+# text: Imposta 'na sveglia pe' 6.15 'e matina
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	pe'	alarm/set_alarm	O
+5	6.15	alarm/set_alarm	B-datetime
+6	'e	alarm/set_alarm	I-datetime
+7	matina	alarm/set_alarm	I-datetime
+
+# id: 47
+# text-en: Set two alarms for tomorrow morning
+# text-it: Imposta due sveglie per domani mattina
+# text: Imposta ddoje sveglie pe' dimani 'a mmatina
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	ddoje	alarm/set_alarm	O
+3	sveglie	alarm/set_alarm	O
+4	pe'	alarm/set_alarm	O
+5	dimani	alarm/set_alarm	B-datetime
+6	'a	alarm/set_alarm	I-datetime
+7	mmatina	alarm/set_alarm	I-datetime
+
+# id: 48
+# text-en: Turn off all alarms
+# text-it: Disattiva tutte le sveglie
+# text: Disattiva tutt' 'e sveglie
+# intent: alarm/cancel_alarm
+1	Disattiva	alarm/cancel_alarm	O
+2	tutt'	alarm/cancel_alarm	B-reference
+3	'e	alarm/cancel_alarm	O
+4	sveglie	alarm/cancel_alarm	O
+
+# id: 49
+# text-en: What is the temperature like in London right now?
+# text-it: Qual è la temperatura a Londra adesso?
+# text: Qual è 'a temperatura a Londra int' 'a 'stu mumento ?
+# intent: weather/find
+1	Qual	weather/find	O
+2	è	weather/find	O
+3	'a	weather/find	O
+4	temperatura	weather/find	B-weather/attribute
+5	a	weather/find	O
+6	Londra	weather/find	B-location
+7	int'	weather/find	O
+8	'a	weather/find	O
+9	'stu	weather/find	B-datetime
+10	mumento	weather/find	I-datetime
+11	?	weather/find	O
+
+# id: 50
+# text-en: Cancel my last reminder
+# text-it: Cancella il mio ultimo promemoria
+# text: Canciell' l' urdimo promemoria mio
+# intent: reminder/cancel_reminder
+1	Canciell'	reminder/cancel_reminder	O
+2	l'	reminder/cancel_reminder	O
+3	urdimo	reminder/cancel_reminder	B-reference
+4	promemoria	reminder/cancel_reminder	O
+5	mio	reminder/cancel_reminder	B-reference
+
+# id: 51
+# text-en: Set a reminder to go to the grocery store later
+# text-it: Imposta un promemoria per andare al supermercato più tardi
+# text: Imposta 'nu promemoria pe' gghì 'o supermercato cchiu' tardi
+# intent: reminder/set_reminder
+1	Imposta	reminder/set_reminder	O
+2	'nu	reminder/set_reminder	O
+3	promemoria	reminder/set_reminder	O
+4	pe'	reminder/set_reminder	B-reminder/todo
+5	gghì	reminder/set_reminder	I-reminder/todo
+6	'o	reminder/set_reminder	I-reminder/todo
+7	supermercato	reminder/set_reminder	I-reminder/todo
+8	cchiu'	reminder/set_reminder	B-datetime
+9	tardi	reminder/set_reminder	I-datetime
+
+# id: 52
+# text-en: What will be the heat index today?
+# text-it: Quale sarà l'indice di calore oggi?
+# text: Quale sarrà l' indice 'e calore oggi ?
+# intent: weather/find
+1	Quale	weather/find	O
+2	sarrà	weather/find	O
+3	l'	weather/find	O
+4	indice	weather/find	B-weather/attribute
+5	'e	weather/find	I-weather/attribute
+6	calore	weather/find	I-weather/attribute
+7	oggi	weather/find	B-datetime
+8	?	weather/find	O
+
+# id: 53
+# text-en: How cold will it be today?
+# text-it: Quanto freddo sarà oggi?
+# text: Quanto fridd' sarrà oggi ?
+# intent: weather/find
+1	Quanto	weather/find	O
+2	fridd'	weather/find	B-weather/attribute
+3	sarrà	weather/find	O
+4	oggi	weather/find	B-datetime
+5	?	weather/find	O
+
+# id: 54
+# text-en: will it snow today
+# text-it: nevicherà oggi
+# text: Nevic' oggi ?
+# intent: weather/find
+1	Nevic'	weather/find	B-weather/attribute
+2	oggi	weather/find	B-datetime
+3	?	weather/find	O
+
+# id: 55
+# text-en: Set alarm for 5am
+# text-it: Imposta una sveglia alle 5 di mattina
+# text: Imposta 'na sveglia 'e cinq' 'a matina
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	'e	alarm/set_alarm	O
+5	cinq'	alarm/set_alarm	B-datetime
+6	'a	alarm/set_alarm	I-datetime
+7	matina	alarm/set_alarm	I-datetime
+
+# id: 56
+# text-en: turn off alarm
+# text-it: disattiva la sveglia
+# text: Liev' 'a sveglia
+# intent: alarm/cancel_alarm
+1	Liev'	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+
+# id: 57
+# text-en: cancel all alarms
+# text-it: cancella tutte le sveglie
+# text: Canciell' tutt' 'e sveglie
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	tutt'	alarm/cancel_alarm	B-reference
+3	'e	alarm/cancel_alarm	O
+4	sveglie	alarm/cancel_alarm	O
+
+# id: 58
+# text-en: Add reminder to swim at 11am tomorrow
+# text-it: Aggiungi un promemoria per nuoto alle 11 di domani mattina
+# text: Aggiungi 'nu promemoria p' 'o nuoto 'e ll' 11 'e dimani 'a mmatina
+# intent: reminder/set_reminder
+1	Aggiungi	reminder/set_reminder	O
+2	'nu	reminder/set_reminder	O
+3	promemoria	reminder/set_reminder	O
+4	p'	reminder/set_reminder	O
+5	'o	reminder/set_reminder	O
+6	nuoto	reminder/set_reminder	B-reminder/todo
+7	'e	reminder/set_reminder	O
+8	ll'	reminder/set_reminder	O
+9	11	reminder/set_reminder	B-datetime
+10	'e	reminder/set_reminder	I-datetime
+11	dimani	reminder/set_reminder	I-datetime
+12	'a	reminder/set_reminder	I-datetime
+13	mmatina	reminder/set_reminder	I-datetime
+
+# id: 59
+# text-en: Show my reminder
+# text-it: Visualizza i miei promemoria
+# text: Visualizza 'e promemoria miei
+# intent: reminder/show_reminders
+1	Visualizza	reminder/show_reminders	O
+2	'e	reminder/show_reminders	O
+3	promemoria	reminder/show_reminders	O
+4	miei	reminder/show_reminders	B-reference
+
+# id: 60
+# text-en: Cancel my alarm on Saturday
+# text-it: Cancella la sveglia di sabato
+# text: Canciell' 'a sveglia 'e sabato
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+4	'e	alarm/cancel_alarm	O
+5	sabato	alarm/cancel_alarm	B-datetime
+
+# id: 61
+# text-en: Is it cold out?
+# text-it: È freddo fuori?
+# text: Fa fridd' fore ?
+# intent: weather/find
+1	Fa	weather/find	O
+2	fridd'	weather/find	B-weather/attribute
+3	fore	weather/find	B-location
+4	?	weather/find	O
+
+# id: 62
+# text-en: Is it humid today?
+# text-it: È umido oggi?
+# text: E' ummmet' oggi ?
+# intent: weather/find
+1	E'	weather/find	O
+2	ummmet'	weather/find	B-weather/attribute
+3	oggi	weather/find	B-datetime
+4	?	weather/find	O
+
+# id: 63
+# text-en: Set alarm every minute for 11 minutes
+# text-it: Imposta una sveglia ogni minuto per 11 minuti
+# text: Imposta 'na sveglia ogni minuto pe' 11 minuti
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	ogni	alarm/set_alarm	B-recurring_datetime
+5	minuto	alarm/set_alarm	I-recurring_datetime
+6	pe'	alarm/set_alarm	I-recurring_datetime
+7	11	alarm/set_alarm	I-recurring_datetime
+8	minuti	alarm/set_alarm	I-recurring_datetime
+
+# id: 64
+# text-en: Show my reminder
+# text-it: Visualizza i miei promemoria
+# text: Visualizza 'e promemoria miei
+# intent: reminder/show_reminders
+1	Visualizza	reminder/show_reminders	O
+2	'e	reminder/show_reminders	O
+3	promemoria	reminder/show_reminders	O
+4	miei	reminder/show_reminders	B-reference
+
+# id: 65
+# text-en: Is it going to be windy today?
+# text-it: sarà ventoso oggi?
+# text: Sarrà ventoso oggi ?
+# intent: weather/find
+1	Sarrà	weather/find	O
+2	ventoso	weather/find	B-weather/attribute
+3	oggi	weather/find	B-datetime
+4	?	weather/find	O
+
+# id: 66
+# text-en: Cancel tomorrow's reminders
+# text-it: Cancella i promemoria di domani
+# text: Canciell' 'e promemoria 'e dimani
+# intent: reminder/cancel_reminder
+1	Canciell'	reminder/cancel_reminder	O
+2	'e	reminder/cancel_reminder	O
+3	promemoria	reminder/cancel_reminder	O
+4	'e	reminder/cancel_reminder	B-datetime
+5	dimani	reminder/cancel_reminder	I-datetime
+
+# id: 67
+# text-en: tell me the 3 day forecast
+# text-it: dimmi le previsioni a 3 giorni
+# text: Dimmi 'e previsioni a 3 juorni
+# intent: weather/find
+1	Dimmi	weather/find	O
+2	'e	weather/find	O
+3	previsioni	weather/find	O
+4	a	weather/find	O
+5	3	weather/find	B-datetime
+6	juorni	weather/find	I-datetime
+
+# id: 68
+# text-en: how many inches of rain are we suppose to get tomorrow?
+# text-it: quanti millimetri di pioggia supponiamo di avere domani?
+# text: Quanti millimetri 'e pioggia supponimm' d' avè dimani ?
+# intent: weather/find
+1	Quanti	weather/find	O
+2	millimetri	weather/find	B-weather/attribute
+3	'e	weather/find	I-weather/attribute
+4	pioggia	weather/find	I-weather/attribute
+5	supponimm'	weather/find	O
+6	d'	weather/find	O
+7	avè	weather/find	O
+8	dimani	weather/find	B-datetime
+9	?	weather/find	O
+
+# id: 69
+# text-en: remind me about the wedding
+# text-it: ricordami il matrimonio
+# text: Ricuordam' 'o matrimonio
+# intent: reminder/set_reminder
+1	Ricuordam'	reminder/set_reminder	O
+2	'o	reminder/set_reminder	O
+3	matrimonio	reminder/set_reminder	B-reminder/todo
+
+# id: 70
+# text-en: Snooze all alarms
+# text-it: Postponi tutte le sveglie
+# text: Miett' annanzi tutt' 'e sveglie
+# intent: alarm/snooze_alarm
+1	Miett'	alarm/snooze_alarm	O
+2	annanzi	alarm/snooze_alarm	O
+3	tutt'	alarm/snooze_alarm	B-reference
+4	'e	alarm/snooze_alarm	O
+5	sveglie	alarm/snooze_alarm	O
+
+# id: 71
+# text-en: When will it rain today?
+# text-it: Quando pioverà oggi?
+# text: Quann' pioverà oggi ?
+# intent: weather/find
+1	Quann'	weather/find	O
+2	pioverà	weather/find	B-weather/attribute
+3	oggi	weather/find	B-datetime
+4	?	weather/find	O
+
+# id: 72
+# text-en: show all alarms
+# text-it: mostrami tutte le sveglie
+# text: Famm' vere' tutt' 'e sveglie
+# intent: alarm/show_alarms
+1	Famm'	alarm/show_alarms	O
+2	vere'	alarm/show_alarms	O
+3	tutt'	alarm/show_alarms	B-reference
+4	'e	alarm/show_alarms	O
+5	sveglie	alarm/show_alarms	O
+
+# id: 73
+# text-en: Turn off all alarms
+# text-it: Disattiva tutte le sveglie
+# text: Disattiva tutt' 'e sveglie
+# intent: alarm/cancel_alarm
+1	Disattiva	alarm/cancel_alarm	O
+2	tutt'	alarm/cancel_alarm	B-reference
+3	'e	alarm/cancel_alarm	O
+4	sveglie	alarm/cancel_alarm	O
+
+# id: 74
+# text-en: Is it going to rain today?
+# text-it: Pioverà oggi?
+# text: Oggi chiove' ?
+# intent: weather/find
+1	Oggi	weather/find	B-datetime
+2	chiove'	weather/find	B-weather/attribute
+3	?	weather/find	O
+
+# id: 75
+# text-en: Show all reminders for tomorrow
+# text-it: Visualizza tutti i promemoria di domani
+# text: Visualizza tutt' 'e promemoria 'e dimani
+# intent: reminder/show_reminders
+1	Visualizza	reminder/show_reminders	O
+2	tutt'	reminder/show_reminders	B-reference
+3	'e	reminder/show_reminders	O
+4	promemoria	reminder/show_reminders	O
+5	'e	reminder/show_reminders	O
+6	dimani	reminder/show_reminders	B-datetime
+
+# id: 76
+# text-en: cancel my alarm for tomorrow morning
+# text-it: cancella la mia sveglia di domani mattina
+# text: Canciell' 'a sveglia 'e diman' 'a 'matina
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+4	'e	alarm/cancel_alarm	O
+5	diman'	alarm/cancel_alarm	B-datetime
+6	'a	alarm/cancel_alarm	I-datetime
+7	'matina	alarm/cancel_alarm	I-datetime
+
+# id: 77
+# text-en: How hot is it?
+# text-it: Quanto caldo è?
+# text: Quanto caver' è ?
+# intent: weather/find
+1	Quanto	weather/find	O
+2	caver'	weather/find	B-weather/attribute
+3	è	weather/find	O
+4	?	weather/find	O
+
+# id: 78
+# text-en: remind me to buy milk tonight
+# text-it: ricordami di comprare il latte stasera
+# text: Ricuordam' d' accattà 'o latte stasera
+# intent: reminder/set_reminder
+1	Ricuordam'	reminder/set_reminder	O
+2	d'	reminder/set_reminder	O
+3	accattà	reminder/set_reminder	B-reminder/todo
+4	'o	reminder/set_reminder	I-reminder/todo
+5	latte	reminder/set_reminder	I-reminder/todo
+6	stasera	reminder/set_reminder	B-datetime
+
+# id: 79
+# text-en: Cancel all reminders
+# text-it: Cancella tutti i promemoria
+# text: Canciell' tutt' 'e promemoria
+# intent: reminder/cancel_reminder
+1	Canciell'	reminder/cancel_reminder	O
+2	tutt'	reminder/cancel_reminder	B-reference
+3	'e	reminder/cancel_reminder	O
+4	promemoria	reminder/cancel_reminder	O
+
+# id: 80
+# text-en: Show all alarms
+# text-it: Visualizza tutte le sveglie
+# text: Visualizza tutt' 'e sveglie
+# intent: alarm/show_alarms
+1	Visualizza	alarm/show_alarms	O
+2	tutt'	alarm/show_alarms	B-reference
+3	'e	alarm/show_alarms	O
+4	sveglie	alarm/show_alarms	O
+
+# id: 81
+# text-en: cancel my alarm for tomorrow morning
+# text-it: cancella la mia sveglia di domani mattina
+# text: Canciell' 'a sveglia 'e diman' 'a 'matina
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+4	'e	alarm/cancel_alarm	O
+5	diman'	alarm/cancel_alarm	B-datetime
+6	'a	alarm/cancel_alarm	I-datetime
+7	'matina	alarm/cancel_alarm	I-datetime
+
+# id: 82
+# text-en: Will it be sunny tomorrow?
+# text-it: Domani ci sarà il sole?
+# text: Dimane ce 'starrà 'o sole ?
+# intent: weather/find
+1	Dimane	weather/find	B-datetime
+2	ce	weather/find	O
+3	'starrà	weather/find	O
+4	'o	weather/find	O
+5	sole	weather/find	B-weather/attribute
+6	?	weather/find	O
+
+# id: 83
+# text-en: Cancel alarm for tomorrow morning
+# text-it: Cancella la sveglia di domani mattina
+# text: Canciell' 'a sveglia 'e dimani 'a mmatina
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+4	'e	alarm/cancel_alarm	O
+5	dimani	alarm/cancel_alarm	B-datetime
+6	'a	alarm/cancel_alarm	I-datetime
+7	mmatina	alarm/cancel_alarm	I-datetime
+
+# id: 84
+# text-en: show all reminders for tomorrow morning
+# text-it: visualizza tutti i promemoria di domani mattina
+# text: Visualizza tutt' 'e promemoria 'e dimani matina
+# intent: reminder/show_reminders
+1	Visualizza	reminder/show_reminders	O
+2	tutt'	reminder/show_reminders	O
+3	'e	reminder/show_reminders	O
+4	promemoria	reminder/show_reminders	O
+5	'e	reminder/show_reminders	O
+6	dimani	reminder/show_reminders	B-datetime
+7	matina	reminder/show_reminders	I-datetime
+
+# id: 85
+# text-en: What is the humidity today?
+# text-it: Qual è l'umidità oggi?
+# text: Qualè l' ummirità oggi ?
+# intent: weather/find
+1	Qualè	weather/find	O
+2	l'	weather/find	O
+3	ummirità	weather/find	B-weather/attribute
+4	oggi	weather/find	B-datetime
+5	?	weather/find	O
+
+# id: 86
+# text-en: When is it going to rain?
+# text-it: Quando pioverà?
+# text: Quann' chiuvarrà ?
+# intent: weather/find
+1	Quann'	weather/find	O
+2	chiuvarrà	weather/find	B-weather/attribute
+3	?	weather/find	O
+
+# id: 87
+# text-en: How hot is it
+# text-it: Quanto caldo fa
+# text: Quant' caver' fa ?
+# intent: weather/find
+1	Quant'	weather/find	O
+2	caver'	weather/find	B-weather/attribute
+3	fa	weather/find	O
+4	?	weather/find	O
+
+# id: 88
+# text-en: show me my reminders
+# text-it: mostrami i miei promemoria
+# text: Famme verè 'e promemoria miei
+# intent: reminder/show_reminders
+1	Famme	reminder/show_reminders	O
+2	verè	reminder/show_reminders	O
+3	'e	reminder/show_reminders	O
+4	promemoria	reminder/show_reminders	O
+5	miei	reminder/show_reminders	B-reference
+
+# id: 89
+# text-en: What is the 5 day forecast?
+# text-it: Qual è la previsione a 5 giorni?
+# text: Qual è 'a previsione a 5 juorni ?
+# intent: weather/find
+1	Qual	weather/find	O
+2	è	weather/find	O
+3	'a	weather/find	O
+4	previsione	weather/find	O
+5	a	weather/find	O
+6	5	weather/find	B-datetime
+7	juorni	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 90
+# text-en: set alarm for 6 am
+# text-it: imposta una sveglia per le 6 di mattina
+# text: Imposta 'na sveglia pe' 6 'e matina
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	pe'	alarm/set_alarm	O
+5	6	alarm/set_alarm	B-datetime
+6	'e	alarm/set_alarm	I-datetime
+7	matina	alarm/set_alarm	I-datetime
+
+# id: 91
+# text-en: Is it cold today?
+# text-it: È freddo oggi?
+# text: Fa' fridd' oggi ?
+# intent: weather/find
+1	Fa'	weather/find	O
+2	fridd'	weather/find	B-weather/attribute
+3	oggi	weather/find	B-datetime
+4	?	weather/find	O
+
+# id: 92
+# text-en: Set a reminder to call my school on Monday at 4 PM
+# text-it: Imposta un promemoria per chiamare la mia scuola di lunedì alle 4 di pomeriggio
+# text: Imposta 'nu promemoria pe' 'chiammà 'a scola mia lunnerì 'e 4 'o pomeriggio
+# intent: reminder/set_reminder
+1	Imposta	reminder/set_reminder	O
+2	'nu	reminder/set_reminder	O
+3	promemoria	reminder/set_reminder	O
+4	pe'	reminder/set_reminder	O
+5	'chiammà	reminder/set_reminder	B-reminder/todo
+6	'a	reminder/set_reminder	I-reminder/todo
+7	scola	reminder/set_reminder	I-reminder/todo
+8	mia	reminder/set_reminder	I-reminder/todo
+9	lunnerì	reminder/set_reminder	B-datetime
+10	'e	reminder/set_reminder	I-datetime
+11	4	reminder/set_reminder	I-datetime
+12	'o	reminder/set_reminder	I-datetime
+13	pomeriggio	reminder/set_reminder	I-datetime
+
+# id: 93
+# text-en: Delete my reminder for picking up Patrick from school tomorrow.
+# text-it: Rimuovi il mio promemoria di andare a prendere Patrick a scuola domani.
+# text: Liev' 'o promemoria pe 'gghi' a piglia' a Patrick diman' 'a scola
+# intent: reminder/cancel_reminder
+1	Liev'	reminder/cancel_reminder	O
+2	'o	reminder/cancel_reminder	O
+3	promemoria	reminder/cancel_reminder	O
+4	pe	reminder/cancel_reminder	O
+5	'gghi'	reminder/cancel_reminder	O
+6	a	reminder/cancel_reminder	O
+7	piglia'	reminder/cancel_reminder	B-reminder/todo
+8	a	reminder/cancel_reminder	I-reminder/todo
+9	Patrick	reminder/cancel_reminder	I-reminder/todo
+10	diman'	reminder/cancel_reminder	B-datetime
+11	'a	reminder/cancel_reminder	B-reminder/todo
+12	scola	reminder/cancel_reminder	I-reminder/todo
+
+# id: 94
+# text-en: How cold will it be in the morning?
+# text-it: Quanto freddo sarà di mattina?
+# text: Quanto fridd' sarrà 'e matina ?
+# intent: weather/find
+1	Quanto	weather/find	O
+2	fridd'	weather/find	B-weather/attribute
+3	sarrà	weather/find	O
+4	'e	weather/find	O
+5	matina	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 95
+# text-en: do i need an umbrella tomorrow
+# text-it: ho bisogno di un ombrello domani
+# text: Aggio bisogno 'e 'nu mbrello dimani ?
+# intent: weather/find
+1	Aggio	weather/find	O
+2	bisogno	weather/find	O
+3	'e	weather/find	O
+4	'nu	weather/find	O
+5	mbrello	weather/find	B-weather/attribute
+6	dimani	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 96
+# text-en: Show my reminder
+# text-it: Visualizza i miei promemoria
+# text: Visualizza 'e promemoria miei
+# intent: reminder/show_reminders
+1	Visualizza	reminder/show_reminders	O
+2	'e	reminder/show_reminders	O
+3	promemoria	reminder/show_reminders	O
+4	miei	reminder/show_reminders	B-reference
+
+# id: 97
+# text-en: Stop alarm for 6:00 am
+# text-it: Ferma la sveglia delle 6:00 di mattina
+# text: Firm' 'a sveglia d' 'e 6 'e matina
+# intent: alarm/cancel_alarm
+1	Firm'	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+4	d'	alarm/cancel_alarm	O
+5	'e	alarm/cancel_alarm	O
+6	6	alarm/cancel_alarm	B-datetime
+7	'e	alarm/cancel_alarm	I-datetime
+8	matina	alarm/cancel_alarm	I-datetime
+
+# id: 98
+# text-en: Cancel all alarms
+# text-it: Cancella tutte le sveglie
+# text: Canciell' tutt' 'e sveglie
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	tutt'	alarm/cancel_alarm	B-reference
+3	'e	alarm/cancel_alarm	O
+4	sveglie	alarm/cancel_alarm	O
+
+# id: 99
+# text-en: Will it be sunny today?
+# text-it: Ci sarà il sole oggi?
+# text: Ci starrà 'o sole oggi ?
+# intent: weather/find
+1	Ci	weather/find	O
+2	starrà	weather/find	O
+3	'o	weather/find	O
+4	sole	weather/find	B-weather/attribute
+5	oggi	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 100
+# text-en: what is the weather in london?
+# text-it: qual è il tempo a londra?
+# text: Qual è 'o tiempo a Londra ?
+# intent: weather/find
+1	Qual	weather/find	O
+2	è	weather/find	O
+3	'o	weather/find	O
+4	tiempo	weather/find	O
+5	a	weather/find	O
+6	Londra	weather/find	B-location
+7	?	weather/find	O
+
+# id: 101
+# text-en: What are my reminders?
+# text-it: Quali sono i miei promemoria?
+# text: Quali song' e promemoria miei ?
+# intent: reminder/show_reminders
+1	Quali	reminder/show_reminders	O
+2	song'	reminder/show_reminders	O
+3	e	reminder/show_reminders	O
+4	promemoria	reminder/show_reminders	O
+5	miei	reminder/show_reminders	B-reference
+6	?	reminder/show_reminders	O
+
+# id: 102
+# text-en: Cancel my reminder to text Dad
+# text-it: Cancella il mio promemoria di scrivere a Papà
+# text: Canciell' 'o promemoria mio 'e scrivere a papà
+# intent: reminder/cancel_reminder
+1	Canciell'	reminder/cancel_reminder	O
+2	'o	reminder/cancel_reminder	O
+3	promemoria	reminder/cancel_reminder	O
+4	mio	reminder/cancel_reminder	B-reference
+5	'e	reminder/cancel_reminder	O
+6	scrivere	reminder/cancel_reminder	B-reminder/todo
+7	a	reminder/cancel_reminder	I-reminder/todo
+8	papà	reminder/cancel_reminder	I-reminder/todo
+
+# id: 103
+# text-en: set alarm for 6 am
+# text-it: imposta una sveglia per le 6 di mattina
+# text: Imposta 'na sveglia pe' 6 'e matina
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	pe'	alarm/set_alarm	O
+5	6	alarm/set_alarm	B-datetime
+6	'e	alarm/set_alarm	I-datetime
+7	matina	alarm/set_alarm	I-datetime
+
+# id: 104
+# text-en: turn off the alarm
+# text-it: disattiva la sveglia
+# text: Disattiva 'a sveglia
+# intent: alarm/cancel_alarm
+1	Disattiva	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+
+# id: 105
+# text-en: cancel the alarm
+# text-it: cancella la sveglia
+# text: Canciell' 'a sveglia
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+
+# id: 106
+# text-en: turn off alarm
+# text-it: disattiva la sveglia
+# text: Liev' 'a sveglia
+# intent: alarm/cancel_alarm
+1	Liev'	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+
+# id: 107
+# text-en: remind me to call mom today at 2 p.m.
+# text-it: ricordami di chiamare mamma oggi alle 2 del pomeriggio
+# text: Ricuordam' 'e chiammà mamma oggi 'e ddoje 'e pomeriggio
+# intent: reminder/set_reminder
+1	Ricuordam'	reminder/set_reminder	O
+2	'e	reminder/set_reminder	O
+3	chiammà	reminder/set_reminder	B-reminder/todo
+4	mamma	reminder/set_reminder	I-reminder/todo
+5	oggi	reminder/set_reminder	B-datetime
+6	'e	reminder/set_reminder	I-datetime
+7	ddoje	reminder/set_reminder	I-datetime
+8	'e	reminder/set_reminder	I-datetime
+9	pomeriggio	reminder/set_reminder	I-datetime
+
+# id: 108
+# text-en: cancel all alarms
+# text-it: cancella tutte le sveglie
+# text: Canciell' tutt' 'e sveglie
+# intent: alarm/cancel_alarm
+1	Canciell'	alarm/cancel_alarm	O
+2	tutt'	alarm/cancel_alarm	B-reference
+3	'e	alarm/cancel_alarm	O
+4	sveglie	alarm/cancel_alarm	O
+
+# id: 109
+# text-en: is it going to be hot tomorrow
+# text-it: sarà caldo domani
+# text: Sarrà caver' dimani ?
+# intent: weather/find
+1	Sarrà	weather/find	O
+2	caver'	weather/find	B-weather/attribute
+3	dimani	weather/find	B-datetime
+4	?	weather/find	O
+
+# id: 110
+# text-en: is it cold out today?
+# text-it: è freddo fuori oggi?
+# text: E' fridd' fore oggi ?
+# intent: weather/find
+1	E'	weather/find	O
+2	fridd'	weather/find	B-weather/attribute
+3	fore	weather/find	B-location
+4	oggi	weather/find	B-datetime
+5	?	weather/find	O
+
+# id: 111
+# text-en: Set alarm for 5 pm tonight
+# text-it: Imposta una sveglia alle 5 di stasera
+# text: Miett' 'na sveglia e cinq' stasera
+# intent: alarm/set_alarm
+1	Miett'	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	e	alarm/set_alarm	O
+5	cinq'	alarm/set_alarm	B-datetime
+6	stasera	alarm/set_alarm	I-datetime
+
+# id: 112
+# text-en: Will it rain this weekend?
+# text-it: Pioverà questo fine settimana?
+# text: Chiuvarrà 'stu fine settimana ?
+# intent: weather/find
+1	Chiuvarrà	weather/find	B-weather/attribute
+2	'stu	weather/find	B-datetime
+3	fine	weather/find	I-datetime
+4	settimana	weather/find	I-datetime
+5	?	weather/find	O
+
+# id: 113
+# text-en: is it going to rain today
+# text-it: pioverà oggi
+# text: Chiuvarrà oggi ?
+# intent: weather/find
+1	Chiuvarrà	weather/find	B-weather/attribute
+2	oggi	weather/find	B-datetime
+3	?	weather/find	O
+
+# id: 114
+# text-en: set an alarm for monday at 3 am
+# text-it: imposta una sveglia per lunedì alle 3 di mattina
+# text: Imposta 'na sveglia pe' lunnerì 'e 3 'e matina
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	pe'	alarm/set_alarm	O
+5	lunnerì	alarm/set_alarm	B-datetime
+6	'e	alarm/set_alarm	I-datetime
+7	3	alarm/set_alarm	I-datetime
+8	'e	alarm/set_alarm	I-datetime
+9	matina	alarm/set_alarm	I-datetime
+
+# id: 115
+# text-en: alarm on
+# text-it: attiva la sveglia
+# text: Attiva 'a sveglia
+# intent: alarm/set_alarm
+1	Attiva	alarm/set_alarm	O
+2	'a	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+
+# id: 116
+# text-en: Is it going to rain on Saturday?
+# text-it: Pioverà sabato?
+# text: Chiuvarrà sabato ?
+# intent: weather/find
+1	Chiuvarrà	weather/find	B-weather/attribute
+2	sabato	weather/find	B-datetime
+3	?	weather/find	O
+
+# id: 117
+# text-en: Set alarm for 5 am
+# text-it: Imposta una sveglia per le 5 di mattina
+# text: Miett' 'na sveglia 'e cinq 'e matina
+# intent: alarm/set_alarm
+1	Miett'	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	'e	alarm/set_alarm	O
+5	cinq	alarm/set_alarm	B-datetime
+6	'e	alarm/set_alarm	I-datetime
+7	matina	alarm/set_alarm	I-datetime
+
+# id: 118
+# text-en: Will I need a coat today?
+# text-it: Avrò bisogno di un cappotto oggi?
+# text: Avraggio bisogno 'e 'nu cappotto oggi ?
+# intent: weather/find
+1	Avraggio	weather/find	O
+2	bisogno	weather/find	O
+3	'e	weather/find	O
+4	'nu	weather/find	O
+5	cappotto	weather/find	B-weather/attribute
+6	oggi	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 119
+# text-en: turn off alarm
+# text-it: disattiva la sveglia
+# text: Liev' 'a sveglia
+# intent: alarm/cancel_alarm
+1	Liev'	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+
+# id: 120
+# text-en: What weather warnings do I have?
+# text-it: Quali avvisi meteo ho?
+# text: Quali avvisi meteo teng' ?
+# intent: weather/find
+1	Quali	weather/find	O
+2	avvisi	weather/find	B-weather/attribute
+3	meteo	weather/find	O
+4	teng'	weather/find	O
+5	?	weather/find	O
+
+# id: 121
+# text-en: Cancel the reminder for the meeting at the lodge
+# text-it: Cancella il promemoria per la riunione alla baita
+# text: Canciell' 'o promemoria pe' 'a riunione 'a baita
+# intent: reminder/cancel_reminder
+1	Canciell'	reminder/cancel_reminder	O
+2	'o	reminder/cancel_reminder	O
+3	promemoria	reminder/cancel_reminder	O
+4	pe'	reminder/cancel_reminder	O
+5	'a	reminder/cancel_reminder	O
+6	riunione	reminder/cancel_reminder	B-reminder/todo
+7	'a	reminder/cancel_reminder	I-reminder/todo
+8	baita	reminder/cancel_reminder	I-reminder/todo
+
+# id: 122
+# text-en: Should I wear a coat today
+# text-it: Dovrei indossare un cappotto oggi
+# text: Avessa mettere 'nu cappotto oggi ?
+# intent: weather/find
+1	Avessa	weather/find	O
+2	mettere	weather/find	O
+3	'nu	weather/find	O
+4	cappotto	weather/find	B-weather/attribute
+5	oggi	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 123
+# text-en: Turn off all alarms.
+# text-it: Disattiva tutte le sveglie.
+# text: Liev' tutt' 'e sveglie.
+# intent: alarm/cancel_alarm
+1	Liev'	alarm/cancel_alarm	O
+2	tutt'	alarm/cancel_alarm	B-reference
+3	'e	alarm/cancel_alarm	O
+4	sveglie.	alarm/cancel_alarm	O
+
+# id: 124
+# text-en: show all alarms
+# text-it: mostrami tutte le sveglie
+# text: Famm' vere' tutt' 'e sveglie
+# intent: alarm/show_alarms
+1	Famm'	alarm/show_alarms	O
+2	vere'	alarm/show_alarms	O
+3	tutt'	alarm/show_alarms	B-reference
+4	'e	alarm/show_alarms	O
+5	sveglie	alarm/show_alarms	O
+
+# id: 125
+# text-en: Make a new alarm for Thursday at 1pm.
+# text-it: Crea una nuova sveglia per giovedì all'1 di pomeriggio.
+# text: Crea 'na sveglia nova pe' gioverì 'e ll1 'e pomeriggio
+# intent: alarm/set_alarm
+1	Crea	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	nova	alarm/set_alarm	O
+5	pe'	alarm/set_alarm	O
+6	gioverì	alarm/set_alarm	B-datetime
+7	'e	alarm/set_alarm	I-datetime
+8	ll1	alarm/set_alarm	I-datetime
+9	'e	alarm/set_alarm	I-datetime
+10	pomeriggio	alarm/set_alarm	I-datetime
+
+# id: 126
+# text-en: Remind me to go to the dentist next Monday.
+# text-it: Ricordami di andare dal dentista lunedì prossimo.
+# text: Ricuordam' 'e 'i addo dentista lunnerì prossimo
+# intent: reminder/set_reminder
+1	Ricuordam'	reminder/set_reminder	O
+2	'e	reminder/set_reminder	O
+3	'i	reminder/set_reminder	B-reminder/todo
+4	addo	reminder/set_reminder	I-reminder/todo
+5	dentista	reminder/set_reminder	I-reminder/todo
+6	lunnerì	reminder/set_reminder	B-datetime
+7	prossimo	reminder/set_reminder	I-datetime
+
+# id: 127
+# text-en: should I bring an umbrella today
+# text-it: dovrei portare un ombrello oggi
+# text: Avessa purtà 'nu mbrello oggi ?
+# intent: weather/find
+1	Avessa	weather/find	O
+2	purtà	weather/find	O
+3	'nu	weather/find	O
+4	mbrello	weather/find	B-weather/attribute
+5	oggi	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 128
+# text-en: how is the weather this week?
+# text-it: com'è il tempo questa settimana?
+# text: Cumm' è 'o tiempo 'sta semmana ?
+# intent: weather/find
+1	Cumm'	weather/find	O
+2	è	weather/find	O
+3	'o	weather/find	O
+4	tiempo	weather/find	O
+5	'sta	weather/find	B-datetime
+6	semmana	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 129
+# text-en: is it below freezing today?
+# text-it: è sotto lo zero oggi?
+# text: E' sotto 'o zero oggi ?
+# intent: weather/find
+1	E'	weather/find	O
+2	sotto	weather/find	B-weather/attribute
+3	'o	weather/find	I-weather/attribute
+4	zero	weather/find	I-weather/attribute
+5	oggi	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: 130
+# text-en: Delete all reminders
+# text-it: Cancella tutti i promemoria
+# text: Canciell' tutt' 'e promemoria
+# intent: reminder/cancel_reminder
+1	Canciell'	reminder/cancel_reminder	O
+2	tutt'	reminder/cancel_reminder	B-reference
+3	'e	reminder/cancel_reminder	O
+4	promemoria	reminder/cancel_reminder	O
+
+# id: 131
+# text-en: Is it going to rain today?
+# text-it: Pioverà oggi?
+# text: Oggi chiove' ?
+# intent: weather/find
+1	Oggi	weather/find	B-datetime
+2	chiove'	weather/find	B-weather/attribute
+3	?	weather/find	O
+
+# id: 132
+# text-en: Will it rain this weekend?
+# text-it: Pioverà questo fine settimana?
+# text: Chiuvarrà 'stu fine settimana ?
+# intent: weather/find
+1	Chiuvarrà	weather/find	B-weather/attribute
+2	'stu	weather/find	B-datetime
+3	fine	weather/find	I-datetime
+4	settimana	weather/find	I-datetime
+5	?	weather/find	O
+
+# id: 133
+# text-en: Set reminder for mom's visit next week
+# text-it: Imposta un promemoria per la visita di mamma della prossima settimana
+# text: Imposta 'nu promemoria p' 'a visita 'e mamma d' 'a prossima semmana
+# intent: reminder/set_reminder
+1	Imposta	reminder/set_reminder	O
+2	'nu	reminder/set_reminder	O
+3	promemoria	reminder/set_reminder	O
+4	p'	reminder/set_reminder	O
+5	'a	reminder/set_reminder	O
+6	visita	reminder/set_reminder	B-reminder/todo
+7	'e	reminder/set_reminder	I-reminder/todo
+8	mamma	reminder/set_reminder	I-reminder/todo
+9	d'	reminder/set_reminder	O
+10	'a	reminder/set_reminder	O
+11	prossima	reminder/set_reminder	B-datetime
+12	semmana	reminder/set_reminder	I-datetime
+
+# id: 134
+# text-en: Will it snow tomorrow?
+# text-it: Nevicherà domani?
+# text: Nevicarrà dimani ?
+# intent: weather/find
+1	Nevicarrà	weather/find	B-weather/attribute
+2	dimani	weather/find	B-datetime
+3	?	weather/find	O
+
+# id: 135
+# text-en: show all reminders
+# text-it: visualizza tutti i promemoria
+# text: Visualizza tutt' 'e promemoria
+# intent: reminder/show_reminders
+1	Visualizza	reminder/show_reminders	O
+2	tutt'	reminder/show_reminders	B-reference
+3	'e	reminder/show_reminders	O
+4	promemoria	reminder/show_reminders	O
+
+# id: 136
+# text-en: Do I need a coat today?
+# text-it: Ho bisogno di un cappotto oggi?
+# text: Aggio bisogno 'e 'nu cappotto oggi ?
+# intent: weather/find
+1	Aggio	weather/find	O
+2	bisogno	weather/find	O
+3	'e	weather/find	O
+4	'nu	weather/find	O
+5	cappotto	weather/find	B-weather/attribute
+6	oggi	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 137
+# text-en: is it going to snow thursday
+# text-it: nevicherà giovedì
+# text: Nevicarrà gioverì ?
+# intent: weather/find
+1	Nevicarrà	weather/find	B-weather/attribute
+2	gioverì	weather/find	B-datetime
+3	?	weather/find	O
+
+# id: 138
+# text-en: Remind me to buy coffee at Starbucks this afternoon
+# text-it: Ricordami di comprare il caffè da Starbucks questo pomeriggio
+# text: Ricuordam' 'e accattà 'o cafè da Starbucks 'stu pomeriggio
+# intent: reminder/set_reminder
+1	Ricuordam'	reminder/set_reminder	O
+2	'e	reminder/set_reminder	O
+3	accattà	reminder/set_reminder	B-reminder/todo
+4	'o	reminder/set_reminder	I-reminder/todo
+5	cafè	reminder/set_reminder	I-reminder/todo
+6	da	reminder/set_reminder	I-reminder/todo
+7	Starbucks	reminder/set_reminder	I-reminder/todo
+8	'stu	reminder/set_reminder	B-datetime
+9	pomeriggio	reminder/set_reminder	I-datetime
+
+# id: 139
+# text-en: Set an alarm for every ten minutes, starting at 5:30 and ending at 6 am.
+# text-it: Imposta una sveglia ogni dieci minuti, a partire dalle 5:30 fino alle 6 di mattina.
+# text: Imposta 'na sveglia ogni dieci minuti a partì d' 'e 5:30 fino 'e 6 'e matina
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	ogni	alarm/set_alarm	B-recurring_datetime
+5	dieci	alarm/set_alarm	I-recurring_datetime
+6	minuti	alarm/set_alarm	I-recurring_datetime
+7	a	alarm/set_alarm	I-recurring_datetime
+8	partì	alarm/set_alarm	I-recurring_datetime
+9	d'	alarm/set_alarm	I-recurring_datetime
+10	'e	alarm/set_alarm	I-recurring_datetime
+11	5:30	alarm/set_alarm	I-recurring_datetime
+12	fino	alarm/set_alarm	I-recurring_datetime
+13	'e	alarm/set_alarm	I-recurring_datetime
+14	6	alarm/set_alarm	I-recurring_datetime
+15	'e	alarm/set_alarm	I-recurring_datetime
+16	matina	alarm/set_alarm	I-recurring_datetime
+
+# id: 140
+# text-en: Is it going to rain on Saturday?
+# text-it: Pioverà sabato?
+# text: Chiuvarrà sabato ?
+# intent: weather/find
+1	Chiuvarrà	weather/find	B-weather/attribute
+2	sabato	weather/find	B-datetime
+3	?	weather/find	O
+
+# id: 141
+# text-en: Set eh alarm to 7:20am for the shoe release.
+# text-it: Imposta una sveglia alle 7:20 di mattina per il lancio delle scarpe.
+# text: Imposta 'na sveglia 'e 7:20 'e matina p' 'o lancio d' 'e scarpe
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	'e	alarm/set_alarm	O
+5	7:20	alarm/set_alarm	B-datetime
+6	'e	alarm/set_alarm	I-datetime
+7	matina	alarm/set_alarm	I-datetime
+8	p'	alarm/set_alarm	O
+9	'o	alarm/set_alarm	O
+10	lancio	alarm/set_alarm	B-reminder/todo
+11	d'	alarm/set_alarm	I-reminder/todo
+12	'e	alarm/set_alarm	I-reminder/todo
+13	scarpe	alarm/set_alarm	I-reminder/todo
+
+# id: 142
+# text-en: Will there be storms in Bordentown today
+# text-it: Ci saranno tempeste in Bordentown oggi
+# text: Ci starranno tempeste a Bordentown oggi ?
+# intent: weather/find
+1	Ci	weather/find	O
+2	starranno	weather/find	O
+3	tempeste	weather/find	B-weather/attribute
+4	a	weather/find	O
+5	Bordentown	weather/find	B-location
+6	oggi	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: 143
+# text-en: what is the current temperature
+# text-it: qual è la temperatura attuale
+# text: Qual è 'a temperatura int' 'a 'stu mumento ?
+# intent: weather/find
+1	Qual	weather/find	O
+2	è	weather/find	O
+3	'a	weather/find	O
+4	temperatura	weather/find	B-weather/attribute
+5	int'	weather/find	B-datetime
+6	'a	weather/find	I-datetime
+7	'stu	weather/find	I-datetime
+8	mumento	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 144
+# text-en: remind me to make Dan's lunch at 7:30am tomorrow.
+# text-it: ricordami di preparare il pranzo di Dan alle 7:30 di domani mattina.
+# text: Ricuordam' 'e priparà 'o pranzo 'e Dan 'e 7:30 'e dimani matina
+# intent: reminder/set_reminder
+1	Ricuordam'	reminder/set_reminder	O
+2	'e	reminder/set_reminder	O
+3	priparà	reminder/set_reminder	B-reminder/todo
+4	'o	reminder/set_reminder	I-reminder/todo
+5	pranzo	reminder/set_reminder	I-reminder/todo
+6	'e	reminder/set_reminder	I-reminder/todo
+7	Dan	reminder/set_reminder	I-reminder/todo
+8	'e	reminder/set_reminder	O
+9	7:30	reminder/set_reminder	B-datetime
+10	'e	reminder/set_reminder	I-datetime
+11	dimani	reminder/set_reminder	I-datetime
+12	matina	reminder/set_reminder	I-datetime
+
+# id: 145
+# text-en: Set alarm for 6:30am tomorrow.
+# text-it: Imposta una sveglia alle 6:30 di domani mattina.
+# text: Imposta 'na sveglia 'e 6:30 'e dimani matina
+# intent: alarm/set_alarm
+1	Imposta	alarm/set_alarm	O
+2	'na	alarm/set_alarm	O
+3	sveglia	alarm/set_alarm	O
+4	'e	alarm/set_alarm	O
+5	6:30	alarm/set_alarm	B-datetime
+6	'e	alarm/set_alarm	I-datetime
+7	dimani	alarm/set_alarm	I-datetime
+8	matina	alarm/set_alarm	I-datetime
+
+# id: 146
+# text-en: Do I have any reminders set?
+# text-it: Ho qualche promemoria impostato?
+# text: Tengo quacche promemoria impostato ?
+# intent: reminder/show_reminders
+1	Tengo	reminder/show_reminders	O
+2	quacche	reminder/show_reminders	O
+3	promemoria	reminder/show_reminders	O
+4	impostato	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# id: 147
+# text-en: Is my dentist appointment in my reminder ?
+# text-it: Il mio appuntamento dal dentista è nel mio promemoria ?
+# text: Appuntamento mio addo dentista ci sta int' 'o promemoria mio ?
+# intent: reminder/show_reminders
+1	Appuntamento	reminder/show_reminders	B-reminder/todo
+2	mio	reminder/show_reminders	I-reminder/todo
+3	addo	reminder/show_reminders	I-reminder/todo
+4	dentista	reminder/show_reminders	I-reminder/todo
+5	ci	reminder/show_reminders	O
+6	sta	reminder/show_reminders	O
+7	int'	reminder/show_reminders	O
+8	'o	reminder/show_reminders	O
+9	promemoria	reminder/show_reminders	O
+10	mio	reminder/show_reminders	B-reference
+11	?	reminder/show_reminders	O
+
+# id: 148
+# text-en: when will it stop raining?
+# text-it: quando smetterà di piovere?
+# text: Quando finirrà 'e chiovere ?
+# intent: weather/find
+1	Quando	weather/find	O
+2	finirrà	weather/find	O
+3	'e	weather/find	O
+4	chiovere	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id: 149
+# text-en: Is it going to snow this week?
+# text-it: Nevicherà questa settimana?
+# text: Nevicarrà 'sta semmana ?
+# intent: weather/find
+1	Nevicarrà	weather/find	B-weather/attribute
+2	'sta	weather/find	B-datetime
+3	semmana	weather/find	I-datetime
+4	?	weather/find	O
+
+# id: 150
+# text-en: turn off alarm
+# text-it: disattiva la sveglia
+# text: Liev' 'a sveglia
+# intent: alarm/cancel_alarm
+1	Liev'	alarm/cancel_alarm	O
+2	'a	alarm/cancel_alarm	O
+3	sveglia	alarm/cancel_alarm	O
+
+# id: 151
+# text-en: I would give Half a Life 3 out of 6
+# text-it: Darei ad Half a Life 3 su 6
+# text: Desse ad Half a Life 3 'ncoppo a 6
+# intent: RateBook
+1	Desse	RateBook	O
+2	ad	RateBook	O
+3	Half	RateBook	B-object_name
+4	a	RateBook	I-object_name
+5	Life	RateBook	I-object_name
+6	3	RateBook	B-rating_value
+7	'ncoppo	RateBook	O
+8	a	RateBook	O
+9	6	RateBook	B-best_rating
+
+# id: 152
+# text-en: Play some Mf Doom from the sixties on pandora .
+# text-it: Riproduci un po' di Mf Doom dagli anni sessanta su pandora .
+# text: Riproduci 'nu poco 'e Mf Doom dagli anni sessanta 'ncoppo a Pandora
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	'nu	PlayMusic	O
+3	poco	PlayMusic	O
+4	'e	PlayMusic	O
+5	Mf	PlayMusic	B-artist
+6	Doom	PlayMusic	I-artist
+7	dagli	PlayMusic	O
+8	anni	PlayMusic	B-datetime
+9	sessanta	PlayMusic	I-datetime
+10	'ncoppo	PlayMusic	O
+11	a	PlayMusic	O
+12	Pandora	PlayMusic	B-service
+
+# id: 153
+# text-en: Search for Chasing Fortune a TV series .
+# text-it: Cerca Chasing Fortune una serie TV .
+# text: Circ' Chasing Fortune 'na seria TV
+# intent: SearchCreativeWork
+1	Circ'	SearchCreativeWork	O
+2	Chasing	SearchCreativeWork	B-object_name
+3	Fortune	SearchCreativeWork	I-object_name
+4	'na	SearchCreativeWork	O
+5	seria	SearchCreativeWork	B-object_type
+6	TV	SearchCreativeWork	I-object_type
+
+# id: 154
+# text-en: Play shadowplay by Dana on Deezer .
+# text-it: Riproduci shadowplay di Dana su Deezer .
+# text: Riproduci shasowplay 'e Dana 'ncoppo a Deezer
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	shasowplay	PlayMusic	B-track
+3	'e	PlayMusic	O
+4	Dana	PlayMusic	B-artist
+5	'ncoppo	PlayMusic	O
+6	a	PlayMusic	O
+7	Deezer	PlayMusic	B-service
+
+# id: 155
+# text-en: me and imelda want a reservation in Missouri at seven am
+# text-it: io e imelda vogliamo una prenotazione in Missouri alle sette di mattina
+# text: Io e Imelda vulimmo 'na prenotazione in Missouri 'e sette 'e matina
+# intent: BookRestaurant
+1	Io	BookRestaurant	B-party_size_description
+2	e	BookRestaurant	I-party_size_description
+3	Imelda	BookRestaurant	I-party_size_description
+4	vulimmo	BookRestaurant	O
+5	'na	BookRestaurant	O
+6	prenotazione	BookRestaurant	O
+7	in	BookRestaurant	O
+8	Missouri	BookRestaurant	B-location
+9	'e	BookRestaurant	O
+10	sette	BookRestaurant	B-datetime
+11	'e	BookRestaurant	I-datetime
+12	matina	BookRestaurant	I-datetime
+
+# id: 156
+# text-en: add bob klose to la mejor música para tus fiestas
+# text-it: aggiungi bob klose a la mejor música para tus fiestas
+# text: Aggiungi Bob Klose a La mejor musica para tus fiestas
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	Bob	AddToPlaylist	B-artist
+3	Klose	AddToPlaylist	I-artist
+4	a	AddToPlaylist	O
+5	La	AddToPlaylist	B-playlist
+6	mejor	AddToPlaylist	I-playlist
+7	musica	AddToPlaylist	I-playlist
+8	para	AddToPlaylist	I-playlist
+9	tus	AddToPlaylist	I-playlist
+10	fiestas	AddToPlaylist	I-playlist
+
+# id: 157
+# text-en: play Luis Alfonzo Larrain from 1995
+# text-it: riproduci Luis Alfonzo Larrain dal 1995
+# text: Riproduci Luis Alfonzo Larrain d' o 1995
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	Luis	PlayMusic	B-artist
+3	Alfonzo	PlayMusic	I-artist
+4	Larrain	PlayMusic	I-artist
+5	d'	PlayMusic	O
+6	o	PlayMusic	O
+7	1995	PlayMusic	B-datetime
+
+# id: 158
+# text-en: What will the weather be like in the Bahamas eleven years and a half from now
+# text-it: Come sarà il tempo alle Bahamas undici anni e mezzo da adesso
+# text: Comme sarrà 'o tiempo 'e Bahamas unnici anni e miezo 'a 'mo ?
+# intent: weather/find
+1	Comme	weather/find	O
+2	sarrà	weather/find	O
+3	'o	weather/find	O
+4	tiempo	weather/find	O
+5	'e	weather/find	O
+6	Bahamas	weather/find	B-location
+7	unnici	weather/find	B-datetime
+8	anni	weather/find	I-datetime
+9	e	weather/find	I-datetime
+10	miezo	weather/find	I-datetime
+11	'a	weather/find	I-datetime
+12	'mo	weather/find	I-datetime
+13	?	weather/find	O
+
+# id: 159
+# text-en: What will the weather be like in Arizona on october the 3rd
+# text-it: Come sarà il tempo in Arizona il 3 ottobre
+# text: Comme sarrà 'o tiempo in Arizona 'e 3 ottobre ?
+# intent: weather/find
+1	Comme	weather/find	O
+2	sarrà	weather/find	O
+3	'o	weather/find	O
+4	tiempo	weather/find	O
+5	in	weather/find	O
+6	Arizona	weather/find	B-location
+7	'e	weather/find	O
+8	3	weather/find	B-datetime
+9	ottobre	weather/find	I-datetime
+10	?	weather/find	O
+
+# id: 160
+# text-en: Play opera music on google music
+# text-it: Riproduci musica opera su google musica
+# text: Riproduci musica d' opera 'ncoppo a Google Music
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	musica	PlayMusic	O
+3	d'	PlayMusic	O
+4	opera	PlayMusic	B-genre
+5	'ncoppo	PlayMusic	O
+6	a	PlayMusic	O
+7	Google	PlayMusic	B-service
+8	Music	PlayMusic	I-service
+
+# id: 161
+# text-en: find Vegucated starting at zero pm
+# text-it: trova Vegucated da mezzogiorno
+# text: Truov' Vegucated da miezijuorno
+# intent: SearchScreeningEvent
+1	Truov'	SearchScreeningEvent	O
+2	Vegucated	SearchScreeningEvent	B-movie_name
+3	da	SearchScreeningEvent	O
+4	miezijuorno	SearchScreeningEvent	B-datetime
+
+# id: 162
+# text-en: Give the current novel a 3 out of 6 rating
+# text-it: Dai a questo romanzo un punteggio di 3 su 6
+# text: Rà a 'stu rumanzo 'nu punteggio '3 'ncoppo a 6
+# intent: RateBook
+1	Rà	RateBook	O
+2	a	RateBook	O
+3	'stu	RateBook	B-object_select
+4	rumanzo	RateBook	B-object_type
+5	'nu	RateBook	O
+6	punteggio	RateBook	O
+7	3	RateBook	B-rating_value
+8	'ncoppo	RateBook	O
+9	a	RateBook	O
+10	6	RateBook	B-best_rating
+
+# id: 163
+# text-en: I'd like to add this album to funtime .
+# text-it: Vorrei aggiungere questo album a funtime .
+# text: Vulesse aggiungere 'st' album a Funtime
+# intent: AddToPlaylist
+1	Vulesse	AddToPlaylist	O
+2	aggiungere	AddToPlaylist	O
+3	'st'	AddToPlaylist	O
+4	album	AddToPlaylist	B-music_item
+5	a	AddToPlaylist	O
+6	Funtime	AddToPlaylist	B-playlist
+
+# id: 164
+# text-en: I need a table for 4 at a restaurant around 0 AM .
+# text-it: Ho bisogno di un tavolo per 4 in un ristorante attorno a mezzanotte .
+# text: Aggio bisogno 'e 'nu tavolo pe' 4 int' a 'nu ristorante attuorno a mezanotte
+# intent: BookRestaurant
+1	Aggio	BookRestaurant	O
+2	bisogno	BookRestaurant	O
+3	'e	BookRestaurant	O
+4	'nu	BookRestaurant	O
+5	tavolo	BookRestaurant	O
+6	pe'	BookRestaurant	O
+7	4	BookRestaurant	B-party_size_number
+8	int'	BookRestaurant	O
+9	a	BookRestaurant	O
+10	'nu	BookRestaurant	O
+11	ristorante	BookRestaurant	B-restaurant_type
+12	attuorno	BookRestaurant	O
+13	a	BookRestaurant	O
+14	mezanotte	BookRestaurant	B-datetime
+
+# id: 165
+# text-en: find the picture Louder Than Bombs
+# text-it: trova l' immagine Louder Than Bombs
+# text: Truov' l' immagine Louder Than Bombs
+# intent: SearchCreativeWork
+1	Truov'	SearchCreativeWork	O
+2	l'	SearchCreativeWork	O
+3	immagine	SearchCreativeWork	B-object_type
+4	Louder	SearchCreativeWork	B-object_name
+5	Than	SearchCreativeWork	I-object_name
+6	Bombs	SearchCreativeWork	I-object_name
+
+# id: 166
+# text-en: Give 2 out of 6 points to A Tale of Time City
+# text-it: Dai 2 punti su 6 a A Tale of Time City
+# text: Rà 2 punti 'ncoppo a 6 a Tale of Time City
+# intent: RateBook
+1	Rà	RateBook	O
+2	2	RateBook	B-rating_value
+3	punti	RateBook	B-rating_unit
+4	'ncoppo	RateBook	O
+5	a	RateBook	O
+6	6	RateBook	B-best_rating
+7	a	RateBook	B-object_name
+8	Tale	RateBook	I-object_name
+9	of	RateBook	I-object_name
+10	Time	RateBook	I-object_name
+11	City	RateBook	I-object_name
+
+# id: 167
+# text-en: add this current book five stars
+# text-it: dai a questo libro cinque stelle
+# text: Rà a 'stu libro cinq' stelle
+# intent: RateBook
+1	Rà	RateBook	O
+2	a	RateBook	O
+3	'stu	RateBook	B-object_select
+4	libro	RateBook	B-object_type
+5	cinq'	RateBook	B-rating_value
+6	stelle	RateBook	B-rating_unit
+
+# id: 168
+# text-en: add track 70s smash hits to my
+# text-it: aggiungi la traccia 70s smash hits alla mia
+# text: Aggiungi 'a traccia 70s smash hit 'a mia
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	'a	AddToPlaylist	O
+3	traccia	AddToPlaylist	B-music_item
+4	70s	AddToPlaylist	B-playlist
+5	smash	AddToPlaylist	I-playlist
+6	hits	AddToPlaylist	I-playlist
+7	'a	AddToPlaylist	O
+8	mia	AddToPlaylist	B-reference
+
+# id: 169
+# text-en: book near Montana restaurant serving sri lankan food for 6 that is highly rated on tues.
+# text-it: prenota vicino al ristorante Montana che serve cibo srilankese per 6 che è molto apprezzato i martedì .
+# text: Prenota bicino 'o ristorante Montana ca' serve cibo srilankese pe' 6 ca è assai apprezzato 'o marterì
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	bicino	BookRestaurant	B-location
+3	'o	BookRestaurant	O
+4	ristorante	BookRestaurant	B-restaurant_type
+5	Montana	BookRestaurant	B-location
+6	ca'	BookRestaurant	O
+7	serve	BookRestaurant	O
+8	cibo	BookRestaurant	O
+9	srilankese	BookRestaurant	B-cuisine
+10	pe'	BookRestaurant	O
+11	6	BookRestaurant	B-party_size_number
+12	ca	BookRestaurant	O
+13	è	BookRestaurant	O
+14	assai	BookRestaurant	B-sort
+15	apprezzato	BookRestaurant	I-sort
+16	'o	BookRestaurant	O
+17	marterì	BookRestaurant	B-datetime
+
+# id: 170
+# text-en: Book me a lunch at Boreas for a party of 8
+# text-it: Prenotami un pranzo a Boreas per una festa per 8
+# text: Prenotam' 'nu pranzo a Boreas pe' 'na festa pe' 8
+# intent: BookRestaurant
+1	Prenotam'	BookRestaurant	O
+2	'nu	BookRestaurant	O
+3	pranzo	BookRestaurant	B-datetime
+4	a	BookRestaurant	O
+5	Boreas	BookRestaurant	B-restaurant_name
+6	pe'	BookRestaurant	O
+7	'na	BookRestaurant	O
+8	festa	BookRestaurant	O
+9	pe'	BookRestaurant	O
+10	8	BookRestaurant	B-party_size_number
+
+# id: 171
+# text-en: Please put another tune into the laundry playlist.
+# text-it: Per favore inserisci un altro brano nella playlist laundry .
+# text: Pe' favore inserisci 'natu brano int' 'a playlist laundry
+# intent: AddToPlaylist
+1	Pe'	AddToPlaylist	O
+2	favore	AddToPlaylist	O
+3	inserisci	AddToPlaylist	O
+4	'natu	AddToPlaylist	O
+5	brano	AddToPlaylist	B-music_item
+6	int'	AddToPlaylist	O
+7	'a	AddToPlaylist	O
+8	playlist	AddToPlaylist	O
+9	laundry	AddToPlaylist	B-playlist
+
+# id: 172
+# text-en: what is the PW forecast for stormy weather
+# text-it: qual è la previsione in PW per il tempo tempestoso
+# text: Qual è 'a previsione in PW p' 'o tiempo tempestoso ?
+# intent: weather/find
+1	Qual	weather/find	O
+2	è	weather/find	O
+3	'a	weather/find	O
+4	previsione	weather/find	O
+5	in	weather/find	O
+6	PW	weather/find	B-location
+7	p'	weather/find	O
+8	'o	weather/find	O
+9	tiempo	weather/find	O
+10	tempestoso	weather/find	B-condition_description
+11	?	weather/find	O
+
+# id: 173
+# text-en: What is the predicted weather for my current spot next month ?
+# text-it: Qual è il tempo previsto per il mio posto attuale il prossimo mese ?
+# text: Qual è 'o tiempo previsto p' 'o posto mio attuale 'o prossimo mese ?
+# intent: weather/find
+1	Qual	weather/find	O
+2	è	weather/find	O
+3	'o	weather/find	O
+4	tiempo	weather/find	O
+5	previsto	weather/find	O
+6	p'	weather/find	O
+7	'o	weather/find	O
+8	posto	weather/find	B-location
+9	mio	weather/find	I-location
+10	attuale	weather/find	I-location
+11	'o	weather/find	O
+12	prossimo	weather/find	B-datetime
+13	mese	weather/find	I-datetime
+14	?	weather/find	O
+
+# id: 174
+# text-en: Book a reservation for 1 on march 17
+# text-it: Prenota per 1 per il 17 marzo
+# text: Prenota pe' 1 p' 'o 17 marzo
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	pe'	BookRestaurant	O
+3	1	BookRestaurant	B-party_size_number
+4	p'	BookRestaurant	O
+5	'o	BookRestaurant	O
+6	17	BookRestaurant	B-datetime
+7	marzo	BookRestaurant	I-datetime
+
+# id: 175
+# text-en: The current album gets three out of 6 points
+# text-it: Questo album prende tre su 6 punti
+# text: St' album piglia tre 'ncoppo a 6 punti
+# intent: RateBook
+1	St'	RateBook	B-object_select
+2	album	RateBook	B-object_type
+3	piglia	RateBook	O
+4	tre	RateBook	B-rating_value
+5	'ncoppo	RateBook	O
+6	a	RateBook	O
+7	6	RateBook	B-best_rating
+8	punti	RateBook	B-rating_unit
+
+# id: 176
+# text-en: Add the Nastya Kamenskih song to my The Martin Garrix Show playlist.
+# text-it: Aggiungi la canzone di Nastya Kamenskih alla mia playlist The Martin Garrix Show .
+# text: Aggiungi 'a canzone 'e Nastya Kamenskinh 'a playlist mia The Martin Garrix Show
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	'a	AddToPlaylist	O
+3	canzone	AddToPlaylist	B-music_item
+4	'e	AddToPlaylist	O
+5	Nastya	AddToPlaylist	B-artist
+6	Kamenskinh	AddToPlaylist	I-artist
+7	'a	AddToPlaylist	O
+8	playlist	AddToPlaylist	O
+9	mia	AddToPlaylist	B-reference
+10	The	AddToPlaylist	B-playlist
+11	Martin	AddToPlaylist	I-playlist
+12	Garrix	AddToPlaylist	I-playlist
+13	Show	AddToPlaylist	I-playlist
+
+# id: 177
+# text-en: Wish to hear the album Since I Saw You Last
+# text-it: Vorrei ascoltare l' album Since I Saw You Last
+# text: Vulesse sentì l' album Since I Saw You Last
+# intent: SearchCreativeWork
+1	Vulesse	SearchCreativeWork	O
+2	sentì	SearchCreativeWork	O
+3	l'	SearchCreativeWork	O
+4	album	SearchCreativeWork	B-object_type
+5	Since	SearchCreativeWork	B-object_name
+6	I	SearchCreativeWork	I-object_name
+7	Saw	SearchCreativeWork	I-object_name
+8	You	SearchCreativeWork	I-object_name
+9	Last	SearchCreativeWork	I-object_name
+
+# id: 178
+# text-en: play top tunes by Joseph Utsler
+# text-it: riproduci i migliori brani di Joseph Utsler
+# text: Riproduci 'e meglio brani 'e Joseph Utsler
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	'e	PlayMusic	O
+3	meglio	PlayMusic	B-sort
+4	brani	PlayMusic	O
+5	'e	PlayMusic	O
+6	Joseph	PlayMusic	B-artist
+7	Utsler	PlayMusic	I-artist
+
+# id: 179
+# text-en: Find the schedule for Ghost World .
+# text-it: Trova l' orario programmato per Ghost World .
+# text: Truov' ll' orario programmato pe' Ghost World
+# intent: SearchScreeningEvent
+1	Truov'	SearchScreeningEvent	O
+2	ll'	SearchScreeningEvent	O
+3	orario	SearchScreeningEvent	B-object_type
+4	programmato	SearchScreeningEvent	I-object_type
+5	pe'	SearchScreeningEvent	O
+6	Ghost	SearchScreeningEvent	B-movie_name
+7	World	SearchScreeningEvent	I-movie_name
+
+# id: 180
+# text-en: I want to listen to a concerto from Timour Moutsouraev .
+# text-it: Vorrei ascoltare un concerto di Timour Moutsouraev .
+# text: Vulesse sentì 'nu concerto 'e Timour Moutsouraev
+# intent: PlayMusic
+1	Vulesse	PlayMusic	O
+2	sentì	PlayMusic	O
+3	'nu	PlayMusic	O
+4	concerto	PlayMusic	B-music_item
+5	'e	PlayMusic	O
+6	Timour	PlayMusic	B-artist
+7	Moutsouraev	PlayMusic	I-artist
+
+# id: 181
+# text-en: play the album Everybody Happy by Lee Aaron
+# text-it: riproduci l' album Everybody Happy di Lee Aaron
+# text: Riproduci l' album Everybody Happy 'e Lee Aaron
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	l'	PlayMusic	O
+3	album	PlayMusic	B-music_item
+4	Everybody	PlayMusic	B-album
+5	Happy	PlayMusic	I-album
+6	'e	PlayMusic	O
+7	Lee	PlayMusic	B-artist
+8	Aaron	PlayMusic	I-artist
+
+# id: 182
+# text-en: play Fereydoun Farrokhzad best track
+# text-it: rirpoduci la migliore traccia di Fereydoun Farrokhzad
+# text: Riproduci 'a meglio traccia 'e Fereydoun Farrokhzad
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	'a	PlayMusic	O
+3	meglio	PlayMusic	B-sort
+4	traccia	PlayMusic	B-music_item
+5	'e	PlayMusic	O
+6	Fereydoun	PlayMusic	B-artist
+7	Farrokhzad	PlayMusic	I-artist
+
+# id: 183
+# text-en: rate the current book three stars
+# text-it: vota questo libro 3 stelle
+# text: Vota 'stu libro 3 stelle
+# intent: RateBook
+1	Vota	RateBook	O
+2	'stu	RateBook	B-object_select
+3	libro	RateBook	B-object_type
+4	3	RateBook	B-rating_value
+5	stelle	RateBook	B-rating_unit
+
+# id: 184
+# text-en: What will the weather be in Meeres-Nationalpark Insel Bastimentos at twelve PM ?
+# text-it: Che tempo sarà a Meeres-Nationalpark Insel Bastimentos a mezzogiorno ?
+# text: Che tiempo sarrà a Meeres-Nationalpark Insel Bastimentos a miezijuorno ?
+# intent: weather/find
+1	Che	weather/find	O
+2	tiempo	weather/find	O
+3	sarrà	weather/find	O
+4	a	weather/find	O
+5	Meeres-Nationalpark	weather/find	B-location
+6	Insel	weather/find	I-location
+7	Bastimentos	weather/find	I-location
+8	a	weather/find	O
+9	miezijuorno	weather/find	B-datetime
+10	?	weather/find	O
+
+# id: 185
+# text-en: Book a table for 10 people at a restaurant which offers internet .
+# text-it: Prenota un tavolo per 10 persone in un ristorante che offre internet .
+# text: Prenota 'nu tavolo pe' 10 perzone int' 'a 'nu ristorante ca' offre internet
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	'nu	BookRestaurant	O
+3	tavolo	BookRestaurant	O
+4	pe'	BookRestaurant	O
+5	10	BookRestaurant	B-party_size_number
+6	perzone	BookRestaurant	O
+7	int'	BookRestaurant	O
+8	'a	BookRestaurant	O
+9	'nu	BookRestaurant	O
+10	ristorante	BookRestaurant	B-restaurant_type
+11	ca'	BookRestaurant	O
+12	offre	BookRestaurant	O
+13	internet	BookRestaurant	B-facility
+
+# id: 186
+# text-en: give five points to The Tenor Wore Tapshoes
+# text-it: dai cinque punti a The Tenor Wore Tapshoes
+# text: Rà cinq' punti a The Tenor Wore Tapshoes
+# intent: RateBook
+1	Rà	RateBook	O
+2	cinq'	RateBook	B-rating_value
+3	punti	RateBook	B-rating_unit
+4	a	RateBook	O
+5	The	RateBook	B-object_name
+6	Tenor	RateBook	I-object_name
+7	Wore	RateBook	I-object_name
+8	Tapshoes	RateBook	I-object_name
+
+# id: 187
+# text-en: Play a tune by Houston on Spotify
+# text-it: Riproduci un brano di Houston su Spotify
+# text: Riproduci 'nu brano 'e Houston 'ncoppo 'a Spotify
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	'nu	PlayMusic	O
+3	brano	PlayMusic	B-music_item
+4	'e	PlayMusic	O
+5	Houston	PlayMusic	B-artist
+6	'ncoppo	PlayMusic	O
+7	'a	PlayMusic	O
+8	Spotify	PlayMusic	B-service
+
+# id: 188
+# text-en: find a movie theatre with Life and Death
+# text-it: trova un cinema con Life and Death
+# text: Truov' 'nu cinema cu' Life and Death
+# intent: SearchScreeningEvent
+1	Truov'	SearchScreeningEvent	O
+2	'nu	SearchScreeningEvent	O
+3	cinema	SearchScreeningEvent	B-object_location_type
+4	cu'	SearchScreeningEvent	O
+5	Life	SearchScreeningEvent	B-movie_name
+6	and	SearchScreeningEvent	I-movie_name
+7	Death	SearchScreeningEvent	I-movie_name
+
+# id: 189
+# text-en: Play music from the playlist Get Your Mind Right
+# text-it: Rirpoduci musica dalla playlist Get Your Mind Right
+# text: Riproduci musica d' 'a playlist Get Your Mind Right
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	musica	PlayMusic	O
+3	d'	PlayMusic	O
+4	'a	PlayMusic	O
+5	playlist	PlayMusic	O
+6	Get	PlayMusic	B-playlist
+7	Your	PlayMusic	I-playlist
+8	Mind	PlayMusic	I-playlist
+9	Right	PlayMusic	I-playlist
+
+# id: 190
+# text-en: book a table today at a steakhouse for eight that serves sashimi
+# text-it: prenota un tavolo oggi ad una bisteccheria per otto che serve sashimi
+# text: Prenota 'nu tavolo oggi a 'na bisteccheria pe' otto ca' serve sashimi
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	'nu	BookRestaurant	O
+3	tavolo	BookRestaurant	O
+4	oggi	BookRestaurant	B-datetime
+5	a	BookRestaurant	O
+6	'na	BookRestaurant	O
+7	bisteccheria	BookRestaurant	B-restaurant_type
+8	pe'	BookRestaurant	O
+9	otto	BookRestaurant	B-party_size_number
+10	ca'	BookRestaurant	O
+11	serve	BookRestaurant	O
+12	sashimi	BookRestaurant	B-served_dish
+
+# id: 191
+# text-en: find animated movies at Caribbean Cinemas
+# text-it: trova film d'animazione al Caribbean Cinemas
+# text: Truov' film d' animazione 'o Caribbean Cinemas
+# intent: SearchScreeningEvent
+1	Truov'	SearchScreeningEvent	O
+2	film	SearchScreeningEvent	B-movie_type
+3	d'	SearchScreeningEvent	I-movie_type
+4	animazione	SearchScreeningEvent	I-movie_type
+5	'o	SearchScreeningEvent	O
+6	Caribbean	SearchScreeningEvent	B-location
+7	Cinemas	SearchScreeningEvent	I-location
+
+# id: 192
+# text-en: Will there be a storm nearby
+# text-it: Ci sarà una tempesta nelle vicinanze
+# text: Ci sarrà 'na tempesta int' 'e vicinanze ?
+# intent: weather/find
+1	Ci	weather/find	O
+2	sarrà	weather/find	O
+3	'na	weather/find	O
+4	tempesta	weather/find	B-condition_description
+5	int'	weather/find	B-location
+6	'e	weather/find	I-location
+7	vicinanze	weather/find	I-location
+8	?	weather/find	O
+
+# id: 193
+# text-en: Play some melody from the eighties on Spotify
+# text-it: Riproduci della melodia degli anni ottanta su Spotify
+# text: Riproduci 'na melodia 'e ll' anni ottanta 'ncoppo a Spotify
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	'na	PlayMusic	O
+3	melodia	PlayMusic	B-music_item
+4	'e	PlayMusic	O
+5	ll'	PlayMusic	O
+6	anni	PlayMusic	B-datetime
+7	ottanta	PlayMusic	I-datetime
+8	'ncoppo	PlayMusic	O
+9	a	PlayMusic	O
+10	Spotify	PlayMusic	B-service
+
+# id: 194
+# text-en: Where can I find The World According to Paris ?
+# text-it: Dove posso trovare The World According to Paris ?
+# text: Addo' pozz' truvà The World According to Paris ?
+# intent: SearchCreativeWork
+1	Addo'	SearchCreativeWork	O
+2	pozz'	SearchCreativeWork	O
+3	truvà	SearchCreativeWork	O
+4	The	SearchCreativeWork	B-object_name
+5	World	SearchCreativeWork	I-object_name
+6	According	SearchCreativeWork	I-object_name
+7	to	SearchCreativeWork	I-object_name
+8	Paris	SearchCreativeWork	I-object_name
+9	?	SearchCreativeWork	O
+
+# id: 195
+# text-en: Tell me when it will be hotter in China
+# text-it: Dimmi quando sarà più caldo in Cina
+# text: Dimmi quann' sarrà cchiu' caver' in Cina
+# intent: weather/find
+1	Dimmi	weather/find	O
+2	quann'	weather/find	O
+3	sarrà	weather/find	O
+4	cchiu'	weather/find	O
+5	caver'	weather/find	B-condition_temperature
+6	in	weather/find	O
+7	Cina	weather/find	B-location
+
+# id: 196
+# text-en: What are the movie times for the Caribbean Cinemas ?
+# text-it: Quali sono gli orari dei film al Caribbean Cinemas ?
+# text: Quali song' ll' orari d' 'e film 'o Caribbean Cinemas ?
+# intent: SearchScreeningEvent
+1	Quali	SearchScreeningEvent	O
+2	song'	SearchScreeningEvent	O
+3	ll'	SearchScreeningEvent	O
+4	orari	SearchScreeningEvent	B-object_type
+5	d'	SearchScreeningEvent	I-object_type
+6	'e	SearchScreeningEvent	I-object_type
+7	film	SearchScreeningEvent	I-object_type
+8	'o	SearchScreeningEvent	O
+9	Caribbean	SearchScreeningEvent	B-location
+10	Cinemas	SearchScreeningEvent	I-location
+11	?	SearchScreeningEvent	O
+
+# id: 197
+# text-en: Will the wind die down at my current location by supper time?
+# text-it: Il vento si placherà nella mia posizione attuale entro l'ora di cena ?
+# text: O vient' si calmerà int' 'a posizione mia attuale entro l' ora 'e cena ?
+# intent: weather/find
+1	O	weather/find	O
+2	vient'	weather/find	B-condition_description
+3	si	weather/find	O
+4	calmerà	weather/find	O
+5	int'	weather/find	O
+6	'a	weather/find	O
+7	posizione	weather/find	B-location
+8	mia	weather/find	I-location
+9	attuale	weather/find	I-location
+10	entro	weather/find	O
+11	l'	weather/find	O
+12	ora	weather/find	O
+13	'e	weather/find	O
+14	cena	weather/find	B-datetime
+15	?	weather/find	O
+
+# id: 198
+# text-en: Find me The Twinkler playing at National Amusements in 2 minutes
+# text-it: Trovami The Twinkler che recita al National Amusements tra 2 minuti
+# text: Truovam' The Twinkler ca' recita 'o National Amusements tra 2 minuti
+# intent: SearchScreeningEvent
+1	Truovam'	SearchScreeningEvent	O
+2	The	SearchScreeningEvent	B-movie_name
+3	Twinkler	SearchScreeningEvent	I-movie_name
+4	ca'	SearchScreeningEvent	O
+5	recita	SearchScreeningEvent	O
+6	'o	SearchScreeningEvent	O
+7	National	SearchScreeningEvent	B-location
+8	Amusements	SearchScreeningEvent	I-location
+9	tra	SearchScreeningEvent	B-datetime
+10	2	SearchScreeningEvent	I-datetime
+11	minuti	SearchScreeningEvent	I-datetime
+
+# id: 199
+# text-en: I give Hadon of Ancient Opar two out of 6 points
+# text-it: Dò ad Hadon of Ancient Opar due su 6 punti
+# text: Rong' 'a Hadon of Ancient Opar doje 'ncoppo a 6 punti
+# intent: RateBook
+1	Rong'	RateBook	O
+2	'a	RateBook	O
+3	Hadon	RateBook	B-object_name
+4	of	RateBook	I-object_name
+5	Ancient	RateBook	I-object_name
+6	Opar	RateBook	I-object_name
+7	doje	RateBook	B-rating_value
+8	'ncoppo	RateBook	O
+9	a	RateBook	O
+10	6	RateBook	B-best_rating
+11	punti	RateBook	B-rating_unit
+
+# id: 200
+# text-en: I'm looking to bring shawn, marguerite and della to a place to eat at near Rwanda .
+# text-it: Sto cercando di portare shawn , marguerite e della in un posto dove mangiare vicino al Ruanda .
+# text: Sto cercann' 'e purtà Shawn, Marguerite e Della int' a 'nu posto addo mangià bicino 'o Ruanda
+# intent: BookRestaurant
+1	Sto	BookRestaurant	O
+2	cercann'	BookRestaurant	O
+3	'e	BookRestaurant	O
+4	purtà	BookRestaurant	O
+5	Shawn,	BookRestaurant	B-party_size_description
+6	Marguerite	BookRestaurant	I-party_size_description
+7	e	BookRestaurant	I-party_size_description
+8	Della	BookRestaurant	I-party_size_description
+9	int'	BookRestaurant	O
+10	a	BookRestaurant	O
+11	'nu	BookRestaurant	O
+12	posto	BookRestaurant	O
+13	addo	BookRestaurant	O
+14	mangià	BookRestaurant	O
+15	bicino	BookRestaurant	B-location
+16	'o	BookRestaurant	O
+17	Ruanda	BookRestaurant	B-location
+
+# id: 201
+# text-en: Play music on Lastfm
+# text-it: Riproduci musica da Lastfm
+# text: Riproduci musica da Lastfm
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	musica	PlayMusic	O
+3	da	PlayMusic	O
+4	Lastfm	PlayMusic	B-service
+
+# id: 202
+# text-en: Will it be snowy at the current position by March 3 ?
+# text-it: Sarà nevoso alla posizione attuale entro il 3 marzo ?
+# text: Sarrà nevoso 'a posizione attuale entro 'o 'e 3 marzo ?
+# intent: weather/find
+1	Sarrà	weather/find	O
+2	nevoso	weather/find	B-condition_description
+3	'a	weather/find	O
+4	posizione	weather/find	B-location
+5	attuale	weather/find	I-location
+6	entro	weather/find	O
+7	'o	weather/find	O
+8	'e	weather/find	O
+9	3	weather/find	B-datetime
+10	marzo	weather/find	I-datetime
+11	?	weather/find	O
+
+# id: 203
+# text-en: Find me a table for 8 somewhee in Hollenberg in nine weeks
+# text-it: Trovami un tavolo per 8 da qualche parte a Hollenberg entro nove settimane
+# text: Truovam' 'nu tavolo pe' 8 a quacche parte a Hollenberg entro nove semmane
+# intent: BookRestaurant
+1	Truovam'	BookRestaurant	O
+2	'nu	BookRestaurant	O
+3	tavolo	BookRestaurant	O
+4	pe'	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	a	BookRestaurant	O
+7	quacche	BookRestaurant	O
+8	parte	BookRestaurant	O
+9	a	BookRestaurant	O
+10	Hollenberg	BookRestaurant	B-location
+11	entro	BookRestaurant	B-datetime
+12	nove	BookRestaurant	I-datetime
+13	semmane	BookRestaurant	I-datetime
+
+# id: 204
+# text-en: play a track from 2004
+# text-it: riproduci una traccia dal 2004
+# text: Riproduci 'na traccia dò 2004
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	'na	PlayMusic	O
+3	traccia	PlayMusic	B-music_item
+4	dò	PlayMusic	O
+5	2004	PlayMusic	B-datetime
+
+# id: 205
+# text-en: Tell me what films are currently playing at AMC Theaters
+# text-it: Dimmi che film sono attualmente in riproduzione al AMC Theaters
+# text: Dimmi che film song' attualmente in riproduzione 'o AMC Theaters
+# intent: SearchScreeningEvent
+1	Dimmi	SearchScreeningEvent	O
+2	che	SearchScreeningEvent	O
+3	film	SearchScreeningEvent	B-movie_type
+4	song'	SearchScreeningEvent	O
+5	attualmente	SearchScreeningEvent	O
+6	in	SearchScreeningEvent	O
+7	riproduzione	SearchScreeningEvent	O
+8	'o	SearchScreeningEvent	O
+9	AMC	SearchScreeningEvent	B-location
+10	Theaters	SearchScreeningEvent	I-location
+
+# id: 206
+# text-en: Show me the TV show Limit of Love: Umizaru
+# text-it: Mostrami il programma TV Limit of Love: Umizaru
+# text: Famm' verè 'o programma TV Limit of Love : Umizaru
+# intent: SearchCreativeWork
+1	Famm'	SearchCreativeWork	O
+2	verè	SearchCreativeWork	O
+3	'o	SearchCreativeWork	O
+4	programma	SearchCreativeWork	B-object_type
+5	TV	SearchCreativeWork	I-object_type
+6	Limit	SearchCreativeWork	B-object_name
+7	of	SearchCreativeWork	I-object_name
+8	Love	SearchCreativeWork	I-object_name
+9	:	SearchCreativeWork	I-object_name
+10	Umizaru	SearchCreativeWork	I-object_name
+
+# id: 207
+# text-en: Show me the photograph Rock You Baby
+# text-it: Mostrami la fotografia Rock You Baby
+# text: Famm' verè 'a fotografia Rock You Baby
+# intent: SearchCreativeWork
+1	Famm'	SearchCreativeWork	O
+2	verè	SearchCreativeWork	O
+3	'a	SearchCreativeWork	O
+4	fotografia	SearchCreativeWork	B-object_type
+5	Rock	SearchCreativeWork	B-object_name
+6	You	SearchCreativeWork	I-object_name
+7	Baby	SearchCreativeWork	I-object_name
+
+# id: 208
+# text-en: is Tarzan of the Apes playing at Cobb Theatres
+# text-it: Tarzan of the Apes è in riproduzione al Cobb Theatres ?
+# text: Tarzan of the Apes sta in riproduzione 'o Cobb Theaters ?
+# intent: SearchScreeningEvent
+1	Tarzan	SearchScreeningEvent	B-movie_name
+2	of	SearchScreeningEvent	I-movie_name
+3	the	SearchScreeningEvent	I-movie_name
+4	Apes	SearchScreeningEvent	I-movie_name
+5	sta	SearchScreeningEvent	O
+6	in	SearchScreeningEvent	O
+7	riproduzione	SearchScreeningEvent	O
+8	'o	SearchScreeningEvent	O
+9	Cobb	SearchScreeningEvent	B-location
+10	Theaters	SearchScreeningEvent	I-location
+11	?	SearchScreeningEvent	O
+
+# id: 209
+# text-en: put Kan Mikami on Pre-Party R&B Jams
+# text-it: metti Kan Mikami nella Pre-Party R & B Jams
+# text: Miett' Kan Mikami int' a Pre Party R & B Jams
+# intent: AddToPlaylist
+1	Miett'	AddToPlaylist	O
+2	Kan	AddToPlaylist	B-artist
+3	Mikami	AddToPlaylist	I-artist
+4	int'	AddToPlaylist	O
+5	a	AddToPlaylist	O
+6	Pre	AddToPlaylist	B-playlist
+7	Party	AddToPlaylist	I-playlist
+8	R	AddToPlaylist	I-playlist
+9	&	AddToPlaylist	I-playlist
+10	B	AddToPlaylist	I-playlist
+11	Jams	AddToPlaylist	I-playlist
+
+# id: 210
+# text-en: is it going to blizzard at my current position
+# text-it: Sta per arrivare una bufera nella mia posizione attuale
+# text: Sta p' arrivà 'na bufera int' a posizione mia attuale
+# intent: weather/find
+1	Sta	weather/find	O
+2	p'	weather/find	O
+3	arrivà	weather/find	O
+4	'na	weather/find	O
+5	bufera	weather/find	B-condition_description
+6	int'	weather/find	O
+7	a	weather/find	O
+8	posizione	weather/find	B-location
+9	mia	weather/find	I-location
+10	attuale	weather/find	I-location
+
+# id: 211
+# text-en: book a table for me and my step uncle in Malta at a cafeteria
+# text-it: prenota un tavolo per me e mio zio a Malta in una caffetteria
+# text: Prenota 'nu tavolo pe' me e 'o zì mio a Malta int' a 'na caffetteria
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	'nu	BookRestaurant	O
+3	tavolo	BookRestaurant	O
+4	pe'	BookRestaurant	O
+5	me	BookRestaurant	B-party_size_description
+6	e	BookRestaurant	I-party_size_description
+7	'o	BookRestaurant	I-party_size_description
+8	zì	BookRestaurant	I-party_size_description
+9	mio	BookRestaurant	I-party_size_description
+10	a	BookRestaurant	O
+11	Malta	BookRestaurant	B-location
+12	int'	BookRestaurant	O
+13	a	BookRestaurant	O
+14	'na	BookRestaurant	O
+15	caffetteria	BookRestaurant	B-restaurant_type
+
+# id: 212
+# text-en: Play the most popular twenties record from Leland Sklar
+# text-it: Riproduci il più famoso disco degli anni venti di Leland Sklar
+# text: Riproduci 'o cchiu' famoso disco 'e ll' anni venti 'e Leland Sklar
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	'o	PlayMusic	O
+3	cchiu'	PlayMusic	B-sort
+4	famoso	PlayMusic	I-sort
+5	disco	PlayMusic	B-music_item
+6	'e	PlayMusic	O
+7	ll'	PlayMusic	O
+8	anni	PlayMusic	B-datetime
+9	venti	PlayMusic	I-datetime
+10	'e	PlayMusic	O
+11	Leland	PlayMusic	B-artist
+12	Sklar	PlayMusic	I-artist
+
+# id: 213
+# text-en: Show me the forecast for Wisconsin
+# text-it: Mostrami le previsioni per il Wisconsin
+# text: Famm' verè 'e previsioni p' 'o Wisconsin
+# intent: weather/find
+1	Famm'	weather/find	O
+2	verè	weather/find	O
+3	'e	weather/find	O
+4	previsioni	weather/find	O
+5	p'	weather/find	O
+6	'o	weather/find	O
+7	Wisconsin	weather/find	B-location
+
+# id: 214
+# text-en: find a photograph called Between the Days
+# text-it: trova la fotografia chiamata Between the Days
+# text: Truov' 'a fotografia chiammata Between the Days
+# intent: SearchCreativeWork
+1	Truov'	SearchCreativeWork	O
+2	'a	SearchCreativeWork	O
+3	fotografia	SearchCreativeWork	B-object_type
+4	chiammata	SearchCreativeWork	O
+5	Between	SearchCreativeWork	B-object_name
+6	the	SearchCreativeWork	I-object_name
+7	Days	SearchCreativeWork	I-object_name
+
+# id: 215
+# text-en: book at The Halal Guys on Oct. 17
+# text-it: prenota al The Halal Guys per il 17 ottobre
+# text: Prenota 'o The Halal Guys p' 'o 17 ottobre
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	'o	BookRestaurant	O
+3	The	BookRestaurant	B-restaurant_name
+4	Halal	BookRestaurant	I-restaurant_name
+5	Guys	BookRestaurant	I-restaurant_name
+6	p'	BookRestaurant	O
+7	'o	BookRestaurant	O
+8	17	BookRestaurant	B-datetime
+9	ottobre	BookRestaurant	I-datetime
+
+# id: 216
+# text-en: Please tell me the forecast for Guinea-Bissau
+# text-it: Per favore dimmi le previsioni per la Guinea-Bissau
+# text: Pe' favore dimmi 'e previsioni p' 'a Guinea-Bissau
+# intent: weather/find
+1	Pe'	weather/find	O
+2	favore	weather/find	O
+3	dimmi	weather/find	O
+4	'e	weather/find	O
+5	previsioni	weather/find	O
+6	p'	weather/find	O
+7	'a	weather/find	O
+8	Guinea-Bissau	weather/find	B-location
+
+# id: 217
+# text-en: Add this song to my the perfect italian dinner playlist
+# text-it: Aggiungi questa canzone alla mia playlist the perfect italian dinner
+# text: Aggiungi 'sta canzone 'a playlist mia The Perfect Italian Dinner
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	'sta	AddToPlaylist	O
+3	canzone	AddToPlaylist	B-music_item
+4	'a	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	mia	AddToPlaylist	B-reference
+7	The	AddToPlaylist	B-playlist
+8	Perfect	AddToPlaylist	I-playlist
+9	Italian	AddToPlaylist	I-playlist
+10	Dinner	AddToPlaylist	I-playlist
+
+# id: 218
+# text-en: weather in Tioga Colorado
+# text-it: tempo a Tioga Colorado
+# text: Tiempo a Tioga Colorado
+# intent: weather/find
+1	Tiempo	weather/find	O
+2	a	weather/find	O
+3	Tioga	weather/find	B-location
+4	Colorado	weather/find	B-location
+
+# id: 219
+# text-en: I want to listen to the Music of Ghost in the Shell: Stand Alone Complex
+# text-it: Vorrei ascoltare the Music of Ghost in the Shell: Stand Alone Complex
+# text: Vuless' sentì the Music of Ghost in the Shell Stand Alone Coplex
+# intent: SearchCreativeWork
+1	Vuless'	SearchCreativeWork	O
+2	sentì	SearchCreativeWork	O
+3	the	SearchCreativeWork	O
+4	Music	SearchCreativeWork	B-object_name
+5	of	SearchCreativeWork	I-object_name
+6	Ghost	SearchCreativeWork	I-object_name
+7	in	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Shell	SearchCreativeWork	I-object_name
+10	Stand	SearchCreativeWork	I-object_name
+11	Alone	SearchCreativeWork	I-object_name
+12	Coplex	SearchCreativeWork	I-object_name
+
+# id: 220
+# text-en: Show me Happiness Was Free .
+# text-it: Mostrami Happiness Was Free .
+# text: Famm' verè Happiness Was Free
+# intent: SearchCreativeWork
+1	Famm'	SearchCreativeWork	O
+2	verè	SearchCreativeWork	O
+3	Happiness	SearchCreativeWork	B-object_name
+4	Was	SearchCreativeWork	I-object_name
+5	Free	SearchCreativeWork	I-object_name
+
+# id: 221
+# text-en: Is it supposed to rain nearby my current location at 0 o'clock ?
+# text-it: Dovrebbe piovere vicino alla mia posizione attuale a mezzanotte in punto ?
+# text: E' prevista pioggia bicino a posizione mia attuale a mezanotte in punto ?
+# intent: weather/find
+1	E'	weather/find	O
+2	prevista	weather/find	O
+3	pioggia	weather/find	B-condition_description
+4	bicino	weather/find	B-location
+5	a	weather/find	O
+6	posizione	weather/find	B-location
+7	mia	weather/find	I-location
+8	attuale	weather/find	I-location
+9	a	weather/find	O
+10	mezanotte	weather/find	B-datetime
+11	in	weather/find	I-datetime
+12	punto	weather/find	I-datetime
+13	?	weather/find	O
+
+# id: 222
+# text-en: book a table in Fairview neighboring the area
+# text-it: prenota un tavolo vicino l' area di Fairview
+# text: Prenota 'nu tavolo bicino all' aerea 'e Fairview
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	'nu	BookRestaurant	O
+3	tavolo	BookRestaurant	O
+4	bicino	BookRestaurant	B-location
+5	all'	BookRestaurant	O
+6	aerea	BookRestaurant	B-location
+7	'e	BookRestaurant	O
+8	Fairview	BookRestaurant	B-location
+
+# id: 223
+# text-en: what is the forecast for 15:04 in Georgia for overcast conditions in Valley View
+# text-it: qual è la previsione per le 15:04 in Georgia per le condizioni nuvolose a Valley View
+# text: Qual è 'a previsione p' 'e 15:04 in Georgia p' 'e condizioni nuvolose a Valley View ?
+# intent: weather/find
+1	Qual	weather/find	O
+2	è	weather/find	O
+3	'a	weather/find	O
+4	previsione	weather/find	O
+5	p'	weather/find	O
+6	'e	weather/find	O
+7	15:04	weather/find	B-datetime
+8	in	weather/find	O
+9	Georgia	weather/find	B-location
+10	p'	weather/find	O
+11	'e	weather/find	O
+12	condizioni	weather/find	O
+13	nuvolose	weather/find	B-condition_description
+14	a	weather/find	O
+15	Valley	weather/find	B-location
+16	View	weather/find	I-location
+17	?	weather/find	O
+
+# id: 224
+# text-en: Can I see the movie schedules ?
+# text-it: Posso vedere gli orari dei film ?
+# text: Pozz' verè ll' orari d' 'e film ?
+# intent: SearchScreeningEvent
+1	Pozz'	SearchScreeningEvent	O
+2	verè	SearchScreeningEvent	O
+3	ll'	SearchScreeningEvent	O
+4	orari	SearchScreeningEvent	B-object_type
+5	d'	SearchScreeningEvent	I-object_type
+6	'e	SearchScreeningEvent	I-object_type
+7	film	SearchScreeningEvent	I-object_type
+8	?	SearchScreeningEvent	O
+
+# id: 225
+# text-en: find a movie house closest showing Operation: Kingdom
+# text-it: trova un cinema vicino che proietta Operation: Kingdom
+# text: Truov' 'nu cinema bicino ca' proietta Operation Kingdom
+# intent: SearchScreeningEvent
+1	Truov'	SearchScreeningEvent	O
+2	'nu	SearchScreeningEvent	O
+3	cinema	SearchScreeningEvent	B-object_location_type
+4	bicino	SearchScreeningEvent	B-location
+5	ca'	SearchScreeningEvent	O
+6	proietta	SearchScreeningEvent	O
+7	Operation:	SearchScreeningEvent	B-movie_name
+8	Kingdom	SearchScreeningEvent	I-movie_name
+
+# id: 226
+# text-en: Find a trailer called Storm Center .
+# text-it: Trova un trailer chiamato Storm Center .
+# text: Truov' 'nu trailer chiammat' Storm Center
+# intent: SearchCreativeWork
+1	Truov'	SearchCreativeWork	O
+2	'nu	SearchCreativeWork	O
+3	trailer	SearchCreativeWork	B-object_type
+4	chiammat'	SearchCreativeWork	O
+5	Storm	SearchCreativeWork	B-object_name
+6	Center	SearchCreativeWork	I-object_name
+
+# id: 227
+# text-en: put this album on my dubstep dangles dirty playlist
+# text-it: metti questi album nella mia playlist dubstep dangles dirty
+# text: Miett' 'st' album int' 'a playlist mia Dubstep Dangles Dirty
+# intent: AddToPlaylist
+1	Miett'	AddToPlaylist	O
+2	'st'	AddToPlaylist	O
+3	album	AddToPlaylist	B-music_item
+4	int'	AddToPlaylist	O
+5	'a	AddToPlaylist	O
+6	playlist	AddToPlaylist	O
+7	mia	AddToPlaylist	B-reference
+8	Dubstep	AddToPlaylist	B-playlist
+9	Dangles	AddToPlaylist	I-playlist
+10	Dirty	AddToPlaylist	I-playlist
+
+# id: 228
+# text-en: What are the movie schedules
+# text-it: Quali sono gli orari dei film
+# text: Quali song' ll' orari d' 'e film ?
+# intent: SearchScreeningEvent
+1	Quali	SearchScreeningEvent	O
+2	song'	SearchScreeningEvent	O
+3	ll'	SearchScreeningEvent	O
+4	orari	SearchScreeningEvent	B-object_type
+5	d'	SearchScreeningEvent	I-object_type
+6	'e	SearchScreeningEvent	I-object_type
+7	film	SearchScreeningEvent	I-object_type
+8	?	SearchScreeningEvent	O
+
+# id: 229
+# text-en: Play a song by Juanes on Last Fm
+# text-it: Riproduci una canzone di Juanes su Last Fm
+# text: Riproduci 'na canzone 'e Juanes 'ncoppo a Last Fm
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	'na	PlayMusic	O
+3	canzone	PlayMusic	B-music_item
+4	'e	PlayMusic	O
+5	Juanes	PlayMusic	B-artist
+6	'ncoppo	PlayMusic	O
+7	a	PlayMusic	O
+8	Last	PlayMusic	B-service
+9	Fm	PlayMusic	I-service
+
+# id: 230
+# text-en: Assign 0 points out of 6 to The Gate of Worlds
+# text-it: Dai 0 punti su 6 a The Gate of Worlds
+# text: Rà 0 punti a The Gate of Worlds
+# intent: RateBook
+1	Rà	RateBook	O
+2	0	RateBook	B-rating_value
+3	punti	RateBook	B-rating_unit
+4	'ncoppa	RateBook	O
+5	a	RateBook	O
+6	6	RateBook	B-best_rating
+7	a	RateBook	O
+8	The	RateBook	B-object_name
+9	Gate	RateBook	I-object_name
+10	of	RateBook	I-object_name
+11	Worlds	RateBook	I-object_name
+
+# id: 231
+# text-en: Play some David Mallett on last fm
+# text-it: Rirpoduci un po' di David Mallett su last fm
+# text: Riproduci 'nu poco 'e David Mallet 'ncoppo a Last Fm
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	'nu	PlayMusic	O
+3	poco	PlayMusic	O
+4	'e	PlayMusic	O
+5	David	PlayMusic	B-artist
+6	Mallet	PlayMusic	I-artist
+7	'ncoppo	PlayMusic	O
+8	a	PlayMusic	O
+9	Last	PlayMusic	B-service
+10	Fm	PlayMusic	I-service
+
+# id: 232
+# text-en: Find me the movie times
+# text-it: Trovami gli orari dei film
+# text: Truovam' ll' orari d' 'e film
+# intent: SearchScreeningEvent
+1	Truovam'	SearchScreeningEvent	O
+2	ll'	SearchScreeningEvent	O
+3	orari	SearchScreeningEvent	B-object_type
+4	d'	SearchScreeningEvent	I-object_type
+5	'e	SearchScreeningEvent	I-object_type
+6	film	SearchScreeningEvent	I-object_type
+
+# id: 233
+# text-en: Will it be windy at 4 PM in NY ?
+# text-it: Ci sarà vento alle 4 del pomeriggio a NY ?
+# text: Ci sarrà vient' 'e 4 d' 'o pomeriggio a NY ?
+# intent: weather/find
+1	Ci	weather/find	O
+2	sarrà	weather/find	O
+3	vient'	weather/find	B-condition_description
+4	'e	weather/find	O
+5	4	weather/find	B-datetime
+6	d'	weather/find	I-datetime
+7	'o	weather/find	I-datetime
+8	pomeriggio	weather/find	I-datetime
+9	a	weather/find	O
+10	NY	weather/find	B-location
+11	?	weather/find	O
+
+# id: 234
+# text-en: Book me a restaurant for nine in Statham
+# text-it: Prenotami un ristorante per nove a Statham
+# text: Prenotam' 'nu ristorante pe' nove a Statham
+# intent: BookRestaurant
+1	Prenotam'	BookRestaurant	O
+2	'nu	BookRestaurant	O
+3	ristorante	BookRestaurant	B-restaurant_type
+4	pe'	BookRestaurant	O
+5	nove	BookRestaurant	B-party_size_number
+6	a	BookRestaurant	O
+7	Statham	BookRestaurant	B-location
+
+# id: 235
+# text-en: find a video game called IBM Program temporary fix
+# text-it: cerca un videogioco chiamato IBM Program temporary fix
+# text: Circ' 'nu videogioco chiammat' IBM Program temporary fix
+# intent: SearchCreativeWork
+1	Circ'	SearchCreativeWork	O
+2	'nu	SearchCreativeWork	O
+3	videogioco	SearchCreativeWork	B-object_type
+4	chiammat'	SearchCreativeWork	O
+5	IBM	SearchCreativeWork	B-object_name
+6	Program	SearchCreativeWork	I-object_name
+7	temporary	SearchCreativeWork	I-object_name
+8	fix	SearchCreativeWork	I-object_name
+
+# id: 236
+# text-en: Find a table for one at a popular churrascaria for three weeks from now
+# text-it: Trova un tavolo per uno alla famosa churrascaria entro tre settimane da adesso
+# text: Truov' 'nu tavolo pe' uno alla famosa churrascaria entro tre semmane 'a mo'
+# intent: BookRestaurant
+1	Truov'	BookRestaurant	O
+2	'nu	BookRestaurant	O
+3	tavolo	BookRestaurant	O
+4	pe'	BookRestaurant	O
+5	uno	BookRestaurant	B-party_size_number
+6	alla	BookRestaurant	O
+7	famosa	BookRestaurant	B-sort
+8	churrascaria	BookRestaurant	B-restaurant_type
+9	entro	BookRestaurant	O
+10	tre	BookRestaurant	B-datetime
+11	semmane	BookRestaurant	I-datetime
+12	'a	BookRestaurant	I-datetime
+13	mo'	BookRestaurant	I-datetime
+
+# id: 237
+# text-en: For Mirrorshades I rate it three stars
+# text-it: Per Mirrorshades io lo voto tre stelle
+# text: Per Mirrorshades io 'o voto tre stelle
+# intent: RateBook
+1	Per	RateBook	O
+2	Mirrorshades	RateBook	B-object_name
+3	io	RateBook	O
+4	'o	RateBook	O
+5	voto	RateBook	O
+6	tre	RateBook	B-rating_value
+7	stelle	RateBook	B-rating_unit
+
+# id: 238
+# text-en: Book a restaurant that serves agnolotti in Colorado City Idaho .
+# text-it: Prenota un ristorante che serve agnolotti a Colorado City Idaho .
+# text: Prenota 'nu ristorante ca' serve agnolotti a Colorado City Idaho
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	'nu	BookRestaurant	O
+3	ristorante	BookRestaurant	B-restaurant_type
+4	ca'	BookRestaurant	O
+5	serve	BookRestaurant	O
+6	agnolotti	BookRestaurant	B-served_dish
+7	a	BookRestaurant	O
+8	Colorado	BookRestaurant	B-location
+9	City	BookRestaurant	I-location
+10	Idaho	BookRestaurant	B-location
+
+# id: 239
+# text-en: Add bright and breezy to my This Is Gucci Mane playlist
+# text-it: Aggiungi bright and breezy alla mia playlist This Is Gucci Mane
+# text: Aggiungi Bright and Breezy 'a playlist mia This is Gucci Mane
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	Bright	AddToPlaylist	B-entity_name
+3	and	AddToPlaylist	I-entity_name
+4	Breezy	AddToPlaylist	I-entity_name
+5	'a	AddToPlaylist	O
+6	playlist	AddToPlaylist	O
+7	mia	AddToPlaylist	B-reference
+8	This	AddToPlaylist	B-playlist
+9	is	AddToPlaylist	I-playlist
+10	Gucci	AddToPlaylist	I-playlist
+11	Mane	AddToPlaylist	I-playlist
+
+# id: 240
+# text-en: Can you give me the weather for here
+# text-it: Puoi darmi il meteo di qui
+# text: Mi può da' 'o meteo cà ?
+# intent: weather/find
+1	Mi	weather/find	O
+2	può	weather/find	O
+3	da'	weather/find	O
+4	'o	weather/find	O
+5	meteo	weather/find	O
+6	cà	weather/find	B-location
+7	?	weather/find	O
+
+# id: 241
+# text-en: Add Ashley McIsaac to my r&b party classics playlist
+# text-it: Aggiungi Ashley McIsaac alla mia playlist r & b party classics
+# text: Aggiungi Ashley McIsaac 'a playlist mia R & B Party Classic
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	Ashley	AddToPlaylist	B-artist
+3	McIsaac	AddToPlaylist	I-artist
+4	'a	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	mia	AddToPlaylist	B-reference
+7	R	AddToPlaylist	B-playlist
+8	&	AddToPlaylist	I-playlist
+9	B	AddToPlaylist	I-playlist
+10	Party	AddToPlaylist	I-playlist
+11	Classic	AddToPlaylist	I-playlist
+
+# id: 242
+# text-en: I'd like to see the saga 12 Soulful Nights of Christmas
+# text-it: Vorrei guardare la saga 12 Soulful Nights of Christmas
+# text: Vulesse guardà 'a saga 12 Soulful Nights Of Christmas
+# intent: SearchCreativeWork
+1	Vulesse	SearchCreativeWork	O
+2	guardà	SearchCreativeWork	O
+3	'a	SearchCreativeWork	O
+4	saga	SearchCreativeWork	B-object_type
+5	12	SearchCreativeWork	B-object_name
+6	Soulful	SearchCreativeWork	I-object_name
+7	Nights	SearchCreativeWork	I-object_name
+8	Of	SearchCreativeWork	I-object_name
+9	Christmas	SearchCreativeWork	I-object_name
+
+# id: 243
+# text-en: I need a reservation for 6 PM. with a party of 10 at Sand Lake
+# text-it: Ho bisogno di una prenotazione per le 6 del pomeriggio con una festa per 10 a Sand Lake
+# text: Aggio bisogno 'e 'na prenotazione p' 'e 6 d' 'o pomeriggio cu' 'na festa pe' 10 a Sand Lake
+# intent: BookRestaurant
+1	Aggio	BookRestaurant	O
+2	bisogno	BookRestaurant	O
+3	'e	BookRestaurant	O
+4	'na	BookRestaurant	O
+5	prenotazione	BookRestaurant	O
+6	p'	BookRestaurant	O
+7	'e	BookRestaurant	O
+8	6	BookRestaurant	B-datetime
+9	d'	BookRestaurant	I-datetime
+10	'o	BookRestaurant	I-datetime
+11	pomeriggio	BookRestaurant	I-datetime
+12	cu'	BookRestaurant	O
+13	'na	BookRestaurant	O
+14	festa	BookRestaurant	O
+15	pe'	BookRestaurant	O
+16	10	BookRestaurant	B-party_size_number
+17	a	BookRestaurant	O
+18	Sand	BookRestaurant	B-location
+19	Lake	BookRestaurant	I-location
+
+# id: 244
+# text-en: Use Groove Shark to play music from the eighties
+# text-it: Usa Groove Shark per riprodurre musica degli anni ottanta
+# text: Usa Groove Shark pe' riprodurre musica 'e ll' anni ottanta
+# intent: PlayMusic
+1	Usa	PlayMusic	O
+2	Groove	PlayMusic	B-service
+3	Shark	PlayMusic	I-service
+4	pe'	PlayMusic	O
+5	riprodurre	PlayMusic	O
+6	musica	PlayMusic	O
+7	'e	PlayMusic	O
+8	ll'	PlayMusic	O
+9	anni	PlayMusic	B-datetime
+10	ottanta	PlayMusic	I-datetime
+
+# id: 245
+# text-en: find soundtrack titled The House of the Yellow Carpet
+# text-it: trova la colonna sonora intitolata The House of the Yellow Carpet
+# text: Truov' 'a colonna sonora intitolata The House of the Yellow Carpet
+# intent: SearchCreativeWork
+1	Truov'	SearchCreativeWork	O
+2	'a	SearchCreativeWork	O
+3	colonna	SearchCreativeWork	B-object_type
+4	sonora	SearchCreativeWork	I-object_type
+5	intitolata	SearchCreativeWork	O
+6	The	SearchCreativeWork	B-object_name
+7	House	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	Yellow	SearchCreativeWork	I-object_name
+11	Carpet	SearchCreativeWork	I-object_name
+
+# id: 246
+# text-en: Which is the nearest cinema showing movies that start in nineteen seconds ?
+# text-it: Qual è il cinema più vicino che proietta film che iniziano tra diciannove secondi ?
+# text: Qual è 'o cinema cchiu' bicino ca' proietta film ca' accummenciano tra diciannove sicond' ?
+# intent: SearchScreeningEvent
+1	Qual	SearchScreeningEvent	O
+2	è	SearchScreeningEvent	O
+3	'o	SearchScreeningEvent	O
+4	cinema	SearchScreeningEvent	B-object_location_type
+5	cchiu'	SearchScreeningEvent	B-location
+6	bicino	SearchScreeningEvent	I-location
+7	ca'	SearchScreeningEvent	O
+8	proietta	SearchScreeningEvent	O
+9	film	SearchScreeningEvent	B-movie_type
+10	ca'	SearchScreeningEvent	O
+11	accummenciano	SearchScreeningEvent	O
+12	tra	SearchScreeningEvent	B-datetime
+13	diciannove	SearchScreeningEvent	I-datetime
+14	sicond'	SearchScreeningEvent	I-datetime
+15	?	SearchScreeningEvent	O
+
+# id: 247
+# text-en: Add morten harket to this is puccini
+# text-it: Aggiungi morten harket a this is puccini
+# text: Aggiungi Morten Harket a This is Puccini
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	Morten	AddToPlaylist	B-artist
+3	Harket	AddToPlaylist	I-artist
+4	a	AddToPlaylist	O
+5	This	AddToPlaylist	B-playlist
+6	is	AddToPlaylist	I-playlist
+7	Puccini	AddToPlaylist	I-playlist
+
+# id: 248
+# text-en: Open Spotify and play a song from the twenties by Richard Harvey
+# text-it: Apri Spotify e riproduci una canzone degli anni venti di Richard Harvey
+# text: Apri Spotify e riproduci 'na canzone 'e ll' anni venti 'e Richard Harvey
+# intent: PlayMusic
+1	Apri	PlayMusic	O
+2	Spotify	PlayMusic	B-service
+3	e	PlayMusic	O
+4	riproduci	PlayMusic	O
+5	'na	PlayMusic	O
+6	canzone	PlayMusic	B-music_item
+7	'e	PlayMusic	O
+8	ll'	PlayMusic	O
+9	anni	PlayMusic	B-datetime
+10	venti	PlayMusic	I-datetime
+11	'e	PlayMusic	O
+12	Richard	PlayMusic	B-artist
+13	Harvey	PlayMusic	I-artist
+
+# id: 249
+# text-en: I want to book a restaurant
+# text-it: Vorrei prenotare un ristorante
+# text: Vuless' prenotà 'nu ristorante
+# intent: BookRestaurant
+1	Vuless'	BookRestaurant	O
+2	prenotà	BookRestaurant	O
+3	'nu	BookRestaurant	O
+4	ristorante	BookRestaurant	B-restaurant_type
+
+# id: 250
+# text-en: Play the album Vibrations by Marion Elise Raven
+# text-it: Riproduci l' album Vibrations di Marion Elise Raven
+# text: Riproduci l' album Vibrations 'e Marion Elise Raven
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	l'	PlayMusic	O
+3	album	PlayMusic	B-music_item
+4	Vibrations	PlayMusic	B-album
+5	'e	PlayMusic	O
+6	Marion	PlayMusic	B-artist
+7	Elise	PlayMusic	I-artist
+8	Raven	PlayMusic	I-artist
+
+# id: 251
+# text-en: add this artist to my Jazz playlist
+# text-it: aggiungi questo artista alla mia playlist Jazz
+# text: Aggiungi 'st' artista 'a playlist mia Jazz
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	'st'	AddToPlaylist	O
+3	artista	AddToPlaylist	B-music_item
+4	'a	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	mia	AddToPlaylist	B-reference
+7	Jazz	AddToPlaylist	B-playlist
+
+# id: 252
+# text-en: I want to find the show From Where to Eternity .
+# text-it: Vorrei trovare lo show From Where to Eternity .
+# text: Vuless' truvà 'o show From Where to Eternity
+# intent: SearchCreativeWork
+1	Vuless'	SearchCreativeWork	O
+2	truvà	SearchCreativeWork	O
+3	'o	SearchCreativeWork	O
+4	show	SearchCreativeWork	B-object_type
+5	From	SearchCreativeWork	B-object_name
+6	Where	SearchCreativeWork	I-object_name
+7	to	SearchCreativeWork	I-object_name
+8	Eternity	SearchCreativeWork	I-object_name
+
+# id: 253
+# text-en: play the top-twenty songs by The Kleptones on Spotify
+# text-it: riproduci le migliori venti canzoni di The Kleptones su Spotify
+# text: Riproduci 'e meglio vint' canzoni 'e The Kleptones 'ncoppo 'a Spotify
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	'e	PlayMusic	O
+3	meglio	PlayMusic	B-sort
+4	vint'	PlayMusic	I-sort
+5	canzoni	PlayMusic	O
+6	'e	PlayMusic	O
+7	The	PlayMusic	B-artist
+8	Kleptones	PlayMusic	I-artist
+9	'ncoppo	PlayMusic	O
+10	'a	PlayMusic	O
+11	Spotify	PlayMusic	B-service
+
+# id: 254
+# text-en: How will the weather be in six minutes close to Moosic
+# text-it: Come sarà il tempo tra sei minuti vicino a Moosic
+# text: Cumm' sarrà 'o tiempo tra sei minuti bicino a Moosic ?
+# intent: weather/find
+1	Cumm'	weather/find	O
+2	sarrà	weather/find	O
+3	'o	weather/find	O
+4	tiempo	weather/find	O
+5	tra	weather/find	B-datetime
+6	sei	weather/find	I-datetime
+7	minuti	weather/find	I-datetime
+8	bicino	weather/find	B-location
+9	a	weather/find	O
+10	Moosic	weather/find	B-location
+11	?	weather/find	O
+
+# id: 255
+# text-en: I wish to listen to some fifties music.
+# text-it: Vorrei ascoltare della musica anni cinquanta .
+# text: Vuless' sentì musica 'e ll' anni cinquanta
+# intent: PlayMusic
+1	Vuless'	PlayMusic	O
+2	sentì	PlayMusic	O
+3	musica	PlayMusic	O
+4	'e	PlayMusic	O
+5	ll'	PlayMusic	O
+6	anni	PlayMusic	B-datetime
+7	cinquanta	PlayMusic	I-datetime
+
+# id: 256
+# text-en: what time is Utamaro and His Five Women showing at Alamo Drafthouse Cinema
+# text-it: a che ora Utamaro and His Five Women viene proiettato all' Alamo Drafthouse Cinema
+# text: A che ora Utamaro and His Five Women ven' proiettato all' Alamo Drafthouse Cinema ?
+# intent: SearchScreeningEvent
+1	A	SearchScreeningEvent	O
+2	che	SearchScreeningEvent	O
+3	ora	SearchScreeningEvent	O
+4	Utamaro	SearchScreeningEvent	B-movie_name
+5	and	SearchScreeningEvent	I-movie_name
+6	His	SearchScreeningEvent	I-movie_name
+7	Five	SearchScreeningEvent	I-movie_name
+8	Women	SearchScreeningEvent	I-movie_name
+9	ven'	SearchScreeningEvent	O
+10	proiettato	SearchScreeningEvent	O
+11	all'	SearchScreeningEvent	O
+12	Alamo	SearchScreeningEvent	B-location
+13	Drafthouse	SearchScreeningEvent	I-location
+14	Cinema	SearchScreeningEvent	I-location
+15	?	SearchScreeningEvent	O
+
+# id: 257
+# text-en: Find a photograph of Adventure Time: The Secret of the Nameless Kingdom
+# text-it: Trova una fotografia di Adventure Time: The Secret of the Nameless Kingdom
+# text: Truov' 'na fotografia 'e Adventure Time : The Secret of the Nameless Kingdom
+# intent: SearchCreativeWork
+1	Truov'	SearchCreativeWork	O
+2	'na	SearchCreativeWork	O
+3	fotografia	SearchCreativeWork	B-object_type
+4	'e	SearchCreativeWork	O
+5	Adventure	SearchCreativeWork	B-object_name
+6	Time	SearchCreativeWork	I-object_name
+7	:	SearchCreativeWork	I-object_name
+8	The	SearchCreativeWork	I-object_name
+9	Secret	SearchCreativeWork	I-object_name
+10	of	SearchCreativeWork	I-object_name
+11	the	SearchCreativeWork	I-object_name
+12	Nameless	SearchCreativeWork	I-object_name
+13	Kingdom	SearchCreativeWork	I-object_name
+
+# id: 258
+# text-en: put Do You Love Me on my acoustic soul playlist
+# text-it: metti Do You Love Me nella mia playlist acoustic soul
+# text: Miett' Do You Love Me int' 'a playlist mia Acoustic Soul
+# intent: AddToPlaylist
+1	Miett'	AddToPlaylist	O
+2	Do	AddToPlaylist	B-entity_name
+3	You	AddToPlaylist	I-entity_name
+4	Love	AddToPlaylist	I-entity_name
+5	Me	AddToPlaylist	I-entity_name
+6	int'	AddToPlaylist	O
+7	'a	AddToPlaylist	O
+8	playlist	AddToPlaylist	O
+9	mia	AddToPlaylist	B-reference
+10	Acoustic	AddToPlaylist	B-playlist
+11	Soul	AddToPlaylist	I-playlist
+
+# id: 259
+# text-en: Play me the best Charles Neidich song
+# text-it: Rirpoducimi la migliore canzone di Charles Neidich
+# text: Riproducimi 'a meglio canzone 'e Charles Neidich
+# intent: PlayMusic
+1	Riproducimi	PlayMusic	O
+2	'a	PlayMusic	O
+3	meglio	PlayMusic	B-sort
+4	canzone	PlayMusic	B-music_item
+5	'e	PlayMusic	O
+6	Charles	PlayMusic	B-artist
+7	Neidich	PlayMusic	I-artist
+
+# id: 260
+# text-en: On may the thirteenth, 2037 what will it be like in Wilderville , Montenegro
+# text-it: Il tredici di maggio , 2037 come sarà in Wilderville , Montenegro
+# text: O tririci 'e maggio 2037 cumm' sarrà a Wilderville Montenegro ?
+# intent: weather/find
+1	O	weather/find	B-datetime
+2	tririci	weather/find	I-datetime
+3	'e	weather/find	I-datetime
+4	maggio	weather/find	I-datetime
+5	2037	weather/find	I-datetime
+6	cumm'	weather/find	O
+7	sarrà	weather/find	O
+8	a	weather/find	O
+9	Wilderville	weather/find	B-location
+10	Montenegro	weather/find	B-location
+11	?	weather/find	O
+
+# id: 261
+# text-en: Find movie schedules for ArcLight Hollywood .
+# text-it: Trova gli orari dei film all' ArcLight Hollywood .
+# text: Truov' ll' orari d' 'e film all' ArcLight Hollywood
+# intent: SearchScreeningEvent
+1	Truov'	SearchScreeningEvent	O
+2	ll'	SearchScreeningEvent	O
+3	orari	SearchScreeningEvent	B-object_type
+4	d'	SearchScreeningEvent	I-object_type
+5	'e	SearchScreeningEvent	I-object_type
+6	film	SearchScreeningEvent	I-object_type
+7	all'	SearchScreeningEvent	O
+8	ArcLight	SearchScreeningEvent	B-location
+9	Hollywood	SearchScreeningEvent	I-location
+
+# id: 262
+# text-en: Find a TV series called Church of the Truly Warped .
+# text-it: Trova una serie TV chiamata Church of the Truly Warped .
+# text: Truov' 'na serie TV chiammata Church of the Truly Warped
+# intent: SearchCreativeWork
+1	Truov'	SearchCreativeWork	O
+2	'na	SearchCreativeWork	O
+3	serie	SearchCreativeWork	B-object_type
+4	TV	SearchCreativeWork	I-object_type
+5	chiammata	SearchCreativeWork	O
+6	Church	SearchCreativeWork	B-object_name
+7	of	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Truly	SearchCreativeWork	I-object_name
+10	Warped	SearchCreativeWork	I-object_name
+
+# id: 263
+# text-en: what is the forecast for in eighteen minutes here for colder temps
+# text-it: qual è la previsione tra diciotto minuti qui per le temperature più fredde
+# text: Qual è 'a previsione tra diciotto minuti ca' p' 'e temperature cchiu' fredde ?
+# intent: weather/find
+1	Qual	weather/find	O
+2	è	weather/find	O
+3	'a	weather/find	O
+4	previsione	weather/find	O
+5	tra	weather/find	B-datetime
+6	diciotto	weather/find	I-datetime
+7	minuti	weather/find	I-datetime
+8	ca'	weather/find	B-location
+9	p'	weather/find	O
+10	'e	weather/find	O
+11	temperature	weather/find	O
+12	cchiu'	weather/find	B-condition_temperature
+13	fredde	weather/find	I-condition_temperature
+14	?	weather/find	O
+
+# id: 264
+# text-en: Book a restaurant at sixteen o'clock in SC
+# text-it: Prenota un ristorante alle sedici in punto a SC
+# text: Prenota 'nu ristorante 'e sirici in punto a SC
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	'nu	BookRestaurant	O
+3	ristorante	BookRestaurant	B-restaurant_type
+4	'e	BookRestaurant	O
+5	sirici	BookRestaurant	B-datetime
+6	in	BookRestaurant	I-datetime
+7	punto	BookRestaurant	I-datetime
+8	a	BookRestaurant	O
+9	SC	BookRestaurant	B-location
+
+# id: 265
+# text-en: stacy watson and adriana want to go to the best osteria in Hallowell Minnesota this afternoon
+# text-it: stacy watson e adriana vogliono andare nella migliore osteria di Hallowell Minnesota questo pomeriggio
+# text: Stacy Watson e Adriana vonn' ì int' 'a meglio osteria 'e Hallowell Minnesota 'stu pomeriggio
+# intent: BookRestaurant
+1	Stacy	BookRestaurant	B-party_size_description
+2	Watson	BookRestaurant	I-party_size_description
+3	e	BookRestaurant	I-party_size_description
+4	Adriana	BookRestaurant	I-party_size_description
+5	vonn'	BookRestaurant	O
+6	ì	BookRestaurant	O
+7	int'	BookRestaurant	O
+8	'a	BookRestaurant	O
+9	meglio	BookRestaurant	B-sort
+10	osteria	BookRestaurant	B-restaurant_type
+11	'e	BookRestaurant	O
+12	Hallowell	BookRestaurant	B-location
+13	Minnesota	BookRestaurant	B-location
+14	'stu	BookRestaurant	O
+15	pomeriggio	BookRestaurant	B-datetime
+
+# id: 266
+# text-en: is it going to be chilly in Western Sahara in 13 hours
+# text-it: farà freddo nel Sahara occidentale tra 13 ore
+# text: Farrà fridd' int' 'o Sahara occidentale tra 13 ore ?
+# intent: weather/find
+1	Farrà	weather/find	O
+2	fridd'	weather/find	B-condition_temperature
+3	int'	weather/find	O
+4	'o	weather/find	O
+5	Sahara	weather/find	B-location
+6	occidentale	weather/find	I-location
+7	tra	weather/find	O
+8	13	weather/find	B-datetime
+9	ore	weather/find	I-datetime
+10	?	weather/find	O
+
+# id: 267
+# text-en: add Armen Movsessian to this is skepta playlist
+# text-it: aggiungi Armen Movsessian alla playlist this is skepta
+# text: Aggiungi Armen Movsessian 'a playlist mia This is Skepta
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	Armen	AddToPlaylist	B-artist
+3	Movsessian	AddToPlaylist	I-artist
+4	'a	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	mia	AddToPlaylist	O
+7	This	AddToPlaylist	B-playlist
+8	is	AddToPlaylist	I-playlist
+9	Skepta	AddToPlaylist	I-playlist
+
+# id: 268
+# text-en: Rate this current essay three out of 6 stars
+# text-it: Vota questo saggio tre su 6 stelle
+# text: Vota 'stu saggio tre 'ncoppo 'a 6 stelle
+# intent: RateBook
+1	Vota	RateBook	O
+2	'stu	RateBook	B-object_select
+3	saggio	RateBook	B-object_type
+4	tre	RateBook	B-rating_value
+5	'ncoppo	RateBook	O
+6	'a	RateBook	O
+7	6	RateBook	B-best_rating
+8	stelle	RateBook	B-rating_unit
+
+# id: 269
+# text-en: Find a reservation for three at a top-rated restaurant
+# text-it: Trova una prenotazione per tre in un ristorante tra i più votati
+# text: Truov' 'na prenotazione pe' tre int' a 'nu ristorante tra 'e cchiu' vutat'
+# intent: BookRestaurant
+1	Truov'	BookRestaurant	O
+2	'na	BookRestaurant	O
+3	prenotazione	BookRestaurant	O
+4	pe'	BookRestaurant	O
+5	tre	BookRestaurant	B-party_size_number
+6	int'	BookRestaurant	O
+7	a	BookRestaurant	O
+8	'nu	BookRestaurant	O
+9	ristorante	BookRestaurant	B-restaurant_type
+10	tra	BookRestaurant	O
+11	'e	BookRestaurant	O
+12	cchiu'	BookRestaurant	B-sort
+13	vutat'	BookRestaurant	I-sort
+
+# id: 270
+# text-en: rate the current novel 0 of 6
+# text-it: vota questo romanzo 0 su 6
+# text: Vota 'stu romanzo 0 'ncoppo a 6
+# intent: RateBook
+1	Vota	RateBook	O
+2	'stu	RateBook	B-object_select
+3	romanzo	RateBook	B-object_type
+4	0	RateBook	B-rating_value
+5	'ncoppo	RateBook	O
+6	a	RateBook	O
+7	6	RateBook	B-best_rating
+
+# id: 271
+# text-en: I'd like to see the showtimes for Silly Movie 2.0 at the movie house
+# text-it: Mi piacerebbe vedere gli orari degli spettacoli per Silly Movie 2 . 0 al cinema
+# text: Mi piacesse 'e verè ll' orari d' 'e spettacoli pe' Silly Movie 2.0 'o cinema
+# intent: SearchScreeningEvent
+1	Mi	SearchScreeningEvent	O
+2	piacesse	SearchScreeningEvent	O
+3	'e	SearchScreeningEvent	O
+4	verè	SearchScreeningEvent	O
+5	ll'	SearchScreeningEvent	O
+6	orari	SearchScreeningEvent	O
+7	d'	SearchScreeningEvent	O
+8	'e	SearchScreeningEvent	O
+9	spettacoli	SearchScreeningEvent	O
+10	pe'	SearchScreeningEvent	O
+11	Silly	SearchScreeningEvent	B-movie_name
+12	Movie	SearchScreeningEvent	I-movie_name
+13	2.0	SearchScreeningEvent	I-movie_name
+14	'o	SearchScreeningEvent	O
+15	cinema	SearchScreeningEvent	B-object_location_type
+
+# id: 272
+# text-en: Will it get chillier in Sinclair in 8 hours
+# text-it: Diventerà più freddo a Sinclair tra 8 ore
+# text: Diventarrà cchiu' fridd' a Sinclair tra 8 ore ?
+# intent: weather/find
+1	Diventarrà	weather/find	O
+2	cchiu'	weather/find	O
+3	fridd'	weather/find	B-condition_temperature
+4	a	weather/find	O
+5	Sinclair	weather/find	B-location
+6	tra	weather/find	B-datetime
+7	8	weather/find	I-datetime
+8	ore	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: 273
+# text-en: add this tune to my in the arms of a woman
+# text-it: aggiungi questo brano alla mia in the arms of a woman
+# text: Aggiungi 'stu brano a playlist mia In the Arms of a Woman
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	'stu	AddToPlaylist	O
+3	brano	AddToPlaylist	B-music_item
+4	a	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	mia	AddToPlaylist	B-reference
+7	In	AddToPlaylist	B-playlist
+8	the	AddToPlaylist	I-playlist
+9	Arms	AddToPlaylist	I-playlist
+10	of	AddToPlaylist	I-playlist
+11	a	AddToPlaylist	I-playlist
+12	Woman	AddToPlaylist	I-playlist
+
+# id: 274
+# text-en: book for 3 in U.S. Virgin Islands
+# text-it: prenota per 3 alle Isole Vergini americane
+# text: Prenota pe' 3 all' Isole Vergini americane
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	pe'	BookRestaurant	O
+3	3	BookRestaurant	B-party_size_number
+4	all'	BookRestaurant	O
+5	Isole	BookRestaurant	B-location
+6	Vergini	BookRestaurant	I-location
+7	americane	BookRestaurant	I-location
+
+# id: 275
+# text-en: Will it be chillier in La Mesa ?
+# text-it: Sarà più freddo a La Mesa ?
+# text: Sarrà cchiu' fridd' a La Mesa ?
+# intent: weather/find
+1	Sarrà	weather/find	O
+2	cchiu'	weather/find	O
+3	fridd'	weather/find	B-condition_temperature
+4	a	weather/find	O
+5	La	weather/find	B-location
+6	Mesa	weather/find	I-location
+7	?	weather/find	O
+
+# id: 276
+# text-en: Rate this essay 2 out of 6 stars
+# text-it: Vota questo saggio 2 su 6 stelle
+# text: Vota 'stu saggio 2 'ncoppo a 6 stelle
+# intent: RateBook
+1	Vota	RateBook	O
+2	'stu	RateBook	B-object_select
+3	saggio	RateBook	B-object_type
+4	2	RateBook	B-rating_value
+5	'ncoppo	RateBook	O
+6	a	RateBook	O
+7	6	RateBook	B-best_rating
+8	stelle	RateBook	B-rating_unit
+
+# id: 277
+# text-en: Give three stars / 6 to My Sister, My Love
+# text-it: Dai tre stelle / 6 a My Sister , My Love
+# text: Rà tre stelle /6 a My Sister My Love
+# intent: RateBook
+1	Rà	RateBook	O
+2	tre	RateBook	B-rating_value
+3	stelle	RateBook	B-rating_unit
+4	/	RateBook	O
+5	6	RateBook	B-best_rating
+6	a	RateBook	O
+7	My	RateBook	B-object_name
+8	Sister	RateBook	I-object_name
+9	,	RateBook	I-object_name
+10	My	RateBook	I-object_name
+11	Love	RateBook	I-object_name
+
+# id: 278
+# text-en: Find the movie schedule for Marcus Corporation .
+# text-it: Trova il programma dei film al Marcus Corporation .
+# text: Truov' 'o programma d' 'e film 'o Marcus Corporation
+# intent: SearchScreeningEvent
+1	Truov'	SearchScreeningEvent	O
+2	'o	SearchScreeningEvent	O
+3	programma	SearchScreeningEvent	B-object_type
+4	d'	SearchScreeningEvent	I-object_type
+5	'e	SearchScreeningEvent	I-object_type
+6	film	SearchScreeningEvent	I-object_type
+7	'o	SearchScreeningEvent	O
+8	Marcus	SearchScreeningEvent	B-location
+9	Corporation	SearchScreeningEvent	I-location
+
+# id: 279
+# text-en: What movies are scheduled in the neighbourhood ?
+# text-it: Quali film sono in programma nel quartiere ?
+# text: Quali film song' in programma int' 'o quartiere ?
+# intent: SearchScreeningEvent
+1	Quali	SearchScreeningEvent	O
+2	film	SearchScreeningEvent	B-movie_type
+3	song'	SearchScreeningEvent	O
+4	in	SearchScreeningEvent	O
+5	programma	SearchScreeningEvent	O
+6	int'	SearchScreeningEvent	B-location
+7	'o	SearchScreeningEvent	I-location
+8	quartiere	SearchScreeningEvent	I-location
+9	?	SearchScreeningEvent	O
+
+# id: 280
+# text-en: add cross bones style to Guest List TaKe
+# text-it: aggiungi cross bones style a Guest List TaKe
+# text: Aggiungi Cross Bones Style a Guest List Take
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	Cross	AddToPlaylist	B-entity_name
+3	Bones	AddToPlaylist	I-entity_name
+4	Style	AddToPlaylist	I-entity_name
+5	a	AddToPlaylist	O
+6	Guest	AddToPlaylist	B-playlist
+7	List	AddToPlaylist	I-playlist
+8	Take	AddToPlaylist	I-playlist
+
+# id: 281
+# text-en: Find a reservation for a tavern that serves pizzas for a party of 6
+# text-it: Trova una prenotazione per una taverna che serve pizze per una festa di 6
+# text: Truov' 'na prenotazione pe' 'na taverna ca serve pizze pe' 'na festa 'e 6
+# intent: BookRestaurant
+1	Truov'	BookRestaurant	O
+2	'na	BookRestaurant	O
+3	prenotazione	BookRestaurant	O
+4	pe'	BookRestaurant	O
+5	'na	BookRestaurant	O
+6	taverna	BookRestaurant	B-restaurant_type
+7	ca	BookRestaurant	O
+8	serve	BookRestaurant	O
+9	pizze	BookRestaurant	B-served_dish
+10	pe'	BookRestaurant	O
+11	'na	BookRestaurant	O
+12	festa	BookRestaurant	O
+13	'e	BookRestaurant	O
+14	6	BookRestaurant	B-party_size_number
+
+# id: 282
+# text-en: Rate The Art of Nijinsky 5 points
+# text-it: Vota The Art of Nijinsky 5 punti
+# text: Vota The Art of Nijinsky 5 punti
+# intent: RateBook
+1	Vota	RateBook	O
+2	The	RateBook	B-object_name
+3	Art	RateBook	I-object_name
+4	of	RateBook	I-object_name
+5	Nijinsky	RateBook	I-object_name
+6	5	RateBook	B-rating_value
+7	punti	RateBook	B-rating_unit
+
+# id: 283
+# text-en: add Jacob Hoggard to my get going playlist
+# text-it: aggiungi Jacob Hoggard alla mia playlist get going
+# text: Aggiungi Jacob Hoggard 'a playlist mia Get Going
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	Jacob	AddToPlaylist	B-artist
+3	Hoggard	AddToPlaylist	I-artist
+4	'a	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	mia	AddToPlaylist	B-reference
+7	Get	AddToPlaylist	B-playlist
+8	Going	AddToPlaylist	I-playlist
+
+# id: 284
+# text-en: Give me a list of movie times for films in the area .
+# text-it: Dammi una lista di orari dei film per i film nella zona .
+# text: Ramm' 'na lista 'e ll' orari d' 'e film p' 'e film int' 'a zona
+# intent: SearchScreeningEvent
+1	Ramm'	SearchScreeningEvent	O
+2	'na	SearchScreeningEvent	O
+3	lista	SearchScreeningEvent	O
+4	'e	SearchScreeningEvent	O
+5	ll'	SearchScreeningEvent	O
+6	orari	SearchScreeningEvent	B-object_type
+7	d'	SearchScreeningEvent	I-object_type
+8	'e	SearchScreeningEvent	I-object_type
+9	film	SearchScreeningEvent	I-object_type
+10	p'	SearchScreeningEvent	O
+11	'e	SearchScreeningEvent	O
+12	film	SearchScreeningEvent	B-movie_type
+13	int'	SearchScreeningEvent	B-location
+14	'a	SearchScreeningEvent	I-location
+15	zona	SearchScreeningEvent	I-location
+
+# id: 285
+# text-en: find The Ultimate Gift , a television show
+# text-it: trova The Ultimate Gift , un programma televisivo
+# text: Truov' The Ultimate Gift,'nu programma televisivo
+# intent: SearchCreativeWork
+1	Truov'	SearchCreativeWork	O
+2	The	SearchCreativeWork	B-object_name
+3	Ultimate	SearchCreativeWork	I-object_name
+4	Gift	SearchCreativeWork	I-object_name
+5	,'nu	SearchCreativeWork	O
+6	programma	SearchCreativeWork	B-object_type
+7	televisivo	SearchCreativeWork	I-object_type
+
+# id: 286
+# text-en: What's the weather close-by Triumph
+# text-it: Che tempo fa vicino a Triumph
+# text: Che tiempo fa bicino a Triumph
+# intent: weather/find
+1	Che	weather/find	O
+2	tiempo	weather/find	O
+3	fa	weather/find	O
+4	bicino	weather/find	B-location
+5	a	weather/find	O
+6	Triumph	weather/find	B-location
+
+# id: 287
+# text-en: when can i see A Handful of Dust in a movie theatre
+# text-it: quando posso vedere A Handful of Dust in un cinema
+# text: Quann' pozz' verè A Handful of Dust int' 'a 'nu cinema ?
+# intent: SearchScreeningEvent
+1	Quann'	SearchScreeningEvent	O
+2	pozz'	SearchScreeningEvent	O
+3	verè	SearchScreeningEvent	O
+4	A	SearchScreeningEvent	B-movie_name
+5	Handful	SearchScreeningEvent	I-movie_name
+6	of	SearchScreeningEvent	I-movie_name
+7	Dust	SearchScreeningEvent	I-movie_name
+8	int'	SearchScreeningEvent	O
+9	'a	SearchScreeningEvent	O
+10	'nu	SearchScreeningEvent	O
+11	cinema	SearchScreeningEvent	B-object_location_type
+12	?	SearchScreeningEvent	O
+
+# id: 288
+# text-en: Please put an album by Joseph Meyer on my POP GOES THE 80s playlist
+# text-it: Per favore metti un album di Joseph Meyer nella mia playlist POP GOES THE 80s
+# text: Pe' favore miett' 'n album 'e Joseph Meyer int' 'a playlist mia POP GOES THE 80s
+# intent: AddToPlaylist
+1	Pe'	AddToPlaylist	O
+2	favore	AddToPlaylist	O
+3	miett'	AddToPlaylist	O
+4	'n	AddToPlaylist	O
+5	album	AddToPlaylist	B-music_item
+6	'e	AddToPlaylist	O
+7	Joseph	AddToPlaylist	B-artist
+8	Meyer	AddToPlaylist	I-artist
+9	int'	AddToPlaylist	O
+10	'a	AddToPlaylist	O
+11	playlist	AddToPlaylist	O
+12	mia	AddToPlaylist	B-reference
+13	POP	AddToPlaylist	B-playlist
+14	GOES	AddToPlaylist	I-playlist
+15	THE	AddToPlaylist	I-playlist
+16	80s	AddToPlaylist	I-playlist
+
+# id: 289
+# text-en: show of From South Africa to South Carolina
+# text-it: spettacolo di From South Africa to South Carolina
+# text: Spettacolo 'e From South Africa to South Carolina
+# intent: SearchCreativeWork
+1	Spettacolo	SearchCreativeWork	B-object_type
+2	'e	SearchCreativeWork	O
+3	From	SearchCreativeWork	B-object_name
+4	South	SearchCreativeWork	I-object_name
+5	Africa	SearchCreativeWork	I-object_name
+6	to	SearchCreativeWork	I-object_name
+7	South	SearchCreativeWork	I-object_name
+8	Carolina	SearchCreativeWork	I-object_name
+
+# id: 290
+# text-en: book a top-rated osteria seven weeks from now
+# text-it: prenota un osteria tra le più votate entro sette settimane da adesso
+# text: Prenota n' osteria tra 'e cchiu' vutate entro sette semman' 'a mo'
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	n'	BookRestaurant	O
+3	osteria	BookRestaurant	B-restaurant_type
+4	tra	BookRestaurant	O
+5	'e	BookRestaurant	O
+6	cchiu'	BookRestaurant	B-sort
+7	vutate	BookRestaurant	I-sort
+8	entro	BookRestaurant	O
+9	sette	BookRestaurant	B-datetime
+10	semman'	BookRestaurant	I-datetime
+11	'a	BookRestaurant	I-datetime
+12	mo'	BookRestaurant	I-datetime
+
+# id: 291
+# text-en: What movie house is showing Flower and Snake at 08:56:29 ?
+# text-it: Che cinema proietta Flower and Snake alle 08:56:29 ?
+# text: Che cinema proietta Flower and Snake 'e ll' 08.56:29
+# intent: SearchScreeningEvent
+1	Che	SearchScreeningEvent	O
+2	cinema	SearchScreeningEvent	B-object_location_type
+3	proietta	SearchScreeningEvent	O
+4	Flower	SearchScreeningEvent	B-movie_name
+5	and	SearchScreeningEvent	I-movie_name
+6	Snake	SearchScreeningEvent	I-movie_name
+7	'e	SearchScreeningEvent	O
+8	ll'	SearchScreeningEvent	O
+9	08.56:29	SearchScreeningEvent	B-datetime
+
+# id: 292
+# text-en: Find a restaurant in FM that servec quiche
+# text-it: Trova un ristorante in FM che serve quiche
+# text: Truov' 'nu ristorante in FM ca' serve quiche
+# intent: BookRestaurant
+1	Truov'	BookRestaurant	O
+2	'nu	BookRestaurant	O
+3	ristorante	BookRestaurant	B-restaurant_type
+4	in	BookRestaurant	O
+5	FM	BookRestaurant	B-location
+6	ca'	BookRestaurant	O
+7	serve	BookRestaurant	O
+8	quiche	BookRestaurant	B-served_dish
+
+# id: 293
+# text-en: Book a reservation for 7 people at The French Laundry on june the 8th, 2029
+# text-it: Prenota per 7 persone al The French Laundry per l' 8 di giugno , 2029
+# text: Prenota pe' 7 perzone al The French Laundry pe' l' 8 giugno 2029
+# intent: BookRestaurant
+1	Prenota	BookRestaurant	O
+2	pe'	BookRestaurant	O
+3	7	BookRestaurant	B-party_size_number
+4	perzone	BookRestaurant	O
+5	al	BookRestaurant	O
+6	The	BookRestaurant	B-restaurant_name
+7	French	BookRestaurant	I-restaurant_name
+8	Laundry	BookRestaurant	I-restaurant_name
+9	pe'	BookRestaurant	O
+10	l'	BookRestaurant	O
+11	8	BookRestaurant	B-datetime
+12	giugno	BookRestaurant	I-datetime
+13	2029	BookRestaurant	I-datetime
+
+# id: 294
+# text-en: play fourties tunes
+# text-it: riproduci brani anni quaranta
+# text: Riproduci brani anni quaranta
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	brani	PlayMusic	O
+3	anni	PlayMusic	B-datetime
+4	quaranta	PlayMusic	I-datetime
+
+# id: 295
+# text-en: When will the Santikos Theatres be showing animated movies
+# text-it: Quando il Santikos Theatres proietterà film d'animazione
+# text: Quando 'o Santikos Theaters proiettarrà film d' animazione ?
+# intent: SearchScreeningEvent
+1	Quando	SearchScreeningEvent	O
+2	'o	SearchScreeningEvent	O
+3	Santikos	SearchScreeningEvent	B-location
+4	Theaters	SearchScreeningEvent	I-location
+5	proiettarrà	SearchScreeningEvent	O
+6	film	SearchScreeningEvent	B-movie_type
+7	d'	SearchScreeningEvent	I-movie_type
+8	animazione	SearchScreeningEvent	I-movie_type
+9	?	SearchScreeningEvent	O
+
+# id: 296
+# text-en: Play music on Itunes
+# text-it: Riproduci musica su Itunes
+# text: Riproduci musica su Itunes
+# intent: PlayMusic
+1	Riproduci	PlayMusic	O
+2	musica	PlayMusic	O
+3	su	PlayMusic	O
+4	Itunes	PlayMusic	B-service
+
+# id: 297
+# text-en: show book name Straight No Chase
+# text-it: mostra libro chiamato Straight No Chase
+# text: Famm' verè 'o libro chiammato Straight No Chase
+# intent: SearchCreativeWork
+1	Famm'	SearchCreativeWork	O
+2	verè	SearchCreativeWork	O
+3	'o	SearchCreativeWork	O
+4	libro	SearchCreativeWork	B-object_type
+5	chiammato	SearchCreativeWork	O
+6	Straight	SearchCreativeWork	B-object_name
+7	No	SearchCreativeWork	I-object_name
+8	Chase	SearchCreativeWork	I-object_name
+
+# id: 298
+# text-en: Find the movie schedules for movies close by
+# text-it: Trova gli orari dei film per i film nelle vicinanze
+# text: Truov' ll' orari d' 'e film int' 'e bicinanze
+# intent: SearchScreeningEvent
+1	Truov'	SearchScreeningEvent	O
+2	ll'	SearchScreeningEvent	O
+3	orari	SearchScreeningEvent	B-object_type
+4	d'	SearchScreeningEvent	I-object_type
+5	'e	SearchScreeningEvent	I-object_type
+6	film	SearchScreeningEvent	I-object_type
+7	pe'	SearchScreeningEvent	O
+8	'e	SearchScreeningEvent	O
+9	film	SearchScreeningEvent	B-movie_type
+10	int'	SearchScreeningEvent	B-location
+11	'e	SearchScreeningEvent	I-location
+12	bicinanze	SearchScreeningEvent	I-location
+
+# id: 299
+# text-en: this winter , meredith, betty and erika want to food at a gastropub that is in the same area as fran's location .
+# text-it: questo inverno , meredith , betty e erika vogliono mangiare in un gastropub che si trova nella stessa zona di fran .
+# text: St' inverno Meredith,Betty e Erika vonn' mangià int' a 'nu gastropub ca si trova int' 'a stessa zona 'e Fran
+# intent: BookRestaurant
+1	St'	BookRestaurant	B-datetime
+2	inverno	BookRestaurant	I-datetime
+3	Meredith	BookRestaurant	B-party_size_description
+4	,	BookRestaurant	I-party_size_description
+5	Betty	BookRestaurant	I-party_size_description
+6	e	BookRestaurant	I-party_size_description
+7	Erika	BookRestaurant	I-party_size_description
+8	vonn'	BookRestaurant	O
+9	mangià	BookRestaurant	O
+10	int'	BookRestaurant	O
+11	a	BookRestaurant	O
+12	'nu	BookRestaurant	O
+13	gastropub	BookRestaurant	B-restaurant_type
+14	ca	BookRestaurant	O
+15	si	BookRestaurant	O
+16	trova	BookRestaurant	O
+17	int'	BookRestaurant	B-location
+18	'a	BookRestaurant	I-location
+19	stessa	BookRestaurant	I-location
+20	zona	BookRestaurant	I-location
+21	'e	BookRestaurant	O
+22	Fran	BookRestaurant	B-location
+
+# id: 300
+# text-en: Add tune to my Para comer
+# text-it: Aggiungi brano alla mia Para comer
+# text: Aggiungi brano 'a mia Para Comer
+# intent: AddToPlaylist
+1	Aggiungi	AddToPlaylist	O
+2	brano	AddToPlaylist	B-music_item
+3	'a	AddToPlaylist	O
+4	mia	AddToPlaylist	B-reference
+5	Para	AddToPlaylist	B-playlist
+6	Comer	AddToPlaylist	I-playlist
+

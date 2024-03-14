@@ -1,0 +1,3754 @@
+# id: 1
+# text-en: Is it going to rain today?
+# text: Apakah akan hujan hari ini?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	hujan	weather/find	B-weather/attribute
+4	hari	weather/find	B-datetime
+5	ini	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 2
+# text-en: how hot is it going to be today
+# text: akan seberapa panas hari ini
+# intent: weather/find
+1	akan	weather/find	O
+2	seberapa	weather/find	O
+3	panas	weather/find	B-weather/attribute
+4	hari	weather/find	B-datetime
+5	ini	weather/find	I-datetime
+
+# id: 3
+# text-en: How hot is it?
+# text: Sepanas apa?
+# intent: weather/find
+1	Sepanas	weather/find	B-weather/attribute
+2	apa	weather/find	O
+3	?	weather/find	O
+
+# id: 4
+# text-en: Will it be sunny today?
+# text: Akankah cerah hari ini?
+# intent: weather/find
+1	Akankah	weather/find	O
+2	cerah	weather/find	B-weather/attribute
+3	hari	weather/find	B-datetime
+4	ini	weather/find	I-datetime
+5	?	weather/find	O
+
+# id: 5
+# text-en: Is it cloudy today?
+# text: Apakah hari ini mendung?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	hari	weather/find	B-datetime
+3	ini	weather/find	I-datetime
+4	mendung	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id: 6
+# text-en: Cancel all my reminders.
+# text: Batalkan semua pengingat saya.
+# intent: reminder/cancel_reminder
+1	Batalkan	reminder/cancel_reminder	O
+2	semua	reminder/cancel_reminder	B-reference
+3	pengingat	reminder/cancel_reminder	O
+4	saya	reminder/cancel_reminder	B-reference
+5	.	reminder/cancel_reminder	O
+
+# id: 7
+# text-en: what alarms do I have set?
+# text: alarm apa yang sudah saya setel?
+# intent: alarm/show_alarms
+1	alarm	alarm/show_alarms	O
+2	apa	alarm/show_alarms	O
+3	yang	alarm/show_alarms	O
+4	sudah	alarm/show_alarms	O
+5	saya	alarm/show_alarms	O
+6	setel	alarm/show_alarms	O
+7	?	alarm/show_alarms	O
+
+# id: 8
+# text-en: I need an alarm for 5pm to remind me to take my medicine
+# text: Saya perlu sebuah alarm pada jam 5 sore untuk mengingatkan saya meminum obat saya
+# intent: alarm/set_alarm
+1	Saya	alarm/set_alarm	O
+2	perlu	alarm/set_alarm	O
+3	sebuah	alarm/set_alarm	O
+4	alarm	alarm/set_alarm	O
+5	pada	alarm/set_alarm	O
+6	jam	alarm/set_alarm	B-datetime
+7	5	alarm/set_alarm	I-datetime
+8	sore	alarm/set_alarm	I-datetime
+9	untuk	alarm/set_alarm	O
+10	mengingatkan	alarm/set_alarm	O
+11	saya	alarm/set_alarm	O
+12	meminum	alarm/set_alarm	B-reminder/todo
+13	obat	alarm/set_alarm	I-reminder/todo
+14	saya	alarm/set_alarm	I-reminder/todo
+
+# id: 9
+# text-en: set alarm for every 3 minutes
+# text: setel alarm untuk setiap 3 menit
+# intent: alarm/set_alarm
+1	setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	untuk	alarm/set_alarm	O
+4	setiap	alarm/set_alarm	B-recurring_datetime
+5	3	alarm/set_alarm	I-recurring_datetime
+6	menit	alarm/set_alarm	I-recurring_datetime
+
+# id: 10
+# text-en: Is it going to storm today?
+# text: Apakah akan badai hari ini?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	badai	weather/find	B-weather/attribute
+4	hari	weather/find	B-datetime
+5	ini	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 11
+# text-en: Cancel this afternoon's alarm.
+# text: Batalkan alarm siang ini.
+# intent: alarm/cancel_alarm
+1	Batalkan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+3	siang	alarm/cancel_alarm	B-datetime
+4	ini	alarm/cancel_alarm	I-datetime
+5	.	alarm/cancel_alarm	O
+
+# id: 12
+# text-en: Is it going to rain next week
+# text: Apakah akan hujan minggu depan
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	hujan	weather/find	B-weather/attribute
+4	minggu	weather/find	B-datetime
+5	depan	weather/find	I-datetime
+
+# id: 13
+# text-en: What's next week's forecast?
+# text: Bagaimana perkiraan minggu depan?
+# intent: weather/find
+1	Bagaimana	weather/find	O
+2	perkiraan	weather/find	O
+3	minggu	weather/find	B-datetime
+4	depan	weather/find	I-datetime
+5	?	weather/find	O
+
+# id: 14
+# text-en: Read me my reminders.
+# text: Bacakan pengingat saya.
+# intent: reminder/show_reminders
+1	Bacakan	reminder/show_reminders	O
+2	pengingat	reminder/show_reminders	O
+3	saya	reminder/show_reminders	B-reference
+4	.	reminder/show_reminders	O
+
+# id: 15
+# text-en: Show all alarms
+# text: Tampilkan semua alarm
+# intent: alarm/show_alarms
+1	Tampilkan	alarm/show_alarms	O
+2	semua	alarm/show_alarms	B-reference
+3	alarm	alarm/show_alarms	O
+
+# id: 16
+# text-en: Alarm every five minutes for 20 minutes please
+# text: Tolong alarm setiap lima menit selama 20 menit
+# intent: alarm/set_alarm
+1	Tolong	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	setiap	alarm/set_alarm	B-recurring_datetime
+4	lima	alarm/set_alarm	I-recurring_datetime
+5	menit	alarm/set_alarm	I-recurring_datetime
+6	selama	alarm/set_alarm	I-recurring_datetime
+7	20	alarm/set_alarm	I-recurring_datetime
+8	menit	alarm/set_alarm	I-recurring_datetime
+
+# id: 17
+# text-en: Change tomorrow mornings alarm to 6 am.
+# text: Ubah alarm besok pagi menjadi jam 6 pagi.
+# intent: alarm/modify_alarm
+1	Ubah	alarm/modify_alarm	O
+2	alarm	alarm/modify_alarm	O
+3	besok	alarm/modify_alarm	B-datetime
+4	pagi	alarm/modify_alarm	I-datetime
+5	menjadi	alarm/modify_alarm	O
+6	jam	alarm/modify_alarm	B-datetime
+7	6	alarm/modify_alarm	I-datetime
+8	pagi	alarm/modify_alarm	I-datetime
+9	.	alarm/modify_alarm	O
+
+# id: 18
+# text-en: cancel all reminders
+# text: batalkan semua pengingat
+# intent: reminder/cancel_reminder
+1	batalkan	reminder/cancel_reminder	O
+2	semua	reminder/cancel_reminder	B-reference
+3	pengingat	reminder/cancel_reminder	O
+
+# id: 19
+# text-en: Show me my alarms
+# text: Tampilkan alarm saya
+# intent: alarm/show_alarms
+1	Tampilkan	alarm/show_alarms	O
+2	alarm	alarm/show_alarms	O
+3	saya	alarm/show_alarms	B-reference
+
+# id: 20
+# text-en: Cancel alarms
+# text: Batalkan alarm
+# intent: alarm/cancel_alarm
+1	Batalkan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 21
+# text-en: Set alarm for 6 am tomorrow
+# text: Setel alarm untuk jam 6 pagi besok
+# intent: alarm/set_alarm
+1	Setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	untuk	alarm/set_alarm	O
+4	jam	alarm/set_alarm	B-datetime
+5	6	alarm/set_alarm	I-datetime
+6	pagi	alarm/set_alarm	I-datetime
+7	besok	alarm/set_alarm	I-datetime
+
+# id: 22
+# text-en: Set alarm for 7 am tomorrow
+# text: Setel alarm untuk jam 7 pagi besok
+# intent: alarm/set_alarm
+1	Setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	untuk	alarm/set_alarm	O
+4	jam	alarm/set_alarm	B-datetime
+5	7	alarm/set_alarm	I-datetime
+6	pagi	alarm/set_alarm	I-datetime
+7	besok	alarm/set_alarm	I-datetime
+
+# id: 23
+# text-en: set alarm for 6 am
+# text: setel alarm untuk jam 6 pagi
+# intent: alarm/set_alarm
+1	setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	untuk	alarm/set_alarm	O
+4	jam	alarm/set_alarm	B-datetime
+5	6	alarm/set_alarm	I-datetime
+6	pagi	alarm/set_alarm	I-datetime
+
+# id: 24
+# text-en: i need a reminder to pick Lisa up
+# text: saya perlu sebuah pengingat untuk menjemput Lisa
+# intent: reminder/set_reminder
+1	saya	reminder/set_reminder	O
+2	perlu	reminder/set_reminder	O
+3	sebuah	reminder/set_reminder	O
+4	pengingat	reminder/set_reminder	O
+5	untuk	reminder/set_reminder	O
+6	menjemput	reminder/set_reminder	B-reminder/todo
+7	Lisa	reminder/set_reminder	I-reminder/todo
+
+# id: 25
+# text-en: show all alarms
+# text: tampilkan semua alarm
+# intent: alarm/show_alarms
+1	tampilkan	alarm/show_alarms	O
+2	semua	alarm/show_alarms	B-reference
+3	alarm	alarm/show_alarms	O
+
+# id: 26
+# text-en: Turn off all alarms
+# text: Matikan semua alarm
+# intent: alarm/cancel_alarm
+1	Matikan	alarm/cancel_alarm	O
+2	semua	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+
+# id: 27
+# text-en: What are my reminders?
+# text: Apa saja pengingat saya?
+# intent: reminder/show_reminders
+1	Apa	reminder/show_reminders	O
+2	saja	reminder/show_reminders	O
+3	pengingat	reminder/show_reminders	O
+4	saya	reminder/show_reminders	B-reference
+5	?	reminder/show_reminders	O
+
+# id: 28
+# text-en: is it hot outside
+# text: apakah di luar panas
+# intent: weather/find
+1	apakah	weather/find	O
+2	di	weather/find	B-location
+3	luar	weather/find	I-location
+4	panas	weather/find	B-weather/attribute
+
+# id: 29
+# text-en: Snooze alarm
+# text: Tunda alarm
+# intent: alarm/snooze_alarm
+1	Tunda	alarm/snooze_alarm	O
+2	alarm	alarm/snooze_alarm	O
+
+# id: 30
+# text-en: alarm on
+# text: alarm aktif
+# intent: alarm/set_alarm
+1	alarm	alarm/set_alarm	O
+2	aktif	alarm/set_alarm	O
+
+# id: 31
+# text-en: Set an alarm for 6 am on Wed
+# text: Setel sebuah alarm untuk jam 6 pagi pada Rabu
+# intent: alarm/set_alarm
+1	Setel	alarm/set_alarm	O
+2	sebuah	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	untuk	alarm/set_alarm	O
+5	jam	alarm/set_alarm	B-datetime
+6	6	alarm/set_alarm	I-datetime
+7	pagi	alarm/set_alarm	I-datetime
+8	pada	alarm/set_alarm	I-datetime
+9	Rabu	alarm/set_alarm	I-datetime
+
+# id: 32
+# text-en: remind me to submit my lesson plans every monday by the end of the day
+# text: ingatkan saya untuk menyerahkan rencana pelajaran saya setiap hari Senin di penghujung hari
+# intent: reminder/set_reminder
+1	ingatkan	reminder/set_reminder	O
+2	saya	reminder/set_reminder	O
+3	untuk	reminder/set_reminder	O
+4	menyerahkan	reminder/set_reminder	B-reminder/todo
+5	rencana	reminder/set_reminder	I-reminder/todo
+6	pelajaran	reminder/set_reminder	I-reminder/todo
+7	saya	reminder/set_reminder	I-reminder/todo
+8	setiap	reminder/set_reminder	B-recurring_datetime
+9	hari	reminder/set_reminder	I-recurring_datetime
+10	Senin	reminder/set_reminder	I-recurring_datetime
+11	di	reminder/set_reminder	I-recurring_datetime
+12	penghujung	reminder/set_reminder	I-recurring_datetime
+13	hari	reminder/set_reminder	I-recurring_datetime
+
+# id: 33
+# text-en: how hot is it going to be today
+# text: akan seberapa panas hari ini
+# intent: weather/find
+1	akan	weather/find	O
+2	seberapa	weather/find	O
+3	panas	weather/find	B-weather/attribute
+4	hari	weather/find	B-datetime
+5	ini	weather/find	I-datetime
+
+# id: 34
+# text-en: Clear all set alarms.
+# text: Hapus semua alarm yang disetel.
+# intent: alarm/cancel_alarm
+1	Hapus	alarm/cancel_alarm	O
+2	semua	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	yang	alarm/cancel_alarm	O
+5	disetel	alarm/cancel_alarm	O
+6	.	alarm/cancel_alarm	O
+
+# id: 35
+# text-en: Show all alarms
+# text: Tampilkan semua alarm
+# intent: alarm/show_alarms
+1	Tampilkan	alarm/show_alarms	O
+2	semua	alarm/show_alarms	B-reference
+3	alarm	alarm/show_alarms	O
+
+# id: 36
+# text-en: Will it be sunny today?
+# text: Akankah cerah hari ini?
+# intent: weather/find
+1	Akankah	weather/find	O
+2	cerah	weather/find	B-weather/attribute
+3	hari	weather/find	B-datetime
+4	ini	weather/find	I-datetime
+5	?	weather/find	O
+
+# id: 37
+# text-en: What is the humidity level today
+# text: Berapa tingkat kelembapan hari ini
+# intent: weather/find
+1	Berapa	weather/find	O
+2	tingkat	weather/find	B-weather/attribute
+3	kelembapan	weather/find	I-weather/attribute
+4	hari	weather/find	B-datetime
+5	ini	weather/find	I-datetime
+
+# id: 38
+# text-en: Cancel all reminders
+# text: Batalkan semua pengingat
+# intent: reminder/cancel_reminder
+1	Batalkan	reminder/cancel_reminder	O
+2	semua	reminder/cancel_reminder	B-reference
+3	pengingat	reminder/cancel_reminder	O
+
+# id: 39
+# text-en: set an alarm for fifteen minutes
+# text: setel sebuah alarm selama lima belas menit
+# intent: alarm/set_alarm
+1	setel	alarm/set_alarm	O
+2	sebuah	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	selama	alarm/set_alarm	O
+5	lima	alarm/set_alarm	B-datetime
+6	belas	alarm/set_alarm	I-datetime
+7	menit	alarm/set_alarm	I-datetime
+
+# id: 40
+# text-en: Please set my alarm for 4am this Saturday.
+# text: Tolong setel alarm saya untuk jam 4 pagi hari Sabtu ini.
+# intent: alarm/set_alarm
+1	Tolong	alarm/set_alarm	O
+2	setel	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	saya	alarm/set_alarm	B-reference
+5	untuk	alarm/set_alarm	O
+6	jam	alarm/set_alarm	B-datetime
+7	4	alarm/set_alarm	I-datetime
+8	pagi	alarm/set_alarm	I-datetime
+9	hari	alarm/set_alarm	I-datetime
+10	Sabtu	alarm/set_alarm	I-datetime
+11	ini	alarm/set_alarm	I-datetime
+12	.	alarm/set_alarm	O
+
+# id: 41
+# text-en: Give me a reminder for house closing at 10am tomorrow.
+# text: Beri saya sebuah pengingat untuk penutupan rumah jam 10 pagi besok.
+# intent: reminder/set_reminder
+1	Beri	reminder/set_reminder	O
+2	saya	reminder/set_reminder	O
+3	sebuah	reminder/set_reminder	O
+4	pengingat	reminder/set_reminder	O
+5	untuk	reminder/set_reminder	O
+6	penutupan	reminder/set_reminder	B-reminder/todo
+7	rumah	reminder/set_reminder	I-reminder/todo
+8	jam	reminder/set_reminder	B-datetime
+9	10	reminder/set_reminder	I-datetime
+10	pagi	reminder/set_reminder	I-datetime
+11	besok	reminder/set_reminder	I-datetime
+12	.	reminder/set_reminder	O
+
+# id: 42
+# text-en: delete all alarms
+# text: hapus semua alarm
+# intent: alarm/cancel_alarm
+1	hapus	alarm/cancel_alarm	O
+2	semua	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+
+# id: 43
+# text-en: How many alarms do I have set for Sunday?
+# text: Berapa banyak alarm yang sudah saya setel untuk hari Minggu?
+# intent: alarm/show_alarms
+1	Berapa	alarm/show_alarms	O
+2	banyak	alarm/show_alarms	O
+3	alarm	alarm/show_alarms	O
+4	yang	alarm/show_alarms	O
+5	sudah	alarm/show_alarms	O
+6	saya	alarm/show_alarms	O
+7	setel	alarm/show_alarms	O
+8	untuk	alarm/show_alarms	O
+9	hari	alarm/show_alarms	B-datetime
+10	Minggu	alarm/show_alarms	I-datetime
+11	?	alarm/show_alarms	O
+
+# id: 44
+# text-en: show all alarms
+# text: tampilkan semua alarm
+# intent: alarm/show_alarms
+1	tampilkan	alarm/show_alarms	O
+2	semua	alarm/show_alarms	B-reference
+3	alarm	alarm/show_alarms	O
+
+# id: 45
+# text-en: Is it going to be sunny today?
+# text: Apakah akan cerah hari ini?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	cerah	weather/find	B-weather/attribute
+4	hari	weather/find	B-datetime
+5	ini	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 46
+# text-en: set alarm for 615am
+# text: setel alarm untuk 615 pagi
+# intent: alarm/set_alarm
+1	setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	untuk	alarm/set_alarm	O
+4	615	alarm/set_alarm	B-datetime
+5	pagi	alarm/set_alarm	I-datetime
+
+# id: 47
+# text-en: Set two alarms for tomorrow morning
+# text: Setel dua alarm untuk besok pagi
+# intent: alarm/set_alarm
+1	Setel	alarm/set_alarm	O
+2	dua	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	untuk	alarm/set_alarm	O
+5	besok	alarm/set_alarm	B-datetime
+6	pagi	alarm/set_alarm	I-datetime
+
+# id: 48
+# text-en: Turn off all alarms
+# text: Matikan semua alarm
+# intent: alarm/cancel_alarm
+1	Matikan	alarm/cancel_alarm	O
+2	semua	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+
+# id: 49
+# text-en: What is the temperature like in London right now?
+# text: Seperti apa suhu di London saat ini?
+# intent: weather/find
+1	Seperti	weather/find	O
+2	apa	weather/find	O
+3	suhu	weather/find	B-weather/attribute
+4	di	weather/find	O
+5	London	weather/find	B-location
+6	saat	weather/find	B-datetime
+7	ini	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 50
+# text-en: Cancel my last reminder
+# text: Batalkan pengingat terakhir saya
+# intent: reminder/cancel_reminder
+1	Batalkan	reminder/cancel_reminder	O
+2	pengingat	reminder/cancel_reminder	O
+3	terakhir	reminder/cancel_reminder	B-reference
+4	saya	reminder/cancel_reminder	I-reference
+
+# id: 51
+# text-en: Set a reminder to go to the grocery store later
+# text: Setel sebuah pengingat untuk pergi ke toko bahan makanan nanti
+# intent: reminder/set_reminder
+1	Setel	reminder/set_reminder	O
+2	sebuah	reminder/set_reminder	O
+3	pengingat	reminder/set_reminder	O
+4	untuk	reminder/set_reminder	O
+5	pergi	reminder/set_reminder	B-reminder/todo
+6	ke	reminder/set_reminder	I-reminder/todo
+7	toko	reminder/set_reminder	I-reminder/todo
+8	bahan	reminder/set_reminder	I-reminder/todo
+9	makanan	reminder/set_reminder	I-reminder/todo
+10	nanti	reminder/set_reminder	B-datetime
+
+# id: 52
+# text-en: What will be the heat index today?
+# text: Akan berapa indeks panas hari ini?
+# intent: weather/find
+1	Akan	weather/find	O
+2	berapa	weather/find	O
+3	indeks	weather/find	B-weather/attribute
+4	panas	weather/find	I-weather/attribute
+5	hari	weather/find	B-datetime
+6	ini	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 53
+# text-en: How cold will it be today?
+# text: Akan seberapa dingin hari ini?
+# intent: weather/find
+1	Akan	weather/find	O
+2	seberapa	weather/find	O
+3	dingin	weather/find	B-weather/attribute
+4	hari	weather/find	B-datetime
+5	ini	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 54
+# text-en: will it snow today
+# text: akankah salju hari ini
+# intent: weather/find
+1	akankah	weather/find	O
+2	salju	weather/find	B-weather/attribute
+3	hari	weather/find	B-datetime
+4	ini	weather/find	I-datetime
+
+# id: 55
+# text-en: Set alarm for 5am
+# text: Setel alarm untuk jam 5 pagi
+# intent: alarm/set_alarm
+1	Setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	untuk	alarm/set_alarm	O
+4	jam	alarm/set_alarm	B-datetime
+5	5	alarm/set_alarm	I-datetime
+6	pagi	alarm/set_alarm	I-datetime
+
+# id: 56
+# text-en: turn off alarm
+# text: matikan alarm
+# intent: alarm/cancel_alarm
+1	matikan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 57
+# text-en: cancel all alarms
+# text: batalkan semua alarm
+# intent: alarm/cancel_alarm
+1	batalkan	alarm/cancel_alarm	O
+2	semua	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+
+# id: 58
+# text-en: Add reminder to swim at 11am tomorrow
+# text: Tambahkan pengingat untuk berenang pada jam 11 pagi besok
+# intent: reminder/set_reminder
+1	Tambahkan	reminder/set_reminder	O
+2	pengingat	reminder/set_reminder	O
+3	untuk	reminder/set_reminder	O
+4	berenang	reminder/set_reminder	B-reminder/todo
+5	pada	reminder/set_reminder	O
+6	jam	reminder/set_reminder	B-datetime
+7	11	reminder/set_reminder	I-datetime
+8	pagi	reminder/set_reminder	I-datetime
+9	besok	reminder/set_reminder	I-datetime
+
+# id: 59
+# text-en: Show my reminder
+# text: Tampilkan pengingat saya
+# intent: reminder/show_reminders
+1	Tampilkan	reminder/show_reminders	O
+2	pengingat	reminder/show_reminders	O
+3	saya	reminder/show_reminders	B-reference
+
+# id: 60
+# text-en: Cancel my alarm on Saturday
+# text: Batalkan alarm saya pada hari Sabtu
+# intent: alarm/cancel_alarm
+1	Batalkan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+3	saya	alarm/cancel_alarm	B-reference
+4	pada	alarm/cancel_alarm	O
+5	hari	alarm/cancel_alarm	B-datetime
+6	Sabtu	alarm/cancel_alarm	I-datetime
+
+# id: 61
+# text-en: Is it cold out?
+# text: Apakah di luar dingin?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	di	weather/find	B-location
+3	luar	weather/find	I-location
+4	dingin	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id: 62
+# text-en: Is it humid today?
+# text: Apakah hari ini lembab?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	hari	weather/find	B-datetime
+3	ini	weather/find	I-datetime
+4	lembab	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id: 63
+# text-en: Set alarm every minute for 11 minutes
+# text: Setel alarm setiap menit selama 11 menit
+# intent: alarm/set_alarm
+1	Setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	setiap	alarm/set_alarm	B-recurring_datetime
+4	menit	alarm/set_alarm	I-recurring_datetime
+5	selama	alarm/set_alarm	I-recurring_datetime
+6	11	alarm/set_alarm	I-recurring_datetime
+7	menit	alarm/set_alarm	I-recurring_datetime
+
+# id: 64
+# text-en: Show my reminder
+# text: Tampilkan pengingat saya
+# intent: reminder/show_reminders
+1	Tampilkan	reminder/show_reminders	O
+2	pengingat	reminder/show_reminders	O
+3	saya	reminder/show_reminders	B-reference
+
+# id: 65
+# text-en: Is it going to be windy today?
+# text: Apakah akan berangin hari ini?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	berangin	weather/find	B-weather/attribute
+4	hari	weather/find	B-datetime
+5	ini	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 66
+# text-en: Cancel tomorrow's reminders
+# text: Batalkan pengingat besok
+# intent: reminder/cancel_reminder
+1	Batalkan	reminder/cancel_reminder	O
+2	pengingat	reminder/cancel_reminder	O
+3	besok	reminder/cancel_reminder	B-datetime
+
+# id: 67
+# text-en: tell me the 3 day forecast
+# text: beri tahu saya perkiraan 3 hari
+# intent: weather/find
+1	beri	weather/find	O
+2	tahu	weather/find	O
+3	saya	weather/find	O
+4	perkiraan	weather/find	O
+5	3	weather/find	B-datetime
+6	hari	weather/find	I-datetime
+
+# id: 68
+# text-en: how many inches of rain are we suppose to get tomorrow?
+# text: berapa inci hujan yang seharusnya kita dapatkan besok?
+# intent: weather/find
+1	berapa	weather/find	O
+2	inci	weather/find	B-weather/attribute
+3	hujan	weather/find	I-weather/attribute
+4	yang	weather/find	O
+5	seharusnya	weather/find	O
+6	kita	weather/find	O
+7	dapatkan	weather/find	O
+8	besok	weather/find	B-datetime
+9	?	weather/find	O
+
+# id: 69
+# text-en: remind me about the wedding
+# text: ingatkan saya tentang pernikahan itu
+# intent: reminder/set_reminder
+1	ingatkan	reminder/set_reminder	O
+2	saya	reminder/set_reminder	O
+3	tentang	reminder/set_reminder	O
+4	pernikahan	reminder/set_reminder	B-reminder/todo
+5	itu	reminder/set_reminder	O
+
+# id: 70
+# text-en: Snooze all alarms
+# text: Tunda semua alarm
+# intent: alarm/snooze_alarm
+1	Tunda	alarm/snooze_alarm	O
+2	semua	alarm/snooze_alarm	B-reference
+3	alarm	alarm/snooze_alarm	O
+
+# id: 71
+# text-en: When will it rain today?
+# text: Kapan hujan akan turun hari ini?
+# intent: weather/find
+1	Kapan	weather/find	O
+2	hujan	weather/find	B-weather/attribute
+3	akan	weather/find	O
+4	turun	weather/find	B-weather/attribute
+5	hari	weather/find	B-datetime
+6	ini	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 72
+# text-en: show all alarms
+# text: tampilkan semua alarm
+# intent: alarm/show_alarms
+1	tampilkan	alarm/show_alarms	O
+2	semua	alarm/show_alarms	B-reference
+3	alarm	alarm/show_alarms	O
+
+# id: 73
+# text-en: Turn off all alarms
+# text: Matikan semua alarm
+# intent: alarm/cancel_alarm
+1	Matikan	alarm/cancel_alarm	O
+2	semua	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+
+# id: 74
+# text-en: Is it going to rain today?
+# text: Apakah akan hujan hari ini?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	hujan	weather/find	B-weather/attribute
+4	hari	weather/find	B-datetime
+5	ini	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 75
+# text-en: Show all reminders for tomorrow
+# text: Tampilkan semua pengingat untuk besok
+# intent: reminder/show_reminders
+1	Tampilkan	reminder/show_reminders	O
+2	semua	reminder/show_reminders	B-reference
+3	pengingat	reminder/show_reminders	O
+4	untuk	reminder/show_reminders	O
+5	besok	reminder/show_reminders	B-datetime
+
+# id: 76
+# text-en: cancel my alarm for tomorrow morning
+# text: batalkan alarm saya untuk besok pagi
+# intent: alarm/cancel_alarm
+1	batalkan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+3	saya	alarm/cancel_alarm	B-reference
+4	untuk	alarm/cancel_alarm	O
+5	besok	alarm/cancel_alarm	B-datetime
+6	pagi	alarm/cancel_alarm	I-datetime
+
+# id: 77
+# text-en: How hot is it?
+# text: Sepanas apa?
+# intent: weather/find
+1	Sepanas	weather/find	B-weather/attribute
+2	apa	weather/find	O
+3	?	weather/find	O
+
+# id: 78
+# text-en: remind me to buy milk tonight
+# text: ingatkan saya untuk membeli susu malam ini
+# intent: reminder/set_reminder
+1	ingatkan	reminder/set_reminder	O
+2	saya	reminder/set_reminder	O
+3	untuk	reminder/set_reminder	O
+4	membeli	reminder/set_reminder	B-reminder/todo
+5	susu	reminder/set_reminder	I-reminder/todo
+6	malam	reminder/set_reminder	B-datetime
+7	ini	reminder/set_reminder	I-datetime
+
+# id: 79
+# text-en: Cancel all reminders
+# text: Batalkan semua pengingat
+# intent: reminder/cancel_reminder
+1	Batalkan	reminder/cancel_reminder	O
+2	semua	reminder/cancel_reminder	B-reference
+3	pengingat	reminder/cancel_reminder	O
+
+# id: 80
+# text-en: Show all alarms
+# text: Tampilkan semua alarm
+# intent: alarm/show_alarms
+1	Tampilkan	alarm/show_alarms	O
+2	semua	alarm/show_alarms	B-reference
+3	alarm	alarm/show_alarms	O
+
+# id: 81
+# text-en: cancel my alarm for tomorrow morning
+# text: batalkan alarm saya untuk besok pagi
+# intent: alarm/cancel_alarm
+1	batalkan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+3	saya	alarm/cancel_alarm	B-reference
+4	untuk	alarm/cancel_alarm	O
+5	besok	alarm/cancel_alarm	B-datetime
+6	pagi	alarm/cancel_alarm	I-datetime
+
+# id: 82
+# text-en: Will it be sunny tomorrow?
+# text: Apakah akan cerah besok?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	cerah	weather/find	B-weather/attribute
+4	besok	weather/find	B-datetime
+5	?	weather/find	O
+
+# id: 83
+# text-en: Cancel alarm for tomorrow morning
+# text: Batalkan alarm untuk besok pagi
+# intent: alarm/cancel_alarm
+1	Batalkan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+3	untuk	alarm/cancel_alarm	O
+4	besok	alarm/cancel_alarm	B-datetime
+5	pagi	alarm/cancel_alarm	I-datetime
+
+# id: 84
+# text-en: show all reminders for tomorrow morning
+# text: tampilkan semua pengingat untuk besok pagi
+# intent: reminder/show_reminders
+1	tampilkan	reminder/show_reminders	O
+2	semua	reminder/show_reminders	O
+3	pengingat	reminder/show_reminders	O
+4	untuk	reminder/show_reminders	O
+5	besok	reminder/show_reminders	B-datetime
+6	pagi	reminder/show_reminders	I-datetime
+
+# id: 85
+# text-en: What is the humidity today?
+# text: Berapa kelembaban hari ini?
+# intent: weather/find
+1	Berapa	weather/find	O
+2	kelembaban	weather/find	B-weather/attribute
+3	hari	weather/find	B-datetime
+4	ini	weather/find	I-datetime
+5	?	weather/find	O
+
+# id: 86
+# text-en: When is it going to rain?
+# text: Kapan akan hujan?
+# intent: weather/find
+1	Kapan	weather/find	O
+2	akan	weather/find	O
+3	hujan	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: 87
+# text-en: How hot is it
+# text: Seberapa panas
+# intent: weather/find
+1	Seberapa	weather/find	O
+2	panas	weather/find	B-weather/attribute
+
+# id: 88
+# text-en: show me my reminders
+# text: tampilkan pengingat saya
+# intent: reminder/show_reminders
+1	tampilkan	reminder/show_reminders	O
+2	pengingat	reminder/show_reminders	O
+3	saya	reminder/show_reminders	B-reference
+
+# id: 89
+# text-en: What is the 5 day forecast?
+# text: Apa perkiraan 5 hari?
+# intent: weather/find
+1	Apa	weather/find	O
+2	perkiraan	weather/find	O
+3	5	weather/find	B-datetime
+4	hari	weather/find	I-datetime
+5	?	weather/find	O
+
+# id: 90
+# text-en: set alarm for 6 am
+# text: setel alarm untuk jam 6 pagi
+# intent: alarm/set_alarm
+1	setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	untuk	alarm/set_alarm	O
+4	jam	alarm/set_alarm	B-datetime
+5	6	alarm/set_alarm	I-datetime
+6	pagi	alarm/set_alarm	I-datetime
+
+# id: 91
+# text-en: Is it cold today?
+# text: Apakah dingin hari ini?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	dingin	weather/find	B-weather/attribute
+3	hari	weather/find	B-datetime
+4	ini	weather/find	I-datetime
+5	?	weather/find	O
+
+# id: 92
+# text-en: Set a reminder to call my school on Monday at 4 PM
+# text: Setel sebuah pengingat untuk menelepon sekolah saya pada hari Senin jam 4 sore
+# intent: reminder/set_reminder
+1	Setel	reminder/set_reminder	O
+2	sebuah	reminder/set_reminder	O
+3	pengingat	reminder/set_reminder	O
+4	untuk	reminder/set_reminder	O
+5	menelepon	reminder/set_reminder	B-reminder/todo
+6	sekolah	reminder/set_reminder	I-reminder/todo
+7	saya	reminder/set_reminder	I-reminder/todo
+8	pada	reminder/set_reminder	O
+9	hari	reminder/set_reminder	B-datetime
+10	Senin	reminder/set_reminder	I-datetime
+11	jam	reminder/set_reminder	I-datetime
+12	4	reminder/set_reminder	I-datetime
+13	sore	reminder/set_reminder	I-datetime
+
+# id: 93
+# text-en: Delete my reminder for picking up Patrick from school tomorrow.
+# text: Hapus pengingat saya untuk menjemput Patrick dari sekolah besok.
+# intent: reminder/cancel_reminder
+1	Hapus	reminder/cancel_reminder	O
+2	pengingat	reminder/cancel_reminder	O
+3	saya	reminder/cancel_reminder	B-reference
+4	untuk	reminder/cancel_reminder	O
+5	menjemput	reminder/cancel_reminder	B-reminder/todo
+6	Patrick	reminder/cancel_reminder	I-reminder/todo
+7	dari	reminder/cancel_reminder	I-reminder/todo
+8	sekolah	reminder/cancel_reminder	I-reminder/todo
+9	besok	reminder/cancel_reminder	B-datetime
+10	.	reminder/cancel_reminder	O
+
+# id: 94
+# text-en: How cold will it be in the morning?
+# text: Akan seberapa dingin di pagi hari?
+# intent: weather/find
+1	Akan	weather/find	O
+2	seberapa	weather/find	O
+3	dingin	weather/find	B-weather/attribute
+4	di	weather/find	O
+5	pagi	weather/find	B-datetime
+6	hari	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 95
+# text-en: do i need an umbrella tomorrow
+# text: apakah saya perlu sebuah payung besok
+# intent: weather/find
+1	apakah	weather/find	O
+2	saya	weather/find	O
+3	perlu	weather/find	O
+4	sebuah	weather/find	O
+5	payung	weather/find	B-weather/attribute
+6	besok	weather/find	B-datetime
+
+# id: 96
+# text-en: Show my reminder
+# text: Tampilkan pengingat saya
+# intent: reminder/show_reminders
+1	Tampilkan	reminder/show_reminders	O
+2	pengingat	reminder/show_reminders	O
+3	saya	reminder/show_reminders	B-reference
+
+# id: 97
+# text-en: Stop alarm for 6:00 am
+# text: Hentikan alarm untuk 6:00 pagi
+# intent: alarm/cancel_alarm
+1	Hentikan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+3	untuk	alarm/cancel_alarm	O
+4	6:00	alarm/cancel_alarm	B-datetime
+5	pagi	alarm/cancel_alarm	I-datetime
+
+# id: 98
+# text-en: Cancel all alarms
+# text: Batalkan semua alarm
+# intent: alarm/cancel_alarm
+1	Batalkan	alarm/cancel_alarm	O
+2	semua	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+
+# id: 99
+# text-en: Will it be sunny today?
+# text: Akankah cerah hari ini?
+# intent: weather/find
+1	Akankah	weather/find	O
+2	cerah	weather/find	B-weather/attribute
+3	hari	weather/find	B-datetime
+4	ini	weather/find	I-datetime
+5	?	weather/find	O
+
+# id: 100
+# text-en: what is the weather in london?
+# text: bagaimana cuaca di london?
+# intent: weather/find
+1	bagaimana	weather/find	O
+2	cuaca	weather/find	O
+3	di	weather/find	O
+4	london	weather/find	B-location
+5	?	weather/find	O
+
+# id: 101
+# text-en: What are my reminders?
+# text: Apa saja pengingat saya?
+# intent: reminder/show_reminders
+1	Apa	reminder/show_reminders	O
+2	saja	reminder/show_reminders	O
+3	pengingat	reminder/show_reminders	O
+4	saya	reminder/show_reminders	B-reference
+5	?	reminder/show_reminders	O
+
+# id: 102
+# text-en: Cancel my reminder to text Dad
+# text: Batalkan pengingat saya untuk mengirim pesan kepada Ayah
+# intent: reminder/cancel_reminder
+1	Batalkan	reminder/cancel_reminder	O
+2	pengingat	reminder/cancel_reminder	O
+3	saya	reminder/cancel_reminder	B-reference
+4	untuk	reminder/cancel_reminder	O
+5	mengirim	reminder/cancel_reminder	B-reminder/todo
+6	pesan	reminder/cancel_reminder	I-reminder/todo
+7	kepada	reminder/cancel_reminder	I-reminder/todo
+8	Ayah	reminder/cancel_reminder	I-reminder/todo
+
+# id: 103
+# text-en: set alarm for 6 am
+# text: setel alarm untuk jam 6 pagi
+# intent: alarm/set_alarm
+1	setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	untuk	alarm/set_alarm	O
+4	jam	alarm/set_alarm	B-datetime
+5	6	alarm/set_alarm	I-datetime
+6	pagi	alarm/set_alarm	I-datetime
+
+# id: 104
+# text-en: turn off the alarm
+# text: matikan alarm
+# intent: alarm/cancel_alarm
+1	matikan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 105
+# text-en: cancel the alarm
+# text: batalkan alarm
+# intent: alarm/cancel_alarm
+1	batalkan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 106
+# text-en: turn off alarm
+# text: matikan alarm
+# intent: alarm/cancel_alarm
+1	matikan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 107
+# text-en: remind me to call mom today at 2 p.m.
+# text: ingatkan saya untuk menelepon ibu hari ini jam 2 siang.
+# intent: reminder/set_reminder
+1	ingatkan	reminder/set_reminder	O
+2	saya	reminder/set_reminder	O
+3	untuk	reminder/set_reminder	O
+4	menelepon	reminder/set_reminder	B-reminder/todo
+5	ibu	reminder/set_reminder	I-reminder/todo
+6	hari	reminder/set_reminder	B-datetime
+7	ini	reminder/set_reminder	I-datetime
+8	jam	reminder/set_reminder	I-datetime
+9	2	reminder/set_reminder	I-datetime
+10	siang	reminder/set_reminder	I-datetime
+11	.	reminder/set_reminder	O
+
+# id: 108
+# text-en: cancel all alarms
+# text: batalkan semua alarm
+# intent: alarm/cancel_alarm
+1	batalkan	alarm/cancel_alarm	O
+2	semua	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+
+# id: 109
+# text-en: is it going to be hot tomorrow
+# text: apakah besok akan panas
+# intent: weather/find
+1	apakah	weather/find	O
+2	besok	weather/find	B-datetime
+3	akan	weather/find	O
+4	panas	weather/find	B-weather/attribute
+
+# id: 110
+# text-en: is it cold out today?
+# text: apakah di luar dingin hari ini?
+# intent: weather/find
+1	apakah	weather/find	O
+2	di	weather/find	O
+3	luar	weather/find	B-location
+4	dingin	weather/find	B-weather/attribute
+5	hari	weather/find	B-datetime
+6	ini	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 111
+# text-en: Set alarm for 5 pm tonight
+# text: Setel alarm untuk jam 5 sore ini
+# intent: alarm/set_alarm
+1	Setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	untuk	alarm/set_alarm	O
+4	jam	alarm/set_alarm	B-datetime
+5	5	alarm/set_alarm	I-datetime
+6	sore	alarm/set_alarm	I-datetime
+7	ini	alarm/set_alarm	I-datetime
+
+# id: 112
+# text-en: Will it rain this weekend?
+# text: Apakah akan hujan akhir pekan ini?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	hujan	weather/find	B-weather/attribute
+4	akhir	weather/find	B-datetime
+5	pekan	weather/find	I-datetime
+6	ini	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 113
+# text-en: is it going to rain today
+# text: apakah akan hujan hari ini
+# intent: weather/find
+1	apakah	weather/find	O
+2	akan	weather/find	O
+3	hujan	weather/find	B-weather/attribute
+4	hari	weather/find	B-datetime
+5	ini	weather/find	I-datetime
+
+# id: 114
+# text-en: set an alarm for monday at 3 am
+# text: setel sebuah alarm untuk hari senin jam 3 pagi
+# intent: alarm/set_alarm
+1	setel	alarm/set_alarm	O
+2	sebuah	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	untuk	alarm/set_alarm	O
+5	hari	alarm/set_alarm	B-datetime
+6	senin	alarm/set_alarm	I-datetime
+7	jam	alarm/set_alarm	I-datetime
+8	3	alarm/set_alarm	I-datetime
+9	pagi	alarm/set_alarm	I-datetime
+
+# id: 115
+# text-en: alarm on
+# text: alarm aktif
+# intent: alarm/set_alarm
+1	alarm	alarm/set_alarm	O
+2	aktif	alarm/set_alarm	O
+
+# id: 116
+# text-en: Is it going to rain on Saturday?
+# text: Apakah akan hujan pada hari Sabtu?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	hujan	weather/find	B-weather/attribute
+4	pada	weather/find	O
+5	hari	weather/find	B-datetime
+6	Sabtu	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 117
+# text-en: Set alarm for 5 am
+# text: Setel alarm untuk jam 5 pagi
+# intent: alarm/set_alarm
+1	Setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	untuk	alarm/set_alarm	O
+4	jam	alarm/set_alarm	B-datetime
+5	5	alarm/set_alarm	I-datetime
+6	pagi	alarm/set_alarm	I-datetime
+
+# id: 118
+# text-en: Will I need a coat today?
+# text: Akankah saya perlu sebuah mantel hari ini?
+# intent: weather/find
+1	Akankah	weather/find	O
+2	saya	weather/find	O
+3	perlu	weather/find	O
+4	sebuah	weather/find	O
+5	mantel	weather/find	B-weather/attribute
+6	hari	weather/find	B-datetime
+7	ini	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 119
+# text-en: turn off alarm
+# text: matikan alarm
+# intent: alarm/cancel_alarm
+1	matikan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 120
+# text-en: What weather warnings do I have?
+# text: Peringatan cuaca apa yang saya miliki?
+# intent: weather/find
+1	Peringatan	weather/find	B-weather/attribute
+2	cuaca	weather/find	O
+3	apa	weather/find	O
+4	yang	weather/find	O
+5	saya	weather/find	O
+6	miliki	weather/find	O
+7	?	weather/find	O
+
+# id: 121
+# text-en: Cancel the reminder for the meeting at the lodge
+# text: Batalkan pengingat untuk pertemuan di penginapan
+# intent: reminder/cancel_reminder
+1	Batalkan	reminder/cancel_reminder	O
+2	pengingat	reminder/cancel_reminder	O
+3	untuk	reminder/cancel_reminder	O
+4	pertemuan	reminder/cancel_reminder	B-reminder/todo
+5	di	reminder/cancel_reminder	I-reminder/todo
+6	penginapan	reminder/cancel_reminder	I-reminder/todo
+
+# id: 122
+# text-en: Should I wear a coat today
+# text: Haruskah saya memakai sebuah mantel hari ini
+# intent: weather/find
+1	Haruskah	weather/find	O
+2	saya	weather/find	O
+3	memakai	weather/find	O
+4	sebuah	weather/find	O
+5	mantel	weather/find	B-weather/attribute
+6	hari	weather/find	B-datetime
+7	ini	weather/find	I-datetime
+
+# id: 123
+# text-en: Turn off all alarms.
+# text: Matikan semua alarm.
+# intent: alarm/cancel_alarm
+1	Matikan	alarm/cancel_alarm	O
+2	semua	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	.	alarm/cancel_alarm	O
+
+# id: 124
+# text-en: show all alarms
+# text: tampilkan semua alarm
+# intent: alarm/show_alarms
+1	tampilkan	alarm/show_alarms	O
+2	semua	alarm/show_alarms	B-reference
+3	alarm	alarm/show_alarms	O
+
+# id: 125
+# text-en: Make a new alarm for Thursday at 1pm.
+# text: Buat sebuah alarm baru untuk Kamis jam 1 siang.
+# intent: alarm/set_alarm
+1	Buat	alarm/set_alarm	O
+2	sebuah	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	baru	alarm/set_alarm	O
+5	untuk	alarm/set_alarm	O
+6	Kamis	alarm/set_alarm	B-datetime
+7	jam	alarm/set_alarm	I-datetime
+8	1	alarm/set_alarm	I-datetime
+9	siang	alarm/set_alarm	I-datetime
+10	.	alarm/set_alarm	O
+
+# id: 126
+# text-en: Remind me to go to the dentist next Monday.
+# text: Ingatkan saya untuk pergi ke dokter gigi Senin depan.
+# intent: reminder/set_reminder
+1	Ingatkan	reminder/set_reminder	O
+2	saya	reminder/set_reminder	O
+3	untuk	reminder/set_reminder	O
+4	pergi	reminder/set_reminder	B-reminder/todo
+5	ke	reminder/set_reminder	I-reminder/todo
+6	dokter	reminder/set_reminder	I-reminder/todo
+7	gigi	reminder/set_reminder	I-reminder/todo
+8	Senin	reminder/set_reminder	B-datetime
+9	depan	reminder/set_reminder	I-datetime
+10	.	reminder/set_reminder	O
+
+# id: 127
+# text-en: should I bring an umbrella today
+# text: haruskah saya membawa sebuah payung hari ini
+# intent: weather/find
+1	haruskah	weather/find	O
+2	saya	weather/find	O
+3	membawa	weather/find	O
+4	sebuah	weather/find	O
+5	payung	weather/find	B-weather/attribute
+6	hari	weather/find	B-datetime
+7	ini	weather/find	I-datetime
+
+# id: 128
+# text-en: how is the weather this week?
+# text: bagaimana cuaca minggu ini?
+# intent: weather/find
+1	bagaimana	weather/find	O
+2	cuaca	weather/find	O
+3	minggu	weather/find	B-datetime
+4	ini	weather/find	I-datetime
+5	?	weather/find	O
+
+# id: 129
+# text-en: is it below freezing today?
+# text: apakah di bawah titik beku hari ini?
+# intent: weather/find
+1	apakah	weather/find	O
+2	di	weather/find	O
+3	bawah	weather/find	B-weather/attribute
+4	titik	weather/find	I-weather/attribute
+5	beku	weather/find	I-weather/attribute
+6	hari	weather/find	B-datetime
+7	ini	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 130
+# text-en: Delete all reminders
+# text: Hapus semua pengingat
+# intent: reminder/cancel_reminder
+1	Hapus	reminder/cancel_reminder	O
+2	semua	reminder/cancel_reminder	B-reference
+3	pengingat	reminder/cancel_reminder	O
+
+# id: 131
+# text-en: Is it going to rain today?
+# text: Apakah akan hujan hari ini?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	hujan	weather/find	B-weather/attribute
+4	hari	weather/find	B-datetime
+5	ini	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: 132
+# text-en: Will it rain this weekend?
+# text: Apakah akan hujan akhir pekan ini?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	hujan	weather/find	B-weather/attribute
+4	akhir	weather/find	B-datetime
+5	pekan	weather/find	I-datetime
+6	ini	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 133
+# text-en: Set reminder for mom's visit next week
+# text: Setel pengingat untuk kunjungan ibu minggu depan
+# intent: reminder/set_reminder
+1	Setel	reminder/set_reminder	O
+2	pengingat	reminder/set_reminder	O
+3	untuk	reminder/set_reminder	O
+4	kunjungan	reminder/set_reminder	B-reminder/todo
+5	ibu	reminder/set_reminder	I-reminder/todo
+6	minggu	reminder/set_reminder	B-datetime
+7	depan	reminder/set_reminder	I-datetime
+
+# id: 134
+# text-en: Will it snow tomorrow?
+# text: Akankah turun salju besok?
+# intent: weather/find
+1	Akankah	weather/find	O
+2	turun	weather/find	B-weather/attribute
+3	salju	weather/find	I-weather/attribute
+4	besok	weather/find	B-datetime
+5	?	weather/find	O
+
+# id: 135
+# text-en: show all reminders
+# text: tampilkan semua pengingat
+# intent: reminder/show_reminders
+1	tampilkan	reminder/show_reminders	O
+2	semua	reminder/show_reminders	B-reference
+3	pengingat	reminder/show_reminders	O
+
+# id: 136
+# text-en: Do I need a coat today?
+# text: Apakah saya perlu sebuah mantel hari ini?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	saya	weather/find	O
+3	perlu	weather/find	O
+4	sebuah	weather/find	O
+5	mantel	weather/find	B-weather/attribute
+6	hari	weather/find	B-datetime
+7	ini	weather/find	I-datetime
+8	?	weather/find	O
+
+# id: 137
+# text-en: is it going to snow thursday
+# text: apakah akan turun salju hari Kamis
+# intent: weather/find
+1	apakah	weather/find	O
+2	akan	weather/find	O
+3	turun	weather/find	B-weather/attribute
+4	salju	weather/find	I-weather/attribute
+5	hari	weather/find	B-datetime
+6	Kamis	weather/find	I-datetime
+
+# id: 138
+# text-en: Remind me to buy coffee at Starbucks this afternoon
+# text: Ingatkan saya untuk membeli kopi di Starbucks siang ini
+# intent: reminder/set_reminder
+1	Ingatkan	reminder/set_reminder	O
+2	saya	reminder/set_reminder	O
+3	untuk	reminder/set_reminder	O
+4	membeli	reminder/set_reminder	B-reminder/todo
+5	kopi	reminder/set_reminder	I-reminder/todo
+6	di	reminder/set_reminder	I-reminder/todo
+7	Starbucks	reminder/set_reminder	I-reminder/todo
+8	siang	reminder/set_reminder	B-datetime
+9	ini	reminder/set_reminder	I-datetime
+
+# id: 139
+# text-en: Set an alarm for every ten minutes, starting at 5:30 and ending at 6 am.
+# text: Setel sebuah alarm untuk setiap sepuluh menit, mulai jam 5:30 dan berakhir pada jam 6 pagi.
+# intent: alarm/set_alarm
+1	Setel	alarm/set_alarm	O
+2	sebuah	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	untuk	alarm/set_alarm	O
+5	setiap	alarm/set_alarm	B-recurring_datetime
+6	sepuluh	alarm/set_alarm	I-recurring_datetime
+7	menit	alarm/set_alarm	I-recurring_datetime
+8	,	alarm/set_alarm	I-recurring_datetime
+9	mulai	alarm/set_alarm	I-recurring_datetime
+10	jam	alarm/set_alarm	I-recurring_datetime
+11	5:30	alarm/set_alarm	I-recurring_datetime
+12	dan	alarm/set_alarm	I-recurring_datetime
+13	berakhir	alarm/set_alarm	I-recurring_datetime
+14	pada	alarm/set_alarm	I-recurring_datetime
+15	jam	alarm/set_alarm	I-recurring_datetime
+16	6	alarm/set_alarm	I-recurring_datetime
+17	pagi	alarm/set_alarm	I-recurring_datetime
+18	.	alarm/set_alarm	O
+
+# id: 140
+# text-en: Is it going to rain on Saturday?
+# text: Apakah akan hujan pada hari Sabtu?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	hujan	weather/find	B-weather/attribute
+4	pada	weather/find	O
+5	hari	weather/find	B-datetime
+6	Sabtu	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 141
+# text-en: Set eh alarm to 7:20am for the shoe release.
+# text: Setel alarm ke 7:20 pagi untuk pelepasan sepatu.
+# intent: alarm/set_alarm
+1	Setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	ke	alarm/set_alarm	O
+4	7:20	alarm/set_alarm	B-datetime
+5	pagi	alarm/set_alarm	I-datetime
+6	untuk	alarm/set_alarm	O
+7	pelepasan	alarm/set_alarm	B-reminder/todo
+8	sepatu	alarm/set_alarm	I-reminder/todo
+9	.	alarm/set_alarm	O
+
+# id: 142
+# text-en: Will there be storms in Bordentown today
+# text: Akankah ada badai di Bordentown hari ini
+# intent: weather/find
+1	Akankah	weather/find	O
+2	ada	weather/find	O
+3	badai	weather/find	B-weather/attribute
+4	di	weather/find	O
+5	Bordentown	weather/find	B-location
+6	hari	weather/find	B-datetime
+7	ini	weather/find	I-datetime
+
+# id: 143
+# text-en: what is the current temperature
+# text: berapa suhu saat ini
+# intent: weather/find
+1	berapa	weather/find	O
+2	suhu	weather/find	B-weather/attribute
+3	saat	weather/find	B-datetime
+4	ini	weather/find	I-datetime
+
+# id: 144
+# text-en: remind me to make Dan's lunch at 7:30am tomorrow.
+# text: ingatkan saya untuk membuat makan siang Dan pada pukul 7.30 pagi besok.
+# intent: reminder/set_reminder
+1	ingatkan	reminder/set_reminder	O
+2	saya	reminder/set_reminder	O
+3	untuk	reminder/set_reminder	O
+4	membuat	reminder/set_reminder	B-reminder/todo
+5	makan	reminder/set_reminder	I-reminder/todo
+6	siang	reminder/set_reminder	I-reminder/todo
+7	Dan	reminder/set_reminder	I-reminder/todo
+8	pada	reminder/set_reminder	O
+9	pukul	reminder/set_reminder	B-datetime
+10	7	reminder/set_reminder	I-datetime
+11	.	reminder/set_reminder	I-datetime
+12	30	reminder/set_reminder	I-datetime
+13	pagi	reminder/set_reminder	I-datetime
+14	besok	reminder/set_reminder	I-datetime
+15	.	reminder/set_reminder	O
+
+# id: 145
+# text-en: Set alarm for 6:30am tomorrow.
+# text: Setel alarm untuk jam 06.30 besok.
+# intent: alarm/set_alarm
+1	Setel	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	untuk	alarm/set_alarm	O
+4	jam	alarm/set_alarm	B-datetime
+5	06	alarm/set_alarm	I-datetime
+6	.	alarm/set_alarm	I-datetime
+7	30	alarm/set_alarm	I-datetime
+8	besok	alarm/set_alarm	I-datetime
+9	.	alarm/set_alarm	O
+
+# id: 146
+# text-en: Do I have any reminders set?
+# text: Apakah saya sudah menyetel pengingat?
+# intent: reminder/show_reminders
+1	Apakah	reminder/show_reminders	O
+2	saya	reminder/show_reminders	O
+3	sudah	reminder/show_reminders	O
+4	menyetel	reminder/show_reminders	O
+5	pengingat	reminder/show_reminders	O
+6	?	reminder/show_reminders	O
+
+# id: 147
+# text-en: Is my dentist appointment in my reminder ?
+# text: Apakah janji dengan dokter gigi saya ada di pengingat saya?
+# intent: reminder/show_reminders
+1	Apakah	reminder/show_reminders	O
+2	janji	reminder/show_reminders	B-reminder/todo
+3	dengan	reminder/show_reminders	I-reminder/todo
+4	dokter	reminder/show_reminders	I-reminder/todo
+5	gigi	reminder/show_reminders	I-reminder/todo
+6	saya	reminder/show_reminders	I-reminder/todo
+7	ada	reminder/show_reminders	O
+8	di	reminder/show_reminders	O
+9	pengingat	reminder/show_reminders	O
+10	saya	reminder/show_reminders	B-reference
+11	?	reminder/show_reminders	O
+
+# id: 148
+# text-en: when will it stop raining?
+# text: kapan hujan akan berhenti?
+# intent: weather/find
+1	kapan	weather/find	O
+2	hujan	weather/find	B-weather/attribute
+3	akan	weather/find	O
+4	berhenti	weather/find	O
+5	?	weather/find	O
+
+# id: 149
+# text-en: Is it going to snow this week?
+# text: Apakah akan turun salju minggu ini?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	akan	weather/find	O
+3	turun	weather/find	B-weather/attribute
+4	salju	weather/find	I-weather/attribute
+5	minggu	weather/find	B-datetime
+6	ini	weather/find	I-datetime
+7	?	weather/find	O
+
+# id: 150
+# text-en: turn off alarm
+# text: matikan alarm
+# intent: alarm/cancel_alarm
+1	matikan	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# id: 151
+# text-en: I would give Half a Life 3 out of 6
+# text: Saya akan memberikan Half a Life 3 dari 6
+# intent: RateBook
+1	Saya	RateBook	O
+2	akan	RateBook	O
+3	memberikan	RateBook	O
+4	Half	RateBook	B-object_name
+5	a	RateBook	I-object_name
+6	Life	RateBook	I-object_name
+7	3	RateBook	B-rating_value
+8	dari	RateBook	O
+9	6	RateBook	B-best_rating
+
+# id: 152
+# text-en: Play some Mf Doom from the sixties on pandora .
+# text: Mainkan beberapa Mf Doom dari tahun enam puluhan di pandora .
+# intent: PlayMusic
+1	Mainkan	PlayMusic	O
+2	beberapa	PlayMusic	O
+3	Mf	PlayMusic	B-artist
+4	Doom	PlayMusic	I-artist
+5	dari	PlayMusic	O
+6	tahun	PlayMusic	O
+7	enam	PlayMusic	B-datetime
+8	puluhan	PlayMusic	I-datetime
+9	di	PlayMusic	O
+10	pandora	PlayMusic	B-service
+11	.	PlayMusic	O
+
+# id: 153
+# text-en: Search for Chasing Fortune a TV series .
+# text: Telusuri sebuah serial TV Chasing Fortune .
+# intent: SearchCreativeWork
+1	Telusuri	SearchCreativeWork	O
+2	sebuah	SearchCreativeWork	O
+3	serial	SearchCreativeWork	B-object_type
+4	TV	SearchCreativeWork	I-object_type
+5	Chasing	SearchCreativeWork	B-object_name
+6	Fortune	SearchCreativeWork	I-object_name
+7	.	SearchCreativeWork	O
+
+# id: 154
+# text-en: Play shadowplay by Dana on Deezer .
+# text: Mainkan wayang kulit oleh Dana di Deezer .
+# intent: PlayMusic
+1	Mainkan	PlayMusic	O
+2	wayang	PlayMusic	B-track
+3	kulit	PlayMusic	I-track
+4	oleh	PlayMusic	O
+5	Dana	PlayMusic	B-artist
+6	di	PlayMusic	O
+7	Deezer	PlayMusic	B-service
+8	.	PlayMusic	O
+
+# id: 155
+# text-en: me and imelda want a reservation in Missouri at seven am
+# text: saya dan imelda ingin sebuah reservasi di Missouri pada pukul tujuh pagi
+# intent: BookRestaurant
+1	saya	BookRestaurant	B-party_size_description
+2	dan	BookRestaurant	I-party_size_description
+3	imelda	BookRestaurant	I-party_size_description
+4	ingin	BookRestaurant	O
+5	sebuah	BookRestaurant	O
+6	reservasi	BookRestaurant	O
+7	di	BookRestaurant	O
+8	Missouri	BookRestaurant	B-location
+9	pada	BookRestaurant	O
+10	pukul	BookRestaurant	B-datetime
+11	tujuh	BookRestaurant	I-datetime
+12	pagi	BookRestaurant	I-datetime
+
+# id: 156
+# text-en: add bob klose to la mejor música para tus fiestas
+# text: tambahkan bob klose ke la mejor música para tus fiestas
+# intent: AddToPlaylist
+1	tambahkan	AddToPlaylist	O
+2	bob	AddToPlaylist	B-artist
+3	klose	AddToPlaylist	I-artist
+4	ke	AddToPlaylist	O
+5	la	AddToPlaylist	B-playlist
+6	mejor	AddToPlaylist	I-playlist
+7	música	AddToPlaylist	I-playlist
+8	para	AddToPlaylist	I-playlist
+9	tus	AddToPlaylist	I-playlist
+10	fiestas	AddToPlaylist	I-playlist
+
+# id: 157
+# text-en: play Luis Alfonzo Larrain from 1995
+# text: mainkan Luis Alfonzo Larrain dari 1995
+# intent: PlayMusic
+1	mainkan	PlayMusic	O
+2	Luis	PlayMusic	B-artist
+3	Alfonzo	PlayMusic	I-artist
+4	Larrain	PlayMusic	I-artist
+5	dari	PlayMusic	O
+6	1995	PlayMusic	B-datetime
+
+# id: 158
+# text-en: What will the weather be like in the Bahamas eleven years and a half from now
+# text: Akan seperti apa cuaca di Bahama sebelas tahun setengah dari sekarang
+# intent: weather/find
+1	Akan	weather/find	O
+2	seperti	weather/find	O
+3	apa	weather/find	O
+4	cuaca	weather/find	O
+5	di	weather/find	O
+6	Bahama	weather/find	B-location
+7	sebelas	weather/find	B-datetime
+8	tahun	weather/find	I-datetime
+9	setengah	weather/find	I-datetime
+10	dari	weather/find	I-datetime
+11	sekarang	weather/find	I-datetime
+
+# id: 159
+# text-en: What will the weather be like in Arizona on october the 3rd
+# text: Akan seperti apa cuaca di Arizona pada tanggal 3 Oktober
+# intent: weather/find
+1	Akan	weather/find	O
+2	seperti	weather/find	O
+3	apa	weather/find	O
+4	cuaca	weather/find	O
+5	di	weather/find	O
+6	Arizona	weather/find	B-location
+7	pada	weather/find	O
+8	tanggal	weather/find	B-datetime
+9	3	weather/find	I-datetime
+10	Oktober	weather/find	I-datetime
+
+# id: 160
+# text-en: Play opera music on google music
+# text: Mainkan musik opera di google music
+# intent: PlayMusic
+1	Mainkan	PlayMusic	O
+2	musik	PlayMusic	O
+3	opera	PlayMusic	B-genre
+4	di	PlayMusic	O
+5	google	PlayMusic	B-service
+6	music	PlayMusic	I-service
+
+# id: 161
+# text-en: find Vegucated starting at zero pm
+# text: temukan Vegucated mulai dari tengah malam
+# intent: SearchScreeningEvent
+1	temukan	SearchScreeningEvent	O
+2	Vegucated	SearchScreeningEvent	B-movie_name
+3	mulai	SearchScreeningEvent	O
+4	dari	SearchScreeningEvent	O
+5	tengah	SearchScreeningEvent	B-datetime
+6	malam	SearchScreeningEvent	I-datetime
+
+# id: 162
+# text-en: Give the current novel a 3 out of 6 rating
+# text: Memberikan novel tersebut penilaian 3 dari 6
+# intent: RateBook
+1	Memberikan	RateBook	O
+2	novel	RateBook	B-object_type
+3	tersebut	RateBook	B-object_select
+4	penilaian	RateBook	O
+5	3	RateBook	B-rating_value
+6	dari	RateBook	O
+7	6	RateBook	B-best_rating
+
+# id: 163
+# text-en: I'd like to add this album to funtime .
+# text: Saya ingin menambahkan album ini ke funtime .
+# intent: AddToPlaylist
+1	Saya	AddToPlaylist	O
+2	ingin	AddToPlaylist	O
+3	menambahkan	AddToPlaylist	O
+4	album	AddToPlaylist	B-music_item
+5	ini	AddToPlaylist	O
+6	ke	AddToPlaylist	O
+7	funtime	AddToPlaylist	B-playlist
+8	.	AddToPlaylist	O
+
+# id: 164
+# text-en: I need a table for 4 at a restaurant around 0 AM .
+# text: Saya perlu sebuah meja untuk 4 orang di sebuah restoran sekitar pukul 12 malam .
+# intent: BookRestaurant
+1	Saya	BookRestaurant	O
+2	perlu	BookRestaurant	O
+3	sebuah	BookRestaurant	O
+4	meja	BookRestaurant	O
+5	untuk	BookRestaurant	O
+6	4	BookRestaurant	B-party_size_number
+7	orang	BookRestaurant	O
+8	di	BookRestaurant	O
+9	sebuah	BookRestaurant	O
+10	restoran	BookRestaurant	B-restaurant_type
+11	sekitar	BookRestaurant	O
+12	pukul	BookRestaurant	B-datetime
+13	12	BookRestaurant	I-datetime
+14	malam	BookRestaurant	I-datetime
+15	.	BookRestaurant	O
+
+# id: 165
+# text-en: find the picture Louder Than Bombs
+# text: temukan gambar Louder Than Bombs
+# intent: SearchCreativeWork
+1	temukan	SearchCreativeWork	O
+2	gambar	SearchCreativeWork	B-object_type
+3	Louder	SearchCreativeWork	B-object_name
+4	Than	SearchCreativeWork	I-object_name
+5	Bombs	SearchCreativeWork	I-object_name
+
+# id: 166
+# text-en: Give 2 out of 6 points to A Tale of Time City
+# text: Memberikan 2 dari 6 poin untuk A Tale of Time City
+# intent: RateBook
+1	Memberikan	RateBook	O
+2	2	RateBook	B-rating_value
+3	dari	RateBook	O
+4	6	RateBook	B-best_rating
+5	poin	RateBook	B-rating_unit
+6	untuk	RateBook	O
+7	A	RateBook	B-object_name
+8	Tale	RateBook	I-object_name
+9	of	RateBook	I-object_name
+10	Time	RateBook	I-object_name
+11	City	RateBook	I-object_name
+
+# id: 167
+# text-en: add this current book five stars
+# text: tambahkan lima bintang untuk buku ini
+# intent: RateBook
+1	tambahkan	RateBook	O
+2	lima	RateBook	B-rating_value
+3	bintang	RateBook	B-rating_unit
+4	untuk	RateBook	O
+5	buku	RateBook	B-object_type
+6	ini	RateBook	B-object_select
+
+# id: 168
+# text-en: add track 70s smash hits to my
+# text: tambahkan trek 70s smash hits ke saya
+# intent: AddToPlaylist
+1	tambahkan	AddToPlaylist	O
+2	trek	AddToPlaylist	B-music_item
+3	70s	AddToPlaylist	B-playlist
+4	smash	AddToPlaylist	I-playlist
+5	hits	AddToPlaylist	I-playlist
+6	ke	AddToPlaylist	O
+7	saya	AddToPlaylist	B-reference
+
+# id: 169
+# text-en: book near Montana restaurant serving sri lankan food for 6 that is highly rated on tues.
+# text: pesan di dekat restoran Montana yang menyajikan makanan sri lanka untuk 6 orang yang dinilai tinggi pada Selasa.
+# intent: BookRestaurant
+1	pesan	BookRestaurant	O
+2	di	BookRestaurant	O
+3	dekat	BookRestaurant	B-location
+4	restoran	BookRestaurant	B-restaurant_type
+5	Montana	BookRestaurant	B-location
+6	yang	BookRestaurant	O
+7	menyajikan	BookRestaurant	O
+8	makanan	BookRestaurant	O
+9	sri	BookRestaurant	B-cuisine
+10	lanka	BookRestaurant	I-cuisine
+11	untuk	BookRestaurant	O
+12	6	BookRestaurant	B-party_size_number
+13	orang	BookRestaurant	O
+14	yang	BookRestaurant	O
+15	dinilai	BookRestaurant	B-sort
+16	tinggi	BookRestaurant	I-sort
+17	pada	BookRestaurant	O
+18	Selasa	BookRestaurant	B-datetime
+19	.	BookRestaurant	O
+
+# id: 170
+# text-en: Book me a lunch at Boreas for a party of 8
+# text: Pesankan saya sebuah makan siang di Boreas untuk sebuah pesta untuk 8 orang
+# intent: BookRestaurant
+1	Pesankan	BookRestaurant	O
+2	saya	BookRestaurant	O
+3	sebuah	BookRestaurant	O
+4	makan	BookRestaurant	B-datetime
+5	siang	BookRestaurant	I-datetime
+6	di	BookRestaurant	O
+7	Boreas	BookRestaurant	B-restaurant_name
+8	untuk	BookRestaurant	O
+9	sebuah	BookRestaurant	O
+10	pesta	BookRestaurant	O
+11	untuk	BookRestaurant	O
+12	8	BookRestaurant	B-party_size_number
+13	orang	BookRestaurant	O
+
+# id: 171
+# text-en: Please put another tune into the laundry playlist.
+# text: Tolong masukkan lagu lain ke dalam playlist cucian.
+# intent: AddToPlaylist
+1	Tolong	AddToPlaylist	O
+2	masukkan	AddToPlaylist	O
+3	lagu	AddToPlaylist	B-music_item
+4	lain	AddToPlaylist	O
+5	ke	AddToPlaylist	O
+6	dalam	AddToPlaylist	O
+7	playlist	AddToPlaylist	O
+8	cucian	AddToPlaylist	B-playlist
+9	.	AddToPlaylist	O
+
+# id: 172
+# text-en: what is the PW forecast for stormy weather
+# text: apa perkiraan PW untuk cuaca berbadai
+# intent: weather/find
+1	apa	weather/find	O
+2	perkiraan	weather/find	O
+3	PW	weather/find	B-location
+4	untuk	weather/find	O
+5	cuaca	weather/find	O
+6	berbadai	weather/find	B-condition_description
+
+# id: 173
+# text-en: What is the predicted weather for my current spot next month ?
+# text: Apa perkiraan cuaca untuk tempat saya saat ini bulan depan ?
+# intent: weather/find
+1	Apa	weather/find	O
+2	perkiraan	weather/find	O
+3	cuaca	weather/find	O
+4	untuk	weather/find	O
+5	tempat	weather/find	B-location
+6	saya	weather/find	O
+7	saat	weather/find	B-location
+8	ini	weather/find	I-location
+9	bulan	weather/find	B-datetime
+10	depan	weather/find	I-datetime
+11	?	weather/find	O
+
+# id: 174
+# text-en: Book a reservation for 1 on march 17
+# text: Pesan sebuah reservasi untuk 1 orang pada 17 Maret
+# intent: BookRestaurant
+1	Pesan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	reservasi	BookRestaurant	O
+4	untuk	BookRestaurant	O
+5	1	BookRestaurant	B-party_size_number
+6	orang	BookRestaurant	O
+7	pada	BookRestaurant	O
+8	17	BookRestaurant	B-datetime
+9	Maret	BookRestaurant	I-datetime
+
+# id: 175
+# text-en: The current album gets three out of 6 points
+# text: Memberi nilai buku ini 1
+# intent: RateBook
+1	Memberi	RateBook	O
+2	nilai	RateBook	O
+3	buku	RateBook	B-object_type
+4	ini	RateBook	B-object_select
+5	1	RateBook	B-rating_value
+
+# id: 176
+# text-en: Add the Nastya Kamenskih song to my The Martin Garrix Show playlist.
+# text: Tambahkan lagu Nastya Kamenskih ke playlist The Martin Garrix Show saya.
+# intent: AddToPlaylist
+1	Tambahkan	AddToPlaylist	O
+2	lagu	AddToPlaylist	B-music_item
+3	Nastya	AddToPlaylist	B-artist
+4	Kamenskih	AddToPlaylist	I-artist
+5	ke	AddToPlaylist	O
+6	playlist	AddToPlaylist	O
+7	The	AddToPlaylist	B-playlist
+8	Martin	AddToPlaylist	I-playlist
+9	Garrix	AddToPlaylist	I-playlist
+10	Show	AddToPlaylist	I-playlist
+11	saya	AddToPlaylist	B-reference
+12	.	AddToPlaylist	O
+
+# id: 177
+# text-en: Wish to hear the album Since I Saw You Last
+# text: Ingin mendengar album Since I Saw You Last
+# intent: SearchCreativeWork
+1	Ingin	SearchCreativeWork	O
+2	mendengar	SearchCreativeWork	O
+3	album	SearchCreativeWork	B-object_type
+4	Since	SearchCreativeWork	B-object_name
+5	I	SearchCreativeWork	I-object_name
+6	Saw	SearchCreativeWork	I-object_name
+7	You	SearchCreativeWork	I-object_name
+8	Last	SearchCreativeWork	I-object_name
+
+# id: 178
+# text-en: play top tunes by Joseph Utsler
+# text: mainkan lagu terbaik dari Joseph Utsler
+# intent: PlayMusic
+1	mainkan	PlayMusic	O
+2	lagu	PlayMusic	O
+3	terbaik	PlayMusic	B-sort
+4	dari	PlayMusic	O
+5	Joseph	PlayMusic	B-artist
+6	Utsler	PlayMusic	I-artist
+
+# id: 179
+# text-en: Find the schedule for Ghost World .
+# text: Temukan jadwal untuk Ghost World .
+# intent: SearchScreeningEvent
+1	Temukan	SearchScreeningEvent	O
+2	jadwal	SearchScreeningEvent	B-object_type
+3	untuk	SearchScreeningEvent	O
+4	Ghost	SearchScreeningEvent	B-movie_name
+5	World	SearchScreeningEvent	I-movie_name
+6	.	SearchScreeningEvent	O
+
+# id: 180
+# text-en: I want to listen to a concerto from Timour Moutsouraev .
+# text: Saya ingin mendengarkan sebuah konserto dari Timour Moutsouraev .
+# intent: PlayMusic
+1	Saya	PlayMusic	O
+2	ingin	PlayMusic	O
+3	mendengarkan	PlayMusic	O
+4	sebuah	PlayMusic	O
+5	konserto	PlayMusic	B-music_item
+6	dari	PlayMusic	O
+7	Timour	PlayMusic	B-artist
+8	Moutsouraev	PlayMusic	I-artist
+9	.	PlayMusic	O
+
+# id: 181
+# text-en: play the album Everybody Happy by Lee Aaron
+# text: mainkan album Everybody Happy oleh Lee Aaron
+# intent: PlayMusic
+1	mainkan	PlayMusic	O
+2	album	PlayMusic	B-music_item
+3	Everybody	PlayMusic	B-album
+4	Happy	PlayMusic	I-album
+5	oleh	PlayMusic	O
+6	Lee	PlayMusic	B-artist
+7	Aaron	PlayMusic	I-artist
+
+# id: 182
+# text-en: play Fereydoun Farrokhzad best track
+# text: mainkan lagu terbaik Fereydoun Farrokhzad
+# intent: PlayMusic
+1	mainkan	PlayMusic	O
+2	lagu	PlayMusic	B-music_item
+3	terbaik	PlayMusic	B-sort
+4	Fereydoun	PlayMusic	B-artist
+5	Farrokhzad	PlayMusic	I-artist
+
+# id: 183
+# text-en: rate the current book three stars
+# text: memberi nilai buku ini tiga bintang
+# intent: RateBook
+1	memberi	RateBook	O
+2	nilai	RateBook	O
+3	buku	RateBook	B-object_type
+4	ini	RateBook	B-object_select
+5	tiga	RateBook	B-rating_value
+6	bintang	RateBook	B-rating_unit
+
+# id: 184
+# text-en: What will the weather be in Meeres-Nationalpark Insel Bastimentos at twelve PM ?
+# text: Akan seperti apa cuaca di Meeres-Nationalpark Insel Bastimentos pada pukul dua belas siang ?
+# intent: weather/find
+1	Akan	weather/find	O
+2	seperti	weather/find	O
+3	apa	weather/find	O
+4	cuaca	weather/find	O
+5	di	weather/find	O
+6	Meeres-Nationalpark	weather/find	B-location
+7	Insel	weather/find	I-location
+8	Bastimentos	weather/find	I-location
+9	pada	weather/find	O
+10	pukul	weather/find	B-datetime
+11	dua	weather/find	I-datetime
+12	belas	weather/find	I-datetime
+13	siang	weather/find	I-datetime
+14	?	weather/find	O
+
+# id: 185
+# text-en: Book a table for 10 people at a restaurant which offers internet .
+# text: Pesan sebuah meja untuk 10 orang di sebuah restoran yang menawarkan internet .
+# intent: BookRestaurant
+1	Pesan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	meja	BookRestaurant	O
+4	untuk	BookRestaurant	O
+5	10	BookRestaurant	B-party_size_number
+6	orang	BookRestaurant	O
+7	di	BookRestaurant	O
+8	sebuah	BookRestaurant	O
+9	restoran	BookRestaurant	B-restaurant_type
+10	yang	BookRestaurant	O
+11	menawarkan	BookRestaurant	O
+12	internet	BookRestaurant	B-facility
+13	.	BookRestaurant	O
+
+# id: 186
+# text-en: give five points to The Tenor Wore Tapshoes
+# text: berikan lima poin untuk The Tenor Wore Tapshoes
+# intent: RateBook
+1	berikan	RateBook	O
+2	lima	RateBook	B-rating_value
+3	poin	RateBook	B-rating_unit
+4	untuk	RateBook	O
+5	The	RateBook	B-object_name
+6	Tenor	RateBook	I-object_name
+7	Wore	RateBook	I-object_name
+8	Tapshoes	RateBook	I-object_name
+
+# id: 187
+# text-en: Play a tune by Houston on Spotify
+# text: Putar sebuah lagu oleh Houston di Spotify
+# intent: PlayMusic
+1	Putar	PlayMusic	O
+2	sebuah	PlayMusic	O
+3	lagu	PlayMusic	B-music_item
+4	oleh	PlayMusic	O
+5	Houston	PlayMusic	B-artist
+6	di	PlayMusic	O
+7	Spotify	PlayMusic	B-service
+
+# id: 188
+# text-en: find a movie theatre with Life and Death
+# text: temukan sebuah bioskop dengan Life and Death
+# intent: SearchScreeningEvent
+1	temukan	SearchScreeningEvent	O
+2	sebuah	SearchScreeningEvent	O
+3	bioskop	SearchScreeningEvent	B-object_location_type
+4	dengan	SearchScreeningEvent	O
+5	Life	SearchScreeningEvent	B-movie_name
+6	and	SearchScreeningEvent	I-movie_name
+7	Death	SearchScreeningEvent	I-movie_name
+
+# id: 189
+# text-en: Play music from the playlist Get Your Mind Right
+# text: Mainkan musik dari daftar putar Get Your Mind Right
+# intent: PlayMusic
+1	Mainkan	PlayMusic	O
+2	musik	PlayMusic	O
+3	dari	PlayMusic	O
+4	daftar	PlayMusic	O
+5	putar	PlayMusic	O
+6	Get	PlayMusic	B-playlist
+7	Your	PlayMusic	I-playlist
+8	Mind	PlayMusic	I-playlist
+9	Right	PlayMusic	I-playlist
+
+# id: 190
+# text-en: book a table today at a steakhouse for eight that serves sashimi
+# text: pesan sebuah meja hari ini di sebuah restoran steak untuk delapan orang yang menyajikan sashimi
+# intent: BookRestaurant
+1	pesan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	meja	BookRestaurant	O
+4	hari	BookRestaurant	B-datetime
+5	ini	BookRestaurant	I-datetime
+6	di	BookRestaurant	O
+7	sebuah	BookRestaurant	O
+8	restoran	BookRestaurant	B-restaurant_type
+9	steak	BookRestaurant	I-restaurant_type
+10	untuk	BookRestaurant	O
+11	delapan	BookRestaurant	B-party_size_number
+12	orang	BookRestaurant	O
+13	yang	BookRestaurant	O
+14	menyajikan	BookRestaurant	O
+15	sashimi	BookRestaurant	B-served_dish
+
+# id: 191
+# text-en: find animated movies at Caribbean Cinemas
+# text: temukan film animasi di Caribbean Cinemas
+# intent: SearchScreeningEvent
+1	temukan	SearchScreeningEvent	O
+2	film	SearchScreeningEvent	B-movie_type
+3	animasi	SearchScreeningEvent	I-movie_type
+4	di	SearchScreeningEvent	O
+5	Caribbean	SearchScreeningEvent	B-location
+6	Cinemas	SearchScreeningEvent	I-location
+
+# id: 192
+# text-en: Will there be a storm nearby
+# text: Akankah ada sebuah badai di dekat sini
+# intent: weather/find
+1	Akankah	weather/find	O
+2	ada	weather/find	O
+3	sebuah	weather/find	O
+4	badai	weather/find	B-condition_description
+5	di	weather/find	O
+6	dekat	weather/find	B-location
+7	sini	weather/find	I-location
+
+# id: 193
+# text-en: Play some melody from the eighties on Spotify
+# text: Mainkan beberapa melodi dari tahun delapan puluhan di Spotify
+# intent: PlayMusic
+1	Mainkan	PlayMusic	O
+2	beberapa	PlayMusic	O
+3	melodi	PlayMusic	B-music_item
+4	dari	PlayMusic	O
+5	tahun	PlayMusic	O
+6	delapan	PlayMusic	B-datetime
+7	puluhan	PlayMusic	I-datetime
+8	di	PlayMusic	O
+9	Spotify	PlayMusic	B-service
+
+# id: 194
+# text-en: Where can I find The World According to Paris ?
+# text: Dimana saya dapat menemukan The World According to Paris ?
+# intent: SearchCreativeWork
+1	Dimana	SearchCreativeWork	O
+2	saya	SearchCreativeWork	O
+3	dapat	SearchCreativeWork	O
+4	menemukan	SearchCreativeWork	O
+5	The	SearchCreativeWork	B-object_name
+6	World	SearchCreativeWork	I-object_name
+7	According	SearchCreativeWork	I-object_name
+8	to	SearchCreativeWork	I-object_name
+9	Paris	SearchCreativeWork	I-object_name
+10	?	SearchCreativeWork	O
+
+# id: 195
+# text-en: Tell me when it will be hotter in China
+# text: Beri tahu saya kapan akan lebih panas di China
+# intent: weather/find
+1	Beri	weather/find	O
+2	tahu	weather/find	O
+3	saya	weather/find	O
+4	kapan	weather/find	O
+5	akan	weather/find	O
+6	lebih	weather/find	O
+7	panas	weather/find	B-condition_temperature
+8	di	weather/find	O
+9	China	weather/find	B-location
+
+# id: 196
+# text-en: What are the movie times for the Caribbean Cinemas ?
+# text: Jam berapa jadwal bioskop untuk Caribbean Cinemas ?
+# intent: SearchScreeningEvent
+1	Jam	SearchScreeningEvent	O
+2	berapa	SearchScreeningEvent	O
+3	jadwal	SearchScreeningEvent	B-object_type
+4	bioskop	SearchScreeningEvent	I-object_type
+5	untuk	SearchScreeningEvent	O
+6	Caribbean	SearchScreeningEvent	B-location
+7	Cinemas	SearchScreeningEvent	I-location
+8	?	SearchScreeningEvent	O
+
+# id: 197
+# text-en: Will the wind die down at my current location by supper time?
+# text: Akankah anginnya mereda di lokasi saya saat ini pada waktu makan malam?
+# intent: weather/find
+1	Akankah	weather/find	O
+2	anginnya	weather/find	B-condition_description
+3	mereda	weather/find	O
+4	di	weather/find	O
+5	lokasi	weather/find	B-location
+6	saya	weather/find	O
+7	saat	weather/find	B-location
+8	ini	weather/find	I-location
+9	pada	weather/find	O
+10	waktu	weather/find	O
+11	makan	weather/find	B-datetime
+12	malam	weather/find	I-datetime
+13	?	weather/find	O
+
+# id: 198
+# text-en: Find me The Twinkler playing at National Amusements in 2 minutes
+# text: Carikan saya The Twinkler diputar di National Amusements dalam 2 menit
+# intent: SearchScreeningEvent
+1	Carikan	SearchScreeningEvent	O
+2	saya	SearchScreeningEvent	O
+3	The	SearchScreeningEvent	B-movie_name
+4	Twinkler	SearchScreeningEvent	I-movie_name
+5	diputar	SearchScreeningEvent	O
+6	di	SearchScreeningEvent	O
+7	National	SearchScreeningEvent	B-location
+8	Amusements	SearchScreeningEvent	I-location
+9	dalam	SearchScreeningEvent	B-datetime
+10	2	SearchScreeningEvent	I-datetime
+11	menit	SearchScreeningEvent	I-datetime
+
+# id: 199
+# text-en: I give Hadon of Ancient Opar two out of 6 points
+# text: Saya memberikan Hadon of Ancient Opar dua dari 6 poin
+# intent: RateBook
+1	Saya	RateBook	O
+2	memberikan	RateBook	O
+3	Hadon	RateBook	B-object_name
+4	of	RateBook	I-object_name
+5	Ancient	RateBook	I-object_name
+6	Opar	RateBook	I-object_name
+7	dua	RateBook	B-rating_value
+8	dari	RateBook	O
+9	6	RateBook	B-best_rating
+10	poin	RateBook	B-rating_unit
+
+# id: 200
+# text-en: I'm looking to bring shawn, marguerite and della to a place to eat at near Rwanda .
+# text: Saya ingin membawa shawn, marguerite, dan della ke sebuah tempat makan di dekat Rwanda .
+# intent: BookRestaurant
+1	Saya	BookRestaurant	O
+2	ingin	BookRestaurant	O
+3	membawa	BookRestaurant	O
+4	shawn	BookRestaurant	B-party_size_description
+5	,	BookRestaurant	I-party_size_description
+6	marguerite	BookRestaurant	I-party_size_description
+7	,	BookRestaurant	I-party_size_description
+8	dan	BookRestaurant	I-party_size_description
+9	della	BookRestaurant	I-party_size_description
+10	ke	BookRestaurant	O
+11	sebuah	BookRestaurant	O
+12	tempat	BookRestaurant	O
+13	makan	BookRestaurant	O
+14	di	BookRestaurant	O
+15	dekat	BookRestaurant	B-location
+16	Rwanda	BookRestaurant	B-location
+17	.	BookRestaurant	O
+
+# id: 201
+# text-en: Play music on Lastfm
+# text: Putar musik di Lastfm
+# intent: PlayMusic
+1	Putar	PlayMusic	O
+2	musik	PlayMusic	O
+3	di	PlayMusic	O
+4	Lastfm	PlayMusic	B-service
+
+# id: 202
+# text-en: Will it be snowy at the current position by March 3 ?
+# text: Akankah turun salju pada lokasi saat ini pada 3 Maret ?
+# intent: weather/find
+1	Akankah	weather/find	O
+2	turun	weather/find	O
+3	salju	weather/find	B-condition_description
+4	pada	weather/find	O
+5	lokasi	weather/find	B-location
+6	saat	weather/find	I-location
+7	ini	weather/find	I-location
+8	pada	weather/find	O
+9	3	weather/find	B-datetime
+10	Maret	weather/find	I-datetime
+11	?	weather/find	O
+
+# id: 203
+# text-en: Find me a table for 8 somewhee in Hollenberg in nine weeks
+# text: Pesan sebuah tempat untuk 4 orang di Oklahoma di South Street Diner
+# intent: BookRestaurant
+1	Pesan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	tempat	BookRestaurant	O
+4	untuk	BookRestaurant	O
+5	4	BookRestaurant	B-party_size_number
+6	orang	BookRestaurant	O
+7	di	BookRestaurant	O
+8	Oklahoma	BookRestaurant	B-location
+9	di	BookRestaurant	O
+10	South	BookRestaurant	B-restaurant_name
+11	Street	BookRestaurant	I-restaurant_name
+12	Diner	BookRestaurant	I-restaurant_name
+
+# id: 204
+# text-en: play a track from 2004
+# text: mainkan sebuah lagu dari tahun 2004
+# intent: PlayMusic
+1	mainkan	PlayMusic	O
+2	sebuah	PlayMusic	O
+3	lagu	PlayMusic	B-music_item
+4	dari	PlayMusic	O
+5	tahun	PlayMusic	O
+6	2004	PlayMusic	B-datetime
+
+# id: 205
+# text-en: Tell me what films are currently playing at AMC Theaters
+# text: Beri tahu saya film apa yang sedang diputar di Bioskop AMC
+# intent: SearchScreeningEvent
+1	Beri	SearchScreeningEvent	O
+2	tahu	SearchScreeningEvent	O
+3	saya	SearchScreeningEvent	O
+4	film	SearchScreeningEvent	B-movie_type
+5	apa	SearchScreeningEvent	O
+6	yang	SearchScreeningEvent	O
+7	sedang	SearchScreeningEvent	O
+8	diputar	SearchScreeningEvent	O
+9	di	SearchScreeningEvent	O
+10	Bioskop	SearchScreeningEvent	B-location
+11	AMC	SearchScreeningEvent	I-location
+
+# id: 206
+# text-en: Show me the TV show Limit of Love: Umizaru
+# text: Tunjukkan saya acara TV Limit of Love: Umizaru
+# intent: SearchCreativeWork
+1	Tunjukkan	SearchCreativeWork	O
+2	saya	SearchCreativeWork	O
+3	acara	SearchCreativeWork	B-object_type
+4	TV	SearchCreativeWork	I-object_type
+5	Limit	SearchCreativeWork	B-object_name
+6	of	SearchCreativeWork	I-object_name
+7	Love:	SearchCreativeWork	I-object_name
+8	Umizaru	SearchCreativeWork	I-object_name
+
+# id: 207
+# text-en: Show me the photograph Rock You Baby
+# text: Tunjukkan saya foto Rock You Baby
+# intent: SearchCreativeWork
+1	Tunjukkan	SearchCreativeWork	O
+2	saya	SearchCreativeWork	O
+3	foto	SearchCreativeWork	B-object_type
+4	Rock	SearchCreativeWork	B-object_name
+5	You	SearchCreativeWork	I-object_name
+6	Baby	SearchCreativeWork	I-object_name
+
+# id: 208
+# text-en: is Tarzan of the Apes playing at Cobb Theatres
+# text: apakah Tarzan of the Apes sedaing tayang di Bioskop Cobb
+# intent: SearchScreeningEvent
+1	apakah	SearchScreeningEvent	O
+2	Tarzan	SearchScreeningEvent	B-movie_name
+3	of	SearchScreeningEvent	I-movie_name
+4	the	SearchScreeningEvent	I-movie_name
+5	Apes	SearchScreeningEvent	I-movie_name
+6	sedaing	SearchScreeningEvent	O
+7	tayang	SearchScreeningEvent	O
+8	di	SearchScreeningEvent	O
+9	Bioskop	SearchScreeningEvent	B-location
+10	Cobb	SearchScreeningEvent	I-location
+
+# id: 209
+# text-en: put Kan Mikami on Pre-Party R&B Jams
+# text: menempatkan Kan Mikami di Pre-Party R&B Jams
+# intent: AddToPlaylist
+1	menempatkan	AddToPlaylist	O
+2	Kan	AddToPlaylist	B-artist
+3	Mikami	AddToPlaylist	I-artist
+4	di	AddToPlaylist	O
+5	Pre-Party	AddToPlaylist	B-playlist
+6	R	AddToPlaylist	I-playlist
+7	&	AddToPlaylist	I-playlist
+8	B	AddToPlaylist	I-playlist
+9	Jams	AddToPlaylist	I-playlist
+
+# id: 210
+# text-en: is it going to blizzard at my current position
+# text: apakah akan terjadi badai salju di posisi saya saat ini
+# intent: weather/find
+1	apakah	weather/find	O
+2	akan	weather/find	O
+3	terjadi	weather/find	O
+4	badai	weather/find	B-condition_description
+5	salju	weather/find	I-condition_description
+6	di	weather/find	O
+7	posisi	weather/find	B-location
+8	saya	weather/find	O
+9	saat	weather/find	B-location
+10	ini	weather/find	I-location
+
+# id: 211
+# text-en: book a table for me and my step uncle in Malta at a cafeteria
+# text: pesan sebuah meja untuk saya dan paman tiri saya di Malta di sebuah kafetaria
+# intent: BookRestaurant
+1	pesan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	meja	BookRestaurant	O
+4	untuk	BookRestaurant	O
+5	saya	BookRestaurant	B-party_size_description
+6	dan	BookRestaurant	I-party_size_description
+7	paman	BookRestaurant	I-party_size_description
+8	tiri	BookRestaurant	I-party_size_description
+9	saya	BookRestaurant	I-party_size_description
+10	di	BookRestaurant	O
+11	Malta	BookRestaurant	B-location
+12	di	BookRestaurant	O
+13	sebuah	BookRestaurant	O
+14	kafetaria	BookRestaurant	B-restaurant_type
+
+# id: 212
+# text-en: Play the most popular twenties record from Leland Sklar
+# text: Mainkan lagu tahun dua puluhan paling populer dari Leland Sklar
+# intent: PlayMusic
+1	Mainkan	PlayMusic	O
+2	lagu	PlayMusic	B-music_item
+3	tahun	PlayMusic	O
+4	dua	PlayMusic	B-datetime
+5	puluhan	PlayMusic	I-datetime
+6	paling	PlayMusic	B-sort
+7	populer	PlayMusic	I-sort
+8	dari	PlayMusic	O
+9	Leland	PlayMusic	B-artist
+10	Sklar	PlayMusic	I-artist
+
+# id: 213
+# text-en: Show me the forecast for Wisconsin
+# text: Tunjukkan saya perkiraan untuk Wisconsin
+# intent: weather/find
+1	Tunjukkan	weather/find	O
+2	saya	weather/find	O
+3	perkiraan	weather/find	O
+4	untuk	weather/find	O
+5	Wisconsin	weather/find	B-location
+
+# id: 214
+# text-en: find a photograph called Between the Days
+# text: temukan sebuah foto berjudul Between the Days
+# intent: SearchCreativeWork
+1	temukan	SearchCreativeWork	O
+2	sebuah	SearchCreativeWork	O
+3	foto	SearchCreativeWork	B-object_type
+4	berjudul	SearchCreativeWork	O
+5	Between	SearchCreativeWork	B-object_name
+6	the	SearchCreativeWork	I-object_name
+7	Days	SearchCreativeWork	I-object_name
+
+# id: 215
+# text-en: book at The Halal Guys on Oct. 17
+# text: pesan di The Halal Guys pada 17 Oktober
+# intent: BookRestaurant
+1	pesan	BookRestaurant	O
+2	di	BookRestaurant	O
+3	The	BookRestaurant	B-restaurant_name
+4	Halal	BookRestaurant	I-restaurant_name
+5	Guys	BookRestaurant	I-restaurant_name
+6	pada	BookRestaurant	O
+7	17	BookRestaurant	B-datetime
+8	Oktober	BookRestaurant	I-datetime
+
+# id: 216
+# text-en: Please tell me the forecast for Guinea-Bissau
+# text: Tolong beri tahu saya perkiraan untuk Guinea-Bissau
+# intent: weather/find
+1	Tolong	weather/find	O
+2	beri	weather/find	O
+3	tahu	weather/find	O
+4	saya	weather/find	O
+5	perkiraan	weather/find	O
+6	untuk	weather/find	O
+7	Guinea-Bissau	weather/find	B-location
+
+# id: 217
+# text-en: Add this song to my the perfect italian dinner playlist
+# text: Tambahkan lagu ini ke playlist the perfect italian dinner saya
+# intent: AddToPlaylist
+1	Tambahkan	AddToPlaylist	O
+2	lagu	AddToPlaylist	B-music_item
+3	ini	AddToPlaylist	O
+4	ke	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	the	AddToPlaylist	B-playlist
+7	perfect	AddToPlaylist	I-playlist
+8	italian	AddToPlaylist	I-playlist
+9	dinner	AddToPlaylist	I-playlist
+10	saya	AddToPlaylist	B-reference
+
+# id: 218
+# text-en: weather in Tioga Colorado
+# text: cuaca di Tioga Colorado
+# intent: weather/find
+1	cuaca	weather/find	O
+2	di	weather/find	O
+3	Tioga	weather/find	B-location
+4	Colorado	weather/find	B-location
+
+# id: 219
+# text-en: I want to listen to the Music of Ghost in the Shell: Stand Alone Complex
+# text: Saya ingin mendengarkan Music of Ghost in the Shell: Stand Alone Complex
+# intent: SearchCreativeWork
+1	Saya	SearchCreativeWork	O
+2	ingin	SearchCreativeWork	O
+3	mendengarkan	SearchCreativeWork	O
+4	Music	SearchCreativeWork	B-object_name
+5	of	SearchCreativeWork	I-object_name
+6	Ghost	SearchCreativeWork	I-object_name
+7	in	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Shell:	SearchCreativeWork	I-object_name
+10	Stand	SearchCreativeWork	I-object_name
+11	Alone	SearchCreativeWork	I-object_name
+12	Complex	SearchCreativeWork	I-object_name
+
+# id: 220
+# text-en: Show me Happiness Was Free .
+# text: Tunjukkan saya Happiness Was Free .
+# intent: SearchCreativeWork
+1	Tunjukkan	SearchCreativeWork	O
+2	saya	SearchCreativeWork	O
+3	Happiness	SearchCreativeWork	B-object_name
+4	Was	SearchCreativeWork	I-object_name
+5	Free	SearchCreativeWork	I-object_name
+6	.	SearchCreativeWork	O
+
+# id: 221
+# text-en: Is it supposed to rain nearby my current location at 0 o'clock ?
+# text: Apakah seharusnya hujan di dekat lokasi saya saat ini pada pukul 0 ?
+# intent: weather/find
+1	Apakah	weather/find	O
+2	seharusnya	weather/find	O
+3	hujan	weather/find	B-condition_description
+4	di	weather/find	O
+5	dekat	weather/find	B-location
+6	lokasi	weather/find	B-location
+7	saya	weather/find	O
+8	saat	weather/find	B-location
+9	ini	weather/find	I-location
+10	pada	weather/find	O
+11	pukul	weather/find	B-datetime
+12	0	weather/find	I-datetime
+13	?	weather/find	O
+
+# id: 222
+# text-en: book a table in Fairview neighboring the area
+# text: pesan sebuah meja di Fairview yang berdekatan dengan area tersebut
+# intent: BookRestaurant
+1	pesan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	meja	BookRestaurant	O
+4	di	BookRestaurant	O
+5	Fairview	BookRestaurant	B-location
+6	yang	BookRestaurant	O
+7	berdekatan	BookRestaurant	B-location
+8	dengan	BookRestaurant	O
+9	area	BookRestaurant	B-location
+10	tersebut	BookRestaurant	O
+
+# id: 223
+# text-en: what is the forecast for 15:04 in Georgia for overcast conditions in Valley View
+# text: berapa perkiraan untuk 15:04 di Georgia pada kondisi mendung di Valley View
+# intent: weather/find
+1	berapa	weather/find	O
+2	perkiraan	weather/find	O
+3	untuk	weather/find	O
+4	15:04	weather/find	B-datetime
+5	di	weather/find	O
+6	Georgia	weather/find	B-location
+7	pada	weather/find	O
+8	kondisi	weather/find	O
+9	mendung	weather/find	B-condition_description
+10	di	weather/find	O
+11	Valley	weather/find	B-location
+12	View	weather/find	I-location
+
+# id: 224
+# text-en: Can I see the movie schedules ?
+# text: Bisakah saya melihat jadwal filmnya ?
+# intent: SearchScreeningEvent
+1	Bisakah	SearchScreeningEvent	O
+2	saya	SearchScreeningEvent	O
+3	melihat	SearchScreeningEvent	O
+4	jadwal	SearchScreeningEvent	B-object_type
+5	filmnya	SearchScreeningEvent	I-object_type
+6	?	SearchScreeningEvent	O
+
+# id: 225
+# text-en: find a movie house closest showing Operation: Kingdom
+# text: temukan sebuah bioskop terdekat yang menayangkan Operation: Kingdom
+# intent: SearchScreeningEvent
+1	temukan	SearchScreeningEvent	O
+2	sebuah	SearchScreeningEvent	O
+3	bioskop	SearchScreeningEvent	B-object_location_type
+4	terdekat	SearchScreeningEvent	B-location
+5	yang	SearchScreeningEvent	O
+6	menayangkan	SearchScreeningEvent	O
+7	Operation:	SearchScreeningEvent	B-movie_name
+8	Kingdom	SearchScreeningEvent	I-movie_name
+
+# id: 226
+# text-en: Find a trailer called Storm Center .
+# text: Temukan sebuah cuplikan berjudul Storm Center .
+# intent: SearchCreativeWork
+1	Temukan	SearchCreativeWork	O
+2	sebuah	SearchCreativeWork	O
+3	cuplikan	SearchCreativeWork	B-object_type
+4	berjudul	SearchCreativeWork	O
+5	Storm	SearchCreativeWork	B-object_name
+6	Center	SearchCreativeWork	I-object_name
+7	.	SearchCreativeWork	O
+
+# id: 227
+# text-en: put this album on my dubstep dangles dirty playlist
+# text: masukkan album ini pada playlist dubstep dangles dirty saya
+# intent: AddToPlaylist
+1	masukkan	AddToPlaylist	O
+2	album	AddToPlaylist	B-music_item
+3	ini	AddToPlaylist	O
+4	pada	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	dubstep	AddToPlaylist	B-playlist
+7	dangles	AddToPlaylist	I-playlist
+8	dirty	AddToPlaylist	I-playlist
+9	saya	AddToPlaylist	B-reference
+
+# id: 228
+# text-en: What are the movie schedules
+# text: Apa saja jadwal filmnya
+# intent: SearchScreeningEvent
+1	Apa	SearchScreeningEvent	O
+2	saja	SearchScreeningEvent	O
+3	jadwal	SearchScreeningEvent	B-object_type
+4	filmnya	SearchScreeningEvent	I-object_type
+
+# id: 229
+# text-en: Play a song by Juanes on Last Fm
+# text: Mainkan sebuah lagu oleh Juanes di Last Fm
+# intent: PlayMusic
+1	Mainkan	PlayMusic	O
+2	sebuah	PlayMusic	O
+3	lagu	PlayMusic	B-music_item
+4	oleh	PlayMusic	O
+5	Juanes	PlayMusic	B-artist
+6	di	PlayMusic	O
+7	Last	PlayMusic	B-service
+8	Fm	PlayMusic	I-service
+
+# id: 230
+# text-en: Assign 0 points out of 6 to The Gate of Worlds
+# text: Tetapkan 0 poin dari 6 untuk The Gate of Worlds
+# intent: RateBook
+1	Tetapkan	RateBook	O
+2	0	RateBook	B-rating_value
+3	poin	RateBook	B-rating_unit
+4	dari	RateBook	O
+5	6	RateBook	B-best_rating
+6	untuk	RateBook	O
+7	The	RateBook	B-object_name
+8	Gate	RateBook	I-object_name
+9	of	RateBook	I-object_name
+10	Worlds	RateBook	I-object_name
+
+# id: 231
+# text-en: Play some David Mallett on last fm
+# text: Mainkan beberapa David Mallett di Last Fm
+# intent: PlayMusic
+1	Mainkan	PlayMusic	O
+2	beberapa	PlayMusic	O
+3	David	PlayMusic	B-artist
+4	Mallett	PlayMusic	I-artist
+5	di	PlayMusic	O
+6	Last	PlayMusic	B-service
+7	Fm	PlayMusic	I-service
+
+# id: 232
+# text-en: Find me the movie times
+# text: Carikan saya jadwal filmnya
+# intent: SearchScreeningEvent
+1	Carikan	SearchScreeningEvent	O
+2	saya	SearchScreeningEvent	O
+3	jadwal	SearchScreeningEvent	B-object_type
+4	filmnya	SearchScreeningEvent	I-object_type
+
+# id: 233
+# text-en: Will it be windy at 4 PM in NY ?
+# text: Akankah berangin pada jam 4 sore di NY?
+# intent: weather/find
+1	Akankah	weather/find	O
+2	berangin	weather/find	B-condition_description
+3	pada	weather/find	O
+4	jam	weather/find	B-datetime
+5	4	weather/find	I-datetime
+6	sore	weather/find	I-datetime
+7	di	weather/find	O
+8	NY	weather/find	B-location
+9	?	weather/find	O
+
+# id: 234
+# text-en: Book me a restaurant for nine in Statham
+# text: Pesankan saya sebuah restoran untuk sembilan orang di Statham
+# intent: BookRestaurant
+1	Pesankan	BookRestaurant	O
+2	saya	BookRestaurant	O
+3	sebuah	BookRestaurant	O
+4	restoran	BookRestaurant	B-restaurant_type
+5	untuk	BookRestaurant	O
+6	sembilan	BookRestaurant	B-party_size_number
+7	orang	BookRestaurant	O
+8	di	BookRestaurant	O
+9	Statham	BookRestaurant	B-location
+
+# id: 235
+# text-en: find a video game called IBM Program temporary fix
+# text: temukan sebuah video game bernama IBM Program temporary fix
+# intent: SearchCreativeWork
+1	temukan	SearchCreativeWork	O
+2	sebuah	SearchCreativeWork	O
+3	video	SearchCreativeWork	B-object_type
+4	game	SearchCreativeWork	I-object_type
+5	bernama	SearchCreativeWork	O
+6	IBM	SearchCreativeWork	B-object_name
+7	Program	SearchCreativeWork	I-object_name
+8	temporary	SearchCreativeWork	I-object_name
+9	fix	SearchCreativeWork	I-object_name
+
+# id: 236
+# text-en: Find a table for one at a popular churrascaria for three weeks from now
+# text: Temukan sebuah meja untuk satu orang di churrascaria yang populer untuk tiga minggu dari sekarang
+# intent: BookRestaurant
+1	Temukan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	meja	BookRestaurant	O
+4	untuk	BookRestaurant	O
+5	satu	BookRestaurant	B-party_size_number
+6	orang	BookRestaurant	O
+7	di	BookRestaurant	O
+8	churrascaria	BookRestaurant	B-restaurant_type
+9	yang	BookRestaurant	O
+10	populer	BookRestaurant	B-sort
+11	untuk	BookRestaurant	O
+12	tiga	BookRestaurant	B-datetime
+13	minggu	BookRestaurant	I-datetime
+14	dari	BookRestaurant	I-datetime
+15	sekarang	BookRestaurant	I-datetime
+
+# id: 237
+# text-en: For Mirrorshades I rate it three stars
+# text: Untuk Mirrorshades saya menilainya tiga bintang
+# intent: RateBook
+1	Untuk	RateBook	O
+2	Mirrorshades	RateBook	B-object_name
+3	saya	RateBook	O
+4	menilainya	RateBook	O
+5	tiga	RateBook	B-rating_value
+6	bintang	RateBook	B-rating_unit
+
+# id: 238
+# text-en: Book a restaurant that serves agnolotti in Colorado City Idaho .
+# text: Pesan sebuah restoran yang menyajikan agnolotti di Colorado City Idaho .
+# intent: BookRestaurant
+1	Pesan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	restoran	BookRestaurant	B-restaurant_type
+4	yang	BookRestaurant	O
+5	menyajikan	BookRestaurant	O
+6	agnolotti	BookRestaurant	B-served_dish
+7	di	BookRestaurant	O
+8	Colorado	BookRestaurant	B-location
+9	City	BookRestaurant	I-location
+10	Idaho	BookRestaurant	B-location
+11	.	BookRestaurant	O
+
+# id: 239
+# text-en: Add bright and breezy to my This Is Gucci Mane playlist
+# text: Tambahkan bright and breezy ke playlist This Is Gucci Mane saya
+# intent: AddToPlaylist
+1	Tambahkan	AddToPlaylist	O
+2	bright	AddToPlaylist	B-entity_name
+3	and	AddToPlaylist	I-entity_name
+4	breezy	AddToPlaylist	I-entity_name
+5	ke	AddToPlaylist	O
+6	playlist	AddToPlaylist	O
+7	This	AddToPlaylist	B-playlist
+8	Is	AddToPlaylist	I-playlist
+9	Gucci	AddToPlaylist	I-playlist
+10	Mane	AddToPlaylist	I-playlist
+11	saya	AddToPlaylist	B-reference
+
+# id: 240
+# text-en: Can you give me the weather for here
+# text: Bisakah Anda memberi tahu saya cuaca untuk di sini
+# intent: weather/find
+1	Bisakah	weather/find	O
+2	Anda	weather/find	O
+3	memberi	weather/find	O
+4	tahu	weather/find	O
+5	saya	weather/find	O
+6	cuaca	weather/find	O
+7	untuk	weather/find	O
+8	di	weather/find	B-location
+9	sini	weather/find	I-location
+
+# id: 241
+# text-en: Add Ashley McIsaac to my r&b party classics playlist
+# text: Tambahkan Ashley McIsaac ke playlist r&b party classics saya
+# intent: AddToPlaylist
+1	Tambahkan	AddToPlaylist	O
+2	Ashley	AddToPlaylist	B-artist
+3	McIsaac	AddToPlaylist	I-artist
+4	ke	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	r	AddToPlaylist	B-playlist
+7	&	AddToPlaylist	I-playlist
+8	b	AddToPlaylist	I-playlist
+9	party	AddToPlaylist	I-playlist
+10	classics	AddToPlaylist	I-playlist
+11	saya	AddToPlaylist	B-reference
+
+# id: 242
+# text-en: I'd like to see the saga 12 Soulful Nights of Christmas
+# text: Saya ingin melihat saga 12 Soulful Nights of Christmas
+# intent: SearchCreativeWork
+1	Saya	SearchCreativeWork	O
+2	ingin	SearchCreativeWork	O
+3	melihat	SearchCreativeWork	O
+4	saga	SearchCreativeWork	B-object_type
+5	12	SearchCreativeWork	B-object_name
+6	Soulful	SearchCreativeWork	I-object_name
+7	Nights	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	Christmas	SearchCreativeWork	I-object_name
+
+# id: 243
+# text-en: I need a reservation for 6 PM. with a party of 10 at Sand Lake
+# text: Saya perlu sebuah reservasi untuk jam 6 sore. dengan sebuah pesta untuk 10 orang di Sand Lake
+# intent: BookRestaurant
+1	Saya	BookRestaurant	O
+2	perlu	BookRestaurant	O
+3	sebuah	BookRestaurant	O
+4	reservasi	BookRestaurant	O
+5	untuk	BookRestaurant	O
+6	jam	BookRestaurant	B-datetime
+7	6	BookRestaurant	I-datetime
+8	sore	BookRestaurant	I-datetime
+9	.	BookRestaurant	O
+10	dengan	BookRestaurant	O
+11	sebuah	BookRestaurant	O
+12	pesta	BookRestaurant	O
+13	untuk	BookRestaurant	O
+14	10	BookRestaurant	B-party_size_number
+15	orang	BookRestaurant	O
+16	di	BookRestaurant	O
+17	Sand	BookRestaurant	B-location
+18	Lake	BookRestaurant	I-location
+
+# id: 244
+# text-en: Use Groove Shark to play music from the eighties
+# text: Gunakan Groove Shark untuk memutar musik dari tahun delapan puluhan
+# intent: PlayMusic
+1	Gunakan	PlayMusic	O
+2	Groove	PlayMusic	B-service
+3	Shark	PlayMusic	I-service
+4	untuk	PlayMusic	O
+5	memutar	PlayMusic	O
+6	musik	PlayMusic	O
+7	dari	PlayMusic	O
+8	tahun	PlayMusic	O
+9	delapan	PlayMusic	B-datetime
+10	puluhan	PlayMusic	I-datetime
+
+# id: 245
+# text-en: find soundtrack titled The House of the Yellow Carpet
+# text: temukan trek suara berjudul The House of the Yellow Carpet
+# intent: SearchCreativeWork
+1	temukan	SearchCreativeWork	O
+2	trek	SearchCreativeWork	B-object_type
+3	suara	SearchCreativeWork	O
+4	berjudul	SearchCreativeWork	O
+5	The	SearchCreativeWork	B-object_name
+6	House	SearchCreativeWork	I-object_name
+7	of	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Yellow	SearchCreativeWork	I-object_name
+10	Carpet	SearchCreativeWork	I-object_name
+
+# id: 246
+# text-en: Which is the nearest cinema showing movies that start in nineteen seconds ?
+# text: Bioskop terdekat mana yang menayangkan film yang dimulai dalam sembilan belas detik ?
+# intent: SearchScreeningEvent
+1	Bioskop	SearchScreeningEvent	B-object_location_type
+2	terdekat	SearchScreeningEvent	B-location
+3	mana	SearchScreeningEvent	O
+4	yang	SearchScreeningEvent	O
+5	menayangkan	SearchScreeningEvent	O
+6	film	SearchScreeningEvent	B-movie_type
+7	yang	SearchScreeningEvent	O
+8	dimulai	SearchScreeningEvent	O
+9	dalam	SearchScreeningEvent	B-datetime
+10	sembilan	SearchScreeningEvent	I-datetime
+11	belas	SearchScreeningEvent	I-datetime
+12	detik	SearchScreeningEvent	I-datetime
+13	?	SearchScreeningEvent	O
+
+# id: 247
+# text-en: Add morten harket to this is puccini
+# text: Tambahkan morten harket ke this is puccini
+# intent: AddToPlaylist
+1	Tambahkan	AddToPlaylist	O
+2	morten	AddToPlaylist	B-artist
+3	harket	AddToPlaylist	I-artist
+4	ke	AddToPlaylist	O
+5	this	AddToPlaylist	B-playlist
+6	is	AddToPlaylist	I-playlist
+7	puccini	AddToPlaylist	I-playlist
+
+# id: 248
+# text-en: Open Spotify and play a song from the twenties by Richard Harvey
+# text: Buka Spotify dan mainkan sebuah lagu dari tahun dua puluhan oleh Richard Harvey
+# intent: PlayMusic
+1	Buka	PlayMusic	O
+2	Spotify	PlayMusic	B-service
+3	dan	PlayMusic	O
+4	mainkan	PlayMusic	O
+5	sebuah	PlayMusic	O
+6	lagu	PlayMusic	B-music_item
+7	dari	PlayMusic	O
+8	tahun	PlayMusic	O
+9	dua	PlayMusic	B-datetime
+10	puluhan	PlayMusic	I-datetime
+11	oleh	PlayMusic	O
+12	Richard	PlayMusic	B-artist
+13	Harvey	PlayMusic	I-artist
+
+# id: 249
+# text-en: I want to book a restaurant
+# text: Saya ingin memesan sebuah restoran
+# intent: BookRestaurant
+1	Saya	BookRestaurant	O
+2	ingin	BookRestaurant	O
+3	memesan	BookRestaurant	O
+4	sebuah	BookRestaurant	O
+5	restoran	BookRestaurant	B-restaurant_type
+
+# id: 250
+# text-en: Play the album Vibrations by Marion Elise Raven
+# text: Mainkan album Vibrations oleh Marion Elise Raven
+# intent: PlayMusic
+1	Mainkan	PlayMusic	O
+2	album	PlayMusic	B-music_item
+3	Vibrations	PlayMusic	B-album
+4	oleh	PlayMusic	O
+5	Marion	PlayMusic	B-artist
+6	Elise	PlayMusic	I-artist
+7	Raven	PlayMusic	I-artist
+
+# id: 251
+# text-en: add this artist to my Jazz playlist
+# text: tambahkan artis ini ke playlist Jazz saya
+# intent: AddToPlaylist
+1	tambahkan	AddToPlaylist	O
+2	artis	AddToPlaylist	B-music_item
+3	ini	AddToPlaylist	O
+4	ke	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	Jazz	AddToPlaylist	B-playlist
+7	saya	AddToPlaylist	B-reference
+
+# id: 252
+# text-en: I want to find the show From Where to Eternity .
+# text: Saya ingin mencari acara From Where to Eternity .
+# intent: SearchCreativeWork
+1	Saya	SearchCreativeWork	O
+2	ingin	SearchCreativeWork	O
+3	mencari	SearchCreativeWork	O
+4	acara	SearchCreativeWork	B-object_type
+5	From	SearchCreativeWork	B-object_name
+6	Where	SearchCreativeWork	I-object_name
+7	to	SearchCreativeWork	I-object_name
+8	Eternity	SearchCreativeWork	I-object_name
+9	.	SearchCreativeWork	O
+
+# id: 253
+# text-en: play the top-twenty songs by The Kleptones on Spotify
+# text: mainkan dua puluh lagu teratas dari The Kleptones di Spotify
+# intent: PlayMusic
+1	mainkan	PlayMusic	O
+2	dua	PlayMusic	B-sort
+3	puluh	PlayMusic	I-sort
+4	lagu	PlayMusic	O
+5	teratas	PlayMusic	B-sort
+6	dari	PlayMusic	O
+7	The	PlayMusic	B-artist
+8	Kleptones	PlayMusic	I-artist
+9	di	PlayMusic	O
+10	Spotify	PlayMusic	B-service
+
+# id: 254
+# text-en: How will the weather be in six minutes close to Moosic
+# text: Akan bagaimana cuaca dalam enam menit menuju Moosic
+# intent: weather/find
+1	Akan	weather/find	O
+2	bagaimana	weather/find	O
+3	cuaca	weather/find	O
+4	dalam	weather/find	B-datetime
+5	enam	weather/find	I-datetime
+6	menit	weather/find	I-datetime
+7	menuju	weather/find	B-location
+8	Moosic	weather/find	B-location
+
+# id: 255
+# text-en: I wish to listen to some fifties music.
+# text: Saya ingin mendengarkan beberapa musik tahun lima puluhan.
+# intent: PlayMusic
+1	Saya	PlayMusic	O
+2	ingin	PlayMusic	O
+3	mendengarkan	PlayMusic	O
+4	beberapa	PlayMusic	O
+5	musik	PlayMusic	O
+6	tahun	PlayMusic	O
+7	lima	PlayMusic	B-datetime
+8	puluhan	PlayMusic	I-datetime
+9	.	PlayMusic	O
+
+# id: 256
+# text-en: what time is Utamaro and His Five Women showing at Alamo Drafthouse Cinema
+# text: jam berapa Utamaro and His Five Women tayang di Bioskop Alamo Drafthouse
+# intent: SearchScreeningEvent
+1	jam	SearchScreeningEvent	O
+2	berapa	SearchScreeningEvent	O
+3	Utamaro	SearchScreeningEvent	B-movie_name
+4	and	SearchScreeningEvent	I-movie_name
+5	His	SearchScreeningEvent	I-movie_name
+6	Five	SearchScreeningEvent	I-movie_name
+7	Women	SearchScreeningEvent	I-movie_name
+8	tayang	SearchScreeningEvent	O
+9	di	SearchScreeningEvent	O
+10	Bioskop	SearchScreeningEvent	B-location
+11	Alamo	SearchScreeningEvent	I-location
+12	Drafthouse	SearchScreeningEvent	I-location
+
+# id: 257
+# text-en: Find a photograph of Adventure Time: The Secret of the Nameless Kingdom
+# text: Temukan sebuah foto dari Adventure Time: The Secret of the Nameless Kingdom
+# intent: SearchCreativeWork
+1	Temukan	SearchCreativeWork	O
+2	sebuah	SearchCreativeWork	O
+3	foto	SearchCreativeWork	B-object_type
+4	dari	SearchCreativeWork	O
+5	Adventure	SearchCreativeWork	B-object_name
+6	Time:	SearchCreativeWork	I-object_name
+7	The	SearchCreativeWork	I-object_name
+8	Secret	SearchCreativeWork	I-object_name
+9	of	SearchCreativeWork	I-object_name
+10	the	SearchCreativeWork	I-object_name
+11	Nameless	SearchCreativeWork	I-object_name
+12	Kingdom	SearchCreativeWork	I-object_name
+
+# id: 258
+# text-en: put Do You Love Me on my acoustic soul playlist
+# text: masukkan Do You Love Me di playlist acoustic soul saya
+# intent: AddToPlaylist
+1	masukkan	AddToPlaylist	O
+2	Do	AddToPlaylist	B-entity_name
+3	You	AddToPlaylist	I-entity_name
+4	Love	AddToPlaylist	I-entity_name
+5	Me	AddToPlaylist	I-entity_name
+6	di	AddToPlaylist	O
+7	playlist	AddToPlaylist	O
+8	acoustic	AddToPlaylist	B-playlist
+9	soul	AddToPlaylist	I-playlist
+10	saya	AddToPlaylist	B-reference
+
+# id: 259
+# text-en: Play me the best Charles Neidich song
+# text: Mainkan saya lagu terbaik Charles Neidich
+# intent: PlayMusic
+1	Mainkan	PlayMusic	O
+2	saya	PlayMusic	O
+3	lagu	PlayMusic	B-music_item
+4	terbaik	PlayMusic	B-sort
+5	Charles	PlayMusic	B-artist
+6	Neidich	PlayMusic	I-artist
+
+# id: 260
+# text-en: On may the thirteenth, 2037 what will it be like in Wilderville , Montenegro
+# text: Pada tanggal tiga belas Mei 2037 akan seperti apa di Wilderville , Montenegro
+# intent: weather/find
+1	Pada	weather/find	O
+2	tanggal	weather/find	B-datetime
+3	tiga	weather/find	I-datetime
+4	belas	weather/find	I-datetime
+5	Mei	weather/find	I-datetime
+6	2037	weather/find	I-datetime
+7	akan	weather/find	O
+8	seperti	weather/find	O
+9	apa	weather/find	O
+10	di	weather/find	O
+11	Wilderville	weather/find	B-location
+12	,	weather/find	O
+13	Montenegro	weather/find	B-location
+
+# id: 261
+# text-en: Find movie schedules for ArcLight Hollywood .
+# text: Temukan jadwal film untuk ArcLight Hollywood .
+# intent: SearchScreeningEvent
+1	Temukan	SearchScreeningEvent	O
+2	jadwal	SearchScreeningEvent	B-object_type
+3	film	SearchScreeningEvent	I-object_type
+4	untuk	SearchScreeningEvent	O
+5	ArcLight	SearchScreeningEvent	B-location
+6	Hollywood	SearchScreeningEvent	I-location
+7	.	SearchScreeningEvent	O
+
+# id: 262
+# text-en: Find a TV series called Church of the Truly Warped .
+# text: Temukan sebuah serial TV berjudul Church of the Truly Warped .
+# intent: SearchCreativeWork
+1	Temukan	SearchCreativeWork	O
+2	sebuah	SearchCreativeWork	O
+3	serial	SearchCreativeWork	B-object_type
+4	TV	SearchCreativeWork	I-object_type
+5	berjudul	SearchCreativeWork	O
+6	Church	SearchCreativeWork	B-object_name
+7	of	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Truly	SearchCreativeWork	I-object_name
+10	Warped	SearchCreativeWork	I-object_name
+11	.	SearchCreativeWork	O
+
+# id: 263
+# text-en: what is the forecast for in eighteen minutes here for colder temps
+# text: berapa perkiraan cuaca dalam delapan belas menit di sini untuk suhu yang lebih dingin
+# intent: weather/find
+1	berapa	weather/find	O
+2	perkiraan	weather/find	O
+3	cuaca	weather/find	O
+4	dalam	weather/find	B-datetime
+5	delapan	weather/find	I-datetime
+6	belas	weather/find	I-datetime
+7	menit	weather/find	I-datetime
+8	di	weather/find	B-location
+9	sini	weather/find	I-location
+10	untuk	weather/find	O
+11	suhu	weather/find	O
+12	yang	weather/find	O
+13	lebih	weather/find	B-condition_temperature
+14	dingin	weather/find	I-condition_temperature
+
+# id: 264
+# text-en: Book a restaurant at sixteen o'clock in SC
+# text: Pesan sebuah restoran pada pukul enam belas di SC
+# intent: BookRestaurant
+1	Pesan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	restoran	BookRestaurant	B-restaurant_type
+4	pada	BookRestaurant	O
+5	pukul	BookRestaurant	B-datetime
+6	enam	BookRestaurant	I-datetime
+7	belas	BookRestaurant	I-datetime
+8	di	BookRestaurant	O
+9	SC	BookRestaurant	B-location
+
+# id: 265
+# text-en: stacy watson and adriana want to go to the best osteria in Hallowell Minnesota this afternoon
+# text: stacy watson dan adriana ingin pergi ke osteria terbaik di Hallowell Minnesota sore ini
+# intent: BookRestaurant
+1	stacy	BookRestaurant	B-party_size_description
+2	watson	BookRestaurant	I-party_size_description
+3	dan	BookRestaurant	I-party_size_description
+4	adriana	BookRestaurant	I-party_size_description
+5	ingin	BookRestaurant	O
+6	pergi	BookRestaurant	O
+7	ke	BookRestaurant	O
+8	osteria	BookRestaurant	B-restaurant_type
+9	terbaik	BookRestaurant	B-sort
+10	di	BookRestaurant	O
+11	Hallowell	BookRestaurant	B-location
+12	Minnesota	BookRestaurant	B-location
+13	sore	BookRestaurant	B-datetime
+14	ini	BookRestaurant	O
+
+# id: 266
+# text-en: is it going to be chilly in Western Sahara in 13 hours
+# text: apakah akan dingin di Sahara Barat dalam 13 jam
+# intent: weather/find
+1	apakah	weather/find	O
+2	akan	weather/find	O
+3	dingin	weather/find	B-condition_temperature
+4	di	weather/find	O
+5	Sahara	weather/find	B-location
+6	Barat	weather/find	I-location
+7	dalam	weather/find	O
+8	13	weather/find	B-datetime
+9	jam	weather/find	I-datetime
+
+# id: 267
+# text-en: add Armen Movsessian to this is skepta playlist
+# text: tambahkan Armen Movsessian ke playlist this is skepta
+# intent: AddToPlaylist
+1	tambahkan	AddToPlaylist	O
+2	Armen	AddToPlaylist	B-artist
+3	Movsessian	AddToPlaylist	I-artist
+4	ke	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	this	AddToPlaylist	B-playlist
+7	is	AddToPlaylist	I-playlist
+8	skepta	AddToPlaylist	I-playlist
+
+# id: 268
+# text-en: Rate this current essay three out of 6 stars
+# text: Memberi nilai esai ini tiga dari 6 bintang
+# intent: RateBook
+1	Memberi	RateBook	O
+2	nilai	RateBook	O
+3	esai	RateBook	B-object_type
+4	ini	RateBook	B-object_select
+5	tiga	RateBook	B-rating_value
+6	dari	RateBook	O
+7	6	RateBook	B-best_rating
+8	bintang	RateBook	B-rating_unit
+
+# id: 269
+# text-en: Find a reservation for three at a top-rated restaurant
+# text: Temukan sebuah reservasi untuk tiga orang di sebuah restoran berperingkat teratas
+# intent: BookRestaurant
+1	Temukan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	reservasi	BookRestaurant	O
+4	untuk	BookRestaurant	O
+5	tiga	BookRestaurant	B-party_size_number
+6	orang	BookRestaurant	O
+7	di	BookRestaurant	O
+8	sebuah	BookRestaurant	O
+9	restoran	BookRestaurant	B-restaurant_type
+10	berperingkat	BookRestaurant	B-sort
+11	teratas	BookRestaurant	I-sort
+
+# id: 270
+# text-en: rate the current novel 0 of 6
+# text: memberi nilai novel ini 0 dari 6
+# intent: RateBook
+1	memberi	RateBook	O
+2	nilai	RateBook	O
+3	novel	RateBook	B-object_type
+4	ini	RateBook	B-object_select
+5	0	RateBook	B-rating_value
+6	dari	RateBook	O
+7	6	RateBook	B-best_rating
+
+# id: 271
+# text-en: I'd like to see the showtimes for Silly Movie 2.0 at the movie house
+# text: Saya ingin melihat jam tayang untuk Silly Movie 2.0 di gedung bioskop
+# intent: SearchScreeningEvent
+1	Saya	SearchScreeningEvent	O
+2	ingin	SearchScreeningEvent	O
+3	melihat	SearchScreeningEvent	O
+4	jam	SearchScreeningEvent	O
+5	tayang	SearchScreeningEvent	O
+6	untuk	SearchScreeningEvent	O
+7	Silly	SearchScreeningEvent	B-movie_name
+8	Movie	SearchScreeningEvent	I-movie_name
+9	2	SearchScreeningEvent	I-movie_name
+10	.	SearchScreeningEvent	I-movie_name
+11	0	SearchScreeningEvent	I-movie_name
+12	di	SearchScreeningEvent	O
+13	gedung	SearchScreeningEvent	O
+14	bioskop	SearchScreeningEvent	B-object_location_type
+
+# id: 272
+# text-en: Will it get chillier in Sinclair in 8 hours
+# text: Akankah menjadi lebih dingin di Sinclair dalam 8 jam
+# intent: weather/find
+1	Akankah	weather/find	O
+2	menjadi	weather/find	O
+3	lebih	weather/find	B-condition_temperature
+4	dingin	weather/find	I-condition_temperature
+5	di	weather/find	O
+6	Sinclair	weather/find	B-location
+7	dalam	weather/find	B-datetime
+8	8	weather/find	I-datetime
+9	jam	weather/find	I-datetime
+
+# id: 273
+# text-en: add this tune to my in the arms of a woman
+# text: tambahkan lagu ini ke in the arms of a woman saya
+# intent: AddToPlaylist
+1	tambahkan	AddToPlaylist	O
+2	lagu	AddToPlaylist	B-music_item
+3	ini	AddToPlaylist	O
+4	ke	AddToPlaylist	O
+5	in	AddToPlaylist	B-playlist
+6	the	AddToPlaylist	I-playlist
+7	arms	AddToPlaylist	I-playlist
+8	of	AddToPlaylist	I-playlist
+9	a	AddToPlaylist	I-playlist
+10	woman	AddToPlaylist	I-playlist
+11	saya	AddToPlaylist	B-reference
+
+# id: 274
+# text-en: book for 3 in U.S. Virgin Islands
+# text: pesan untuk 3 orang di Kepulauan Virgin AS
+# intent: BookRestaurant
+1	pesan	BookRestaurant	O
+2	untuk	BookRestaurant	O
+3	3	BookRestaurant	B-party_size_number
+4	orang	BookRestaurant	O
+5	di	BookRestaurant	O
+6	Kepulauan	BookRestaurant	B-location
+7	Virgin	BookRestaurant	I-location
+8	AS	BookRestaurant	I-location
+
+# id: 275
+# text-en: Will it be chillier in La Mesa ?
+# text: Akankah lebih dingin di La Mesa ?
+# intent: weather/find
+1	Akankah	weather/find	O
+2	lebih	weather/find	B-condition_temperature
+3	dingin	weather/find	I-condition_temperature
+4	di	weather/find	O
+5	La	weather/find	B-location
+6	Mesa	weather/find	I-location
+7	?	weather/find	O
+
+# id: 276
+# text-en: Rate this essay 2 out of 6 stars
+# text: Memberi nilai esai ini 2 dari 6 bintang
+# intent: RateBook
+1	Memberi	RateBook	O
+2	nilai	RateBook	O
+3	esai	RateBook	B-object_type
+4	ini	RateBook	B-object_select
+5	2	RateBook	B-rating_value
+6	dari	RateBook	O
+7	6	RateBook	B-best_rating
+8	bintang	RateBook	B-rating_unit
+
+# id: 277
+# text-en: Give three stars / 6 to My Sister, My Love
+# text: Berikan tiga bintang / 6 untuk My Sister, My Love
+# intent: RateBook
+1	Berikan	RateBook	O
+2	tiga	RateBook	B-rating_value
+3	bintang	RateBook	B-rating_unit
+4	/	RateBook	O
+5	6	RateBook	B-best_rating
+6	untuk	RateBook	O
+7	My	RateBook	B-object_name
+8	Sister	RateBook	I-object_name
+9	,	RateBook	I-object_name
+10	My	RateBook	I-object_name
+11	Love	RateBook	I-object_name
+
+# id: 278
+# text-en: Find the movie schedule for Marcus Corporation .
+# text: Temukan jadwal film untuk Marcus Corporation .
+# intent: SearchScreeningEvent
+1	Temukan	SearchScreeningEvent	O
+2	jadwal	SearchScreeningEvent	B-object_type
+3	film	SearchScreeningEvent	I-object_type
+4	untuk	SearchScreeningEvent	O
+5	Marcus	SearchScreeningEvent	B-location
+6	Corporation	SearchScreeningEvent	I-location
+7	.	SearchScreeningEvent	O
+
+# id: 279
+# text-en: What movies are scheduled in the neighbourhood ?
+# text: Film apa yang dijadwalkan di lingkungan sekitar ?
+# intent: SearchScreeningEvent
+1	Film	SearchScreeningEvent	B-movie_type
+2	apa	SearchScreeningEvent	O
+3	yang	SearchScreeningEvent	O
+4	dijadwalkan	SearchScreeningEvent	O
+5	di	SearchScreeningEvent	B-location
+6	lingkungan	SearchScreeningEvent	I-location
+7	sekitar	SearchScreeningEvent	I-location
+8	?	SearchScreeningEvent	O
+
+# id: 280
+# text-en: add cross bones style to Guest List TaKe
+# text: tambahkan cross bones style ke Guest List TaKe
+# intent: AddToPlaylist
+1	tambahkan	AddToPlaylist	O
+2	cross	AddToPlaylist	B-entity_name
+3	bones	AddToPlaylist	I-entity_name
+4	style	AddToPlaylist	I-entity_name
+5	ke	AddToPlaylist	O
+6	Guest	AddToPlaylist	B-playlist
+7	List	AddToPlaylist	I-playlist
+8	TaKe	AddToPlaylist	I-playlist
+
+# id: 281
+# text-en: Find a reservation for a tavern that serves pizzas for a party of 6
+# text: Temukan sebuah reservasi untuk sebuah kedai minuman yang menyajikan pizza untuk pesta yang terdiri dari 6 orang
+# intent: BookRestaurant
+1	Temukan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	reservasi	BookRestaurant	O
+4	untuk	BookRestaurant	O
+5	sebuah	BookRestaurant	O
+6	kedai	BookRestaurant	B-restaurant_type
+7	minuman	BookRestaurant	I-restaurant_type
+8	yang	BookRestaurant	O
+9	menyajikan	BookRestaurant	O
+10	pizza	BookRestaurant	B-served_dish
+11	untuk	BookRestaurant	O
+12	pesta	BookRestaurant	O
+13	yang	BookRestaurant	O
+14	terdiri	BookRestaurant	O
+15	dari	BookRestaurant	O
+16	6	BookRestaurant	B-party_size_number
+17	orang	BookRestaurant	O
+
+# id: 282
+# text-en: Rate The Art of Nijinsky 5 points
+# text: Memberi nilai The Art of Nijinsky 5 poin
+# intent: RateBook
+1	Memberi	RateBook	O
+2	nilai	RateBook	O
+3	The	RateBook	B-object_name
+4	Art	RateBook	I-object_name
+5	of	RateBook	I-object_name
+6	Nijinsky	RateBook	I-object_name
+7	5	RateBook	B-rating_value
+8	poin	RateBook	B-rating_unit
+
+# id: 283
+# text-en: add Jacob Hoggard to my get going playlist
+# text: tambahkan Jacob Hoggard ke playlist get going saya
+# intent: AddToPlaylist
+1	tambahkan	AddToPlaylist	O
+2	Jacob	AddToPlaylist	B-artist
+3	Hoggard	AddToPlaylist	I-artist
+4	ke	AddToPlaylist	O
+5	playlist	AddToPlaylist	O
+6	get	AddToPlaylist	B-playlist
+7	going	AddToPlaylist	I-playlist
+8	saya	AddToPlaylist	B-reference
+
+# id: 284
+# text-en: Give me a list of movie times for films in the area .
+# text: Berikan saya sebuah daftar jadwal film untuk film di daerah tersebut .
+# intent: SearchScreeningEvent
+1	Berikan	SearchScreeningEvent	O
+2	saya	SearchScreeningEvent	O
+3	sebuah	SearchScreeningEvent	O
+4	daftar	SearchScreeningEvent	O
+5	jadwal	SearchScreeningEvent	B-object_type
+6	film	SearchScreeningEvent	I-object_type
+7	untuk	SearchScreeningEvent	O
+8	film	SearchScreeningEvent	B-movie_type
+9	di	SearchScreeningEvent	B-location
+10	daerah	SearchScreeningEvent	I-location
+11	tersebut	SearchScreeningEvent	I-location
+12	.	SearchScreeningEvent	O
+
+# id: 285
+# text-en: find The Ultimate Gift , a television show
+# text: temukan The Ultimate Gift , sebuah acara televisi
+# intent: SearchCreativeWork
+1	temukan	SearchCreativeWork	O
+2	The	SearchCreativeWork	B-object_name
+3	Ultimate	SearchCreativeWork	I-object_name
+4	Gift	SearchCreativeWork	I-object_name
+5	,	SearchCreativeWork	O
+6	sebuah	SearchCreativeWork	O
+7	acara	SearchCreativeWork	B-object_type
+8	televisi	SearchCreativeWork	I-object_type
+
+# id: 286
+# text-en: What's the weather close-by Triumph
+# text: Bagaimana cuaca di dekat Triumph
+# intent: weather/find
+1	Bagaimana	weather/find	O
+2	cuaca	weather/find	O
+3	di	weather/find	O
+4	dekat	weather/find	B-location
+5	Triumph	weather/find	B-location
+
+# id: 287
+# text-en: when can i see A Handful of Dust in a movie theatre
+# text: kapan saya bisa melihat A Handful of Dust di bioskop
+# intent: SearchScreeningEvent
+1	kapan	SearchScreeningEvent	O
+2	saya	SearchScreeningEvent	O
+3	bisa	SearchScreeningEvent	O
+4	melihat	SearchScreeningEvent	O
+5	A	SearchScreeningEvent	B-movie_name
+6	Handful	SearchScreeningEvent	I-movie_name
+7	of	SearchScreeningEvent	I-movie_name
+8	Dust	SearchScreeningEvent	I-movie_name
+9	di	SearchScreeningEvent	O
+10	bioskop	SearchScreeningEvent	B-object_location_type
+
+# id: 288
+# text-en: Please put an album by Joseph Meyer on my POP GOES THE 80s playlist
+# text: Tolong masukkan album dari Joseph Meyer di playlist POP GOES THE 80s saya
+# intent: AddToPlaylist
+1	Tolong	AddToPlaylist	O
+2	masukkan	AddToPlaylist	O
+3	album	AddToPlaylist	B-music_item
+4	dari	AddToPlaylist	O
+5	Joseph	AddToPlaylist	B-artist
+6	Meyer	AddToPlaylist	I-artist
+7	di	AddToPlaylist	O
+8	playlist	AddToPlaylist	O
+9	POP	AddToPlaylist	B-playlist
+10	GOES	AddToPlaylist	I-playlist
+11	THE	AddToPlaylist	I-playlist
+12	80s	AddToPlaylist	I-playlist
+13	saya	AddToPlaylist	B-reference
+
+# id: 289
+# text-en: show of From South Africa to South Carolina
+# text: pertunjukan dari From South Africa to South Carolina
+# intent: SearchCreativeWork
+1	pertunjukan	SearchCreativeWork	B-object_type
+2	dari	SearchCreativeWork	O
+3	From	SearchCreativeWork	B-object_name
+4	South	SearchCreativeWork	I-object_name
+5	Africa	SearchCreativeWork	I-object_name
+6	to	SearchCreativeWork	I-object_name
+7	South	SearchCreativeWork	I-object_name
+8	Carolina	SearchCreativeWork	I-object_name
+
+# id: 290
+# text-en: book a top-rated osteria seven weeks from now
+# text: pesan sebuah osteria terbaik untuk tujuh minggu dari sekarang
+# intent: BookRestaurant
+1	pesan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	osteria	BookRestaurant	B-restaurant_type
+4	terbaik	BookRestaurant	B-sort
+5	untuk	BookRestaurant	O
+6	tujuh	BookRestaurant	B-datetime
+7	minggu	BookRestaurant	I-datetime
+8	dari	BookRestaurant	I-datetime
+9	sekarang	BookRestaurant	I-datetime
+
+# id: 291
+# text-en: What movie house is showing Flower and Snake at 08:56:29 ?
+# text: Bioskop mana yang menayangkan Flower and Snake pada 08:56:29 ?
+# intent: SearchScreeningEvent
+1	Bioskop	SearchScreeningEvent	B-object_location_type
+2	mana	SearchScreeningEvent	O
+3	yang	SearchScreeningEvent	O
+4	menayangkan	SearchScreeningEvent	O
+5	Flower	SearchScreeningEvent	B-movie_name
+6	and	SearchScreeningEvent	I-movie_name
+7	Snake	SearchScreeningEvent	I-movie_name
+8	pada	SearchScreeningEvent	O
+9	08:56:29	SearchScreeningEvent	B-datetime
+10	?	SearchScreeningEvent	O
+
+# id: 292
+# text-en: Find a restaurant in FM that servec quiche
+# text: Temukan sebuah restoran di FM yang menyajikan quiche
+# intent: BookRestaurant
+1	Temukan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	restoran	BookRestaurant	B-restaurant_type
+4	di	BookRestaurant	O
+5	FM	BookRestaurant	B-location
+6	yang	BookRestaurant	O
+7	menyajikan	BookRestaurant	O
+8	quiche	BookRestaurant	B-served_dish
+
+# id: 293
+# text-en: Book a reservation for 7 people at The French Laundry on june the 8th, 2029
+# text: Pesan sebuah reservasi untuk 7 orang di The French Laundry pada tanggal 8 Juni 2029
+# intent: BookRestaurant
+1	Pesan	BookRestaurant	O
+2	sebuah	BookRestaurant	O
+3	reservasi	BookRestaurant	O
+4	untuk	BookRestaurant	O
+5	7	BookRestaurant	B-party_size_number
+6	orang	BookRestaurant	O
+7	di	BookRestaurant	O
+8	The	BookRestaurant	B-restaurant_name
+9	French	BookRestaurant	I-restaurant_name
+10	Laundry	BookRestaurant	I-restaurant_name
+11	pada	BookRestaurant	O
+12	tanggal	BookRestaurant	B-datetime
+13	8	BookRestaurant	I-datetime
+14	Juni	BookRestaurant	I-datetime
+15	2029	BookRestaurant	I-datetime
+
+# id: 294
+# text-en: play fourties tunes
+# text: mainkan lagu tahun empat puluhan
+# intent: PlayMusic
+1	mainkan	PlayMusic	O
+2	lagu	PlayMusic	O
+3	tahun	PlayMusic	O
+4	empat	PlayMusic	B-datetime
+5	puluhan	PlayMusic	I-datetime
+
+# id: 295
+# text-en: When will the Santikos Theatres be showing animated movies
+# text: Kapan Teater Santikos akan menayangkan film animasi
+# intent: SearchScreeningEvent
+1	Kapan	SearchScreeningEvent	O
+2	Teater	SearchScreeningEvent	B-location
+3	Santikos	SearchScreeningEvent	I-location
+4	akan	SearchScreeningEvent	O
+5	menayangkan	SearchScreeningEvent	O
+6	film	SearchScreeningEvent	B-movie_type
+7	animasi	SearchScreeningEvent	I-movie_type
+
+# id: 296
+# text-en: Play music on Itunes
+# text: Mainkan musik di Itunes
+# intent: PlayMusic
+1	Mainkan	PlayMusic	O
+2	musik	PlayMusic	O
+3	di	PlayMusic	O
+4	Itunes	PlayMusic	B-service
+
+# id: 297
+# text-en: show book name Straight No Chase
+# text: tunjukkan buku berjudul Straight No Chase
+# intent: SearchCreativeWork
+1	tunjukkan	SearchCreativeWork	O
+2	buku	SearchCreativeWork	B-object_type
+3	berjudul	SearchCreativeWork	O
+4	Straight	SearchCreativeWork	B-object_name
+5	No	SearchCreativeWork	I-object_name
+6	Chase	SearchCreativeWork	I-object_name
+
+# id: 298
+# text-en: Find the movie schedules for movies close by
+# text: Temukan jadwal film untuk film terdekat
+# intent: SearchScreeningEvent
+1	Temukan	SearchScreeningEvent	O
+2	jadwal	SearchScreeningEvent	B-object_type
+3	film	SearchScreeningEvent	I-object_type
+4	untuk	SearchScreeningEvent	O
+5	film	SearchScreeningEvent	B-movie_type
+6	terdekat	SearchScreeningEvent	B-location
+
+# id: 299
+# text-en: this winter , meredith, betty and erika want to food at a gastropub that is in the same area as fran's location .
+# text: musim dingin ini , meredith , betty dan erika ingin makan di sebuah gastropub yang berada di area yang sama dengan lokasi fran .
+# intent: BookRestaurant
+1	musim	BookRestaurant	B-datetime
+2	dingin	BookRestaurant	I-datetime
+3	ini	BookRestaurant	I-datetime
+4	,	BookRestaurant	O
+5	meredith	BookRestaurant	B-party_size_description
+6	,	BookRestaurant	I-party_size_description
+7	betty	BookRestaurant	I-party_size_description
+8	dan	BookRestaurant	I-party_size_description
+9	erika	BookRestaurant	I-party_size_description
+10	ingin	BookRestaurant	O
+11	makan	BookRestaurant	O
+12	di	BookRestaurant	O
+13	sebuah	BookRestaurant	O
+14	gastropub	BookRestaurant	B-restaurant_type
+15	yang	BookRestaurant	O
+16	berada	BookRestaurant	O
+17	di	BookRestaurant	B-location
+18	area	BookRestaurant	I-location
+19	yang	BookRestaurant	I-location
+20	sama	BookRestaurant	I-location
+21	dengan	BookRestaurant	O
+22	lokasi	BookRestaurant	B-location
+23	fran	BookRestaurant	I-location
+24	.	BookRestaurant	O
+
+# id: 300
+# text-en: Add tune to my Para comer
+# text: Tambahkan lagu ke Para comer saya
+# intent: AddToPlaylist
+1	Tambahkan	AddToPlaylist	O
+2	lagu	AddToPlaylist	B-music_item
+3	ke	AddToPlaylist	O
+4	Para	AddToPlaylist	B-playlist
+5	comer	AddToPlaylist	I-playlist
+6	saya	AddToPlaylist	B-reference
+
