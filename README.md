@@ -1,12 +1,18 @@
 # From Masked-Language Modeling to Translation: Non-English Auxiliary Tasks Improve Zero-shot Spoken Language Understanding
 
-This repository contains all code to reproduce the results in the paper. If you are just here for the data, see the `data/` folder. 
+This repository contains all code to reproduce the results in the paper. If you are just here for the data, see the `data/` folder (AND DON'T FORGET TO CITE THE PAPERS LISTED BELOW) 
+
+[![data](table.png)]()
 
 **NOTE**: Thanks to Evgeniia Razumovskaia, we have found some errors in the original data. We have kept the original data in the repo for reproducability reasons and the fixed version can be found in data/xSID-0.2. The main differences are in Arabic, where we forgot to map the intent labels.
 
 **NOTE** 02-11-2021: Thanks to Noëmi Aepli, we have fixed the sentences in the English dev/test files to match the other languages. And thanks to Milan Grita we have corrected mismatches in words in the comments and the annotation (mainly in the English files).
 
 **NOTE** 29-03-2022: There was an error in the nluEval.py code for calculating the loose overlap (thanks to Mike Zhang for finding and fixing it). The results in the paper for loose f1 were unfortunately overly optimistic.
+
+**UPDATE** 05-2023: version 0.4 is released, including Neapolitan and Swiss German
+
+**UPDATE** 04-2024: version 0.5 is released, including Bavarian and Lithuanian, please also see [https://github.com/mainlp/NaLiBaSID/tree/main](https://github.com/mainlp/NaLiBaSID/tree/main) for alternatives for these languages (including native queries!).
 
 To reproduce all results in the paper, you have to run `./scripts/runAll.sh`. However, in practice this would take a very long time (especially when rerunning nmt-transfer, `./scripts/1.\*`), which is why we would suggest to inspect `./scripts/runAll.sh`, decide which parts are relevant for you, and manually run the required commands parallel. It should be noted that some of the scripts may fail, because we used the MultiAtis dataset, which is not publicly available. To run the experiments on those, [obtain the data](https://catalog.ldc.upenn.edu/LDC2021T04), convert it with `scripts/tsv2conll.py` in `data/multiAtis`. Alternatively, one could remove the `MultiAtis` key from the `datasets` dictionary in `scripts/myutils.py`. All tables and graphs of the paper can be reproduced by running `scripts/genAll.sh`.
 
@@ -35,7 +41,7 @@ This code is largely based on [MaChAmp](https://machamp-nlp.github.io/), we incl
     publisher = "Association for Computational Linguistics"
 }
 ```
-If you use version 0.4, please also cite:
+If you use version 0.4 (which includes Neapolitan and Swiss German), please also cite:
 
 ```
 @inproceedings{2023-findings-vardial,
@@ -49,5 +55,16 @@ If you use version 0.4, please also cite:
 }
 ```
 
+If you use version 0.5 (which includes Bavarian and Lithuanian), please also cite:
+
+```
+@inproceedings{Winkler2024,
+  title = "Slot and Intent Detection Resources for {B}avarian and {L}ithuanian: Assessing Translations vs Natural Queries to Digital Assistants",
+  author = "Winkler, Miriam and Juozapaityte, Virginija and van der Goot, Rob and Plank, Barbara",
+  booktitle = "Proceedings of The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation",
+  year = "2024",
+  publisher = "Association for Computational Linguistics",
+}
+```
 
 

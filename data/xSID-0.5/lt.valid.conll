@@ -1,0 +1,3454 @@
+# id = 137
+# text-en = Is it going to rain today?
+# text = Ar šiandien lis?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	lis	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id = 167
+# text-en = how hot is it going to be today
+# text = kaip karšta bus šiandien?
+# intent = weather/find
+1	kaip	weather/find	O
+2	karšta	weather/find	B-weather/attribute
+3	bus	weather/find	O
+4	šiandien	weather/find	B-datetime
+5	?	weather/find	O
+
+# id = 150
+# text-en = How hot is it?
+# text = Kaip karšta yra?
+# intent = weather/find
+1	Kaip	weather/find	O
+2	karšta	weather/find	B-weather/attribute
+3	yra	weather/find	O
+4	?	weather/find	O
+
+# id = 188
+# text-en = Will it be sunny today?
+# text = Ar šiandien bus saulėta?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	bus	weather/find	O
+4	saulėta	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id = 280
+# text-en = Is it cloudy today?
+# text = Ar šiandien bus debesuota?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	bus	weather/find	O
+4	debesuota	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id = 85
+# text-en = Cancel all my reminders.
+# text = Atšauk visus mano priminimus.
+# intent = reminder/cancel_reminder
+1	Atšauk	reminder/cancel_reminder	O
+2	visus	reminder/cancel_reminder	B-reference
+3	mano	reminder/cancel_reminder	I-reference
+4	priminimus	reminder/cancel_reminder	O
+5	.	reminder/cancel_reminder	O
+
+# id = 78
+# text-en = what alarms do I have set?
+# text = kokius žadintuvus aš esu nustačiusi?
+# intent = alarm/show_alarms
+1	kokius	alarm/show_alarms	O
+2	žadintuvus	alarm/show_alarms	O
+3	aš	alarm/show_alarms	O
+4	esu	alarm/show_alarms	O
+5	nustačiusi	alarm/show_alarms	O
+6	?	alarm/show_alarms	O
+
+# id = 238
+# text-en = I need an alarm for 5pm to remind me to take my medicine
+# text = Man reikia žadintuvo penktai vakaro, kad primintų man išgerti vaistus
+# intent = alarm/set_alarm
+1	Man	alarm/set_alarm	O
+2	reikia	alarm/set_alarm	O
+3	žadintuvo	alarm/set_alarm	O
+4	penktai	alarm/set_alarm	B-datetime
+5	vakaro	alarm/set_alarm	I-datetime
+6	,	alarm/set_alarm	O
+7	kad	alarm/set_alarm	O
+8	primintų	alarm/set_alarm	O
+9	man	alarm/set_alarm	O
+10	išgerti	alarm/set_alarm	B-reminder/todo
+11	vaistus	alarm/set_alarm	I-reminder/todo
+
+# id = 19
+# text-en = set alarm for every 3 minutes
+# text = nustatyk žadintuvą skambėti kas 3 minutes
+# intent = alarm/set_alarm
+1	nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	skambėti	alarm/set_alarm	O
+4	kas	alarm/set_alarm	B-recurring_datetime
+5	3	alarm/set_alarm	I-recurring_datetime
+6	minutes	alarm/set_alarm	I-recurring_datetime
+
+# id = 291
+# text-en = Is it going to storm today?
+# text = Ar šiandien bus audra?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	bus	weather/find	O
+4	audra	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id = 18
+# text-en = Cancel this afternoon's alarm.
+# text = Atšauk šios popietės žadintuvą.
+# intent = alarm/cancel_alarm
+1	Atšauk	alarm/cancel_alarm	O
+2	šios	alarm/cancel_alarm	B-datetime
+3	popietės	alarm/cancel_alarm	I-datetime
+4	žadintuvą	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# id = 146
+# text-en = Is it going to rain next week
+# text = Ar kitą savaitę lis
+# intent = weather/find
+1	Ar	weather/find	O
+2	kitą	weather/find	B-datetime
+3	savaitę	weather/find	I-datetime
+4	lis	weather/find	B-weather/attribute
+
+# id = 293
+# text-en = What's next week's forecast?
+# text = Kokia kitos savaitės prognozė?
+# intent = weather/find
+1	Kokia	weather/find	O
+2	kitos	weather/find	B-datetime
+3	savaitės	weather/find	I-datetime
+4	prognozė	weather/find	O
+5	?	weather/find	O
+
+# id = 125
+# text-en = Read me my reminders.
+# text = Perskaityk man mano priminimus.
+# intent = reminder/show_reminders
+1	Perskaityk	reminder/show_reminders	O
+2	man	reminder/show_reminders	O
+3	mano	reminder/show_reminders	B-reference
+4	priminimus	reminder/show_reminders	O
+5	.	reminder/show_reminders	O
+
+# id = 64
+# text-en = Show all alarms
+# text = Parodyk visus žadintuvus
+# intent = alarm/show_alarms
+1	Parodyk	alarm/show_alarms	O
+2	visus	alarm/show_alarms	B-reference
+3	žadintuvus	alarm/show_alarms	O
+
+# id = 29
+# text-en = Alarm every five minutes for 20 minutes please
+# text = Prašau nustatyk žadintuvą skambėti kas penkias minutes dvidešimčiai minučių
+# intent = alarm/set_alarm
+1	Prašau	alarm/set_alarm	O
+2	nustatyk	alarm/set_alarm	O
+3	žadintuvą	alarm/set_alarm	O
+4	skambėti	alarm/set_alarm	O
+5	kas	alarm/set_alarm	B-recurring_datetime
+6	penkias	alarm/set_alarm	I-recurring_datetime
+7	minutes	alarm/set_alarm	I-recurring_datetime
+8	dvidešimčiai	alarm/set_alarm	I-recurring_datetime
+9	minučių	alarm/set_alarm	I-recurring_datetime
+
+# id = 25
+# text-en = Change tomorrow mornings alarm to 6 am.
+# text = Pakeisk rytojaus ryto žadintuvą šeštai ryto.
+# intent = alarm/modify_alarm
+1	Pakeisk	alarm/modify_alarm	O
+2	rytojaus	alarm/modify_alarm	B-datetime
+3	ryto	alarm/modify_alarm	I-datetime
+4	žadintuvą	alarm/modify_alarm	O
+5	šeštai	alarm/modify_alarm	B-datetime
+6	ryto	alarm/modify_alarm	I-datetime
+7	.	alarm/modify_alarm	O
+
+# id = 254
+# text-en = cancel all reminders
+# text = atšauk visus priminimus
+# intent = reminder/cancel_reminder
+1	atšauk	reminder/cancel_reminder	O
+2	visus	reminder/cancel_reminder	B-reference
+3	priminimus	reminder/cancel_reminder	O
+
+# id = 236
+# text-en = Show me my alarms
+# text = Parodyk man mano žadintuvus
+# intent = alarm/show_alarms
+1	Parodyk	alarm/show_alarms	O
+2	man	alarm/show_alarms	O
+3	mano	alarm/show_alarms	B-reference
+4	žadintuvus	alarm/show_alarms	O
+
+# id = 51
+# text-en = Cancel alarms
+# text = Atšauk žadintuvus
+# intent = alarm/cancel_alarm
+1	Atšauk	alarm/cancel_alarm	O
+2	žadintuvus	alarm/cancel_alarm	O
+
+# id = 20
+# text-en = Set alarm for 6 am tomorrow
+# text = Nustatyk žadintuvą rytojui šeštai ryto
+# intent = alarm/set_alarm
+1	Nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	rytojui	alarm/set_alarm	B-datetime
+4	šeštai	alarm/set_alarm	I-datetime
+5	ryto	alarm/set_alarm	I-datetime
+
+# id = 22
+# text-en = Set alarm for 7 am tomorrow
+# text = Nustatyk žadintuvą rytojui septintai ryto
+# intent = alarm/set_alarm
+1	Nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	rytojui	alarm/set_alarm	B-datetime
+4	septintai	alarm/set_alarm	I-datetime
+5	ryto	alarm/set_alarm	I-datetime
+
+# id = 36
+# text-en = set alarm for 6 am
+# text = nustatyk žadintuvą 6 ryto
+# intent = alarm/set_alarm
+1	nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	6	alarm/set_alarm	B-datetime
+4	ryto	alarm/set_alarm	I-datetime
+
+# id = 136
+# text-en = i need a reminder to pick Lisa up
+# text = man reikia priminimo pasiimti Lisa
+# intent = reminder/set_reminder
+1	man	reminder/set_reminder	O
+2	reikia	reminder/set_reminder	O
+3	priminimo	reminder/set_reminder	O
+4	pasiimti	reminder/set_reminder	B-reminder/todo
+5	Lisa	reminder/set_reminder	I-reminder/todo
+
+# id = 38
+# text-en = show all alarms
+# text = parodyk visus žadintuvus
+# intent = alarm/show_alarms
+1	parodyk	alarm/show_alarms	O
+2	visus	alarm/show_alarms	B-reference
+3	žadintuvus	alarm/show_alarms	O
+
+# id = 11
+# text-en = Turn off all alarms
+# text = Išjunk visus žadintuvus
+# intent = alarm/cancel_alarm
+1	Išjunk	alarm/cancel_alarm	O
+2	visus	alarm/cancel_alarm	B-reference
+3	žadintuvus	alarm/cancel_alarm	O
+
+# id = 88
+# text-en = What are my reminders?
+# text = Kokie yra mano priminimai?
+# intent = reminder/show_reminders
+1	Kokie	reminder/show_reminders	O
+2	yra	reminder/show_reminders	O
+3	mano	reminder/show_reminders	B-reference
+4	priminimai	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# id = 274
+# text-en = is it hot outside
+# text = ar karšta lauke
+# intent = weather/find
+1	ar	weather/find	O
+2	karšta	weather/find	B-weather/attribute
+3	lauke	weather/find	B-location
+
+# id = 34
+# text-en = Snooze alarm
+# text = Užmigdyk žadintuvą
+# intent = alarm/snooze_alarm
+1	Užmigdyk	alarm/snooze_alarm	O
+2	žadintuvą	alarm/snooze_alarm	O
+
+# id = 14
+# text-en = alarm on
+# text = įjunk žadintuvą
+# intent = alarm/set_alarm
+1	įjunk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+
+# id = 62
+# text-en = Set an alarm for 6 am on Wed
+# text = Nustatyk žadintuvą šeštai ryto trečiadieniui
+# intent = alarm/set_alarm
+1	Nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	šeštai	alarm/set_alarm	B-datetime
+4	ryto	alarm/set_alarm	I-datetime
+5	trečiadieniui	alarm/set_alarm	I-datetime
+
+# id = 82
+# text-en = remind me to submit my lesson plans every monday by the end of the day
+# text = primink man atiduoti mano pamokų planus kievieną pirmadienį iki dienos pabaigos
+# intent = reminder/set_reminder
+1	primink	reminder/set_reminder	O
+2	man	reminder/set_reminder	O
+3	atiduoti	reminder/set_reminder	B-reminder/todo
+4	mano	reminder/set_reminder	I-reminder/todo
+5	pamokų	reminder/set_reminder	I-reminder/todo
+6	planus	reminder/set_reminder	I-reminder/todo
+7	kievieną	reminder/set_reminder	B-recurring_datetime
+8	pirmadienį	reminder/set_reminder	I-recurring_datetime
+9	iki	reminder/set_reminder	I-recurring_datetime
+10	dienos	reminder/set_reminder	I-recurring_datetime
+11	pabaigos	reminder/set_reminder	I-recurring_datetime
+
+# id = 167
+# text-en = how hot is it going to be today
+# text = kaip karšta bus šiandien?
+# intent = weather/find
+1	kaip	weather/find	O
+2	karšta	weather/find	B-weather/attribute
+3	bus	weather/find	O
+4	šiandien	weather/find	B-datetime
+5	?	weather/find	O
+
+# id = 23
+# text-en = Clear all set alarms.
+# text = Ištrink visus nustatytus žadintuvus.
+# intent = alarm/cancel_alarm
+1	Ištrink	alarm/cancel_alarm	O
+2	visus	alarm/cancel_alarm	B-reference
+3	nustatytus	alarm/cancel_alarm	O
+4	žadintuvus	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# id = 64
+# text-en = Show all alarms
+# text = Parodyk visus žadintuvus
+# intent = alarm/show_alarms
+1	Parodyk	alarm/show_alarms	O
+2	visus	alarm/show_alarms	B-reference
+3	žadintuvus	alarm/show_alarms	O
+
+# id = 188
+# text-en = Will it be sunny today?
+# text = Ar šiandien bus saulėta?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	bus	weather/find	O
+4	saulėta	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id = 287
+# text-en = What is the humidity level today
+# text = Koks drėgmės lygis šiandien
+# intent = weather/find
+1	Koks	weather/find	O
+2	drėgmės	weather/find	B-weather/attribute
+3	lygis	weather/find	I-weather/attribute
+4	šiandien	weather/find	B-datetime
+
+# id = 79
+# text-en = Cancel all reminders
+# text = Atšauk visus priminimus
+# intent = reminder/cancel_reminder
+1	Atšauk	reminder/cancel_reminder	O
+2	visus	reminder/cancel_reminder	B-reference
+3	priminimus	reminder/cancel_reminder	O
+
+# id = 63
+# text-en = set an alarm for fifteen minutes
+# text = nustatyk žadintuvą  penkiolikai minučių
+# intent = alarm/set_alarm
+1	nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	penkiolikai	alarm/set_alarm	B-datetime
+4	minučių	alarm/set_alarm	I-datetime
+
+# id = 60
+# text-en = Please set my alarm for 4am this Saturday.
+# text = Prašau nustatyk mano žadintuvą ketvirtai ryto šį šeštadienį.
+# intent = alarm/set_alarm
+1	Prašau	alarm/set_alarm	O
+2	nustatyk	alarm/set_alarm	O
+3	mano	alarm/set_alarm	B-reference
+4	žadintuvą	alarm/set_alarm	O
+5	ketvirtai	alarm/set_alarm	B-datetime
+6	ryto	alarm/set_alarm	I-datetime
+7	šį	alarm/set_alarm	I-datetime
+8	šeštadienį	alarm/set_alarm	I-datetime
+9	.	alarm/set_alarm	O
+
+# id = 105
+# text-en = Give me a reminder for house closing at 10am tomorrow.
+# text = Duok man priminimą apie namo uždarymą ryt dešimtą ryto.
+# intent = reminder/set_reminder
+1	Duok	reminder/set_reminder	O
+2	man	reminder/set_reminder	O
+3	priminimą	reminder/set_reminder	O
+4	apie	reminder/set_reminder	O
+5	namo	reminder/set_reminder	B-reminder/todo
+6	uždarymą	reminder/set_reminder	I-reminder/todo
+7	ryt	reminder/set_reminder	B-datetime
+8	dešimtą	reminder/set_reminder	I-datetime
+9	ryto	reminder/set_reminder	I-datetime
+10	.	reminder/set_reminder	O
+
+# id = 7
+# text-en = delete all alarms
+# text = ištrink visus žadintuvus
+# intent = alarm/cancel_alarm
+1	ištrink	alarm/cancel_alarm	O
+2	visus	alarm/cancel_alarm	B-reference
+3	žadintuvus	alarm/cancel_alarm	O
+
+# id = 58
+# text-en = How many alarms do I have set for Sunday?
+# text = Kiek žadintuvų aš turiu nustatytų sekmadieniui?
+# intent = alarm/show_alarms
+1	Kiek	alarm/show_alarms	O
+2	žadintuvų	alarm/show_alarms	O
+3	aš	alarm/show_alarms	O
+4	turiu	alarm/show_alarms	O
+5	nustatytų	alarm/show_alarms	O
+6	sekmadieniui	alarm/show_alarms	B-datetime
+7	?	alarm/show_alarms	O
+
+# id = 38
+# text-en = show all alarms
+# text = parodyk visus žadintuvus
+# intent = alarm/show_alarms
+1	parodyk	alarm/show_alarms	O
+2	visus	alarm/show_alarms	B-reference
+3	žadintuvus	alarm/show_alarms	O
+
+# id = 213
+# text-en = Is it going to be sunny today?
+# text = Ar šiandien bus saulėta?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	bus	weather/find	O
+4	saulėta	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id = 222
+# text-en = set alarm for 615am
+# text = Nustatyk žadintuvą šešios penkiolika ryto.
+# intent = alarm/set_alarm
+1	Nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	šešios	alarm/set_alarm	B-datetime
+4	penkiolika	alarm/set_alarm	I-datetime
+5	ryto	alarm/set_alarm	I-datetime
+6	.	alarm/set_alarm	O
+
+# id = 229
+# text-en = Set two alarms for tomorrow morning
+# text = Nustatyk du žadintuvus rytojaus rytui
+# intent = alarm/set_alarm
+1	Nustatyk	alarm/set_alarm	O
+2	du	alarm/set_alarm	O
+3	žadintuvus	alarm/set_alarm	O
+4	rytojaus	alarm/set_alarm	B-datetime
+5	rytui	alarm/set_alarm	I-datetime
+
+# id = 11
+# text-en = Turn off all alarms
+# text = Išjunk visus žadintuvus
+# intent = alarm/cancel_alarm
+1	Išjunk	alarm/cancel_alarm	O
+2	visus	alarm/cancel_alarm	B-reference
+3	žadintuvus	alarm/cancel_alarm	O
+
+# id = 175
+# text-en = What is the temperature like in London right now?
+# text = Kokia temperatūra Londone šiuo metu?
+# intent = weather/find
+1	Kokia	weather/find	O
+2	temperatūra	weather/find	B-weather/attribute
+3	Londone	weather/find	B-location
+4	šiuo	weather/find	B-datetime
+5	metu	weather/find	I-datetime
+6	?	weather/find	O
+
+# id = 246
+# text-en = Cancel my last reminder
+# text = Atšauk mano paskutinį priminimą
+# intent = reminder/cancel_reminder
+1	Atšauk	reminder/cancel_reminder	O
+2	mano	reminder/cancel_reminder	B-reference
+3	paskutinį	reminder/cancel_reminder	I-reference
+4	priminimą	reminder/cancel_reminder	O
+
+# id = 259
+# text-en = Set a reminder to go to the grocery store later
+# text = Nustatyk priminimą vėliau nueiti į maisto prekių parduotuvę
+# intent = reminder/set_reminder
+1	Nustatyk	reminder/set_reminder	O
+2	priminimą	reminder/set_reminder	O
+3	vėliau	reminder/set_reminder	B-datetime
+4	nueiti	reminder/set_reminder	B-reminder/todo
+5	į	reminder/set_reminder	I-reminder/todo
+6	maisto	reminder/set_reminder	I-reminder/todo
+7	prekių	reminder/set_reminder	I-reminder/todo
+8	parduotuvę	reminder/set_reminder	I-reminder/todo
+
+# id = 186
+# text-en = What will be the heat index today?
+# text = Koks šiandien bus karščio indeksas?
+# intent = weather/find
+1	Koks	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	bus	weather/find	O
+4	karščio	weather/find	B-weather/attribute
+5	indeksas	weather/find	I-weather/attribute
+6	?	weather/find	O
+
+# id = 211
+# text-en = How cold will it be today?
+# text = Kiek šalta bus šiandien?
+# intent = weather/find
+1	Kiek	weather/find	O
+2	šalta	weather/find	B-weather/attribute
+3	bus	weather/find	O
+4	šiandien	weather/find	B-datetime
+5	?	weather/find	O
+
+# id = 190
+# text-en = will it snow today
+# text = Snigs šiandien
+# intent = weather/find
+1	Snigs	weather/find	B-weather/attribute
+2	šiandien	weather/find	B-datetime
+
+# id = 13
+# text-en = Set alarm for 5am
+# text = Nustatyk žadintuvą penktai ryto
+# intent = alarm/set_alarm
+1	Nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	penktai	alarm/set_alarm	B-datetime
+4	ryto	alarm/set_alarm	I-datetime
+
+# id = 26
+# text-en = turn off alarm
+# text = išjunk žadintuvą
+# intent = alarm/cancel_alarm
+1	išjunk	alarm/cancel_alarm	O
+2	žadintuvą	alarm/cancel_alarm	O
+
+# id = 1
+# text-en = cancel all alarms
+# text = atšauk visus žadintuvus
+# intent = alarm/cancel_alarm
+1	atšauk	alarm/cancel_alarm	O
+2	visus	alarm/cancel_alarm	B-reference
+3	žadintuvus	alarm/cancel_alarm	O
+
+# id = 264
+# text-en = Add reminder to swim at 11am tomorrow
+# text = Pridėk priminimą plaukimui rytoj 11 valandą
+# intent = reminder/set_reminder
+1	Pridėk	reminder/set_reminder	O
+2	priminimą	reminder/set_reminder	O
+3	plaukimui	reminder/set_reminder	B-reminder/todo
+4	rytoj	reminder/set_reminder	B-datetime
+5	11	reminder/set_reminder	I-datetime
+6	valandą	reminder/set_reminder	I-datetime
+
+# id = 87
+# text-en = Show my reminder
+# text = Parodyk mano priminimus
+# intent = reminder/show_reminders
+1	Parodyk	reminder/show_reminders	O
+2	mano	reminder/show_reminders	B-reference
+3	priminimus	reminder/show_reminders	O
+
+# id = 70
+# text-en = Cancel my alarm on Saturday
+# text = Atšauk mano šeštadienio žadintuvą
+# intent = alarm/cancel_alarm
+1	Atšauk	alarm/cancel_alarm	O
+2	mano	alarm/cancel_alarm	B-reference
+3	šeštadienio	alarm/cancel_alarm	B-datetime
+4	žadintuvą	alarm/cancel_alarm	O
+
+# id = 270
+# text-en = Is it cold out?
+# text = Ar lauke bus šalta?
+# intent = weather/find
+1	Ar	weather/find	O
+2	lauke	weather/find	B-location
+3	bus	weather/find	O
+4	šalta	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id = 286
+# text-en = Is it humid today?
+# text = Ar šiandien drėgna?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	drėgna	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id = 73
+# text-en = Set alarm every minute for 11 minutes
+# text = Nustatyk žadintuvą skambėti kas minutę vienuolikai minučių
+# intent = alarm/set_alarm
+1	Nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	skambėti	alarm/set_alarm	O
+4	kas	alarm/set_alarm	B-recurring_datetime
+5	minutę	alarm/set_alarm	I-recurring_datetime
+6	vienuolikai	alarm/set_alarm	I-recurring_datetime
+7	minučių	alarm/set_alarm	I-recurring_datetime
+
+# id = 87
+# text-en = Show my reminder
+# text = Parodyk mano priminimus
+# intent = reminder/show_reminders
+1	Parodyk	reminder/show_reminders	O
+2	mano	reminder/show_reminders	B-reference
+3	priminimus	reminder/show_reminders	O
+
+# id = 192
+# text-en = Is it going to be windy today?
+# text = Ar bus vėjuota šiandien?
+# intent = weather/find
+1	Ar	weather/find	O
+2	bus	weather/find	O
+3	vėjuota	weather/find	B-weather/attribute
+4	šiandien	weather/find	B-datetime
+5	?	weather/find	O
+
+# id = 240
+# text-en = Cancel tomorrow's reminders
+# text = Atšauk rytojaus priminimus
+# intent = reminder/cancel_reminder
+1	Atšauk	reminder/cancel_reminder	O
+2	rytojaus	reminder/cancel_reminder	B-datetime
+3	priminimus	reminder/cancel_reminder	O
+
+# id = 140
+# text-en = tell me the 3 day forecast
+# text = pasakyk man trijų dienu oro prognozę
+# intent = weather/find
+1	pasakyk	weather/find	O
+2	man	weather/find	O
+3	trijų	weather/find	B-datetime
+4	dienu	weather/find	I-datetime
+5	oro	weather/find	O
+6	prognozę	weather/find	O
+
+# id = 272
+# text-en = how many inches of rain are we suppose to get tomorrow?
+# text = kiek centimetrų lietaus turėtų iškristi rytoj?
+# intent = weather/find
+1	kiek	weather/find	O
+2	centimetrų	weather/find	B-weather/attribute
+3	lietaus	weather/find	I-weather/attribute
+4	turėtų	weather/find	O
+5	iškristi	weather/find	O
+6	rytoj	weather/find	B-datetime
+7	?	weather/find	O
+
+# id = 80
+# text-en = remind me about the wedding
+# text = primink man apie vestuves
+# intent = reminder/set_reminder
+1	primink	reminder/set_reminder	O
+2	man	reminder/set_reminder	O
+3	apie	reminder/set_reminder	O
+4	vestuves	reminder/set_reminder	B-reminder/todo
+
+# id = 42
+# text-en = Snooze all alarms
+# text = Užmigdyk visus žadintuvus
+# intent = alarm/snooze_alarm
+1	Užmigdyk	alarm/snooze_alarm	O
+2	visus	alarm/snooze_alarm	B-reference
+3	žadintuvus	alarm/snooze_alarm	O
+
+# id = 214
+# text-en = When will it rain today?
+# text = Kada šiandien lis?
+# intent = weather/find
+1	Kada	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	lis	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id = 38
+# text-en = show all alarms
+# text = parodyk visus žadintuvus
+# intent = alarm/show_alarms
+1	parodyk	alarm/show_alarms	O
+2	visus	alarm/show_alarms	B-reference
+3	žadintuvus	alarm/show_alarms	O
+
+# id = 11
+# text-en = Turn off all alarms
+# text = Išjunk visus žadintuvus
+# intent = alarm/cancel_alarm
+1	Išjunk	alarm/cancel_alarm	O
+2	visus	alarm/cancel_alarm	B-reference
+3	žadintuvus	alarm/cancel_alarm	O
+
+# id = 137
+# text-en = Is it going to rain today?
+# text = Ar šiandien lis?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	lis	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id = 260
+# text-en = Show all reminders for tomorrow
+# text = Parodyk visus rytojaus priminimus
+# intent = reminder/show_reminders
+1	Parodyk	reminder/show_reminders	O
+2	visus	reminder/show_reminders	B-reference
+3	rytojaus	reminder/show_reminders	B-datetime
+4	priminimus	reminder/show_reminders	O
+
+# id = 21
+# text-en = cancel my alarm for tomorrow morning
+# text = atšauk mano rytojaus ryto žadintuvą
+# intent = alarm/cancel_alarm
+1	atšauk	alarm/cancel_alarm	O
+2	mano	alarm/cancel_alarm	B-reference
+3	rytojaus	alarm/cancel_alarm	B-datetime
+4	ryto	alarm/cancel_alarm	I-datetime
+5	žadintuvą	alarm/cancel_alarm	O
+
+# id = 150
+# text-en = How hot is it?
+# text = Kaip karšta yra?
+# intent = weather/find
+1	Kaip	weather/find	O
+2	karšta	weather/find	B-weather/attribute
+3	yra	weather/find	O
+4	?	weather/find	O
+
+# id = 253
+# text-en = remind me to buy milk tonight
+# text = primink man nupirkti pieno šiandien vakare
+# intent = reminder/set_reminder
+1	primink	reminder/set_reminder	O
+2	man	reminder/set_reminder	O
+3	nupirkti	reminder/set_reminder	B-reminder/todo
+4	pieno	reminder/set_reminder	I-reminder/todo
+5	šiandien	reminder/set_reminder	B-datetime
+6	vakare	reminder/set_reminder	I-datetime
+
+# id = 79
+# text-en = Cancel all reminders
+# text = Atšauk visus priminimus
+# intent = reminder/cancel_reminder
+1	Atšauk	reminder/cancel_reminder	O
+2	visus	reminder/cancel_reminder	B-reference
+3	priminimus	reminder/cancel_reminder	O
+
+# id = 64
+# text-en = Show all alarms
+# text = Parodyk visus žadintuvus
+# intent = alarm/show_alarms
+1	Parodyk	alarm/show_alarms	O
+2	visus	alarm/show_alarms	B-reference
+3	žadintuvus	alarm/show_alarms	O
+
+# id = 21
+# text-en = cancel my alarm for tomorrow morning
+# text = atšauk mano rytojaus ryto žadintuvą
+# intent = alarm/cancel_alarm
+1	atšauk	alarm/cancel_alarm	O
+2	mano	alarm/cancel_alarm	B-reference
+3	rytojaus	alarm/cancel_alarm	B-datetime
+4	ryto	alarm/cancel_alarm	I-datetime
+5	žadintuvą	alarm/cancel_alarm	O
+
+# id = 138
+# text-en = Will it be sunny tomorrow?
+# text = Ar rytoj bus saulėta?
+# intent = weather/find
+1	Ar	weather/find	O
+2	rytoj	weather/find	B-datetime
+3	bus	weather/find	O
+4	saulėta	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id = 32
+# text-en = Cancel alarm for tomorrow morning
+# text = Atšauk rytojaus ryto žadintuvą
+# intent = alarm/cancel_alarm
+1	Atšauk	alarm/cancel_alarm	O
+2	rytojaus	alarm/cancel_alarm	B-datetime
+3	ryto	alarm/cancel_alarm	I-datetime
+4	žadintuvą	alarm/cancel_alarm	O
+
+# id = 249
+# text-en = show all reminders for tomorrow morning
+# text = parodyk visus rytojaus ryto priminimus
+# intent = reminder/show_reminders
+1	parodyk	reminder/show_reminders	O
+2	visus	reminder/show_reminders	O
+3	rytojaus	reminder/show_reminders	B-datetime
+4	ryto	reminder/show_reminders	I-datetime
+5	priminimus	reminder/show_reminders	O
+
+# id = 171
+# text-en = What is the humidity today?
+# text = Kokia drėgmė šiandien?
+# intent = weather/find
+1	Kokia	weather/find	O
+2	drėgmė	weather/find	B-weather/attribute
+3	šiandien	weather/find	B-datetime
+4	?	weather/find	O
+
+# id = 295
+# text-en = When is it going to rain?
+# text = Kada lis?
+# intent = weather/find
+1	Kada	weather/find	O
+2	lis	weather/find	B-weather/attribute
+3	?	weather/find	O
+
+# id = 187
+# text-en = How hot is it
+# text = Kaip karšta yra
+# intent = weather/find
+1	Kaip	weather/find	O
+2	karšta	weather/find	B-weather/attribute
+3	yra	weather/find	O
+
+# id = 113
+# text-en = show me my reminders
+# text = Parodyk man mano priminimus
+# intent = reminder/show_reminders
+1	Parodyk	reminder/show_reminders	O
+2	man	reminder/show_reminders	O
+3	mano	reminder/show_reminders	B-reference
+4	priminimus	reminder/show_reminders	O
+
+# id = 149
+# text-en = What is the 5 day forecast?
+# text = Kokia ateinančių penkių dienų prognozė?
+# intent = weather/find
+1	Kokia	weather/find	O
+2	ateinančių	weather/find	O
+3	penkių	weather/find	B-datetime
+4	dienų	weather/find	I-datetime
+5	prognozė	weather/find	O
+6	?	weather/find	O
+
+# id = 36
+# text-en = set alarm for 6 am
+# text = nustatyk žadintuvą 6 ryto
+# intent = alarm/set_alarm
+1	nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	6	alarm/set_alarm	B-datetime
+4	ryto	alarm/set_alarm	I-datetime
+
+# id = 163
+# text-en = Is it cold today?
+# text = Ar šiandien šalta
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	šalta	weather/find	B-weather/attribute
+
+# id = 107
+# text-en = Set a reminder to call my school on Monday at 4 PM
+# text = Nustatyk priminimą paskambinti į mano mokyklą pirmadienį ketvirtą po pietų
+# intent = reminder/set_reminder
+1	Nustatyk	reminder/set_reminder	O
+2	priminimą	reminder/set_reminder	O
+3	paskambinti	reminder/set_reminder	B-reminder/todo
+4	į	reminder/set_reminder	I-reminder/todo
+5	mano	reminder/set_reminder	I-reminder/todo
+6	mokyklą	reminder/set_reminder	I-reminder/todo
+7	pirmadienį	reminder/set_reminder	B-datetime
+8	ketvirtą	reminder/set_reminder	I-datetime
+9	po	reminder/set_reminder	I-datetime
+10	pietų	reminder/set_reminder	I-datetime
+
+# id = 95
+# text-en = Delete my reminder for picking up Patrick from school tomorrow.
+# text = Ištrink mano priminimą pasiimti Patrick is mokyklos rytoj.
+# intent = reminder/cancel_reminder
+1	Ištrink	reminder/cancel_reminder	O
+2	mano	reminder/cancel_reminder	B-reference
+3	priminimą	reminder/cancel_reminder	O
+4	pasiimti	reminder/cancel_reminder	B-reminder/todo
+5	Patrick	reminder/cancel_reminder	I-reminder/todo
+6	is	reminder/cancel_reminder	I-reminder/todo
+7	mokyklos	reminder/cancel_reminder	I-reminder/todo
+8	rytoj	reminder/cancel_reminder	B-datetime
+9	.	reminder/cancel_reminder	O
+
+# id = 299
+# text-en = How cold will it be in the morning?
+# text = Kaip šalta bus ryte?
+# intent = weather/find
+1	Kaip	weather/find	O
+2	šalta	weather/find	B-weather/attribute
+3	bus	weather/find	O
+4	ryte	weather/find	B-datetime
+5	?	weather/find	O
+
+# id = 196
+# text-en = do i need an umbrella tomorrow
+# text = ar man reikės skėčio rytoj
+# intent = weather/find
+1	ar	weather/find	O
+2	man	weather/find	O
+3	reikės	weather/find	O
+4	skėčio	weather/find	B-weather/attribute
+5	rytoj	weather/find	B-datetime
+
+# id = 87
+# text-en = Show my reminder
+# text = Parodyk mano priminimus
+# intent = reminder/show_reminders
+1	Parodyk	reminder/show_reminders	O
+2	mano	reminder/show_reminders	B-reference
+3	priminimus	reminder/show_reminders	O
+
+# id = 33
+# text-en = Stop alarm for 6:00 am
+# text = Sustabdyk 6:00 žadintuvą
+# intent = alarm/cancel_alarm
+1	Sustabdyk	alarm/cancel_alarm	O
+2	6:00	alarm/cancel_alarm	B-datetime
+3	žadintuvą	alarm/cancel_alarm	O
+
+# id = 35
+# text-en = Cancel all alarms
+# text = Atšauk visus žadintuvus
+# intent = alarm/cancel_alarm
+1	Atšauk	alarm/cancel_alarm	O
+2	visus	alarm/cancel_alarm	B-reference
+3	žadintuvus	alarm/cancel_alarm	O
+
+# id = 188
+# text-en = Will it be sunny today?
+# text = Ar šiandien bus saulėta?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	bus	weather/find	O
+4	saulėta	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id = 193
+# text-en = what is the weather in london?
+# text = koks oras londone?
+# intent = weather/find
+1	koks	weather/find	O
+2	oras	weather/find	O
+3	londone	weather/find	B-location
+4	?	weather/find	O
+
+# id = 88
+# text-en = What are my reminders?
+# text = Kokie yra mano priminimai?
+# intent = reminder/show_reminders
+1	Kokie	reminder/show_reminders	O
+2	yra	reminder/show_reminders	O
+3	mano	reminder/show_reminders	B-reference
+4	priminimai	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# id = 116
+# text-en = Cancel my reminder to text Dad
+# text = Atšauk mano priminimą parašyti tėčiui
+# intent = reminder/cancel_reminder
+1	Atšauk	reminder/cancel_reminder	O
+2	mano	reminder/cancel_reminder	B-reference
+3	priminimą	reminder/cancel_reminder	O
+4	parašyti	reminder/cancel_reminder	B-reminder/todo
+5	tėčiui	reminder/cancel_reminder	I-reminder/todo
+
+# id = 36
+# text-en = set alarm for 6 am
+# text = nustatyk žadintuvą 6 ryto
+# intent = alarm/set_alarm
+1	nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	6	alarm/set_alarm	B-datetime
+4	ryto	alarm/set_alarm	I-datetime
+
+# id = 15
+# text-en = turn off the alarm
+# text = išjunk  žadintuvą
+# intent = alarm/cancel_alarm
+1	išjunk	alarm/cancel_alarm	O
+2	žadintuvą	alarm/cancel_alarm	O
+
+# id = 65
+# text-en = cancel the alarm
+# text = atšauk žadintuvą
+# intent = alarm/cancel_alarm
+1	atšauk	alarm/cancel_alarm	O
+2	žadintuvą	alarm/cancel_alarm	O
+
+# id = 26
+# text-en = turn off alarm
+# text = išjunk žadintuvą
+# intent = alarm/cancel_alarm
+1	išjunk	alarm/cancel_alarm	O
+2	žadintuvą	alarm/cancel_alarm	O
+
+# id = 102
+# text-en = remind me to call mom today at 2 p.m.
+# text = primink man paskambinti mamai šiandien antrą po pietų
+# intent = reminder/set_reminder
+1	primink	reminder/set_reminder	O
+2	man	reminder/set_reminder	O
+3	paskambinti	reminder/set_reminder	B-reminder/todo
+4	mamai	reminder/set_reminder	I-reminder/todo
+5	šiandien	reminder/set_reminder	B-datetime
+6	antrą	reminder/set_reminder	I-datetime
+7	po	reminder/set_reminder	I-datetime
+8	pietų	reminder/set_reminder	I-datetime
+
+# id = 1
+# text-en = cancel all alarms
+# text = atšauk visus žadintuvus
+# intent = alarm/cancel_alarm
+1	atšauk	alarm/cancel_alarm	O
+2	visus	alarm/cancel_alarm	B-reference
+3	žadintuvus	alarm/cancel_alarm	O
+
+# id = 268
+# text-en = is it going to be hot tomorrow
+# text = ar rytoj bus karšta
+# intent = weather/find
+1	ar	weather/find	O
+2	rytoj	weather/find	B-datetime
+3	bus	weather/find	O
+4	karšta	weather/find	B-weather/attribute
+
+# id = 185
+# text-en = is it cold out today?
+# text = ar šalta šiandien lauke?
+# intent = weather/find
+1	ar	weather/find	O
+2	šalta	weather/find	B-weather/attribute
+3	šiandien	weather/find	B-datetime
+4	lauke	weather/find	B-location
+5	?	weather/find	O
+
+# id = 47
+# text-en = Set alarm for 5 pm tonight
+# text = Nustatyk žadintuvą šiandien penktai vakaro
+# intent = alarm/set_alarm
+1	Nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	šiandien	alarm/set_alarm	B-datetime
+4	penktai	alarm/set_alarm	I-datetime
+5	vakaro	alarm/set_alarm	I-datetime
+
+# id = 145
+# text-en = Will it rain this weekend?
+# text = Ar šį savaitgalį lis?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šį	weather/find	B-datetime
+3	savaitgalį	weather/find	I-datetime
+4	lis	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id = 209
+# text-en = is it going to rain today
+# text = Ar šiandien lis?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	lis	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id = 17
+# text-en = set an alarm for monday at 3 am
+# text = nustatyk žadintuvą pirmadieniui trečiai ryto
+# intent = alarm/set_alarm
+1	nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	pirmadieniui	alarm/set_alarm	B-datetime
+4	trečiai	alarm/set_alarm	I-datetime
+5	ryto	alarm/set_alarm	I-datetime
+
+# id = 14
+# text-en = alarm on
+# text = įjunk žadintuvą
+# intent = alarm/set_alarm
+1	įjunk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+
+# id = 178
+# text-en = Is it going to rain on Saturday?
+# text = Ar šeštadienį lis?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šeštadienį	weather/find	B-datetime
+3	lis	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id = 226
+# text-en = Set alarm for 5 am
+# text = Nustatyti žadintuvą penktai valandai ryto
+# intent = alarm/set_alarm
+1	Nustatyti	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	penktai	alarm/set_alarm	B-datetime
+4	valandai	alarm/set_alarm	I-datetime
+5	ryto	alarm/set_alarm	I-datetime
+
+# id = 148
+# text-en = Will I need a coat today?
+# text = Ar man reikia palto šiandien?
+# intent = weather/find
+1	Ar	weather/find	O
+2	man	weather/find	O
+3	reikia	weather/find	O
+4	palto	weather/find	B-weather/attribute
+5	šiandien	weather/find	B-datetime
+6	?	weather/find	O
+
+# id = 26
+# text-en = turn off alarm
+# text = išjunk žadintuvą
+# intent = alarm/cancel_alarm
+1	išjunk	alarm/cancel_alarm	O
+2	žadintuvą	alarm/cancel_alarm	O
+
+# id = 180
+# text-en = What weather warnings do I have?
+# text = Kokius oro perspėjimus turiu?
+# intent = weather/find
+1	Kokius	weather/find	O
+2	oro	weather/find	O
+3	perspėjimus	weather/find	B-weather/attribute
+4	turiu	weather/find	O
+5	?	weather/find	O
+
+# id = 123
+# text-en = Cancel the reminder for the meeting at the lodge
+# text = Atšauk priminimą apie susitikimą ložėje
+# intent = reminder/cancel_reminder
+1	Atšauk	reminder/cancel_reminder	O
+2	priminimą	reminder/cancel_reminder	O
+3	apie	reminder/cancel_reminder	O
+4	susitikimą	reminder/cancel_reminder	B-reminder/todo
+5	ložėje	reminder/cancel_reminder	I-reminder/todo
+
+# id = 292
+# text-en = Should I wear a coat today
+# text = Ar šiandien turėčiau dėvėti paltą
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	turėčiau	weather/find	O
+4	dėvėti	weather/find	O
+5	paltą	weather/find	B-weather/attribute
+
+# id = 234
+# text-en = Turn off all alarms.
+# text = Išjunk visus žadintuvus.
+# intent = alarm/cancel_alarm
+1	Išjunk	alarm/cancel_alarm	O
+2	visus	alarm/cancel_alarm	B-reference
+3	žadintuvus	alarm/cancel_alarm	O
+4	.	alarm/cancel_alarm	O
+
+# id = 38
+# text-en = show all alarms
+# text = parodyk visus žadintuvus
+# intent = alarm/show_alarms
+1	parodyk	alarm/show_alarms	O
+2	visus	alarm/show_alarms	B-reference
+3	žadintuvus	alarm/show_alarms	O
+
+# id = 30
+# text-en = Make a new alarm for Thursday at 1pm.
+# text = Sukurk naują žadintuvą ketvirtadieniui pirmai dienos.
+# intent = alarm/set_alarm
+1	Sukurk	alarm/set_alarm	O
+2	naują	alarm/set_alarm	O
+3	žadintuvą	alarm/set_alarm	O
+4	ketvirtadieniui	alarm/set_alarm	B-datetime
+5	pirmai	alarm/set_alarm	I-datetime
+6	dienos	alarm/set_alarm	I-datetime
+7	.	alarm/set_alarm	O
+
+# id = 92
+# text-en = Remind me to go to the dentist next Monday.
+# text = Primink man nueiti pas dantistą kitą pirmadienį.
+# intent = reminder/set_reminder
+1	Primink	reminder/set_reminder	O
+2	man	reminder/set_reminder	O
+3	nueiti	reminder/set_reminder	B-reminder/todo
+4	pas	reminder/set_reminder	I-reminder/todo
+5	dantistą	reminder/set_reminder	I-reminder/todo
+6	kitą	reminder/set_reminder	B-datetime
+7	pirmadienį	reminder/set_reminder	I-datetime
+8	.	reminder/set_reminder	O
+
+# id = 208
+# text-en = should I bring an umbrella today
+# text = Ar šiandien turėčiau pasiimti skėtį
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	turėčiau	weather/find	O
+4	pasiimti	weather/find	O
+5	skėtį	weather/find	B-weather/attribute
+
+# id = 173
+# text-en = how is the weather this week?
+# text = kokie orai bus šią savaitę?
+# intent = weather/find
+1	kokie	weather/find	O
+2	orai	weather/find	O
+3	bus	weather/find	O
+4	šią	weather/find	B-datetime
+5	savaitę	weather/find	I-datetime
+6	?	weather/find	O
+
+# id = 207
+# text-en = is it below freezing today?
+# text = ar šiandien žemiau nulio?
+# intent = weather/find
+1	ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	žemiau	weather/find	B-weather/attribute
+4	nulio	weather/find	I-weather/attribute
+5	?	weather/find	O
+
+# id = 266
+# text-en = Delete all reminders
+# text = Ištrinti visus priminimus
+# intent = reminder/cancel_reminder
+1	Ištrinti	reminder/cancel_reminder	O
+2	visus	reminder/cancel_reminder	B-reference
+3	priminimus	reminder/cancel_reminder	O
+
+# id = 137
+# text-en = Is it going to rain today?
+# text = Ar šiandien lis?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	lis	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id = 145
+# text-en = Will it rain this weekend?
+# text = Ar šį savaitgalį lis?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šį	weather/find	B-datetime
+3	savaitgalį	weather/find	I-datetime
+4	lis	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id = 256
+# text-en = Set reminder for mom's visit next week
+# text = Nustatyk priminimą kitą savaitę apie mamos vizitą
+# intent = reminder/set_reminder
+1	Nustatyk	reminder/set_reminder	O
+2	priminimą	reminder/set_reminder	O
+3	kitą	reminder/set_reminder	B-datetime
+4	savaitę	reminder/set_reminder	I-datetime
+5	apie	reminder/set_reminder	O
+6	mamos	reminder/set_reminder	B-reminder/todo
+7	vizitą	reminder/set_reminder	I-reminder/todo
+
+# id = 288
+# text-en = Will it snow tomorrow?
+# text = Ar rytoj snigs?
+# intent = weather/find
+1	Ar	weather/find	O
+2	rytoj	weather/find	B-datetime
+3	snigs	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id = 89
+# text-en = show all reminders
+# text = parodyk visus priminimus
+# intent = reminder/show_reminders
+1	parodyk	reminder/show_reminders	O
+2	visus	reminder/show_reminders	B-reference
+3	priminimus	reminder/show_reminders	O
+
+# id = 176
+# text-en = Do I need a coat today?
+# text = Ar man šiandien reikalingas paltas?
+# intent = weather/find
+1	Ar	weather/find	O
+2	man	weather/find	O
+3	šiandien	weather/find	B-datetime
+4	reikalingas	weather/find	O
+5	paltas	weather/find	B-weather/attribute
+6	?	weather/find	O
+
+# id = 278
+# text-en = is it going to snow thursday
+# text = ar ketvirtadienį snigs
+# intent = weather/find
+1	ar	weather/find	O
+2	ketvirtadienį	weather/find	B-datetime
+3	snigs	weather/find	B-weather/attribute
+
+# id = 94
+# text-en = Remind me to buy coffee at Starbucks this afternoon
+# text = Primink man nusipirkti kavos iš Starbucks šią popietę
+# intent = reminder/set_reminder
+1	Primink	reminder/set_reminder	O
+2	man	reminder/set_reminder	O
+3	nusipirkti	reminder/set_reminder	B-reminder/todo
+4	kavos	reminder/set_reminder	I-reminder/todo
+5	iš	reminder/set_reminder	I-reminder/todo
+6	Starbucks	reminder/set_reminder	I-reminder/todo
+7	šią	reminder/set_reminder	B-datetime
+8	popietę	reminder/set_reminder	I-datetime
+
+# id = 54
+# text-en = Set an alarm for every ten minutes, starting at 5:30 and ending at 6 am.
+# text = Nustatyk žadintuvą kas dešimt minučių, pradedant penkios trisdešimt ir baigiant šeštą ryto.
+# intent = alarm/set_alarm
+1	Nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	kas	alarm/set_alarm	B-recurring_datetime
+4	dešimt	alarm/set_alarm	I-recurring_datetime
+5	minučių	alarm/set_alarm	I-recurring_datetime
+6	,	alarm/set_alarm	I-recurring_datetime
+7	pradedant	alarm/set_alarm	I-recurring_datetime
+8	penkios	alarm/set_alarm	I-recurring_datetime
+9	trisdešimt	alarm/set_alarm	I-recurring_datetime
+10	ir	alarm/set_alarm	I-recurring_datetime
+11	baigiant	alarm/set_alarm	I-recurring_datetime
+12	šeštą	alarm/set_alarm	I-recurring_datetime
+13	ryto	alarm/set_alarm	I-recurring_datetime
+14	.	alarm/set_alarm	O
+
+# id = 178
+# text-en = Is it going to rain on Saturday?
+# text = Ar šeštadienį lis?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šeštadienį	weather/find	B-datetime
+3	lis	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id = 217
+# text-en = Set eh alarm to 7:20am for the shoe release.
+# text = Nustatyk žadintuvą septynios dvidešimt ryto batų pristatymui.
+# intent = alarm/set_alarm
+1	Nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	septynios	alarm/set_alarm	B-datetime
+4	dvidešimt	alarm/set_alarm	I-datetime
+5	ryto	alarm/set_alarm	I-datetime
+6	batų	alarm/set_alarm	B-reminder/todo
+7	pristatymui	alarm/set_alarm	I-reminder/todo
+8	.	alarm/set_alarm	O
+
+# id = 297
+# text-en = Will there be storms in Bordentown today
+# text = Ar šiandien Bordentaune bus audra
+# intent = weather/find
+1	Ar	weather/find	O
+2	šiandien	weather/find	B-datetime
+3	Bordentaune	weather/find	B-location
+4	bus	weather/find	O
+5	audra	weather/find	B-weather/attribute
+
+# id = 159
+# text-en = what is the current temperature
+# text = kokia yra oro temperatūra šiuo metu
+# intent = weather/find
+1	kokia	weather/find	O
+2	yra	weather/find	O
+3	oro	weather/find	B-weather/attribute
+4	temperatūra	weather/find	I-weather/attribute
+5	šiuo	weather/find	B-datetime
+6	metu	weather/find	I-datetime
+
+# id = 257
+# text-en = remind me to make Dan's lunch at 7:30am tomorrow.
+# text = primink man paruošti pietus Dan rytoj 7:30 ryto.
+# intent = reminder/set_reminder
+1	primink	reminder/set_reminder	O
+2	man	reminder/set_reminder	O
+3	paruošti	reminder/set_reminder	B-reminder/todo
+4	pietus	reminder/set_reminder	I-reminder/todo
+5	Dan	reminder/set_reminder	I-reminder/todo
+6	rytoj	reminder/set_reminder	B-datetime
+7	7:30	reminder/set_reminder	I-datetime
+8	ryto	reminder/set_reminder	I-datetime
+9	.	reminder/set_reminder	O
+
+# id = 77
+# text-en = Set alarm for 6:30am tomorrow.
+# text = Nustatyk žadintuvą rytojui šeštai trisdešimt ryto
+# intent = alarm/set_alarm
+1	Nustatyk	alarm/set_alarm	O
+2	žadintuvą	alarm/set_alarm	O
+3	rytojui	alarm/set_alarm	B-datetime
+4	šeštai	alarm/set_alarm	I-datetime
+5	trisdešimt	alarm/set_alarm	I-datetime
+6	ryto	alarm/set_alarm	I-datetime
+
+# id = 110
+# text-en = Do I have any reminders set?
+# text = Ar aš turiu kokių nors priminimų nusistatęs?
+# intent = reminder/show_reminders
+1	Ar	reminder/show_reminders	O
+2	aš	reminder/show_reminders	O
+3	turiu	reminder/show_reminders	O
+4	kokių	reminder/show_reminders	O
+5	nors	reminder/show_reminders	O
+6	priminimų	reminder/show_reminders	O
+7	nusistatęs	reminder/show_reminders	O
+8	?	reminder/show_reminders	O
+
+# id = 124
+# text-en = Is my dentist appointment in my reminder ?
+# text = Ar mano vizitas pas dantistą yra mano priminimuose ?
+# intent = reminder/show_reminders
+1	Ar	reminder/show_reminders	O
+2	mano	reminder/show_reminders	B-reminder/todo
+3	vizitas	reminder/show_reminders	I-reminder/todo
+4	pas	reminder/show_reminders	I-reminder/todo
+5	dantistą	reminder/show_reminders	I-reminder/todo
+6	yra	reminder/show_reminders	O
+7	mano	reminder/show_reminders	B-reference
+8	priminimuose	reminder/show_reminders	O
+9	?	reminder/show_reminders	O
+
+# id = 199
+# text-en = when will it stop raining?
+# text = kada nustos lyti?
+# intent = weather/find
+1	kada	weather/find	O
+2	nustos	weather/find	O
+3	lyti	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id = 281
+# text-en = Is it going to snow this week?
+# text = Ar šią savaitę snigs?
+# intent = weather/find
+1	Ar	weather/find	O
+2	šią	weather/find	B-datetime
+3	savaitę	weather/find	I-datetime
+4	snigs	weather/find	B-weather/attribute
+5	?	weather/find	O
+
+# id = 26
+# text-en = turn off alarm
+# text = išjunk žadintuvą
+# intent = alarm/cancel_alarm
+1	išjunk	alarm/cancel_alarm	O
+2	žadintuvą	alarm/cancel_alarm	O
+
+# id = 1
+# text-en = I would give Half a Life 3 out of 6
+# text = Half a Life įvertinčiau trimis balais iš šešių
+# intent = RateBook
+1	Half	RateBook	B-object_name
+2	a	RateBook	I-object_name
+3	Life	RateBook	I-object_name
+4	įvertinčiau	RateBook	O
+5	trimis	RateBook	B-rating_value
+6	iš	RateBook	O
+7	šešių	RateBook	B-best_rating
+
+# id = 2
+# text-en = Play some Mf Doom from the sixties on pandora .
+# text = Paleisk ką nors iš Mf Doom iš šešiasdešimtųjų per pandora .
+# intent = PlayMusic
+1	Paleisk	PlayMusic	O
+2	ką	PlayMusic	O
+3	nors	PlayMusic	O
+4	iš	PlayMusic	O
+5	Mf	PlayMusic	B-artist
+6	Doom	PlayMusic	I-artist
+7	iš	PlayMusic	O
+8	šešiasdešimtųjų	PlayMusic	B-datetime
+9	per	PlayMusic	O
+10	pandora	PlayMusic	B-service
+11	.	PlayMusic	O
+
+# id = 3
+# text-en = Search for Chasing Fortune a TV series .
+# text = Ieškok Chasing Fortune serialo .
+# intent = SearchCreativeWork
+1	Ieškok	SearchCreativeWork	O
+2	Chasing	SearchCreativeWork	B-object_name
+3	Fortune	SearchCreativeWork	I-object_name
+4	serialo	SearchCreativeWork	B-object_type
+5	.	SearchCreativeWork	O
+
+# id = 4
+# text-en = Play shadowplay by Dana on Deezer .
+# text = Paleisk Dana "shadowplay" per Deezer .
+# intent = PlayMusic
+1	Paleisk	PlayMusic	O
+2	Dana	PlayMusic	B-artist
+3	"	PlayMusic	O
+4	shadowplay	PlayMusic	B-track
+5	"	PlayMusic	O
+6	per	PlayMusic	O
+7	Deezer	PlayMusic	B-service
+8	.	PlayMusic	O
+
+# id = 5
+# text-en = me and imelda want a reservation in Missouri at seven am
+# text = Aš ir imelda norime rezervuoti vietą Misūryje septintą valandą ryto
+# intent = BookRestaurant
+1	Aš	BookRestaurant	B-party_size_description
+2	ir	BookRestaurant	I-party_size_description
+3	imelda	BookRestaurant	I-party_size_description
+4	norime	BookRestaurant	O
+5	rezervuoti	BookRestaurant	O
+6	vietą	BookRestaurant	O
+7	Misūryje	BookRestaurant	B-location
+8	septintą	BookRestaurant	B-datetime
+9	valandą	BookRestaurant	I-datetime
+10	ryto	BookRestaurant	I-datetime
+
+# id = 6
+# text-en = add bob klose to la mejor música para tus fiestas
+# text = pridėk bob klose prie la mejor música para tus fiestas
+# intent = AddToPlaylist
+1	pridėk	AddToPlaylist	O
+2	bob	AddToPlaylist	B-artist
+3	klose	AddToPlaylist	I-artist
+4	prie	AddToPlaylist	O
+5	la	AddToPlaylist	B-playlist
+6	mejor	AddToPlaylist	I-playlist
+7	música	AddToPlaylist	I-playlist
+8	para	AddToPlaylist	I-playlist
+9	tus	AddToPlaylist	I-playlist
+10	fiestas	AddToPlaylist	I-playlist
+
+# id = 7
+# text-en = play Luis Alfonzo Larrain from 1995
+# text = grok Luis Alfonzo Larrain iš tūkstantis devyni šimtai devyniasdešimt penktų metų
+# intent = PlayMusic
+1	grok	PlayMusic	O
+2	Luis	PlayMusic	B-artist
+3	Alfonzo	PlayMusic	I-artist
+4	Larrain	PlayMusic	I-artist
+5	iš	PlayMusic	O
+6	tūkstantis	PlayMusic	B-datetime
+7	devyni	PlayMusic	I-datetime
+8	šimtai	PlayMusic	I-datetime
+9	devyniasdešimt	PlayMusic	I-datetime
+10	penktų	PlayMusic	I-datetime
+
+# id = 8
+# text-en = What will the weather be like in the Bahamas eleven years and a half from now
+# text = Koks oras bus Bahamų salose po vienuolikos su puse metų
+# intent = weather/find
+1	Koks	weather/find	O
+2	oras	weather/find	O
+3	bus	weather/find	O
+4	Bahamų	weather/find	B-location
+5	salose	weather/find	I-location
+6	po	weather/find	B-datetime
+7	vienuolikos	weather/find	I-datetime
+8	su	weather/find	I-datetime
+9	puse	weather/find	I-datetime
+10	metų	weather/find	I-datetime
+
+# id = 9
+# text-en = What will the weather be like in Arizona on october the 3rd
+# text = Koks oras bus Arizonoje spalio trečią dieną
+# intent = weather/find
+1	Koks	weather/find	O
+2	oras	weather/find	O
+3	bus	weather/find	O
+4	Arizonoje	weather/find	B-location
+5	spalio	weather/find	B-datetime
+6	trečią	weather/find	I-datetime
+7	dieną	weather/find	I-datetime
+
+# id = 10
+# text-en = Play opera music on google music
+# text = Grok operą per google music
+# intent = PlayMusic
+1	Grok	PlayMusic	O
+2	operą	PlayMusic	B-genre
+3	per	PlayMusic	O
+4	google	PlayMusic	B-service
+5	music	PlayMusic	I-service
+
+# id = 11
+# text-en = find Vegucated starting at zero pm
+# text = rask Vegucated prasidedantį dvyliktą vakaro
+# intent = SearchScreeningEvent
+1	rask	SearchScreeningEvent	O
+2	Vegucated	SearchScreeningEvent	B-movie_name
+3	prasidedantį	SearchScreeningEvent	O
+4	dvyliktą	SearchScreeningEvent	B-datetime
+5	vakaro	SearchScreeningEvent	I-datetime
+
+# id = 12
+# text-en = Give the current novel a 3 out of 6 rating
+# text = Suteik dabartiniam romanui 3 iš 6 balų įvertinimą
+# intent = RateBook
+1	Suteik	RateBook	O
+2	dabartiniam	RateBook	B-object_select
+3	romanui	RateBook	B-object_type
+4	3	RateBook	B-rating_value
+5	iš	RateBook	O
+6	6	RateBook	B-best_rating
+7	įvertinimą	RateBook	O
+
+# id = 13
+# text-en = I'd like to add this album to funtime .
+# text = Norėčiau pridėti šį albumą prie funtime .
+# intent = AddToPlaylist
+1	Norėčiau	AddToPlaylist	O
+2	pridėti	AddToPlaylist	O
+3	šį	AddToPlaylist	O
+4	albumą	AddToPlaylist	B-music_item
+5	prie	AddToPlaylist	O
+6	funtime	AddToPlaylist	B-playlist
+7	.	AddToPlaylist	O
+
+# id = 14
+# text-en = I need a table for 4 at a restaurant around 0 AM .
+# text = Man reikia staliuko keturiems asmenims restorane apie dvyliktą dienos.
+# intent = BookRestaurant
+1	Man	BookRestaurant	O
+2	reikia	BookRestaurant	O
+3	staliuko	BookRestaurant	O
+4	keturiems	BookRestaurant	B-party_size_number
+5	asmenims	BookRestaurant	O
+6	restorane	BookRestaurant	B-restaurant_type
+7	apie	BookRestaurant	O
+8	dvyliktą	BookRestaurant	B-datetime
+9	dienos	BookRestaurant	I-datetime
+10	.	BookRestaurant	O
+
+# id = 15
+# text-en = find the picture Louder Than Bombs
+# text = rask paveikslą Louder Than Bombs
+# intent = SearchCreativeWork
+1	rask	SearchCreativeWork	O
+2	paveikslą	SearchCreativeWork	B-object_type
+3	Louder	SearchCreativeWork	B-object_name
+4	Than	SearchCreativeWork	I-object_name
+5	Bombs	SearchCreativeWork	I-object_name
+
+# id = 16
+# text-en = Give 2 out of 6 points to A Tale of Time City
+# text = Suteik A Tale of Time City du balus iš šešių
+# intent = RateBook
+1	Suteik	RateBook	O
+2	A	RateBook	B-object_name
+3	Tale	RateBook	I-object_name
+4	of	RateBook	I-object_name
+5	Time	RateBook	I-object_name
+6	City	RateBook	I-object_name
+7	du	RateBook	B-rating_value
+8	balus	RateBook	B-rating_unit
+9	iš	RateBook	O
+10	šešių	RateBook	B-best_rating
+
+# id = 17
+# text-en = add this current book five stars
+# text = pridėk šiai dabartinei knygai penkias žvaigždutes
+# intent = RateBook
+1	pridėk	RateBook	O
+2	šiai	RateBook	O
+3	dabartinei	RateBook	B-object_select
+4	knygai	RateBook	B-object_type
+5	penkias	RateBook	B-rating_value
+6	žvaigždutes	RateBook	B-rating_unit
+
+# id = 18
+# text-en = add track 70s smash hits to my
+# text = pridėti 70s smash hits prie mano
+# intent = AddToPlaylist
+1	pridėti	AddToPlaylist	O
+2	takelį	AddToPlaylist	B-music_item
+3	70s	AddToPlaylist	B-playlist
+4	smash	AddToPlaylist	I-playlist
+5	hits	AddToPlaylist	I-playlist
+6	prie	AddToPlaylist	O
+7	mano	AddToPlaylist	B-reference
+
+# id = 19
+# text-en = book near Montana restaurant serving sri lankan food for 6 that is highly rated on tues.
+# text = užsakyk gerai įvertintą šri lankietiško maisto restoraną netoli Montanos 6 asmenims antradieniams.
+# intent = BookRestaurant
+1	užsakyk	BookRestaurant	O
+2	gerai	BookRestaurant	B-sort
+3	įvertintą	BookRestaurant	I-sort
+4	šri	BookRestaurant	B-cuisine
+5	lankietiško	BookRestaurant	I-cuisine
+6	maisto	BookRestaurant	O
+7	restoraną	BookRestaurant	B-restaurant_type
+8	netoli	BookRestaurant	B-location
+9	Montanos	BookRestaurant	B-location
+10	6	BookRestaurant	B-party_size_number
+11	asmenims	BookRestaurant	O
+12	antradieniams	BookRestaurant	B-datetime
+13	.	BookRestaurant	O
+
+# id = 20
+# text-en = Book me a lunch at Boreas for a party of 8
+# text = Užsakyk man pietus "Boreas" aštuonių asmenų grupei
+# intent = BookRestaurant
+1	Užsakyk	BookRestaurant	O
+2	man	BookRestaurant	O
+3	pietus	BookRestaurant	B-datetime
+4	"	BookRestaurant	O
+5	Boreas	BookRestaurant	B-restaurant_name
+6	"	BookRestaurant	O
+7	aštuonių	BookRestaurant	B-party_size_number
+8	asmenų	BookRestaurant	O
+9	grupei	BookRestaurant	O
+
+# id = 21
+# text-en = Please put another tune into the laundry playlist.
+# text = Prašau, į grojaraštį laundry įtrauk sekančią melodiją.
+# intent = AddToPlaylist
+1	Prašau	AddToPlaylist	O
+2	,	AddToPlaylist	O
+3	į	AddToPlaylist	O
+4	grojaraštį	AddToPlaylist	O
+5	laundry	AddToPlaylist	B-playlist
+6	įtrauk	AddToPlaylist	O
+7	sekančią	AddToPlaylist	O
+8	melodiją	AddToPlaylist	B-music_item
+9	.	AddToPlaylist	O
+
+# id = 22
+# text-en = what is the PW forecast for stormy weather
+# text = kokia PW prognozė dėl audringų orų
+# intent = weather/find
+1	kokia	weather/find	O
+2	PW	weather/find	B-location
+3	prognozė	weather/find	O
+4	dėl	weather/find	O
+5	audringų	weather/find	B-condition_description
+6	orų	weather/find	O
+
+# id = 23
+# text-en = What is the predicted weather for my current spot next month ?
+# text = Kokie orai prognozuojami mano dabartinėje vietoje kitą mėnesį ?
+# intent = weather/find
+1	Kokie	weather/find	O
+2	orai	weather/find	O
+3	prognozuojami	weather/find	O
+4	mano	weather/find	O
+5	dabartinėje	weather/find	B-location
+6	vietoje	weather/find	I-location
+7	kitą	weather/find	B-datetime
+8	mėnesį	weather/find	I-datetime
+9	?	weather/find	O
+
+# id = 24
+# text-en = Book a reservation for 1 on march 17
+# text = Užsisakyk rezervaciją vienam asmeniui kovo 17
+# intent = BookRestaurant
+1	Užsisakyk	BookRestaurant	O
+2	rezervaciją	BookRestaurant	O
+3	vienam	BookRestaurant	B-party_size_number
+4	asmeniui	BookRestaurant	O
+5	kovo	BookRestaurant	B-datetime
+6	17	BookRestaurant	I-datetime
+
+# id = 25
+# text-en = The current album gets three out of 6 points
+# text = Šis albumas gauna tris taškus iš 6
+# intent = RateBook
+1	Šis	RateBook	B-object_select
+2	albumas	RateBook	B-object_type
+3	gauna	RateBook	O
+4	tris	RateBook	B-rating_value
+5	taškus	RateBook	B-rating_unit
+6	iš	RateBook	O
+7	6	RateBook	B-best_rating
+
+# id = 26
+# text-en = Add the Nastya Kamenskih song to my The Martin Garrix Show playlist.
+# text = Įtrauk Nastya Kamenskih dainą į mano grojaraštį The Martin Garrix Show.
+# intent = AddToPlaylist
+1	Įtrauk	AddToPlaylist	O
+2	Nastya	AddToPlaylist	B-artist
+3	Kamenskih	AddToPlaylist	I-artist
+4	dainą	AddToPlaylist	B-music_item
+5	į	AddToPlaylist	O
+6	mano	AddToPlaylist	B-reference
+7	grojaraštį	AddToPlaylist	O
+8	The	AddToPlaylist	B-playlist
+9	Martin	AddToPlaylist	I-playlist
+10	Garrix	AddToPlaylist	I-playlist
+11	Show	AddToPlaylist	I-playlist
+12	.	AddToPlaylist	O
+
+# id = 27
+# text-en = Wish to hear the album Since I Saw You Last
+# text = Noriu išgirsti albumą "Since I Saw You Last"
+# intent = SearchCreativeWork
+1	Noriu	SearchCreativeWork	O
+2	išgirsti	SearchCreativeWork	O
+3	albumą	SearchCreativeWork	B-object_type
+4	"	SearchCreativeWork	O
+5	Since	SearchCreativeWork	B-object_name
+6	I	SearchCreativeWork	I-object_name
+7	Saw	SearchCreativeWork	I-object_name
+8	You	SearchCreativeWork	I-object_name
+9	Last	SearchCreativeWork	I-object_name
+10	"	SearchCreativeWork	O
+
+# id = 28
+# text-en = play top tunes by Joseph Utsler
+# text = grok Joseph Utsler populiariausias melodijas
+# intent = PlayMusic
+1	grok	PlayMusic	O
+2	Joseph	PlayMusic	B-artist
+3	Utsler	PlayMusic	I-artist
+4	populiariausias	PlayMusic	B-sort
+5	melodijas	PlayMusic	O
+
+# id = 29
+# text-en = Find the schedule for Ghost World .
+# text = Rask Ghost World tvarkaraštį .
+# intent = SearchScreeningEvent
+1	Rask	SearchScreeningEvent	O
+2	Ghost	SearchScreeningEvent	B-movie_name
+3	World	SearchScreeningEvent	I-movie_name
+4	tvarkaraštį	SearchScreeningEvent	B-object_type
+5	.	SearchScreeningEvent	O
+
+# id = 30
+# text-en = I want to listen to a concerto from Timour Moutsouraev .
+# text = Noriu pasiklausyti Timour Moutsouraev koncerto
+# intent = PlayMusic
+1	Noriu	PlayMusic	O
+2	pasiklausyti	PlayMusic	O
+3	Timour	PlayMusic	B-artist
+4	Moutsouraev	PlayMusic	I-artist
+5	koncertą	PlayMusic	B-music_item
+
+# id = 31
+# text-en = play the album Everybody Happy by Lee Aaron
+# text = grok Lee Aaron albumą "Everybody Happy"
+# intent = PlayMusic
+1	grok	PlayMusic	O
+2	Lee	PlayMusic	B-artist
+3	Aaron	PlayMusic	I-artist
+4	albumą	PlayMusic	B-music_item
+5	"	PlayMusic	O
+6	Everybody	PlayMusic	B-album
+7	Happy	PlayMusic	I-album
+8	"	PlayMusic	O
+
+# id = 32
+# text-en = play Fereydoun Farrokhzad best track
+# text = grok Fereydoun Farrokhzad geriausią kūrinį
+# intent = PlayMusic
+1	grok	PlayMusic	O
+2	Fereydoun	PlayMusic	B-artist
+3	Farrokhzad	PlayMusic	I-artist
+4	geriausią	PlayMusic	B-sort
+5	kūrinį	PlayMusic	B-music_item
+
+# id = 33
+# text-en = rate the current book three stars
+# text = įvertink skaitomą knygą trimis žvaigždutėmis
+# intent = RateBook
+1	įvertink	RateBook	O
+2	skaitomą	RateBook	B-object_select
+3	knygą	RateBook	B-object_type
+4	trimis	RateBook	B-rating_value
+5	žvaigždutėmis	RateBook	B-rating_unit
+
+# id = 34
+# text-en = What will the weather be in Meeres-Nationalpark Insel Bastimentos at twelve PM ?
+# text = Koks oras bus Meeres-Nationalpark Insel Bastimentos dvyliktą valandą vakaro ?
+# intent = weather/find
+1	Koks	weather/find	O
+2	oras	weather/find	O
+3	bus	weather/find	O
+4	Meeres-Nationalpark	weather/find	B-location
+5	Insel	weather/find	I-location
+6	Bastimentos	weather/find	I-location
+7	dvyliktą	weather/find	B-datetime
+8	valandą	weather/find	I-datetime
+9	vakaro	weather/find	I-datetime
+10	?	weather/find	O
+
+# id = 35
+# text-en = Book a table for 10 people at a restaurant which offers internet .
+# text = Užsakyk stalą dešimčiai žmonių restorane su internetu .
+# intent = BookRestaurant
+1	Užsakyk	BookRestaurant	O
+2	stalą	BookRestaurant	O
+3	dešimčiai	BookRestaurant	B-party_size_number
+4	žmonių	BookRestaurant	O
+5	restorane	BookRestaurant	B-restaurant_type
+6	su	BookRestaurant	O
+7	internetu	BookRestaurant	B-facility
+8	.	BookRestaurant	O
+
+# id = 36
+# text-en = give five points to The Tenor Wore Tapshoes
+# text = Įvertink "The Tenor Wore Tapshoes" penkiais taškais
+# intent = RateBook
+1	Įvertink	RateBook	O
+2	"	RateBook	O
+3	The	RateBook	B-object_name
+4	Tenor	RateBook	I-object_name
+5	Wore	RateBook	I-object_name
+6	Tapshoes	RateBook	I-object_name
+7	"	RateBook	O
+8	penkiais	RateBook	B-rating_value
+9	taškais	RateBook	B-rating_unit
+
+# id = 37
+# text-en = Play a tune by Houston on Spotify
+# text = Grok Houston dainą per Spotify
+# intent = PlayMusic
+1	Grok	PlayMusic	O
+2	Houston	PlayMusic	B-artist
+3	dainą	PlayMusic	B-music_item
+4	per	PlayMusic	O
+5	Spotify	PlayMusic	B-service
+
+# id = 38
+# text-en = find a movie theatre with Life and Death
+# text = surask kino teatrą, rodantį filmą Life and Death
+# intent = SearchScreeningEvent
+1	surask	SearchScreeningEvent	O
+2	kino	SearchScreeningEvent	B-object_location_type
+3	teatrą	SearchScreeningEvent	I-object_location_type
+4	,	SearchScreeningEvent	O
+5	rodantį	SearchScreeningEvent	O
+6	Life	SearchScreeningEvent	B-movie_name
+7	and	SearchScreeningEvent	I-movie_name
+8	Death	SearchScreeningEvent	I-movie_name
+
+# id = 39
+# text-en = Play music from the playlist Get Your Mind Right
+# text = Grok muziką iš grojaraščio "Get Your Mind Right"
+# intent = PlayMusic
+1	Grok	PlayMusic	O
+2	muziką	PlayMusic	O
+3	iš	PlayMusic	O
+4	grojaraščio	PlayMusic	O
+5	"	PlayMusic	O
+6	Get	PlayMusic	B-playlist
+7	Your	PlayMusic	I-playlist
+8	Mind	PlayMusic	I-playlist
+9	Right	PlayMusic	I-playlist
+10	"	PlayMusic	O
+
+# id = 40
+# text-en = book a table today at a steakhouse for eight that serves sashimi
+# text = užsisakyk staliuką šiandienai aštuoniems asmenims kepsnių restorane, kuriame patiekiamas sašimi
+# intent = BookRestaurant
+1	užsisakyk	BookRestaurant	O
+2	staliuką	BookRestaurant	O
+3	šiandienai	BookRestaurant	B-datetime
+4	aštuoniems	BookRestaurant	B-restaurant_type
+5	asmenims	BookRestaurant	O
+6	kepsnių	BookRestaurant	B-restaurant_type
+7	restorane	BookRestaurant	I-restaurant_type
+8	,	BookRestaurant	O
+9	kuriame	BookRestaurant	O
+10	patiekiamas	BookRestaurant	O
+11	sašimi	BookRestaurant	B-served_dish
+
+# id = 41
+# text-en = find animated movies at Caribbean Cinemas
+# text = rask animacinius filmus "Caribbean Cinemas" kino teatruose
+# intent = SearchScreeningEvent
+1	rask	SearchScreeningEvent	O
+2	animacinius	SearchScreeningEvent	B-movie_type
+3	filmus	SearchScreeningEvent	I-movie_type
+4	"	SearchScreeningEvent	O
+5	Caribbean	SearchScreeningEvent	B-location
+6	Cinemas	SearchScreeningEvent	I-location
+7	"	SearchScreeningEvent	O
+8	kino	SearchScreeningEvent	O
+9	teatruose	SearchScreeningEvent	O
+
+# id = 42
+# text-en = Will there be a storm nearby
+# text = Ar netoliese bus audra
+# intent = weather/find
+1	Ar	weather/find	O
+2	netoliese	weather/find	B-location
+3	bus	weather/find	O
+4	audra	weather/find	B-condition_description
+
+# id = 43
+# text-en = Play some melody from the eighties on Spotify
+# text = Paleiskite kokią nors dainą iš aštuntojo dešimtmečio per "Spotify"
+# intent = PlayMusic
+1	Paleiskite	PlayMusic	O
+2	kokią	PlayMusic	O
+3	nors	PlayMusic	O
+4	dainą	PlayMusic	B-music_item
+5	iš	PlayMusic	O
+6	aštuntojo	PlayMusic	B-datetime
+7	dešimtmečio	PlayMusic	I-datetime
+8	per	PlayMusic	O
+9	"	PlayMusic	O
+10	Spotify	PlayMusic	B-service
+11	"	PlayMusic	O
+
+# id = 44
+# text-en = Where can I find The World According to Paris ?
+# text = Kur rasti  "The World According to Paris" ?
+# intent = SearchCreativeWork
+1	Kur	SearchCreativeWork	O
+2	rasti	SearchCreativeWork	O
+3	"	SearchCreativeWork	O
+4	The	SearchCreativeWork	B-object_name
+5	World	SearchCreativeWork	I-object_name
+6	According	SearchCreativeWork	I-object_name
+7	to	SearchCreativeWork	I-object_name
+8	Paris	SearchCreativeWork	I-object_name
+9	"	SearchCreativeWork	O
+10	?	SearchCreativeWork	O
+
+# id = 45
+# text-en = Tell me when it will be hotter in China
+# text = Pasakyk, kada Kinijoje bus karščiau
+# intent = weather/find
+1	Pasakyk	weather/find	O
+2	,	weather/find	O
+3	kada	weather/find	O
+4	Kinijoje	weather/find	B-location
+5	bus	weather/find	O
+6	karščiau	weather/find	B-condition_temperature
+
+# id = 46
+# text-en = What are the movie times for the Caribbean Cinemas ?
+# text = Koks yra kino teatrų "Caribbean Cinemas" filmų tvarkaraštis ?
+# intent = SearchScreeningEvent
+1	Koks	SearchScreeningEvent	O
+2	yra	SearchScreeningEvent	O
+3	kino	SearchScreeningEvent	O
+4	teatrų	SearchScreeningEvent	O
+5	"	SearchScreeningEvent	O
+6	Caribbean	SearchScreeningEvent	B-location
+7	Cinemas	SearchScreeningEvent	I-location
+8	"	SearchScreeningEvent	O
+9	filmų	SearchScreeningEvent	B-object_type
+10	tvarkaraštis	SearchScreeningEvent	I-object_type
+11	?	SearchScreeningEvent	O
+
+# id = 47
+# text-en = Will the wind die down at my current location by supper time?
+# text = Ar vėjas nurims iki vakarienės mano dabartinėje vietovėje?
+# intent = weather/find
+1	Ar	weather/find	O
+2	vėjas	weather/find	B-condition_description
+3	nurims	weather/find	O
+4	iki	weather/find	O
+5	vakarienės	weather/find	B-datetime
+6	mano	weather/find	O
+7	dabartinėje	weather/find	B-location
+8	vietovėje	weather/find	I-location
+9	?	weather/find	O
+
+# id = 48
+# text-en = Find me The Twinkler playing at National Amusements in 2 minutes
+# text = Rask man The Twinkler, grojantį National Amusements už dviejų minučių
+# intent = SearchScreeningEvent
+1	Rask	SearchScreeningEvent	O
+2	man	SearchScreeningEvent	O
+3	The	SearchScreeningEvent	B-movie_name
+4	Twinkler	SearchScreeningEvent	I-movie_name
+5	,	SearchScreeningEvent	O
+6	grojantį	SearchScreeningEvent	O
+7	National	SearchScreeningEvent	B-location
+8	Amusements	SearchScreeningEvent	I-location
+9	už	SearchScreeningEvent	B-datetime
+10	dviejų	SearchScreeningEvent	I-datetime
+11	minučių	SearchScreeningEvent	I-datetime
+
+# id = 49
+# text-en = I give Hadon of Ancient Opar two out of 6 points
+# text = Skiriu Hadon of Ancient Opar du balus iš šešių galimų
+# intent = RateBook
+1	Skiriu	RateBook	O
+2	Hadon	RateBook	B-object_name
+3	of	RateBook	I-object_name
+4	Ancient	RateBook	I-object_name
+5	Opar	RateBook	I-object_name
+6	du	RateBook	B-rating_value
+7	balus	RateBook	B-rating_unit
+8	iš	RateBook	O
+9	šešių	RateBook	B-best_rating
+10	galimų	RateBook	O
+
+# id = 50
+# text-en = I'm looking to bring shawn, marguerite and della to a place to eat at near Rwanda .
+# text = Ieškau vietos kur galėčiau pasiimti shawn, marguerite air della pavalgyti netoli Ruandos .
+# intent = BookRestaurant
+1	Ieškau	BookRestaurant	O
+2	vietos	BookRestaurant	O
+3	kur	BookRestaurant	O
+4	galėčiau	BookRestaurant	O
+5	pasiimti	BookRestaurant	O
+6	shawn	BookRestaurant	B-party_size_description
+7	,	BookRestaurant	I-party_size_description
+8	marguerite	BookRestaurant	I-party_size_description
+9	ir	BookRestaurant	I-party_size_description
+10	della	BookRestaurant	I-party_size_description
+11	pavalgyti	BookRestaurant	O
+12	netoli	BookRestaurant	B-location
+13	Ruandos	BookRestaurant	B-location
+14	.	BookRestaurant	O
+
+# id = 51
+# text-en = Play music on Lastfm
+# text = Grok muziką per Lastfm
+# intent = PlayMusic
+1	Grok	PlayMusic	O
+2	muziką	PlayMusic	O
+3	per	PlayMusic	O
+4	Lastfm	PlayMusic	B-service
+
+# id = 52
+# text-en = Will it be snowy at the current position by March 3 ?
+# text = Ar bus sniego dabartinėje vietoje iki kovo trečios dienos ?
+# intent = weather/find
+1	Ar	weather/find	O
+2	bus	weather/find	O
+3	sniego	weather/find	B-condition_description
+4	dabartinėje	weather/find	B-location
+5	vietoje	weather/find	I-location
+6	iki	weather/find	O
+7	kovo	weather/find	B-datetime
+8	trečios	weather/find	I-datetime
+9	dienos	weather/find	O
+10	?	weather/find	O
+
+# id = 53
+# text-en = Find me a table for 8 somewhee in Hollenberg in nine weeks
+# text = Surask man stalą aštuoniems asmenims kur nors Holenberge už devynių savaičių
+# intent = BookRestaurant
+1	Surask	BookRestaurant	O
+2	man	BookRestaurant	O
+3	stalą	BookRestaurant	O
+4	aštuoniems	BookRestaurant	B-party_size_number
+5	asmenims	BookRestaurant	O
+6	kur	BookRestaurant	O
+7	nors	BookRestaurant	O
+8	Holenberge	BookRestaurant	B-location
+9	už	BookRestaurant	B-datetime
+10	devynių	BookRestaurant	I-datetime
+11	savaičių	BookRestaurant	I-datetime
+
+# id = 54
+# text-en = play a track from 2004
+# text = grok dainą iš 2004
+# intent = PlayMusic
+1	grok	PlayMusic	O
+2	dainą	PlayMusic	B-music_item
+3	iš	PlayMusic	O
+4	2004	PlayMusic	B-datetime
+
+# id = 55
+# text-en = Tell me what films are currently playing at AMC Theaters
+# text = Pasakyk man, kokie filmai šiuo metu rodomi "AMC Theaters"
+# intent = SearchScreeningEvent
+1	Pasakyk	SearchScreeningEvent	O
+2	man	SearchScreeningEvent	O
+3	,	SearchScreeningEvent	O
+4	kokie	SearchScreeningEvent	O
+5	filmai	SearchScreeningEvent	B-movie_type
+6	šiuo	SearchScreeningEvent	O
+7	metu	SearchScreeningEvent	O
+8	rodomi	SearchScreeningEvent	O
+9	"	SearchScreeningEvent	O
+10	AMC	SearchScreeningEvent	B-location
+11	Theaters	SearchScreeningEvent	I-location
+12	"	SearchScreeningEvent	O
+
+# id = 56
+# text-en = Show me the TV show Limit of Love: Umizaru
+# text = Parodyk man televizijos laidą Limit of Love: Umizaru
+# intent = SearchCreativeWork
+1	Parodyk	SearchCreativeWork	O
+2	man	SearchCreativeWork	O
+3	televizijos	SearchCreativeWork	B-object_type
+4	laidą	SearchCreativeWork	I-object_type
+5	Limit	SearchCreativeWork	B-object_name
+6	of	SearchCreativeWork	I-object_name
+7	Love:	SearchCreativeWork	I-object_name
+8	Umizaru	SearchCreativeWork	I-object_name
+
+# id = 57
+# text-en = Show me the photograph Rock You Baby
+# text = Parodyk man nuotrauką "Rock You Baby"
+# intent = SearchCreativeWork
+1	Parodyk	SearchCreativeWork	O
+2	man	SearchCreativeWork	O
+3	nuotrauką	SearchCreativeWork	B-object_type
+4	"	SearchCreativeWork	O
+5	Rock	SearchCreativeWork	B-object_name
+6	You	SearchCreativeWork	I-object_name
+7	Baby	SearchCreativeWork	I-object_name
+8	"	SearchCreativeWork	O
+
+# id = 58
+# text-en = is Tarzan of the Apes playing at Cobb Theatres
+# text = ar "Cobb Theatres" rodo "Tarzan of the Apes"
+# intent = SearchScreeningEvent
+1	ar	SearchScreeningEvent	O
+2	"	SearchScreeningEvent	O
+3	Cobb	SearchScreeningEvent	B-location
+4	Theatres	SearchScreeningEvent	I-location
+5	"	SearchScreeningEvent	O
+6	rodo	SearchScreeningEvent	O
+7	"	SearchScreeningEvent	O
+8	Tarzan	SearchScreeningEvent	B-movie_name
+9	of	SearchScreeningEvent	I-movie_name
+10	the	SearchScreeningEvent	I-movie_name
+11	Apes	SearchScreeningEvent	I-movie_name
+12	"	SearchScreeningEvent	O
+
+# id = 59
+# text-en = put Kan Mikami on Pre-Party R&B Jams
+# text = įdėk Kan Mikami į Pre-Party R&B Jams
+# intent = AddToPlaylist
+1	įdėk	AddToPlaylist	O
+2	Kan	AddToPlaylist	B-artist
+3	Mikami	AddToPlaylist	I-artist
+4	į	AddToPlaylist	O
+5	Pre-Party	AddToPlaylist	B-playlist
+6	R	AddToPlaylist	I-playlist
+7	&	AddToPlaylist	I-playlist
+8	B	AddToPlaylist	I-playlist
+9	Jams	AddToPlaylist	I-playlist
+
+# id = 60
+# text-en = is it going to blizzard at my current position
+# text = ar mano dabartinėje vietoje bus pūga
+# intent = weather/find
+1	ar	weather/find	O
+2	mano	weather/find	O
+3	dabartinėje	weather/find	B-location
+4	vietoje	weather/find	I-location
+5	bus	weather/find	O
+6	pūga	weather/find	B-condition_description
+
+# id = 61
+# text-en = book a table for me and my step uncle in Malta at a cafeteria
+# text = užsakyk staliuką man ir mano patėvio broliui kavinėje  Maltoje.
+# intent = BookRestaurant
+1	užsakyk	BookRestaurant	O
+2	staliuką	BookRestaurant	O
+3	man	BookRestaurant	B-party_size_description
+4	ir	BookRestaurant	I-party_size_description
+5	mano	BookRestaurant	I-party_size_description
+6	patėvio	BookRestaurant	I-party_size_description
+7	broliui	BookRestaurant	I-party_size_description
+8	kavinėje	BookRestaurant	B-restaurant_type
+9	Maltoje	BookRestaurant	B-location
+10	.	BookRestaurant	O
+
+# id = 62
+# text-en = Play the most popular twenties record from Leland Sklar
+# text = Paleisk populiariausią dvidešimtųjų metų Leland Skler įrašą
+# intent = PlayMusic
+1	Paleisk	PlayMusic	O
+2	populiariausią	PlayMusic	B-sort
+3	dvidešimtųjų	PlayMusic	B-datetime
+4	metų	PlayMusic	I-datetime
+5	Leland	PlayMusic	B-artist
+6	Skler	PlayMusic	I-artist
+7	įrašą	PlayMusic	B-music_item
+
+# id = 63
+# text-en = Show me the forecast for Wisconsin
+# text = Parodyk man Viskonsino prognozę
+# intent = weather/find
+1	Parodyk	weather/find	O
+2	man	weather/find	O
+3	Viskonsino	weather/find	B-location
+4	prognozę	weather/find	O
+
+# id = 64
+# text-en = find a photograph called Between the Days
+# text = rasti nuotrauką, pavadintą "Between the Days"
+# intent = SearchCreativeWork
+1	rasti	SearchCreativeWork	O
+2	nuotrauką	SearchCreativeWork	B-object_type
+3	,	SearchCreativeWork	O
+4	pavadintą	SearchCreativeWork	O
+5	"	SearchCreativeWork	O
+6	Between	SearchCreativeWork	B-object_name
+7	the	SearchCreativeWork	I-object_name
+8	Days	SearchCreativeWork	I-object_name
+9	"	SearchCreativeWork	O
+
+# id = 65
+# text-en = book at The Halal Guys on Oct. 17
+# text = užsisakyk "The Halal Guys" spalio septyniolikta
+# intent = BookRestaurant
+1	užsisakyk	BookRestaurant	O
+2	"	BookRestaurant	O
+3	The	BookRestaurant	B-restaurant_name
+4	Halal	BookRestaurant	I-restaurant_name
+5	Guys	BookRestaurant	I-restaurant_name
+6	"	BookRestaurant	O
+7	spalio	BookRestaurant	B-datetime
+8	septyniolikta	BookRestaurant	I-datetime
+
+# id = 66
+# text-en = Please tell me the forecast for Guinea-Bissau
+# text = Pasakyk man prognozę Bisau Gvinėjai
+# intent = weather/find
+1	Pasakyk	weather/find	O
+2	man	weather/find	O
+3	prognozę	weather/find	O
+4	Bisau	weather/find	B-location
+5	Gvinėjai	weather/find	I-location
+
+# id = 67
+# text-en = Add this song to my the perfect italian dinner playlist
+# text = Įtrauki šią dainą į mano grojaraštį the perfect italian dinner
+# intent = AddToPlaylist
+1	Įtrauki	AddToPlaylist	O
+2	šią	AddToPlaylist	O
+3	dainą	AddToPlaylist	B-music_item
+4	į	AddToPlaylist	O
+5	mano	AddToPlaylist	B-reference
+6	grojaraštį	AddToPlaylist	O
+7	the	AddToPlaylist	B-playlist
+8	perfect	AddToPlaylist	I-playlist
+9	italian	AddToPlaylist	I-playlist
+10	dinner	AddToPlaylist	I-playlist
+
+# id = 68
+# text-en = weather in Tioga Colorado
+# text = oras Tajogoje Kolorado valstijoje
+# intent = weather/find
+1	oras	weather/find	O
+2	Tajogoje	weather/find	B-location
+3	Kolorado	weather/find	B-location
+4	valstijoje	weather/find	O
+
+# id = 69
+# text-en = I want to listen to the Music of Ghost in the Shell: Stand Alone Complex
+# text = Noriu pasiklausyti muzikos "Ghost in the Shell: Stand Alone Complex"
+# intent = SearchCreativeWork
+1	Noriu	SearchCreativeWork	O
+2	pasiklausyti	SearchCreativeWork	O
+3	muzikos	SearchCreativeWork	O
+4	"	SearchCreativeWork	O
+5	Ghost	SearchCreativeWork	B-object_name
+6	in	SearchCreativeWork	I-object_name
+7	the	SearchCreativeWork	I-object_name
+8	Shell:	SearchCreativeWork	I-object_name
+9	Stand	SearchCreativeWork	I-object_name
+10	Alone	SearchCreativeWork	I-object_name
+11	Complex	SearchCreativeWork	I-object_name
+12	"	SearchCreativeWork	O
+
+# id = 70
+# text-en = Show me Happiness Was Free .
+# text = Rodyk man "Happiness Was Free" .
+# intent = SearchCreativeWork
+1	Rodyk	SearchCreativeWork	O
+2	man	SearchCreativeWork	O
+3	"	SearchCreativeWork	O
+4	Happiness	SearchCreativeWork	B-object_name
+5	Was	SearchCreativeWork	I-object_name
+6	Free	SearchCreativeWork	I-object_name
+7	"	SearchCreativeWork	O
+8	.	SearchCreativeWork	O
+
+# id = 71
+# text-en = Is it supposed to rain nearby my current location at 0 o'clock ?
+# text = Ar netoli manęs nulinę valandą turėtų lyti ?
+# intent = weather/find
+1	Ar	weather/find	O
+2	netoli	weather/find	B-location
+3	mano	weather/find	B-location
+4	vietos	weather/find	I-location
+5	nulinę	weather/find	B-datetime
+6	valandą	weather/find	I-datetime
+7	turėtų	weather/find	O
+8	lyti	weather/find	B-condition_description
+9	?	weather/find	O
+
+# id = 72
+# text-en = book a table in Fairview neighboring the area
+# text = užsisakyk stalą Fervju kaimyninėje vietovėje
+# intent = BookRestaurant
+1	užsisakyk	BookRestaurant	O
+2	stalą	BookRestaurant	O
+3	Fervju	BookRestaurant	B-location
+4	kaimyninėje	BookRestaurant	B-location
+5	vietovėje	BookRestaurant	I-location
+
+# id = 73
+# text-en = what is the forecast for 15:04 in Georgia for overcast conditions in Valley View
+# text = kokia yra prognozė Valley View, Džordžijoje, dėl debesuotumo 15:04
+# intent = weather/find
+1	kokia	weather/find	O
+2	yra	weather/find	O
+3	prognozė	weather/find	O
+4	Valley	weather/find	B-location
+5	View	weather/find	I-location
+6	,	weather/find	O
+7	Džordžijoje	weather/find	B-location
+8	,	weather/find	O
+9	dėl	weather/find	O
+10	debesuotumo	weather/find	B-condition_description
+11	15:04	weather/find	B-datetime
+
+# id = 74
+# text-en = Can I see the movie schedules ?
+# text = Ar galiu pamatyti filmų repertuarą ?
+# intent = SearchScreeningEvent
+1	Ar	SearchScreeningEvent	O
+2	galiu	SearchScreeningEvent	O
+3	pamatyti	SearchScreeningEvent	O
+4	filmų	SearchScreeningEvent	B-object_type
+5	repertuarą	SearchScreeningEvent	I-object_type
+6	?	SearchScreeningEvent	O
+
+# id = 75
+# text-en = find a movie house closest showing Operation: Kingdom
+# text = rask artimiausią kino teatrą, rodantį "Operation: Kingdom"
+# intent = SearchScreeningEvent
+1	rask	SearchScreeningEvent	O
+2	artimiausią	SearchScreeningEvent	B-location
+3	kino	SearchScreeningEvent	B-object_location_type
+4	teatrą	SearchScreeningEvent	I-object_location_type
+5	,	SearchScreeningEvent	O
+6	rodantį	SearchScreeningEvent	O
+7	"	SearchScreeningEvent	O
+8	Operation:	SearchScreeningEvent	B-movie_name
+9	Kingdom	SearchScreeningEvent	I-movie_name
+10	"	SearchScreeningEvent	O
+
+# id = 76
+# text-en = Find a trailer called Storm Center .
+# text = Rask filmo anonsą pavadinimu "Storm Center" .
+# intent = SearchCreativeWork
+1	Rask	SearchCreativeWork	O
+2	filmo	SearchCreativeWork	B-object_type
+3	anonsą	SearchCreativeWork	I-object_type
+4	pavadinimu	SearchCreativeWork	O
+5	"	SearchCreativeWork	O
+6	Storm	SearchCreativeWork	B-object_name
+7	Center	SearchCreativeWork	I-object_name
+8	"	SearchCreativeWork	O
+9	.	SearchCreativeWork	O
+
+# id = 77
+# text-en = put this album on my dubstep dangles dirty playlist
+# text = įdėk šitą albumą į mano dubstep dangles dirty grojaraštį
+# intent = AddToPlaylist
+1	įdėk	AddToPlaylist	O
+2	šitą	AddToPlaylist	O
+3	albumą	AddToPlaylist	B-music_item
+4	į	AddToPlaylist	O
+5	mano	AddToPlaylist	B-reference
+6	dubstep	AddToPlaylist	B-playlist
+7	dangles	AddToPlaylist	I-playlist
+8	dirty	AddToPlaylist	I-playlist
+9	grojaraštį	AddToPlaylist	O
+
+# id = 78
+# text-en = What are the movie schedules
+# text = Kokie yra filmų seansų tvarkaraštis
+# intent = SearchScreeningEvent
+1	Kokie	SearchScreeningEvent	O
+2	yra	SearchScreeningEvent	O
+3	filmų	SearchScreeningEvent	B-object_type
+4	seansų	SearchScreeningEvent	I-object_type
+5	tvarkaraštis	SearchScreeningEvent	I-object_type
+
+# id = 79
+# text-en = Play a song by Juanes on Last Fm
+# text = Paleisk Juanes dainą per "Last Fm"
+# intent = PlayMusic
+1	Paleisk	PlayMusic	O
+2	Juanes	PlayMusic	B-artist
+3	dainą	PlayMusic	B-music_item
+4	per	PlayMusic	O
+5	"	PlayMusic	O
+6	Last	PlayMusic	B-service
+7	Fm	PlayMusic	I-service
+8	"	PlayMusic	O
+
+# id = 80
+# text-en = Assign 0 points out of 6 to The Gate of Worlds
+# text = Priskirk 0 balų iš 6 kūriniui The Gate of Worlds
+# intent = RateBook
+1	Priskirk	RateBook	O
+2	0	RateBook	B-rating_value
+3	balų	RateBook	B-rating_unit
+4	iš	RateBook	O
+5	6	RateBook	B-best_rating
+6	kūriniui	RateBook	B-object_type
+7	The	RateBook	B-object_name
+8	Gate	RateBook	I-object_name
+9	of	RateBook	I-object_name
+10	Worlds	RateBook	I-object_name
+
+# id = 81
+# text-en = Play some David Mallett on last fm
+# text = Paleisk David Mallett per Last Fm
+# intent = PlayMusic
+1	Paleisk	PlayMusic	O
+2	David	PlayMusic	B-artist
+3	Mallett	PlayMusic	I-artist
+4	per	PlayMusic	O
+5	Last	PlayMusic	B-service
+6	Fm	PlayMusic	I-service
+
+# id = 82
+# text-en = Find me the movie times
+# text = Surask man filmų seansų laikus
+# intent = SearchScreeningEvent
+1	Surask	SearchScreeningEvent	O
+2	man	SearchScreeningEvent	O
+3	filmų	SearchScreeningEvent	B-object_type
+4	seansų	SearchScreeningEvent	I-object_type
+5	laikus	SearchScreeningEvent	I-object_type
+
+# id = 83
+# text-en = Will it be windy at 4 PM in NY ?
+# text = Ar bus vėjuota ketvirtą vakaro Niujorke ?
+# intent = weather/find
+1	Ar	weather/find	O
+2	bus	weather/find	O
+3	vėjuota	weather/find	B-condition_description
+4	ketvirtą	weather/find	B-datetime
+5	vakaro	weather/find	I-datetime
+6	Niujorke	weather/find	B-location
+7	?	weather/find	O
+
+# id = 84
+# text-en = Book me a restaurant for nine in Statham
+# text = Užsakyk man restoraną devintai Steitame
+# intent = BookRestaurant
+1	Užsakyk	BookRestaurant	O
+2	man	BookRestaurant	O
+3	restoraną	BookRestaurant	B-restaurant_type
+4	devyniems	BookRestaurant	B-party_size_number
+5	Steitame	BookRestaurant	B-location
+
+# id = 85
+# text-en = find a video game called IBM Program temporary fix
+# text = Surask vaizdo žaidimą IBM Program temporary fix
+# intent = SearchCreativeWork
+1	Surask	SearchCreativeWork	O
+2	video	SearchCreativeWork	B-object_type
+3	žaidimą	SearchCreativeWork	I-object_type
+4	IBM	SearchCreativeWork	B-object_name
+5	Program	SearchCreativeWork	I-object_name
+6	temporary	SearchCreativeWork	I-object_name
+7	fix	SearchCreativeWork	I-object_name
+
+# id = 86
+# text-en = Find a table for one at a popular churrascaria for three weeks from now
+# text = Rask staliuką vienam asmeniui populiariame churrascaria restorane už trijų savaičių
+# intent = BookRestaurant
+1	Rask	BookRestaurant	O
+2	staliuką	BookRestaurant	O
+3	vienam	BookRestaurant	B-party_size_number
+4	asmeniui	BookRestaurant	O
+5	populiariame	BookRestaurant	B-sort
+6	churrascaria	BookRestaurant	B-restaurant_type
+7	restorane	BookRestaurant	O
+8	už	BookRestaurant	B-datetime
+9	trijų	BookRestaurant	I-datetime
+10	savaičių	BookRestaurant	I-datetime
+
+# id = 87
+# text-en = For Mirrorshades I rate it three stars
+# text = "Mirrorshades" vertinu trimis žvaigždutėmis
+# intent = RateBook
+1	"	RateBook	O
+2	Mirrorshades	RateBook	B-object_name
+3	"	RateBook	O
+4	vertinu	RateBook	O
+5	trimis	RateBook	B-rating_value
+6	žvaigždutėmis	RateBook	B-rating_unit
+
+# id = 88
+# text-en = Book a restaurant that serves agnolotti in Colorado City Idaho .
+# text = Užsisakyk restoraną, kuriame patiekiami agnolotti Kolorado mieste Aidahe.
+# intent = BookRestaurant
+1	Užsisakyk	BookRestaurant	O
+2	restoraną	BookRestaurant	B-restaurant_type
+3	,	BookRestaurant	O
+4	kuriame	BookRestaurant	O
+5	patiekiami	BookRestaurant	O
+6	agnolotti	BookRestaurant	B-served_dish
+7	Kolorado	BookRestaurant	B-location
+8	mieste	BookRestaurant	I-location
+9	Aidahe	BookRestaurant	B-location
+10	.	BookRestaurant	O
+
+# id = 89
+# text-en = Add bright and breezy to my This Is Gucci Mane playlist
+# text = Įtrauk bright and breezy į mano grojaraštį This Is Gucci Mane
+# intent = AddToPlaylist
+1	Įtrauk	AddToPlaylist	O
+2	bright	AddToPlaylist	B-entity_name
+3	and	AddToPlaylist	I-entity_name
+4	breezy	AddToPlaylist	I-entity_name
+5	į	AddToPlaylist	O
+6	mano	AddToPlaylist	B-reference
+7	grojaraštį	AddToPlaylist	O
+8	This	AddToPlaylist	B-playlist
+9	Is	AddToPlaylist	I-playlist
+10	Gucci	AddToPlaylist	I-playlist
+11	Mane	AddToPlaylist	I-playlist
+
+# id = 90
+# text-en = Can you give me the weather for here
+# text = Ar gali pateikti man orus čia
+# intent = weather/find
+1	Ar	weather/find	O
+2	gali	weather/find	O
+3	pateikti	weather/find	O
+4	man	weather/find	O
+5	orus	weather/find	O
+6	čia	weather/find	B-location
+
+# id = 91
+# text-en = Add Ashley McIsaac to my r&b party classics playlist
+# text = Pridėk Ashley McIsaac į mano grojaraštį r&b party classics
+# intent = AddToPlaylist
+1	Pridėk	AddToPlaylist	O
+2	Ashley	AddToPlaylist	B-artist
+3	McIsaac	AddToPlaylist	I-artist
+4	į	AddToPlaylist	O
+5	mano	AddToPlaylist	B-reference
+6	grojaraštį	AddToPlaylist	O
+7	r	AddToPlaylist	B-playlist
+8	&	AddToPlaylist	I-playlist
+9	b	AddToPlaylist	I-playlist
+10	party	AddToPlaylist	I-playlist
+11	classics	AddToPlaylist	I-playlist
+
+# id = 92
+# text-en = I'd like to see the saga 12 Soulful Nights of Christmas
+# text = Norėčiau pamatyti sagą "12 Soulful Nights of Christmas"
+# intent = SearchCreativeWork
+1	Norėčiau	SearchCreativeWork	O
+2	pamatyti	SearchCreativeWork	O
+3	sagą	SearchCreativeWork	B-object_type
+4	"	SearchCreativeWork	O
+5	12	SearchCreativeWork	B-object_name
+6	Soulful	SearchCreativeWork	I-object_name
+7	Nights	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	Christmas	SearchCreativeWork	I-object_name
+10	"	SearchCreativeWork	O
+
+# id = 93
+# text-en = I need a reservation for 6 PM. with a party of 10 at Sand Lake
+# text = Man reikia rezervacijos šeštai vakaro dešimties asmenų grupei Sand Lake
+# intent = BookRestaurant
+1	Man	BookRestaurant	O
+2	reikia	BookRestaurant	O
+3	rezervacijos	BookRestaurant	O
+4	šeštai	BookRestaurant	B-datetime
+5	vakaro	BookRestaurant	I-datetime
+6	dešimties	BookRestaurant	B-party_size_number
+7	asmenų	BookRestaurant	O
+8	grupei	BookRestaurant	O
+9	Sand	BookRestaurant	B-location
+10	Lake	BookRestaurant	I-location
+
+# id = 94
+# text-en = Use Groove Shark to play music from the eighties
+# text = Naudok "Groove Shark" aštuntojo dešimtmečio muzikai groti
+# intent = PlayMusic
+1	Naudok	PlayMusic	O
+2	"	PlayMusic	O
+3	Groove	PlayMusic	B-service
+4	Shark	PlayMusic	I-service
+5	"	PlayMusic	O
+6	aštuntojo	PlayMusic	B-datetime
+7	dešimtmečio	PlayMusic	I-datetime
+8	muzikai	PlayMusic	O
+9	groti	PlayMusic	O
+
+# id = 95
+# text-en = find soundtrack titled The House of the Yellow Carpet
+# text = rask garso takelį pavadinimu "The House of the Yellow Carpet"
+# intent = SearchCreativeWork
+1	rask	SearchCreativeWork	O
+2	garso	SearchCreativeWork	B-object_type
+3	takelį	SearchCreativeWork	I-object_type
+4	pavadinimu	SearchCreativeWork	O
+5	"	SearchCreativeWork	O
+6	The	SearchCreativeWork	B-object_name
+7	House	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	Yellow	SearchCreativeWork	I-object_name
+11	Carpet	SearchCreativeWork	I-object_name
+12	"	SearchCreativeWork	O
+
+# id = 96
+# text-en = Which is the nearest cinema showing movies that start in nineteen seconds ?
+# text = Kuriame artimiausiame kino teatre rodomi filmai, prasidedantys po devyniolikos sekundžių ?
+# intent = SearchScreeningEvent
+1	Kuriame	SearchScreeningEvent	O
+2	artimiausiame	SearchScreeningEvent	B-location
+3	kino	SearchScreeningEvent	B-object_location_type
+4	teatre	SearchScreeningEvent	I-object_location_type
+5	rodomi	SearchScreeningEvent	O
+6	filmai	SearchScreeningEvent	B-movie_type
+7	,	SearchScreeningEvent	O
+8	prasidedantys	SearchScreeningEvent	O
+9	po	SearchScreeningEvent	B-datetime
+10	devyniolikos	SearchScreeningEvent	I-datetime
+11	sekundžių	SearchScreeningEvent	I-datetime
+12	?	SearchScreeningEvent	O
+
+# id = 97
+# text-en = Add morten harket to this is puccini
+# text = Pridėk morten harket prie "this is puccini"
+# intent = AddToPlaylist
+1	Pridėk	AddToPlaylist	O
+2	morten	AddToPlaylist	B-artist
+3	harket	AddToPlaylist	I-artist
+4	prie	AddToPlaylist	O
+5	"	AddToPlaylist	O
+6	this	AddToPlaylist	B-playlist
+7	is	AddToPlaylist	I-playlist
+8	puccini	AddToPlaylist	I-playlist
+9	"	AddToPlaylist	O
+
+# id = 98
+# text-en = Open Spotify and play a song from the twenties by Richard Harvey
+# text = Atidaryk "Spotify" ir paleiskite Richardo Harvey dvidešimtojo dešimtmečio dainą
+# intent = PlayMusic
+1	Atidaryk	PlayMusic	O
+2	"	PlayMusic	O
+3	Spotify	PlayMusic	B-service
+4	"	PlayMusic	O
+5	ir	PlayMusic	O
+6	paleisk	PlayMusic	O
+7	Richardo	PlayMusic	B-artist
+8	Harvey	PlayMusic	I-artist
+9	dvidešimtojo	PlayMusic	B-datetime
+10	dešimtmečio	PlayMusic	I-datetime
+11	dainą	PlayMusic	B-music_item
+
+# id = 99
+# text-en = I want to book a restaurant
+# text = Noriu užsakyti restoraną
+# intent = BookRestaurant
+1	Noriu	BookRestaurant	O
+2	užsakyti	BookRestaurant	O
+3	restoraną	BookRestaurant	B-restaurant_type
+
+# id = 100
+# text-en = Play the album Vibrations by Marion Elise Raven
+# text = Grok Marion Elise Raven albumą Vibrations
+# intent = PlayMusic
+1	Grok	PlayMusic	O
+2	Marion	PlayMusic	B-artist
+3	Elise	PlayMusic	I-artist
+4	Raven	PlayMusic	I-artist
+5	albumą	PlayMusic	B-music_item
+6	Vibrations	PlayMusic	B-album
+
+# id = 101
+# text-en = add this artist to my Jazz playlist
+# text = įtrauk šį atlikėją į "my Jazz" grojaraštį
+# intent = AddToPlaylist
+1	įtrauk	AddToPlaylist	O
+2	šį	AddToPlaylist	O
+3	atlikėją	AddToPlaylist	B-music_item
+4	į	AddToPlaylist	O
+5	mano	AddToPlaylist	B-reference
+6	Jazz	AddToPlaylist	B-playlist
+7	grojaraštį	AddToPlaylist	O
+
+# id = 102
+# text-en = I want to find the show From Where to Eternity .
+# text = Noriu rasti šou "From Where to Eternity" .
+# intent = SearchCreativeWork
+1	Noriu	SearchCreativeWork	O
+2	rasti	SearchCreativeWork	O
+3	šou	SearchCreativeWork	B-object_type
+4	"	SearchCreativeWork	O
+5	From	SearchCreativeWork	B-object_name
+6	Where	SearchCreativeWork	I-object_name
+7	to	SearchCreativeWork	I-object_name
+8	Eternity	SearchCreativeWork	I-object_name
+9	"	SearchCreativeWork	O
+10	.	SearchCreativeWork	O
+
+# id = 103
+# text-en = play the top-twenty songs by The Kleptones on Spotify
+# text = grok dvidešimt geriausių The Kleptones dainų per Spotify
+# intent = PlayMusic
+1	grok	PlayMusic	O
+2	dvidešimt	PlayMusic	B-sort
+3	geriausių	PlayMusic	I-sort
+4	The	PlayMusic	B-artist
+5	Kleptones	PlayMusic	I-artist
+6	dainų	PlayMusic	O
+7	per	PlayMusic	O
+8	Spotify	PlayMusic	B-service
+
+# id = 104
+# text-en = How will the weather be in six minutes close to Moosic
+# text = Koks oras bus už šešių minučių netoli Musiko
+# intent = weather/find
+1	Koks	weather/find	O
+2	oras	weather/find	O
+3	bus	weather/find	O
+4	už	weather/find	B-datetime
+5	šešių	weather/find	I-datetime
+6	minučių	weather/find	I-datetime
+7	netoli	weather/find	B-location
+8	Musiko	weather/find	B-location
+
+# id = 105
+# text-en = I wish to listen to some fifties music.
+# text = Noriu pasiklausyti penktojo dešimtmečio muzikos.
+# intent = PlayMusic
+1	Noriu	PlayMusic	O
+2	pasiklausyti	PlayMusic	O
+3	penktojo	PlayMusic	B-datetime
+4	dešimtmečio	PlayMusic	I-datetime
+5	muzikos	PlayMusic	O
+6	.	PlayMusic	O
+
+# id = 106
+# text-en = what time is Utamaro and His Five Women showing at Alamo Drafthouse Cinema
+# text = kokiu laiku rodomas filmas Utamaro and His Five Women kino teatre Alamo Drafthouse
+# intent = SearchScreeningEvent
+1	kokiu	SearchScreeningEvent	O
+2	laiku	SearchScreeningEvent	O
+3	rodomas	SearchScreeningEvent	O
+4	Utamaro	SearchScreeningEvent	B-movie_name
+5	and	SearchScreeningEvent	I-movie_name
+6	His	SearchScreeningEvent	I-movie_name
+7	Five	SearchScreeningEvent	I-movie_name
+8	Women	SearchScreeningEvent	I-movie_name
+9	kino	SearchScreeningEvent	B-location
+10	teatre	SearchScreeningEvent	I-location
+11	Alamo	SearchScreeningEvent	I-location
+12	Drafthouse	SearchScreeningEvent	I-location
+
+# id = 107
+# text-en = Find a photograph of Adventure Time: The Secret of the Nameless Kingdom
+# text = Rask nuotrauką iš Adventure Time: The Secret of the Nameless Kingdom
+# intent = SearchCreativeWork
+1	Rask	SearchCreativeWork	O
+2	nuotrauką	SearchCreativeWork	B-object_type
+3	iš	SearchCreativeWork	O
+4	Adventure	SearchCreativeWork	B-object_name
+5	Time:	SearchCreativeWork	I-object_name
+6	The	SearchCreativeWork	I-object_name
+7	Secret	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	Nameless	SearchCreativeWork	I-object_name
+11	Kingdom	SearchCreativeWork	I-object_name
+
+# id = 108
+# text-en = put Do You Love Me on my acoustic soul playlist
+# text = įtraukti Do You Love Me į mano grojaraštį acoustic soul
+# intent = AddToPlaylist
+1	įtraukti	AddToPlaylist	O
+2	Do	AddToPlaylist	B-entity_name
+3	You	AddToPlaylist	I-entity_name
+4	Love	AddToPlaylist	I-entity_name
+5	Me	AddToPlaylist	I-entity_name
+6	į	AddToPlaylist	O
+7	mano	AddToPlaylist	B-reference
+8	grojaraštį	AddToPlaylist	O
+9	acoustic	AddToPlaylist	B-playlist
+10	soul	AddToPlaylist	I-playlist
+
+# id = 109
+# text-en = Play me the best Charles Neidich song
+# text = Paleisk man geriausią Charleso Neidicho dainą
+# intent = PlayMusic
+1	Paleisk	PlayMusic	O
+2	man	PlayMusic	O
+3	geriausią	PlayMusic	B-sort
+4	Charles	PlayMusic	B-artist
+5	Neidich	PlayMusic	I-artist
+6	dainą	PlayMusic	B-music_item
+
+# id = 110
+# text-en = On may the thirteenth, 2037 what will it be like in Wilderville , Montenegro
+# text = Kaip bus Vildervilyje , Juodkalnijoje, 2037 metų gegužės tryliktąją
+# intent = weather/find
+1	Kaip	weather/find	O
+2	bus	weather/find	O
+3	Vildervilyje	weather/find	B-location
+4	,	weather/find	O
+5	Juodkalnijoje	weather/find	B-location
+6	,	weather/find	O
+7	2037	weather/find	B-datetime
+8	metų	weather/find	I-datetime
+9	gegužės	weather/find	I-datetime
+10	tryliktąją	weather/find	I-datetime
+
+# id = 111
+# text-en = Find movie schedules for ArcLight Hollywood .
+# text = Rask ArcLight Hollywood filmų seansų laikus .
+# intent = SearchScreeningEvent
+1	Rask	SearchScreeningEvent	O
+2	ArcLight	SearchScreeningEvent	B-location
+3	Hollywood	SearchScreeningEvent	I-location
+4	filmų	SearchScreeningEvent	B-object_type
+5	seansų	SearchScreeningEvent	I-object_type
+6	laikus	SearchScreeningEvent	I-object_type
+7	.	SearchScreeningEvent	O
+
+# id = 112
+# text-en = Find a TV series called Church of the Truly Warped .
+# text = Rask tv serialą pavadinimu Church of the Truly Warped .
+# intent = SearchCreativeWork
+1	Rask	SearchCreativeWork	O
+2	tv	SearchCreativeWork	B-object_type
+3	serialą	SearchCreativeWork	I-object_type
+4	pavadinimu	SearchCreativeWork	O
+5	Church	SearchCreativeWork	B-object_name
+6	of	SearchCreativeWork	I-object_name
+7	the	SearchCreativeWork	I-object_name
+8	Truly	SearchCreativeWork	I-object_name
+9	Warped	SearchCreativeWork	I-object_name
+10	.	SearchCreativeWork	O
+
+# id = 113
+# text-en = what is the forecast for in eighteen minutes here for colder temps
+# text = Kokia prognozė čia apie šaltesnius orus už aštuoniolikos minučių
+# intent = weather/find
+1	Kokia	weather/find	O
+2	prognozė	weather/find	O
+3	čia	weather/find	B-location
+4	apie	weather/find	O
+5	šaltesnius	weather/find	B-condition_temperature
+6	orus	weather/find	O
+7	už	weather/find	B-datetime
+8	aštuoniolikos	weather/find	I-datetime
+9	minučių	weather/find	I-datetime
+
+# id = 114
+# text-en = Book a restaurant at sixteen o'clock in SC
+# text = Užsakyk restoraną šešioliktai valandai SC
+# intent = BookRestaurant
+1	Užsakyk	BookRestaurant	O
+2	restoraną	BookRestaurant	B-restaurant_type
+3	šešioliktai	BookRestaurant	B-datetime
+4	valandai	BookRestaurant	I-datetime
+5	SC	BookRestaurant	B-location
+
+# id = 115
+# text-en = stacy watson and adriana want to go to the best osteria in Hallowell Minnesota this afternoon
+# text = Stacy Watson ir Adriana nori nueiti į geriausią osteriją Hallowell Minesotoje šią popietę
+# intent = BookRestaurant
+1	Stacy	BookRestaurant	B-party_size_description
+2	Watson	BookRestaurant	I-party_size_description
+3	ir	BookRestaurant	I-party_size_description
+4	Adriana	BookRestaurant	I-party_size_description
+5	nori	BookRestaurant	O
+6	nueiti	BookRestaurant	O
+7	į	BookRestaurant	O
+8	geriausią	BookRestaurant	B-sort
+9	osteriją	BookRestaurant	B-restaurant_type
+10	Hallowell	BookRestaurant	B-location
+11	Minesotoje	BookRestaurant	B-location
+12	šią	BookRestaurant	B-datetime
+13	popietę	BookRestaurant	I-datetime
+
+# id = 116
+# text-en = is it going to be chilly in Western Sahara in 13 hours
+# text = ar bus vėsu Vakarų Sacharoje už trylikos valandų
+# intent = weather/find
+1	ar	weather/find	O
+2	bus	weather/find	O
+3	vėsu	weather/find	B-condition_temperature
+4	Vakarų	weather/find	B-location
+5	Sacharoje	weather/find	I-location
+6	už	weather/find	B-datetime
+7	trylikos	weather/find	I-datetime
+8	valandų	weather/find	I-datetime
+
+# id = 117
+# text-en = add Armen Movsessian to this is skepta playlist
+# text = įtrauk Armen Movsessian į grojaraštį this is skepta
+# intent = AddToPlaylist
+1	įtrauk	AddToPlaylist	O
+2	Armen	AddToPlaylist	B-artist
+3	Movsessian	AddToPlaylist	I-artist
+4	į	AddToPlaylist	O
+5	grojaraštį	AddToPlaylist	O
+6	this	AddToPlaylist	B-playlist
+7	is	AddToPlaylist	I-playlist
+8	skepta	AddToPlaylist	I-playlist
+
+# id = 118
+# text-en = Rate this current essay three out of 6 stars
+# text = Įvertink šį dabartinį ese trimis iš 6 žvaigždučių
+# intent = RateBook
+1	Įvertink	RateBook	O
+2	šį	RateBook	O
+3	dabartinį	RateBook	B-object_select
+4	ese	RateBook	B-object_type
+5	trimis	RateBook	B-rating_value
+6	iš	RateBook	O
+7	6	RateBook	B-best_rating
+8	žvaigždučių	RateBook	B-rating_unit
+
+# id = 119
+# text-en = Find a reservation for three at a top-rated restaurant
+# text = Rask rezervaciją trims asmenims geriausiai įvertintame restorane
+# intent = BookRestaurant
+1	Rask	BookRestaurant	O
+2	rezervaciją	BookRestaurant	O
+3	trims	BookRestaurant	B-party_size_number
+4	asmenims	BookRestaurant	O
+5	geriausiai	BookRestaurant	B-sort
+6	įvertintame	BookRestaurant	I-sort
+7	restorane	BookRestaurant	B-restaurant_type
+
+# id = 120
+# text-en = rate the current novel 0 of 6
+# text = įvertink dabartinį novelę 0 iš 6
+# intent = RateBook
+1	įvertink	RateBook	O
+2	dabartinę	RateBook	B-object_select
+3	novelę	RateBook	B-object_type
+4	0	RateBook	B-rating_value
+5	iš	RateBook	O
+6	6	RateBook	B-best_rating
+
+# id = 121
+# text-en = I'd like to see the showtimes for Silly Movie 2.0 at the movie house
+# text = Norėčiau pamatyti filmo "Silly Movie 2.0" seansų laiką kino teatre
+# intent = SearchScreeningEvent
+1	Norėčiau	SearchScreeningEvent	O
+2	pamatyti	SearchScreeningEvent	O
+3	Silly	SearchScreeningEvent	B-movie_name
+4	Movie	SearchScreeningEvent	I-movie_name
+5	2.0	SearchScreeningEvent	I-movie_name
+6	seansų	SearchScreeningEvent	O
+7	laiką	SearchScreeningEvent	O
+8	kino	SearchScreeningEvent	B-object_location_type
+9	teatre	SearchScreeningEvent	I-object_location_type
+
+# id = 122
+# text-en = Will it get chillier in Sinclair in 8 hours
+# text = Ar Sinklerio mieste bus vėsiau už aštuonių valandų
+# intent = weather/find
+1	Ar	weather/find	O
+2	Sinklerio	weather/find	B-location
+3	mieste	weather/find	O
+4	bus	weather/find	O
+5	vėsiau	weather/find	B-condition_temperature
+6	už	weather/find	B-datetime
+7	aštuonių	weather/find	I-datetime
+8	valandų	weather/find	I-datetime
+
+# id = 123
+# text-en = add this tune to my in the arms of a woman
+# text = pridėk šią melodiją prie mano in the arms of a woman
+# intent = AddToPlaylist
+1	pridėk	AddToPlaylist	O
+2	šią	AddToPlaylist	O
+3	melodiją	AddToPlaylist	B-music_item
+4	prie	AddToPlaylist	O
+5	mano	AddToPlaylist	B-reference
+6	in	AddToPlaylist	B-playlist
+7	the	AddToPlaylist	I-playlist
+8	arms	AddToPlaylist	I-playlist
+9	of	AddToPlaylist	I-playlist
+10	a	AddToPlaylist	I-playlist
+11	woman	AddToPlaylist	I-playlist
+
+# id = 124
+# text-en = book for 3 in U.S. Virgin Islands
+# text = užsakyk trims JAV Mergelių salose
+# intent = BookRestaurant
+1	užsakyk	BookRestaurant	O
+2	trims	BookRestaurant	B-party_size_number
+3	JAV	BookRestaurant	B-location
+4	Mergelių	BookRestaurant	I-location
+5	salose	BookRestaurant	I-location
+
+# id = 125
+# text-en = Will it be chillier in La Mesa ?
+# text = Ar bus vėsiau La Mesoje ?
+# intent = weather/find
+1	Ar	weather/find	O
+2	bus	weather/find	O
+3	vėsiau	weather/find	B-condition_temperature
+4	La	weather/find	B-location
+5	Mesoje	weather/find	I-location
+6	?	weather/find	O
+
+# id = 126
+# text-en = Rate this essay 2 out of 6 stars
+# text = Įvertink šį rašinį dviem iš šešių žvaigždučių
+# intent = RateBook
+1	Įvertink	RateBook	O
+2	šį	RateBook	B-object_select
+3	rašinį	RateBook	B-object_type
+4	dviem	RateBook	B-rating_value
+5	iš	RateBook	O
+6	šešių	RateBook	B-best_rating
+7	žvaigždučių	RateBook	B-rating_unit
+
+# id = 127
+# text-en = Give three stars / 6 to My Sister, My Love
+# text = Suteik tris žvaigždutes / šešių My Sister, My Love
+# intent = RateBook
+1	Suteik	RateBook	O
+2	tris	RateBook	B-rating_value
+3	žvaigždutes	RateBook	B-rating_unit
+4	/	RateBook	O
+5	šešių	RateBook	B-best_rating
+6	My	RateBook	B-object_name
+7	Sister	RateBook	I-object_name
+8	,	RateBook	I-object_name
+9	My	RateBook	I-object_name
+10	Love	RateBook	I-object_name
+
+# id = 128
+# text-en = Find the movie schedule for Marcus Corporation .
+# text = Rask Marcus Corporation filmų tvarkaraštį .
+# intent = SearchScreeningEvent
+1	Rask	SearchScreeningEvent	O
+2	Marcus	SearchScreeningEvent	B-location
+3	Corporation	SearchScreeningEvent	I-location
+4	filmų	SearchScreeningEvent	B-object_type
+5	tvarkaraštį	SearchScreeningEvent	I-object_type
+6	.	SearchScreeningEvent	O
+
+# id = 129
+# text-en = What movies are scheduled in the neighbourhood ?
+# text = Kokie filmai planuojami rodyti kaimynystėje ?
+# intent = SearchScreeningEvent
+1	Kokie	SearchScreeningEvent	O
+2	filmai	SearchScreeningEvent	B-movie_type
+3	planuojami	SearchScreeningEvent	O
+4	rodyti	SearchScreeningEvent	O
+5	kaimynystėje	SearchScreeningEvent	B-location
+6	?	SearchScreeningEvent	O
+
+# id = 130
+# text-en = add cross bones style to Guest List TaKe
+# text = pridėk cross bones style prie Guest List TaKe
+# intent = AddToPlaylist
+1	pridėk	AddToPlaylist	O
+2	cross	AddToPlaylist	B-entity_name
+3	bones	AddToPlaylist	I-entity_name
+4	style	AddToPlaylist	I-entity_name
+5	prie	AddToPlaylist	O
+6	Guest	AddToPlaylist	B-playlist
+7	List	AddToPlaylist	I-playlist
+8	TaKe	AddToPlaylist	I-playlist
+
+# id = 131
+# text-en = Find a reservation for a tavern that serves pizzas for a party of 6
+# text = Užsakymą užeigą, kurioje patiekiamos picos šešių asmenų grupei
+# intent = BookRestaurant
+1	Užsakymą	BookRestaurant	O
+2	užeigą	BookRestaurant	B-restaurant_type
+3	,	BookRestaurant	O
+4	kurioje	BookRestaurant	O
+5	patiekiamos	BookRestaurant	O
+6	picos	BookRestaurant	B-served_dish
+7	šešių	BookRestaurant	B-party_size_number
+8	asmenų	BookRestaurant	O
+9	grupei	BookRestaurant	O
+
+# id = 132
+# text-en = Rate The Art of Nijinsky 5 points
+# text = Įvertink filmą The Art of Nijinsky 5 balai
+# intent = RateBook
+1	Įvertink	RateBook	O
+2	filmą	RateBook	B-object_type
+3	The	RateBook	B-object_name
+4	Art	RateBook	I-object_name
+5	of	RateBook	I-object_name
+6	Nijinsky	RateBook	I-object_name
+7	5	RateBook	B-rating_value
+8	balai	RateBook	B-rating_unit
+
+# id = 133
+# text-en = add Jacob Hoggard to my get going playlist
+# text = įtrauk Jacob Hoggard į mano grojaraštį "Get going"
+# intent = AddToPlaylist
+1	įtrauk	AddToPlaylist	O
+2	Jacob	AddToPlaylist	B-artist
+3	Hoggard	AddToPlaylist	I-artist
+4	į	AddToPlaylist	O
+5	mano	AddToPlaylist	B-reference
+6	grojaraštį	AddToPlaylist	O
+7	"	AddToPlaylist	O
+8	Get	AddToPlaylist	B-playlist
+9	going	AddToPlaylist	I-playlist
+10	"	AddToPlaylist	O
+
+# id = 134
+# text-en = Give me a list of movie times for films in the area .
+# text = Pateik man kino filmų laikų sąrašą, rodomų mano apylinkėse .
+# intent = SearchScreeningEvent
+1	Pateik	SearchScreeningEvent	O
+2	man	SearchScreeningEvent	O
+3	kino	SearchScreeningEvent	B-movie_type
+4	filmų	SearchScreeningEvent	I-movie_type
+5	laikų	SearchScreeningEvent	B-object_type
+6	sąrašą	SearchScreeningEvent	O
+7	,	SearchScreeningEvent	O
+8	rodomų	SearchScreeningEvent	O
+9	mano	SearchScreeningEvent	B-location
+10	apylinkėse	SearchScreeningEvent	I-location
+11	.	SearchScreeningEvent	O
+
+# id = 135
+# text-en = find The Ultimate Gift , a television show
+# text = rask The Ultimate Gift , televizijos laidą
+# intent = SearchCreativeWork
+1	rask	SearchCreativeWork	O
+2	The	SearchCreativeWork	B-object_name
+3	Ultimate	SearchCreativeWork	I-object_name
+4	Gift	SearchCreativeWork	I-object_name
+5	,	SearchCreativeWork	O
+6	televizijos	SearchCreativeWork	B-object_type
+7	laidą	SearchCreativeWork	I-object_type
+
+# id = 136
+# text-en = What's the weather close-by Triumph
+# text = Koks oras netoli Triumph
+# intent = weather/find
+1	Koks	weather/find	O
+2	oras	weather/find	O
+3	netoli	weather/find	B-location
+4	Triumph	weather/find	B-location
+
+# id = 137
+# text-en = when can i see A Handful of Dust in a movie theatre
+# text = kada kino teatre galima pamatyti filmą A Handful of Dust
+# intent = SearchScreeningEvent
+1	kada	SearchScreeningEvent	O
+2	kino	SearchScreeningEvent	B-object_location_type
+3	teatre	SearchScreeningEvent	I-object_location_type
+4	galima	SearchScreeningEvent	O
+5	pamatyti	SearchScreeningEvent	O
+6	A	SearchScreeningEvent	B-movie_name
+7	Handful	SearchScreeningEvent	I-movie_name
+8	of	SearchScreeningEvent	I-movie_name
+9	Dust	SearchScreeningEvent	I-movie_name
+
+# id = 138
+# text-en = Please put an album by Joseph Meyer on my POP GOES THE 80s playlist
+# text = Prašau įtraukti Joseph Meyer albumą į mano grojaraštį POP GOES THE 80s
+# intent = AddToPlaylist
+1	Prašau	AddToPlaylist	O
+2	įtraukti	AddToPlaylist	O
+3	Joseph	AddToPlaylist	B-artist
+4	Meyer	AddToPlaylist	I-artist
+5	albumą	AddToPlaylist	B-music_item
+6	į	AddToPlaylist	O
+7	mano	AddToPlaylist	B-reference
+8	grojaraštį	AddToPlaylist	O
+9	POP	AddToPlaylist	B-playlist
+10	GOES	AddToPlaylist	I-playlist
+11	THE	AddToPlaylist	I-playlist
+12	80s	AddToPlaylist	I-playlist
+
+# id = 139
+# text-en = show of From South Africa to South Carolina
+# text = rodyk From South Africa to South Carolina
+# intent = SearchCreativeWork
+1	šou	SearchCreativeWork	B-object_type
+2	From	SearchCreativeWork	B-object_name
+3	South	SearchCreativeWork	I-object_name
+4	Africa	SearchCreativeWork	I-object_name
+5	to	SearchCreativeWork	I-object_name
+6	South	SearchCreativeWork	I-object_name
+7	Carolina	SearchCreativeWork	I-object_name
+
+# id = 140
+# text-en = book a top-rated osteria seven weeks from now
+# text = užsisakyk geriausiai įvertintą osteriją po septynių savaičių
+# intent = BookRestaurant
+1	užsisakyk	BookRestaurant	O
+2	geriausiai	BookRestaurant	B-sort
+3	įvertintą	BookRestaurant	I-sort
+4	osteriją	BookRestaurant	B-restaurant_type
+5	po	BookRestaurant	B-datetime
+6	septynių	BookRestaurant	I-datetime
+7	savaičių	BookRestaurant	I-datetime
+
+# id = 141
+# text-en = What movie house is showing Flower and Snake at 08:56:29 ?
+# text = Kokiame kino teatre 08:56:29 rodomas filmas Flower and Snake ?
+# intent = SearchScreeningEvent
+1	Kokiame	SearchScreeningEvent	O
+2	kino	SearchScreeningEvent	B-object_location_type
+3	teatre	SearchScreeningEvent	I-object_location_type
+4	08:56:29	SearchScreeningEvent	B-datetime
+5	rodomas	SearchScreeningEvent	O
+6	Flower	SearchScreeningEvent	B-movie_name
+7	and	SearchScreeningEvent	I-movie_name
+8	Snake	SearchScreeningEvent	I-movie_name
+9	?	SearchScreeningEvent	O
+
+# id = 142
+# text-en = Find a restaurant in FM that servec quiche
+# text = Rask restoraną FM, kuriame patiekiamac kišas
+# intent = BookRestaurant
+1	Rask	BookRestaurant	O
+2	restoraną	BookRestaurant	B-restaurant_type
+3	FM	BookRestaurant	B-location
+4	,	BookRestaurant	O
+5	kuriame	BookRestaurant	O
+6	patiekiamac	BookRestaurant	O
+7	kišas	BookRestaurant	B-served_dish
+
+# id = 143
+# text-en = Book a reservation for 7 people at The French Laundry on june the 8th, 2029
+# text = Užsisakyk septyniems žmonėms rezervaciją restorane "The French Laundry" 2029 metų birželio aštuntai
+# intent = BookRestaurant
+1	Užsisakyk	BookRestaurant	O
+2	septyniems	BookRestaurant	B-party_size_number
+3	žmonėms	BookRestaurant	O
+4	rezervaciją	BookRestaurant	O
+5	"	BookRestaurant	O
+6	The	BookRestaurant	B-restaurant_name
+7	French	BookRestaurant	I-restaurant_name
+8	Laundry	BookRestaurant	I-restaurant_name
+9	"	BookRestaurant	O
+10	2029	BookRestaurant	B-datetime
+11	metų	BookRestaurant	I-datetime
+12	birželio	BookRestaurant	I-datetime
+13	aštuntai	BookRestaurant	I-datetime
+
+# id = 144
+# text-en = play fourties tunes
+# text = grok keturiasdešimtųjų melodijas
+# intent = PlayMusic
+1	grok	PlayMusic	O
+2	keturiasdešimtųjų	PlayMusic	B-datetime
+3	melodijas	PlayMusic	O
+
+# id = 145
+# text-en = When will the Santikos Theatres be showing animated movies
+# text = Kada "Santikos Theatres" bus rodomi animaciniai filmai
+# intent = SearchScreeningEvent
+1	Kada	SearchScreeningEvent	O
+2	"	SearchScreeningEvent	O
+3	Santikos	SearchScreeningEvent	B-location
+4	Theatres	SearchScreeningEvent	I-location
+5	"	SearchScreeningEvent	O
+6	bus	SearchScreeningEvent	O
+7	rodomi	SearchScreeningEvent	O
+8	animaciniai	SearchScreeningEvent	B-movie_type
+9	filmai	SearchScreeningEvent	I-movie_type
+
+# id = 146
+# text-en = Play music on Itunes
+# text = Paleisti muziką per Itunes
+# intent = PlayMusic
+1	Paleisti	PlayMusic	O
+2	muziką	PlayMusic	O
+3	per	PlayMusic	O
+4	Itunes	PlayMusic	B-service
+
+# id = 147
+# text-en = show book name Straight No Chase
+# text = parodyk knygą pavadinimu Straight No Chase
+# intent = SearchCreativeWork
+1	parodyk	SearchCreativeWork	O
+2	knygą	SearchCreativeWork	B-object_type
+3	pavadinimu	SearchCreativeWork	O
+4	Straight	SearchCreativeWork	B-object_name
+5	No	SearchCreativeWork	I-object_name
+6	Chase	SearchCreativeWork	I-object_name
+
+# id = 148
+# text-en = Find the movie schedules for movies close by
+# text = Raskite netoliese rodomų filmų tvarkaraščius
+# intent = SearchScreeningEvent
+1	Raskite	SearchScreeningEvent	O
+2	netoliese	SearchScreeningEvent	B-location
+3	rodomų	SearchScreeningEvent	O
+4	filmų	SearchScreeningEvent	B-movie_type
+5	tvarkaraščius	SearchScreeningEvent	B-object_type
+
+# id = 149
+# text-en = this winter , meredith, betty and erika want to food at a gastropub that is in the same area as fran's location .
+# text = šią žiemą , meredith, betty ir erika nori pavalgyti gastropube, kuris yra tame pačiame rajone kaip ir Fran's vieta.
+# intent = BookRestaurant
+1	šią	BookRestaurant	B-datetime
+2	žiemą	BookRestaurant	I-datetime
+3	,	BookRestaurant	O
+4	meredith	BookRestaurant	B-party_size_description
+5	,	BookRestaurant	I-party_size_description
+6	betty	BookRestaurant	I-party_size_description
+7	ir	BookRestaurant	I-party_size_description
+8	erika	BookRestaurant	I-party_size_description
+9	nori	BookRestaurant	O
+10	pavalgyti	BookRestaurant	O
+11	gastropube	BookRestaurant	B-restaurant_type
+12	,	BookRestaurant	O
+13	kuris	BookRestaurant	O
+14	yra	BookRestaurant	O
+15	tame	BookRestaurant	B-location
+16	pačiame	BookRestaurant	I-location
+17	rajone	BookRestaurant	I-location
+18	kaip	BookRestaurant	O
+19	ir	BookRestaurant	O
+20	Fran's	BookRestaurant	B-location
+21	vieta	BookRestaurant	I-location
+22	.	BookRestaurant	O
+
+# id = 150
+# text-en = Add tune to my Para comer
+# text = Pridėk melodiją į mano Para comer
+# intent = AddToPlaylist
+1	Pridėk	AddToPlaylist	O
+2	melodiją	AddToPlaylist	B-music_item
+3	į	AddToPlaylist	O
+4	mano	AddToPlaylist	B-reference
+5	Para	AddToPlaylist	B-playlist
+6	comer	AddToPlaylist	I-playlist
+

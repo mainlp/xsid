@@ -1,0 +1,3353 @@
+# text = Is it going to rain today?
+# intent = weather/find
+# slots: 15:19:weather/attribute,20:25:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# text = how hot is it going to be today
+# intent = weather/find
+# slots: 4:7:weather/attribute,26:31:datetime
+1	how	weather/find	O
+2	hot	weather/find	B-weather/attribute
+3	is	weather/find	O
+4	it	weather/find	O
+5	going	weather/find	O
+6	to	weather/find	O
+7	be	weather/find	O
+8	today	weather/find	B-datetime
+
+# text = How hot is it?
+# intent = weather/find
+# slots: 4:7:weather/attribute
+1	How	weather/find	O
+2	hot	weather/find	B-weather/attribute
+3	is	weather/find	O
+4	it	weather/find	O
+5	?	weather/find	O
+
+# text = Will it be sunny today?
+# intent = weather/find
+# slots: 11:16:weather/attribute,17:22:datetime
+1	Will	weather/find	O
+2	it	weather/find	O
+3	be	weather/find	O
+4	sunny	weather/find	B-weather/attribute
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# text = Is it cloudy today?
+# intent = weather/find
+# slots: 6:12:weather/attribute,13:18:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	cloudy	weather/find	B-weather/attribute
+4	today	weather/find	B-datetime
+5	?	weather/find	O
+
+# text = Cancel all my reminders.
+# intent = reminder/cancel_reminder
+# slots: 14:23:reminder/noun
+1	Cancel	reminder/cancel_reminder	O
+2	all	reminder/cancel_reminder	B-reference
+3	my	reminder/cancel_reminder	I-reference
+4	reminders	reminder/cancel_reminder	O
+5	.	reminder/cancel_reminder	O
+
+# text = what alarms do I have set?
+# intent = alarm/show_alarms
+# slots:
+1	what	alarm/show_alarms	O
+2	alarms	alarm/show_alarms	O
+3	do	alarm/show_alarms	O
+4	I	alarm/show_alarms	O
+5	have	alarm/show_alarms	O
+6	set	alarm/show_alarms	O
+7	?	alarm/show_alarms	O
+
+# text = I need an alarm for 5pm to remind me to take my medicine
+# intent = alarm/set_alarm
+# slots: 16:23:datetime
+1	I	alarm/set_alarm	O
+2	need	alarm/set_alarm	O
+3	an	alarm/set_alarm	O
+4	alarm	alarm/set_alarm	O
+5	for	alarm/set_alarm	O
+6	5pm	alarm/set_alarm	B-datetime
+7	to	alarm/set_alarm	O
+8	remind	alarm/set_alarm	O
+9	me	alarm/set_alarm	O
+10	to	alarm/set_alarm	O
+11	take	alarm/set_alarm	B-reminder/todo
+12	my	alarm/set_alarm	I-reminder/todo
+13	medicine	alarm/set_alarm	I-reminder/todo
+
+# text = set alarm for every 3 minutes
+# intent = alarm/set_alarm
+# slots: 10:29:datetime
+1	set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	every	alarm/set_alarm	B-recurring_datetime
+5	3	alarm/set_alarm	I-recurring_datetime
+6	minutes	alarm/set_alarm	I-recurring_datetime
+
+# text = Is it going to storm today?
+# intent = weather/find
+# slots: 15:20:weather/attribute,21:26:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	storm	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# text = Cancel this afternoon's alarm.
+# intent = alarm/cancel_alarm
+# slots: 7:21:datetime
+1	Cancel	alarm/cancel_alarm	O
+2	this	alarm/cancel_alarm	B-datetime
+3	afternoon's	alarm/cancel_alarm	I-datetime
+4	alarm	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# text = Is it going to rain next week
+# intent = weather/find
+# slots: 15:19:weather/attribute,20:29:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-weather/attribute
+6	next	weather/find	B-datetime
+7	week	weather/find	I-datetime
+
+# text = What's next week's forecast?
+# intent = weather/find
+# slots: 7:16:datetime,19:27:weather/noun
+1	What's	weather/find	O
+2	next	weather/find	B-datetime
+3	week's	weather/find	I-datetime
+4	forecast	weather/find	O
+5	?	weather/find	O
+
+# text = Read me my reminders.
+# intent = reminder/show_reminders
+# slots: 11:20:reminder/noun
+1	Read	reminder/show_reminders	O
+2	me	reminder/show_reminders	O
+3	my	reminder/show_reminders	B-reference
+4	reminders	reminder/show_reminders	O
+5	.	reminder/show_reminders	O
+
+# text = Show all alarms
+# intent = alarm/show_alarms
+# slots:
+1	Show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
+
+# text = Alarm every five minutes for 20 minutes please
+# intent = alarm/set_alarm
+# slots: 6:39:datetime
+1	Alarm	alarm/set_alarm	O
+2	every	alarm/set_alarm	B-recurring_datetime
+3	five	alarm/set_alarm	I-recurring_datetime
+4	minutes	alarm/set_alarm	I-recurring_datetime
+5	for	alarm/set_alarm	I-recurring_datetime
+6	20	alarm/set_alarm	I-recurring_datetime
+7	minutes	alarm/set_alarm	I-recurring_datetime
+8	please	alarm/set_alarm	O
+
+# text = Change tomorrow mornings alarm to 6 am.
+# intent = alarm/modify_alarm
+# slots: 31:38:datetime
+1	Change	alarm/modify_alarm	O
+2	tomorrow	alarm/modify_alarm	B-datetime
+3	mornings	alarm/modify_alarm	I-datetime
+4	alarm	alarm/modify_alarm	O
+5	to	alarm/modify_alarm	O
+6	6	alarm/modify_alarm	B-datetime
+7	am	alarm/modify_alarm	I-datetime
+8	.	alarm/modify_alarm	O
+
+# text = cancel all reminders
+# intent = reminder/cancel_reminder
+# slots: 11:20:reminder/noun
+1	cancel	reminder/cancel_reminder	O
+2	all	reminder/cancel_reminder	B-reference
+3	reminders	reminder/cancel_reminder	O
+
+# text = Show me my alarms
+# intent = alarm/show_alarms
+# slots:
+1	Show	alarm/show_alarms	O
+2	me	alarm/show_alarms	O
+3	my	alarm/show_alarms	B-reference
+4	alarms	alarm/show_alarms	O
+
+# text = Cancel alarms
+# intent = alarm/cancel_alarm
+# slots:
+1	Cancel	alarm/cancel_alarm	O
+2	alarms	alarm/cancel_alarm	O
+
+# text = Set alarm for 6 am tomorrow
+# intent = alarm/set_alarm
+# slots: 10:27:datetime
+1	Set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	am	alarm/set_alarm	I-datetime
+6	tomorrow	alarm/set_alarm	I-datetime
+
+# text = Set alarm for 7 am tomorrow
+# intent = alarm/set_alarm
+# slots: 10:27:datetime
+1	Set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	7	alarm/set_alarm	B-datetime
+5	am	alarm/set_alarm	I-datetime
+6	tomorrow	alarm/set_alarm	I-datetime
+
+# text = set alarm for 6 am
+# intent = alarm/set_alarm
+# slots: 10:18:datetime
+1	set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	am	alarm/set_alarm	I-datetime
+
+# text = i need a reminder to pick Lisa up
+# intent = reminder/set_reminder
+# slots: 9:17:reminder/noun,21:33:reminder/todo
+1	i	reminder/set_reminder	O
+2	need	reminder/set_reminder	O
+3	a	reminder/set_reminder	O
+4	reminder	reminder/set_reminder	O
+5	to	reminder/set_reminder	O
+6	pick	reminder/set_reminder	B-reminder/todo
+7	Lisa	reminder/set_reminder	I-reminder/todo
+8	up	reminder/set_reminder	I-reminder/todo
+
+# text = show all alarms
+# intent = alarm/show_alarms
+# slots:
+1	show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
+
+# text = Turn off all alarms
+# intent = alarm/cancel_alarm
+# slots:
+1	Turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	all	alarm/cancel_alarm	B-reference
+4	alarms	alarm/cancel_alarm	O
+
+# text = What are my reminders?
+# intent = reminder/show_reminders
+# slots: 12:21:reminder/noun
+1	What	reminder/show_reminders	O
+2	are	reminder/show_reminders	O
+3	my	reminder/show_reminders	B-reference
+4	reminders	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# text = is it hot outside
+# intent = weather/find
+# slots: 6:9:weather/attribute,10:17:location
+1	is	weather/find	O
+2	it	weather/find	O
+3	hot	weather/find	B-weather/attribute
+4	outside	weather/find	B-location
+
+# text = Snooze alarm
+# intent = alarm/snooze_alarm
+# slots:
+1	Snooze	alarm/snooze_alarm	O
+2	alarm	alarm/snooze_alarm	O
+
+# text = alarm on
+# intent = alarm/set_alarm
+# slots:
+1	alarm	alarm/set_alarm	O
+2	on	alarm/set_alarm	O
+
+# text = Set an alarm for 6 am on Wed
+# intent = alarm/set_alarm
+# slots: 13:28:datetime
+1	Set	alarm/set_alarm	O
+2	an	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	for	alarm/set_alarm	O
+5	6	alarm/set_alarm	B-datetime
+6	am	alarm/set_alarm	I-datetime
+7	on	alarm/set_alarm	I-datetime
+8	Wed	alarm/set_alarm	I-datetime
+
+# text = remind me to submit my lesson plans every monday by the end of the day
+# intent = reminder/set_reminder
+# slots: 13:35:reminder/todo,36:70:reminder/recurring_period
+1	remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	submit	reminder/set_reminder	B-reminder/todo
+5	my	reminder/set_reminder	I-reminder/todo
+6	lesson	reminder/set_reminder	I-reminder/todo
+7	plans	reminder/set_reminder	I-reminder/todo
+8	every	reminder/set_reminder	B-recurring_datetime
+9	monday	reminder/set_reminder	I-recurring_datetime
+10	by	reminder/set_reminder	I-recurring_datetime
+11	the	reminder/set_reminder	I-recurring_datetime
+12	end	reminder/set_reminder	I-recurring_datetime
+13	of	reminder/set_reminder	I-recurring_datetime
+14	the	reminder/set_reminder	I-recurring_datetime
+15	day	reminder/set_reminder	I-recurring_datetime
+
+# text = how hot is it going to be today
+# intent = weather/find
+# slots: 4:7:weather/attribute,26:31:datetime
+1	how	weather/find	O
+2	hot	weather/find	B-weather/attribute
+3	is	weather/find	O
+4	it	weather/find	O
+5	going	weather/find	O
+6	to	weather/find	O
+7	be	weather/find	O
+8	today	weather/find	B-datetime
+
+# text = Clear all set alarms.
+# intent = alarm/cancel_alarm
+# slots:
+1	Clear	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	set	alarm/cancel_alarm	O
+4	alarms	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# text = Show all alarms
+# intent = alarm/show_alarms
+# slots:
+1	Show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
+
+# text = Will it be sunny today?
+# intent = weather/find
+# slots: 11:16:weather/attribute,17:22:datetime
+1	Will	weather/find	O
+2	it	weather/find	O
+3	be	weather/find	O
+4	sunny	weather/find	B-weather/attribute
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# text = What is the humidity level today
+# intent = weather/find
+# slots: 12:20:weather/attribute,27:32:datetime
+1	What	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	humidity	weather/find	B-weather/attribute
+5	level	weather/find	I-weather/attribute
+6	today	weather/find	B-datetime
+
+# text = Cancel all reminders
+# intent = reminder/cancel_reminder
+# slots: 11:20:reminder/noun
+1	Cancel	reminder/cancel_reminder	O
+2	all	reminder/cancel_reminder	B-reference
+3	reminders	reminder/cancel_reminder	O
+
+# text = set an alarm for fifteen minutes
+# intent = alarm/set_alarm
+# slots: 13:32:datetime
+1	set	alarm/set_alarm	O
+2	an	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	for	alarm/set_alarm	O
+5	fifteen	alarm/set_alarm	B-datetime
+6	minutes	alarm/set_alarm	I-datetime
+
+# text = Please set my alarm for 4am this Saturday.
+# intent = alarm/set_alarm
+# slots: 20:41:datetime
+1	Please	alarm/set_alarm	O
+2	set	alarm/set_alarm	O
+3	my	alarm/set_alarm	B-reference
+4	alarm	alarm/set_alarm	O
+5	for	alarm/set_alarm	O
+6	4am	alarm/set_alarm	B-datetime
+7	this	alarm/set_alarm	I-datetime
+8	Saturday	alarm/set_alarm	I-datetime
+9	.	alarm/set_alarm	O
+
+# text = Give me a reminder for house closing at 10am tomorrow.
+# intent = reminder/set_reminder
+# slots: 10:18:reminder/noun,23:36:reminder/todo,37:53:datetime
+1	Give	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	a	reminder/set_reminder	O
+4	reminder	reminder/set_reminder	O
+5	for	reminder/set_reminder	O
+6	house	reminder/set_reminder	B-reminder/todo
+7	closing	reminder/set_reminder	I-reminder/todo
+8	at	reminder/set_reminder	O
+9	10am	reminder/set_reminder	B-datetime
+10	tomorrow	reminder/set_reminder	I-datetime
+11	.	reminder/set_reminder	O
+
+# text = delete all alarms
+# intent = alarm/cancel_alarm
+# slots:
+1	delete	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# text = How many alarms do I have set for Sunday?
+# intent = alarm/show_alarms
+# slots: 30:40:datetime
+1	How	alarm/show_alarms	O
+2	many	alarm/show_alarms	O
+3	alarms	alarm/show_alarms	O
+4	do	alarm/show_alarms	O
+5	I	alarm/show_alarms	O
+6	have	alarm/show_alarms	O
+7	set	alarm/show_alarms	O
+8	for	alarm/show_alarms	O
+9	Sunday	alarm/show_alarms	B-datetime
+10	?	alarm/show_alarms	O
+
+# text = show all alarms
+# intent = alarm/show_alarms
+# slots:
+1	show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
+
+# text = Is it going to be sunny today?
+# intent = weather/find
+# slots: 18:23:weather/attribute,24:29:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	be	weather/find	O
+6	sunny	weather/find	B-weather/attribute
+7	today	weather/find	B-datetime
+8	?	weather/find	O
+
+# text = set alarm for 615am
+# intent = alarm/set_alarm
+# slots: 10:19:datetime
+1	set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	615am	alarm/set_alarm	B-datetime
+
+# text = Set two alarms for tomorrow morning
+# intent = alarm/set_alarm
+# slots: 15:35:datetime
+1	Set	alarm/set_alarm	O
+2	two	alarm/set_alarm	O
+3	alarms	alarm/set_alarm	O
+4	for	alarm/set_alarm	O
+5	tomorrow	alarm/set_alarm	B-datetime
+6	morning	alarm/set_alarm	I-datetime
+
+# text = Turn off all alarms
+# intent = alarm/cancel_alarm
+# slots:
+1	Turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	all	alarm/cancel_alarm	B-reference
+4	alarms	alarm/cancel_alarm	O
+
+# text = What is the temperature like in London right now?
+# intent = weather/find
+# slots: 12:23:weather/noun,32:38:location,45:48:datetime
+1	What	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	temperature	weather/find	B-weather/attribute
+5	like	weather/find	O
+6	in	weather/find	O
+7	London	weather/find	B-location
+8	right	weather/find	O
+9	now	weather/find	B-datetime
+10	?	weather/find	O
+
+# text = Cancel my last reminder
+# intent = reminder/cancel_reminder
+# slots: 10:14:reminder/reference,15:23:reminder/noun
+1	Cancel	reminder/cancel_reminder	O
+2	my	reminder/cancel_reminder	B-reference
+3	last	reminder/cancel_reminder	I-reference
+4	reminder	reminder/cancel_reminder	O
+
+# text = Set a reminder to go to the grocery store later
+# intent = reminder/set_reminder
+# slots: 6:14:reminder/noun,18:41:reminder/todo
+1	Set	reminder/set_reminder	O
+2	a	reminder/set_reminder	O
+3	reminder	reminder/set_reminder	O
+4	to	reminder/set_reminder	O
+5	go	reminder/set_reminder	B-reminder/todo
+6	to	reminder/set_reminder	I-reminder/todo
+7	the	reminder/set_reminder	I-reminder/todo
+8	grocery	reminder/set_reminder	I-reminder/todo
+9	store	reminder/set_reminder	I-reminder/todo
+10	later	reminder/set_reminder	B-datetime
+
+# text = What will be the heat index today?
+# intent = weather/find
+# slots: 17:27:weather/attribute,28:33:datetime
+1	What	weather/find	O
+2	will	weather/find	O
+3	be	weather/find	O
+4	the	weather/find	O
+5	heat	weather/find	B-weather/attribute
+6	index	weather/find	I-weather/attribute
+7	today	weather/find	B-datetime
+8	?	weather/find	O
+
+# text = How cold will it be today?
+# intent = weather/find
+# slots: 4:8:weather/attribute,20:25:datetime
+1	How	weather/find	O
+2	cold	weather/find	B-weather/attribute
+3	will	weather/find	O
+4	it	weather/find	O
+5	be	weather/find	O
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# text = will it snow today
+# intent = weather/find
+# slots: 8:12:weather/attribute,13:18:datetime
+1	will	weather/find	O
+2	it	weather/find	O
+3	snow	weather/find	B-weather/attribute
+4	today	weather/find	B-datetime
+
+# text = Set alarm for 5am
+# intent = alarm/set_alarm
+# slots: 10:17:datetime
+1	Set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	5am	alarm/set_alarm	B-datetime
+
+# text = turn off alarm
+# intent = alarm/cancel_alarm
+# slots:
+1	turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	alarm	alarm/cancel_alarm	O
+
+# text = cancel all alarms
+# intent = alarm/cancel_alarm
+# slots:
+1	cancel	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# text = Add reminder to swim at 11am tomorrow
+# intent = reminder/set_reminder
+# slots: 4:12:reminder/noun,16:20:reminder/todo,21:37:datetime
+1	Add	reminder/set_reminder	O
+2	reminder	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	swim	reminder/set_reminder	B-reminder/todo
+5	at	reminder/set_reminder	O
+6	11am	reminder/set_reminder	B-datetime
+7	tomorrow	reminder/set_reminder	I-datetime
+
+# text = Show my reminder
+# intent = reminder/show_reminders
+# slots: 5:7:reminder/reference,8:16:reminder/noun
+1	Show	reminder/show_reminders	O
+2	my	reminder/show_reminders	B-reference
+3	reminder	reminder/show_reminders	O
+
+# text = Cancel my alarm on Saturday
+# intent = alarm/cancel_alarm
+# slots: 16:27:datetime
+1	Cancel	alarm/cancel_alarm	O
+2	my	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	on	alarm/cancel_alarm	O
+5	Saturday	alarm/cancel_alarm	B-datetime
+
+# text = Is it cold out?
+# intent = weather/find
+# slots: 6:10:weather/attribute,11:14:location
+1	Is	weather/find	O
+2	it	weather/find	O
+3	cold	weather/find	B-weather/attribute
+4	out	weather/find	B-location
+5	?	weather/find	O
+
+# text = Is it humid today?
+# intent = weather/find
+# slots: 6:11:weather/attribute,12:17:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	humid	weather/find	B-weather/attribute
+4	today	weather/find	B-datetime
+5	?	weather/find	O
+
+# text = Set alarm every minute for 11 minutes
+# intent = alarm/set_alarm
+# slots: 10:37:datetime
+1	Set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	every	alarm/set_alarm	B-recurring_datetime
+4	minute	alarm/set_alarm	I-recurring_datetime
+5	for	alarm/set_alarm	I-recurring_datetime
+6	11	alarm/set_alarm	I-recurring_datetime
+7	minutes	alarm/set_alarm	I-recurring_datetime
+
+# text = Show my reminder
+# intent = reminder/show_reminders
+# slots: 5:7:reminder/reference,8:16:reminder/noun
+1	Show	reminder/show_reminders	O
+2	my	reminder/show_reminders	B-reference
+3	reminder	reminder/show_reminders	O
+
+# text = Is it going to be windy today?
+# intent = weather/find
+# slots: 18:23:weather/attribute,24:29:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	be	weather/find	O
+6	windy	weather/find	B-weather/attribute
+7	today	weather/find	B-datetime
+8	?	weather/find	O
+
+# text = Cancel tomorrow's reminders
+# intent = reminder/cancel_reminder
+# slots: 7:15:datetime,18:27:reminder/noun
+1	Cancel	reminder/cancel_reminder	O
+2	tomorrow's	reminder/cancel_reminder	B-datetime
+3	reminders	reminder/cancel_reminder	O
+
+# text = tell me the 3 day forecast
+# intent = weather/find
+# slots: 8:17:datetime,18:26:weather/noun
+1	tell	weather/find	O
+2	me	weather/find	O
+3	the	weather/find	O
+4	3	weather/find	B-datetime
+5	day	weather/find	I-datetime
+6	forecast	weather/find	O
+
+# text = how many inches of rain are we suppose to get tomorrow?
+# intent = weather/find
+# slots: 19:23:weather/attribute,46:54:datetime
+1	how	weather/find	O
+2	many	weather/find	O
+3	inches	weather/find	B-weather/attribute
+4	of	weather/find	I-weather/attribute
+5	rain	weather/find	I-weather/attribute
+6	are	weather/find	O
+7	we	weather/find	O
+8	suppose	weather/find	O
+9	to	weather/find	O
+10	get	weather/find	O
+11	tomorrow	weather/find	B-datetime
+12	?	weather/find	O
+
+# text = remind me about the wedding
+# intent = reminder/set_reminder
+# slots: 20:27:reminder/todo
+1	remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	about	reminder/set_reminder	O
+4	the	reminder/set_reminder	O
+5	wedding	reminder/set_reminder	B-reminder/todo
+
+# text = Snooze all alarms
+# intent = alarm/snooze_alarm
+# slots:
+1	Snooze	alarm/snooze_alarm	O
+2	all	alarm/snooze_alarm	B-reference
+3	alarms	alarm/snooze_alarm	O
+
+# text = When will it rain today?
+# intent = weather/find
+# slots: 13:17:weather/attribute,18:23:datetime
+1	When	weather/find	O
+2	will	weather/find	O
+3	it	weather/find	O
+4	rain	weather/find	B-weather/attribute
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# text = show all alarms
+# intent = alarm/show_alarms
+# slots:
+1	show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
+
+# text = Turn off all alarms
+# intent = alarm/cancel_alarm
+# slots:
+1	Turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	all	alarm/cancel_alarm	B-reference
+4	alarms	alarm/cancel_alarm	O
+
+# text = Is it going to rain today?
+# intent = weather/find
+# slots: 15:19:weather/attribute,20:25:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# text = Show all reminders for tomorrow
+# intent = reminder/show_reminders
+# slots: 9:18:reminder/noun,19:31:datetime
+1	Show	reminder/show_reminders	O
+2	all	reminder/show_reminders	B-reference
+3	reminders	reminder/show_reminders	O
+4	for	reminder/show_reminders	O
+5	tomorrow	reminder/show_reminders	B-datetime
+
+# text = cancel my alarm for tomorrow morning
+# intent = alarm/cancel_alarm
+# slots: 16:36:datetime
+1	cancel	alarm/cancel_alarm	O
+2	my	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	for	alarm/cancel_alarm	O
+5	tomorrow	alarm/cancel_alarm	B-datetime
+6	morning	alarm/cancel_alarm	I-datetime
+
+# text = How hot is it?
+# intent = weather/find
+# slots: 4:7:weather/attribute
+1	How	weather/find	O
+2	hot	weather/find	B-weather/attribute
+3	is	weather/find	O
+4	it	weather/find	O
+5	?	weather/find	O
+
+# text = remind me to buy milk tonight
+# intent = reminder/set_reminder
+# slots: 13:21:reminder/todo,22:29:datetime
+1	remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	buy	reminder/set_reminder	B-reminder/todo
+5	milk	reminder/set_reminder	I-reminder/todo
+6	tonight	reminder/set_reminder	B-datetime
+
+# text = Cancel all reminders
+# intent = reminder/cancel_reminder
+# slots: 11:20:reminder/noun
+1	Cancel	reminder/cancel_reminder	O
+2	all	reminder/cancel_reminder	B-reference
+3	reminders	reminder/cancel_reminder	O
+
+# text = Show all alarms
+# intent = alarm/show_alarms
+# slots:
+1	Show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
+
+# text = cancel my alarm for tomorrow morning
+# intent = alarm/cancel_alarm
+# slots: 16:36:datetime
+1	cancel	alarm/cancel_alarm	O
+2	my	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	for	alarm/cancel_alarm	O
+5	tomorrow	alarm/cancel_alarm	B-datetime
+6	morning	alarm/cancel_alarm	I-datetime
+
+# text = Will it be sunny tomorrow?
+# intent = weather/find
+# slots: 11:16:weather/attribute,17:25:datetime
+1	Will	weather/find	O
+2	it	weather/find	O
+3	be	weather/find	O
+4	sunny	weather/find	B-weather/attribute
+5	tomorrow	weather/find	B-datetime
+6	?	weather/find	O
+
+# text = Cancel alarm for tomorrow morning
+# intent = alarm/cancel_alarm
+# slots: 13:33:datetime
+1	Cancel	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+3	for	alarm/cancel_alarm	O
+4	tomorrow	alarm/cancel_alarm	B-datetime
+5	morning	alarm/cancel_alarm	I-datetime
+
+# text = show all reminders for tomorrow morning
+# intent = reminder/show_reminders
+# slots: 9:18:reminder/noun,19:39:datetime
+1	show	reminder/show_reminders	O
+2	all	reminder/show_reminders	O
+3	reminders	reminder/show_reminders	O
+4	for	reminder/show_reminders	O
+5	tomorrow	reminder/show_reminders	B-datetime
+6	morning	reminder/show_reminders	I-datetime
+
+# text = What is the humidity today?
+# intent = weather/find
+# slots: 12:20:weather/attribute,21:26:datetime
+1	What	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	humidity	weather/find	B-weather/attribute
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# text = When is it going to rain?
+# intent = weather/find
+# slots: 20:24:weather/attribute
+1	When	weather/find	O
+2	is	weather/find	O
+3	it	weather/find	O
+4	going	weather/find	O
+5	to	weather/find	O
+6	rain	weather/find	B-weather/attribute
+7	?	weather/find	O
+
+# text = How hot is it
+# intent = weather/find
+# slots: 4:7:weather/attribute
+1	How	weather/find	O
+2	hot	weather/find	B-weather/attribute
+3	is	weather/find	O
+4	it	weather/find	O
+
+# text = show me my reminders
+# intent = reminder/show_reminders
+# slots: 11:20:reminder/noun
+1	show	reminder/show_reminders	O
+2	me	reminder/show_reminders	O
+3	my	reminder/show_reminders	B-reference
+4	reminders	reminder/show_reminders	O
+
+# text = What is the 5 day forecast?
+# intent = weather/find
+# slots: 8:17:datetime,18:26:weather/noun
+1	What	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	5	weather/find	B-datetime
+5	day	weather/find	I-datetime
+6	forecast	weather/find	O
+7	?	weather/find	O
+
+# text = set alarm for 6 am
+# intent = alarm/set_alarm
+# slots: 10:18:datetime
+1	set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	am	alarm/set_alarm	I-datetime
+
+# text = Is it cold today?
+# intent = weather/find
+# slots: 6:10:weather/attribute,11:16:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	cold	weather/find	B-weather/attribute
+4	today	weather/find	B-datetime
+5	?	weather/find	O
+
+# text = Set a reminder to call my school on Monday at 4 PM
+# intent = reminder/set_reminder
+# slots: 6:14:reminder/noun,18:32:reminder/todo,33:50:datetime
+1	Set	reminder/set_reminder	O
+2	a	reminder/set_reminder	O
+3	reminder	reminder/set_reminder	O
+4	to	reminder/set_reminder	O
+5	call	reminder/set_reminder	B-reminder/todo
+6	my	reminder/set_reminder	I-reminder/todo
+7	school	reminder/set_reminder	I-reminder/todo
+8	on	reminder/set_reminder	O
+9	Monday	reminder/set_reminder	B-datetime
+10	at	reminder/set_reminder	I-datetime
+11	4	reminder/set_reminder	I-datetime
+12	PM	reminder/set_reminder	I-datetime
+
+# text = Delete my reminder for picking up Patrick from school tomorrow.
+# intent = reminder/cancel_reminder
+# slots: 10:18:reminder/noun,23:53:reminder/todo,54:62:datetime
+1	Delete	reminder/cancel_reminder	O
+2	my	reminder/cancel_reminder	B-reference
+3	reminder	reminder/cancel_reminder	O
+4	for	reminder/cancel_reminder	O
+5	picking	reminder/cancel_reminder	B-reminder/todo
+6	up	reminder/cancel_reminder	I-reminder/todo
+7	Patrick	reminder/cancel_reminder	I-reminder/todo
+8	from	reminder/cancel_reminder	I-reminder/todo
+9	school	reminder/cancel_reminder	I-reminder/todo
+10	tomorrow	reminder/cancel_reminder	B-datetime
+11	.	reminder/cancel_reminder	O
+
+# text = How cold will it be in the morning?
+# intent = weather/find
+# slots: 4:8:weather/attribute,20:34:datetime
+1	How	weather/find	O
+2	cold	weather/find	B-weather/attribute
+3	will	weather/find	O
+4	it	weather/find	O
+5	be	weather/find	O
+6	in	weather/find	O
+7	the	weather/find	O
+8	morning	weather/find	B-datetime
+9	?	weather/find	O
+
+# text = do i need an umbrella tomorrow
+# intent = weather/find
+# slots: 13:21:weather/attribute,22:30:datetime
+1	do	weather/find	O
+2	i	weather/find	O
+3	need	weather/find	O
+4	an	weather/find	O
+5	umbrella	weather/find	B-weather/attribute
+6	tomorrow	weather/find	B-datetime
+
+# text = Show my reminder
+# intent = reminder/show_reminders
+# slots: 5:7:reminder/reference,8:16:reminder/noun
+1	Show	reminder/show_reminders	O
+2	my	reminder/show_reminders	B-reference
+3	reminder	reminder/show_reminders	O
+
+# text = Stop alarm for 6:00 am
+# intent = alarm/cancel_alarm
+# slots: 11:22:datetime
+1	Stop	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+3	for	alarm/cancel_alarm	O
+4	6:00	alarm/cancel_alarm	B-datetime
+7	am	alarm/cancel_alarm	I-datetime
+
+# text = Cancel all alarms
+# intent = alarm/cancel_alarm
+# slots:
+1	Cancel	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# text = Will it be sunny today?
+# intent = weather/find
+# slots: 11:16:weather/attribute,17:22:datetime
+1	Will	weather/find	O
+2	it	weather/find	O
+3	be	weather/find	O
+4	sunny	weather/find	B-weather/attribute
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# text = what is the weather in london?
+# intent = weather/find
+# slots: 12:19:weather/noun,23:29:location
+1	what	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	weather	weather/find	O
+5	in	weather/find	O
+6	london	weather/find	B-location
+7	?	weather/find	O
+
+# text = What are my reminders?
+# intent = reminder/show_reminders
+# slots: 12:21:reminder/noun
+1	What	reminder/show_reminders	O
+2	are	reminder/show_reminders	O
+3	my	reminder/show_reminders	B-reference
+4	reminders	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# text = Cancel my reminder to text Dad
+# intent = reminder/cancel_reminder
+# slots: 10:18:reminder/noun,22:30:reminder/todo
+1	Cancel	reminder/cancel_reminder	O
+2	my	reminder/cancel_reminder	B-reference
+3	reminder	reminder/cancel_reminder	O
+4	to	reminder/cancel_reminder	O
+5	text	reminder/cancel_reminder	B-reminder/todo
+6	Dad	reminder/cancel_reminder	I-reminder/todo
+
+# text = set alarm for 6 am
+# intent = alarm/set_alarm
+# slots: 10:18:datetime
+1	set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	am	alarm/set_alarm	I-datetime
+
+# text = turn off the alarm
+# intent = alarm/cancel_alarm
+# slots:
+1	turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	the	alarm/cancel_alarm	O
+4	alarm	alarm/cancel_alarm	O
+
+# text = cancel the alarm
+# intent = alarm/cancel_alarm
+# slots:
+1	cancel	alarm/cancel_alarm	O
+2	the	alarm/cancel_alarm	O
+3	alarm	alarm/cancel_alarm	O
+
+# text = turn off alarm
+# intent = alarm/cancel_alarm
+# slots:
+1	turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	alarm	alarm/cancel_alarm	O
+
+# text = remind me to call mom today at 2 p.m.
+# intent = reminder/set_reminder
+# slots: 13:21:reminder/todo,22:36:datetime
+1	remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	call	reminder/set_reminder	B-reminder/todo
+5	mom	reminder/set_reminder	I-reminder/todo
+6	today	reminder/set_reminder	B-datetime
+7	at	reminder/set_reminder	I-datetime
+8	2	reminder/set_reminder	I-datetime
+9	p.m	reminder/set_reminder	I-datetime
+10	.	reminder/set_reminder	I-datetime
+
+# text = cancel all alarms
+# intent = alarm/cancel_alarm
+# slots:
+1	cancel	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# text = is it going to be hot tomorrow
+# intent = weather/find
+# slots: 18:21:weather/attribute,22:30:datetime
+1	is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	be	weather/find	O
+6	hot	weather/find	B-weather/attribute
+7	tomorrow	weather/find	B-datetime
+
+# text = is it cold out today?
+# intent = weather/find
+# slots: 6:10:weather/attribute,11:14:location,15:20:datetime
+1	is	weather/find	O
+2	it	weather/find	O
+3	cold	weather/find	B-weather/attribute
+4	out	weather/find	B-location
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# text = Set alarm for 5 pm tonight
+# intent = alarm/set_alarm
+# slots: 10:26:datetime
+1	Set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	5	alarm/set_alarm	B-datetime
+5	pm	alarm/set_alarm	I-datetime
+6	tonight	alarm/set_alarm	I-datetime
+
+# text = Will it rain this weekend?
+# intent = weather/find
+# slots: 8:12:weather/attribute,13:25:datetime
+1	Will	weather/find	O
+2	it	weather/find	O
+3	rain	weather/find	B-weather/attribute
+4	this	weather/find	B-datetime
+5	weekend	weather/find	I-datetime
+6	?	weather/find	O
+
+# text = is it going to rain today
+# intent = weather/find
+# slots: 15:19:weather/attribute,20:25:datetime
+1	is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+
+# text = set an alarm for monday at 3 am
+# intent = alarm/set_alarm
+# slots: 13:31:datetime
+1	set	alarm/set_alarm	O
+2	an	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	for	alarm/set_alarm	O
+5	monday	alarm/set_alarm	B-datetime
+6	at	alarm/set_alarm	I-datetime
+7	3	alarm/set_alarm	I-datetime
+8	am	alarm/set_alarm	I-datetime
+
+# text = alarm on
+# intent = alarm/set_alarm
+# slots:
+1	alarm	alarm/set_alarm	O
+2	on	alarm/set_alarm	O
+
+# text = Is it going to rain on Saturday?
+# intent = weather/find
+# slots: 15:19:weather/attribute,20:31:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-weather/attribute
+6	on	weather/find	O
+7	Saturday	weather/find	B-datetime
+8	?	weather/find	O
+
+# text = Set alarm for 5 am
+# intent = alarm/set_alarm
+# slots: 10:18:datetime
+1	Set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	5	alarm/set_alarm	B-datetime
+5	am	alarm/set_alarm	I-datetime
+
+# text = Will I need a coat today?
+# intent = weather/find
+# slots: 14:18:weather/attribute,19:24:datetime
+1	Will	weather/find	O
+2	I	weather/find	O
+3	need	weather/find	O
+4	a	weather/find	O
+5	coat	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# text = turn off alarm
+# intent = alarm/cancel_alarm
+# slots:
+1	turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	alarm	alarm/cancel_alarm	O
+
+# text = What weather warnings do I have?
+# intent = weather/find
+# slots: 5:21:weather/noun
+1	What	weather/find	O
+2	weather	weather/find	O
+3	warnings	weather/find	B-weather/attribute
+4	do	weather/find	O
+5	I	weather/find	O
+6	have	weather/find	O
+7	?	weather/find	O
+
+# text = Cancel the reminder for the meeting at the lodge
+# intent = reminder/cancel_reminder
+# slots: 11:19:reminder/noun,28:48:reminder/todo
+1	Cancel	reminder/cancel_reminder	O
+2	the	reminder/cancel_reminder	O
+3	reminder	reminder/cancel_reminder	O
+4	for	reminder/cancel_reminder	O
+5	the	reminder/cancel_reminder	O
+6	meeting	reminder/cancel_reminder	B-reminder/todo
+7	at	reminder/cancel_reminder	I-reminder/todo
+8	the	reminder/cancel_reminder	I-reminder/todo
+9	lodge	reminder/cancel_reminder	I-reminder/todo
+
+# text = Should I wear a coat today
+# intent = weather/find
+# slots: 16:20:weather/attribute,21:26:datetime
+1	Should	weather/find	O
+2	I	weather/find	O
+3	wear	weather/find	O
+4	a	weather/find	O
+5	coat	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+
+# text = Turn off all alarms.
+# intent = alarm/cancel_alarm
+# slots:
+1	Turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	all	alarm/cancel_alarm	B-reference
+4	alarms	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# text = show all alarms
+# intent = alarm/show_alarms
+# slots:
+1	show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
+
+# text = Make a new alarm for Thursday at 1pm.
+# intent = alarm/set_alarm
+# slots: 17:36:datetime
+1	Make	alarm/set_alarm	O
+2	a	alarm/set_alarm	O
+3	new	alarm/set_alarm	O
+4	alarm	alarm/set_alarm	O
+5	for	alarm/set_alarm	O
+6	Thursday	alarm/set_alarm	B-datetime
+7	at	alarm/set_alarm	I-datetime
+8	1pm	alarm/set_alarm	I-datetime
+9	.	alarm/set_alarm	O
+
+# text = Remind me to go to the dentist next Monday.
+# intent = reminder/set_reminder
+# slots: 13:30:reminder/todo,31:42:datetime
+1	Remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	go	reminder/set_reminder	B-reminder/todo
+5	to	reminder/set_reminder	I-reminder/todo
+6	the	reminder/set_reminder	I-reminder/todo
+7	dentist	reminder/set_reminder	I-reminder/todo
+8	next	reminder/set_reminder	B-datetime
+9	Monday	reminder/set_reminder	I-datetime
+10	.	reminder/set_reminder	O
+
+# text = should I bring an umbrella today
+# intent = weather/find
+# slots: 18:26:weather/attribute,27:32:datetime
+1	should	weather/find	O
+2	I	weather/find	O
+3	bring	weather/find	O
+4	an	weather/find	O
+5	umbrella	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+
+# text = how is the weather this week?
+# intent = weather/find
+# slots: 11:18:weather/noun,19:28:datetime
+1	how	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	weather	weather/find	O
+5	this	weather/find	B-datetime
+6	week	weather/find	I-datetime
+7	?	weather/find	O
+
+# text = is it below freezing today?
+# intent = weather/find
+# slots: 12:20:weather/attribute,21:26:datetime
+1	is	weather/find	O
+2	it	weather/find	O
+3	below	weather/find	B-weather/attribute
+4	freezing	weather/find	I-weather/attribute
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# text = Delete all reminders
+# intent = reminder/cancel_reminder
+# slots: 11:20:reminder/noun
+1	Delete	reminder/cancel_reminder	O
+2	all	reminder/cancel_reminder	B-reference
+3	reminders	reminder/cancel_reminder	O
+
+# text = Is it going to rain today?
+# intent = weather/find
+# slots: 15:19:weather/attribute,20:25:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# text = Will it rain this weekend?
+# intent = weather/find
+# slots: 8:12:weather/attribute,13:25:datetime
+1	Will	weather/find	O
+2	it	weather/find	O
+3	rain	weather/find	B-weather/attribute
+4	this	weather/find	B-datetime
+5	weekend	weather/find	I-datetime
+6	?	weather/find	O
+
+# text = Set reminder for mom's visit next week
+# intent = reminder/set_reminder
+# slots: 4:12:reminder/noun,17:28:reminder/todo,29:38:datetime
+1	Set	reminder/set_reminder	O
+2	reminder	reminder/set_reminder	O
+3	for	reminder/set_reminder	O
+4	mom's	reminder/set_reminder	B-reminder/todo
+5	visit	reminder/set_reminder	I-reminder/todo
+6	next	reminder/set_reminder	B-datetime
+7	week	reminder/set_reminder	I-datetime
+
+# text = Will it snow tomorrow?
+# intent = weather/find
+# slots: 8:12:weather/attribute,13:21:datetime
+1	Will	weather/find	O
+2	it	weather/find	O
+3	snow	weather/find	B-weather/attribute
+4	tomorrow	weather/find	B-datetime
+5	?	weather/find	O
+
+# text = show all reminders
+# intent = reminder/show_reminders
+# slots: 5:8:reminder/reference,9:18:reminder/noun
+1	show	reminder/show_reminders	O
+2	all	reminder/show_reminders	B-reference
+3	reminders	reminder/show_reminders	O
+
+# text = Do I need a coat today?
+# intent = weather/find
+# slots: 12:16:weather/attribute,17:22:datetime
+1	Do	weather/find	O
+2	I	weather/find	O
+3	need	weather/find	O
+4	a	weather/find	O
+5	coat	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# text = is it going to snow thursday
+# intent = weather/find
+# slots: 15:19:weather/attribute,20:28:datetime
+1	is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	snow	weather/find	B-weather/attribute
+6	thursday	weather/find	B-datetime
+
+# text = Remind me to buy coffee at Starbucks this afternoon
+# intent = reminder/set_reminder
+# slots: 13:36:reminder/todo,37:51:datetime
+1	Remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	buy	reminder/set_reminder	B-reminder/todo
+5	coffee	reminder/set_reminder	I-reminder/todo
+6	at	reminder/set_reminder	I-reminder/todo
+7	Starbucks	reminder/set_reminder	I-reminder/todo
+8	this	reminder/set_reminder	B-datetime
+9	afternoon	reminder/set_reminder	I-datetime
+
+# text = Set an alarm for every ten minutes, starting at 5:30 and ending at 6 am.
+# intent = alarm/set_alarm
+# slots: 13:34:datetime,45:52:datetime,64:71:datetime
+1	Set	alarm/set_alarm	O
+2	an	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	for	alarm/set_alarm	O
+5	every	alarm/set_alarm	B-recurring_datetime
+6	ten	alarm/set_alarm	I-recurring_datetime
+7	minutes	alarm/set_alarm	I-recurring_datetime
+8	,	alarm/set_alarm	I-recurring_datetime
+9	starting	alarm/set_alarm	I-recurring_datetime
+10	at	alarm/set_alarm	I-recurring_datetime
+11	5:30	alarm/set_alarm	I-recurring_datetime
+12	and	alarm/set_alarm	I-recurring_datetime
+13	ending	alarm/set_alarm	I-recurring_datetime
+14	at	alarm/set_alarm	I-recurring_datetime
+15	6	alarm/set_alarm	I-recurring_datetime
+16	am	alarm/set_alarm	I-recurring_datetime
+17	.	alarm/set_alarm	O
+
+# text = Is it going to rain on Saturday?
+# intent = weather/find
+# slots: 15:19:weather/attribute,20:31:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-weather/attribute
+6	on	weather/find	O
+7	Saturday	weather/find	B-datetime
+8	?	weather/find	O
+
+# text = Set eh alarm to 7:20am for the shoe release.
+# intent = alarm/set_alarm
+# slots: 13:22:datetime
+1	Set	alarm/set_alarm	O
+2	eh	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	to	alarm/set_alarm	O
+5	7:20	alarm/set_alarm	B-datetime
+6	am	alarm/set_alarm	I-datetime
+7	for	alarm/set_alarm	O
+8	the	alarm/set_alarm	O
+9	shoe	alarm/set_alarm	B-reminder/todo
+10	release	alarm/set_alarm	I-reminder/todo
+11	.	alarm/set_alarm	O
+
+# text = Will there be storms in Bordentown today
+# intent = weather/find
+# slots: 14:20:weather/attribute,24:34:location,35:40:datetime
+1	Will	weather/find	O
+2	there	weather/find	O
+3	be	weather/find	O
+4	storms	weather/find	B-weather/attribute
+5	in	weather/find	O
+6	Bordentown	weather/find	B-location
+7	today	weather/find	B-datetime
+
+# text = what is the current temperature
+# intent = weather/find
+# slots: 8:19:datetime,20:31:weather/noun
+1	what	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	current	weather/find	B-datetime
+5	temperature	weather/find	B-weather/attribute
+
+# text = remind me to make Dan's lunch at 7:30am tomorrow.
+# intent = reminder/set_reminder
+# slots: 13:29:reminder/todo,30:48:datetime
+1	remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	make	reminder/set_reminder	B-reminder/todo
+5	Dan's	reminder/set_reminder	I-reminder/todo
+6	lunch	reminder/set_reminder	I-reminder/todo
+7	at	reminder/set_reminder	O
+8	7:30	reminder/set_reminder	B-datetime
+9	am	reminder/set_reminder	I-datetime
+10	tomorrow	reminder/set_reminder	I-datetime
+11	.	reminder/set_reminder	O
+
+# text = Set alarm for 6:30am tomorrow.
+# intent = alarm/set_alarm
+# slots: 10:29:datetime
+1	Set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	6:30	alarm/set_alarm	B-datetime
+5	am	alarm/set_alarm	I-datetime
+6	tomorrow	alarm/set_alarm	I-datetime
+7	.	alarm/set_alarm	O
+
+# text = Do I have any reminders set?
+# intent = reminder/show_reminders
+# slots: 14:23:reminder/noun
+1	Do	reminder/show_reminders	O
+2	I	reminder/show_reminders	O
+3	have	reminder/show_reminders	O
+4	any	reminder/show_reminders	O
+5	reminders	reminder/show_reminders	O
+6	set	reminder/show_reminders	O
+7	?	reminder/show_reminders	O
+
+# text = Is my dentist appointment in my reminder ?
+# intent = reminder/show_reminders
+# slots: 6:25:reminder/todo,32:40:reminder/noun
+1	Is	reminder/show_reminders	O
+2	my	reminder/show_reminders	B-reminder/todo
+3	dentist	reminder/show_reminders	I-reminder/todo
+4	appointment	reminder/show_reminders	I-reminder/todo
+5	in	reminder/show_reminders	O
+6	my	reminder/show_reminders	B-reference
+7	reminder	reminder/show_reminders	O
+8	?	reminder/show_reminders	O
+
+# text = when will it stop raining?
+# intent = weather/find
+# slots: 18:25:weather/attribute
+1	when	weather/find	O
+2	will	weather/find	O
+3	it	weather/find	O
+4	stop	weather/find	O
+5	raining	weather/find	B-weather/attribute
+6	?	weather/find	O
+
+# text = Is it going to snow this week?
+# intent = weather/find
+# slots: 15:19:weather/attribute,20:29:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	snow	weather/find	B-weather/attribute
+6	this	weather/find	B-datetime
+7	week	weather/find	I-datetime
+8	?	weather/find	O
+
+# text = turn off alarm
+# intent = alarm/cancel_alarm
+# slots:
+1	turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	alarm	alarm/cancel_alarm	O
+
+# text = I would give Half a Life 3 out of 6
+# intent = RateBook
+1	I	RateBook	O
+2	would	RateBook	O
+3	give	RateBook	O
+4	Half	RateBook	B-object_name
+5	a	RateBook	I-object_name
+6	Life	RateBook	I-object_name
+7	3	RateBook	B-rating_value
+8	out	RateBook	O
+9	of	RateBook	O
+10	6	RateBook	B-best_rating
+
+# text = Play some Mf Doom from the sixties on pandora .
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	some	PlayMusic	O
+3	Mf	PlayMusic	B-artist
+4	Doom	PlayMusic	I-artist
+5	from	PlayMusic	O
+6	the	PlayMusic	O
+7	sixties	PlayMusic	B-datetime
+8	on	PlayMusic	O
+9	pandora	PlayMusic	B-service
+10	.	PlayMusic	O
+
+# text = Search for Chasing Fortune a TV series .
+# intent = SearchCreativeWork
+1	Search	SearchCreativeWork	O
+2	for	SearchCreativeWork	O
+3	Chasing	SearchCreativeWork	B-object_name
+4	Fortune	SearchCreativeWork	I-object_name
+5	a	SearchCreativeWork	O
+6	TV	SearchCreativeWork	B-object_type
+7	series	SearchCreativeWork	I-object_type
+8	.	SearchCreativeWork	O
+
+# text = Play shadowplay by Dana on Deezer .
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	shadowplay	PlayMusic	B-track
+3	by	PlayMusic	O
+4	Dana	PlayMusic	B-artist
+5	on	PlayMusic	O
+6	Deezer	PlayMusic	B-service
+7	.	PlayMusic	O
+
+# text = me and imelda want a reservation in Missouri at seven am
+# intent = BookRestaurant
+1	me	BookRestaurant	B-party_size_description
+2	and	BookRestaurant	I-party_size_description
+3	imelda	BookRestaurant	I-party_size_description
+4	want	BookRestaurant	O
+5	a	BookRestaurant	O
+6	reservation	BookRestaurant	O
+7	in	BookRestaurant	O
+8	Missouri	BookRestaurant	B-location
+9	at	BookRestaurant	O
+10	seven	BookRestaurant	B-datetime
+11	am	BookRestaurant	I-datetime
+
+# text = add bob klose to la mejor música para tus fiestas
+# intent = AddToPlaylist
+1	add	AddToPlaylist	O
+2	bob	AddToPlaylist	B-artist
+3	klose	AddToPlaylist	I-artist
+4	to	AddToPlaylist	O
+5	la	AddToPlaylist	B-playlist
+6	mejor	AddToPlaylist	I-playlist
+7	música	AddToPlaylist	I-playlist
+8	para	AddToPlaylist	I-playlist
+9	tus	AddToPlaylist	I-playlist
+10	fiestas	AddToPlaylist	I-playlist
+
+# text = play Luis Alfonzo Larrain from 1995
+# intent = PlayMusic
+1	play	PlayMusic	O
+2	Luis	PlayMusic	B-artist
+3	Alfonzo	PlayMusic	I-artist
+4	Larrain	PlayMusic	I-artist
+5	from	PlayMusic	O
+6	1995	PlayMusic	B-datetime
+
+# text = What will the weather be like in the Bahamas eleven years and a half from now
+# intent = weather/find
+1	What	weather/find	O
+2	will	weather/find	O
+3	the	weather/find	O
+4	weather	weather/find	O
+5	be	weather/find	O
+6	like	weather/find	O
+7	in	weather/find	O
+8	the	weather/find	O
+9	Bahamas	weather/find	B-location
+10	eleven	weather/find	B-datetime
+11	years	weather/find	I-datetime
+12	and	weather/find	I-datetime
+13	a	weather/find	I-datetime
+14	half	weather/find	I-datetime
+15	from	weather/find	I-datetime
+16	now	weather/find	I-datetime
+
+# text = What will the weather be like in Arizona on october the 3rd
+# intent = weather/find
+1	What	weather/find	O
+2	will	weather/find	O
+3	the	weather/find	O
+4	weather	weather/find	O
+5	be	weather/find	O
+6	like	weather/find	O
+7	in	weather/find	O
+8	Arizona	weather/find	B-location
+9	on	weather/find	O
+10	october	weather/find	B-datetime
+11	the	weather/find	I-datetime
+12	3rd	weather/find	I-datetime
+
+# text = Play opera music on google music
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	opera	PlayMusic	B-genre
+3	music	PlayMusic	O
+4	on	PlayMusic	O
+5	google	PlayMusic	B-service
+6	music	PlayMusic	I-service
+
+# text = find Vegucated starting at zero pm
+# intent = SearchScreeningEvent
+1	find	SearchScreeningEvent	O
+2	Vegucated	SearchScreeningEvent	B-movie_name
+3	starting	SearchScreeningEvent	O
+4	at	SearchScreeningEvent	O
+5	zero	SearchScreeningEvent	B-datetime
+6	pm	SearchScreeningEvent	I-datetime
+
+# text = Give the current novel a 3 out of 6 rating
+# intent = RateBook
+1	Give	RateBook	O
+2	the	RateBook	O
+3	current	RateBook	B-object_select
+4	novel	RateBook	B-object_type
+5	a	RateBook	O
+6	3	RateBook	B-rating_value
+7	out	RateBook	O
+8	of	RateBook	O
+9	6	RateBook	B-best_rating
+10	rating	RateBook	O
+
+# text = I'd like to add this album to funtime .
+# intent = AddToPlaylist
+1	I'd	AddToPlaylist	O
+2	like	AddToPlaylist	O
+3	to	AddToPlaylist	O
+4	add	AddToPlaylist	O
+5	this	AddToPlaylist	O
+6	album	AddToPlaylist	B-music_item
+7	to	AddToPlaylist	O
+8	funtime	AddToPlaylist	B-playlist
+9	.	AddToPlaylist	O
+
+# text = I need a table for 4 at a restaurant around 0 AM .
+# intent = BookRestaurant
+1	I	BookRestaurant	O
+2	need	BookRestaurant	O
+3	a	BookRestaurant	O
+4	table	BookRestaurant	O
+5	for	BookRestaurant	O
+6	4	BookRestaurant	B-party_size_number
+7	at	BookRestaurant	O
+8	a	BookRestaurant	O
+9	restaurant	BookRestaurant	B-restaurant_type
+10	around	BookRestaurant	O
+11	0	BookRestaurant	B-datetime
+12	AM	BookRestaurant	I-datetime
+13	.	BookRestaurant	O
+
+# text = find the picture Louder Than Bombs
+# intent = SearchCreativeWork
+1	find	SearchCreativeWork	O
+2	the	SearchCreativeWork	O
+3	picture	SearchCreativeWork	B-object_type
+4	Louder	SearchCreativeWork	B-object_name
+5	Than	SearchCreativeWork	I-object_name
+6	Bombs	SearchCreativeWork	I-object_name
+
+# text = Give 2 out of 6 points to A Tale of Time City
+# intent = RateBook
+1	Give	RateBook	O
+2	2	RateBook	B-rating_value
+3	out	RateBook	O
+4	of	RateBook	O
+5	6	RateBook	B-best_rating
+6	points	RateBook	B-rating_unit
+7	to	RateBook	O
+8	A	RateBook	B-object_name
+9	Tale	RateBook	I-object_name
+10	of	RateBook	I-object_name
+11	Time	RateBook	I-object_name
+12	City	RateBook	I-object_name
+
+# text = add this current book five stars
+# intent = RateBook
+1	add	RateBook	O
+2	this	RateBook	O
+3	current	RateBook	B-object_select
+4	book	RateBook	B-object_type
+5	five	RateBook	B-rating_value
+6	stars	RateBook	B-rating_unit
+
+# text = add track 70s smash hits to my
+# intent = AddToPlaylist
+1	add	AddToPlaylist	O
+2	track	AddToPlaylist	B-music_item
+3	70s	AddToPlaylist	B-playlist
+4	smash	AddToPlaylist	I-playlist
+5	hits	AddToPlaylist	I-playlist
+6	to	AddToPlaylist	O
+7	my	AddToPlaylist	B-reference
+
+# text = book near Montana restaurant serving sri lankan food for 6 that is highly rated on tues.
+# intent = BookRestaurant
+1	book	BookRestaurant	O
+2	near	BookRestaurant	B-location
+3	Montana	BookRestaurant	B-location
+4	restaurant	BookRestaurant	B-restaurant_type
+5	serving	BookRestaurant	O
+6	sri	BookRestaurant	B-cuisine
+7	lankan	BookRestaurant	I-cuisine
+8	food	BookRestaurant	O
+9	for	BookRestaurant	O
+10	6	BookRestaurant	B-party_size_number
+11	that	BookRestaurant	O
+12	is	BookRestaurant	O
+13	highly	BookRestaurant	B-sort
+14	rated	BookRestaurant	I-sort
+15	on	BookRestaurant	O
+16	tues.	BookRestaurant	B-datetime
+
+# text = Book me a lunch at Boreas for a party of 8
+# intent = BookRestaurant
+1	Book	BookRestaurant	O
+2	me	BookRestaurant	O
+3	a	BookRestaurant	O
+4	lunch	BookRestaurant	B-datetime
+5	at	BookRestaurant	O
+6	Boreas	BookRestaurant	B-restaurant_name
+7	for	BookRestaurant	O
+8	a	BookRestaurant	O
+9	party	BookRestaurant	O
+10	of	BookRestaurant	O
+11	8	BookRestaurant	B-party_size_number
+
+# text = Please put another tune into the laundry playlist.
+# intent = AddToPlaylist
+1	Please	AddToPlaylist	O
+2	put	AddToPlaylist	O
+3	another	AddToPlaylist	O
+4	tune	AddToPlaylist	B-music_item
+5	into	AddToPlaylist	O
+6	the	AddToPlaylist	O
+7	laundry	AddToPlaylist	B-playlist
+8	playlist.	AddToPlaylist	O
+
+# text = what is the PW forecast for stormy weather
+# intent = weather/find
+1	what	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	PW	weather/find	B-location
+5	forecast	weather/find	O
+6	for	weather/find	O
+7	stormy	weather/find	B-condition_description
+8	weather	weather/find	O
+
+# text = What is the predicted weather for my current spot next month ?
+# intent = weather/find
+1	What	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	predicted	weather/find	O
+5	weather	weather/find	O
+6	for	weather/find	O
+7	my	weather/find	O
+8	current	weather/find	B-location
+9	spot	weather/find	I-location
+10	next	weather/find	B-datetime
+11	month	weather/find	I-datetime
+12	?	weather/find	O
+
+# text = Book a reservation for 1 on march 17
+# intent = BookRestaurant
+1	Book	BookRestaurant	O
+2	a	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	for	BookRestaurant	O
+5	1	BookRestaurant	B-party_size_number
+6	on	BookRestaurant	O
+7	march	BookRestaurant	B-datetime
+8	17	BookRestaurant	I-datetime
+
+# text = The current album gets three out of 6 points
+# intent = RateBook
+1	The	RateBook	O
+2	current	RateBook	B-object_select
+3	album	RateBook	B-object_type
+4	gets	RateBook	O
+5	three	RateBook	B-rating_value
+6	out	RateBook	O
+7	of	RateBook	O
+8	6	RateBook	B-best_rating
+9	points	RateBook	B-rating_unit
+
+# text = Add the Nastya Kamenskih song to my The Martin Garrix Show playlist.
+# intent = AddToPlaylist
+1	Add	AddToPlaylist	O
+2	the	AddToPlaylist	O
+3	Nastya	AddToPlaylist	B-artist
+4	Kamenskih	AddToPlaylist	I-artist
+5	song	AddToPlaylist	B-music_item
+6	to	AddToPlaylist	O
+7	my	AddToPlaylist	B-reference
+8	The	AddToPlaylist	B-playlist
+9	Martin	AddToPlaylist	I-playlist
+10	Garrix	AddToPlaylist	I-playlist
+11	Show	AddToPlaylist	I-playlist
+12	playlist.	AddToPlaylist	O
+
+# text = Wish to hear the album Since I Saw You Last
+# intent = SearchCreativeWork
+1	Wish	SearchCreativeWork	O
+2	to	SearchCreativeWork	O
+3	hear	SearchCreativeWork	O
+4	the	SearchCreativeWork	O
+5	album	SearchCreativeWork	B-object_type
+6	Since	SearchCreativeWork	B-object_name
+7	I	SearchCreativeWork	I-object_name
+8	Saw	SearchCreativeWork	I-object_name
+9	You	SearchCreativeWork	I-object_name
+10	Last	SearchCreativeWork	I-object_name
+
+# text = play top tunes by Joseph Utsler
+# intent = PlayMusic
+1	play	PlayMusic	O
+2	top	PlayMusic	B-sort
+3	tunes	PlayMusic	O
+4	by	PlayMusic	O
+5	Joseph	PlayMusic	B-artist
+6	Utsler	PlayMusic	I-artist
+
+# text = Find the schedule for Ghost World .
+# intent = SearchScreeningEvent
+1	Find	SearchScreeningEvent	O
+2	the	SearchScreeningEvent	O
+3	schedule	SearchScreeningEvent	B-object_type
+4	for	SearchScreeningEvent	O
+5	Ghost	SearchScreeningEvent	B-movie_name
+6	World	SearchScreeningEvent	I-movie_name
+7	.	SearchScreeningEvent	O
+
+# text = I want to listen to a concerto from Timour Moutsouraev .
+# intent = PlayMusic
+1	I	PlayMusic	O
+2	want	PlayMusic	O
+3	to	PlayMusic	O
+4	listen	PlayMusic	O
+5	to	PlayMusic	O
+6	a	PlayMusic	O
+7	concerto	PlayMusic	B-music_item
+8	from	PlayMusic	O
+9	Timour	PlayMusic	B-artist
+10	Moutsouraev	PlayMusic	I-artist
+11	.	PlayMusic	O
+
+# text = play the album Everybody Happy by Lee Aaron
+# intent = PlayMusic
+1	play	PlayMusic	O
+2	the	PlayMusic	O
+3	album	PlayMusic	B-music_item
+4	Everybody	PlayMusic	B-album
+5	Happy	PlayMusic	I-album
+6	by	PlayMusic	O
+7	Lee	PlayMusic	B-artist
+8	Aaron	PlayMusic	I-artist
+
+# text = play Fereydoun Farrokhzad best track
+# intent = PlayMusic
+1	play	PlayMusic	O
+2	Fereydoun	PlayMusic	B-artist
+3	Farrokhzad	PlayMusic	I-artist
+4	best	PlayMusic	B-sort
+5	track	PlayMusic	B-music_item
+
+# text = rate the current book three stars
+# intent = RateBook
+1	rate	RateBook	O
+2	the	RateBook	O
+3	current	RateBook	B-object_select
+4	book	RateBook	B-object_type
+5	three	RateBook	B-rating_value
+6	stars	RateBook	B-rating_unit
+
+# text = What will the weather be in Meeres-Nationalpark Insel Bastimentos at twelve PM ?
+# intent = weather/find
+1	What	weather/find	O
+2	will	weather/find	O
+3	the	weather/find	O
+4	weather	weather/find	O
+5	be	weather/find	O
+6	in	weather/find	O
+7	Meeres-Nationalpark	weather/find	B-location
+8	Insel	weather/find	I-location
+9	Bastimentos	weather/find	I-location
+10	at	weather/find	O
+11	twelve	weather/find	B-datetime
+12	PM	weather/find	I-datetime
+13	?	weather/find	O
+
+# text = Book a table for 10 people at a restaurant which offers internet .
+# intent = BookRestaurant
+1	Book	BookRestaurant	O
+2	a	BookRestaurant	O
+3	table	BookRestaurant	O
+4	for	BookRestaurant	O
+5	10	BookRestaurant	B-party_size_number
+6	people	BookRestaurant	O
+7	at	BookRestaurant	O
+8	a	BookRestaurant	O
+9	restaurant	BookRestaurant	B-restaurant_type
+10	which	BookRestaurant	O
+11	offers	BookRestaurant	O
+12	internet	BookRestaurant	B-facility
+13	.	BookRestaurant	O
+
+# text = give five points to The Tenor Wore Tapshoes
+# intent = RateBook
+1	give	RateBook	O
+2	five	RateBook	B-rating_value
+3	points	RateBook	B-rating_unit
+4	to	RateBook	O
+5	The	RateBook	B-object_name
+6	Tenor	RateBook	I-object_name
+7	Wore	RateBook	I-object_name
+8	Tapshoes	RateBook	I-object_name
+
+# text = Play a tune by Houston on Spotify
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	a	PlayMusic	O
+3	tune	PlayMusic	B-music_item
+4	by	PlayMusic	O
+5	Houston	PlayMusic	B-artist
+6	on	PlayMusic	O
+7	Spotify	PlayMusic	B-service
+
+# text = find a movie theatre with Life and Death
+# intent = SearchScreeningEvent
+1	find	SearchScreeningEvent	O
+2	a	SearchScreeningEvent	O
+3	movie	SearchScreeningEvent	B-object_location_type
+4	theatre	SearchScreeningEvent	I-object_location_type
+5	with	SearchScreeningEvent	O
+6	Life	SearchScreeningEvent	B-movie_name
+7	and	SearchScreeningEvent	I-movie_name
+8	Death	SearchScreeningEvent	I-movie_name
+
+# text = Play music from the playlist Get Your Mind Right
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	music	PlayMusic	O
+3	from	PlayMusic	O
+4	the	PlayMusic	O
+5	playlist	PlayMusic	O
+6	Get	PlayMusic	B-playlist
+7	Your	PlayMusic	I-playlist
+8	Mind	PlayMusic	I-playlist
+9	Right	PlayMusic	I-playlist
+
+# text = book a table today at a steakhouse for eight that serves sashimi
+# intent = BookRestaurant
+1	book	BookRestaurant	O
+2	a	BookRestaurant	O
+3	table	BookRestaurant	O
+4	today	BookRestaurant	B-datetime
+5	at	BookRestaurant	O
+6	a	BookRestaurant	O
+7	steakhouse	BookRestaurant	B-restaurant_type
+8	for	BookRestaurant	O
+9	eight	BookRestaurant	B-party_size_number
+10	that	BookRestaurant	O
+11	serves	BookRestaurant	O
+12	sashimi	BookRestaurant	B-served_dish
+
+# text = find animated movies at Caribbean Cinemas
+# intent = SearchScreeningEvent
+1	find	SearchScreeningEvent	O
+2	animated	SearchScreeningEvent	B-movie_type
+3	movies	SearchScreeningEvent	I-movie_type
+4	at	SearchScreeningEvent	O
+5	Caribbean	SearchScreeningEvent	B-location
+6	Cinemas	SearchScreeningEvent	I-location
+
+# text = Will there be a storm nearby
+# intent = weather/find
+1	Will	weather/find	O
+2	there	weather/find	O
+3	be	weather/find	O
+4	a	weather/find	O
+5	storm	weather/find	B-condition_description
+6	nearby	weather/find	B-location
+
+# text = Play some melody from the eighties on Spotify
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	some	PlayMusic	O
+3	melody	PlayMusic	B-music_item
+4	from	PlayMusic	O
+5	the	PlayMusic	O
+6	eighties	PlayMusic	B-datetime
+7	on	PlayMusic	O
+8	Spotify	PlayMusic	B-service
+
+# text = Where can I find The World According to Paris ?
+# intent = SearchCreativeWork
+1	Where	SearchCreativeWork	O
+2	can	SearchCreativeWork	O
+3	I	SearchCreativeWork	O
+4	find	SearchCreativeWork	O
+5	The	SearchCreativeWork	B-object_name
+6	World	SearchCreativeWork	I-object_name
+7	According	SearchCreativeWork	I-object_name
+8	to	SearchCreativeWork	I-object_name
+9	Paris	SearchCreativeWork	I-object_name
+10	?	SearchCreativeWork	O
+
+# text = Tell me when it will be hotter in China
+# intent = weather/find
+1	Tell	weather/find	O
+2	me	weather/find	O
+3	when	weather/find	O
+4	it	weather/find	O
+5	will	weather/find	O
+6	be	weather/find	O
+7	hotter	weather/find	B-condition_temperature
+8	in	weather/find	O
+9	China	weather/find	B-location
+
+# text = What are the movie times for the Caribbean Cinemas ?
+# intent = SearchScreeningEvent
+1	What	SearchScreeningEvent	O
+2	are	SearchScreeningEvent	O
+3	the	SearchScreeningEvent	O
+4	movie	SearchScreeningEvent	B-object_type
+5	times	SearchScreeningEvent	I-object_type
+6	for	SearchScreeningEvent	O
+7	the	SearchScreeningEvent	O
+8	Caribbean	SearchScreeningEvent	B-location
+9	Cinemas	SearchScreeningEvent	I-location
+10	?	SearchScreeningEvent	O
+
+# text = Will the wind die down at my current location by supper time?
+# intent = weather/find
+1	Will	weather/find	O
+2	the	weather/find	O
+3	wind	weather/find	B-condition_description
+4	die	weather/find	O
+5	down	weather/find	O
+6	at	weather/find	O
+7	my	weather/find	O
+8	current	weather/find	B-location
+9	location	weather/find	I-location
+10	by	weather/find	O
+11	supper	weather/find	B-datetime
+12	time?	weather/find	O
+
+# text = Find me The Twinkler playing at National Amusements in 2 minutes
+# intent = SearchScreeningEvent
+1	Find	SearchScreeningEvent	O
+2	me	SearchScreeningEvent	O
+3	The	SearchScreeningEvent	B-movie_name
+4	Twinkler	SearchScreeningEvent	I-movie_name
+5	playing	SearchScreeningEvent	O
+6	at	SearchScreeningEvent	O
+7	National	SearchScreeningEvent	B-location
+8	Amusements	SearchScreeningEvent	I-location
+9	in	SearchScreeningEvent	B-datetime
+10	2	SearchScreeningEvent	I-datetime
+11	minutes	SearchScreeningEvent	I-datetime
+
+# text = I give Hadon of Ancient Opar two out of 6 points
+# intent = RateBook
+1	I	RateBook	O
+2	give	RateBook	O
+3	Hadon	RateBook	B-object_name
+4	of	RateBook	I-object_name
+5	Ancient	RateBook	I-object_name
+6	Opar	RateBook	I-object_name
+7	two	RateBook	B-rating_value
+8	out	RateBook	O
+9	of	RateBook	O
+10	6	RateBook	B-best_rating
+11	points	RateBook	B-rating_unit
+
+# text = I'm looking to bring shawn, marguerite and della to a place to eat at near Rwanda .
+# intent = BookRestaurant
+1	I'm	BookRestaurant	O
+2	looking	BookRestaurant	O
+3	to	BookRestaurant	O
+4	bring	BookRestaurant	O
+5	shawn,	BookRestaurant	B-party_size_description
+6	marguerite	BookRestaurant	I-party_size_description
+7	and	BookRestaurant	I-party_size_description
+8	della	BookRestaurant	I-party_size_description
+9	to	BookRestaurant	O
+10	a	BookRestaurant	O
+11	place	BookRestaurant	O
+12	to	BookRestaurant	O
+13	eat	BookRestaurant	O
+14	at	BookRestaurant	O
+15	near	BookRestaurant	B-location
+16	Rwanda	BookRestaurant	B-location
+17	.	BookRestaurant	O
+
+# text = Play music on Lastfm
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	music	PlayMusic	O
+3	on	PlayMusic	O
+4	Lastfm	PlayMusic	B-service
+
+# text = Will it be snowy at the current position by March 3 ?
+# intent = weather/find
+1	Will	weather/find	O
+2	it	weather/find	O
+3	be	weather/find	O
+4	snowy	weather/find	B-condition_description
+5	at	weather/find	O
+6	the	weather/find	O
+7	current	weather/find	B-location
+8	position	weather/find	I-location
+9	by	weather/find	O
+10	March	weather/find	B-datetime
+11	3	weather/find	I-datetime
+12	?	weather/find	O
+
+# text = Find me a table for 8 somewhee in Hollenberg in nine weeks
+# intent = BookRestaurant
+1	Find	BookRestaurant	O
+2	me	BookRestaurant	O
+3	a	BookRestaurant	O
+4	table	BookRestaurant	O
+5	for	BookRestaurant	O
+6	8	BookRestaurant	B-party_size_number
+7	somewhee	BookRestaurant	O
+8	in	BookRestaurant	O
+9	Hollenberg	BookRestaurant	B-location
+10	in	BookRestaurant	B-datetime
+11	nine	BookRestaurant	I-datetime
+12	weeks	BookRestaurant	I-datetime
+
+# text = play a track from 2004
+# intent = PlayMusic
+1	play	PlayMusic	O
+2	a	PlayMusic	O
+3	track	PlayMusic	B-music_item
+4	from	PlayMusic	O
+5	2004	PlayMusic	B-datetime
+
+# text = Tell me what films are currently playing at AMC Theaters
+# intent = SearchScreeningEvent
+1	Tell	SearchScreeningEvent	O
+2	me	SearchScreeningEvent	O
+3	what	SearchScreeningEvent	O
+4	films	SearchScreeningEvent	B-movie_type
+5	are	SearchScreeningEvent	O
+6	currently	SearchScreeningEvent	O
+7	playing	SearchScreeningEvent	O
+8	at	SearchScreeningEvent	O
+9	AMC	SearchScreeningEvent	B-location
+10	Theaters	SearchScreeningEvent	I-location
+
+# text = Show me the TV show Limit of Love: Umizaru
+# intent = SearchCreativeWork
+1	Show	SearchCreativeWork	O
+2	me	SearchCreativeWork	O
+3	the	SearchCreativeWork	O
+4	TV	SearchCreativeWork	B-object_type
+5	show	SearchCreativeWork	I-object_type
+6	Limit	SearchCreativeWork	B-object_name
+7	of	SearchCreativeWork	I-object_name
+8	Love:	SearchCreativeWork	I-object_name
+9	Umizaru	SearchCreativeWork	I-object_name
+
+# text = Show me the photograph Rock You Baby
+# intent = SearchCreativeWork
+1	Show	SearchCreativeWork	O
+2	me	SearchCreativeWork	O
+3	the	SearchCreativeWork	O
+4	photograph	SearchCreativeWork	B-object_type
+5	Rock	SearchCreativeWork	B-object_name
+6	You	SearchCreativeWork	I-object_name
+7	Baby	SearchCreativeWork	I-object_name
+
+# text = is Tarzan of the Apes playing at Cobb Theatres
+# intent = SearchScreeningEvent
+1	is	SearchScreeningEvent	O
+2	Tarzan	SearchScreeningEvent	B-movie_name
+3	of	SearchScreeningEvent	I-movie_name
+4	the	SearchScreeningEvent	I-movie_name
+5	Apes	SearchScreeningEvent	I-movie_name
+6	playing	SearchScreeningEvent	O
+7	at	SearchScreeningEvent	O
+8	Cobb	SearchScreeningEvent	B-location
+9	Theatres	SearchScreeningEvent	I-location
+
+# text = put Kan Mikami on Pre-Party R&B Jams
+# intent = AddToPlaylist
+1	put	AddToPlaylist	O
+2	Kan	AddToPlaylist	B-artist
+3	Mikami	AddToPlaylist	I-artist
+4	on	AddToPlaylist	O
+5	Pre-Party	AddToPlaylist	B-playlist
+6	R&B	AddToPlaylist	I-playlist
+7	Jams	AddToPlaylist	I-playlist
+
+# text = is it going to blizzard at my current position
+# intent = weather/find
+1	is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	blizzard	weather/find	B-condition_description
+6	at	weather/find	O
+7	my	weather/find	O
+8	current	weather/find	B-location
+9	position	weather/find	I-location
+
+# text = book a table for me and my step uncle in Malta at a cafeteria
+# intent = BookRestaurant
+1	book	BookRestaurant	O
+2	a	BookRestaurant	O
+3	table	BookRestaurant	O
+4	for	BookRestaurant	O
+5	me	BookRestaurant	B-party_size_description
+6	and	BookRestaurant	I-party_size_description
+7	my	BookRestaurant	I-party_size_description
+8	step	BookRestaurant	I-party_size_description
+9	uncle	BookRestaurant	I-party_size_description
+10	in	BookRestaurant	O
+11	Malta	BookRestaurant	B-location
+12	at	BookRestaurant	O
+13	a	BookRestaurant	O
+14	cafeteria	BookRestaurant	B-restaurant_type
+
+# text = Play the most popular twenties record from Leland Sklar
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	the	PlayMusic	O
+3	most	PlayMusic	B-sort
+4	popular	PlayMusic	I-sort
+5	twenties	PlayMusic	B-datetime
+6	record	PlayMusic	B-music_item
+7	from	PlayMusic	O
+8	Leland	PlayMusic	B-artist
+9	Sklar	PlayMusic	I-artist
+
+# text = Show me the forecast for Wisconsin
+# intent = weather/find
+1	Show	weather/find	O
+2	me	weather/find	O
+3	the	weather/find	O
+4	forecast	weather/find	O
+5	for	weather/find	O
+6	Wisconsin	weather/find	B-location
+
+# text = find a photograph called Between the Days
+# intent = SearchCreativeWork
+1	find	SearchCreativeWork	O
+2	a	SearchCreativeWork	O
+3	photograph	SearchCreativeWork	B-object_type
+4	called	SearchCreativeWork	O
+5	Between	SearchCreativeWork	B-object_name
+6	the	SearchCreativeWork	I-object_name
+7	Days	SearchCreativeWork	I-object_name
+
+# text = book at The Halal Guys on Oct. 17
+# intent = BookRestaurant
+1	book	BookRestaurant	O
+2	at	BookRestaurant	O
+3	The	BookRestaurant	B-restaurant_name
+4	Halal	BookRestaurant	I-restaurant_name
+5	Guys	BookRestaurant	I-restaurant_name
+6	on	BookRestaurant	O
+7	Oct.	BookRestaurant	B-datetime
+8	17	BookRestaurant	I-datetime
+
+# text = Please tell me the forecast for Guinea-Bissau
+# intent = weather/find
+1	Please	weather/find	O
+2	tell	weather/find	O
+3	me	weather/find	O
+4	the	weather/find	O
+5	forecast	weather/find	O
+6	for	weather/find	O
+7	Guinea-Bissau	weather/find	B-location
+
+# text = Add this song to my the perfect italian dinner playlist
+# intent = AddToPlaylist
+1	Add	AddToPlaylist	O
+2	this	AddToPlaylist	O
+3	song	AddToPlaylist	B-music_item
+4	to	AddToPlaylist	O
+5	my	AddToPlaylist	B-reference
+6	the	AddToPlaylist	B-playlist
+7	perfect	AddToPlaylist	I-playlist
+8	italian	AddToPlaylist	I-playlist
+9	dinner	AddToPlaylist	I-playlist
+10	playlist	AddToPlaylist	O
+
+# text = weather in Tioga Colorado
+# intent = weather/find
+1	weather	weather/find	O
+2	in	weather/find	O
+3	Tioga	weather/find	B-location
+4	Colorado	weather/find	B-location
+
+# text = I want to listen to the Music of Ghost in the Shell: Stand Alone Complex
+# intent = SearchCreativeWork
+1	I	SearchCreativeWork	O
+2	want	SearchCreativeWork	O
+3	to	SearchCreativeWork	O
+4	listen	SearchCreativeWork	O
+5	to	SearchCreativeWork	O
+6	the	SearchCreativeWork	O
+7	Music	SearchCreativeWork	B-object_name
+8	of	SearchCreativeWork	I-object_name
+9	Ghost	SearchCreativeWork	I-object_name
+10	in	SearchCreativeWork	I-object_name
+11	the	SearchCreativeWork	I-object_name
+12	Shell:	SearchCreativeWork	I-object_name
+13	Stand	SearchCreativeWork	I-object_name
+14	Alone	SearchCreativeWork	I-object_name
+15	Complex	SearchCreativeWork	I-object_name
+
+# text = Show me Happiness Was Free .
+# intent = SearchCreativeWork
+1	Show	SearchCreativeWork	O
+2	me	SearchCreativeWork	O
+3	Happiness	SearchCreativeWork	B-object_name
+4	Was	SearchCreativeWork	I-object_name
+5	Free	SearchCreativeWork	I-object_name
+6	.	SearchCreativeWork	O
+
+# text = Is it supposed to rain nearby my current location at 0 o'clock ?
+# intent = weather/find
+1	Is	weather/find	O
+2	it	weather/find	O
+3	supposed	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-condition_description
+6	nearby	weather/find	B-location
+7	my	weather/find	O
+8	current	weather/find	B-location
+9	location	weather/find	I-location
+10	at	weather/find	O
+11	0	weather/find	B-datetime
+12	o'clock	weather/find	I-datetime
+13	?	weather/find	O
+
+# text = book a table in Fairview neighboring the area
+# intent = BookRestaurant
+1	book	BookRestaurant	O
+2	a	BookRestaurant	O
+3	table	BookRestaurant	O
+4	in	BookRestaurant	O
+5	Fairview	BookRestaurant	B-location
+6	neighboring	BookRestaurant	B-location
+7	the	BookRestaurant	O
+8	area	BookRestaurant	B-location
+
+# text = what is the forecast for 15:04 in Georgia for overcast conditions in Valley View
+# intent = weather/find
+1	what	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	forecast	weather/find	O
+5	for	weather/find	O
+6	15:04	weather/find	B-datetime
+7	in	weather/find	O
+8	Georgia	weather/find	B-location
+9	for	weather/find	O
+10	overcast	weather/find	B-condition_description
+11	conditions	weather/find	O
+12	in	weather/find	O
+13	Valley	weather/find	B-location
+14	View	weather/find	I-location
+
+# text = Can I see the movie schedules ?
+# intent = SearchScreeningEvent
+1	Can	SearchScreeningEvent	O
+2	I	SearchScreeningEvent	O
+3	see	SearchScreeningEvent	O
+4	the	SearchScreeningEvent	O
+5	movie	SearchScreeningEvent	B-object_type
+6	schedules	SearchScreeningEvent	I-object_type
+7	?	SearchScreeningEvent	O
+
+# text = find a movie house closest showing Operation: Kingdom
+# intent = SearchScreeningEvent
+1	find	SearchScreeningEvent	O
+2	a	SearchScreeningEvent	O
+3	movie	SearchScreeningEvent	B-object_location_type
+4	house	SearchScreeningEvent	I-object_location_type
+5	closest	SearchScreeningEvent	B-location
+6	showing	SearchScreeningEvent	O
+7	Operation:	SearchScreeningEvent	B-movie_name
+8	Kingdom	SearchScreeningEvent	I-movie_name
+
+# text = Find a trailer called Storm Center .
+# intent = SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	a	SearchCreativeWork	O
+3	trailer	SearchCreativeWork	B-object_type
+4	called	SearchCreativeWork	O
+5	Storm	SearchCreativeWork	B-object_name
+6	Center	SearchCreativeWork	I-object_name
+7	.	SearchCreativeWork	O
+
+# text = put this album on my dubstep dangles dirty playlist
+# intent = AddToPlaylist
+1	put	AddToPlaylist	O
+2	this	AddToPlaylist	O
+3	album	AddToPlaylist	B-music_item
+4	on	AddToPlaylist	O
+5	my	AddToPlaylist	B-reference
+6	dubstep	AddToPlaylist	B-playlist
+7	dangles	AddToPlaylist	I-playlist
+8	dirty	AddToPlaylist	I-playlist
+9	playlist	AddToPlaylist	O
+
+# text = What are the movie schedules
+# intent = SearchScreeningEvent
+1	What	SearchScreeningEvent	O
+2	are	SearchScreeningEvent	O
+3	the	SearchScreeningEvent	O
+4	movie	SearchScreeningEvent	B-object_type
+5	schedules	SearchScreeningEvent	I-object_type
+
+# text = Play a song by Juanes on Last Fm
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	a	PlayMusic	O
+3	song	PlayMusic	B-music_item
+4	by	PlayMusic	O
+5	Juanes	PlayMusic	B-artist
+6	on	PlayMusic	O
+7	Last	PlayMusic	B-service
+8	Fm	PlayMusic	I-service
+
+# text = Assign 0 points out of 6 to The Gate of Worlds
+# intent = RateBook
+1	Assign	RateBook	O
+2	0	RateBook	B-rating_value
+3	points	RateBook	B-rating_unit
+4	out	RateBook	O
+5	of	RateBook	O
+6	6	RateBook	B-best_rating
+7	to	RateBook	O
+8	The	RateBook	B-object_name
+9	Gate	RateBook	I-object_name
+10	of	RateBook	I-object_name
+11	Worlds	RateBook	I-object_name
+
+# text = Play some David Mallett on last fm
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	some	PlayMusic	O
+3	David	PlayMusic	B-artist
+4	Mallett	PlayMusic	I-artist
+5	on	PlayMusic	O
+6	last	PlayMusic	B-service
+7	fm	PlayMusic	I-service
+
+# text = Find me the movie times
+# intent = SearchScreeningEvent
+1	Find	SearchScreeningEvent	O
+2	me	SearchScreeningEvent	O
+3	the	SearchScreeningEvent	O
+4	movie	SearchScreeningEvent	B-object_type
+5	times	SearchScreeningEvent	I-object_type
+
+# text = Will it be windy at 4 PM in NY ?
+# intent = weather/find
+1	Will	weather/find	O
+2	it	weather/find	O
+3	be	weather/find	O
+4	windy	weather/find	B-condition_description
+5	at	weather/find	O
+6	4	weather/find	B-datetime
+7	PM	weather/find	I-datetime
+8	in	weather/find	O
+9	NY	weather/find	B-location
+10	?	weather/find	O
+
+# text = Book me a restaurant for nine in Statham
+# intent = BookRestaurant
+1	Book	BookRestaurant	O
+2	me	BookRestaurant	O
+3	a	BookRestaurant	O
+4	restaurant	BookRestaurant	B-restaurant_type
+5	for	BookRestaurant	O
+6	nine	BookRestaurant	B-party_size_number
+7	in	BookRestaurant	O
+8	Statham	BookRestaurant	B-location
+
+# text = find a video game called IBM Program temporary fix
+# intent = SearchCreativeWork
+1	find	SearchCreativeWork	O
+2	a	SearchCreativeWork	O
+3	video	SearchCreativeWork	B-object_type
+4	game	SearchCreativeWork	I-object_type
+5	called	SearchCreativeWork	O
+6	IBM	SearchCreativeWork	B-object_name
+7	Program	SearchCreativeWork	I-object_name
+8	temporary	SearchCreativeWork	I-object_name
+9	fix	SearchCreativeWork	I-object_name
+
+# text = Find a table for one at a popular churrascaria for three weeks from now
+# intent = BookRestaurant
+1	Find	BookRestaurant	O
+2	a	BookRestaurant	O
+3	table	BookRestaurant	O
+4	for	BookRestaurant	O
+5	one	BookRestaurant	B-party_size_number
+6	at	BookRestaurant	O
+7	a	BookRestaurant	O
+8	popular	BookRestaurant	B-sort
+9	churrascaria	BookRestaurant	B-restaurant_type
+10	for	BookRestaurant	O
+11	three	BookRestaurant	B-datetime
+12	weeks	BookRestaurant	I-datetime
+13	from	BookRestaurant	I-datetime
+14	now	BookRestaurant	I-datetime
+
+# text = For Mirrorshades I rate it three stars
+# intent = RateBook
+1	For	RateBook	O
+2	Mirrorshades	RateBook	B-object_name
+3	I	RateBook	O
+4	rate	RateBook	O
+5	it	RateBook	O
+6	three	RateBook	B-rating_value
+7	stars	RateBook	B-rating_unit
+
+# text = Book a restaurant that serves agnolotti in Colorado City Idaho .
+# intent = BookRestaurant
+1	Book	BookRestaurant	O
+2	a	BookRestaurant	O
+3	restaurant	BookRestaurant	B-restaurant_type
+4	that	BookRestaurant	O
+5	serves	BookRestaurant	O
+6	agnolotti	BookRestaurant	B-served_dish
+7	in	BookRestaurant	O
+8	Colorado	BookRestaurant	B-location
+9	City	BookRestaurant	I-location
+10	Idaho	BookRestaurant	B-location
+11	.	BookRestaurant	O
+
+# text = Add bright and breezy to my This Is Gucci Mane playlist
+# intent = AddToPlaylist
+1	Add	AddToPlaylist	O
+2	bright	AddToPlaylist	B-entity_name
+3	and	AddToPlaylist	I-entity_name
+4	breezy	AddToPlaylist	I-entity_name
+5	to	AddToPlaylist	O
+6	my	AddToPlaylist	B-reference
+7	This	AddToPlaylist	B-playlist
+8	Is	AddToPlaylist	I-playlist
+9	Gucci	AddToPlaylist	I-playlist
+10	Mane	AddToPlaylist	I-playlist
+11	playlist	AddToPlaylist	O
+
+# text = Can you give me the weather for here
+# intent = weather/find
+1	Can	weather/find	O
+2	you	weather/find	O
+3	give	weather/find	O
+4	me	weather/find	O
+5	the	weather/find	O
+6	weather	weather/find	O
+7	for	weather/find	O
+8	here	weather/find	B-location
+
+# text = Add Ashley McIsaac to my r&b party classics playlist
+# intent = AddToPlaylist
+1	Add	AddToPlaylist	O
+2	Ashley	AddToPlaylist	B-artist
+3	McIsaac	AddToPlaylist	I-artist
+4	to	AddToPlaylist	O
+5	my	AddToPlaylist	B-reference
+6	r&b	AddToPlaylist	B-playlist
+7	party	AddToPlaylist	I-playlist
+8	classics	AddToPlaylist	I-playlist
+9	playlist	AddToPlaylist	O
+
+# text = I'd like to see the saga 12 Soulful Nights of Christmas
+# intent = SearchCreativeWork
+1	I'd	SearchCreativeWork	O
+2	like	SearchCreativeWork	O
+3	to	SearchCreativeWork	O
+4	see	SearchCreativeWork	O
+5	the	SearchCreativeWork	O
+6	saga	SearchCreativeWork	B-object_type
+7	12	SearchCreativeWork	B-object_name
+8	Soulful	SearchCreativeWork	I-object_name
+9	Nights	SearchCreativeWork	I-object_name
+10	of	SearchCreativeWork	I-object_name
+11	Christmas	SearchCreativeWork	I-object_name
+
+# text = I need a reservation for 6 PM. with a party of 10 at Sand Lake
+# intent = BookRestaurant
+1	I	BookRestaurant	O
+2	need	BookRestaurant	O
+3	a	BookRestaurant	O
+4	reservation	BookRestaurant	O
+5	for	BookRestaurant	O
+6	6	BookRestaurant	B-datetime
+7	PM.	BookRestaurant	I-datetime
+8	with	BookRestaurant	O
+9	a	BookRestaurant	O
+10	party	BookRestaurant	O
+11	of	BookRestaurant	O
+12	10	BookRestaurant	B-party_size_number
+13	at	BookRestaurant	O
+14	Sand	BookRestaurant	B-location
+15	Lake	BookRestaurant	I-location
+
+# text = Use Groove Shark to play music from the eighties
+# intent = PlayMusic
+1	Use	PlayMusic	O
+2	Groove	PlayMusic	B-service
+3	Shark	PlayMusic	I-service
+4	to	PlayMusic	O
+5	play	PlayMusic	O
+6	music	PlayMusic	O
+7	from	PlayMusic	O
+8	the	PlayMusic	O
+9	eighties	PlayMusic	B-datetime
+
+# text = find soundtrack titled The House of the Yellow Carpet
+# intent = SearchCreativeWork
+1	find	SearchCreativeWork	O
+2	soundtrack	SearchCreativeWork	B-object_type
+3	titled	SearchCreativeWork	O
+4	The	SearchCreativeWork	B-object_name
+5	House	SearchCreativeWork	I-object_name
+6	of	SearchCreativeWork	I-object_name
+7	the	SearchCreativeWork	I-object_name
+8	Yellow	SearchCreativeWork	I-object_name
+9	Carpet	SearchCreativeWork	I-object_name
+
+# text = Which is the nearest cinema showing movies that start in nineteen seconds ?
+# intent = SearchScreeningEvent
+1	Which	SearchScreeningEvent	O
+2	is	SearchScreeningEvent	O
+3	the	SearchScreeningEvent	O
+4	nearest	SearchScreeningEvent	B-location
+5	cinema	SearchScreeningEvent	B-object_location_type
+6	showing	SearchScreeningEvent	O
+7	movies	SearchScreeningEvent	B-movie_type
+8	that	SearchScreeningEvent	O
+9	start	SearchScreeningEvent	O
+10	in	SearchScreeningEvent	B-datetime
+11	nineteen	SearchScreeningEvent	I-datetime
+12	seconds	SearchScreeningEvent	I-datetime
+13	?	SearchScreeningEvent	O
+
+# text = Add morten harket to this is puccini
+# intent = AddToPlaylist
+1	Add	AddToPlaylist	O
+2	morten	AddToPlaylist	B-artist
+3	harket	AddToPlaylist	I-artist
+4	to	AddToPlaylist	O
+5	this	AddToPlaylist	B-playlist
+6	is	AddToPlaylist	I-playlist
+7	puccini	AddToPlaylist	I-playlist
+
+# text = Open Spotify and play a song from the twenties by Richard Harvey
+# intent = PlayMusic
+1	Open	PlayMusic	O
+2	Spotify	PlayMusic	B-service
+3	and	PlayMusic	O
+4	play	PlayMusic	O
+5	a	PlayMusic	O
+6	song	PlayMusic	B-music_item
+7	from	PlayMusic	O
+8	the	PlayMusic	O
+9	twenties	PlayMusic	B-datetime
+10	by	PlayMusic	O
+11	Richard	PlayMusic	B-artist
+12	Harvey	PlayMusic	I-artist
+
+# text = I want to book a restaurant
+# intent = BookRestaurant
+1	I	BookRestaurant	O
+2	want	BookRestaurant	O
+3	to	BookRestaurant	O
+4	book	BookRestaurant	O
+5	a	BookRestaurant	O
+6	restaurant	BookRestaurant	B-restaurant_type
+
+# text = Play the album Vibrations by Marion Elise Raven
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	the	PlayMusic	O
+3	album	PlayMusic	B-music_item
+4	Vibrations	PlayMusic	B-album
+5	by	PlayMusic	O
+6	Marion	PlayMusic	B-artist
+7	Elise	PlayMusic	I-artist
+8	Raven	PlayMusic	I-artist
+
+# text = add this artist to my Jazz playlist
+# intent = AddToPlaylist
+1	add	AddToPlaylist	O
+2	this	AddToPlaylist	O
+3	artist	AddToPlaylist	B-music_item
+4	to	AddToPlaylist	O
+5	my	AddToPlaylist	B-reference
+6	Jazz	AddToPlaylist	B-playlist
+7	playlist	AddToPlaylist	O
+
+# text = I want to find the show From Where to Eternity .
+# intent = SearchCreativeWork
+1	I	SearchCreativeWork	O
+2	want	SearchCreativeWork	O
+3	to	SearchCreativeWork	O
+4	find	SearchCreativeWork	O
+5	the	SearchCreativeWork	O
+6	show	SearchCreativeWork	B-object_type
+7	From	SearchCreativeWork	B-object_name
+8	Where	SearchCreativeWork	I-object_name
+9	to	SearchCreativeWork	I-object_name
+10	Eternity	SearchCreativeWork	I-object_name
+11	.	SearchCreativeWork	O
+
+# text = play the top-twenty songs by The Kleptones on Spotify
+# intent = PlayMusic
+1	play	PlayMusic	O
+2	the	PlayMusic	O
+3	top-twenty	PlayMusic	B-sort
+4	songs	PlayMusic	O
+5	by	PlayMusic	O
+6	The	PlayMusic	B-artist
+7	Kleptones	PlayMusic	I-artist
+8	on	PlayMusic	O
+9	Spotify	PlayMusic	B-service
+
+# text = How will the weather be in six minutes close to Moosic
+# intent = weather/find
+1	How	weather/find	O
+2	will	weather/find	O
+3	the	weather/find	O
+4	weather	weather/find	O
+5	be	weather/find	O
+6	in	weather/find	B-datetime
+7	six	weather/find	I-datetime
+8	minutes	weather/find	I-datetime
+9	close	weather/find	B-location
+10	to	weather/find	O
+11	Moosic	weather/find	B-location
+
+# text = I wish to listen to some fifties music.
+# intent = PlayMusic
+1	I	PlayMusic	O
+2	wish	PlayMusic	O
+3	to	PlayMusic	O
+4	listen	PlayMusic	O
+5	to	PlayMusic	O
+6	some	PlayMusic	O
+7	fifties	PlayMusic	B-datetime
+8	music.	PlayMusic	O
+
+# text = what time is Utamaro and His Five Women showing at Alamo Drafthouse Cinema
+# intent = SearchScreeningEvent
+1	what	SearchScreeningEvent	O
+2	time	SearchScreeningEvent	O
+3	is	SearchScreeningEvent	O
+4	Utamaro	SearchScreeningEvent	B-movie_name
+5	and	SearchScreeningEvent	I-movie_name
+6	His	SearchScreeningEvent	I-movie_name
+7	Five	SearchScreeningEvent	I-movie_name
+8	Women	SearchScreeningEvent	I-movie_name
+9	showing	SearchScreeningEvent	O
+10	at	SearchScreeningEvent	O
+11	Alamo	SearchScreeningEvent	B-location
+12	Drafthouse	SearchScreeningEvent	I-location
+13	Cinema	SearchScreeningEvent	I-location
+
+# text = Find a photograph of Adventure Time: The Secret of the Nameless Kingdom
+# intent = SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	a	SearchCreativeWork	O
+3	photograph	SearchCreativeWork	B-object_type
+4	of	SearchCreativeWork	O
+5	Adventure	SearchCreativeWork	B-object_name
+6	Time:	SearchCreativeWork	I-object_name
+7	The	SearchCreativeWork	I-object_name
+8	Secret	SearchCreativeWork	I-object_name
+9	of	SearchCreativeWork	I-object_name
+10	the	SearchCreativeWork	I-object_name
+11	Nameless	SearchCreativeWork	I-object_name
+12	Kingdom	SearchCreativeWork	I-object_name
+
+# text = put Do You Love Me on my acoustic soul playlist
+# intent = AddToPlaylist
+1	put	AddToPlaylist	O
+2	Do	AddToPlaylist	B-entity_name
+3	You	AddToPlaylist	I-entity_name
+4	Love	AddToPlaylist	I-entity_name
+5	Me	AddToPlaylist	I-entity_name
+6	on	AddToPlaylist	O
+7	my	AddToPlaylist	B-reference
+8	acoustic	AddToPlaylist	B-playlist
+9	soul	AddToPlaylist	I-playlist
+10	playlist	AddToPlaylist	O
+
+# text = Play me the best Charles Neidich song
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	me	PlayMusic	O
+3	the	PlayMusic	O
+4	best	PlayMusic	B-sort
+5	Charles	PlayMusic	B-artist
+6	Neidich	PlayMusic	I-artist
+7	song	PlayMusic	B-music_item
+
+# text = On may the thirteenth, 2037 what will it be like in Wilderville , Montenegro
+# intent = weather/find
+1	On	weather/find	O
+2	may	weather/find	B-datetime
+3	the	weather/find	I-datetime
+4	thirteenth,	weather/find	I-datetime
+5	2037	weather/find	I-datetime
+6	what	weather/find	O
+7	will	weather/find	O
+8	it	weather/find	O
+9	be	weather/find	O
+10	like	weather/find	O
+11	in	weather/find	O
+12	Wilderville	weather/find	B-location
+13	,	weather/find	O
+14	Montenegro	weather/find	B-location
+
+# text = Find movie schedules for ArcLight Hollywood .
+# intent = SearchScreeningEvent
+1	Find	SearchScreeningEvent	O
+2	movie	SearchScreeningEvent	B-object_type
+3	schedules	SearchScreeningEvent	I-object_type
+4	for	SearchScreeningEvent	O
+5	ArcLight	SearchScreeningEvent	B-location
+6	Hollywood	SearchScreeningEvent	I-location
+7	.	SearchScreeningEvent	O
+
+# text = Find a TV series called Church of the Truly Warped .
+# intent = SearchCreativeWork
+1	Find	SearchCreativeWork	O
+2	a	SearchCreativeWork	O
+3	TV	SearchCreativeWork	B-object_type
+4	series	SearchCreativeWork	I-object_type
+5	called	SearchCreativeWork	O
+6	Church	SearchCreativeWork	B-object_name
+7	of	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Truly	SearchCreativeWork	I-object_name
+10	Warped	SearchCreativeWork	I-object_name
+11	.	SearchCreativeWork	O
+
+# text = what is the forecast for in eighteen minutes here for colder temps
+# intent = weather/find
+1	what	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	forecast	weather/find	O
+5	for	weather/find	O
+6	in	weather/find	B-datetime
+7	eighteen	weather/find	I-datetime
+8	minutes	weather/find	I-datetime
+9	here	weather/find	B-location
+10	for	weather/find	O
+11	colder	weather/find	B-condition_temperature
+12	temps	weather/find	O
+
+# text = Book a restaurant at sixteen o'clock in SC
+# intent = BookRestaurant
+1	Book	BookRestaurant	O
+2	a	BookRestaurant	O
+3	restaurant	BookRestaurant	B-restaurant_type
+4	at	BookRestaurant	O
+5	sixteen	BookRestaurant	B-datetime
+6	o'clock	BookRestaurant	I-datetime
+7	in	BookRestaurant	O
+8	SC	BookRestaurant	B-location
+
+# text = stacy watson and adriana want to go to the best osteria in Hallowell Minnesota this afternoon
+# intent = BookRestaurant
+1	stacy	BookRestaurant	B-party_size_description
+2	watson	BookRestaurant	I-party_size_description
+3	and	BookRestaurant	I-party_size_description
+4	adriana	BookRestaurant	I-party_size_description
+5	want	BookRestaurant	O
+6	to	BookRestaurant	O
+7	go	BookRestaurant	O
+8	to	BookRestaurant	O
+9	the	BookRestaurant	O
+10	best	BookRestaurant	B-sort
+11	osteria	BookRestaurant	B-restaurant_type
+12	in	BookRestaurant	O
+13	Hallowell	BookRestaurant	B-location
+14	Minnesota	BookRestaurant	B-location
+15	this	BookRestaurant	O
+16	afternoon	BookRestaurant	B-datetime
+
+# text = is it going to be chilly in Western Sahara in 13 hours
+# intent = weather/find
+1	is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	be	weather/find	O
+6	chilly	weather/find	B-condition_temperature
+7	in	weather/find	O
+8	Western	weather/find	B-location
+9	Sahara	weather/find	I-location
+10	in	weather/find	O
+11	13	weather/find	B-datetime
+12	hours	weather/find	I-datetime
+
+# text = add Armen Movsessian to this is skepta playlist
+# intent = AddToPlaylist
+1	add	AddToPlaylist	O
+2	Armen	AddToPlaylist	B-artist
+3	Movsessian	AddToPlaylist	I-artist
+4	to	AddToPlaylist	O
+5	this	AddToPlaylist	B-playlist
+6	is	AddToPlaylist	I-playlist
+7	skepta	AddToPlaylist	I-playlist
+8	playlist	AddToPlaylist	O
+
+# text = Rate this current essay three out of 6 stars
+# intent = RateBook
+1	Rate	RateBook	O
+2	this	RateBook	O
+3	current	RateBook	B-object_select
+4	essay	RateBook	B-object_type
+5	three	RateBook	B-rating_value
+6	out	RateBook	O
+7	of	RateBook	O
+8	6	RateBook	B-best_rating
+9	stars	RateBook	B-rating_unit
+
+# text = Find a reservation for three at a top-rated restaurant
+# intent = BookRestaurant
+1	Find	BookRestaurant	O
+2	a	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	for	BookRestaurant	O
+5	three	BookRestaurant	B-party_size_number
+6	at	BookRestaurant	O
+7	a	BookRestaurant	O
+8	top-rated	BookRestaurant	B-sort
+9	restaurant	BookRestaurant	B-restaurant_type
+
+# text = rate the current novel 0 of 6
+# intent = RateBook
+1	rate	RateBook	O
+2	the	RateBook	O
+3	current	RateBook	B-object_select
+4	novel	RateBook	B-object_type
+5	0	RateBook	B-rating_value
+6	of	RateBook	O
+7	6	RateBook	B-best_rating
+
+# text = I'd like to see the showtimes for Silly Movie 2.0 at the movie house
+# intent = SearchScreeningEvent
+1	I'd	SearchScreeningEvent	O
+2	like	SearchScreeningEvent	O
+3	to	SearchScreeningEvent	O
+4	see	SearchScreeningEvent	O
+5	the	SearchScreeningEvent	O
+6	showtimes	SearchScreeningEvent	O
+7	for	SearchScreeningEvent	O
+8	Silly	SearchScreeningEvent	B-movie_name
+9	Movie	SearchScreeningEvent	I-movie_name
+10	2.0	SearchScreeningEvent	I-movie_name
+11	at	SearchScreeningEvent	O
+12	the	SearchScreeningEvent	O
+13	movie	SearchScreeningEvent	B-object_location_type
+14	house	SearchScreeningEvent	I-object_location_type
+
+# text = Will it get chillier in Sinclair in 8 hours
+# intent = weather/find
+1	Will	weather/find	O
+2	it	weather/find	O
+3	get	weather/find	O
+4	chillier	weather/find	B-condition_temperature
+5	in	weather/find	O
+6	Sinclair	weather/find	B-location
+7	in	weather/find	B-datetime
+8	8	weather/find	I-datetime
+9	hours	weather/find	I-datetime
+
+# text = add this tune to my in the arms of a woman
+# intent = AddToPlaylist
+1	add	AddToPlaylist	O
+2	this	AddToPlaylist	O
+3	tune	AddToPlaylist	B-music_item
+4	to	AddToPlaylist	O
+5	my	AddToPlaylist	B-reference
+6	in	AddToPlaylist	B-playlist
+7	the	AddToPlaylist	I-playlist
+8	arms	AddToPlaylist	I-playlist
+9	of	AddToPlaylist	I-playlist
+10	a	AddToPlaylist	I-playlist
+11	woman	AddToPlaylist	I-playlist
+
+# text = book for 3 in U.S. Virgin Islands
+# intent = BookRestaurant
+1	book	BookRestaurant	O
+2	for	BookRestaurant	O
+3	3	BookRestaurant	B-party_size_number
+4	in	BookRestaurant	O
+5	U.S.	BookRestaurant	B-location
+6	Virgin	BookRestaurant	I-location
+7	Islands	BookRestaurant	I-location
+
+# text = Will it be chillier in La Mesa ?
+# intent = weather/find
+1	Will	weather/find	O
+2	it	weather/find	O
+3	be	weather/find	O
+4	chillier	weather/find	B-condition_temperature
+5	in	weather/find	O
+6	La	weather/find	B-location
+7	Mesa	weather/find	I-location
+8	?	weather/find	O
+
+# text = Rate this essay 2 out of 6 stars
+# intent = RateBook
+1	Rate	RateBook	O
+2	this	RateBook	B-object_select
+3	essay	RateBook	B-object_type
+4	2	RateBook	B-rating_value
+5	out	RateBook	O
+6	of	RateBook	O
+7	6	RateBook	B-best_rating
+8	stars	RateBook	B-rating_unit
+
+# text = Give three stars / 6 to My Sister, My Love
+# intent = RateBook
+1	Give	RateBook	O
+2	three	RateBook	B-rating_value
+3	stars	RateBook	B-rating_unit
+4	/	RateBook	O
+5	6	RateBook	B-best_rating
+6	to	RateBook	O
+7	My	RateBook	B-object_name
+8	Sister,	RateBook	I-object_name
+9	My	RateBook	I-object_name
+10	Love	RateBook	I-object_name
+
+# text = Find the movie schedule for Marcus Corporation .
+# intent = SearchScreeningEvent
+1	Find	SearchScreeningEvent	O
+2	the	SearchScreeningEvent	O
+3	movie	SearchScreeningEvent	B-object_type
+4	schedule	SearchScreeningEvent	I-object_type
+5	for	SearchScreeningEvent	O
+6	Marcus	SearchScreeningEvent	B-location
+7	Corporation	SearchScreeningEvent	I-location
+8	.	SearchScreeningEvent	O
+
+# text = What movies are scheduled in the neighbourhood ?
+# intent = SearchScreeningEvent
+1	What	SearchScreeningEvent	O
+2	movies	SearchScreeningEvent	B-movie_type
+3	are	SearchScreeningEvent	O
+4	scheduled	SearchScreeningEvent	O
+5	in	SearchScreeningEvent	B-location
+6	the	SearchScreeningEvent	I-location
+7	neighbourhood	SearchScreeningEvent	I-location
+8	?	SearchScreeningEvent	O
+
+# text = add cross bones style to Guest List TaKe
+# intent = AddToPlaylist
+1	add	AddToPlaylist	O
+2	cross	AddToPlaylist	B-entity_name
+3	bones	AddToPlaylist	I-entity_name
+4	style	AddToPlaylist	I-entity_name
+5	to	AddToPlaylist	O
+6	Guest	AddToPlaylist	B-playlist
+7	List	AddToPlaylist	I-playlist
+8	TaKe	AddToPlaylist	I-playlist
+
+# text = Find a reservation for a tavern that serves pizzas for a party of 6
+# intent = BookRestaurant
+1	Find	BookRestaurant	O
+2	a	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	for	BookRestaurant	O
+5	a	BookRestaurant	O
+6	tavern	BookRestaurant	B-restaurant_type
+7	that	BookRestaurant	O
+8	serves	BookRestaurant	O
+9	pizzas	BookRestaurant	B-served_dish
+10	for	BookRestaurant	O
+11	a	BookRestaurant	O
+12	party	BookRestaurant	O
+13	of	BookRestaurant	O
+14	6	BookRestaurant	B-party_size_number
+
+# text = Rate The Art of Nijinsky 5 points
+# intent = RateBook
+1	Rate	RateBook	O
+2	The	RateBook	B-object_name
+3	Art	RateBook	I-object_name
+4	of	RateBook	I-object_name
+5	Nijinsky	RateBook	I-object_name
+6	5	RateBook	B-rating_value
+7	points	RateBook	B-rating_unit
+
+# text = add Jacob Hoggard to my get going playlist
+# intent = AddToPlaylist
+1	add	AddToPlaylist	O
+2	Jacob	AddToPlaylist	B-artist
+3	Hoggard	AddToPlaylist	I-artist
+4	to	AddToPlaylist	O
+5	my	AddToPlaylist	B-reference
+6	get	AddToPlaylist	B-playlist
+7	going	AddToPlaylist	I-playlist
+8	playlist	AddToPlaylist	O
+
+# text = Give me a list of movie times for films in the area .
+# intent = SearchScreeningEvent
+1	Give	SearchScreeningEvent	O
+2	me	SearchScreeningEvent	O
+3	a	SearchScreeningEvent	O
+4	list	SearchScreeningEvent	O
+5	of	SearchScreeningEvent	O
+6	movie	SearchScreeningEvent	B-object_type
+7	times	SearchScreeningEvent	I-object_type
+8	for	SearchScreeningEvent	O
+9	films	SearchScreeningEvent	B-movie_type
+10	in	SearchScreeningEvent	B-location
+11	the	SearchScreeningEvent	I-location
+12	area	SearchScreeningEvent	I-location
+13	.	SearchScreeningEvent	O
+
+# text = find The Ultimate Gift , a television show
+# intent = SearchCreativeWork
+1	find	SearchCreativeWork	O
+2	The	SearchCreativeWork	B-object_name
+3	Ultimate	SearchCreativeWork	I-object_name
+4	Gift	SearchCreativeWork	I-object_name
+5	,	SearchCreativeWork	O
+6	a	SearchCreativeWork	O
+7	television	SearchCreativeWork	B-object_type
+8	show	SearchCreativeWork	I-object_type
+
+# text = What's the weather close-by Triumph
+# intent = weather/find
+1	What's	weather/find	O
+2	the	weather/find	O
+3	weather	weather/find	O
+4	close-by	weather/find	B-location
+5	Triumph	weather/find	B-location
+
+# text = when can i see A Handful of Dust in a movie theatre
+# intent = SearchScreeningEvent
+1	when	SearchScreeningEvent	O
+2	can	SearchScreeningEvent	O
+3	i	SearchScreeningEvent	O
+4	see	SearchScreeningEvent	O
+5	A	SearchScreeningEvent	B-movie_name
+6	Handful	SearchScreeningEvent	I-movie_name
+7	of	SearchScreeningEvent	I-movie_name
+8	Dust	SearchScreeningEvent	I-movie_name
+9	in	SearchScreeningEvent	O
+10	a	SearchScreeningEvent	O
+11	movie	SearchScreeningEvent	B-object_location_type
+12	theatre	SearchScreeningEvent	I-object_location_type
+
+# text = Please put an album by Joseph Meyer on my POP GOES THE 80s playlist
+# intent = AddToPlaylist
+1	Please	AddToPlaylist	O
+2	put	AddToPlaylist	O
+3	an	AddToPlaylist	O
+4	album	AddToPlaylist	B-music_item
+5	by	AddToPlaylist	O
+6	Joseph	AddToPlaylist	B-artist
+7	Meyer	AddToPlaylist	I-artist
+8	on	AddToPlaylist	O
+9	my	AddToPlaylist	B-reference
+10	POP	AddToPlaylist	B-playlist
+11	GOES	AddToPlaylist	I-playlist
+12	THE	AddToPlaylist	I-playlist
+13	80s	AddToPlaylist	I-playlist
+14	playlist	AddToPlaylist	O
+
+# text = show of From South Africa to South Carolina
+# intent = SearchCreativeWork
+1	show	SearchCreativeWork	B-object_type
+2	of	SearchCreativeWork	O
+3	From	SearchCreativeWork	B-object_name
+4	South	SearchCreativeWork	I-object_name
+5	Africa	SearchCreativeWork	I-object_name
+6	to	SearchCreativeWork	I-object_name
+7	South	SearchCreativeWork	I-object_name
+8	Carolina	SearchCreativeWork	I-object_name
+
+# text = book a top-rated osteria seven weeks from now
+# intent = BookRestaurant
+1	book	BookRestaurant	O
+2	a	BookRestaurant	O
+3	top-rated	BookRestaurant	B-sort
+4	osteria	BookRestaurant	B-restaurant_type
+5	seven	BookRestaurant	B-datetime
+6	weeks	BookRestaurant	I-datetime
+7	from	BookRestaurant	I-datetime
+8	now	BookRestaurant	I-datetime
+
+# text = What movie house is showing Flower and Snake at 08:56:29 ?
+# intent = SearchScreeningEvent
+1	What	SearchScreeningEvent	O
+2	movie	SearchScreeningEvent	B-object_location_type
+3	house	SearchScreeningEvent	I-object_location_type
+4	is	SearchScreeningEvent	O
+5	showing	SearchScreeningEvent	O
+6	Flower	SearchScreeningEvent	B-movie_name
+7	and	SearchScreeningEvent	I-movie_name
+8	Snake	SearchScreeningEvent	I-movie_name
+9	at	SearchScreeningEvent	O
+10	08:56:29	SearchScreeningEvent	B-datetime
+11	?	SearchScreeningEvent	O
+
+# text = Find a restaurant in FM that servec quiche
+# intent = BookRestaurant
+1	Find	BookRestaurant	O
+2	a	BookRestaurant	O
+3	restaurant	BookRestaurant	B-restaurant_type
+4	in	BookRestaurant	O
+5	FM	BookRestaurant	B-location
+6	that	BookRestaurant	O
+7	servec	BookRestaurant	O
+8	quiche	BookRestaurant	B-served_dish
+
+# text = Book a reservation for 7 people at The French Laundry on june the 8th, 2029
+# intent = BookRestaurant
+1	Book	BookRestaurant	O
+2	a	BookRestaurant	O
+3	reservation	BookRestaurant	O
+4	for	BookRestaurant	O
+5	7	BookRestaurant	B-party_size_number
+6	people	BookRestaurant	O
+7	at	BookRestaurant	O
+8	The	BookRestaurant	B-restaurant_name
+9	French	BookRestaurant	I-restaurant_name
+10	Laundry	BookRestaurant	I-restaurant_name
+11	on	BookRestaurant	O
+12	june	BookRestaurant	B-datetime
+13	the	BookRestaurant	I-datetime
+14	8th,	BookRestaurant	I-datetime
+15	2029	BookRestaurant	I-datetime
+
+# text = play fourties tunes
+# intent = PlayMusic
+1	play	PlayMusic	O
+2	fourties	PlayMusic	B-datetime
+3	tunes	PlayMusic	O
+
+# text = When will the Santikos Theatres be showing animated movies
+# intent = SearchScreeningEvent
+1	When	SearchScreeningEvent	O
+2	will	SearchScreeningEvent	O
+3	the	SearchScreeningEvent	O
+4	Santikos	SearchScreeningEvent	B-location
+5	Theatres	SearchScreeningEvent	I-location
+6	be	SearchScreeningEvent	O
+7	showing	SearchScreeningEvent	O
+8	animated	SearchScreeningEvent	B-movie_type
+9	movies	SearchScreeningEvent	I-movie_type
+
+# text = Play music on Itunes
+# intent = PlayMusic
+1	Play	PlayMusic	O
+2	music	PlayMusic	O
+3	on	PlayMusic	O
+4	Itunes	PlayMusic	B-service
+
+# text = show book name Straight No Chase
+# intent = SearchCreativeWork
+1	show	SearchCreativeWork	O
+2	book	SearchCreativeWork	B-object_type
+3	name	SearchCreativeWork	O
+4	Straight	SearchCreativeWork	B-object_name
+5	No	SearchCreativeWork	I-object_name
+6	Chase	SearchCreativeWork	I-object_name
+
+# text = Find the movie schedules for movies close by
+# intent = SearchScreeningEvent
+1	Find	SearchScreeningEvent	O
+2	the	SearchScreeningEvent	O
+3	movie	SearchScreeningEvent	B-object_type
+4	schedules	SearchScreeningEvent	I-object_type
+5	for	SearchScreeningEvent	O
+6	movies	SearchScreeningEvent	B-movie_type
+7	close	SearchScreeningEvent	B-location
+8	by	SearchScreeningEvent	I-location
+
+# text = this winter , meredith, betty and erika want to food at a gastropub that is in the same area as fran's location .
+# intent = BookRestaurant
+1	this	BookRestaurant	B-datetime
+2	winter	BookRestaurant	I-datetime
+3	,	BookRestaurant	O
+4	meredith,	BookRestaurant	B-party_size_description
+5	betty	BookRestaurant	I-party_size_description
+6	and	BookRestaurant	I-party_size_description
+7	erika	BookRestaurant	I-party_size_description
+8	want	BookRestaurant	O
+9	to	BookRestaurant	O
+10	food	BookRestaurant	O
+11	at	BookRestaurant	O
+12	a	BookRestaurant	O
+13	gastropub	BookRestaurant	B-restaurant_type
+14	that	BookRestaurant	O
+15	is	BookRestaurant	O
+16	in	BookRestaurant	B-location
+17	the	BookRestaurant	I-location
+18	same	BookRestaurant	I-location
+19	area	BookRestaurant	I-location
+20	as	BookRestaurant	O
+21	fran's	BookRestaurant	B-location
+22	location	BookRestaurant	I-location
+23	.	BookRestaurant	O
+
+# text = Add tune to my Para comer
+# intent = AddToPlaylist
+1	Add	AddToPlaylist	O
+2	tune	AddToPlaylist	B-music_item
+3	to	AddToPlaylist	O
+4	my	AddToPlaylist	B-reference
+5	Para	AddToPlaylist	B-playlist
+6	comer	AddToPlaylist	I-playlist
+
