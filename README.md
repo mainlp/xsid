@@ -41,7 +41,7 @@ This code is largely based on [MaChAmp](https://machamp-nlp.github.io/), we incl
     publisher = "Association for Computational Linguistics"
 }
 ```
-If you use version 0.4 (which includes Neapolitan and Swiss German), please also cite:
+If you use version >= 0.4 (which includes Neapolitan and Swiss German), please also cite:
 
 ```
 @inproceedings{2023-findings-vardial,
@@ -55,7 +55,7 @@ If you use version 0.4 (which includes Neapolitan and Swiss German), please also
 }
 ```
 
-If you use version 0.5 (which includes Bavarian and Lithuanian), please also cite:
+If you use version >= 0.5 (which includes Bavarian and Lithuanian), please also cite:
 
 ```
 @inproceedings{Winkler2024,
