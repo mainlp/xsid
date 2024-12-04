@@ -32,32 +32,90 @@ This code is largely based on [MaChAmp](https://machamp-nlp.github.io/), we incl
 
 ## Citation
 ```
-@inproceedings{van-der-goot-etal-2020-cross,
-      title={From Masked-Language Modeling to Translation: Non-{E}nglish Auxiliary Tasks Improve Zero-shot Spoken Language Understanding},
-      author={van der Goot, Rob and Sharaf, Ibrahim and Imankulova, Aizhan and {\"U}st{\"u}n, Ahmet and Stepanovic, Marija and Ramponi, Alan and Khairunnisa, Siti Oryza and Komachi, Mamoru and Plank, Barbara},
-    booktitle = "Proceedings of the 2021 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+@inproceedings{van-der-goot-etal-2021-masked,
+    title = "From Masked Language Modeling to Translation: Non-{E}nglish Auxiliary Tasks Improve Zero-shot Spoken Language Understanding",
+    author = {van der Goot, Rob  and
+      Sharaf, Ibrahim  and
+      Imankulova, Aizhan  and
+      {\"U}st{\"u}n, Ahmet  and
+      Stepanovi{\'c}, Marija  and
+      Ramponi, Alan  and
+      Khairunnisa, Siti Oryza  and
+      Komachi, Mamoru  and
+      Plank, Barbara},
+    editor = "Toutanova, Kristina  and
+      Rumshisky, Anna  and
+      Zettlemoyer, Luke  and
+      Hakkani-Tur, Dilek  and
+      Beltagy, Iz  and
+      Bethard, Steven  and
+      Cotterell, Ryan  and
+      Chakraborty, Tanmoy  and
+      Zhou, Yichao",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
     year = "2021",
-    address = "Mexico City, Mexico",
-    publisher = "Association for Computational Linguistics"
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.197",
+    doi = "10.18653/v1/2021.naacl-main.197",
+    pages = "2479--2497",
 }
 ```
 If you use version >= 0.4 (which includes Neapolitan and Swiss German), please also cite:
 
 ```
-@inproceedings{2023-findings-vardial,
-  title = "Findings of the {V}ar{D}ial Evaluation Campaign 2023",
-  author = {Aepli, No{\"e}mi and {\c{C}}{\"o}ltekin, {\c{C}}a{\u{g}}r{\i} and van der Goot, Rob and Jauhiainen, Tommi and Kazzaz, Mourhaf and Ljube{\v{s}}i{\'c}, Nikola and North, Kai and Plank, Barbara and Scherrer, Yves and Zampieri, Marcos},
-  booktitle = "Proceedings of the Tenth Workshop on NLP for Similar Languages, Varieties and Dialects",
-  month = may,
-  year = "2023",
-  address = "Dubrovnik, Croatia",
-  publisher = "Association for Computational Linguistics",
+@inproceedings{aepli-etal-2023-findings,
+    title = "Findings of the {V}ar{D}ial Evaluation Campaign 2023",
+    author = {Aepli, No{\"e}mi  and
+      {\c{C}}{\"o}ltekin, {\c{C}}a{\u{g}}r{\i}  and
+      Van Der Goot, Rob  and
+      Jauhiainen, Tommi  and
+      Kazzaz, Mourhaf  and
+      Ljube{\v{s}}i{\'c}, Nikola  and
+      North, Kai  and
+      Plank, Barbara  and
+      Scherrer, Yves  and
+      Zampieri, Marcos},
+    editor = {Scherrer, Yves  and
+      Jauhiainen, Tommi  and
+      Ljube{\v{s}}i{\'c}, Nikola  and
+      Nakov, Preslav  and
+      Tiedemann, J{\"o}rg  and
+      Zampieri, Marcos},
+    booktitle = "Tenth Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial 2023)",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.vardial-1.25",
+    doi = "10.18653/v1/2023.vardial-1.25",
+    pages = "251--261",
 }
 ```
 
 If you use version >= 0.5 (which includes Bavarian and Lithuanian), please also cite:
 
 ```
+@inproceedings{winkler-etal-2024-slot,
+    title = "Slot and Intent Detection Resources for {B}avarian and {L}ithuanian: Assessing Translations vs Natural Queries to Digital Assistants",
+    author = "Winkler, Miriam  and
+      Juozapaityte, Virginija  and
+      van der Goot, Rob  and
+      Plank, Barbara",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.1297",
+    pages = "14898--14915",
 @inproceedings{Winkler2024,
   title = "Slot and Intent Detection Resources for {B}avarian and {L}ithuanian: Assessing Translations vs Natural Queries to Digital Assistants",
   author = "Winkler, Miriam and Juozapaityte, Virginija and van der Goot, Rob and Plank, Barbara",
