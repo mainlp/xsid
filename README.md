@@ -14,6 +14,8 @@ This repository contains all code to reproduce the results in the paper. If you 
 
 **UPDATE** 04-2024: version 0.5 is released, including Bavarian and Lithuanian, please also see [https://github.com/mainlp/NaLiBaSID/tree/main](https://github.com/mainlp/NaLiBaSID/tree/main) for alternatives for these languages (including native queries!).
 
+**UPDATE** 07-2025: version 0.7 is released, including Norwegian Dialects. We also corrected approximately 200 mismatches in the words in the columns and the "text=" version.
+
 To reproduce all results in the paper, you have to run `./scripts/runAll.sh`. However, in practice this would take a very long time (especially when rerunning nmt-transfer, `./scripts/1.\*`), which is why we would suggest to inspect `./scripts/runAll.sh`, decide which parts are relevant for you, and manually run the required commands parallel. It should be noted that some of the scripts may fail, because we used the MultiAtis dataset, which is not publicly available. To run the experiments on those, [obtain the data](https://catalog.ldc.upenn.edu/LDC2021T04), convert it with `scripts/tsv2conll.py` in `data/multiAtis`. Alternatively, one could remove the `MultiAtis` key from the `datasets` dictionary in `scripts/myutils.py`. All tables and graphs of the paper can be reproduced by running `scripts/genAll.sh`.
 
 The experiments are divided in the scripts folder:
@@ -122,6 +124,30 @@ If you use version >= 0.5 (which includes Bavarian and Lithuanian), please also 
   booktitle = "Proceedings of The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation",
   year = "2024",
   publisher = "Association for Computational Linguistics",
+}
+```
+
+If you use version >= 0.7 (which includes Norwegian dialects), please also cite:
+
+```
+@inproceedings{maehlum-scherrer-2024-nomusic,
+    title = "{N}o{M}usic - The {N}orwegian Multi-Dialectal Slot and Intent Detection Corpus",
+    author = "M{\ae}hlum, Petter  and
+      Scherrer, Yves",
+    editor = {Scherrer, Yves  and
+      Jauhiainen, Tommi  and
+      Ljube{\v{s}}i{\'c}, Nikola  and
+      Zampieri, Marcos  and
+      Nakov, Preslav  and
+      Tiedemann, J{\"o}rg},
+    booktitle = "Proceedings of the Eleventh Workshop on NLP for Similar Languages, Varieties, and Dialects (VarDial 2024)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.vardial-1.9/",
+    doi = "10.18653/v1/2024.vardial-1.9",
+    pages = "107--116"
 }
 ```
 
