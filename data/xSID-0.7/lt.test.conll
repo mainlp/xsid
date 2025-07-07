@@ -2447,7 +2447,7 @@
 
 # id = 1
 # text-en = Give zero stars to Halo: Ghosts of Onyx
-# text = Suteik nulį žvaigždučių knygai "Halo: Ghosts of Onyx"
+# text = Suteik nulį žvaigždučių "Halo: Ghosts of Onyx"
 # intent = RateBook
 1	Suteik	RateBook	O
 2	nulį	RateBook	B-rating_value
@@ -2504,7 +2504,7 @@
 
 # id = 6
 # text-en = Add this tune to dorthy's 80's party playlist
-# text = Įtrauk šią melodiją į grojaraštį dorthy's 80's party
+# text = Įtrauk šią melodiją į dorthy grojaraštį 80's party
 # intent = AddToPlaylist
 1	Įtrauk	AddToPlaylist	O
 2	šią	AddToPlaylist	O
@@ -2649,7 +2649,7 @@
 
 # id = 17
 # text-en = Give The American Scene 2 of 6 stars
-# text = Suteik knygai The American Scene dvi iš šešių žvaigždučių
+# text = Suteik The American Scene dvi iš šešių žvaigždučių
 # intent = RateBook
 1	Suteik	RateBook	O
 2	The	RateBook	B-object_name
@@ -2687,7 +2687,7 @@
 
 # id = 20
 # text-en = book a table at a Fried chicken restaurant
-# text = užsisakyk staliuką gruzdintos vištienos restorane
+# text = užsisakyk staliuką Fried chicken restaurant
 # intent = BookRestaurant
 1	užsisakyk	BookRestaurant	O
 2	staliuką	BookRestaurant	O
@@ -2713,7 +2713,7 @@
 
 # id = 22
 # text-en = What will the weather be not far from here on October the nineteenth, 2026 ?
-# text = Koks oras bus netoliese 2026 spalio devynioliktąją ?
+# text = Koks oras bus netoli nuo čia 2026 spalio devynioliktąją ?
 # intent = weather/find
 1	Koks	weather/find	O
 2	oras	weather/find	O
@@ -2780,7 +2780,7 @@
 
 # id = 27
 # text-en = Could you locate the Epic Conditions picture ?
-# text = Ar galėtum rasti paveikslėlį the Epic Conditions ?
+# text = Ar galėtum rasti paveikslėlį Epic Conditions ?
 # intent = SearchCreativeWork
 1	Ar	SearchCreativeWork	O
 2	galėtum	SearchCreativeWork	O
@@ -2940,7 +2940,7 @@
 
 # id = 40
 # text-en = book spot for 1 at Town of Ramsgate in Merit
-# text = rezervuoti vietą vienam asmeniui Ramsgeito miestelyje Merite
+# text = rezervuoti vietą vienam asmeniui Town of Ramsgate Merite
 # intent = BookRestaurant
 1	rezervuoti	BookRestaurant	O
 2	vietą	BookRestaurant	O
@@ -3834,7 +3834,7 @@
 
 # id = 111
 # text-en = Show the Sexy Dance 2 times at the closest movie house
-# text = Parodyk man the Sexy Dance 2 rodymo laiką artimiausiame kino teatre
+# text = Parodyk the Sexy Dance 2 rodymo laiką artimiausiame kino teatre
 # intent = SearchScreeningEvent
 1	Parodyk	SearchScreeningEvent	O
 2	the	SearchScreeningEvent	O
@@ -3940,6 +3940,7 @@
 9	Ladies	RateBook	I-object_name
 10	"	RateBook	O
 11	nuliu	RateBook	B-rating_value
+11	balų	RateBook	B-rating_unit
 12	iš	RateBook	O
 13	6	RateBook	B-best_rating
 
@@ -4100,7 +4101,7 @@
 
 # id = 132
 # text-en = Give the Catedral series four stars .
-# text = Suteik serialui "the Catedral" keturias žvaigždutes .
+# text = Suteik serialui Catedral keturias žvaigždutes .
 # intent = RateBook
 1	Suteik	RateBook	O
 2	serialui	RateBook	B-object_part_of_series_type
@@ -4250,7 +4251,7 @@
 2	staliuko	BookRestaurant	O
 3	kur	BookRestaurant	O
 4	nors	BookRestaurant	O
-5	Kvorivilyje	BookRestaurant	B-location
+5	Kvòrivilyje	BookRestaurant	B-location
 6	po	BookRestaurant	B-datetime
 7	14	BookRestaurant	I-datetime
 8	valandų	BookRestaurant	I-datetime
@@ -4456,7 +4457,7 @@
 
 # id = 160
 # text-en = Give a rating of 2 to Juneteenth .
-# text = Suteik 2 žvaigždučių įvertinimą filmui "Juneteenth".
+# text = Suteik 2 įvertinimą filmui "Juneteenth".
 # intent = RateBook
 1	Suteik	RateBook	O
 2	2	RateBook	B-rating_value
@@ -4480,7 +4481,7 @@
 
 # id = 162
 # text-en = I want to hear soundtrack music on Youtube from Helena Iren Michaelsen
-# text = Noriu išgirsti Helena Iren Michaelsen garso takelio muziką Youtube
+# text = Noriu išgirsti Helena Iren Michaelsen garso takelio muziką per Youtube
 # intent = PlayMusic
 1	Noriu	PlayMusic	O
 2	išgirsti	PlayMusic	O
@@ -4495,7 +4496,7 @@
 
 # id = 163
 # text-en = book a table on 1/20/2023 for 5 people in MH
-# text = užsakyk statelį MH 5 amsnenims 2023.01.20
+# text = užsakyk statelį MH 5 asmenims 2023.01.20
 # intent = BookRestaurant
 1	užsakyk	BookRestaurant	O
 2	statelį	BookRestaurant	O
@@ -4667,7 +4668,7 @@
 
 # id = 177
 # text-en = Rate this current novel two out of 6 .
-# text = Įvertink šį dabartinį romaną dviem balais iš 6 .
+# text = Įvertink šį dabartinį romaną dviem iš 6 .
 # intent = RateBook
 1	Įvertink	RateBook	O
 2	šį	RateBook	B-object_select
@@ -4773,7 +4774,7 @@
 
 # id = 186
 # text-en = Add a song to this is racionais mc's
-# text = Pridėk dainą this is racionais mc's
+# text = Pridėk dainą į this is racionais mc's
 # intent = AddToPlaylist
 1	Pridėk	AddToPlaylist	O
 2	dainą	AddToPlaylist	B-music_item
@@ -4785,7 +4786,7 @@
 
 # id = 187
 # text-en = rate the current essay zero out of 6 stars
-# text = įvertink šią essę nuliu iš 6 žvaigždučių
+# text = įvertink šią esę nuliu iš 6 žvaigždučių
 # intent = RateBook
 1	įvertink	RateBook	O
 2	šią	RateBook	B-object_select
@@ -5182,7 +5183,7 @@
 
 # id = 218
 # text-en = Find me the novel with the name To Lose My Life …
-# text = Surask man novelę pavadinimu "To Lose My Life" ...
+# text = Surask man novelę pavadinimu "To Lose My Life" …
 # intent = SearchCreativeWork
 1	Surask	SearchCreativeWork	O
 2	man	SearchCreativeWork	O
@@ -5449,7 +5450,7 @@
 
 # id = 238
 # text-en = To the travelling playlist, please add this David Gahan song .
-# text = Į grojaraštį "the travelling" įtrauk šią David Gahan dainą .
+# text = Į grojaraštį travelling įtrauk šią David Gahan dainą .
 # intent = AddToPlaylist
 1	Į	AddToPlaylist	O
 2	grojaraštį	AddToPlaylist	O
@@ -5518,7 +5519,7 @@
 
 # id = 243
 # text-en = phyllis ward and veronica need a table at a restaurant in 152 days
-# text = phyllis ward ir veronica reikia staliuko restorane už 152 dienos
+# text = phyllis ward ir veronica reikia staliuko restorane už 152 dienų
 # intent = BookRestaurant
 1	phyllis	BookRestaurant	B-party_size_description
 2	ward	BookRestaurant	I-party_size_description

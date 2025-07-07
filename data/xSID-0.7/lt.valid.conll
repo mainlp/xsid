@@ -1479,6 +1479,7 @@
 3	Life	RateBook	I-object_name
 4	įvertinčiau	RateBook	O
 5	trimis	RateBook	B-rating_value
+5	balais	RateBook	B-rating_unit
 6	iš	RateBook	O
 7	šešių	RateBook	B-best_rating
 
@@ -1565,6 +1566,7 @@
 8	šimtai	PlayMusic	I-datetime
 9	devyniasdešimt	PlayMusic	I-datetime
 10	penktų	PlayMusic	I-datetime
+11	metų	PlayMusic	I-datetime
 
 # id = 8
 # text-en = What will the weather be like in the Bahamas eleven years and a half from now
@@ -1615,7 +1617,7 @@
 
 # id = 12
 # text-en = Give the current novel a 3 out of 6 rating
-# text = Suteik dabartiniam romanui 3 iš 6 balų įvertinimą
+# text = Suteik dabartiniam romanui 3 iš 6 įvertinimą
 # intent = RateBook
 1	Suteik	RateBook	O
 2	dabartiniam	RateBook	B-object_select
@@ -1690,7 +1692,7 @@
 
 # id = 18
 # text-en = add track 70s smash hits to my
-# text = pridėti 70s smash hits prie mano
+# text = pridėti takelį 70s smash hits prie mano
 # intent = AddToPlaylist
 1	pridėti	AddToPlaylist	O
 2	takelį	AddToPlaylist	B-music_item
@@ -2394,7 +2396,7 @@
 
 # id = 71
 # text-en = Is it supposed to rain nearby my current location at 0 o'clock ?
-# text = Ar netoli manęs nulinę valandą turėtų lyti ?
+# text = Ar netoli mano vietos nulinę valandą turėtų lyti ?
 # intent = weather/find
 1	Ar	weather/find	O
 2	netoli	weather/find	B-location
@@ -2559,7 +2561,7 @@
 
 # id = 84
 # text-en = Book me a restaurant for nine in Statham
-# text = Užsakyk man restoraną devintai Steitame
+# text = Užsakyk man restoraną devyniems Steitame
 # intent = BookRestaurant
 1	Užsakyk	BookRestaurant	O
 2	man	BookRestaurant	O
@@ -2572,7 +2574,7 @@
 # text = Surask vaizdo žaidimą IBM Program temporary fix
 # intent = SearchCreativeWork
 1	Surask	SearchCreativeWork	O
-2	video	SearchCreativeWork	B-object_type
+2	vaizdo	SearchCreativeWork	B-object_type
 3	žaidimą	SearchCreativeWork	I-object_type
 4	IBM	SearchCreativeWork	B-object_name
 5	Program	SearchCreativeWork	I-object_name
@@ -2764,7 +2766,7 @@
 3	Spotify	PlayMusic	B-service
 4	"	PlayMusic	O
 5	ir	PlayMusic	O
-6	paleisk	PlayMusic	O
+6	paleiskite	PlayMusic	O
 7	Richardo	PlayMusic	B-artist
 8	Harvey	PlayMusic	I-artist
 9	dvidešimtojo	PlayMusic	B-datetime
@@ -2798,8 +2800,10 @@
 2	šį	AddToPlaylist	O
 3	atlikėją	AddToPlaylist	B-music_item
 4	į	AddToPlaylist	O
-5	mano	AddToPlaylist	B-reference
+5	"	AddToPlaylist	O
+5	my	AddToPlaylist	B-reference
 6	Jazz	AddToPlaylist	B-playlist
+7	"	AddToPlaylist	O
 7	grojaraštį	AddToPlaylist	O
 
 # id = 102
@@ -2861,6 +2865,7 @@
 1	kokiu	SearchScreeningEvent	O
 2	laiku	SearchScreeningEvent	O
 3	rodomas	SearchScreeningEvent	O
+4	filmas	SearchScreeningEvent	O
 4	Utamaro	SearchScreeningEvent	B-movie_name
 5	and	SearchScreeningEvent	I-movie_name
 6	His	SearchScreeningEvent	I-movie_name
@@ -2904,13 +2909,13 @@
 
 # id = 109
 # text-en = Play me the best Charles Neidich song
-# text = Paleisk man geriausią Charleso Neidicho dainą
+# text = Paleisk man geriausią Charles Neidicho dainą
 # intent = PlayMusic
 1	Paleisk	PlayMusic	O
 2	man	PlayMusic	O
 3	geriausią	PlayMusic	B-sort
 4	Charles	PlayMusic	B-artist
-5	Neidich	PlayMusic	I-artist
+5	Neidicho	PlayMusic	I-artist
 6	dainą	PlayMusic	B-music_item
 
 # id = 110
@@ -3053,7 +3058,7 @@
 # text = įvertink dabartinį novelę 0 iš 6
 # intent = RateBook
 1	įvertink	RateBook	O
-2	dabartinę	RateBook	B-object_select
+2	dabartinį	RateBook	B-object_select
 3	novelę	RateBook	B-object_type
 4	0	RateBook	B-rating_value
 5	iš	RateBook	O
@@ -3065,9 +3070,12 @@
 # intent = SearchScreeningEvent
 1	Norėčiau	SearchScreeningEvent	O
 2	pamatyti	SearchScreeningEvent	O
+2	filmo	SearchScreeningEvent	O
+3	"	SearchScreeningEvent	O
 3	Silly	SearchScreeningEvent	B-movie_name
 4	Movie	SearchScreeningEvent	I-movie_name
 5	2.0	SearchScreeningEvent	I-movie_name
+6	"	SearchScreeningEvent	O
 6	seansų	SearchScreeningEvent	O
 7	laiką	SearchScreeningEvent	O
 8	kino	SearchScreeningEvent	B-object_location_type
@@ -3273,6 +3281,7 @@
 3	teatre	SearchScreeningEvent	I-object_location_type
 4	galima	SearchScreeningEvent	O
 5	pamatyti	SearchScreeningEvent	O
+5	filmą	SearchScreeningEvent	O
 6	A	SearchScreeningEvent	B-movie_name
 7	Handful	SearchScreeningEvent	I-movie_name
 8	of	SearchScreeningEvent	I-movie_name
@@ -3297,7 +3306,7 @@
 
 # id = 139
 # text-en = show of From South Africa to South Carolina
-# text = rodyk From South Africa to South Carolina
+# text = šou From South Africa to South Carolina
 # intent = SearchCreativeWork
 1	šou	SearchCreativeWork	B-object_type
 2	From	SearchCreativeWork	B-object_name
@@ -3328,6 +3337,7 @@
 3	teatre	SearchScreeningEvent	I-object_location_type
 4	08:56:29	SearchScreeningEvent	B-datetime
 5	rodomas	SearchScreeningEvent	O
+5	filmas	SearchScreeningEvent	O
 6	Flower	SearchScreeningEvent	B-movie_name
 7	and	SearchScreeningEvent	I-movie_name
 8	Snake	SearchScreeningEvent	I-movie_name
@@ -3353,6 +3363,7 @@
 2	septyniems	BookRestaurant	B-party_size_number
 3	žmonėms	BookRestaurant	O
 4	rezervaciją	BookRestaurant	O
+4	restorane	BookRestaurant	O
 5	"	BookRestaurant	O
 6	The	BookRestaurant	B-restaurant_name
 7	French	BookRestaurant	I-restaurant_name
