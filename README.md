@@ -14,7 +14,7 @@ This repository contains all code to reproduce the results in the paper. If you 
 
 **UPDATE** 04-2024: version 0.5 is released, including Bavarian and Lithuanian, please also see [https://github.com/mainlp/NaLiBaSID/tree/main](https://github.com/mainlp/NaLiBaSID/tree/main) for alternatives for these languages (including native queries!).
 
-**UPDATE** 07-2025: version 0.7 is released, including Norwegian Dialects. We also corrected approximately 200 mismatches in the words in the columns and the "text=" version.
+**UPDATE** 07-2025: version 0.7 is released, including Norwegian Dialects. We also corrected approximately 200 mismatches in the words in the columns and the "text=" version. Note that the Norwegian data is larger, because it contains a variety of dialects, which can be identified by the `dialect` label
 
 To reproduce all results in the paper, you have to run `./scripts/runAll.sh`. However, in practice this would take a very long time (especially when rerunning nmt-transfer, `./scripts/1.\*`), which is why we would suggest to inspect `./scripts/runAll.sh`, decide which parts are relevant for you, and manually run the required commands parallel. It should be noted that some of the scripts may fail, because we used the MultiAtis dataset, which is not publicly available. To run the experiments on those, [obtain the data](https://catalog.ldc.upenn.edu/LDC2021T04), convert it with `scripts/tsv2conll.py` in `data/multiAtis`. Alternatively, one could remove the `MultiAtis` key from the `datasets` dictionary in `scripts/myutils.py`. All tables and graphs of the paper can be reproduced by running `scripts/genAll.sh`.
 

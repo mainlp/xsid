@@ -69,7 +69,7 @@
 # id = 7
 # text-en = snooze my alarms for five minutes
 # text-de: snooze meinen Wecker für fünf Minuten
-# text = Du für mini Wecker dSchlummerfunktion aktiviere
+# text = Du für mini Wecker d Schlummerfunktion für füf minute aktiviere
 # intent = alarm/snooze_alarm
 1	Du	alarm/snooze_alarm	O
 2	für	alarm/snooze_alarm	O
@@ -190,7 +190,7 @@
 # id = 17
 # text-en = Set alarm for 5 am
 # text-de: Erstelle einen Wecker für 5 Uhr morgens
-# text = Du en Alarm dry für hütem füfi
+# text = Du en Alarm dry fürem füfi am morge
 # intent = alarm/set_alarm
 1	Du	alarm/set_alarm	O
 2	en	alarm/set_alarm	O
@@ -451,7 +451,7 @@
 # id = 39
 # text-en = Will it snow enough tonight to make travelling hazardous?
 # text-de: Wird es heute Nacht genug schneien, um das Reisen gefährlich zu machen?
-# text = Wirds so viu schneie , deses gfährlech wird zreise ?
+# text = Wirds hüt nacht so viu schneie , deses gfährlech wird zreise ?
 # intent = weather/find
 1	Wirds	weather/find	O
 2	hüt	weather/find	B-datetime
@@ -785,7 +785,7 @@
 # id = 63
 # text-en = Cancel all alarms
 # text-de: Lösche alle Wecker
-# text = Schteu aui mini Wecker ab .
+# text = Schteu aui Wecker ab .
 # intent = alarm/cancel_alarm
 1	Schteu	alarm/cancel_alarm	O
 2	aui	alarm/cancel_alarm	B-reference
@@ -829,7 +829,7 @@
 # id = 66
 # text-en = set reminder to watch the Colts one hour before game starts
 # text-de: Erstelle eine Erinnerung um the Colts zu schauen eine Stunde bevor das Spiel beginnt
-# text = Du en Erinnerig dry , desi The Colts e Schtung bevor ds Schpiu startet luege .
+# text = Du en Erinnerig dry , desi The Colts luege e Schtung bevor ds Schpiu startet .
 # intent = reminder/set_reminder
 1	Du	reminder/set_reminder	O
 2	en	reminder/set_reminder	O
@@ -918,7 +918,7 @@
 # id = 72
 # text-en = Remind me to pay rent.
 # text-de: Erinnere mich, die Miete zu zahlen.
-# text = Du mi dra erinnere , mini Mieti zzahle .
+# text = Du mi dra erinnere , d Mieti zzahle .
 # intent = reminder/set_reminder
 1	Du	reminder/set_reminder	O
 2	mi	reminder/set_reminder	O
@@ -1209,7 +1209,7 @@
 # id = 94
 # text-en = show my alarms
 # text-de: zeige meine Wecker
-# text = Zeig au mini Wecker .
+# text = Zeig mini Wecker .
 # intent = alarm/show_alarms
 1	Zeig	alarm/show_alarms	O
 2	mini	alarm/show_alarms	B-reference
@@ -1533,7 +1533,7 @@
 # id = 118
 # text-en = delete all alarms
 # text-de: entferne alle Wecker
-# text = Du au mini Wecker lösche .
+# text = Du aui Wecker lösche .
 # intent = alarm/cancel_alarm
 1	Du	alarm/cancel_alarm	O
 2	aui	alarm/cancel_alarm	B-reference
@@ -1898,7 +1898,7 @@
 # id = 146
 # text-en = What time is my alarm set for?
 # text-de: Für welche Zeit ist mein Wecker gestellt?
-# text = Uf wenn hani dr Wecker gschteut ?
+# text = Uf wenn hani mi Wecker gschteut ?
 # intent = alarm/show_alarms
 1	Uf	alarm/show_alarms	O
 2	wenn	alarm/show_alarms	O
@@ -2088,7 +2088,7 @@
 # id = 160
 # text-en = Will there be snow today?
 # text-de: Wird es heute schneien?
-# text = Wotts hüt rägne ?
+# text = Wotts hüt scheie ?
 # intent = weather/find
 1	Wotts	weather/find	O
 2	hüt	weather/find	B-datetime
@@ -2271,7 +2271,7 @@
 # id = 176
 # text-en = Set alarm for 10 am
 # text-de: stelle Wecker auf 10 Uhr früh
-# text = Du e Wecker dry für morn em 10ni em Morge .
+# text = Du e Wecker dry für em 10ni em Morge .
 # intent = alarm/set_alarm
 1	Du	alarm/set_alarm	O
 2	e	alarm/set_alarm	O
@@ -2529,7 +2529,7 @@
 # id = 197
 # text-en = What is the humidity today?
 # text-de: Was ist die Luftfeuchtigkeit heute?
-# text = Wi höch isch d Füechtigkeit hüt ?
+# text = Wi höch isch d Luftfüechtigkeit hüt ?
 # intent = weather/find
 1	Wi	weather/find	O
 2	höch	weather/find	O
@@ -2862,7 +2862,7 @@
 # id = 223
 # text-en = What is the humidity today?
 # text-de: Was ist die Luftfeuchtigkeit heute?
-# text = Wi höch isch d Füechtigkeit hüt ?
+# text = Wi höch isch d Luftfüechtigkeit hüt ?
 # intent = weather/find
 1	Wi	weather/find	O
 2	höch	weather/find	O
@@ -3147,7 +3147,7 @@
 # id = 246
 # text-en = turn off all alarms for tomorrow
 # text-de: Schalte alle Wecker für morgen ab
-# text = Deaktivier au Wecker für mon .
+# text = Deaktivier au Wecker für morn .
 # intent = alarm/cancel_alarm
 1	Deaktivier	alarm/cancel_alarm	O
 2	au	alarm/cancel_alarm	B-reference
@@ -3211,7 +3211,7 @@
 # id = 251
 # text-en = Give zero stars to Halo: Ghosts of Onyx
 # text-de: Gib 0 Sterne an Halo: Ghosts of Onyx
-# text = Gib Zero Stars to Halo : Ghosts of Onyx nueu Stärne .
+# text = Gib 0 stärne a Halo : Ghosts of Onyx .
 # intent = RateBook
 1	Gib	RateBook	O
 2	0	RateBook	B-rating_value
@@ -3266,7 +3266,7 @@
 # id = 255
 # text-en = Book spot for 9 at Thurmont
 # text-de: Buche einen Platz für 9 in Thurmont
-# text = Buech e Platz fürem nüni im Thurmont .
+# text = Buech e Platz für 9 persone im Thurmont .
 # intent = BookRestaurant
 1	Buech	BookRestaurant	O
 2	e	BookRestaurant	O
@@ -3281,13 +3281,13 @@
 # id = 256
 # text-en = Add this tune to dorthy's 80's party playlist
 # text-de: Füge dieses Lied zu Dortys 80er-Party-Playliste hinzu
-# text = Du des Lied uf mini Dorthy's-80-Party-Playlist .
+# text = Du des Lied uf Dorthy's 80-Party-Playlist .
 # intent = AddToPlaylist
 1	Du	AddToPlaylist	O
 2	des	AddToPlaylist	O
 3	Lied	AddToPlaylist	B-music_item
 4	uf	AddToPlaylist	O
-5	Dorthys	AddToPlaylist	B-reference
+5	Dorthy's	AddToPlaylist	B-reference
 6	80-Party-Playlist	AddToPlaylist	B-playlist
 7	.	AddToPlaylist	O
 
@@ -3406,7 +3406,7 @@
 # id = 264
 # text-en = I want to book a sundanese gastropub nearby in Texas for 3 people on 5/20/2025 .
 # text-de: Ich möchte am 20.05.2025 einen Sundanesischen Gastropub in der Nähe von Texas für 3 Personen buchen .
-# text = I wott e Platz für 3 Lüt am 5te 20. 2025 im sundanesische Gastropub ir Nöchi zTexas
+# text = I wott e Platz für 3 Lüt am 20.5.2025 im sundanesische Gastropub ir Nöchi zTexas
 # intent = BookRestaurant
 1	I	BookRestaurant	O
 2	wott	BookRestaurant	O
@@ -3442,7 +3442,7 @@
 # id = 266
 # text-en = Give this chronicle a 2 rating.
 # text-de: Gib dieser Chronik eine Bewertung von 2.
-# text = Gib dere Chronik e Zwöier-Bewärtig .
+# text = Gib dere Chronik e zwöier Bewärtig .
 # intent = RateBook
 1	Gib	RateBook	O
 2	dere	RateBook	B-object_select
@@ -3550,7 +3550,7 @@
 # id = 273
 # text-en = Weather in Walden Russia on 12/26/2018
 # text-de: Wetter in Walden Russland am 12.12.2018
-# text = Ds Wätter zWalden zRussland am 12.26.2018.
+# text = Ds Wätter zWalden zRussland am 12.26.2018
 # intent = weather/find
 1	Ds	weather/find	O
 2	Wätter	weather/find	O
@@ -3586,7 +3586,7 @@
 # id = 275
 # text-en = Rate this book a 1
 # text-de: Bewerte dieses Buch mit 1
-# text = Gib däm Buech e Einer-Bewärtig .
+# text = Gib däm Buech e einer Bewärtig .
 # intent = RateBook
 1	Gib	RateBook	O
 2	däm	RateBook	B-object_select
@@ -3872,7 +3872,7 @@
 # id = 295
 # text-en = What's the weather forecast for Bothe-Napa Valley State Park close by february 20 ?
 # text-de: Wie ist die Wettervorhersage für den Bothe-Napa Valley State Park um den 20. Februar ?
-# text = Wi isch d Wätterprognose für Bothe-Napa Valley ume 20. Februar ume ?
+# text = Wi isch d Wätterprognose füre Bothe-Napa Valley State Park ume 20. Februar ume ?
 # intent = weather/find
 1	Wi	weather/find	O
 2	isch	weather/find	O
@@ -3927,7 +3927,7 @@
 # id = 298
 # text-en = Can I get the times for movies in the neighbourhood
 # text-de: Kann ich die Zeiten für Filme in der Nachbarschaft bekommen
-# text = Chasch mer säge , weli Fiume ir Nachbarschaft loufe ?
+# text = Chasch mer säge , weli Fiume um weli ziit ir Nachbarschaft loufe ?
 # intent = SearchScreeningEvent
 1	Chasch	SearchScreeningEvent	O
 2	mer	SearchScreeningEvent	O
@@ -4242,7 +4242,7 @@
 # id = 318
 # text-en = how cold will it be here in 1 second
 # text-de: Wie kalt wird es hier in 1 Sekunde sein
-# text = Wi chauts wirds hie ire Sekunde ?
+# text = Wi chaut wirds hie ire Sekunde ?
 # intent = weather/find
 1	Wi	weather/find	O
 2	chaut	weather/find	B-condition_temperature
@@ -4297,7 +4297,7 @@
 # id = 322
 # text-en = Book a reservation at tavern for noodle
 # text-de: Buche einen Tisch in der Taverne für Nudeln
-# text = Buech e Tisch ir Nudu-Tavärne .
+# text = Buech e Tisch ir Nudu Tavärne .
 # intent = BookRestaurant
 1	Buech	BookRestaurant	O
 2	e	BookRestaurant	O
@@ -4349,7 +4349,7 @@
 # id = 326
 # text-en = Can you please find me the Harry Hood saga ?
 # text-de: Kannst du bitte die Harry Hood Saga finden ?
-# text = Chönntsch mer äch d Harry-Hood-Saga sueche ?
+# text = Chönntsch mer äch d Harry Hood Saga sueche ?
 # intent = SearchCreativeWork
 1	Chönntsch	SearchCreativeWork	O
 2	mer	SearchCreativeWork	O
@@ -4417,7 +4417,7 @@
 # id = 331
 # text-en = Play Another Passenger from Louis Nelson Delisle .
 # text-de: Spiele Another Passenger von Louis Nelson Delisle .
-# text = Schpiu Play Another Passanger vom Louis Nelson Delisle .
+# text = Schpiu Another Passanger vom Louis Nelson Delisle .
 # intent = PlayMusic
 1	Schpiu	PlayMusic	O
 2	Another	PlayMusic	B-album
@@ -4462,7 +4462,7 @@
 # id = 334
 # text-en = Lets eat near Oakfield 17 seconds from now at Ted Peters Famous Smoked Fish
 # text-de: Lass uns in 17 Sekunden in der Nähe von Oakfield bei Ted Peters Famous Smoked Fish essen
-# text = Chum , mir ässe i 17 Sekunde ir Nöchi vo Oakfield im berüehmte Reschi Smoked Fish vom Ted Peters .
+# text = Chum , mir ässe i 17 Sekunde ir Nöchi vo Oakfield im Ted Peters Famous Smoked Fish .
 # intent = BookRestaurant
 1	Chum	BookRestaurant	O
 2	,	BookRestaurant	O
@@ -4590,7 +4590,7 @@
 # id = 342
 # text-en = Can you look up the Molecular Oncology saga ?
 # text-de: Kannst du die Molecular Oncology Saga nachschlagen ?
-# text = Chasch bitte hurti d Molecular-Oncology-Saga google ?
+# text = Chasch bitte hurti d Molecular-Oncology Saga google ?
 # intent = SearchCreativeWork
 1	Chasch	SearchCreativeWork	O
 2	bitte	SearchCreativeWork	O
@@ -4712,7 +4712,7 @@
 # id = 350
 # text-en = Let's hear good Mohammad Mamle on Vimeo .
 # text-de: Lass uns good Mohammad Male on Vimeo hören .
-# text = Chum , mir lose ( good ? ) Mohammad Mamle uf Vimeo .
+# text = Chum , mir lose good Mohammad Mamle uf Vimeo .
 # intent = PlayMusic
 1	Chum	PlayMusic	O
 2	,	PlayMusic	O
@@ -4835,7 +4835,7 @@
 # id = 358
 # text-en = Add the 40 cal tune to the laundry playlist.
 # text-de: Füge die 40-cal Melodie zur Wäschewiedergabeliste hinzu .
-# text = Du ds 40-Cal-Lied ufd Laundry-Playlist .
+# text = Du ds 40-Cal Lied ufd Laundry-Playlist .
 # intent = AddToPlaylist
 1	Du	AddToPlaylist	O
 2	ds	AddToPlaylist	O
@@ -4942,7 +4942,7 @@
 # id = 364
 # text-en = I want to book Tupelo Honey Cafe in New Jersey for five people.
 # text-de: Ich möchte das Tupelo Honey Cafe in New Jersey für fünf Personen buchen.
-# text = I wott e Platz für füf im Tupelo Honey Cafe .
+# text = I wott e Platz für füf im Tupelo Honey Cafe z New Jersey bueche.
 # intent = BookRestaurant
 1	I	BookRestaurant	O
 2	wott	BookRestaurant	O
@@ -5011,7 +5011,7 @@
 # id = 368
 # text-en = Rate In the Company of Cheerful Ladies a zero out of 6
 # text-de: Bewerte In the Company of Cheerful Ladies mit Null von 6
-# text = Gib " In the Company of Cheerful Ladies " nuu vo sächs .
+# text = Gib " In the Company of Cheerful Ladies " nuu vo sächs stärne.
 # intent = RateBook
 1	Gib	RateBook	O
 2	"	RateBook	O
@@ -5522,7 +5522,7 @@
 # id = 400
 # text-en = I need to add to my Infinite Indie Folk list the works of Rahim Shah
 # text-de: Ich müsste die Werke von Rahim Shah zu meiner Infinite Indie Folk Playliste hinzufügen
-# text = I mues mini Infinite-Indie-Folk-Playlist de Wärch vo Rahim Shah hinzuefüege .
+# text = I mues mire Infinite-Indie-Folk-Playlist de Wärch vo Rahim Shah hinzuefüege .
 # intent = AddToPlaylist
 1	I	AddToPlaylist	O
 2	mues	AddToPlaylist	O
@@ -5844,7 +5844,7 @@
 # id = 421
 # text-en = Rate Cotton Comes to Harlem a 2
 # text-de: Bewerte Cotton Comes to Harlem mit einer 2
-# text = Gib " Cotton Comes to Harlem a 2 " e Bewärtig .
+# text = Gib " Cotton Comes to Harlem " es zwöi .
 # intent = RateBook
 1	Gib	RateBook	O
 2	"	RateBook	O
@@ -6322,7 +6322,7 @@
 # id = 453
 # text-en = I want to book a bougatsa restaurant in next year nearby Penn for three people.
 # text-de: Ich möchte in einem Bougatsa Restaurant nächstes Jahr in der Nähe von Penn für 3 Personen reservieren.
-# text = I wott nöchschts Jahr es Bougatsarestaurant ir nöchi vo Penn für drü Lüt bueche .
+# text = I wott nöchschts Jahr es Bougatsa Restaurant ir nöchi vo Penn für drü Lüt bueche .
 # intent = BookRestaurant
 1	I	BookRestaurant	O
 2	wott	BookRestaurant	O
@@ -6432,7 +6432,7 @@
 # id = 460
 # text-en = Book spot for 9
 # text-de: Reserviere einen Platz für 9
-# text = Buech e Platz für di 9e
+# text = Buech e Platz für 9
 # intent = BookRestaurant
 1	Buech	BookRestaurant	O
 2	e	BookRestaurant	O
@@ -6456,7 +6456,7 @@
 # id = 462
 # text-en = Play something from 90s Pop Rock Essentials
 # text-de: Spiele etwas aus der 90s Pop Rock Essentials
-# text = Spiu öppis vo de Pop Rock Essentials us de 90er
+# text = Spiu öppis vo de 90s Pop Rock Essentials
 # intent = PlayMusic
 1	Spiu	PlayMusic	O
 2	öppis	PlayMusic	O
@@ -6861,7 +6861,7 @@
 # id = 489
 # text-en = I want to hear them from the artist Murcof
 # text-de: Ich möchte Them vom Künstler Murcof hören
-# text = I wottse vom Künschtler Murcof ghöre .
+# text = I wott Them vom Künschtler Murcof ghöre .
 # intent = PlayMusic
 1	I	PlayMusic	O
 2	wott	PlayMusic	O

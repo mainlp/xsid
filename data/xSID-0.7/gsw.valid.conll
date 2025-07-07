@@ -76,7 +76,7 @@
 # id = 8
 # text-en = I need an alarm for 5pm to remind me to take my medicine
 # text-de: Ich brauche einen Wecker für 17 Uhr, um mich daran zu erinnern, meine Medizin einzunehmen
-# text = I bruchen e Wecker für morn em füfi em Nami , desi dra dänke , mini Medis znäh .
+# text = I bruchen e Wecker für em füfi em Nami , desi dra dänke , mini Medis znäh .
 # intent = alarm/set_alarm
 1	I	alarm/set_alarm	O
 2	bruchen	alarm/set_alarm	O
@@ -375,7 +375,7 @@
 # id = 30
 # text-en = alarm on
 # text-de: Wecker ein
-# text = Schaut dr Wecker a.
+# text = Schaut dr Wecker a
 # intent = alarm/set_alarm
 1	Schaut	alarm/set_alarm	O
 2	dr	alarm/set_alarm	O
@@ -461,7 +461,7 @@
 # id = 37
 # text-en = What is the humidity level today
 # text-de: Was ist das Luftfeuchtigkeitslevel heute
-# text = Wi höch isch dr Füechtigkeitsgrad hüt ?
+# text = Wi höch isch dr Luftfüechtigkeitsgrad hüt ?
 # intent = weather/find
 1	Wi	weather/find	O
 2	höch	weather/find	O
@@ -1078,7 +1078,7 @@
 # id = 85
 # text-en = What is the humidity today?
 # text-de: Was ist die Luftfeuchtigkeit heute?
-# text = Wi höch isch d Füechtigkeit hüt ?
+# text = Wi höch isch d Luftfüechtigkeit hüt ?
 # intent = weather/find
 1	Wi	weather/find	O
 2	höch	weather/find	O
@@ -1581,7 +1581,7 @@
 # id = 125
 # text-en = Make a new alarm for Thursday at 1pm.
 # text-de: erstelle einen neuen Alarm für Donnerstag um 1 Uhr nachmittags
-# text = Du e neue Wecker dri fürem Zischti em eis em Nami .
+# text = Du e neue Wecker dri fürem Donnschti em eis em Nami .
 # intent = alarm/set_alarm
 1	Du	alarm/set_alarm	O
 2	e	alarm/set_alarm	O
@@ -2209,7 +2209,7 @@
 # id = 169
 # text-en = book near Montana restaurant serving sri lankan food for 6 that is highly rated on tues.
 # text-de: Buche in der Nähe von Montana ein srilankisches Restaurant für 6 Personen, das hoch bewertet ist am Dienstag .
-# text = Buech e Platz imne Reschi ir Nöchi vo Montana wo e gueti Bewärtig uf Tues het o wo Ässe us Sri Lanka serviert .
+# text = Buech e Platz am Zischti für 6 imne Reschi ir Nöchi vo Montana wo e gueti Bewärtig het o wo Ässe us Sri Lanka serviert .
 # intent = BookRestaurant
 1	Buech	BookRestaurant	O
 2	e	BookRestaurant	O
@@ -2241,7 +2241,7 @@
 # id = 170
 # text-en = Book me a lunch at Boreas for a party of 8
 # text-de: Buche Mittagessen in Boreas für eine Party von 8 Personen
-# text = Buech es Zmittag im Boreas für e Gruppe vo 8.
+# text = Buech es Zmittag im Boreas für e Gruppe vo 8
 # intent = BookRestaurant
 1	Buech	BookRestaurant	O
 2	es	BookRestaurant	O
@@ -2557,7 +2557,7 @@
 # id = 190
 # text-en = book a table today at a steakhouse for eight that serves sashimi
 # text-de: Buche einen Tisch heute für acht Personen in einem Steakhouse da Sashimi serviert
-# text = Reservier e Tisch für acht imne Steakhouse , wo Sashimi serviert .
+# text = Reservier e Tisch für hüt für acht imne Steakhouse , wo Sashimi serviert .
 # intent = BookRestaurant
 1	Reservier	BookRestaurant	O
 2	e	BookRestaurant	O
@@ -2648,7 +2648,7 @@
 # id = 196
 # text-en = What are the movie times for the Caribbean Cinemas ?
 # text-de: Was sind die Spielzeiten für die Caribbean Cinemas ?
-# text = Wi heisse d Fiumtitle vo de Fiume i de Caribbean Cinemas ?
+# text = Wi sy d Spiuzite i de Caribbean Cinemas ?
 # intent = SearchScreeningEvent
 1	Wi	SearchScreeningEvent	O
 2	sy	SearchScreeningEvent	O
@@ -2855,7 +2855,7 @@
 # id = 208
 # text-en = is Tarzan of the Apes playing at Cobb Theatres
 # text-de: läuft Tarzan of the Apes in den Cobb Theatern?
-# text = Schpiut dr Tarzan vo " The Apes " im Cobb-Theater ?
+# text = Schpiut "Tarzan of the Apes" im Cobb-Theater ?
 # intent = SearchScreeningEvent
 1	Schpiut	SearchScreeningEvent	O
 2	"	SearchScreeningEvent	O
@@ -2965,7 +2965,7 @@
 # id = 215
 # text-en = book at The Halal Guys on Oct. 17
 # text-de: Buche bei The Halal Guys am 17. Oktober
-# text = Reservier e Tisch im The Halal em 17. Oktober .
+# text = Reservier e Tisch im The Halal Guys em 17. Oktober .
 # intent = BookRestaurant
 1	Reservier	BookRestaurant	O
 2	e	BookRestaurant	O
@@ -3292,7 +3292,7 @@
 # id = 236
 # text-en = Find a table for one at a popular churrascaria for three weeks from now
 # text-de: Finde einen Tisch für eine Person in einer beliebten Churrascaria in 3 Wochen ab heute
-# text = Suech e freie Tisch ire beliebte Churrascaria für i drü Wuche .
+# text = Suech e Tisch für ei Person ire beliebte Churrascaria für i drü Wuche .
 # intent = BookRestaurant
 1	Suech	BookRestaurant	O
 2	e	BookRestaurant	O
@@ -3323,7 +3323,7 @@
 # id = 238
 # text-en = Book a restaurant that serves agnolotti in Colorado City Idaho .
 # text-de: Buche ein Restaurant in Colorado City Idaho, das Agnolotti serviert .
-# text = Reservier e Tisch imne Reschi zColorado , City Idaho , wo Agnolotti serviert .
+# text = Reservier e Tisch imne Reschi zColorado City Idaho , wo Agnolotti serviert .
 # intent = BookRestaurant
 1	Reservier	BookRestaurant	O
 2	e	BookRestaurant	O
@@ -3462,7 +3462,7 @@
 # id = 246
 # text-en = Which is the nearest cinema showing movies that start in nineteen seconds ?
 # text-de: Welches ist das nächste Kino, in dem Filme gezeigt werden, die in neunzehn Sekunden beginnen ?
-# text = Weles Chino , wo em nöchschte lyt , zeigt Fiume , wo i nünzäh Minuten afö ?
+# text = Weles Chino , wo em nöchschte lyt , zeigt Fiume , wo i nünzäh Sekunden afö ?
 # intent = SearchScreeningEvent
 1	Weles	SearchScreeningEvent	O
 2	Chino	SearchScreeningEvent	B-object_location_type
@@ -3664,7 +3664,7 @@
 # id = 258
 # text-en = put Do You Love Me on my acoustic soul playlist
 # text-de: Setze Do You Love Me auf meine acoustig Soul-Playlist
-# text = Du Do You Love Me uf mini akustischi Soul-Playlist .
+# text = Du Do You Love Me uf mini acoustic Soul-Playlist .
 # intent = AddToPlaylist
 1	Du	AddToPlaylist	O
 2	Do	AddToPlaylist	B-entity_name
@@ -4224,7 +4224,7 @@
 # id = 294
 # text-en = play fourties tunes
 # text-de: spielen vierzig Lieder
-# text = Schpiu Lieder us den 80er
+# text = Schpiu Lieder us de 40er
 # intent = PlayMusic
 1	Schpiu	PlayMusic	O
 2	Lieder	PlayMusic	O

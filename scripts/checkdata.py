@@ -29,4 +29,6 @@ for conllFile in sorted(os.listdir(rootDir)):
     if 'train' in conllFile:
         continue
     checkText(rootDir + conllFile)
+    #checkBIO()
+    #checkLabels()
 
