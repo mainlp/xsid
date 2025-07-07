@@ -3137,7 +3137,7 @@
 # text = Ieškok The Sound of One Hand Clapping
 # intent = SearchCreativeWork
 1	Ieškok	SearchCreativeWork	O
-2	The	SearchCreativeWork	O
+2	The	SearchCreativeWork	B-object_name
 3	Sound	SearchCreativeWork	I-object_name
 4	of	SearchCreativeWork	I-object_name
 5	One	SearchCreativeWork	I-object_name
@@ -3940,9 +3940,9 @@
 9	Ladies	RateBook	I-object_name
 10	"	RateBook	O
 11	nuliu	RateBook	B-rating_value
-11	balų	RateBook	B-rating_unit
-12	iš	RateBook	O
-13	6	RateBook	B-best_rating
+12	balų	RateBook	B-rating_unit
+13	iš	RateBook	O
+14	6	RateBook	B-best_rating
 
 # id = 119
 # text-en = Book me a reservation for the best bistro

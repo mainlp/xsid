@@ -946,7 +946,7 @@
 2	alarm	alarm/cancel_alarm	O
 3	for	alarm/cancel_alarm	O
 4	6:00	alarm/cancel_alarm	B-datetime
-7	am	alarm/cancel_alarm	I-datetime
+5	am	alarm/cancel_alarm	I-datetime
 
 # text = Cancel all alarms
 # intent = alarm/cancel_alarm

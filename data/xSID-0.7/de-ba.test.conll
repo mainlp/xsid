@@ -67,11 +67,11 @@
 # text-en = snooze my alarms for five minutes
 # text = Snooze meine Wegga füa 5 Minutn 
 1	Snooze	alarm/snooze_alarm	O
-3	meine	alarm/snooze_alarm	B-reference
-4	Wegga	alarm/snooze_alarm	O
-5	füa	alarm/snooze_alarm	O
-6	5	alarm/snooze_alarm	B-datetime
-7	Minutn	alarm/snooze_alarm	I-datetime
+2	meine	alarm/snooze_alarm	B-reference
+3	Wegga	alarm/snooze_alarm	O
+4	füa	alarm/snooze_alarm	O
+5	5	alarm/snooze_alarm	B-datetime
+6	Minutn	alarm/snooze_alarm	I-datetime
 
 # id = 8
 # intent = reminder/set_reminder
@@ -1511,7 +1511,7 @@
 7	Uhr	alarm/set_alarm	I-recurring_datetime
 8	vormiddag	alarm/set_alarm	I-recurring_datetime
 9	bis	alarm/set_alarm	O
-11	er	alarm/set_alarm	O
+10	er	alarm/set_alarm	O
 11	glöscht	alarm/set_alarm	O
 12	wird	alarm/set_alarm	O
 
@@ -6127,9 +6127,9 @@
 2	ma	SearchCreativeWork	O
 3	a	SearchCreativeWork	O
 4	Fernsehserie	SearchCreativeWork	B-object_type
-6	namens	SearchCreativeWork	O
-7	Baby	SearchCreativeWork	B-object_name
-8	Blue	SearchCreativeWork	I-object_name
+5	namens	SearchCreativeWork	O
+6	Baby	SearchCreativeWork	B-object_name
+7	Blue	SearchCreativeWork	I-object_name
 
 # id = 491
 # intent = SearchCreativeWork

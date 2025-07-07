@@ -4123,7 +4123,7 @@
 6	film	SearchScreeningEvent	I-object_type
 7	int'	SearchScreeningEvent	O
 8	'e	SearchScreeningEvent	O
-9	bicinanze	SearchScreeningEvent	I-location
+9	bicinanze	SearchScreeningEvent	B-location
 
 # id = 299
 # text-en = this winter , meredith, betty and erika want to food at a gastropub that is in the same area as fran's location .

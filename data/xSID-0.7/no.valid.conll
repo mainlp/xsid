@@ -1472,7 +1472,7 @@
 1	Vis	SearchCreativeWork	O
 2	frem	SearchCreativeWork	O
 3	From	SearchCreativeWork	B-object_name
-4	South	SearchCreativeWork	I-object_location_type
+4	South	SearchCreativeWork	I-object_name
 5	Africa	SearchCreativeWork	I-object_name
 6	to	SearchCreativeWork	I-object_name
 7	South	SearchCreativeWork	I-object_name
@@ -18688,10 +18688,10 @@
 3	hørra	SearchCreativeWork	O
 4	albumet	SearchCreativeWork	B-object_type
 5	Since	SearchCreativeWork	B-object_name
-6	I	SearchCreativeWork	I-object_type
-7	Saw	SearchCreativeWork	I-object_type
-8	You	SearchCreativeWork	I-object_type
-9	Last	SearchCreativeWork	I-object_type
+6	I	SearchCreativeWork	I-object_name
+7	Saw	SearchCreativeWork	I-object_name
+8	You	SearchCreativeWork	I-object_name
+9	Last	SearchCreativeWork	I-object_name
 
 # id = 211/7
 # text = book et bord te meg og min ste onkel på en kafeteria i Malta
