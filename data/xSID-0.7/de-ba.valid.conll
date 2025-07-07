@@ -57,7 +57,7 @@
 # id = 7
 # intent = alarm/show_alarms
 # text-en = what alarms do I have set?
-# text = Weichane Alarme hob i gesetzt?
+# text = Weichane Alarme hob i gsetzt?
 1	Weichane	alarm/show_alarms	O
 2	Alarme	alarm/show_alarms	O
 3	hob	alarm/show_alarms	O
@@ -280,7 +280,7 @@
 # id = 26
 # intent = alarm/cancel_alarm
 # text-en = Turn off all alarms
-# text = Schoid allle Alarme aus
+# text = Schoid alle Alarme aus
 1	Schoid	alarm/cancel_alarm	O
 2	alle	alarm/cancel_alarm	B-reference
 3	Alarme	alarm/cancel_alarm	O
@@ -461,7 +461,7 @@
 # id = 43
 # intent = alarm/show_alarms
 # text-en = How many alarms do I have set for Sunday?
-# text = Wia vei Wegga hob i füan Sonddog gsteid?
+# text = Wia vui Wegga hob i füan Sonddog gsteid?
 1	Wia	alarm/show_alarms	O
 2	vui	alarm/show_alarms	O
 3	Wegga	alarm/show_alarms	O
@@ -990,7 +990,7 @@
 # text = Lösch mei Erinnerung, dass i an Patrick moang vo da Schui abhoin muas.
 1	Lösch	reminder/cancel_reminder	O
 2	mei	reminder/cancel_reminder	B-reference
-3	Erinnerunng	reminder/cancel_reminder	O
+3	Erinnerung	reminder/cancel_reminder	O
 4	,	reminder/cancel_reminder	O
 5	dass	reminder/cancel_reminder	O
 6	i	reminder/cancel_reminder	O
@@ -1123,7 +1123,7 @@
 # text = Erinner mi mei Mama um 2 nammiddog ozumruafa
 1	Erinner	reminder/set_reminder	O
 2	mi	reminder/set_reminder	O
-3	d	reminder/set_reminder	O
+3	mei	reminder/set_reminder	O
 4	Mama	reminder/set_reminder	B-reminder/todo
 5	um	reminder/set_reminder	B-datetime
 6	2	reminder/set_reminder	I-datetime
@@ -1360,7 +1360,7 @@
 # id = 127
 # intent = weather/find
 # text-en = is it below freezing today?
-# text = Iss heid untam Gefrierpunkt?
+# text = Iss heid untam Gefriefpunkt?
 1	Iss	weather/find	O
 2	heid	weather/find	B-datetime
 3	untam	weather/find	B-weather/attribute
@@ -1464,7 +1464,7 @@
 # id = 137
 # intent = alarm/set_alarm
 # text-en = Set an alarm for every ten minutes, starting at 5:30 and ending at 6 am.
-# text = Stei an Wegga füa alle zehn Minutn, startend ab 5:30 und endend um 6 in da fria.
+# text = Stei an Wegga füa alle 10 Minutn, startend ab 5:30 und endend um 6 in da fria.
 1	Stei	alarm/set_alarm	O
 2	an	alarm/set_alarm	O
 3	Wegga	alarm/set_alarm	O
@@ -1498,7 +1498,7 @@
 # id = 139
 # intent = alarm/set_alarm
 # text-en = Set eh alarm to 7:20am for the shoe release.
-# text = Stei den Wegga füa 7:20 in da fria füa de Schua Veröffentlichung.
+# text = Stei an Wegga füa 7:20 in da fria füa de Schua Veröffentlichung.
 1	Stei	alarm/set_alarm	O
 2	an	alarm/set_alarm	O
 3	Wegga	alarm/set_alarm	O
@@ -1759,7 +1759,7 @@
 # id = 159
 # intent = weather/find
 # text-en = What will the weather be like in Arizona on october the 3rd
-# text = Wia werds Weda in Arziona am 3. Oktoba
+# text = Wia werds Weda in Arizona am 3. Oktoba
 1	Wia	weather/find	O
 2	werds	weather/find	O
 3	Weda	weather/find	O
@@ -1782,7 +1782,7 @@
 # id = 161
 # intent = SearchScreeningEvent
 # text-en = find Vegucated starting at zero pm
-# text = Suach Vegucated startend um null uhr
+# text = Suach Vegucated startend um null Uhr
 1	Suach	SearchScreeningEvent	O
 2	Vegucated	SearchScreeningEvent	B-movie_name
 3	startend	SearchScreeningEvent	O
@@ -1868,7 +1868,7 @@
 # intent = RateBook
 # text-en = add this current book five stars
 # text = Füg dem aktuelln Buach fünf Sterne dazua
-1	Gib	RateBook	O
+1	Füg	RateBook	O
 2	dem	RateBook	O
 3	aktuelln	RateBook	B-object_select
 4	Buach	RateBook	B-object_type
@@ -1931,7 +1931,7 @@
 # id = 171
 # intent = AddToPlaylist
 # text-en = Please put another tune into the laundry playlist.
-# text = Bitte mach a anders Liad in de laudnry playlist.
+# text = Bitte mach a anders Liad in de laundry playlist.
 1	Bitte	AddToPlaylist	O
 2	mach	AddToPlaylist	O
 3	a	AddToPlaylist	O
@@ -2060,7 +2060,7 @@
 # id = 180
 # intent = PlayMusic
 # text-en = I want to listen to a concerto from Timour Moutsouraev .
-# text = I mechad a Konzert vo Timour Moutsouraev hearn.
+# text = I mechad a Konzert vo Timour Moutsouraev hearn
 1	I	PlayMusic	O
 2	mechad	PlayMusic	O
 3	a	PlayMusic	O
@@ -2125,7 +2125,7 @@
 # id = 185
 # intent = BookRestaurant
 # text-en = Book a table for 10 people at a restaurant which offers internet .
-# text = Buach an Disch für 10 Leid in am Restaurant des Internet obiet.
+# text = Buach an Disch füa 10 Leid in am Restaurant des Internet obiet.
 1	Buach	BookRestaurant	O
 2	an	BookRestaurant	O
 3	Disch	BookRestaurant	O
@@ -2341,7 +2341,7 @@
 2	mechad	BookRestaurant	O
 3	Shawn,	BookRestaurant	B-party_size_description
 4	Marguerite	BookRestaurant	I-party_size_description
-5	and	BookRestaurant	I-party_size_description
+5	und	BookRestaurant	I-party_size_description
 6	Della	BookRestaurant	I-party_size_description
 7	zu	BookRestaurant	O
 8	am	BookRestaurant	O
@@ -2477,7 +2477,7 @@
 # id = 210
 # intent = weather/find
 # text-en = is it going to blizzard at my current position
-# text = Werds an Schneesturm an meina aktuellen Position gem
+# text = Werds an Schneesturm an meina aktuelln Position gem
 1	Werds	weather/find	O
 2	an	weather/find	O
 3	Schneesturm	weather/find	B-condition_description
@@ -2490,7 +2490,7 @@
 # id = 211
 # intent = BookRestaurant
 # text-en = book a table for me and my step uncle in Malta at a cafeteria
-# text = Buach an Disch für mi und ein Stiefonkel in Malta in na Cafeteria
+# text = Buach an Disch füa mi und mein Stiefonkel in Malta in na cafeteria
 1	Buach	BookRestaurant	O
 2	an	BookRestaurant	O
 3	Disch	BookRestaurant	O
@@ -2593,7 +2593,7 @@
 # id = 219
 # intent = SearchCreativeWork
 # text-en = I want to listen to the Music of Ghost in the Shell: Stand Alone Complex
-# text = I mechad die Musi vo Ghost in the Shell: Stand Alone Complex ohearn
+# text = I mechad de Musi vo Ghost in the Shell: Stand Alone Complex hearn
 1	I	SearchCreativeWork	O
 2	mechad	SearchCreativeWork	O
 3	de	SearchCreativeWork	O
@@ -2774,7 +2774,7 @@
 # id = 232
 # intent = SearchScreeningEvent
 # text-en = Find me the movie times
-# text = Find ma de Filmzeitn
+# text = Find ma da Filmzeitn
 1	Find	SearchScreeningEvent	O
 2	ma	SearchScreeningEvent	O
 3	da	SearchScreeningEvent	O
@@ -2809,7 +2809,7 @@
 # id = 235
 # intent = SearchCreativeWork
 # text-en = find a video game called IBM Program temporary fix
-# text = Find a Videospui namens IBM Program temprorary fix
+# text = Find a Videospui namens IBM Program temporary fix
 1	Find	SearchCreativeWork	O
 2	a	SearchCreativeWork	O
 3	Videospui	SearchCreativeWork	B-object_type
@@ -3136,7 +3136,7 @@
 # id = 257
 # intent = SearchCreativeWork
 # text-en = Find a photograph of Adventure Time: The Secret of the Nameless Kingdom
-# text = Find de Fotographie vo Adventure Time: The Secret of the Nameless Kingdom
+# text = Find de Fotografie vo Adventure Time: The Secret of the Nameless Kingdom
 1	Find	SearchCreativeWork	O
 2	de	SearchCreativeWork	O
 3	Fotografie	SearchCreativeWork	B-object_type
@@ -3231,7 +3231,7 @@
 4	Vorhersage	weather/find	O
 5	füa	weather/find	O
 6	in	weather/find	B-datetime
-7	achzehm	weather/find	I-datetime
+7	achzehn	weather/find	I-datetime
 8	Minutn	weather/find	I-datetime
 9	do	weather/find	B-location
 10	füa	weather/find	O
@@ -3388,7 +3388,7 @@
 # id = 274
 # intent = BookRestaurant
 # text-en = book for 3 in U.S. Virgin Islands
-# text = Buach füa 3 in U.S. Virign Islands
+# text = Buach füa 3 in U.S. Virgin Islands
 1	Buach	BookRestaurant	O
 2	füa	BookRestaurant	O
 3	3	BookRestaurant	B-party_size_number
@@ -3429,7 +3429,7 @@
 1	Gib	RateBook	O
 2	My	RateBook	B-object_name
 3	Sister,	RateBook	I-object_name
-4	my	RateBook	I-object_name
+4	My	RateBook	I-object_name
 5	Love	RateBook	I-object_name
 6	drei	RateBook	B-rating_value
 7	Sterne	RateBook	B-rating_unit
@@ -3496,7 +3496,7 @@
 # id = 282
 # intent = RateBook
 # text-en = Rate The Art of Nijinsky 5 points
-# text = Bewert The Art of Nijinski mit 5 Punktn
+# text = Bewert The Art of Nijinsky mit 5 Punktn
 1	Bewert	RateBook	O
 2	The	RateBook	B-object_name
 3	Art	RateBook	I-object_name
@@ -3522,7 +3522,7 @@
 # id = 284
 # intent = SearchScreeningEvent
 # text-en = Give me a list of movie times for films in the area .
-# text = Gib ma a Liste vo Filmzeitn füa Filme in da Gegend.
+# text = Gib ma a Listn vo Filmzeitn füa Filme in da Gegend.
 1	Gib	SearchScreeningEvent	O
 2	ma	SearchScreeningEvent	O
 3	a	SearchScreeningEvent	O
@@ -3627,7 +3627,7 @@
 # id = 291
 # intent = SearchScreeningEvent
 # text-en = What movie house is showing Flower and Snake at 08:56:29 ?
-# text = Weicha Kino zoag Flower and Snake um 08:56:29 ?
+# text = Weicha Kino zoagt Flower and Snake um 08:56:29 ?
 1	Weicha	SearchScreeningEvent	O
 2	Kino	SearchScreeningEvent	B-object_location_type
 3	zoagt	SearchScreeningEvent	O
@@ -3728,7 +3728,7 @@
 # id = 299
 # intent = BookRestaurant
 # text-en = this winter , meredith, betty and erika want to food at a gastropub that is in the same area as fran's location .
-# text = Meredith, Betty und Erika woin den Winta in am Gastropub essn des in da gleichn Gegend wia Frans Ort is.
+# text = Meredith, Betty und Erika woin den Winta in am Gastropub essn des in da gleichn Gegend is wia Frans Ort is.
 1	Meredith,	BookRestaurant	B-party_size_description
 2	Betty	BookRestaurant	I-party_size_description
 3	und	BookRestaurant	I-party_size_description

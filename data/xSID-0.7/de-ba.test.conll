@@ -20,7 +20,7 @@
 # id = 3
 # intent = reminder/set_reminder
 # text-en = Add a reminder for today at 4pm
-# text = Stei ma a Erinnerung füa heid um viere nammiddog ei
+# text = Stei ma a Erinnerung füa heid um viere nammidog ei
 1	Stei	reminder/set_reminder	O
 2	ma	reminder/set_reminder	O
 3	a	reminder/set_reminder	O
@@ -289,6 +289,7 @@
 3	i	reminder/show_reminders	O
 4	füa	reminder/show_reminders	O
 5	Erinnerungen	reminder/show_reminders	O
+6	?	reminder/show_reminders	O
 
 # id = 29
 # intent = alarm/set_alarm
@@ -518,7 +519,7 @@
 # id = 49
 # intent = reminder/set_reminder
 # text-en = Remind me tomorrow at this time to schedule a doctor appointment
-# text = Erinner mi moang zu dera Zeit an Arzttermin auszumachen
+# text = Erinner mi moang zu dera Zeit an Arzttermin auszummacha
 1	Erinner	reminder/set_reminder	O
 2	mi	reminder/set_reminder	O
 3	moang	reminder/set_reminder	B-datetime
@@ -726,7 +727,7 @@
 # id = 66
 # intent = reminder/set_reminder
 # text-en = set reminder to watch the Colts one hour before game starts
-# text = Mach a Erinnerung die Colts ozumschaun a Stund bevor des Spui start
+# text = Mach a Erinnerung die Colts ozumschaum a Stund bevor des Spui start
 1	Mach	reminder/set_reminder	O
 2	a	reminder/set_reminder	O
 3	Erinnerung	reminder/set_reminder	O
@@ -801,12 +802,6 @@
 # intent = reminder/set_reminder
 # text-en = Remind me to pay rent.
 # text = Erinner mi Miete zum zoin. 
-1	Remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	pay	reminder/set_reminder	B-reminder/todo
-5	rent	reminder/set_reminder	I-reminder/todo
-6	.	reminder/set_reminder	O
 1	Erinner	reminder/set_reminder	O
 2	mi	reminder/set_reminder	O
 3	Miete	reminder/set_reminder	B-reminder/todo
@@ -1211,7 +1206,7 @@
 # id = 109
 # intent = reminder/set_reminder
 # text-en = Remind me to make a doctor's appointment tomorrow.
-# text = Erinner me moang an Arzttermin zum macha.
+# text = Erinner mi moang an Arzttermin zum macha.
 1	Erinner	reminder/set_reminder	O
 2	mi	reminder/set_reminder	O
 3	moang	reminder/set_reminder	B-datetime
@@ -1254,7 +1249,7 @@
 # id = 113
 # intent = reminder/set_reminder
 # text-en = remind me of next weeks doctor appointment
-# text = Erinner mi an mein Arzttermin nächste Woch
+# text = Erinner mi an mein Arztermin nächste Woch
 1	Erinner	reminder/set_reminder	O
 2	mi	reminder/set_reminder	O
 3	an	reminder/set_reminder	O
@@ -1339,7 +1334,7 @@
 # id = 121
 # intent = alarm/show_alarms
 # text-en = What time do I have an alarm set for?
-# text = Für was füa a Zeit is a Wegga gsteid?
+# text = Für wos füa a Zeit is a Wegga gsteid?
 1	Für	alarm/show_alarms	O
 2	wos	alarm/show_alarms	O
 3	füa	alarm/show_alarms	O
@@ -1562,7 +1557,7 @@
 # id = 140
 # intent = reminder/show_reminders
 # text-en = show all reminders
-# text = Zoag alle Erinnerung
+# text = Zoag alle Erinnerungen
 1	Zoag	reminder/show_reminders	O
 2	alle	reminder/show_reminders	B-reference
 3	Erinnerungen	reminder/show_reminders	O
@@ -1709,7 +1704,7 @@
 # id = 152
 # intent = reminder/cancel_reminder
 # text-en = Cancel all reminders for today
-# text =	Lösch alle Erinnerung füa heid
+# text = Lösch alle Erinnerungen füa heid
 1	Lösch	reminder/cancel_reminder	O
 2	alle	reminder/cancel_reminder	B-reference
 3	Erinnerungen	reminder/cancel_reminder	O
@@ -1732,7 +1727,7 @@
 # id = 154
 # intent = reminder/set_reminder
 # text-en = remind me of a doctor visit Thursday at 12 pm
-# text = Erinner me an den Arztbesuch am Diensdog um zwoife nammiddog
+# text = Erinner mi an den Arztbesuch am Diensdog um zwoife nammiddog
 1	Erinner	reminder/set_reminder	O
 2	mi	reminder/set_reminder	O
 3	an	reminder/set_reminder	O
@@ -1851,7 +1846,7 @@
 # id = 165
 # intent = reminder/show_reminders
 # text-en = Show me all my reminders for today
-# text = Zoag ma olle meine Erinnerung füa heid
+# text = Zoag ma olle meine Erinnerungen füa heid
 1	Zoag	reminder/show_reminders	O
 2	ma	reminder/show_reminders	O
 3	olle	reminder/show_reminders	B-reference
@@ -1863,7 +1858,7 @@
 # id = 166
 # intent = reminder/set_reminder
 # text-en = Set a weekly reminder for groceries.
-# text = Mach a wöchentliche Erinnerung für Lebensmittl. 
+# text = Mach a wöchentliche Erinnerung füa Lebensmittl. 
 1	Mach	reminder/set_reminder	O
 2	a	reminder/set_reminder	O
 3	wöchentliche	reminder/set_reminder	B-recurring_datetime
@@ -1892,7 +1887,7 @@
 # id = 169
 # intent = weather/find
 # text-en = is it going to rain tomorrow
-# text = Werds moang renga
+# text = Werds moang regna
 1	Werds	weather/find	O
 2	moang	weather/find	B-datetime
 3	regna	weather/find	B-weather/attribute
@@ -1907,7 +1902,7 @@
 4	Arbeitsemails	reminder/set_reminder	B-reminder/todo
 5	heid	reminder/set_reminder	B-datetime
 6	auf	reminder/set_reminder	I-datetime
-7	Nach	reminder/set_reminder	I-datetime
+7	Nacht	reminder/set_reminder	I-datetime
 8	zum	reminder/set_reminder	B-reminder/todo
 9	beantwortn	reminder/set_reminder	B-reminder/todo
 
@@ -1981,7 +1976,7 @@
 # id = 178
 # intent = alarm/cancel_alarm
 # text-en = cancel alarms
-# text = Brich Alarme ob
+# text = Brich Alarme ab
 1	Brich	alarm/cancel_alarm	O
 2	Alarme	alarm/cancel_alarm	O
 3	ab	alarm/cancel_alarm	O
@@ -2098,7 +2093,7 @@
 2	du	alarm/set_alarm	O
 3	mir	alarm/set_alarm	O
 4	an	alarm/set_alarm	O
-5	alarm	alarm/set_alarm	O
+5	Alarm	alarm/set_alarm	O
 6	jede	alarm/set_alarm	B-recurring_datetime
 7	Minut	alarm/set_alarm	I-recurring_datetime
 8	füa	alarm/set_alarm	I-recurring_datetime
@@ -2126,7 +2121,7 @@
 # id = 192
 # intent = alarm/set_alarm
 # text-en = Set alarm for every nine minutes.
-# text = Mach an Wegga für alle nein Minutn.
+# text = Mach an Wegga füa alle nein Minutn.
 1	Mach	alarm/set_alarm	O
 2	an	alarm/set_alarm	O
 3	Wegga	alarm/set_alarm	O
@@ -2205,7 +2200,7 @@
 # id = 199
 # intent = weather/find
 # text-en = How hot will it get today?
-# text = Wia hoaß wirds heid?
+# text = Wia hoaß werds heid?
 1	Wia	weather/find	O
 2	hoaß	weather/find	B-weather/attribute
 3	werds	weather/find	O
@@ -2262,7 +2257,7 @@
 # id = 204
 # intent = reminder/cancel_reminder
 # text-en = cancel reminder for tonight's game
-# text = Lösch mei Erinnerung für des Spui heid auf Nacht
+# text = Lösch de Erinnerung für des Spui heid auf Nacht
 1	Lösch	reminder/cancel_reminder	O
 2	de	reminder/cancel_reminder	O
 3	Erinnerung	reminder/cancel_reminder	O
@@ -2794,7 +2789,7 @@
 # id = 253
 # intent = PlayMusic
 # text-en = Play my inventive playlist
-# text = Spui mei einfallsreiche Playlist
+# text = Spui mei einfallsreiche playlist
 1	Spui	PlayMusic	O
 2	mei	PlayMusic	O
 3	einfallsreiche	PlayMusic	B-playlist
@@ -2881,7 +2876,7 @@
 # id = 260
 # intent = SearchScreeningEvent
 # text-en = I need times for A Yiddish World Remembered at Dipson Theatres
-# text = I brauch de Zeiten füa A Yiddish World Remeberd im Dipson Theatres
+# text = I brauch de Zeiten füa A Yiddish World Remembered im Dipson Theatres
 1	I	SearchScreeningEvent	O
 2	brauch	SearchScreeningEvent	O
 3	de	SearchScreeningEvent	O
@@ -3007,7 +3002,7 @@
 # id = 268
 # intent = BookRestaurant
 # text-en = I want to book a jewish restaurant in Gambia .
-# text = I mog in am jüdischen Restauran in Gamiba buacha.
+# text = I mog in am jüdischen Restaurant in Gambia buach.
 1	I	BookRestaurant	O
 2	mog	BookRestaurant	O
 3	in	BookRestaurant	O
@@ -3082,7 +3077,7 @@
 # id = 273
 # intent = BookRestaurant
 # text-en = I want to book a restaurant for my father in law and I in Buckner a year from now .
-# text = I mog an in am Restaurant resaviern füa mein Schwiegervatta und mi in Buckner in am Johr vo jetzad. 
+# text = I mog in am Restaurant resaviern füa mein Schwiegervatta und mi in Buckner in am Johr vo jetzad. 
 1	I	BookRestaurant	O
 2	mog	BookRestaurant	O
 3	in	BookRestaurant	O
@@ -3106,7 +3101,7 @@
 # id = 274
 # intent = RateBook
 # text-en = Rate this book a 1
-# text = Bewert des Buch mit na oans
+# text = Bewert des Buach mit na oans
 1	Bewert	RateBook	O
 2	des	RateBook	B-object_select
 3	Buach	RateBook	B-object_type
@@ -3293,7 +3288,7 @@
 # id = 289
 # intent = BookRestaurant
 # text-en = book spot for 1 at Town of Ramsgate in Merit
-# text = Buach an Disch für 1 im Town of Ramsgate in Merit
+# text = Buach an Disch füa 1 im Town of Ramsgate in Merit
 1	Buach	BookRestaurant	O
 2	an	BookRestaurant	O
 3	Disch	BookRestaurant	O
@@ -3531,7 +3526,7 @@
 # id = 306
 # intent = SearchCreativeWork
 # text-en = Look for the album Wolves Within
-# text = Suach nach dem Album Wovles Within
+# text = Suach nach dem Album Wolves Within
 1	Suach	SearchCreativeWork	O
 2	nach	SearchCreativeWork	O
 3	dem	SearchCreativeWork	O
@@ -3741,7 +3736,7 @@
 # id = 320
 # intent = weather/find
 # text-en = What will the weather be in nov. in Brookneal ?
-# text = Wia werds Weda in nov. in Brookneal sei?
+# text = Wia werds Weda im nov. in Brookneal sei?
 1	Wia	weather/find	O
 2	werds	weather/find	O
 3	Weda	weather/find	O
@@ -3842,7 +3837,7 @@
 # id = 328
 # intent = PlayMusic
 # text-en = Play music from E-type .
-# text = Spui Musi von E-Type. 
+# text = Spui Musi von E-type. 
 1	Spui	PlayMusic	O
 2	Musi	PlayMusic	O
 3	von	PlayMusic	O
@@ -4102,7 +4097,7 @@
 # id = 346
 # intent = AddToPlaylist
 # text-en = add the current track to my This Is Tchaikovsky playlist
-# text = Mach den aktuellen Track in mei This is Tchaikovsky Playlist 
+# text = Mach den aktuellen Track in mei This Is Tchaikovsky Playlist
 1	Mach	AddToPlaylist	O
 2	den	AddToPlaylist	O
 3	aktuellen	AddToPlaylist	O
@@ -4177,7 +4172,7 @@
 # id = 351
 # intent = SearchCreativeWork
 # text-en = Find me the Secret South song .
-# text = Find ma des Secret South Liadl.
+# text = Gib ma des Secret South Liadl.
 1	Gib	SearchCreativeWork	O
 2	ma	SearchCreativeWork	O
 3	des	SearchCreativeWork	O
@@ -4214,7 +4209,7 @@
 # id = 354
 # intent = PlayMusic
 # text-en = Play something on Last Fm
-# text = Spui eps auf Last FM
+# text = Spui eps auf Last Fm
 1	Spui	PlayMusic	O
 2	eps	PlayMusic	O
 3	auf	PlayMusic	O
@@ -4465,7 +4460,7 @@
 # id = 371
 # intent = weather/find
 # text-en = What will the weather be in Ohio ?
-# text = Wia werds weda in Ohio?
+# text = Wia werds Weda in Ohio?
 1	Wia	weather/find	O
 2	werds	weather/find	O
 3	Weda	weather/find	O
@@ -4740,7 +4735,7 @@
 # id = 390
 # intent = SearchScreeningEvent
 # text-en = Is Patrick Still Lives showing at AMC Theaters
-# text = Werd Patrick Still Lives in AMC Theatres zoagt
+# text = Werd Patrick Still Lives in AMC Theaters zoagt
 1	Werd	SearchScreeningEvent	O
 2	Patrick	SearchScreeningEvent	B-movie_name
 3	Still	SearchScreeningEvent	I-movie_name
@@ -5141,7 +5136,7 @@
 # id = 418
 # intent = BookRestaurant
 # text-en = I want to book a restaurant for ten people.
-# text = I mechad a Restaurant füa zehn Leid buacha.
+# text = I mechad a Restaurant füa zehn Leid buacha
 1	I	BookRestaurant	O
 2	mechad	BookRestaurant	O
 3	a	BookRestaurant	O
@@ -5194,7 +5189,7 @@
 # id = 422
 # intent = AddToPlaylist
 # text-en = Add Toyan to my Epic Gaming playlist.
-# text = Mach Toyan in mei Epic Gaming Playlist. 
+# text = Mach Toyan in mei Epic Gaming playlist. 
 1	Mach	AddToPlaylist	O
 2	Toyan	AddToPlaylist	B-artist
 3	in	AddToPlaylist	O
@@ -5298,7 +5293,7 @@
 # id = 430
 # intent = RateBook
 # text-en = Give The Crystal Snare 5 stars
-# text = Gib the Crystal Snare 5 Sterne 
+# text = Gib The Crystal Snare 5 Sterne 
 1	Gib	RateBook	O
 2	The	RateBook	B-object_name
 3	Crystal	RateBook	I-object_name
@@ -5331,7 +5326,7 @@
 # id = 433
 # intent = BookRestaurant
 # text-en = I want a table at James D. Conrey House in Urbank California
-# text = I mechad an Disch im James D Conrey House in Urbank California 
+# text = I mechad an Disch im James D. Conrey House in Urbank California 
 1	I	BookRestaurant	O
 2	mechad	BookRestaurant	O
 3	an	BookRestaurant	O
@@ -5348,7 +5343,7 @@
 # id = 434
 # intent = SearchScreeningEvent
 # text-en = Is Babar: King of the Elephants playing
-# text = Werd Babar: King of th Elephants gspeid
+# text = Werd Babar: King of the Elephants gspeid
 1	Werd	SearchScreeningEvent	O
 2	Babar:	SearchScreeningEvent	B-movie_name
 3	King	SearchScreeningEvent	I-movie_name
@@ -5360,7 +5355,7 @@
 # id = 435
 # intent = AddToPlaylist
 # text-en = Add a song to this is racionais mc's
-# text = Mach a Liad in This is racionais mc‘s
+# text = Mach a Liad in This is racionais mc's
 1	Mach	AddToPlaylist	O
 2	a	AddToPlaylist	O
 3	Liad	AddToPlaylist	B-music_item
@@ -5373,7 +5368,7 @@
 # id = 436
 # intent = RateBook
 # text-en = rate the current essay zero out of 6 stars
-# text = Bewert den aktuellen Aufsatz mit 0 vo 6 Sterne
+# text = Bewert den aktuellen Aufsatz mit null vo 6 Sterne
 1	Bewert	RateBook	O
 2	den	RateBook	O
 3	aktuellen	RateBook	B-object_select
@@ -5483,7 +5478,7 @@
 # id = 444
 # intent = SearchCreativeWork
 # text-en = Please get me the Compulsive Disclosure song .
-# text = Bitte suach ma des Compulsive Disclosure Liad. 
+# text = Bitte suach ma de Compulsive Disclosure Liad. 
 1	Bitte	SearchCreativeWork	O
 2	suach	SearchCreativeWork	O
 3	ma	SearchCreativeWork	O
@@ -5542,7 +5537,7 @@
 # id = 449
 # intent = RateBook
 # text-en = Rate the current novel 3 stars
-# text = Bewert dem aktuellen Roman mit 3 Sterne 
+# text = Bewert den aktuellen Roman mit 3 Sterne 
 1	Bewert	RateBook	O
 2	den	RateBook	O
 3	aktuellen	RateBook	B-object_select
@@ -5630,7 +5625,7 @@
 # id = 455
 # intent = BookRestaurant
 # text-en = I want to eat in Ramona
-# text = I mechat in Ramona essn
+# text = I mechad in Ramona essn
 1	I	BookRestaurant	O
 2	mechad	BookRestaurant	O
 3	in	BookRestaurant	O
@@ -5757,7 +5752,7 @@
 # id = 465
 # intent = AddToPlaylist
 # text-en = Add the artist mike to the Sexy as Folk playlist.
-# text = Mach den Künstla Mike in de Sexy as Fok Playlist. 
+# text = Mach den Künstler Mike in de Sexy as Folk Playlist. 
 1	Mach	AddToPlaylist	O
 2	den	AddToPlaylist	O
 3	Künstler	AddToPlaylist	B-music_item
@@ -6079,7 +6074,7 @@
 # id = 487
 # intent = AddToPlaylist
 # text-en = To the travelling playlist, please add this David Gahan song .
-# text = In de travelling Playlist, bitte mach des David Gahan Liad do eine.  
+# text = In de travelling Playlist, bitte mach des David Gahan Liadl do eine.
 1	In	AddToPlaylist	O
 2	de	AddToPlaylist	O
 3	travelling	AddToPlaylist	B-playlist
