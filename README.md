@@ -14,7 +14,7 @@ This repository contains all code to reproduce the results in the paper. If you 
 
 **UPDATE** 04-2024: version 0.5 is released, including Bavarian and Lithuanian, please also see [https://github.com/mainlp/NaLiBaSID/tree/main](https://github.com/mainlp/NaLiBaSID/tree/main) for alternatives for these languages (including native queries!).
 
-**UPDATE** 07-2025: version 0.7 is released, including Norwegian Dialects. We also corrected approximately 200 mismatches in the words in the columns and the "text=" version. Note that the Norwegian data is larger, because it contains a variety of dialects, which can be identified by the `dialect` label
+**UPDATE** 07-2025: version 0.7 is released, including Munich Bavarian and Norwegian Dialects. We also corrected approximately 200 mismatches in the words in the columns and the "text=" version. Note that the Norwegian data is larger, because it contains a variety of dialects, which can be identified by the `dialect` label
 
 To reproduce all results in the paper, you have to run `./scripts/runAll.sh`. However, in practice this would take a very long time (especially when rerunning nmt-transfer, `./scripts/1.\*`), which is why we would suggest to inspect `./scripts/runAll.sh`, decide which parts are relevant for you, and manually run the required commands parallel. It should be noted that some of the scripts may fail, because we used the MultiAtis dataset, which is not publicly available. To run the experiments on those, [obtain the data](https://catalog.ldc.upenn.edu/LDC2021T04), convert it with `scripts/tsv2conll.py` in `data/multiAtis`. Alternatively, one could remove the `MultiAtis` key from the `datasets` dictionary in `scripts/myutils.py`. All tables and graphs of the paper can be reproduced by running `scripts/genAll.sh`.
 
@@ -127,9 +127,28 @@ If you use version >= 0.5 (which includes Bavarian and Lithuanian), please also 
 }
 ```
 
-If you use version >= 0.7 (which includes Norwegian dialects), please also cite:
+If you use version >= 0.7 (which includes Munich Bavarian and Norwegian dialects), please also cite:
 
 ```
+@inproceedings{kruckl-etal-2025-improving,
+    title = "Improving Dialectal Slot and Intent Detection with Auxiliary Tasks: A Multi-Dialectal {B}avarian Case Study",
+    author = {Kr{\"u}ckl, Xaver Maria  and
+      Blaschke, Verena  and
+      Plank, Barbara},
+    editor = "Scherrer, Yves  and
+      Jauhiainen, Tommi  and
+      Ljube{\v{s}}i{\'c}, Nikola  and
+      Nakov, Preslav  and
+      Tiedemann, Jorg  and
+      Zampieri, Marcos",
+    booktitle = "Proceedings of the 12th Workshop on NLP for Similar Languages, Varieties and Dialects",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.vardial-1.10/",
+    pages = "128--146"
+}
 @inproceedings{maehlum-scherrer-2024-nomusic,
     title = "{N}o{M}usic - The {N}orwegian Multi-Dialectal Slot and Intent Detection Corpus",
     author = "M{\ae}hlum, Petter  and
